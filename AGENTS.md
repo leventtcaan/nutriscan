@@ -79,7 +79,7 @@ her iddia kaynak linki ve doğrulama notuyla. Büyük işte önce 5–10 maddeli
 Ne değişti · neden · alternatif neydi · hangi test neyi kanıtlıyor · insanın kontrol etmesi gereken satır.
 
 ## Git ve PR
-- `main`'e doğrudan commit yok. Dal: `<modül>/AB<no>-kisa-ad`. Commit: Conventional + iş öğesi, ör. `feat(safety): gluten kuralı AB#179`.
+- Kod değişikliği `main`'e doğrudan girmez (planlama/altyapı dosyalarında depo yöneticisi istisnası: ADR-013). Dal: `<modül>/AB<no>-kisa-ad`. Commit: Conventional + iş öğesi, ör. `feat(safety): gluten kuralı AB#179`.
 - PR gövdesinde `Fixes AB#<no>`; şablon eksiksiz; "AI kullanımı" bölümü zorunlu.
 - PR'ı modülün sahibi ya da vekili onaylar (`plan/calisma-akisi.md` §8); sahip kendi PR'ını onaylamaz. **Agent onay vermez.**
 - **Commit ve PR'da AI imzası yok** (`Co-Authored-By`, "Generated with…"): yazar insandır; AI kullanımı PR'da beyan edilir.
