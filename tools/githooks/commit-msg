@@ -1,0 +1,9 @@
+#!/bin/sh
+# NutriScan: commit mesajında AI imzası yasak (AGENTS.md › Git ve PR, ADR-013).
+# Kurulum (bir kez, depo kökünde): git config core.hooksPath tools/githooks
+msg_file="$1"
+if grep -Eiq '^(co-authored-by:.*(claude|anthropic|codex|openai|gemini|antigravity|copilot|cursor))|generated (with|by) .*(claude|codex|gemini|antigravity|copilot|ai)|🤖' "$msg_file"; then
+  echo "commit reddedildi: mesajda AI imzası var (Co-Authored-By / Generated with). Yazar insandır; AI kullanımı PR'daki 'AI kullanımı' bölümünde beyan edilir." >&2
+  exit 1
+fi
+exit 0

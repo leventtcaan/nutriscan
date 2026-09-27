@@ -25,7 +25,8 @@ tarihçen), `plan/` (plan, kararlar, board), `docs/anayasa.md` (değişmez kural
      kendi `~/.gemini/config/mcp_config.json` dosyana ekle (depodaki `.mcp.json` ile aynı `command/args`; `env`'e anahtarı
      yazma, kabuktan gelsin — olmazsa Levent'e yaz).
    - MCP çalışmasa da iş durmaz: PBI'ın promptu depoda `plan/board/promptlar/<ID>.md`.
-4. **Araç sürümü:** Claude Code, Codex ve Antigravity güncel olsun; skill'ler `.agents/skills/` (Claude için `.claude/skills/`).
+4. **Commit kancası (bir kez):** depo kökünde `git config core.hooksPath tools/githooks` — AI imzalı commit mesajını reddeder.
+5. **Araç sürümü:** Claude Code, Codex ve Antigravity güncel olsun; skill'ler `.agents/skills/` (Claude için `.claude/skills/`).
 
 ## 2. İlk prompt (her araçta aynı; `<ad>` yerine adını yaz)
 ```
