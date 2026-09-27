@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>İlk liste</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Instrument Sans',system-ui,sans-serif;color:#1c2420;background:#f5f1e8}
+*{box-sizing:border-box}
+a{color:#1f5c45}a:hover{color:#15432f}
+.s{width:390px;height:844px;background:#f5f1e8;display:flex;flex-direction:column;overflow:hidden;position:relative}
+.pad{padding-left:20px;padding-right:20px}
+.disp{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-0.01em;margin:0}
+.eb{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#56615b}
+.mut{color:#56615b}
+.card{background:#fffdf8;border:1px solid #e2dbcb;border-radius:18px;padding:14px 16px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border-radius:14px;background:#1f5c45;color:#fff;font-weight:600;font-size:16px;text-decoration:none;border:0;font-family:inherit;padding:0 18px;cursor:pointer}
+.btn:hover{color:#fff;background:#184a37}
+.ib{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid #e2dbcb;background:#fffdf8;color:#1c2420;text-decoration:none;flex-shrink:0}
+.chip{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 12px;border-radius:999px;border:1px solid #d6cdb9;background:#fffdf8;font-size:14px;font-weight:500;color:#1c2420;font-family:inherit;cursor:pointer}
+.on{background:#1f5c45;border-color:#1f5c45;color:#fff}
+.add{border-style:dashed;color:#1f5c45;font-weight:700}
+.fld{display:flex;align-items:center;height:48px;border:1.5px solid #cfc6b3;border-radius:12px;background:#fff;padding:0 14px;gap:8px}
+.fld input{border:0;outline:0;font:inherit;font-size:18px;font-weight:700;width:100%;background:transparent;color:#1c2420}
+</style>
+</helmet>
+<div class="s">
+  <div style="display: flex; align-items: center; gap: 12px; padding: 18px 20px 8px">
+    <a class="ib" href="M03-Riza.dc.html" aria-label="Geri"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></a>
+    <div style="flex-grow: 1">
+      <div class="eb">Adım 3 / 4 · Liste</div>
+      <div style="height: 4px; background: #e2dbcb; border-radius: 2px; margin-top: 8px"><div style="width: 75%; height: 4px; background: #1f5c45; border-radius: 2px"></div></div>
+    </div>
+  </div>
+  <div class="pad" style="display: flex; flex-direction: column; gap: 6px; padding-top: 10px">
+    <h1 class="disp" style="font-size: 28px">Bu hafta neler alınıyor?</h1>
+    <p class="mut" style="margin: 0; font-size: 14.5px; line-height: 1.45">Evlerde en sık alınanlardan seç; sonra düzenlersin.</p>
+  </div>
+  <div class="pad" style="padding-top: 14px; display: flex; flex-wrap: wrap; gap: 8px">
+    <button class="chip on" type="button">Ekmek</button>
+    <button class="chip on" type="button">Süt</button>
+    <button class="chip on" type="button">Yoğurt</button>
+    <button class="chip on" type="button">Beyaz peynir</button>
+    <button class="chip on" type="button">Yumurta</button>
+    <button class="chip on" type="button">Domates</button>
+    <button class="chip" type="button">Salatalık</button>
+    <button class="chip on" type="button">Zeytin</button>
+    <button class="chip on" type="button">Makarna</button>
+    <button class="chip" type="button">Pirinç</button>
+    <button class="chip" type="button">Kırmızı mercimek</button>
+    <button class="chip on" type="button">Tavuk</button>
+    <button class="chip on" type="button">Çay</button>
+    <button class="chip on" type="button">Meyve suyu</button>
+    <button class="chip on" type="button">Kola</button>
+    <button class="chip on" type="button">Fındıklı gofret</button>
+    <button class="chip on" type="button">Salam</button>
+    <button class="chip on" type="button">Hazır çorba</button>
+    <button class="chip" type="button">Muz</button>
+    <button class="chip on" type="button">Patates</button>
+    <button class="chip add" type="button">+ Kendin yaz</button>
+  </div>
+  <div class="pad" style="padding-top: 16px">
+    <div class="card" style="display: flex; flex-direction: column; gap: 12px">
+      <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 700; color: #3d4742">Haftalık gıda bütçesi
+        <span class="fld"><input type="text" value="6.500" aria-label="Haftalık bütçe"><span style="font-weight: 700; color: #56615b">TL</span></span>
+      </label>
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <span style="font-size: 13px; font-weight: 700; color: #3d4742">Hangi marketlere gidiyorsun?</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px"><button class="chip on" type="button">A101</button><button class="chip on" type="button">Migros</button><button class="chip" type="button">BİM</button><button class="chip" type="button">ŞOK</button><button class="chip" type="button">CarrefourSA</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="pad" style="margin-top: auto; padding-bottom: 24px; display: flex; flex-direction: column; gap: 8px">
+    <a class="btn" href="M05-BuHafta.dc.html">16 ürünle planımı oluştur</a>
+    <div class="mut" style="font-size: 12.5px; text-align: center">Fiş gerekmez. Sonra fiş eklersen plan kendini düzeltir.</div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

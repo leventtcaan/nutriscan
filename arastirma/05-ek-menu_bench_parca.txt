@@ -1,0 +1,6 @@
+S1 seed0 BIRLESIK alim=3455 israf=1537 yol=69 tercih=645 | SIRALI alim=5058 israf=1648 yol=114 tercih=645
+S1 seed1 BIRLESIK alim=3257 israf=1003 yol=57 tercih=580 | SIRALI alim=3621 israf=1231 yol=101 tercih=645
+S1 seed2 BIRLESIK alim=2397 israf=1171 yol=24 tercih=450 | SIRALI alim=3463 israf=1264 yol=56 tercih=555
+S3 seed0 BIRLESIK alim=5368 israf=3855 yol=22 tercih=1140 | SIRALI alim=6911 israf=3856 yol=22 tercih=965
+S3 seed1 BIRLESIK alim=5345 israf=3111 yol=52 tercih=1160 | SIRALI alim=5470 israf=3680 yol=74 tercih=1100
+S3 seed2 BIRLESIK alim=4365 israf=2126 yol=26 tercih=1195 | SIRALI alim=4922 israf=2071 yol=55 tercih=1055

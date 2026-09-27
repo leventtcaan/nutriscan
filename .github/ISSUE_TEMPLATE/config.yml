@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: İş takibi Azure Boards'ta
+    url: https://dev.azure.com/hilalhocaoglu20/NutriScan/_boards
+    about: Yeni iş, hata ya da sözleşme değişikliği önce plan/board/pbi.yaml PR'ıyla, sonra board'a işlenir (plan/calisma-akisi.md).

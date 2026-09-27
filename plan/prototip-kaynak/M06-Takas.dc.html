@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Takas önerileri</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Instrument Sans',system-ui,sans-serif;color:#1c2420;background:#f5f1e8}
+*{box-sizing:border-box}
+a{color:#1f5c45}a:hover{color:#15432f}
+.s{width:390px;height:844px;background:#f5f1e8;display:flex;flex-direction:column;overflow:hidden;position:relative}
+.pad{padding-left:16px;padding-right:16px}
+.disp{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-0.01em;margin:0}
+.eb{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#56615b}
+.mut{color:#56615b}
+.card{background:#fffdf8;border:1px solid #e2dbcb;border-radius:16px;padding:12px 14px}
+.why{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:700;color:#1f5c45;text-decoration:none}
+.ib{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid #e2dbcb;background:#fffdf8;color:#1c2420;text-decoration:none;flex-shrink:0}
+.seg{flex:1;height:44px;border-radius:10px;border:0;background:transparent;font:inherit;font-size:16px;font-weight:700;color:#3d4742;cursor:pointer}
+.segon{background:#1f5c45;color:#fff}
+.v{display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 8px;border-radius:7px;font-size:12px;font-weight:700;white-space:nowrap}
+.vno{background:#f6ddd6;color:#7d2317}
+.soft{background:#fbf5e3;color:#5e4d17;border:1px dashed #8a7433}
+.sb{height:40px;border-radius:10px;font:inherit;font-weight:700;font-size:14px;cursor:pointer;padding:0 14px}
+.ok{background:#1f5c45;color:#fff;border:0}
+.no{background:transparent;color:#3d4742;border:1.5px solid #cfc6b3}
+</style>
+</helmet>
+<div class="s">
+  <div style="display: flex; align-items: center; gap: 12px; padding: 18px 16px 6px">
+    <a class="ib" href="M05-BuHafta.dc.html" aria-label="Geri"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></a>
+    <h1 class="disp" style="font-size: 24px; flex-grow: 1">Takas önerileri</h1>
+    <a class="ib" href="W04-Seffaflik.dc.html" aria-label="Nasıl hesaplıyoruz"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.01"></path></svg></a>
+  </div>
+  <div class="pad" style="display: flex; flex-direction: column; gap: 8px">
+    <div style="font-size: 14px; font-weight: 700; color: #3d4742">Kaç değişikliğe hazırsın?</div>
+    <div style="display: flex; gap: 4px; padding: 4px; background: #ece5d6; border-radius: 13px">
+      <sc-for list="{{opts}}" as="o" hint-placeholder-count="3">
+        <sc-if value="{{o.on}}" hint-placeholder-val="{{false}}"><button class="seg segon" type="button" onClick="{{o.pick}}">{{o.label}}</button></sc-if>
+        <sc-if value="{{o.off}}" hint-placeholder-val="{{true}}"><button class="seg" type="button" onClick="{{o.pick}}">{{o.label}}</button></sc-if>
+      </sc-for>
+    </div>
+    <div class="card" style="display: flex; justify-content: space-between; align-items: center; background: #e6f0ea; border-color: #bcd6c6">
+      <div><div style="font-size: 24px; font-weight: 700; color: #17503a">{{sum.tl}} <span style="font-size: 14px">/ ay</span></div><div style="font-size: 13px; color: #17503a">Eklenmiş şeker {{sum.sugar}} · {{sum.ch}}</div></div>
+      <div style="font-size: 11.5px; color: #17503a; text-align: right; line-height: 1.4">Bütçe içinde<br>Kesin kısıtlar korunuyor</div>
+    </div>
+  </div>
+  <div class="pad" style="flex-grow: 1; overflow-y: auto; padding-top: 10px; padding-bottom: 12px; display: flex; flex-direction: column; gap: 8px">
+    <div class="card" style="border-color: #d9a597">
+      <div style="display: flex; justify-content: space-between; align-items: center"><span class="v vno">Zorunlu · Ela için</span><a class="why" href="M10-Neden.dc.html">Neden?</a></div>
+      <div style="font-size: 15px; margin-top: 8px"><span class="mut" style="text-decoration: line-through">Fındıklı gofret</span> → <b>Sade pirinç patlağı</b></div>
+      <div class="mut" style="font-size: 12.5px; margin-top: 4px">Bu bir tercih değil: Ela'nın kesin kısıtı. Takas sayısına dahil edilmez.</div>
+    </div>
+    <sc-for list="{{swaps}}" as="w" hint-placeholder-count="3">
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center"><span class="v soft">{{w.who}}</span><a class="why" href="M07-TakasNeden.dc.html">Neden?</a></div>
+        <div style="font-size: 15px; margin-top: 8px"><span class="mut" style="text-decoration: line-through">{{w.from}}</span> → <b>{{w.to}}</b></div>
+        <div style="display: flex; gap: 12px; font-size: 12.5px; margin-top: 4px"><b style="color: #17503a">{{w.tl}}</b><span class="mut">{{w.h}}</span></div>
+        <div style="display: flex; gap: 8px; margin-top: 10px"><button class="sb ok" type="button">Kabul</button><button class="sb no" type="button">İstemiyorum</button></div>
+      </div>
+    </sc-for>
+    <a href="M08-Olursuz.dc.html" style="font-size: 13px; font-weight: 600; text-align: center; padding: 8px 0">Bütçemi 4.000 TL yapsam ne olur?</a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const k = (this.state && this.state.k) ? this.state.k : 3;
+    const all = [
+      { from: 'Kola 2,5 L', to: 'Sade maden suyu 6×200 ml', who: 'Hane · şeker', tl: '−228 TL/ay', h: 'Eklenmiş şeker belirgin azalır' },
+      { from: 'Hazır meyve suyu 1 L', to: 'Portakal 1 kg', who: 'Murat · şeker', tl: '−96 TL/ay', h: 'Eklenmiş şeker yok' },
+      { from: 'Tam yağlı beyaz peynir', to: 'Az tuzlu beyaz peynir', who: 'Hane · tuz', tl: '−16 TL/ay', h: 'Tuz daha az' },
+      { from: 'Dana salam 200 g', to: 'Tavuk göğüs 500 g', who: 'Hane · tuz', tl: '−41 TL/ay', h: 'İşlenmiş et yerine taze' },
+      { from: 'Hazır çorba ×4', to: 'Kırmızı mercimek 1 kg', who: 'Hane · tuz', tl: '−29 TL/ay', h: 'Tuz ve katkı daha az' }
+    ];
+    const sums = {
+      1: { tl: '−228 TL', sugar: '−%14', ch: '1 değişiklik' },
+      3: { tl: '−340 TL', sugar: '−%25', ch: '3 değişiklik' },
+      5: { tl: '−410 TL', sugar: '−%31', ch: '5 değişiklik' }
+    };
+    const mk = (n) => ({ label: String(n), on: k === n, off: k !== n, pick: () => this.setState({ k: n }) });
+    return { opts: [mk(1), mk(3), mk(5)], swaps: all.slice(0, k), sum: sums[k] };
+  }
+}
+</script>
+</body>
+</html>

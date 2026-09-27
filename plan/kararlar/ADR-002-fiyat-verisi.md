@@ -1,0 +1,7 @@
+# ADR-002 · Fiyat verisi: marketfiyati.org.tr izni + yedek
+
+**Tarih / onay:** 2026-09-24
+
+- **Ne:** marketfiyati.org.tr'den yazılı izin istendi (Levent maili 24 Eylül 2026'da gönderdi). Yanıt gelene kadar ve yedek olarak: hanelerin fişleri + ekip fiyat turu (2 haftada bir) + her fiyatta yaş etiketi.
+- **Neden:** Kullanım koşulları yazılı izin şart koşuyor; scraping hukuki risk. Fiyat, MSM ve "sağlığın fiyatı"nın girdisi.
+- **Alternatif:** market sitelerini kazımak · yalnız kullanıcı fişi. **Neden değil:** hukuki risk · seyrek ve gecikmeli veri.
