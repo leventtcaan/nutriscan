@@ -1,0 +1,7 @@
+# Codex proje yapılandırması (yalnız güvenilen projede yüklenir). Kişisel tercihler burada değil, ~/.codex/config.toml'da.
+# Azure Boards MCP — salt okunur kullanım: PAT'in yetkisi yalnız Work Items (Read) + Project and Team (Read).
+# PERSONAL_ACCESS_TOKEN = base64("<azure-eposta>:<PAT>"), ortam değişkeni olarak; repoya girmez. Bkz. plan/ilk-prompt.md.
+[mcp_servers.ado]
+command = "npx"
+args = ["-y", "@azure-devops/mcp@2.10.0", "hilalhocaoglu20", "-d", "core", "work", "work-items", "--authentication", "pat"]
+env_vars = ["PERSONAL_ACCESS_TOKEN"]

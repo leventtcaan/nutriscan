@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Bu plan neden böyle</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Instrument+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Instrument Sans',system-ui,sans-serif;color:#1c2420;background:#f5f1e8}
+*{box-sizing:border-box}
+a{color:#1f5c45}a:hover{color:#15432f}
+.w{width:1440px;height:900px;background:#f5f1e8;display:flex;flex-direction:column;overflow:hidden}
+.nav{height:64px;display:flex;align-items:center;gap:28px;padding:0 32px;border-bottom:1px solid #e2dbcb;background:#fffdf8;flex-shrink:0}
+.nl{font-size:14px;font-weight:600;color:#56615b;text-decoration:none;height:64px;display:flex;align-items:center;border-bottom:2px solid transparent}
+.nl:hover{color:#1c2420}
+.nlon{color:#1c2420;border-bottom-color:#1f5c45}
+.disp{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-0.01em;margin:0}
+.eb{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#56615b}
+.mut{color:#56615b}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12.5px;color:#56615b}
+.card{background:#fffdf8;border:1px solid #e2dbcb;border-radius:16px;padding:18px 20px}
+.st{display:grid;grid-template-columns:36px minmax(0,1fr) 170px;gap:14px;align-items:start;padding:14px 0;border-top:1px solid #ece5d6}
+.n{width:28px;height:28px;border-radius:50%;background:#1c2420;color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.big{font-size:30px;font-weight:700}
+.v{display:inline-flex;align-items:center;height:24px;padding:0 8px;border-radius:7px;font-size:12px;font-weight:700}
+.vok{background:#dbece2;color:#17503a}
+.vno{background:#f6ddd6;color:#7d2317}
+</style>
+</helmet>
+<div class="w">
+  <nav class="nav" aria-label="Ana gezinme">
+    <span style="font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 20px; margin-right: 12px">NutriScan</span>
+    <a class="nl" href="W03-Panel.dc.html">Bu hafta</a>
+    <a class="nl nlon" href="W01-Studyo.dc.html">Planlama Stüdyosu</a>
+    <a class="nl" href="W02-SaglikFiyati.dc.html">Sağlığın fiyatı</a>
+    <a class="nl" href="W03-Panel.dc.html">Geçmiş ve fişler</a>
+    <a class="nl" href="M15-Hane.dc.html">Hane</a>
+    <a class="nl" href="W04-Seffaflik.dc.html">Nasıl karar veriyoruz</a>
+    <span style="margin-left: auto; font-size: 14px; font-weight: 600">Aydın hanesi · Selin</span>
+  </nav>
+  <div style="padding: 26px 32px 0; display: flex; justify-content: space-between; align-items: flex-end">
+    <div><div class="eb">Plan · 29 Eylül – 3 Ekim</div><h1 class="disp" style="font-size: 32px; margin-top: 4px">Bu plan neden böyle?</h1></div>
+    <span class="mono">plan pln_42c1 · kural 2.3 · optimizasyon 0.9 · katalog 0.3</span>
+  </div>
+  <div style="display: grid; grid-template-columns: minmax(0, 1fr) 440px; gap: 20px; padding: 18px 32px 28px; flex-grow: 1; min-height: 0">
+    <div class="card" style="padding-top: 8px">
+      <div class="st"><span class="n">1</span><div><b style="font-size: 16px">Kileri okuduk</b><div class="mut" style="font-size: 14px; margin-top: 2px">12 kalem. Ispanak (28 Eyl) ve yoğurt (29 Eyl) bu hafta bozulacağı için “önce kullan” kısıtı eklendi.</div></div><span class="v vok" style="justify-self: end">2 kalem kurtarıldı</span></div>
+      <div class="st"><span class="n">2</span><div><b style="font-size: 16px">Kesin kısıtlarla adayları eledik</b><div class="mut" style="font-size: 14px; margin-top: 2px">84 tariften 31'i çıktı: 9'u Ela (fındık, yer fıstığı), 22'si Selin (gluten) yüzünden. Bu tarifler çözücüye hiç verilmedi.</div></div><span class="v vno" style="justify-self: end">31 tarif elendi</span></div>
+      <div class="st"><span class="n">3</span><div><b style="font-size: 16px">Beğeniyi tahmin ettik</b><div class="mut" style="font-size: 14px; margin-top: 2px">Geçmişte onayladığınız ve reddettiğiniz yemekler, benzer kısıtlı hanelerin tercihleri. Yeni tarifleri de ara ara deniyoruz.</div></div><span class="mono" style="justify-self: end">öneri modeli v0.4</span></div>
+      <div class="st"><span class="n">4</span><div><b style="font-size: 16px">Menüyü, alışverişi ve marketi birlikte planladık</b><div class="mut" style="font-size: 14px; margin-top: 2px">Paket boyutları, ortak malzemeler (iki yemekte aynı soğan), ≤2 market ve bütçe aynı modelde. Çözüm 0,8 sn, bu örnekte en iyisi olduğu kanıtlandı.</div></div><span class="mono" style="justify-self: end">optimallik boşluğu %0</span></div>
+      <div class="st"><span class="n">5</span><div><b style="font-size: 16px">Sonucu yeniden kontrol ettik</b><div class="mut" style="font-size: 14px; margin-top: 2px">5 yemek × 4 kişi = 20 öğün ve 23 alışveriş kalemi kural motorundan tekrar geçti. Açıklamalar bu kayıttan yazıldı.</div></div><span class="v vok" style="justify-self: end">0 ihlal</span></div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 16px; min-height: 0">
+      <div class="card">
+        <div class="eb">Birlikte planlamanın farkı</div>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 10px">
+          <div style="padding: 12px; border-radius: 12px; background: #f3eee3"><div class="mut" style="font-size: 13px">Önce menü, sonra liste</div><div class="big">6.310 TL</div><div class="mut" style="font-size: 13px">1 paket ıspanak israf</div></div>
+          <div style="padding: 12px; border-radius: 12px; background: #e6f0ea"><div style="font-size: 13px; color: #17503a">Birlikte planlayınca</div><div class="big" style="color: #17503a">5.940 TL</div><div style="font-size: 13px; color: #17503a">israf yok · −370 TL</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="eb" style="color: #7d2317">Evdeki alerjinin bu haftaki maliyeti</div>
+        <div class="big" style="margin-top: 4px">62 TL</div>
+        <div style="font-size: 14px; line-height: 1.5; margin-top: 4px">Selin'in glutensiz pizza tabanı ve ekmeği, Ela için pirinç patlağı. Bu bir kısıtın bedeli; gevşetmiyoruz, yalnızca görünür kılıyoruz.</div>
+      </div>
+      <div class="card" style="font-size: 14px; line-height: 1.5">
+        <b>Beğenmediğin bir şey mi var?</b>
+        <div class="mut" style="margin-top: 4px">Bir yemeği kilitle ya da çıkar; plan kalan kısıtlarla yeniden kurulur ve farkı burada görürsün.</div>
+        <a href="W01-Studyo.dc.html" style="display: inline-block; margin-top: 8px; font-weight: 700">Stüdyoda düzenle</a>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

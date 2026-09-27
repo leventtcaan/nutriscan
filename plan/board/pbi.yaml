@@ -1,0 +1,1594 @@
+# NutriScan PBI kaynağı — tek kaynak. Board CSV'si ve promptlar buradan üretilir:
+#   python3 plan/board/board_uret.py
+# Feature/Epic başlıkları ve "en geç" tarihleri plan/takvim.md'den okunur; burada yalnız PBI ayrıntısı var.
+# Alanlar: id, feature, baslik, sahip (L/H/O/E), agent (claude-code|codex|antigravity|insan), modul, area,
+#          effort (1/2/3/5/8), sprint, bagli, omurga, kurallar, sozlesme, baglam[], gorev, degistir[], dokunma[],
+#          adimlar[], kabul[], komutlar[]
+# Kural: prompt kuralları tekrar etmez, repo dosyalarına işaret eder. Kaynak/eşik/sayı UYDURULMAZ; bilinmeyen [..] kalır.
+
+# kapasite: kişi başı sprint Effort sınırı. Sprint 0 önden yüklü; Levent 20 platform rolü nedeniyle (ekip onayı 2026-09-27).
+kapasite:
+  varsayilan: 13
+  Sprint 0:
+    L: 20
+    H: 14
+    O: 14
+varsayilan_baglam:
+- AGENTS.md (kök)
+- docs/anayasa.md (S1–S22, K01–K20)
+- plan/calisma-akisi.md (akış, DoR/DoD, PR kuralları)
+pbi:
+- id: A0.1-a
+  feature: A0.1
+  baslik: Takvim v1.5 + çalışma akışı + vekil tablosu ekip onayı
+  sahip: E
+  agent: insan
+  area: proje
+  effort: 1
+  sprint: Hazırlık
+  omurga: zemin
+  gorev: Üç kişi plan/takvim.md v1.4, plan/calisma-akisi.md ve §8 vekil tablosunu okur; itirazlar grupta yazılı, onay grupta tek satır.
+  kabul:
+  - Üç kişinin yazılı onayı ya da itirazları çözülmüş
+  - Onaylanan sürüm DURUM.md'ye işlendi
+  paylar:
+    L: Takvim v1.5 PDF'ini, çalışma akışı PDF'ini ve board'daki kendi PBI'larını oku. Gelen itiraz ve eksikleri derle; karara bağlananları takvime ve pbi.yaml'a işle,
+      board'u betikle güncelle. Onaylanan sürümü DURUM.md'ye yaz.
+    H: Takvim v1.5 PDF'ini, çalışma akışı PDF'ini ve board'daki kendi PBI'larını oku (atama, tarih, kapsam, bağımlılık). İtirazın ya da eksik gördüğün iş varsa ilgili
+      PBI'a yorum yaz; yoksa grupta tek satır onay ver.
+    O: Takvim v1.5 PDF'ini, çalışma akışı PDF'ini ve board'daki kendi PBI'larını oku (atama, tarih, kapsam, bağımlılık). İtirazın ya da eksik gördüğün iş varsa ilgili
+      PBI'a yorum yaz; yoksa grupta tek satır onay ver.
+- id: A0.2-a
+  feature: A0.2
+  baslik: Ekip hanelerinde fiş + "bitti/attım" kaydı başlasın
+  sahip: E
+  agent: insan
+  area: data
+  effort: 1
+  sprint: Hazırlık
+  omurga: veri
+  gorev: Her üye kendi hanesinin market fişlerini fotoğraflar ve biten/atılan ürünü not eder (kiler ve fiş eşleştirme için gerçek veri). Görseller repoya girmez (KVKK);
+    ortak klasör Levent belirler.
+  kabul:
+  - Üç hanede en az 1 haftalık kayıt başladı
+  - Kayıt biçimi (tarih, ürün, olay) ortak
+  paylar:
+    L: Kendi hanende 28 Eylül'den itibaren market fişlerini fotoğrafla, biten ya da atılan ürünü tarih · ürün · olay (bitti/attım/eve girdi) olarak ortak tabloya
+      yaz. Ortak klasörü ve tablo biçimini ilk gün kur ve gruba paylaş. Görseller repoya girmez (KVKK).
+    H: Kendi hanende 28 Eylül'den itibaren market fişlerini fotoğrafla, biten ya da atılan ürünü tarih · ürün · olay (bitti/attım/eve girdi) olarak ortak tabloya
+      yaz. Görseller repoya girmez (KVKK).
+    O: Kendi hanende 28 Eylül'den itibaren market fişlerini fotoğrafla, biten ya da atılan ürünü tarih · ürün · olay (bitti/attım/eve girdi) olarak ortak tabloya
+      yaz. Görseller repoya girmez (KVKK).
+- id: A0.4-a
+  feature: A0.4
+  baslik: EVREN hesabı + API anahtarı (kasaya)
+  sahip: L
+  agent: insan
+  area: backend\assistant
+  effort: 1
+  sprint: Hazırlık
+  omurga: guvence2
+  gorev: evren.ssyz.org.tr hesabı açılır, API anahtarı parola yöneticisine/SOPS'a konur (repoya ve sohbete asla), kullanım şartları ve 1 Kasım sonrası kredi fiyatı
+    not edilir.
+  kabul:
+  - Anahtar kasada; kimsenin sohbetinde/dosyasında düz metin yok
+  - Şartlar ve fiyat arastirma/09-evren-ve-board-notu.md'ye eklendi
+- id: A0.5-a
+  feature: A0.5
+  baslik: Proposal eksikleri + ekip okuması
+  sahip: E
+  agent: insan
+  area: proje
+  effort: 2
+  sprint: Hazırlık
+  omurga: zemin
+  gorev: Grup no, öğrenci numaraları, isim yazımları, teslim tarihi doldurulur; Hilal ve Ozan kendi rol/iş paketi satırlarını ve ilgili FR'leri okur. Metin yalnız
+    plan/proposal/proposal-v0.md'de değişir, docx betikle üretilir.
+  kabul:
+  - '"[..]" yer tutucusu kalmadı'
+  - python3 plan/proposal/build_docx.py ile 6 sayfa, PDF danışmana (en geç 9 Ekim)
+  paylar:
+    L: Grup numarası, teslim tarihi ve isim yazımlarını plan/proposal/proposal-v0.md'ye işle; python3 plan/proposal/build_docx.py ile docx + PDF üret (6 sayfa sınırı),
+      en geç 9 Ekim'de danışmana gönder.
+    H: Öğrenci numaranı ve isminin yazımını ilet. Proposal'da kendi rolünü, WP3'ü ve FR-2/FR-3/FR-4 (profil, kural motoru, sağlık kuralları) satırlarını oku; düzeltme
+      önerini yorum olarak yaz.
+    O: Öğrenci numaranı ve isminin yazımını ilet. Proposal'da kendi rolünü, WP2/WP5'i ve arayüzle ilgili FR'leri oku; düzeltme önerini yorum olarak yaz.
+- id: A0.6-a
+  feature: A0.6
+  baslik: Tarif şeması v0 (JSON Schema) + 3 örnek tarif
+  sahip: O
+  agent: antigravity
+  modul: data/recipes, data/schemas
+  area: data
+  effort: 3
+  sprint: Hazırlık
+  bagli:
+  - A0.9-a
+  omurga: veri
+  kurallar: S8 (bilinmiyor ≠ yok), K "OFF girdisi güvenilmeyen metin"
+  sozlesme: eklemeli (data/schemas yeni)
+  baglam:
+  - arastirma/05-menu-kiler-oneri.md §1 (tarif veri modeli önerisi)
+  - arastirma/07-tez-v5.md §7 (veri fabrikası), §3.1 (sağlık kuralları besin alanları ister)
+  gorev: Ekibin yazacağı 200 Türk ev yemeği için YAML tarif biçimini ve onu doğrulayan JSON Schema'yı tanımla. Malzemeler sözlük kimliğiyle (A0.6-b) anılır; miktar
+    + birim + porsiyon zorunlu; alerjenler malzemeden türetilir, elle yazılmaz.
+  degistir:
+  - data/schemas/recipe.schema.json
+  - data/recipes/
+  dokunma:
+  - backend/
+  - apps/
+  adimlar:
+  - Önce alan listesini ve gerekçesini PR açıklamasına yaz (id, ad, porsiyon, süre, malzemeler[sözlük_id, miktar, birim, not], adımlar, etiketler, kaynak/yazar, lisans).
+  - data/schemas/recipe.schema.json yaz (JSON Schema 2020-12).
+  - 3 örnek tarif (mercimek çorbası, kuru fasulye, tavuk sote) YAML olarak yaz; sözlükte olmayan malzeme kullanma.
+  kabul:
+  - 3 örnek tarif şemadan geçiyor (CI veri doğrulayıcısı ya da yerel komut)
+  - Alerjen alanı tarifte yok; malzemeden türetileceği şemada açıklamalı
+  - Birim listesi sabit enum (g, ml, adet, yemek kaşığı, çay kaşığı, su bardağı) ve gram karşılığı sözlükte
+  komutlar:
+  - uv run data/validators/validate.py data/recipes
+- id: A0.6-b
+  feature: A0.6
+  baslik: Malzeme sözlüğü v0 (~150) + alerjen ontolojisi taslağı
+  sahip: O
+  agent: antigravity
+  modul: data/dictionary, data/allergens
+  area: data
+  effort: 5
+  sprint: Hazırlık
+  bagli:
+  - A0.6-a
+  omurga: veri
+  kurallar: S12 (Türkçe ve belirsizliğe dürüst çözümleme), S8
+  sozlesme: eklemeli
+  baglam:
+  - Kaynak — TGK Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği (14 alerjen listesi)
+  - arastirma/05-akislar-edge-case.md (Türkçe eş anlamlı / türev tuzakları)
+  gorev: 200 tarifte en sık geçecek ~150 malzemeyi sözlüğe al (kimlik, Türkçe ad, eş anlamlılar, varsayılan birimin gram karşılığı, 14 alerjenden hangilerini içerir,
+    gluten içerir mi, eklenmiş şeker mi). Alerjen ontolojisi 14 düzenlenmiş alerjeni ve türevlerini (ör. fındık → sert kabuklu meyveler) tanımlar. Hilal (safety sahibi)
+    alerjen eşlemelerini çift onaylar.
+  degistir:
+  - data/dictionary/
+  - data/allergens/
+  - data/schemas/
+  dokunma:
+  - backend/
+  - apps/
+  - data/recipes/ (yalnız örnekler uyumsuzsa)
+  adimlar:
+  - Önce sözlük ve ontoloji şemalarını yaz, sonra verileri.
+  - Emin olmadığın alerjen eşlemesini "belirsiz" işaretle — tahmin etme (S8).
+  - Her alerjen eşlemesine kaynak alanı ekle (yönetmelik maddesi ya da [KAYNAK]).
+  kabul:
+  - ≥150 malzeme, şemadan geçiyor; eş anlamlılar tekil (çakışma yok — test)
+  - 14 alerjen + gluten ontolojide; her malzemenin alerjen alanı dolu ya da "belirsiz"
+  - Hilal'in çift onayı PR'da
+  komutlar:
+  - uv run data/validators/validate.py data/dictionary data/allergens
+- id: A0.9-a
+  feature: A0.9
+  baslik: GitHub private repo (Pro) + koruma + collaborator'lar
+  sahip: L
+  agent: insan
+  area: proje
+  effort: 1
+  sprint: Hazırlık
+  omurga: zemin
+  gorev: Levent'in GitHub Pro hesabında private monorepo; Hilal ve Ozan collaborator; main korumalı (PR zorunlu, CI zorunlu, 1 onay, force-push yok); secret scanning
+    + push protection açık. Takvimde en geç 18 Ekim, ama A0.6 verisi repoda yaşasın diye erken açılması önerilir.
+  kabul:
+  - Üç kişi push edebiliyor, main'e doğrudan push reddediliyor
+  - 'Boş README + .gitignore + LICENSE kararı (private: yok) commit''li'
+  en_gec: 10 Ekim
+- id: A0.9-b
+  feature: A0.9
+  baslik: Azure Boards (Scrum) + GitHub bağlantısı + backlog içe aktarımı
+  sahip: L
+  agent: insan
+  area: proje
+  effort: 2
+  sprint: Hazırlık
+  bagli:
+  - A0.9-a
+  omurga: zemin
+  gorev: Azure DevOps'ta NutriScan projesi (Scrum), Area Path'ler (calisma-akisi §2), sprint iterasyonları (§3), Azure Boards GitHub App ile repo bağlantısı; plan/board/azure-import.csv
+    içe aktarılır; üç kişinin agent'ına Azure DevOps MCP erişimi (salt okunur başlangıç).
+  kabul:
+  - Epic/Feature/PBI ağacı board'da; sprintlere dağılmış
+  - Bir test PR'ında "Fixes AB#<id>" merge sonrası PBI'ı Done yapıyor
+  - PBI açıklamalarında prompt linki (plan/board/promptlar/<ID>.md)
+  en_gec: 12 Ekim
+- id: A1.1-a
+  feature: A1.1
+  baslik: Kök AGENTS.md v1 + docs/anayasa.md
+  sahip: L
+  agent: claude-code
+  modul: AGENTS.md, docs/
+  area: platform
+  effort: 3
+  sprint: Hazırlık
+  bagli:
+  - A0.9-a
+  omurga: zemin
+  kurallar: tümü (S1–S22, K01–K20, ADR-011 sağlık kuralları)
+  sozlesme: yok
+  baglam:
+  - arastirma/06-tez-v4.md §7–8, arastirma/05-sistem-fmea.md (K kuralları kaynağı)
+  - arastirma/08-ekip-calisma-modeli.md §3.d (talimat mimarisi)
+  - plan/calisma-akisi.md, plan/kararlar.md (ADR-001…011)
+  gorev: 'Ekibin üç agent''ının (Claude Code, Codex, Antigravity) okuyacağı tek kaynak talimat: kök AGENTS.md (≤150 satır, yönlendirici) + docs/anayasa.md (S1–S22,
+    K01–K20, sağlık dili; her maddenin yanında zorlayan test/PBI). 28 Eylül''de ortak altyapıyla birlikte kuruldu (ADR-013); bu PBI''ın kalanı: üç araçta yüklemenin
+    denenerek doğrulanması.'
+  degistir:
+  - AGENTS.md
+  - docs/anayasa.md
+  - docs/adr/
+  dokunma:
+  - backend/
+  - apps/
+  - data/
+  adimlar:
+  - 'Üç araçta birer deneme oturumu aç (Claude Code, Codex, Antigravity): agent''tan AGENTS.md''deki kırmızı çizgi 7''yi ve skill listesini söylemesini iste.'
+  - Yüklenmeyen varsa nedenini bul (sürüm, yol, boyut) ve ADR-013'e not düş.
+  kabul:
+  - AGENTS.md ≤150 satır, <24 KB (Antigravity sınırı)
+  - 'Her K maddesinin yanında zorlayan test adı ya da "test: <PBI>" notu'
+  - Üç araçta AGENTS.md ve .agents/skills yüklendiği gösterildi (PR'da kısa not/ekran görüntüsü)
+  en_gec: 18 Ekim
+- id: A1.1-b
+  feature: A1.1
+  baslik: Modül AGENTS.md/CLAUDE.md iskeletleri + CODEOWNERS
+  sahip: L
+  agent: claude-code
+  modul: .github/, */AGENTS.md
+  area: platform
+  effort: 2
+  sprint: Sprint 0
+  bagli:
+  - A1.1-a
+  - A1.3-a
+  omurga: zemin
+  sozlesme: yok
+  baglam:
+  - arastirma/08-ekip-calisma-modeli.md §3.a–3.c
+  - plan/calisma-akisi.md §6–8
+  gorev: Her kod modülüne ≤60 satırlık AGENTS.md (sorumluluk, public API, izinli bağımlılıklar, modüle özgü kurallar, test komutu) + CLAUDE.md (@AGENTS.md); CODEOWNERS
+    calisma-akisi §8 tablosundan. PR şablonu ve issue yapılandırması 28 Eylül'de kuruldu (ADR-013).
+  degistir:
+  - .github/
+  - backend/**/AGENTS.md
+  - apps/**/AGENTS.md
+  - data/AGENTS.md
+  dokunma:
+  - kaynak kod
+  kabul:
+  - Her modül klasöründe AGENTS.md ve CODEOWNERS satırı var
+  - PR şablonu "Fixes AB#" satırını ve "açıklayabilirim" kutusunu içeriyor
+- id: A1.1-c
+  feature: A1.1
+  baslik: ci-guard — talimat dosyası ve skill yapısı denetimi
+  sahip: L
+  agent: claude-code
+  modul: .claude/, .agents/, tools/scripts/
+  area: platform
+  effort: 2
+  sprint: Sprint 0
+  bagli:
+  - A1.1-b
+  omurga: zemin
+  gorev: 'tools/scripts/ci-guard: kök CLAUDE.md''nin ilk satırı @AGENTS.md; CLAUDE.local.md ve AGENTS.override.md depoda yok; her kod modülünde AGENTS.md + CLAUDE.md
+    (@AGENTS.md) + CODEOWNERS satırı; .claude/skills symlink''leri .agents/skills ile birebir; kök AGENTS.md ≤150 satır ve <24 KB, modül AGENTS.md ≤60 satır, toplam
+    talimat ≤32 KiB. CI iş akışı olarak bağlanır.'
+  degistir:
+  - tools/scripts/ci-guard*
+  - .github/workflows/ci-guard.yml
+  kabul:
+  - ci-guard kasıtlı bozulmuş bir dalda kırmızı, main'de yeşil
+  - Üç araçta birer deneme oturumu kök kuralları "görüyor" (PR'da kısa not)
+- id: A1.1-d
+  feature: A1.1
+  baslik: sprint-report betiği (board → Meeting Record taslağı)
+  sahip: L
+  agent: claude-code
+  modul: tools/scripts/
+  area: platform
+  effort: 2
+  sprint: Sprint 2
+  bagli:
+  - A0.9-b
+  omurga: zemin
+  gorev: Azure DevOps REST (ya da MCP) ile verilen sprintte Done olan PBI'ları ve sonraki sprintin Committed/Approved PBI'larını çek; kaynak/SDP Meeting Record Form.docx
+    şablonunu "yapılanlar / yapılacaklar" ile doldur (python-docx). Kişisel erişim anahtarı ortam değişkeninden okunur, repoya girmez. MR3–MR4 elle hazırlanır; betik
+    MR5'ten itibaren kullanılır.
+  degistir:
+  - tools/scripts/sprint_report.py
+  kabul:
+  - Sprint 0 için docx taslağı üretildi; alanlar İngilizce/Türkçe tutarlı
+  - Anahtar yoksa anlaşılır hata, yarım dosya yok
+  en_gec: 27 Kasım
+- id: A1.2-a
+  feature: A1.2
+  baslik: CI — backend (build/test, Modulith verify, ArchUnit, Spotless, coverage)
+  sahip: L
+  agent: claude-code
+  modul: .github/workflows/, backend/src/test/**/architecture
+  area: platform
+  effort: 3
+  sprint: Sprint 0
+  bagli:
+  - A1.3-a
+  omurga: zemin
+  kurallar: K "alerjenli seçenek çözücüye gitmez" (planning yalnız safety.api'den aday alır), K "tek çıkış kapısı" (dış LLM SDK'sını yalnız privacy.gateway import
+    eder), K "enum ordinal yok"
+  baglam:
+  - arastirma/08-ekip-calisma-modeli.md §3.a sözleşmeler tablosu
+  - §3.c CI listesi
+  gorev: Backend iş akışı — değişen modüllerde build + test, ApplicationModules.verify(), ArchUnit ile ilk üç K kuralı, Spotless, JaCoCo (değişen kodda %70; safety/privacy
+    %90). İş akışı yalnız backend/ değişince koşar.
+  degistir:
+  - .github/workflows/ci-backend.yml
+  - backend/src/test/java/**/architecture/
+  kabul:
+  - Kasıtlı ihlal içeren test dalında (ör. planning → catalog doğrudan erişim) CI kırmızı
+  - main korumasında zorunlu kontrol olarak kayıtlı
+  - Soğuk koşu ≤10 dk (Gradle cache)
+- id: A1.2-b
+  feature: A1.2
+  baslik: CI — apps + contracts + gizli bilgi (ESLint/Prettier, oasdiff, istemci güncel mi, gitleaks)
+  sahip: L
+  agent: claude-code
+  modul: .github/workflows/
+  area: platform
+  effort: 2
+  sprint: Sprint 0
+  bagli:
+  - A1.6-a
+  - A1.6-b
+  omurga: zemin
+  gorev: apps/ ve packages/ için lint + typecheck + test; contracts/ değişince oasdiff breaking (kırıcı değişiklik contract-change etiketi yoksa kırmızı) ve üretilmiş
+    istemcinin güncel olduğu kontrolü; her PR'da gitleaks.
+  degistir:
+  - .github/workflows/ci-apps.yml
+  - ci-contracts.yml
+  - ci-secrets.yml
+  kabul:
+  - Kırıcı OpenAPI değişikliği etiketsiz PR'da kırmızı
+  - Sahte bir anahtar içeren commit gitleaks'e takılıyor
+- id: A1.2-c
+  feature: A1.2
+  baslik: CI — veri doğrulayıcıları (şema, sözlük üyeliği, alerjen kapanışı, sağlık kuralı kaynağı)
+  sahip: H
+  agent: codex
+  modul: data/validators/, .github/workflows/
+  area: data
+  effort: 3
+  sprint: Sprint 0
+  bagli:
+  - A0.6-b
+  - A1.12-a
+  omurga: veri
+  kurallar: S8, ADR-011 (her eşik satırında kaynak zorunlu)
+  gorev: Python (uv) doğrulayıcı — tarif/sözlük/alerjen/sağlık kuralı dosyalarını şemaya karşı doğrular; tarifteki her malzeme sözlükte; her sözlük malzemesinin alerjen
+    alanı dolu ya da "belirsiz"; health-rules satırlarında kaynak + madde + tarih boş değil. Veri PR'larında çift onay (CODEOWNERS) zorunlu. İş akışı dosyası .github
+    altında olduğu için Levent (platform) review eder.
+  degistir:
+  - data/validators/
+  - .github/workflows/ci-data.yml
+  kabul:
+  - Kaynaksız bir eşik satırı ve sözlükte olmayan malzeme içeren test verisi kırmızı
+  - Hilal review etti (veri sahibi tarafı)
+  komutlar:
+  - uv run data/validators/validate.py data/
+- id: A1.3-a
+  feature: A1.3
+  baslik: Backend iskeleti — Gradle 9 + Boot 4.1 + Modulith, boş modüller, verify yeşil
+  sahip: L
+  agent: claude-code
+  modul: backend/
+  area: backend
+  effort: 3
+  sprint: Hazırlık
+  bagli:
+  - A0.9-a
+  omurga: zemin
+  baglam:
+  - plan/kararlar.md ADR-006
+  - arastirma/10-stack-backend-ai.md
+  - arastirma/08-ekip-calisma-modeli.md §3.b
+  gorev: Java 25, Spring Boot 4.1, Spring Modulith 2.1, Gradle 9 Kotlin DSL ile backend iskeleti. Modüller (household, identity, consent, safety, catalog, planning,
+    recommendation, pantry, vision, assistant, privacy, audit, shared) boş paket + package-info.java (@ApplicationModule, izinli bağımlılıklar). Sürümleri resmi dokümandan
+    doğrula; uyumsuzluk varsa uydurma, PR'da yaz.
+  degistir:
+  - backend/
+  kabul:
+  - ./gradlew build yeşil; ModularityTests (verify) geçiyor
+  - Modül listesi calisma-akisi §8 ile aynı
+  - Sürümler gradle/libs.versions.toml'da tek yerde
+  komutlar:
+  - ./gradlew build
+  en_gec: 18 Ekim
+- id: A1.3-b
+  feature: A1.3
+  baslik: Veritabanı — PostgreSQL 18 + pgvector, Flyway (modül başına klasör), Testcontainers, compose dev
+  sahip: H
+  agent: codex
+  modul: backend/, infra/compose/
+  area: backend
+  effort: 3
+  sprint: Sprint 0
+  bagli:
+  - A1.3-a
+  omurga: zemin
+  kurallar: K "hane verisi DB düzeyinde ayrık" (ilk tabloda household_id + RLS kararı PR'da), K "enum ordinal yok"
+  baglam:
+  - plan/kararlar.md ADR-006
+  - ADR-010
+  gorev: infra/compose/dev.yml ile PostgreSQL 18 + pgvector; Flyway migration'ları modül başına klasörde, zaman damgalı sürüm (V20261020_1200__…); Testcontainers
+    ile entegrasyon testi tabanı. Satır düzeyi güvenlik (RLS) ile household ayrımının nasıl yapılacağını kısa bir ADR taslağı olarak öner.
+  degistir:
+  - backend/src/main/resources/db/migration/
+  - backend/src/test/
+  - infra/compose/
+  kabul:
+  - docker compose -f infra/compose/dev.yml up ile DB ayağa kalkıyor, pgvector uzantısı yüklü (test)
+  - Testcontainers testi CI'da geçiyor
+  - RLS ADR taslağı docs/adr/ altında (karar ekip onayına)
+- id: A1.4-a
+  feature: A1.4
+  baslik: Karar kaydı (Decision Record) şeması + audit modülü (append-only)
+  sahip: L
+  agent: claude-code
+  modul: contracts/, backend/…/audit
+  area: backend\audit
+  effort: 5
+  sprint: Sprint 0
+  bagli:
+  - A1.3-b
+  omurga: guvence1
+  kurallar: K "audit silinemez", S16 (karar sürümlere bağlı), NFR-5 (%100 karar kaydı)
+  sozlesme: eklemeli (contracts/decision-record.schema.json yeni)
+  baglam:
+  - plan/prototip-kaynak/A01-KararIzi.dc.html — ham kayıt örneği
+  - arastirma/05-sistem-fmea.md
+  gorev: 'Karar üreten tüm modüllerin yazacağı kaydın JSON Schema''sı (scanId/decisionId, traceId, householdId, ürün + kaynak + sürüm, profil sürümleri, kural kimliği
+    + sürümü, eşik tablosu sürümü, sonuç, açıklama kaynağı: şablon|LLM) ve audit modülünde append-only depolama + okuma API''si. Kayıtta sağlık verisi düz metin olarak
+    durmaz (profil sürümü referansı yeter).'
+  degistir:
+  - contracts/decision-record.schema.json
+  - backend/src/main/java/**/audit/
+  - ilgili migration
+  kabul:
+  - UPDATE/DELETE veritabanı düzeyinde engelli (test)
+  - Şemaya uymayan kayıt reddediliyor (test)
+  - A01 prototipindeki ham kayıt örneği şemadan geçiyor (fixture)
+- id: A1.4-b
+  feature: A1.4
+  baslik: Log/metrik/iz şeması + "sağlık verisi logda yok" kanarya testi
+  sahip: L
+  agent: claude-code
+  modul: backend/…/shared, infra/
+  area: backend
+  effort: 3
+  sprint: Sprint 1
+  bagli:
+  - A1.3-a
+  omurga: zemin
+  kurallar: NFR-4 (logda/izde sağlık verisi yok), K "prod verisi prod dışına çıkmaz"
+  gorev: Yapılandırılmış JSON log, OpenTelemetry iz + metrik; log alanları için izin listesi (allowlist). Sentetik "fındık/diyabet" profiliyle bir istek at, tüm log
+    ve iz çıktısında bu kelimelerin geçmediğini doğrulayan kanarya testi.
+  degistir:
+  - backend/src/main/java/**/shared/observability/
+  - backend/src/test/
+  - infra/otel/
+  kabul:
+  - Kanarya testi CI'da; kasıtlı sızıntı ekleyen dalda kırmızı
+  - traceId karar kaydıyla aynı (A1.4-a ile ilişki)
+  en_gec: 13 Kasım
+- id: A1.5-a
+  feature: A1.5
+  baslik: Sentetik hane üreteci (alerjen + sağlık durumu + bütçe)
+  sahip: H
+  agent: codex
+  modul: tools/synth/ (ya da research/synth)
+  area: data
+  effort: 3
+  sprint: Sprint 0
+  bagli:
+  - A0.6-b
+  omurga: zemin
+  kurallar: K "prod verisi prod dışına çıkmaz" (gerçek kişi verisi yok)
+  gorev: Tohumla (seed) tekrarlanabilir sentetik hane üreteci — üye sayısı, yaş, 14 alerjen + çölyak dağılımı, sağlık durumu (diyabet, hipertansiyon, hamilelik),
+    bütçe, tercih edilen zincirler. Çıktı JSON; E1/E2 senaryoları ve geliştirme tohum verisi bundan beslenir. Dağılım varsayımları dosyada açıkça yazılı ("varsayım"
+    etiketiyle, uydurma istatistik değil).
+  degistir:
+  - tools/synth/
+  kabul:
+  - Aynı tohum → aynı çıktı (test)
+  - 1.000 hane üretimi <5 sn; şema doğrulaması geçiyor
+  - Gerçek isim yok (takma ad listesi)
+- id: A1.5-b
+  feature: A1.5
+  baslik: Git'te seed verisi + tek komutla yerel DB + ortak staging DB (sentetik)
+  sahip: H
+  agent: codex
+  modul: data/seed/, infra/compose/
+  area: data
+  effort: 2
+  sprint: Sprint 0
+  bagli:
+  - A1.3-b
+  - A1.5-a
+  omurga: zemin
+  baglam:
+  - plan/kararlar.md ADR-010
+  gorev: data/seed altında sentetik haneler + örnek katalog; tek komut (./gradlew seed ya da make seed) herkesin yerel DB'sini aynı duruma getirir. Contabo staging
+    DB'ye yalnız sentetik veri (A1.11 sonrası).
+  degistir:
+  - data/seed/
+  - infra/compose/
+  - backend/ seed görevi
+  kabul:
+  - Temiz makinede tek komutla aynı satır sayıları (test)
+  - Staging'de gerçek veri olmadığı README'de ve testte
+- id: A1.6-a
+  feature: A1.6
+  baslik: OpenAPI sözleşme iskeleti + sözleşme testi
+  sahip: L
+  agent: claude-code
+  modul: contracts/openapi/, backend/
+  area: platform
+  effort: 2
+  sprint: Hazırlık
+  bagli:
+  - A1.3-a
+  omurga: zemin
+  sozlesme: eklemeli (ilk sürüm)
+  gorev: contracts/openapi/ altında modül başına dosya iskeleti (ortak hata modeli, sayfalama, 4 durumlu karar enum'u string olarak — ordinal yok), sistem uç noktası
+    (GET /api/system/ping — sürüm, DB durumu). Backend uygulamasının sözleşmeye uyduğunu doğrulayan test.
+  degistir:
+  - contracts/openapi/
+  - backend/…/shared/api
+  kabul:
+  - Karar enum'u NOT_SUITABLE | CAUTION | NO_CONFLICT_FOUND | COULD_NOT_VERIFY; "SAFE" yok (test)
+  - Sözleşme ile uygulama farkı testte yakalanıyor
+  en_gec: 18 Ekim
+- id: A1.6-b
+  feature: A1.6
+  baslik: Orval ile üretilmiş TS istemcisi + pnpm workspace
+  sahip: O
+  agent: antigravity
+  modul: packages/api-client, kök pnpm ayarları
+  area: apps
+  effort: 2
+  sprint: Sprint 0
+  bagli:
+  - A1.6-a
+  omurga: zemin
+  gorev: pnpm workspaces (apps/*, packages/*); Orval ile contracts/openapi'den packages/api-client üretimi (TanStack Query hook'ları); "pnpm gen:api" komutu. Üretilmiş
+    kod elle düzenlenmez.
+  degistir:
+  - package.json
+  - pnpm-workspace.yaml
+  - packages/api-client/
+  dokunma:
+  - contracts/ (yalnız okur)
+  kabul:
+  - pnpm gen:api temiz makinede çalışıyor; ping hook'u üretiliyor
+  - CI "istemci güncel mi" kontrolü (A1.2-b) bu komutu kullanıyor
+  en_gec: 25 Ekim
+- id: A1.7-a
+  feature: A1.7
+  baslik: Mobil iskelet — Expo, 5 sekme, tasarım token'ları
+  sahip: O
+  agent: antigravity
+  modul: apps/mobile
+  area: apps\mobile
+  effort: 3
+  sprint: Sprint 0
+  bagli:
+  - A1.6-b
+  omurga: zemin
+  kurallar: S22 (karar yalnız renkle verilmez), NFR-11 (≥44 px dokunma alanı)
+  baglam:
+  - plan/prototip-kaynak/ — M05 ve M09 sekme çubuğu ve renkler
+  - plan/kararlar.md ADR-007
+  gorev: Expo (TypeScript) uygulaması; sekmeler Bu hafta · Menü · Tara · Mutfak · Asistan (boş ekranlar); prototip renk ve tipografisinden tasarım token'ları packages/ui'ye.
+    Store ayarı yok (yalnız geliştirme).
+  degistir:
+  - apps/mobile/
+  - packages/ui/
+  kabul:
+  - iOS simülatörde açılıyor, 5 sekme gezilebiliyor (PR'da ekran görüntüsü)
+  - Token'lar packages/ui'de tek yerde; lint + typecheck yeşil
+- id: A1.7-b
+  feature: A1.7
+  baslik: ui-core — hüküm rozeti + kesin kısıt / sağlık durumu / hedef çipleri (ortak paket)
+  sahip: O
+  agent: antigravity
+  modul: packages/ui
+  area: apps
+  effort: 2
+  sprint: Sprint 0
+  bagli:
+  - A1.6-b
+  omurga: zemin
+  kurallar: S22, 4 durum dili (güvenli kelimesi yok), ADR-011 (sağlık durumu çipi ayrı görsel)
+  baglam:
+  - plan/prototip-kaynak/M09-Tarama.dc.html
+  - plan/prototip-kaynak/M22-NedenSaglik.dc.html
+  - plan/prototip-kaynak/W04-Seffaflik.dc.html
+  gorev: 'packages/ui içinde mobil ve web''in ortak kullanacağı hüküm rozeti (4 durum: ikon + metin + renk; yalnız renk değil) ve kesin kısıt / sağlık durumu / hedef
+    çipleri. Görsel dil prototipten (M02, M09, M22). React Native ve web''de çalışacak biçimde (paylaşılan mantık + platform görünümü).'
+  degistir:
+  - packages/ui/
+  kabul:
+  - Rozetin 4 durumu için birim testi; "güvenli" metni yok (test)
+  - Durumlar ikon ve metinle ayırt ediliyor (renk körlüğü; ekran görüntüsü)
+  - Mobil iskelet (A1.7-a) rozeti kullanıyor
+- id: A1.8-a
+  feature: A1.8
+  baslik: Walking skeleton — backend ping (sürüm + DB), yerelde; staging hazır olunca orada
+  sahip: L
+  agent: claude-code
+  modul: backend/…/shared
+  area: backend
+  effort: 1
+  sprint: Sprint 0
+  bagli:
+  - A1.3-b
+  - A1.6-a
+  omurga: zemin
+  gorev: GET /api/system/ping sözleşmeye uygun (sürüm, commit, DB erişimi). Sprint 0'da yerel compose ortamında çalışır; staging (A1.11) hazır olunca Caddy arkasında
+    HTTPS ile açılır.
+  degistir:
+  - backend/…/shared/api
+  kabul:
+  - Yerel compose ortamında 200 dönüyor, DB durumu gerçek sorguyla
+  - Staging hazırsa aynı test staging'e karşı da geçiyor
+- id: A1.8-b
+  feature: A1.8
+  baslik: Walking skeleton — mobil ekranda sunucu durumu + uçtan uca smoke testi
+  sahip: O
+  agent: antigravity
+  modul: apps/mobile
+  area: apps\mobile
+  effort: 2
+  sprint: Sprint 0
+  bagli:
+  - A1.7-a
+  - A1.8-a
+  omurga: zemin
+  gorev: '"Bu hafta" sekmesinde üretilmiş istemciyle ping çağrısı; "sunucu: ok · DB: ok · sürüm" göstergesi; hata durumunda anlaşılır mesaj (S6 her durum tasarlanır).
+    Sprint 0''da yerel backend''e, staging hazır olunca staging''e bağlanır.'
+  degistir:
+  - apps/mobile/
+  kabul:
+  - Simülatörde yerel backend'e bağlanıyor (ekran görüntüsü)
+  - Sunucu kapalıyken uygulama çökmeden hata gösteriyor
+- id: A1.9-a
+  feature: A1.9
+  baslik: EVREN denemesi — Türkçe tool-call, p95, gömme, şartlar (rapor)
+  sahip: L
+  agent: claude-code
+  modul: research/evren/
+  area: research
+  effort: 3
+  sprint: Sprint 0
+  bagli:
+  - A0.4-a
+  omurga: guvence2
+  kurallar: 'K "tek çıkış kapısı" (denemede yalnız sentetik veri), deney: E2 hazırlığı'
+  baglam:
+  - arastirma/09-evren-ve-board-notu.md
+  - plan/kararlar.md ADR-009
+  gorev: EVREN OpenAI uyumlu API ile küçük ölçüm düzeneği — 30 Türkçe iş akışı senaryosu (X yiyebilir mi, listeye ekle, takas öner, neden) ile tool-call doğruluğu;
+    p50/p95 gecikme; qwen3-embedding-8b ile Türkçe malzeme eş anlamlısı eşleme örneği (A3.7'ye ön ölçüm). Yalnız sentetik veri. Sonuç research/evren/RAPOR.md; 15
+    Kasım karar kapısının (A2.6) girdisi.
+  degistir:
+  - research/evren/
+  kabul:
+  - Senaryolar ve beklenen araç çağrıları dosyada; sonuçlar tablo halinde
+  - Anahtar ortam değişkeninden; repoda yok (gitleaks yeşil)
+  - 1 Kasım (ücretsiz dönem sonu) öncesi koşuldu
+- id: A1.10-a
+  feature: A1.10
+  baslik: OR-Tools CP-SAT (Java) Docker imajında + küçük MSM örneği
+  sahip: L
+  agent: claude-code
+  modul: backend/…/planning
+  area: backend\planning
+  effort: 2
+  sprint: Sprint 0
+  bagli:
+  - A1.3-a
+  omurga: motor
+  kurallar: deney E1
+  baglam:
+  - arastirma/05-ek-menu_bench.py
+  - arastirma/05-menu-kiler-oneri.md §3.2
+  gorev: OR-Tools Java bağımlılığının native kütüphaneleriyle Docker imajında (linux/amd64, staging mimarisi) çalıştığını, zaman sınırı ve optimallik boşluğu raporladığını
+    küçük bir sepet modeliyle doğrula.
+  degistir:
+  - backend/…/planning
+  - backend Dockerfile
+  kabul:
+  - Konteyner içinde test geçiyor; çözüm + boşluk loglanıyor
+  - İmaj boyutu ve ilk çözüm süresi PR'da
+- id: A1.10-b
+  feature: A1.10
+  baslik: Test araçları uyumu — JUnit 6, jqwik (property), PIT (mutation)
+  sahip: H
+  agent: codex
+  modul: backend/
+  area: backend
+  effort: 1
+  sprint: Sprint 0
+  bagli:
+  - A1.3-a
+  omurga: zemin
+  kurallar: NFR-2 (≥10.000 rastgele hane property testi)
+  gorev: JUnit 6 ile jqwik ve PIT'in birlikte çalıştığını örnek testle doğrula; uyumsuzluk varsa yedek aracı ve sürümü PR'da yaz (uydurma değil, denenmiş).
+  degistir:
+  - backend/build.gradle.kts
+  - backend/src/test/
+  kabul:
+  - Örnek property testi ve PIT raporu üretildi
+- id: A1.11-a
+  feature: A1.11
+  baslik: Contabo sunucu — Docker Compose staging, Caddy TLS, SOPS sırlar, yedek
+  sahip: L
+  agent: claude-code
+  modul: infra/
+  area: platform
+  effort: 3
+  sprint: Sprint 1
+  bagli:
+  - A0.9-a
+  omurga: zemin
+  kurallar: K "sır repoda yok", ADR-008 (loglarda sağlık verisi yok, yedek şifreli)
+  baglam:
+  - plan/kararlar.md ADR-008
+  - ADR-010
+  gorev: Contabo VPS'te staging — Docker Compose (backend, PostgreSQL 18 + pgvector, Caddy), SOPS ile şifreli sırlar, günlük şifreli DB yedeği ve geri yükleme denemesi,
+    SSH anahtar girişi, güvenlik duvarı. Sunucu erişim bilgileri agent'a verilmez; agent yalnız dosyaları yazar, uygulamayı Levent yapar.
+  degistir:
+  - infra/deploy/
+  - infra/compose/staging.yml
+  - .sops.yaml
+  kabul:
+  - Staging HTTPS ile açık; ping 200
+  - Yedekten boş bir DB'ye geri yükleme denemesi yapıldı (tarih + süre PR'da)
+- id: A1.12-a
+  feature: A1.12
+  baslik: Sağlık durumu kuralı şeması (data/schemas/health-rule.schema.json)
+  sahip: H
+  agent: codex
+  modul: data/schemas, data/health-rules
+  area: data
+  effort: 2
+  sprint: Sprint 0
+  bagli:
+  - A0.6-b
+  omurga: guvence1
+  kurallar: ADR-011, S14 (tıbbi sınır), FR-28
+  sozlesme: eklemeli
+  baglam:
+  - arastirma/07-tez-v5.md §3.1
+  - plan/kararlar.md ADR-011
+  - arastirma/01-mevzuat-risk.md §3
+  gorev: Sağlık durumu kuralının biçimi — kural kimliği + sürüm, durum (diyabet|hipertansiyon|çölyak|hamilelik), tür (besin_esigi|icerik_kurali), besin öğesi + birim
+    + eşik (100 g başına), sonuç (CAUTION; çölyak için NOT_SUITABLE), kullanıcıya gösterilecek bilgi metni şablonu, kaynak (belge, madde, tarih, bağlantı), diyetisyen
+    incelemesi (kim, tarih | bekliyor). Metin şablonunda yasaklı kelimeler (zararlı, riskli, tedavi, önler) şema testiyle engellenir.
+  degistir:
+  - data/schemas/health-rule.schema.json
+  - data/health-rules/ornek.yaml
+  kabul:
+  - Kaynaksız ya da yasaklı kelimeli örnek şemadan/testten geçmiyor
+  - Tek örnek satır (HLT-SUGAR-01) [KAYNAK] yer tutucusuyla geçerli ama "incelenmedi" işaretli
+  en_gec: 25 Ekim
+- id: A1.12-b
+  feature: A1.12
+  baslik: Eşik tablosu v0 — kaynak derleme (4 durum)
+  sahip: O
+  agent: antigravity
+  modul: data/health-rules
+  area: data
+  effort: 5
+  sprint: Sprint 0
+  bagli:
+  - A1.12-a
+  omurga: guvence1
+  kurallar: ADR-011; kaynak ve sayı UYDURMA YASAK
+  baglam:
+  - arastirma/07-tez-v5.md §3.1 — aday kaynaklar
+  - arastirma/01-ai-feature-havuzu.md — TÜBER 2022 ve TGK bağlantıları
+  gorev: Diyabet (şeker), hipertansiyon (tuz/sodyum), çölyak (gluten), hamilelik (içerik kuralları) için kural satırlarını birincil kaynaklardan derle — TGK Beslenme
+    ve Sağlık Beyanları Yönetmeliği, WHO şeker ve sodyum kılavuzları, TÜBER 2022. Agent yalnız kaynak bulmaya ve biçime yardım eder; her eşik ve madde numarası insan
+    tarafından kaynağın kendisinden okunarak doğrulanır. Bulunamayan değer [KAYNAK BULUNAMADI] kalır. Hilal onaylar, diyetisyen incelemesi ayrıca istenir.
+  degistir:
+  - data/health-rules/
+  kabul:
+  - Her satırda belge adı, madde/sayfa, erişim tarihi, bağlantı
+  - 'Satır başına "doğrulayan: Ozan, tarih" alanı dolu'
+  - Hilal'in onayı; diyetisyen incelemesi "bekliyor" olarak işaretli
+  - CI veri doğrulayıcısı (A1.2-c) yeşil
+- id: A2.8-a
+  feature: A2.8
+  baslik: Expo barkod gecikmesi + cihazda Türkçe konuşma tanıma denemesi
+  sahip: O
+  agent: antigravity
+  modul: apps/mobile
+  area: apps\mobile
+  effort: 2
+  sprint: Sprint 1
+  bagli:
+  - A1.7-a
+  omurga: zemin
+  kurallar: NFR-3 (raf kararı p95 ≤1,5 sn bütçesinin kamera payı)
+  gorev: expo-camera ile EAN-13 okuma süresi (10 ürün × 3 deneme, gerçek cihaz) ve cihaz içi Türkçe STT'nin kısa market cümlelerinde doğruluğu; sonuçlar apps/mobile/docs/denemeler.md.
+  degistir:
+  - apps/mobile/
+  kabul:
+  - Ölçüm tablosu (cihaz modeli, medyan, en kötü)
+  - STT yetersizse yedek (EVREN qwen3-asr) notu
+- id: A2.12-a
+  feature: A2.12
+  baslik: Web + admin iskeleti (Vite + React, TanStack Router/Query, shadcn/ui)
+  sahip: O
+  agent: antigravity
+  modul: apps/web, apps/admin
+  area: apps\web
+  effort: 3
+  sprint: Sprint 1
+  bagli:
+  - A1.6-b
+  - A1.7-b
+  omurga: zemin
+  kurallar: S22, 4 durum dili
+  baglam:
+  - plan/kararlar.md ADR-007
+  - plan/prototip-kaynak/W04-Seffaflik.dc.html
+  - plan/prototip-kaynak/A01-KararIzi.dc.html
+  gorev: apps/web ve apps/admin için Vite + React + TanStack Router/Query + shadcn/ui iskeleti; üretilmiş istemci ve packages/ui rozetleri kullanılır; admin'de boş
+    gezinme (Operasyon, Karar izi, Katalog, Audit) prototipteki gibi.
+  degistir:
+  - apps/web/
+  - apps/admin/
+  kabul:
+  - İki uygulama da yerelde açılıyor, ping sonucu görünüyor
+  - Lint + typecheck + test yeşil
+- id: A2.1-a
+  feature: A2.1
+  baslik: CSE 491 ara rapor + ara sunum
+  sahip: E
+  agent: insan
+  area: proje
+  effort: 2
+  sprint: Sprint 1
+  en_gec: 6 Kasım
+  omurga: zemin
+  gorev: 'Levent derler; her üye kendi bileşeninin bölümünü (ne yapıldı, mimari, kalan risk) yazar. Kaynak: proposal, takvim, Sprint 0 PBI''ları, walking skeleton
+    ekran görüntüleri. Tarih ve biçim bölümden teyit edilecek (takvim §5).'
+  kabul:
+  - Rapor + sunum teslim edildi
+  - Her üyenin bölümü kendi yazımı; sayılar kaynaklı ya da [ölçülecek]
+  paylar:
+    L: Raporu derle; mimari, Hane Planlama Motoru ve asistan/Gizlilik Kapısı bölümlerini yaz; sunum iskeletini kur ve provayı yönet.
+    H: 'Güvenlik çekirdeği bölümünü yaz: kural motoru, hane/rıza, katalog ve veri doğrulama; Sprint 0–1 çıktılarının ekran görüntüleri ve test sonuçları.'
+    O: 'Arayüz ve veri içeriği bölümünü yaz: mobil/web iskeleti, tarif ve eşik tablosu çalışması; demo ekran görüntüleri ve sunum slaytlarının görsel düzeni.'
+- id: A2.2-a
+  feature: A2.2
+  baslik: Kimlik — Keycloak realm + Spring Security resource server (OAuth2 PKCE, roller)
+  sahip: H
+  agent: codex
+  modul: backend/…/identity, infra/keycloak
+  area: backend\identity
+  effort: 3
+  sprint: Sprint 1
+  bagli:
+  - A1.3-b
+  omurga: zemin
+  kurallar: NFR-8 (OAuth2/PKCE, admin MFA, hane izolasyonu), K 'sır repoda yok'
+  baglam:
+  - plan/kararlar.md ADR-006
+  - plan/urun-tanimi.md FR-1, FR-3
+  gorev: 'Keycloak dev realm''ı (kod olarak dışa aktarılmış, sırsız), mobil ve web istemcileri için PKCE; roller: user, moderator, admin (admin için MFA zorunlu).
+    Backend resource server olarak JWT doğrular; identity modülü kullanıcı ↔ hane üyeliği eşlemesini tutar.'
+  degistir:
+  - backend/src/main/java/**/identity/
+  - infra/keycloak/
+  - ilgili migration
+  kabul:
+  - Yetkisiz istek 401, başka hanenin verisine istek 403 (entegrasyon testi)
+  - Realm dosyasında sır yok (gitleaks yeşil)
+  - Admin rolü MFA olmadan giriş yapamıyor (manuel doğrulama PR'da)
+- id: A2.2-b
+  feature: A2.2
+  baslik: Hane + üye + davet + veli onayı + profil sürümü (API + tablolar)
+  sahip: H
+  agent: codex
+  modul: backend/…/household
+  area: backend\household
+  effort: 5
+  sprint: Sprint 1
+  bagli:
+  - A2.2-a
+  - A1.4-a
+  omurga: zemin
+  kurallar: S10 (kesin kısıtı yalnız sahibi gevşetir), S16 (profil sürümü), S19 (herkes kendi verisini verir), ADR-011 (sağlık durumu profil parçası), K 'hane verisi
+    DB düzeyinde ayrık'
+  sozlesme: eklemeli (contracts/openapi/household.yaml)
+  baglam:
+  - plan/prototip-kaynak/M02-Hane.dc.html
+  - plan/prototip-kaynak/M15-Hane.dc.html
+  - plan/urun-tanimi.md FR-1, FR-2
+  gorev: Hane oluşturma, yetişkin üye daveti (üye kendi hesabıyla kendi profilini onaylar), çocuk profili (veli onayı), profil = kesin kısıtlar + isteğe bağlı sağlık
+    durumu + hedefler (ayrı parçalar). Her profil değişikliği yeni sürüm; ProfileChanged olayı yayınlanır (S16 yeniden değerlendirme için). Sağlık alanları alan düzeyinde
+    şifreli (ADR-008).
+  degistir:
+  - backend/src/main/java/**/household/
+  - contracts/openapi/household.yaml
+  - ilgili migration
+  kabul:
+  - Yetişkin üyenin kısıtını başkası değiştiremiyor (test)
+  - Her değişiklik yeni profil sürümü; eski kararlar eski sürümü gösteriyor (test)
+  - Sağlık alanları veritabanında şifreli (test)
+  - ProfileChanged olayı yayınlanıyor (Modulith olay testi)
+- id: A2.2-c
+  feature: A2.2
+  baslik: Rıza — aydınlatma + açık rıza ayrı, geri alma, veri indir, hesap silme (anahtar imhası)
+  sahip: H
+  agent: codex
+  modul: backend/…/consent
+  area: backend\consent
+  effort: 3
+  sprint: Sprint 2
+  en_gec: 20 Kasım
+  bagli:
+  - A2.2-b
+  omurga: zemin
+  kurallar: S20 (geri alma ve silme gerçek), FR-3, KVKK m.6 (sağlık verisi açık rıza)
+  sozlesme: eklemeli (contracts/openapi/consent.yaml)
+  baglam:
+  - plan/prototip-kaynak/M03-Riza.dc.html
+  - arastirma/01-mevzuat-risk.md §1–2
+  gorev: Rıza kayıtları (amaç, metin sürümü, zaman, veren kişi); rıza geri alınınca sağlık verisi işlenmez ve kararlar 'profil yok' moduna düşer; veri indirme (JSON);
+    hesap silme = şifre anahtarının imhası + kayıtların silinmesi (audit'te yalnız olayın kendisi kalır).
+  degistir:
+  - backend/src/main/java/**/consent/
+  - contracts/openapi/consent.yaml
+  - ilgili migration
+  kabul:
+  - Rıza geri alındıktan sonra sağlık alanı okunamıyor (test)
+  - Silme sonrası şifreli alanlar çözülemiyor (anahtar yok — test)
+  - Rıza metni sürümü her kayıtta
+- id: A2.2-d
+  feature: A2.2
+  baslik: Mobil — hane kurma + rıza ekranları (M02, M03)
+  sahip: O
+  agent: antigravity
+  modul: apps/mobile
+  area: apps\mobile
+  effort: 3
+  sprint: Sprint 2
+  en_gec: 20 Kasım
+  bagli:
+  - A2.2-b
+  - A1.7-b
+  omurga: zemin
+  kurallar: S5 (önce değer), S19, S22, ADR-011 (sağlık durumu isteğe bağlı, teşhis sorulmaz)
+  baglam:
+  - plan/prototip-kaynak/M02-Hane.dc.html
+  - plan/prototip-kaynak/M03-Riza.dc.html
+  gorev: 'Prototipteki M02 ve M03 akışı: üye ekleme, kesin kısıt / sağlık durumu / hedef çipleri (packages/ui), davet gönderme, veli onayı; aydınlatma ve açık rıza
+    ayrı ekranlar, kutular boş başlar, ''sağlık bilgisi olmadan devam et'' yolu. Üretilmiş istemci; mock yerine gerçek API (yoksa sözleşme fixture''ı).'
+  degistir:
+  - apps/mobile/
+  kabul:
+  - Sağlık bilgisi vermeden akış tamamlanabiliyor
+  - Rıza kutuları varsayılan boş (test)
+  - Çipler renk + ikon + metinle ayrışıyor (ekran görüntüsü)
+- id: A2.3-a
+  feature: A2.3
+  baslik: Kural motoru çekirdeği — 4 durum, alerjen eşleme, Doğrulanamadı ilkesi
+  sahip: H
+  agent: codex
+  modul: backend/…/safety
+  area: backend\safety
+  effort: 5
+  sprint: Sprint 2
+  bagli:
+  - A0.6-b
+  - A1.4-a
+  - A2.2-b
+  omurga: guvence1
+  kurallar: S8, S11, S12, S13, K 'belirsizlik riski yalnız artırır', K 'OFF girdisi güvenilmeyen metin', NFR-1
+  sozlesme: eklemeli (safety.api — modül içi API)
+  baglam:
+  - plan/prototip-kaynak/M10-Neden.dc.html
+  - arastirma/05-akislar-edge-case.md
+  - arastirma/05-sistem-fmea.md
+  gorev: 'Ürün içeriği + alerjen beyanı + eser uyarısı ile üye profilini karşılaştıran deterministik motor: sonuç NOT_SUITABLE | CAUTION | NO_CONFLICT_FOUND | COULD_NOT_VERIFY;
+    eşleşme yalnız onaylı sözlük ve ontolojiyle (benzerlik araması yok); Türkçe çözümleme (İ/ı, ekler, olumsuz cümle ''içermez''); veri eksik/eski/belirsizse COULD_NOT_VERIFY;
+    birden çok sonuçta en ağırı. Her karar karar kaydına (A1.4-a) yazılır: kural kimliği + sürüm, eşleşen içerik, kaynak, güven.'
+  degistir:
+  - backend/src/main/java/**/safety/
+  kabul:
+  - '''güvenli''/SAFE sonucu yok (test)'
+  - İçerik boşsa ya da katalog verisi eskiyse COULD_NOT_VERIFY (property test)
+  - '''fındık içermez'' olumsuz cümlesi yanlış pozitif üretmiyor, ''fındık ezmesi'' eşleşiyor (test)'
+  - Her karar karar kaydında (test)
+- id: A2.3-b
+  feature: A2.3
+  baslik: Alerjen altın set v1 (n ≥ 200) + CI regresyonu (FN = 0)
+  sahip: H
+  agent: codex
+  modul: data/eval, backend/…/safety tests
+  area: data
+  effort: 3
+  sprint: Sprint 2
+  bagli:
+  - A2.3-a
+  omurga: guvence1
+  kurallar: NFR-1 sürüm kapısı
+  gorev: 'Gerçek etiketlerden (katalog) ve sentetik zor örneklerden (Türkçe tuzaklar, eser uyarıları, eş anlamlılar) oluşan, beklenen sonucu elle etiketlenmiş altın
+    set; her örnek için kaynak. Görseller repoya girmez (yalnız metin + meta). CI: safety ya da data/allergens değişince koşar, tek yanlış negatif = kırmızı.'
+  degistir:
+  - data/eval/allergen-gold/
+  - backend/src/test/**/safety/
+  - .github/workflows/ci-backend.yml (yalnız bu adım, Levent review)
+  kabul:
+  - n ≥ 200, her örnekte beklenen sonuç + kaynak
+  - FN = 0; FP oranı raporlanıyor
+  - Etiketleyen + onaylayan (çift onay) alanları dolu
+- id: A2.3-c
+  feature: A2.3
+  baslik: safety.api — EligibilityService (planlamaya uygun aday kümesi)
+  sahip: H
+  agent: codex
+  modul: backend/…/safety
+  area: backend\safety
+  effort: 2
+  sprint: Sprint 3
+  en_gec: 2 Aralık
+  bagli:
+  - A2.3-a
+  omurga: motor
+  kurallar: K 'alerjenli seçenek çözücüye hiç verilmez' (ArchUnit A1.2-a)
+  sozlesme: eklemeli (safety.api named interface)
+  baglam:
+  - arastirma/08-ekip-calisma-modeli.md §3.a sözleşmeler tablosu
+  gorev: 'Planlama motorunun aday tarif/ürün kümesini yalnız buradan almasını sağlayan API: hane profiline göre NOT_SUITABLE ve COULD_NOT_VERIFY adayları dışarıda
+    bırakır (planlamada ''doğrulanamayan'' seçilmez), CAUTION adaylarını sağlık hedefi cezası için işaretler.'
+  degistir:
+  - backend/src/main/java/**/safety/api/
+  kabul:
+  - Bir üyeye NOT_SUITABLE olan hiçbir aday dönmüyor (property test, 10.000 rastgele hane)
+  - CAUTION adayları gerekçesiyle işaretli
+- id: A2.16-a
+  feature: A2.16
+  baslik: Sağlık durumu kuralları kural motorunda + test seti (%100 tablo uyumu)
+  sahip: H
+  agent: codex
+  modul: backend/…/safety
+  area: backend\safety
+  effort: 3
+  sprint: Sprint 3
+  bagli:
+  - A1.12-b
+  - A2.3-a
+  omurga: guvence1
+  kurallar: ADR-011, FR-28, S14, 01-mevzuat-risk §3 (bilgilendirme dili)
+  baglam:
+  - plan/prototip-kaynak/M22-NedenSaglik.dc.html
+  - arastirma/07-tez-v5.md §3.1
+  gorev: 'data/health-rules tablosunu yükleyip besin tablosu (100 g) ve içerik kurallarını uygula: diyabet/hipertansiyon → CAUTION + besin bilgisi + eşik + kaynak;
+    çölyak → NOT_SUITABLE (kesin kısıt); besin tablosu yoksa COULD_NOT_VERIFY. Kullanıcıya giden metin tablodaki şablondan; yasaklı kelime testi. Karar kaydına eşik
+    tablosu sürümü yazılır.'
+  degistir:
+  - backend/src/main/java/**/safety/health/
+  - backend/src/test/**/safety/
+  kabul:
+  - Tablo satırı başına en az 1 test; %100 uyum
+  - Besin tablosu eksik ürün → COULD_NOT_VERIFY (test)
+  - Metinlerde 'zararlı/riskli/tedavi/önler' yok (test)
+- id: A2.4-a
+  feature: A2.4
+  baslik: Katalog v0 — ürün/SKU/paket/fiyat + fiyat yaşı, Migros içe aktarma
+  sahip: H
+  agent: codex
+  modul: backend/…/catalog, data/catalog
+  area: backend\catalog
+  effort: 3
+  sprint: Sprint 1
+  bagli:
+  - A0.6-b
+  - A1.5-b
+  omurga: veri
+  kurallar: K 'mağaza içi barkod global anahtar değil', K 'OFF girdisi güvenilmeyen metin', S8
+  sozlesme: eklemeli (contracts/openapi/catalog.yaml)
+  baglam:
+  - plan/kararlar.md ADR-002, ADR-003
+  - arastirma/02-v2-fis-veri.md
+  gorev: Ürün (EAN, ad, marka, içindekiler, alerjen beyanı, besin tablosu, kaynak + doğrulayan + tarih), SKU (zincir, paket boyutu, birim), fiyat (tutar, kaynak,
+    tarih → fiyat yaşı). data/catalog CSV'lerinden içe aktarma; OFF yalnız aday kaynak, doğrulanmadan 'katalogda doğrulandı' sayılmaz. Malzeme sözlüğüyle SKU eşleme
+    alanı.
+  degistir:
+  - backend/src/main/java/**/catalog/
+  - data/catalog/
+  - contracts/openapi/catalog.yaml
+  kabul:
+  - İçe aktarma şema doğrulamasından geçmeyen satırı reddediyor
+  - Fiyat yaşı hesaplanıyor; 14 günden eski fiyat işaretli (test)
+  - Doğrulanmamış ürün 'doğrulandı' dönmüyor (test)
+- id: A2.4-b
+  feature: A2.4
+  baslik: 'Migros fiyat turu #1 (~300 ürün, üç kişiye bölünür)'
+  sahip: E
+  agent: insan
+  area: data
+  effort: 1
+  sprint: Sprint 1
+  en_gec: 20 Kasım
+  omurga: veri
+  gorev: 'marketfiyati izni yoksa (ADR-002 B planı): 60 tarifin malzemelerine karşılık gelen ~300 Migros ürününün fiyatı üç kişiye bölünerek CSV''ye girilir (ürün,
+    paket, fiyat, tarih, kaynak: mağaza/site). Etiket fotoğrafı gereken ürünler aynı turda çekilir (görseller repoya girmez).'
+  kabul:
+  - data/catalog/prices-migros-<tarih>.csv, şemadan geçiyor
+  - Kişi başı ~100 ürün
+  paylar:
+    L: 'Kuru gıda, bakliyat, tahıl, makarna, un ürünleri (~100 ürün): Migros fiyatlarını data/catalog/prices-migros-<tarih>.csv biçiminde gir (ürün, paket, fiyat,
+      tarih, kaynak).'
+    H: 'Süt ürünleri, et-tavuk-balık, yumurta, şarküteri (~100 ürün): Migros fiyatlarını aynı CSV biçiminde gir; etiket fotoğrafı gereken ürünleri aynı turda çek.'
+    O: 'Sebze-meyve, yağ, sos-baharat, içecek, atıştırmalık (~100 ürün): Migros fiyatlarını aynı CSV biçiminde gir.'
+- id: A2.5-a
+  feature: A2.5
+  baslik: İlk 30 tarif (şemaya uygun, malzemeler sözlükte)
+  sahip: O
+  agent: antigravity
+  modul: data/recipes
+  area: data
+  effort: 5
+  sprint: Sprint 1
+  en_gec: 15 Kasım
+  bagli:
+  - A0.6-a
+  - A0.6-b
+  omurga: veri
+  kurallar: Lisans temizliği (ekip yazar, kopya yok), S8
+  baglam:
+  - arastirma/05-menu-kiler-oneri.md §1
+  - arastirma/07-tez-v5.md §7
+  gorev: Hafta içi akşam yemeği odaklı 30 Türk ev yemeği; ekip kendi cümleleriyle yazar (sitelerden kopya yok — lisans), agent biçim ve sözlük eşlemesine yardım eder.
+    Sözlükte olmayan malzeme için önce sözlük PR'ı (A0.6-b biçimi).
+  degistir:
+  - data/recipes/
+  kabul:
+  - 30 tarif CI veri doğrulayıcısından geçiyor
+  - Her tarifte yazar + 'ekip yazımı' lisans alanı
+  - Hilal çift onayı
+- id: A2.5-b
+  feature: A2.5
+  baslik: Tarif 31–60 + Migros fiyatlı SKU kapsaması ≥ %90
+  sahip: O
+  agent: antigravity
+  modul: data/recipes
+  area: data
+  effort: 5
+  sprint: Sprint 2
+  bagli:
+  - A2.5-a
+  - A2.4-a
+  omurga: veri
+  gorev: 30 tarif daha; ardından 60 tarifin tüm malzemeleri için Migros'ta fiyatlı SKU kapsamasını ölç (CI kapsama raporu) ve eksikleri fiyat turu listesine ekle.
+  degistir:
+  - data/recipes/
+  - data/catalog/ (yalnız eşleme listesi)
+  kabul:
+  - 60 tarif doğrulayıcıdan geçiyor
+  - Fiyatlı SKU kapsaması ≥ %90 (CI raporu)
+  - Hilal çift onayı
+- id: A2.5-c
+  feature: A2.5
+  baslik: Tarif ve sözlük çift onayı (60 tarif)
+  sahip: H
+  agent: insan
+  area: data
+  effort: 2
+  sprint: Sprint 2
+  bagli:
+  - A2.5-a
+  omurga: veri
+  gorev: 'Veri PR''larında ikinci onay: alerjen türetmesi doğru mu, miktar/birim makul mü, sözlük eşlemesi doğru mu.'
+  kabul:
+  - 60 tarifin hepsinde ikinci onay kaydı
+- id: A2.6-a
+  feature: A2.6
+  baslik: TR model karar kapısı — EVREN birincil mi (ADR-009 kesinleşir)
+  sahip: L
+  agent: insan
+  area: backend\assistant
+  effort: 1
+  sprint: Sprint 1
+  bagli:
+  - A1.9-a
+  omurga: guvence2
+  gorev: 'A1.9 raporuna göre karar: EVREN hane bağlamı için birincil mi, 1 Kasım sonrası kredi maliyeti, yedek (bulut + yer tutucu). Karar ADR-009''a ek olarak yazılır,
+    ekip bilgilendirilir.'
+  kabul:
+  - ADR-009 güncellendi (ölçüm tablosu linkiyle)
+- id: A2.7-a
+  feature: A2.7
+  baslik: Motor sözleşmesi — PlanRequest/PlanResult şeması + golden fixture'lar
+  sahip: L
+  agent: claude-code
+  modul: contracts/engine
+  area: backend\planning
+  effort: 2
+  sprint: Sprint 1
+  bagli:
+  - A1.6-a
+  omurga: motor
+  kurallar: Önce güvenlik sırası (ADR-011), NFR-3 (3 sn + boşluk rozeti)
+  sozlesme: eklemeli (contracts/engine/*.schema.json)
+  baglam:
+  - arastirma/05-menu-kiler-oneri.md §3.2 (formülasyon)
+  - arastirma/07-tez-v5.md §3, §5 (E1)
+  - plan/prototip-kaynak/W05-PlanNeden.dc.html
+  gorev: 'Motorun girdisi (hane: üye kısıt kimlikleri — sağlık verisi değil, bütçe, zincirler, kiler + SKT, tercihler, akşam sayısı, zaman sınırı) ve çıktısı (menü,
+    sepet, zincir bölme, TL, optimallik boşluğu, gevşetme önerileri, karar kaydı kimliği). 3 golden fixture: normal, olursuz (bütçe), kiler ağırlıklı. Arayüz ve asistan
+    bununla motor bitmeden çalışır.'
+  degistir:
+  - contracts/engine/
+  kabul:
+  - Şemalar + 3 fixture doğrulanıyor
+  - Girdide ham sağlık verisi yok (şema testi)
+- id: A2.7-b
+  feature: A2.7
+  baslik: MSM çözücü v0 — CP-SAT modeli sentetik veriyle (önce güvenlik sıralı amaç)
+  sahip: L
+  agent: claude-code
+  modul: backend/…/planning
+  area: backend\planning
+  effort: 5
+  sprint: Sprint 2
+  bagli:
+  - A2.7-a
+  - A1.10-a
+  - A1.5-a
+  omurga: motor
+  kurallar: Önce güvenlik (kesin kısıt yapısal, sağlık hedefleri > tercih/kiler > fiyat), bütçe sınır, zaman sınırı zorunlu, deney E1
+  baglam:
+  - arastirma/05-ek-menu_bench.py
+  - arastirma/05-menu-kiler-oneri.md §3.2
+  gorev: 'Birleşik Menü–Sepet–Market modeli: akşam × tarif ataması, paket tamsayılılığı, ≤2 zincir, bütçe kısıtı, kiler/SKT önce kullanım, sağlık hedefi ve tercih
+    terimleri; amaç sözlükçe (lexicographic) ya da ağırlıklı — seçimi PR''da gerekçelendir. Adaylar yalnız safety.api''den (burada stub). Zaman sınırı + boşluk raporu;
+    olursuzlukta gevşetilebilir yumuşak sınırları döndür (kesin kısıt asla).'
+  degistir:
+  - backend/src/main/java/**/planning/
+  kabul:
+  - 3 golden fixture beklenen sonucu veriyor
+  - Hiçbir çözümde kesin kısıt ihlali yok (property test)
+  - Zaman sınırında boşluk raporlanıyor; olursuzlukta gevşetme önerisi (test)
+- id: A2.7-c
+  feature: A2.7
+  baslik: MSM gerçek veriyle (60 tarif + Migros) + E1 v0 ölçümü
+  sahip: L
+  agent: claude-code
+  modul: backend/…/planning, research/e1
+  area: backend\planning
+  effort: 3
+  sprint: Sprint 3
+  bagli:
+  - A2.7-b
+  - A2.5-b
+  - A2.3-c
+  - A2.4-a
+  omurga: motor
+  kurallar: 'deney E1 (dürüstlük: sentetik/gerçek ayrımı raporda)'
+  gorev: Stub yerine safety.api + katalog + tarifler; 'önce menü sonra liste' tabanları (B2, B3) ile birleşik modeli karşılaştıran ilk ölçüm (küçük senaryo seti);
+    sonuçlar research/e1/v0.md, sayılar ham çıktıya bağlı.
+  degistir:
+  - backend/src/main/java/**/planning/
+  - research/e1/
+  kabul:
+  - Gerçek veriyle plan üretiliyor, p95 süre ölçüldü
+  - 'E1 v0 tablosu: TL farkı, boşluk, süre — ham çıktı dosyasıyla'
+- id: A2.8-b
+  feature: A2.8
+  baslik: Raf API — barkod → üye başına karar + alternatif (p95 ≤ 1,5 sn)
+  sahip: H
+  agent: codex
+  modul: backend/…/safety, backend/…/catalog
+  area: backend\safety
+  effort: 3
+  sprint: Sprint 3
+  bagli:
+  - A2.2-b
+  - A2.3-a
+  - A2.4-a
+  omurga: guvence1
+  kurallar: S11, S18, NFR-3, FR-5/FR-7
+  sozlesme: eklemeli (contracts/openapi/scan.yaml)
+  baglam:
+  - plan/prototip-kaynak/M09-Tarama.dc.html
+  - plan/prototip-kaynak/M10-Neden.dc.html
+  - plan/prototip-kaynak/M22-NedenSaglik.dc.html
+  gorev: EAN ile katalog araması → hanenin her üyesi için karar + 'Neden?' verisi (karar kaydından) + aynı reyonda herkese uyan alternatif. Katalogda yoksa COULD_NOT_VERIFY
+    + etiket okuma yolu. Yanıtta üye adı + kısıt birlikte bildirime gitmez (S18 — yalnız ekranda).
+  degistir:
+  - backend/src/main/java/**/safety/scan/
+  - contracts/openapi/scan.yaml
+  kabul:
+  - p95 ≤ 1,5 sn (yük testi, katalogdaki ürünler)
+  - Katalog dışı ürün → COULD_NOT_VERIFY (test)
+  - Alternatif tüm üyeler için NOT_SUITABLE değil (test)
+- id: A2.8-c
+  feature: A2.8
+  baslik: Mobil raf ekranı — hane şeridi + Neden? (M09, M10, M22)
+  sahip: O
+  agent: antigravity
+  modul: apps/mobile
+  area: apps\mobile
+  effort: 5
+  sprint: Sprint 2
+  en_gec: 9 Aralık
+  bagli:
+  - A2.8-a
+  - A1.7-b
+  omurga: guvence1
+  kurallar: S22, dört durum dili, ADR-011 dili
+  baglam:
+  - plan/prototip-kaynak/M09-Tarama.dc.html
+  - plan/prototip-kaynak/M10-Neden.dc.html
+  - plan/prototip-kaynak/M22-NedenSaglik.dc.html
+  gorev: 'Barkod okuma → hane şeridi (üye başına rozet) → üyeye dokununca Neden? (alerjen: vurgulu içerik + kural; sağlık: besin eşiği + kaynak alıntısı) → alternatif.
+    Sprint 2''de sözleşme fixture''ıyla, API (A2.8-b) gelince gerçek uçla.'
+  degistir:
+  - apps/mobile/
+  kabul:
+  - 4 durumun hepsi ve 'katalogda yok' durumu ekranda (ekran görüntüleri)
+  - Karar yalnız renkle verilmiyor
+  - Fixture → gerçek API geçişi tek yapılandırma değişikliği
+- id: A2.9-a
+  feature: A2.9
+  baslik: Akıllı Takas API — k = 1·3·5, zorunlu değişiklik ayrı, olursuzluk açıklaması
+  sahip: L
+  agent: claude-code
+  modul: backend/…/planning
+  area: backend\planning
+  effort: 3
+  sprint: Sprint 3
+  bagli:
+  - A2.7-b
+  omurga: motor
+  kurallar: FR-7, S10, önce güvenlik sırası
+  sozlesme: eklemeli (contracts/openapi/planning.yaml)
+  baglam:
+  - plan/prototip-kaynak/M06-Takas.dc.html
+  - plan/prototip-kaynak/M07-TakasNeden.dc.html
+  - plan/prototip-kaynak/M08-Olursuz.dc.html
+  gorev: Liste için en çok k takas; kesin kısıt ihlali 'zorunlu değişiklik' olarak ayrı ve k'ya sayılmaz; her takasın gerekçesi (hangi hedef, TL etkisi, fiyat kaynağı/yaşı,
+    kesin kısıt kontrolü); olursuzlukta gevşetilebilir yumuşak sınır seçenekleri.
+  degistir:
+  - backend/src/main/java/**/planning/swap/
+  - contracts/openapi/planning.yaml
+  kabul:
+  - p95 ≤ 1 sn (test verisiyle)
+  - Zorunlu değişiklik k'ya sayılmıyor (test)
+  - Olursuzlukta kesin kısıt seçenek olarak dönmüyor (test)
+- id: A2.9-b
+  feature: A2.9
+  baslik: Mobil liste + takas ekranları (M04, M06–M08)
+  sahip: O
+  agent: antigravity
+  modul: apps/mobile
+  area: apps\mobile
+  effort: 3
+  sprint: Sprint 3
+  bagli:
+  - A2.9-a
+  omurga: motor
+  kurallar: S3 (yargılamaz), S4 (kontrol kullanıcıda)
+  baglam:
+  - plan/prototip-kaynak/M04-Liste.dc.html
+  - plan/prototip-kaynak/M06-Takas.dc.html
+  - plan/prototip-kaynak/M07-TakasNeden.dc.html
+  - plan/prototip-kaynak/M08-Olursuz.dc.html
+  gorev: İlk liste + bütçe, 1·3·5 takas seçici, takas Neden? sayfası, plan çıkmadı ekranı. Önce fixture, sonra gerçek API.
+  degistir:
+  - apps/mobile/
+  kabul:
+  - 1·3·5 seçimi özeti değiştiriyor
+  - Zorunlu değişiklik kartı ayrı
+  - Olursuz durumda seçenekler gösteriliyor (ekran görüntüleri)
+- id: A2.10-a
+  feature: A2.10
+  baslik: Gizlilik Kapısı v0 — tek çıkış, hassaslık sözlüğü, tipli yer tutucu, Türkçe ek uyumlu geri doldurma
+  sahip: L
+  agent: claude-code
+  modul: backend/…/privacy
+  area: backend\privacy
+  effort: 5
+  sprint: Sprint 2
+  bagli:
+  - A1.4-a
+  omurga: guvence2
+  kurallar: K 'tek çıkış kapısı' (dış LLM SDK'sını yalnız privacy.gateway import eder), S15, NFR-4
+  baglam:
+  - arastirma/05-agent-mimarisi.md §2.6
+  - plan/kararlar.md ADR-008, ADR-009
+  gorev: 'Dışarı giden her LLM isteği bu modülden geçer: hassas terimler (üye adı, alerjen, sağlık durumu) sözlükle bulunur, tipli yer tutucuyla değiştirilir ([ÜYE_1],
+    [ALERJEN_1]); yanıtta Türkçe eklerle uyumlu geri doldurma (Ela''nın → [ÜYE_1]''in → Ela''nın). Hane bağlamlı istekler TR rotasına (EVREN), bulut rotası tek bayrakla
+    kapanır.'
+  degistir:
+  - backend/src/main/java/**/privacy/
+  kabul:
+  - 'Kanarya: ''fındık'', ''diyabet'', üye adı dış isteğe hiç çıkmıyor (test)'
+  - Ek uyumlu geri doldurma 20 örnekte doğru (test)
+  - privacy dışından LLM SDK importu ArchUnit'te kırmızı
+- id: A2.11-a
+  feature: A2.11
+  baslik: Asistan v1 — araç kataloğu + orkestrasyon (3–5 iş akışı niyeti)
+  sahip: L
+  agent: claude-code
+  modul: backend/…/assistant, contracts/llm-tools
+  area: backend\assistant
+  effort: 5
+  sprint: Sprint 3
+  bagli:
+  - A2.8-b
+  - A2.9-a
+  - A2.10-a
+  omurga: guvence1
+  kurallar: S13 (araç kazanır), S14 (tıbbi sınır sabit), S21 (onaysız işlem yok), NFR-6 (claim checker)
+  sozlesme: eklemeli (contracts/llm-tools/*.json)
+  baglam:
+  - plan/prototip-kaynak/M16-Asistan.dc.html
+  - plan/prototip-kaynak/M21-TibbiSinir.dc.html
+  - arastirma/05-agent-mimarisi.md §6.3
+  gorev: 'Spring AI ile niyetler: ''X bunu yiyebilir mi'', listeye ekle, takas öner, bu karar neden. LLM yalnız niyeti ve parametreyi çıkarır, araçları (safety, planning)
+    çağırır; hüküm rozeti karar kaydından gelir, LLM metni claim checker''dan geçer; tıbbi/doz soruları LLM''e gitmeden sabit yanıt. Tüm dış çağrılar Gizlilik Kapısı
+    üzerinden.'
+  degistir:
+  - backend/src/main/java/**/assistant/
+  - contracts/llm-tools/
+  kabul:
+  - 'LLM karar değiştiremiyor: çelişen anlatım claim checker''da yakalanıyor (test)'
+  - Doz sorusu LLM çağrısı yapmadan sabit yanıt (test)
+  - LLM kapalıyken butonlarla akış çalışıyor (test)
+- id: A2.11-b
+  feature: A2.11
+  baslik: Mobil asistan ekranı — adımlar görünür, hüküm rozeti karar kaydından (M16, M21)
+  sahip: O
+  agent: antigravity
+  modul: apps/mobile
+  area: apps\mobile
+  effort: 3
+  sprint: Sprint 4
+  bagli:
+  - A2.11-a
+  omurga: guvence1
+  kurallar: S13, S14, S22
+  baglam:
+  - plan/prototip-kaynak/M16-Asistan.dc.html
+  - plan/prototip-kaynak/M21-TibbiSinir.dc.html
+  gorev: 'Yazılı asistan ekranı: kullanıcı mesajı, asistanın attığı adımlar (hangi araç), rozetler (motor kararı), altta karar kimliği; tıbbi sınır yanıtı sabit bileşen.'
+  degistir:
+  - apps/mobile/
+  kabul:
+  - Her yanıtta adımlar ve rozet ayrı görünüyor
+  - Sabit tıbbi yanıt LLM metni gibi görünmüyor (ekran görüntüsü)
+- id: A2.12-b
+  feature: A2.12
+  baslik: Admin backend — karar izi okuma, katalog onayı (gerekçe + etki analizi), audit görünümü
+  sahip: H
+  agent: codex
+  modul: backend/…/catalog, backend/…/audit (okuma uçları)
+  area: backend\catalog
+  effort: 5
+  sprint: Sprint 3
+  bagli:
+  - A1.4-a
+  - A2.3-a
+  - A2.4-a
+  omurga: zemin
+  kurallar: FR-9, FR-15/16, S17 (düzeltme sözü)
+  sozlesme: eklemeli (contracts/openapi/admin.yaml)
+  baglam:
+  - plan/prototip-kaynak/A01-KararIzi.dc.html
+  - plan/prototip-kaynak/A02-Katalog.dc.html
+  - plan/prototip-kaynak/A03-Audit.dc.html
+  gorev: 'Moderatör/admin uçları: karar kaydını insan okunur izle getir; katalog düzeltme önerisini gerekçe zorunlu onayla/reddet, onaydan önce etkilenecek geçmiş
+    kararları ve haneleri say; onayda etkilenen hanelere düzeltme bildirimi olayı. Audit log salt okunur listeleme.'
+  degistir:
+  - backend/src/main/java/**/catalog/admin/
+  - backend/src/main/java/**/audit/api/
+  - contracts/openapi/admin.yaml
+  kabul:
+  - Gerekçesiz onay reddediliyor (test)
+  - Etki sayısı doğru (test)
+  - Her admin işlemi audit'te (test)
+- id: A2.12-c
+  feature: A2.12
+  baslik: Admin arayüzü — karar izi, katalog moderasyonu, audit, Sözleşme panosu (A01–A03)
+  sahip: O
+  agent: antigravity
+  modul: apps/admin
+  area: apps\web
+  effort: 5
+  sprint: Sprint 3
+  bagli:
+  - A2.12-a
+  - A2.12-b
+  omurga: zemin
+  baglam:
+  - plan/prototip-kaynak/A01-KararIzi.dc.html
+  - plan/prototip-kaynak/A02-Katalog.dc.html
+  - plan/prototip-kaynak/A03-Audit.dc.html
+  gorev: 'Prototipteki A01–A03 ekranları: karar izi (olay zaman çizelgesi + ham kayıt), katalog moderasyon kuyruğu (önce/önerilen, güven, gerekçe, etki kutusu), audit
+    tablosu, Sözleşme panosu (S/K kurallarının durumu). Önce fixture, sonra A2.12-b.'
+  degistir:
+  - apps/admin/
+  kabul:
+  - Üç ekran gerçek API ile çalışıyor
+  - Gerekçe alanı boşken onay düğmesi pasif
+- id: A2.13-a
+  feature: A2.13
+  baslik: E2 ilk koşu — yalnız-LLM planlayıcı vs NutriScan (50 senaryo)
+  sahip: L
+  agent: claude-code
+  modul: research/e2
+  area: research
+  effort: 3
+  sprint: Sprint 4
+  bagli:
+  - A2.7-c
+  - A2.11-a
+  - A1.5-a
+  omurga: guvence1
+  kurallar: deney E2; yalnız sentetik hane; sayılar ham çıktıya bağlı
+  baglam:
+  - arastirma/07-tez-v5.md §5
+  gorev: 'Sentetik 50 hane senaryosunda yalnız-LLM planlayıcı (bulut + TR modeli) ile motoru karşılaştır: kesin kısıt ihlali, bütçe ihlali, uydurma fiyat, TL farkı;
+    asistan tool-call doğruluğu. research/e2/v0.md + ham çıktılar.'
+  degistir:
+  - research/e2/
+  kabul:
+  - 50 senaryo tekrarlanabilir (tohum)
+  - Metrik tablosu ham çıktıya bağlı; dış LLM'e sağlık verisi gitmedi (kanarya)
+- id: A2.14-a
+  feature: A2.14
+  baslik: CSE 491 final raporu + çalışan prototip demosu
+  sahip: E
+  agent: insan
+  area: proje
+  effort: 3
+  sprint: Sprint 4
+  omurga: zemin
+  gorev: Levent derler; her üye bölümünü yazar; demo senaryosu (tez §9'un D1 kısmı) staging'de prova edilir, kayıtlı yedek video alınır.
+  kabul:
+  - Rapor teslim
+  - Demo 2 kez prova, yedek video var
+  paylar:
+    L: Final raporu derle; mimari, planlama motoru (E1 v0) ve asistan (E2 ilk koşu) bölümleri; demo senaryosunun akışı ve prova.
+    H: Güvenlik çekirdeği, altın set sonuçları, katalog/fiyat verisi ve admin backend bölümleri; demo için tohumlanmış veri.
+    O: Mobil/web/admin arayüzleri, tarif ve eşik tablosu içerik bölümleri; demo ekranları, kayıtlı yedek video.
+- id: A2.15-a
+  feature: A2.15
+  baslik: Yük dengesi ve bileşen sahipliği değerlendirmesi
+  sahip: E
+  agent: insan
+  area: proje
+  effort: 1
+  sprint: Sprint 4
+  omurga: zemin
+  gorev: Sprint 0–4 hız verisi (Effort, PR lead time) ile sahiplik ve vekil tablosu gözden geçirilir; gerekirse ADR-004 güncellenir.
+  kabul:
+  - Retro notu + gerekirse ADR güncellemesi
+  paylar:
+    L: Sprint 0–4 hız verisini (tamamlanan Effort, PR lead time, review süresi) board'dan çıkar; sahiplik ve vekil tablosu için öneri hazırla, gerekirse ADR-004'ü
+      güncelle.
+    H: Kendi modüllerindeki yük ve darboğazları 5 satırda yaz (ne zorladı, ne hızlandı, devretmek ya da almak istediğin iş).
+    O: Kendi modüllerindeki yük ve darboğazları 5 satırda yaz (ne zorladı, ne hızlandı, devretmek ya da almak istediğin iş).

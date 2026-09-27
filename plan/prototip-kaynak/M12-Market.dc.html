@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Market bölme</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Instrument Sans',system-ui,sans-serif;color:#1c2420;background:#f5f1e8}
+*{box-sizing:border-box}
+a{color:#1f5c45}a:hover{color:#15432f}
+.s{width:390px;height:844px;background:#f5f1e8;display:flex;flex-direction:column;overflow:hidden;position:relative}
+.pad{padding-left:16px;padding-right:16px}
+.disp{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-0.01em;margin:0}
+.eb{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#56615b}
+.mut{color:#56615b}
+.card{background:#fffdf8;border:1px solid #e2dbcb;border-radius:16px;padding:12px 14px}
+.ib{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid #e2dbcb;background:#fffdf8;color:#1c2420;text-decoration:none;flex-shrink:0}
+.opt{display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:16px;border:1.5px solid #e2dbcb;background:#fffdf8;cursor:pointer}
+.opt input{width:22px;height:22px;margin:0;accent-color:#1f5c45;flex-shrink:0}
+.optsel{border-color:#1f5c45;background:#eef5f0}
+.it{display:flex;justify-content:space-between;font-size:13px;padding:4px 0}
+.v{display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 8px;border-radius:7px;font-size:12px;font-weight:700;white-space:nowrap}
+.vwarn{background:#f7e8c4;color:#6b4700}
+.btn{display:flex;align-items:center;justify-content:center;min-height:50px;border-radius:14px;background:#1f5c45;color:#fff;font-weight:700;font-size:16px;text-decoration:none;border:0;font-family:inherit;cursor:pointer}
+.btn:hover{color:#fff}
+</style>
+</helmet>
+<div class="s">
+  <div style="display: flex; align-items: center; gap: 12px; padding: 16px 16px 6px">
+    <a class="ib" href="M05-BuHafta.dc.html" aria-label="Geri"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></a>
+    <h1 class="disp" style="font-size: 24px">Nereden alsan?</h1>
+  </div>
+  <div class="pad" style="display: flex; flex-direction: column; gap: 8px; padding-top: 4px">
+    <label class="opt optsel"><input type="radio" name="m" checked=""><span style="flex-grow: 1"><b style="display: block">İki market · A101 + Migros</b><span class="mut" style="font-size: 12.5px">+650 m yürüme · 2 durak</span></span><span style="text-align: right"><b style="display: block; font-size: 17px">5.728 TL</b><span style="font-size: 12.5px; color: #17503a; font-weight: 700">−212 TL</span></span></label>
+    <label class="opt"><input type="radio" name="m"><span style="flex-grow: 1"><b style="display: block">Tek market · Migros</b><span class="mut" style="font-size: 12.5px">tek durak</span></span><span style="text-align: right"><b style="display: block; font-size: 17px">5.940 TL</b></span></label>
+    <div class="card" style="padding: 0; overflow: hidden">
+      <svg width="358" height="150" viewBox="0 0 358 150" role="img" aria-label="Ev, A101 ve Migros arasındaki güzergah">
+        <rect width="358" height="150" fill="#ece6d8"></rect>
+        <path d="M0 40h358M0 100h358M70 0v150M190 0v150M290 0v150" stroke="#f7f3ea" stroke-width="10"></path>
+        <path d="M60 118 L190 100 L290 44" fill="none" stroke="#1f5c45" stroke-width="3" stroke-dasharray="6 5"></path>
+        <circle cx="60" cy="118" r="9" fill="#1c2420"></circle>
+        <text x="74" y="136" font-size="12" font-weight="700" fill="#1c2420" font-family="Instrument Sans, sans-serif">Ev</text>
+        <circle cx="190" cy="100" r="11" fill="#1f5c45"></circle>
+        <text x="166" y="86" font-size="12" font-weight="700" fill="#1c2420" font-family="Instrument Sans, sans-serif">A101 · 1</text>
+        <circle cx="290" cy="44" r="11" fill="#1f5c45"></circle>
+        <text x="250" y="28" font-size="12" font-weight="700" fill="#1c2420" font-family="Instrument Sans, sans-serif">Migros · 2</text>
+      </svg>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+      <div class="card"><div style="font-weight: 700; font-size: 13.5px; margin-bottom: 4px">A101 · 9 ürün</div><div class="it"><span>Süt 1 L ×3</span></div><div class="it"><span>Yumurta 30'lu</span></div><div class="it"><span>Makarna ×2</span></div><div class="it"><span>Maden suyu 6'lı</span></div><div class="mut" style="font-size: 12px">+5 ürün</div></div>
+      <div class="card"><div style="font-weight: 700; font-size: 13.5px; margin-bottom: 4px">Migros · 7 ürün</div><div class="it"><span>Glutensiz ekmek ×2</span></div><div class="it"><span>Az tuzlu peynir</span></div><div class="it"><span>Tavuk göğüs</span></div><div class="it"><span>Pirinç patlağı</span></div><div class="mut" style="font-size: 12px">+3 ürün</div></div>
+    </div>
+    <div style="display: flex; gap: 8px; align-items: center; font-size: 12.5px; color: #3d4742"><span class="v vwarn">3 fiyat 14 günden eski</span><span>Rafta farklı çıkabilir</span></div>
+  </div>
+  <div class="pad" style="margin-top: auto; padding-bottom: 24px"><a class="btn" href="M05-BuHafta.dc.html">Bu dağılımla listeyi böl</a></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

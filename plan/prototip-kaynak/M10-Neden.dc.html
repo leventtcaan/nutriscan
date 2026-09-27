@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Karar nedeni</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Instrument+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Instrument Sans',system-ui,sans-serif;color:#1c2420;background:#f5f1e8}
+*{box-sizing:border-box}
+a{color:#1f5c45}a:hover{color:#15432f}
+.s{width:390px;height:844px;background:#f5f1e8;display:flex;flex-direction:column;overflow:hidden;position:relative}
+.pad{padding-left:16px;padding-right:16px}
+.disp{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-0.01em;margin:0}
+.eb{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#56615b}
+.mut{color:#56615b}
+.card{background:#fffdf8;border:1px solid #e2dbcb;border-radius:16px;padding:12px 14px}
+.ib{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid #e2dbcb;background:#fffdf8;color:#1c2420;text-decoration:none;flex-shrink:0}
+.v{display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 8px;border-radius:7px;font-size:12px;font-weight:700;white-space:nowrap}
+.vno{background:#f6ddd6;color:#7d2317}
+.vwarn{background:#f7e8c4;color:#6b4700}
+.hn{background:#f6ddd6;color:#5e1a10;font-weight:700;padding:0 3px;border-radius:4px}
+.hw{background:#f7e8c4;color:#4f3500;font-weight:700;padding:0 3px;border-radius:4px}
+.rule{display:flex;flex-direction:column;gap:5px;padding:10px 0;border-top:1px solid #ece5d6;font-size:13.5px;line-height:1.4}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11.5px;color:#56615b}
+.kv{display:grid;grid-template-columns:70px minmax(0,1fr);gap:8px;font-size:13px;line-height:1.4;padding:5px 0}
+.btn2{display:flex;align-items:center;justify-content:center;min-height:46px;border-radius:12px;background:#fffdf8;color:#1c2420;font-weight:700;font-size:14px;border:1.5px solid #cfc6b3;font-family:inherit;cursor:pointer;text-decoration:none;flex:1}
+.btn2:hover{color:#1c2420}
+</style>
+</helmet>
+<div class="s">
+  <div style="display: flex; align-items: center; gap: 12px; padding: 16px 16px 6px">
+    <a class="ib" href="M09-Tarama.dc.html" aria-label="Geri"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></a>
+    <div><div class="eb">Ela için · Fındık Kremalı Gofret</div><h1 class="disp" style="font-size: 23px; margin-top: 2px">Neden uygun değil?</h1></div>
+  </div>
+  <div class="pad" style="display: flex; flex-direction: column; gap: 8px; padding-top: 6px">
+    <div class="card">
+      <div style="font-size: 13px; font-weight: 700; color: #3d4742; margin-bottom: 6px">Etiketteki içindekiler</div>
+      <div style="font-size: 13.5px; line-height: 1.6">Şeker, buğday unu, bitkisel yağ (palm), <span class="hn">fındık ezmesi (%13)</span>, yağsız kakao, süt tozu, emülgatör (soya lesitini), tuz, aroma verici. <span class="hw">Eser miktarda yer fıstığı içerebilir.</span></div>
+    </div>
+    <div class="card" style="padding-top: 8px; padding-bottom: 4px">
+      <div style="font-size: 13px; font-weight: 700; color: #3d4742; padding-bottom: 6px">Hangi kural, ne buldu?</div>
+      <div class="rule">
+        <span><span class="v vno">Uygun değil</span></span>
+        <span>“fındık ezmesi” → <b>sert kabuklu meyveler</b> (Türk Gıda Kodeksi alerjen listesi). Ela'nın kesin kısıtı: fındık.</span>
+        <span class="mono">kural ALG-FNDK-02 · sürüm 2</span>
+      </div>
+      <div class="rule">
+        <span><span class="v vwarn">Dikkat</span></span>
+        <span>“eser miktarda yer fıstığı” → çapraz bulaşma uyarısı. Ela'nın kesin kısıtı: yer fıstığı.</span>
+        <span class="mono">kural TRACE-01 · sürüm 1</span>
+      </div>
+      <div style="font-size: 12.5px; color: #3d4742; padding: 8px 0; border-top: 1px solid #ece5d6">Birden çok sonuç çıkarsa en ağırını gösteriyoruz.</div>
+    </div>
+    <div class="card" style="padding-top: 8px; padding-bottom: 8px">
+      <div class="kv"><span class="mut">Kaynak</span><span>Etiket fotoğrafı · ekip doğruladı</span></div>
+      <div class="kv"><span class="mut">Tarih</span><span>12 Eylül 2026</span></div>
+      <div class="kv"><span class="mut">Güven</span><span><b>Yüksek</b> · içerikte açıkça yazıyor</span></div>
+      <div class="kv"><span class="mut">Profil</span><span>Ela · sürüm 3 (fındık, yer fıstığı) · 20 Eylül'de Selin güncelledi</span></div>
+    </div>
+    <div style="display: flex; gap: 8px"><a class="btn2" href="A02-Katalog.dc.html">Bu bilgi yanlış</a><a class="btn2" href="M15-Hane.dc.html">Ela'nın profili</a></div>
+    <div class="mono" style="text-align: center; padding-top: 2px">destek için karar kimliği: scn_8f3a2c</div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

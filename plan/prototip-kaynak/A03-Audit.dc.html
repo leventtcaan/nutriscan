@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Admin · Audit log</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&amp;family=Instrument+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Instrument Sans',system-ui,sans-serif;color:#1c2420;background:#f3f1ec}
+*{box-sizing:border-box}
+a{color:#1f5c45}a:hover{color:#15432f}
+.w{width:1440px;height:900px;background:#f3f1ec;display:flex;overflow:hidden}
+.side{width:240px;background:#1c2420;color:#d9ded9;display:flex;flex-direction:column;padding:22px 14px;gap:4px;flex-shrink:0}
+.sl{display:flex;align-items:center;height:40px;padding:0 12px;border-radius:9px;font-size:14px;font-weight:600;color:#c3cac5;text-decoration:none}
+.sl:hover{color:#fff;background:#2a332e}
+.slon{background:#2f3a34;color:#fff}
+.disp{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-0.01em;margin:0}
+.mut{color:#58625c}
+.card{background:#fff;border:1px solid #e0dcd2;border-radius:14px;padding:6px 8px}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12.5px}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th{text-align:left;font-size:12px;color:#58625c;font-weight:700;padding:10px 12px;border-bottom:1px solid #e0dcd2}
+td{padding:12px;border-bottom:1px solid #eeeae2;vertical-align:top;line-height:1.4}
+.act{display:inline-flex;height:22px;align-items:center;padding:0 7px;border-radius:6px;font-size:12px;font-weight:700;font-family:'IBM Plex Mono',ui-monospace,monospace;background:#eef0ee;color:#2f3a34}
+.bg{background:#fbeee9;color:#7d2317}
+.f{display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 12px;border-radius:10px;border:1.5px solid #cfc9bb;background:#fff;font:inherit;font-size:13.5px;font-weight:600;color:#1c2420;cursor:pointer}
+</style>
+</helmet>
+<div class="w">
+  <nav class="side" aria-label="Admin gezinme">
+    <div style="font-family: 'Fraunces', Georgia, serif; font-size: 18px; color: #fff; padding: 0 12px 16px">NutriScan <span style="font-family: 'Instrument Sans', sans-serif; font-size: 12px; color: #9aa59f">admin</span></div>
+    <a class="sl" href="A04-Operasyon.dc.html">Operasyon</a>
+    <a class="sl" href="A01-KararIzi.dc.html">Karar izi</a>
+    <a class="sl" href="A02-Katalog.dc.html">Katalog moderasyonu</a>
+    <a class="sl" href="A02-Katalog.dc.html">Fiş eşleştirme kuyruğu</a>
+    <a class="sl" href="A03-Audit.dc.html">Kurallar ve sözlük</a>
+    <a class="sl" href="A04-Operasyon.dc.html">Deneyler</a>
+    <a class="sl slon" href="A03-Audit.dc.html">Audit log</a>
+    <a class="sl" href="A03-Audit.dc.html">KVKK talepleri</a>
+    <div style="margin-top: auto; font-size: 12.5px; color: #9aa59f; padding: 0 12px">Levent · Admin</div>
+  </nav>
+  <div style="flex-grow: 1; display: flex; flex-direction: column; padding: 26px 32px; gap: 16px; min-width: 0">
+    <div style="display: flex; justify-content: space-between; align-items: center">
+      <h1 class="disp" style="font-size: 28px">Audit log</h1>
+      <div style="display: flex; gap: 8px"><button class="f" type="button">Aktör: hepsi</button><button class="f" type="button">İşlem: hepsi</button><button class="f" type="button">Son 7 gün</button></div>
+    </div>
+    <div class="card">
+      <table>
+        <thead><tr><th style="width: 130px">Zaman</th><th style="width: 130px">Kim</th><th style="width: 190px">İşlem</th><th style="width: 190px">Hedef</th><th style="width: 220px">Önce → sonra</th><th>Gerekçe</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">24 Eyl 16:10</td><td><b>Hilal</b><br><span class="mut" style="font-size: 12px">Moderatör</span></td><td><span class="act">catalog.approve</span></td><td>Köy Yoğurdu 1 kg</td><td class="mono">alerjen: — → süt</td><td>Etiket net okunuyor; tuz satırı fotoğrafta doğrulandı.</td></tr>
+          <tr><td class="mono">24 Eyl 15:02</td><td><b>Ozan</b><br><span class="mut" style="font-size: 12px">Admin</span></td><td><span class="act">rule.update</span></td><td class="mono">ALG-FNDK-02</td><td class="mono">v1 → v2</td><td>“fındık ezmesi” eş anlamlısı eklendi. Test seti tamamı geçti.</td></tr>
+          <tr><td class="mono">24 Eyl 11:40</td><td><b>Levent</b><br><span class="mut" style="font-size: 12px">Admin</span></td><td><span class="act bg">support.access</span></td><td class="mono">hane h_12 · 15 dk</td><td class="mono">—</td><td>Destek erişimi: kullanıcı talebi #231. Süre dolunca otomatik kapandı.</td></tr>
+          <tr><td class="mono">23 Eyl 21:05</td><td><b>sistem</b></td><td><span class="act">kvkk.export</span></td><td class="mono">u_91…</td><td class="mono">—</td><td>Kullanıcı verilerini indirme talebi karşılandı.</td></tr>
+          <tr><td class="mono">23 Eyl 18:22</td><td><b>Hilal</b><br><span class="mut" style="font-size: 12px">Moderatör</span></td><td><span class="act">match.confirm</span></td><td class="mono">A101 “ULK CIK.GOF 36G”</td><td class="mono">— → sku_…</td><td>Zincir sözlüğüne eklendi.</td></tr>
+          <tr><td class="mono">22 Eyl 10:00</td><td><b>Levent</b><br><span class="mut" style="font-size: 12px">Admin</span></td><td><span class="act">role.grant</span></td><td>Hilal</td><td class="mono">— → Moderatör</td><td>Katalog moderasyonu için.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="display: flex; gap: 8px; align-items: center; font-size: 13px; color: #3d4742">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1f5c45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>
+      Kayıtlar değiştirilemez ve silinemez. Zincir doğrulaması geçerli, son kontrol 16:15.
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
