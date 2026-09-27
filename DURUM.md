@@ -13,19 +13,20 @@ updated: 2026-09-28
 - Ortak altyapı kuruldu (28 Eyl, ADR-013): bu depo, `AGENTS.md`, `docs/anayasa.md`, skill'ler, oturum günlükleri,
   board ↔ `plan/board/pbi.yaml`. Kod henüz yok (kasıtlı; iskelet AB#140 ve sonrası).
 - Board: https://dev.azure.com/hilalhocaoglu20/NutriScan — 8 Epic · 65 Feature · 65 PBI · 21 Task, hepsi atanmış.
+- Depo: https://github.com/leventtcaan/nutriscan (private) — Azure Boards'a GitHub App ile bağlı: commit/PR'da `AB#<no>` iş öğesine bağlanır, `Fixes AB#<no>` merge'de kapatır.
 
 ## Bu haftanın öncelikleri (tarihler "en geç"; erken bitirmek serbest)
 1. **AB#104** takvim + çalışma akışı onayı (ekip, 30 Eyl) · **AB#109** fiş/"bitti" kaydı (ekip, 5 Eki)
 2. **2 Ekim Cuma** danışman görüşmesi + **MR1** Teams'e aynı gün
 3. **AB#117** proposal eksikleri (öğrenci no, grup no; 9 Eki danışmana) · **AB#122/123** tarif şeması + sözlük (Ozan, 16 Eki)
-4. Depo + board bağlantısı: GitHub App (AB#128) · herkes ilk promptu çalıştırır (`plan/ilk-prompt.md`)
+4. Hilal ve Ozan: GitHub davetini kabul et, depoyu klonla, ilk promptu çalıştır (`plan/ilk-prompt.md`)
 
 ## Bekleyen kararlar
 - ADR-013 ortak altyapı — ÖNERİ, ekip onayı (A0.1 ile).
 - Kalıcı tasarım dili (renk/yazı) — A1.7-a'da `frontend-design` planıyla; prototip paleti taslak.
 
 ## Açık riskler
-- **Azure DevOps MCP:** organizasyon kişisel Microsoft hesaplı → uzak sunucu desteklenmiyor; yerel sunucu + PAT denenmedi (AB#128 kapsamında deneme).
+- **Azure DevOps MCP:** organizasyon kişisel Microsoft hesaplı → uzak sunucu desteklenmiyor; yerel sunucu + PAT henüz denenmedi (ilk deneme Levent).
 - **marketfiyati izni:** dönüş yok (24 Eyl); en geç ~9 Eki hatırlatma. B planı ekip fiyat turu (AB#186).
 - **EVREN ücretsiz dönemi 1 Kasım'da bitiyor:** deneme (AB#158) en geç 30 Ekim.
 - Eski projenin sırları (SMTP/DB) iptal edildi mi teyit edilmedi; eski Azure Repos'ta 4 depo duruyor (dokunulmadı).
