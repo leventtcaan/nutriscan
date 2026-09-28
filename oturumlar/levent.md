@@ -56,3 +56,11 @@
 - sıradaki:   yeni komuta merkezi oturumu: sıradaki işin seçimi (DURUM › Sıradaki) · AB#149 yeni uygulama oturumunda
 - AI:         AI agent · araştırma, betikler, board/GitHub yapılandırması, dokümanlar · Levent: tüm kararlar ve onaylar
 
+
+## 2026-09-29 · komuta merkezi (iş sırası, referans kuralı, ado PAT)
+- yaptım:     sıradaki iş sırası (DURUM › Sıradaki, bağlantılı) · iş öğesi referans kuralı (AGENTS.md + kişisel katman) ·
+              ado MCP 401 kök nedeni: PAT hiç yoktu → salt-okuma PAT (Work Items + Project/Team Read, 27 Ara) Anahtar Zinciri'nde, ~/.zshenv; API 200
+- karar:      yok (referans biçimi süreç kuralı olarak AGENTS.md'de; PAT yalnız okuma, en az yetki)
+- takıldım:   `!` ile başlatılan etkileşimli `security -w` istemine yapıştırma ilk iki denemede ulaşmadı
+- sıradaki:   yeni oturumda ado MCP doğrulaması → A1.6-a (AB#149) uygulama oturumu · A1.1-a kapanışı (K→PBI eşleme)
+- AI:         AI agent · kök neden, PAT formu, kasa/ortam ayarı, doğrulama · Levent: Create, token'ı kasaya koyma, onaylar
