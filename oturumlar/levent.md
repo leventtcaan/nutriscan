@@ -30,3 +30,11 @@
 - takıldım:   ado MCP 401 (PAT) · §8'de shared satırı yoktu (eklendi) · Gradle yalnız Homebrew'la (OpenJDK 27 de geldi)
 - sıradaki:   PR #2 incelemesi (Hilal) → merge sonrası kök AGENTS.md › Komutlar'a `cd backend && ./gradlew build`; PAT yenile
 - AI:         Claude Code · sürüm doğrulama, bütün kod/test, aktarım ve notlar · Levent: kök paket, tek proje, kurulum, onay
+
+## 2026-09-28 · AB#140 kapanış ve board düzeni (aynı oturumun devamı)
+- yaptım:     PR #2 squash merge → AB#140 Done (Fixes ile otomatik) · A1.2-d board senkronu PBI'ı (AB#261) + A1.2-a (AB#136) → Hilal ·
+              AB#139, AB#129 In Progress · pbi-baslat/kapat'a tıklanabilir board bağlantıları · PR inceleyen kuralı (iki ekip üyesi) · ekip mesajı
+- karar:      yok (iş ataması; ADR-014 ÖNERİ bekliyor)
+- takıldım:   Azure'a yazma ilk denemede izin engeline takıldı (sonra izin verildi) · etiket güncellemesinde `add` ekliyor, `replace` gerekli
+- sıradaki:   AZURE_BOARDS_PAT secret + repo değişkenleri (A1.2-d için, Levent) · 30 Eyl takvim onayı · 2 Eki danışman + MR1
+- AI:         Claude Code · board REST (validateOnly → yazma), betik, mesaj taslakları · Levent: atama ve dağıtım kararları
