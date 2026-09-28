@@ -39,5 +39,6 @@ Board/prompt: `python3 plan/board/board_uret.py` · Takvim mesajı: `python3 pla
 Proposal: `python3 plan/proposal/build_docx.py` · Ekip paketi: `python3 plan/ekip_paketi_uret.py <klasör>`
 
 ## Bağlantılar
+Fiş ve kiler kayıtları (Drive, yalnız ekip; görseller depoya girmez): https://drive.google.com/drive/folders/1epph-aHH7v28m11WbxFwLXEksCyVMCEi
 Kurallar `AGENTS.md` · Anayasa `docs/anayasa.md` · Süreç `plan/calisma-akisi.md` · Takvim `plan/takvim.md` ·
 Kararlar `plan/kararlar.md` · İlk açılış `plan/ilk-prompt.md` · Tez `arastirma/07-tez-v5.md` · Ürün `plan/urun-tanimi.md`
