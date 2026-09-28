@@ -21,3 +21,12 @@
 - takıldım:   Scrum süreç geçişi organizasyon yetkisi istedi (Hilal yaptı)
 - sıradaki:   ortak depo altyapısı (ADR-013), GitHub repo + Azure bağlantısı
 - AI:         Claude Code (komuta merkezi): araştırma ajanları, taslaklar, betikler, board yüklemesi; kararlar Levent'in
+
+## 2026-09-28 · AB#140 Backend iskeleti (A1.3-a)
+- yaptım:     backend/ iskeleti (Java 25, Boot 4.1.1, Modulith 2.1.1, Gradle 9.8.0 wrapper SHA-256 pinli), 13 modül + açık
+              allowedDependencies, 3 test (verify, modül listesi, sürüm kataloğu); negatif kanıt (sınır bozulunca build kırmızı);
+              PR #2 (vekil Hilal). Proje aktarımı + Apple Notes: 00 · Oryantasyon (O·1–3), 05 · Kod (U·1).
+- karar:      ADR-014 modül sınırları (ÖNERİ) · kişisel katman: TODO(human) kalktı, aktarım protokolü geldi (CLAUDE.local.md)
+- takıldım:   ado MCP 401 (PAT) · §8'de shared satırı yoktu (eklendi) · Gradle yalnız Homebrew'la (OpenJDK 27 de geldi)
+- sıradaki:   PR #2 incelemesi (Hilal) → merge sonrası kök AGENTS.md › Komutlar'a `cd backend && ./gradlew build`; PAT yenile
+- AI:         Claude Code · sürüm doğrulama, bütün kod/test, aktarım ve notlar · Levent: kök paket, tek proje, kurulum, onay

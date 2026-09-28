@@ -11,7 +11,7 @@ updated: 2026-09-28
 - **Aşama 0 · Karar ve proposal (→ 18 Ekim)**, Hazırlık sprinti (28 Eyl – 18 Eki). Sonra Sprint 0 (19 Eki – 1 Kas): temel + walking skeleton.
 - Ürün yönü tez v5.1 (`arastirma/07-tez-v5.md`), ürün tanımı v5.1 (29 FR), proposal v0 hazır (6 sayfa). Prototip: `plan/prototip-kaynak/`.
 - Ortak altyapı kuruldu (28 Eyl, ADR-013): bu depo, `AGENTS.md`, `docs/anayasa.md`, skill'ler, oturum günlükleri,
-  board ↔ `plan/board/pbi.yaml`. Kod henüz yok (kasıtlı; iskelet AB#140 ve sonrası).
+  board ↔ `plan/board/pbi.yaml`. Backend iskeleti AB#140: PR #2 incelemede (vekil Hilal); 13 modül, sınırlar testle korunuyor (ADR-014).
 - Board: https://dev.azure.com/hilalhocaoglu20/NutriScan — 8 Epic · 65 Feature · 65 PBI · 21 Task, hepsi atanmış.
 - Depo: https://github.com/leventtcaan/nutriscan (private) — Azure Boards'a GitHub App ile bağlı: commit/PR'da `AB#<no>` iş öğesine bağlanır, `Fixes AB#<no>` merge'de kapatır.
 
@@ -26,7 +26,7 @@ updated: 2026-09-28
 - Kalıcı tasarım dili (renk/yazı) — A1.7-a'da `frontend-design` planıyla; prototip paleti taslak.
 
 ## Açık riskler
-- **Azure DevOps MCP:** organizasyon kişisel Microsoft hesaplı → uzak sunucu desteklenmiyor; yerel sunucu + PAT henüz denenmedi (ilk deneme Levent).
+- **Azure DevOps MCP:** organizasyon kişisel Microsoft hesaplı → uzak sunucu desteklenmiyor; yerel sunucu bağlandı ama PAT ile 401 (28 Eyl) → PAT yetkisi/süresi kontrol edilmeli (Levent).
 - **marketfiyati izni:** dönüş yok (24 Eyl); en geç ~9 Eki hatırlatma. B planı ekip fiyat turu (AB#186).
 - **EVREN ücretsiz dönemi 1 Kasım'da bitiyor:** deneme (AB#158) en geç 30 Ekim.
 - Eski projenin sırları (SMTP/DB) iptal edildi mi teyit edilmedi; eski Azure Repos'ta 4 depo duruyor (dokunulmadı).

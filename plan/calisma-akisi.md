@@ -150,6 +150,7 @@ n. Yerelde: <build/test/lint komutları>
 | `backend/…/audit` + karar kaydı, gözlemlenebilirlik | Levent | Hilal |
 | `backend/…/safety` (kural motoru: alerjen + sağlık durumu), `data/allergens`, altın setler | Hilal | Levent |
 | `backend/…/household` + `identity` + `consent` | Hilal | Levent |
+| `backend/…/shared` (ortak küçük tipler, `@Modulithic` shared module) | Levent | Hilal |
 | `backend/…/catalog` (+ fiyat), `backend/…/pantry`, `backend/…/recommendation` | Hilal | Levent |
 | Admin backend uçları | Hilal | Ozan |
 | `apps/mobile`, `apps/web`, `apps/admin`, `packages/ui`, `packages/api-client` (üretilir) | Ozan | Hilal (mobil) · Levent (web/admin) |
