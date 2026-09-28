@@ -392,16 +392,16 @@ pbi:
   bagli:
   - A0.9-b
   omurga: zemin
-  kurallar: 'AGENTS.md kural 7 (org/proje/takım koda gömülmez: GitHub repo değişkenleri) · kural 8 (PAT yalnız GitHub secret, loga düşmez) · calisma-akisi
-    §2 durum geçişleri'
+  kurallar: 'AGENTS.md kural 7 (org/proje/takım koda gömülmez: GitHub repo değişkenleri) · kural 8 (PAT yalnız GitHub secret, loga düşmez) · calisma-akisi §2 durum
+    geçişleri'
   baglam:
   - plan/calisma-akisi.md §2 (durumlar ve kim değiştirir)
   - plan/board/azure-idler.yaml (AB# eşlemesi)
   - DURUM.md › Board
-  gorev: Board durumları elle taşınıyor ve unutuluyor (28 Eyl'de AB#139 ve AB#129 New kaldı). GitHub Actions iş akışı dal adındaki ya da PR'daki AB#
-    numarasından iş öğesini bulur; PBI New/Approved → Committed, üst Feature ve Epic New → In Progress; bir Feature'ın bütün PBI'ları Done olunca Feature
-    → Done. Done geçişi mevcut `Fixes AB#` bağlantısıyla kalır. Secret yoksa ya da geçiş başarısızsa iş akışı kırmızı olmaz, PR'a yapılması gereken board
-    aksiyonlarını tıklanabilir bağlantılarla yorum olarak yazar (insanı harekete geçiren yedek yol).
+  gorev: Board durumları elle taşınıyor ve unutuluyor (28 Eyl'de AB#139 ve AB#129 New kaldı). GitHub Actions iş akışı dal adındaki ya da PR'daki AB# numarasından
+    iş öğesini bulur; PBI New/Approved → Committed, üst Feature ve Epic New → In Progress; bir Feature'ın bütün PBI'ları Done olunca Feature → Done. Done geçişi mevcut
+    `Fixes AB#` bağlantısıyla kalır. Secret yoksa ya da geçiş başarısızsa iş akışı kırmızı olmaz, PR'a yapılması gereken board aksiyonlarını tıklanabilir bağlantılarla
+    yorum olarak yazar (insanı harekete geçiren yedek yol).
   degistir:
   - .github/workflows/board-sync.yml
   - tools/board-sync/
@@ -755,7 +755,7 @@ pbi:
   modul: backend/
   area: backend
   effort: 1
-  sprint: Sprint 0
+  sprint: Sprint 1
   bagli:
   - A1.3-a
   omurga: zemin
@@ -766,6 +766,7 @@ pbi:
   - backend/src/test/
   kabul:
   - Örnek property testi ve PIT raporu üretildi
+  en_gec: 13 Kasım
 - id: A1.11-a
   feature: A1.11
   baslik: Contabo sunucu — Docker Compose staging, Caddy TLS, SOPS sırlar, yedek

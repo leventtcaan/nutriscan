@@ -1,4 +1,4 @@
-*NutriScan — Takvim* (plan/takvim.md'den üretildi, 27.09.2026)
+*NutriScan — Takvim* (plan/takvim.md'den üretildi, 28.09.2026)
 
 Her iş: *ne* · 👤 kim · 🔗 neye bağlı · ⏰ en geç. Daha erken bitmesi serbest; en geç tarihi kaçarsa önceden yazılı "kaçarsa" planı uygulanır (tam liste PDF'te).
 Kısaltma: işler ID ile (A2.4 gibi) birbirine bağlanıyor; bir iş, bağlı olduğu işler bitmeden bitmiş sayılmaz.
@@ -54,7 +54,7 @@ Kısaltma: işler ID ile (A2.4 gibi) birbirine bağlanıyor; bir iş, bağlı ol
    👤 Ekip · 🔗 A1.3, A1.6, A1.7 · ⏰ 1 Kasım
 *A1.9* EVREN denemesi: Türkçe tool-call doğruluğu, p95, gömme boyutu, kullanım şartları
    👤 Levent · 🔗 A0.4 · ⏰ 30 Ekim (ücretsiz dönem)
-*A1.10* Teknoloji denemeleri: OR-Tools native Docker imajı, JUnit 6 + jqwik/PIT uyumu (Expo barkod + Türkçe STT denemesi A2.8'in ilk işi)
+*A1.10* Teknoloji denemeleri: OR-Tools native Docker imajı, JUnit 6 + jqwik/PIT uyumu (test araçları Sprint 1'de, en geç 13 Kasım; Expo barkod + Türkçe STT denemesi A2.8'in ilk işi)
    👤 Levent (OR-Tools) · Hilal (test) · 🔗 A1.3 · ⏰ 1 Kasım
 *A1.11* Contabo sunucu kurulumu: Docker Compose, Caddy (TLS), yedek, SOPS
    👤 Levent · 🔗 A0.9 · ⏰ 13 Kasım

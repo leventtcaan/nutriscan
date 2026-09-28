@@ -44,11 +44,10 @@ Yük (Effort): Hilal 5 · Levent 15 · Ozan 11
 | A1.8-b | Walking skeleton — mobil ekranda sunucu durumu + uçtan uca smoke testi | Ozan | antigravity | 2 | A1.7-a, A1.8-a | 1 Kasım |
 | A1.9-a | EVREN denemesi — Türkçe tool-call, p95, gömme, şartlar (rapor) | Levent | claude-code | 3 | A0.4-a | 30 Ekim (ücretsiz dönem) |
 | A1.10-a | OR-Tools CP-SAT (Java) Docker imajında + küçük MSM örneği | Levent | claude-code | 2 | A1.3-a | 1 Kasım |
-| A1.10-b | Test araçları uyumu — JUnit 6, jqwik (property), PIT (mutation) | Hilal | codex | 1 | A1.3-a | 1 Kasım |
 | A1.12-a | Sağlık durumu kuralı şeması (data/schemas/health-rule.schema.json) | Hilal | codex | 2 | A0.6-b | 25 Ekim |
 | A1.12-b | Eşik tablosu v0 — kaynak derleme (4 durum) | Ozan | antigravity | 5 | A1.12-a | 1 Kasım |
 
-Yük (Effort): Hilal 17 · Levent 17 · Ozan 14
+Yük (Effort): Hilal 16 · Levent 17 · Ozan 14
 
 ## Sprint 2
 | PBI | İş | Sahip | Agent | Effort | Bağlı | En geç |
@@ -70,6 +69,7 @@ Yük (Effort): Hilal 13 · Levent 12 · Ozan 13
 | PBI | İş | Sahip | Agent | Effort | Bağlı | En geç |
 |---|---|---|---|---|---|---|
 | A1.4-b | Log/metrik/iz şeması + "sağlık verisi logda yok" kanarya testi | Levent | claude-code | 3 | A1.3-a | 13 Kasım |
+| A1.10-b | Test araçları uyumu — JUnit 6, jqwik (property), PIT (mutation) | Hilal | codex | 1 | A1.3-a | 13 Kasım |
 | A1.11-a | Contabo sunucu — Docker Compose staging, Caddy TLS, SOPS sırlar, yedek | Levent | claude-code | 3 | A0.9-a | 13 Kasım |
 | A2.8-a | Expo barkod gecikmesi + cihazda Türkçe konuşma tanıma denemesi | Ozan | antigravity | 2 | A1.7-a | 9 Aralık |
 | A2.12-a | Web + admin iskeleti (Vite + React, TanStack Router/Query, shadcn/ui) | Ozan | antigravity | 3 | A1.6-b, A1.7-b | 16 Aralık |
@@ -82,7 +82,7 @@ Yük (Effort): Hilal 13 · Levent 12 · Ozan 13
 | A2.6-a | TR model karar kapısı — EVREN birincil mi (ADR-009 kesinleşir) | Levent | insan | 1 | A1.9-a | 15 Kasım |
 | A2.7-a | Motor sözleşmesi — PlanRequest/PlanResult şeması + golden fixture'lar | Levent | claude-code | 2 | A1.6-a | 4 Aralık |
 
-Yük (Effort): Hilal 13 · Levent 11 · Ozan 12
+Yük (Effort): Hilal 14 · Levent 11 · Ozan 12
 
 ## Sprint 3
 | PBI | İş | Sahip | Agent | Effort | Bağlı | En geç |
@@ -113,4 +113,5 @@ Yük (Effort): Hilal 2 · Levent 5 · Ozan 5
 A0.3, A0.7, A0.8, A3.1, A3.2, A3.3, A3.4, A3.5, A3.6, A3.7, A4.1, A4.2, A4.3, A4.4, A4.5, A4.6, A4.7, A4.8, A4.9, A4.10, A5.1, A5.2, A5.3, A5.4, A6.1, A6.2, A6.3, A7.1, A7.2, A7.3, A7.4
 
 ## Kontrol uyarıları
-- Sprint 0 · Hilal: 17 Effort > 14
+- Sprint 0 · Hilal: 16 Effort > 14
+- Sprint 1 · Hilal: 14 Effort > 13
