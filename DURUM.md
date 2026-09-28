@@ -1,6 +1,6 @@
 ---
 title: Durum — NutriScan
-updated: 2026-09-29
+updated: 2026-09-28
 ---
 # Durum
 
@@ -22,10 +22,10 @@ updated: 2026-09-29
 4. ✅ Hilal ve Ozan depoyu kurdu, ilk prompt sorunsuz (28 Eyl)
 
 ## Sıradaki (Levent) — yeni komuta merkezi oturumu buradan başlar
-Sıra (29 Eyl): 1) [A0.4-a · EVREN hesabı](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/115) — en geç 10 Eki (insan işi: hesap +
-anahtar kasaya; EVREN denemesi A1.9 en geç 30 Eki) · 2) [A1.6-a · OpenAPI iskeleti](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/149)
-— kritik yol (A1.6-b, A1.8-a, A1.2-b, A2.7-a bekliyor), yeni uygulama oturumu · 3) [A1.1-a · AGENTS.md doğrulaması](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/131)
-— eksik: anayasa K sütununa test adı/PBI, üç araç kanıtı · 4) ekip Task'ları: [A0.1-a-L](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/105) (30 Eyl) ·
+Sıra (28 Eyl): ✅ A0.4-a Done (EVREN anahtarı kasada, şartlar v1 onaylı) · 1) [A1.6-a · OpenAPI iskeleti](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/149)
+— kritik yol (A1.6-b, A1.8-a, A1.2-b, A2.7-a bekliyor), yeni uygulama oturumu; açılışta 2 onay: sözleşme testi bağımlılığı + `contracts/AGENTS.md` ·
+2) [A1.1-a · AGENTS.md doğrulaması](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/131) — eksik: anayasa K sütununa test adı/PBI, üç araç kanıtı ·
+3) ekip Task'ları: [A0.1-a-L](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/105) (30 Eyl) ·
 [A0.2-a-L](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/110) · [A0.5-a-L](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/118) (9 Eki).
 
 ## Bekleyen kararlar

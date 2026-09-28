@@ -64,3 +64,13 @@
 - takıldım:   `!` ile başlatılan etkileşimli `security -w` istemine yapıştırma ilk iki denemede ulaşmadı
 - sıradaki:   yeni oturumda ado MCP doğrulaması → A1.6-a (AB#149) uygulama oturumu · A1.1-a kapanışı (K→PBI eşleme)
 - AI:         AI agent · kök neden, PAT formu, kasa/ortam ayarı, doğrulama · Levent: Create, token'ı kasaya koyma, onaylar
+
+## 2026-09-28 · komuta merkezi (ado MCP, A0.4-a EVREN, marketfiyati reddi)
+- yaptım:     ado MCP başlatıcısı `tools/ado-mcp.sh` (PAT Anahtar Zinciri'nden) commit + MCP ile doğrulandı · A0.4-a (AB#115) Done:
+              EVREN anahtarı kasada (`nutriscan-evren-api-key`, 31.12.2026), LLM şartları v1 okundu + onaylandı, /v1/models fiyatı 0 CR
+              (1 Kas sonrası ilan yok) → arastirma/09 · EVREN'e 5 soruluk e-posta (öğrenci e-postasıyla) · marketfiyati reddi →
+              ADR-002 sonuç satırı, 02-v2 §5, tez v5.1 ve proposal (Data + risk satırı) güncellendi, .docx yeniden üretildi
+- karar:      EVREN şartları v1 kabul (Levent) · B planı (ekip fiyat turu) tek fiyat yolu — ADR-002'nin önceden yazılı yedeği, yeni ADR yok
+- takıldım:   EVREN sayfaları JS ile çiziliyor (WebFetch boş) → tarayıcı · proposal PDF'i Pages'ten betikle üretilemedi (PDF eski, 18 Eki öncesi elle)
+- sıradaki:   A1.6-a (AB#149) yeni uygulama oturumu · EVREN e-posta yanıtı → arastirma/09 · Feature A0.4 (AB#114) board'da kapanacak
+- AI:         AI agent · MCP/Keychain kurulumu, araştırma, tarayıcıdan okuma, notlar ve metin düzeltmeleri · Levent: hesap, anahtar, şart onayı, e-postalar, kararlar
