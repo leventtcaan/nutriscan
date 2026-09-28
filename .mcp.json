@@ -1,9 +1,8 @@
 {
   "mcpServers": {
     "ado": {
-      "command": "npx",
-      "args": ["-y", "@azure-devops/mcp@2.10.0", "hilalhocaoglu20", "-d", "core", "work", "work-items", "--authentication", "pat"],
-      "env": { "PERSONAL_ACCESS_TOKEN": "${PERSONAL_ACCESS_TOKEN}" }
+      "command": "bash",
+      "args": ["tools/ado-mcp.sh", "@azure-devops/mcp@2.10.0", "hilalhocaoglu20", "-d", "core", "work", "work-items", "--authentication", "pat"]
     }
   }
 }
