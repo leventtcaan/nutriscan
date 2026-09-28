@@ -19,7 +19,7 @@ Amaç: her agent (Claude Code, Codex, Antigravity) bir işe aynı şekilde başl
    - `bagli` listesindeki bir PBI bitmemiş **ve** kullanılabilir sözleşme/fixture/mock yok.
    - İş, promptun "Değiştirebileceğin yer" dışına taşıyor (→ `contract-change` gerekir).
 5. **Plan çıkar (kod yok):** değişecek dosyalar, yazılacak testler (her kabul kriterine en az bir test), ilgili anayasa maddeleri (`docs/anayasa.md`), açık sorular. 5–10 madde. İnsan onaylamadan uygulamaya geçme.
-6. **Dalı aç:** `<modül>/AB<numara>-<kısa-ad>` (promptun "Teslim" bölümünde yazılı). Board'da PBI'ı Committed yapmayı insana hatırlat.
+6. **Dalı aç:** `<modül>/AB<numara>-<kısa-ad>` (promptun "Teslim" bölümünde yazılı). Board'da PBI'ı **Committed**'a sürüklemesini insana hatırlat (Done'ı `Fixes AB#` merge'de otomatik yapar; elle Done yapılmaz).
 7. **Uygularken:** önce test, sonra kod. Bilmediğin sürüm/API/eşik/kaynak uydurulmaz; doğrula ya da `[..]` bırak ve söyle. Hardcode yok: eşik, tarih, kimlik ve parametre yapılandırmadan gelir.
 
 ## Çıktı (kullanıcıya)

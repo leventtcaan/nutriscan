@@ -42,7 +42,16 @@ MR formu board'dan üretilir: kapanan PBI'lar = "yapılanlar", sıradaki sprint 
 | **Task** | Yalnız insan alt işi gerekirse (hesap açma, fotoğraf çekme) | PBI içinde | `Contabo'da SSH anahtarı` |
 | **Bug** | Hata; PBI gibi akar, önceliği sprint içinde en üst | — | `[BUG] …` |
 
-- **Durumlar (PBI):** New → Approved (DoR tamam) → Committed (sprintte, üzerinde çalışılıyor) → Done. Vazgeçilen: Removed (silme yok).
+- **Durumlar ve kim değiştirir (PBI/Bug):**
+  | Geçiş | Ne zaman | Kim / nasıl |
+  |---|---|---|
+  | New → Approved | Sprint planlamada, DoR (§4) tamam | Sahip, board'da sürükler |
+  | Approved → Committed | İşe başlarken (dal açılınca) | Sahip, board'da sürükler (`pbi-baslat` hatırlatır) |
+  | Committed → Done | PR `main`'e girince | **Otomatik:** PR/commit gövdesinde `Fixes AB#<no>` (GitHub App bağlantısı) |
+  | → Removed | Vazgeçilince (silme yok) | Sahip + gerekçe yorumu; `pbi.yaml`'da da işaretlenir |
+- **Task'lar** (ekip işlerindeki kişi payları): To Do → In Progress → Done, herkes kendi payını sürükler. Tüm paylar Done olunca PBI'ın sahibi PBI'ı Done yapar.
+- **Otomatik bağlantı:** commit, dal ya da PR'da `AB#<no>` geçmesi iş öğesine GitHub bağlantısı ekler; durum yalnız `Fixes` ile değişir.
+- Board sütunları durumlarla birebir: Backlog items `New → Approved → Committed (WIP ≤ 6: kişi başı 2) → Done`; Feature/Epic `New → In Progress → Done`. Feature/Epic durumu elle (ilk PBI başlayınca In Progress, son PBI bitince Done).
 - **Alanlar:** Area Path = modül (`NutriScan\backend\safety`, `NutriScan\apps\mobile`, `NutriScan\data` …) · Iteration = sprint (§3) · Effort = 1/2/3/5/8 · **Etiketler:** `sahip:levent|hilal|ozan`, `agent:claude-code|codex|antigravity|insan`, `omurga:motor|guvence1|guvence2|veri|zemin`, `deney:E1|E2|E3`, gerekirse `contract-change`.
 - **Assigned To:** PBI'ın sahibi. Vekil yalnız sahip yokken üstlenir (board'da not düşülür).
 - **Yeni PBI ekleme:** önce `pbi.yaml` → `board_uret.py` → yalnız yeni öğeler yüklenir (`azure-idler.yaml`'da olanlar atlanır); AB# numarası yaml'a değil `azure-idler.yaml`'a yazılır.
