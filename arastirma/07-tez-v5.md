@@ -19,7 +19,7 @@ v4'ün kapsamı korunuyor, hiçbir özellik kesilmiyor. Değişenler:
 1. **Omurga + üç deney:** yedi katkı yerine **1 motor · 2 güvence · 1 veri katkısı · 1 zemin**; başarı kriterleri **E1/E2/E3** deneylerinden geliyor.
 2. **Dürüstlük geçişi:** her sayı kaynağı ve ölçeğiyle; abartılı iddialar yeniden yazıldı (§6).
 3. **Takvim akademik takvime oturdu:** D0 → D1 (491) → Ocak kış kampı → D2 → D3 sertleştirme + demo şeridi → beta → kapanış; proposal'da **taahhüt / planlı / hedef** kademeleri.
-4. **Veri ve eval fabrikası:** tek sahipli iş paketi, Git + CI, haftalık metrikler; marketfiyati izin maili **gönderildi (24 Eylül 2026)**.
+4. **Veri ve eval fabrikası:** tek sahipli iş paketi, Git + CI, haftalık metrikler; marketfiyati izni istendi (24 Eylül 2026), **reddedildi (28 Eylül 2026)** → ekip fiyat turu tek fiyat yolu (ADR-002).
 5. **Konumlanma ve demo anı:** somut kitle ve somut fark; MAYA'ya rakip değil **bağımsız ve tamamlayıcı**; "tek cümle → hafta yeniden planlandı, kanıtıyla" anı; **Röntgen modu**.
 
 ## 1. Problem
@@ -94,7 +94,7 @@ Görünür AI yüzeyleri: Asistan (yazı + ses, adımları görünür), Pazar sa
 - **Sahipler (ADR-004, ADR-011):** tarif içeriği ve eşik tablosu kaynak derlemesi Ozan · şema, katalog/fiyat, alerjen verisi + altın set ve onay Hilal; diğerleri haftada ~2 saat çift onaya ayırır.
 - **Git + CI:** tarif, sözlük, katalog, ikame tablosu YAML/CSV olarak repoda. CI şemayı, sözlük üyeliğini, alerjen kapanışını ve "her malzemenin fiyatlı SKU'su var mı" sorusunu doğrular. Agent'lar veri üretir, CI reddeder, insan onaylar.
 - **Kilometre taşları:** şema + malzeme sözlüğü v0 (Ekim 3. hafta) → **27 Kasım:** 60 tarif + 1. zincirde (Migros) fiyatlı SKU kapsaması ≥%90 (MSM ilk kez gerçek veriyle; 491 final raporunun sayısı) → **15 Ocak:** 120 tarif + 2. zincir fiyatları → **1 Mart:** 200 tarif.
-- **Fiyat:** marketfiyati.org.tr izin maili **gönderildi (24 Eylül 2026)**. Yedek: hanelerin kendi fişleri + ekip fiyat turu (~300 ürün, 2 haftada bir, üç kişiye bölünür) + her fiyatta yaş etiketi.
+- **Fiyat:** marketfiyati.org.tr izni **reddedildi (28 Eylül 2026)**: TÜBİTAK BİLGEM üçüncü taraflara ve akademik çalışmalara ham veri/API vermeye yetkili değil (ADR-002). Fiyat yolu: hanelerin kendi fişleri + ekip fiyat turu (~300 ürün, 2 haftada bir, üç kişiye bölünür) + her fiyatta yaş etiketi.
 - **Pilot zincirler:** Migros (süpermarket) + A101 (indirim zinciri) (ADR-003).
 - **İkame tablosu**, çapraz reaksiyon kuralları ve **sağlık durumu eşik tablosu** bir diyetisyen/alerji uzmanının gözünden geçer.
 - **Haftalık pano:** tarif/hafta (≥12), sözlük kapsaması, zincir başına fiyatlı SKU kapsaması, medyan fiyat yaşı (≤14 gün), çift onay oranı.

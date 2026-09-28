@@ -92,7 +92,7 @@ Baseline below; the full list (29 items) is kept in the repository.
 
 **Architecture outline.** Mobile (Expo) and web/admin (React) clients use a TypeScript client generated from the OpenAPI contract → Spring Boot modular monolith → PostgreSQL (with pgvector). Inside: the safety rule engine (allergens and health-condition rules) filters and scores candidates before the Household Planning Engine (OR-Tools CP-SAT [16]) solves the joint model; the assistant (Spring AI) calls the engines as tools through a privacy gateway that routes household-context requests to EVREN (open models hosted in Türkiye); a RAG component over pgvector suggests ingredient mappings for moderators and retrieves rule sources for explanations, but is never on the decision path; every decision is written to the decision record and shown in the admin trace view.
 
-**Data.** Open Food Facts (ODbL) [17] as a mirrored source; a verified catalogue for Migros and A101 (prices from marketfiyati.org.tr if permission is granted, otherwise team-collected prices with a price-age label); 200 team-written Turkish home recipes with an allergen ontology based on the Turkish Food Codex labelling regulation; a versioned health-rule threshold table with a source for every row (Turkish Food Codex nutrition-claim limits, WHO sugar and sodium guidelines [19][20]), reviewed by a dietitian; synthetic households for development.
+**Data.** Open Food Facts (ODbL) [17] as a mirrored source; a verified catalogue for Migros and A101 (team-collected prices refreshed biweekly plus household receipts, each with a price-age label; the public price platform does not provide data or API access for third-party or academic use); 200 team-written Turkish home recipes with an allergen ontology based on the Turkish Food Codex labelling regulation; a versioned health-rule threshold table with a source for every row (Turkish Food Codex nutrition-claim limits, WHO sugar and sodium guidelines [19][20]), reviewed by a dietitian; synthetic households for development.
 
 | Layer / component | Technology or tool | Reason for the choice |
 |---|---|---|
@@ -128,7 +128,7 @@ By the end of this semester: working prototype (mobile + web + admin) with the v
 | Risk | Likelihood | Impact | Mitigation plan |
 |---|---|---|---|
 | Missing or wrong product/allergen data | High | High | Verified catalogue; "could not verify" instead of guessing; gold-set release gate |
-| Price data permission not granted | Medium | Medium | Team-collected prices (~300 items, biweekly) with price age |
+| Team-collected prices go stale or miss items | Medium | Medium | Biweekly price tour (~300 items, split across three members); price age shown on every price; stale price → "could not verify"; CI checks priced-SKU coverage ≥ 90% |
 | Joint optimisation too slow at scale | Medium | Medium | Time-limited exact solver with gap badge; metaheuristic (E1) |
 | LLM unreliable or unavailable | Medium | Medium | LLM never decides; workflow intents; template fallback |
 | Medical-device boundary for health-condition features [22] | Medium | High | Informational wording only, no diagnosis or treatment claims, source-cited rules, dietitian review, in-app disclaimer |

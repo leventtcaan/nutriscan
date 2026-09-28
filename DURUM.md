@@ -18,7 +18,7 @@ updated: 2026-09-29
 ## Bu haftanın öncelikleri (tarihler "en geç"; erken bitirmek serbest)
 1. **AB#104** takvim + çalışma akışı onayı (ekip, 30 Eyl) · **AB#109** fiş/"bitti" kaydı (ekip, 5 Eki)
 2. **2 Ekim Cuma** danışman görüşmesi + **MR1** Teams'e aynı gün (hazırlık Levent başlatınca; önceden gündeme getirilmez)
-3. **AB#117** proposal eksikleri (öğrenci no, grup no; 9 Eki danışmana) · **AB#122/123** tarif şeması + sözlük (Ozan, 16 Eki)
+3. **AB#117** proposal eksikleri (öğrenci no, grup no; 9 Eki danışmana; PDF eski — teslimden önce `.docx` Pages'te açılıp Dosya → Dışa Aktar → PDF) · **AB#122/123** tarif şeması + sözlük (Ozan, 16 Eki)
 4. ✅ Hilal ve Ozan depoyu kurdu, ilk prompt sorunsuz (28 Eyl)
 
 ## Sıradaki (Levent) — yeni komuta merkezi oturumu buradan başlar
