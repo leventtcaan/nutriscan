@@ -1,0 +1,45 @@
+# System endpoints (served by backend shared module, package com.nutriscan.shared.api).
+# Not a domain module; kept outside modules/ on purpose.
+paths:
+  /api/system/ping:
+    get:
+      operationId: ping
+      tags: [system]
+      summary: Liveness, build version and database reachability.
+      responses:
+        "200":
+          description: The service is running.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PingResponse"
+              example:
+                version: 0.1.0
+                database: NOT_CONFIGURED
+        "500":
+          $ref: "./shared.yaml#/components/responses/ServerError"
+
+components:
+  schemas:
+    PingResponse:
+      type: object
+      additionalProperties: false
+      required: [version, database]
+      properties:
+        version:
+          type: string
+          minLength: 1
+          description: Version of the running backend build.
+        database:
+          $ref: "#/components/schemas/DatabaseStatus"
+
+    DatabaseStatus:
+      type: string
+      description: >-
+        UP: a connection was obtained and validated within the configured timeout.
+        DOWN: a database is configured but the check failed or timed out.
+        NOT_CONFIGURED: no database is configured, so nothing was checked.
+      enum:
+        - UP
+        - DOWN
+        - NOT_CONFIGURED

@@ -1,0 +1,16 @@
+# Entry point of the NutriScan HTTP API contract (contract-first, see contracts/AGENTS.md).
+# Only this file is read by tools (validator, Orval, oasdiff); every other file is a fragment
+# that this file references. Each path below points into the file of the module that serves it.
+openapi: 3.1.1
+info:
+  title: NutriScan API
+  version: 0.1.0
+  description: >-
+    Household meal and shopping planning. Decisions come from the rule engine and the
+    Household Planning Engine; every verdict is one of the four values in shared.yaml#Verdict.
+tags:
+  - name: system
+    description: Service liveness and build information.
+paths:
+  /api/system/ping:
+    $ref: "./system.yaml#/paths/~1api~1system~1ping"
