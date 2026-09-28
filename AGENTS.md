@@ -32,6 +32,10 @@ Hepsini baştan okuma; ihtiyaç olduğunda aç.
 | Önceki araştırma | `arastirma/NN-*.md` | Konu daha önce araştırıldıysa |
 | Ders kuralları, şablonlar | `kaynak/` (**değiştirme**) | Teslim sorusunda |
 
+**İş öğesi referansı:** insana iş öğesi çıplak `AB#115` diye verilmez; Azure başlığındaki takvim kimliği + kısa ad +
+tıklanabilir bağlantı: `[A0.4-a · kısa ad](<board>/_workitems/edit/115)` (board adresi `DURUM.md`, eşleme
+`plan/board/azure-idler.yaml`). Çıplak `AB#<no>` yalnız commit ve PR metninde (GitHub ↔ Azure bağlantısı onu okur).
+
 ## Oturum protokolü (skill: `pbi-baslat`, `pbi-kapat`)
 **Başlarken:** `DURUM.md` + `oturumlar/<kişi>.md` son 3 girdi → `git pull` → çalışılacak PBI'ın promptu ve kabul
 kriterleri. PBI yoksa ya da kabul kriteri boşsa **dur ve iste.** Bağımlı olduğu iş bitmemişse ve sözleşme/fixture
