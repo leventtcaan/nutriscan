@@ -35,7 +35,9 @@ anahtar kasaya; EVREN denemesi A1.9 en geç 30 Eki) · 2) [A1.6-a · OpenAPI isk
 ## Açık riskler
 - **Azure DevOps MCP — çözüldü, yalnız yenileme riski:** masaüstü uygulaması `~/.zshenv` okumadığı için `.mcp.json` artık `tools/ado-mcp.sh` başlatıcısını kullanıyor (PAT'i env'den ya da Anahtar Zinciri `nutriscan-ado-pat` kaydından alır, base64(`:PAT`) yapar). MCP ile AB#115 get + list_comments doğrulandı (401 yok). Salt-okuma PAT 27 Ara'da biter → öncesinde yenile, Anahtar Zinciri kaydını değiştirmek yeter.
 - **marketfiyati izni:** dönüş yok (24 Eyl); en geç ~9 Eki hatırlatma. B planı ekip fiyat turu (AB#186).
-- **EVREN ücretsiz dönemi 1 Kasım'da bitiyor:** deneme (AB#158) en geç 30 Ekim.
+- **EVREN ücretsiz dönemi 1 Kasım'da bitiyor:** deneme (AB#158) en geç 30 Ekim. Levent'in anahtarı Anahtar Zinciri'nde
+  (`nutriscan-evren-api-key`, son kullanma 31.12.2026 → öncesinde yenile). LLM şartları v1 onaylandı (28 Eyl); fiyat hâlâ 0 CR, 1 Kasım sonrası ilan edilmedi;
+  şartlar anahtar paylaşımını yasaklıyor, saklama süresi yazılı değil (`arastirma/09-evren-ve-board-notu.md`).
 - Eski projenin sırları (SMTP/DB) iptal edildi mi teyit edilmedi; eski Azure Repos'ta 4 depo duruyor (dokunulmadı).
 
 ## Sabit tarihler
