@@ -5,7 +5,7 @@ kaynak: plan/board/pbi.yaml + plan/takvim.md
 ---
 # Backlog özeti
 
-8 epic · 65 feature · 65 PBI (53 promptlu). PBI'a bölünmemiş feature'lar sırası gelince bölünür (sprint planlamadan önce).
+8 epic · 65 feature · 66 PBI (54 promptlu). PBI'a bölünmemiş feature'lar sırası gelince bölünür (sprint planlamadan önce).
 
 ## Hazırlık
 | PBI | İş | Sahip | Agent | Effort | Bağlı | En geç |
@@ -19,10 +19,11 @@ kaynak: plan/board/pbi.yaml + plan/takvim.md
 | A0.9-a | GitHub private repo (Pro) + koruma + collaborator'lar | Levent | insan | 1 | — | 10 Ekim |
 | A0.9-b | Azure Boards (Scrum) + GitHub bağlantısı + backlog içe aktarımı | Levent | insan | 2 | A0.9-a | 12 Ekim |
 | A1.1-a | Kök AGENTS.md v1 + docs/anayasa.md | Levent | claude-code | 3 | A0.9-a | 18 Ekim |
+| A1.2-d | Board senkronu — dal/PR olaylarıyla Azure Boards durum geçişleri + yapılandırma yoksa PR'a aksiyon listesi | Levent | claude-code | 2 | A0.9-b | 29 Ekim |
 | A1.3-a | Backend iskeleti — Gradle 9 + Boot 4.1 + Modulith, boş modüller, verify yeşil | Levent | claude-code | 3 | A0.9-a | 18 Ekim |
 | A1.6-a | OpenAPI sözleşme iskeleti + sözleşme testi | Levent | claude-code | 2 | A1.3-a | 18 Ekim |
 
-Yük (Effort): Hilal 3 · Levent 15 · Ozan 11
+Yük (Effort): Hilal 3 · Levent 17 · Ozan 11
 
 ## Sprint 0
 | PBI | İş | Sahip | Agent | Effort | Bağlı | En geç |
