@@ -12,14 +12,19 @@ updated: 2026-09-28
 - Ürün yönü tez v5.1 (`arastirma/07-tez-v5.md`), ürün tanımı v5.1 (29 FR), proposal v0 hazır (6 sayfa). Prototip: `plan/prototip-kaynak/`.
 - Ortak altyapı kuruldu (28 Eyl, ADR-013): bu depo, `AGENTS.md`, `docs/anayasa.md`, skill'ler, oturum günlükleri,
   board ↔ `plan/board/pbi.yaml`. Backend iskeleti AB#140 Done (PR #2 merge, 28 Eyl): 13 modül, sınırlar testle korunuyor (ADR-014). Board senkronu AB#261 (Hilal).
-- Board: https://dev.azure.com/hilalhocaoglu20/NutriScan — 8 Epic · 65 Feature · 65 PBI · 21 Task, hepsi atanmış.
+- Board: https://dev.azure.com/hilalhocaoglu20/NutriScan — 8 Epic · 65 Feature · 66 PBI · 21 Task, hepsi atanmış. Kapasite (Effort/sprint): varsayılan 13 · Sprint 0 Levent 20, Hilal 16 · Sprint 1 Hilal 14.
 - Depo: https://github.com/leventtcaan/nutriscan (private) — Azure Boards'a GitHub App ile bağlı: commit/PR'da `AB#<no>` iş öğesine bağlanır, `Fixes AB#<no>` merge'de kapatır.
 
 ## Bu haftanın öncelikleri (tarihler "en geç"; erken bitirmek serbest)
 1. **AB#104** takvim + çalışma akışı onayı (ekip, 30 Eyl) · **AB#109** fiş/"bitti" kaydı (ekip, 5 Eki)
-2. **2 Ekim Cuma** danışman görüşmesi + **MR1** Teams'e aynı gün
+2. **2 Ekim Cuma** danışman görüşmesi + **MR1** Teams'e aynı gün (hazırlık Levent başlatınca; önceden gündeme getirilmez)
 3. **AB#117** proposal eksikleri (öğrenci no, grup no; 9 Eki danışmana) · **AB#122/123** tarif şeması + sözlük (Ozan, 16 Eki)
-4. Hilal ve Ozan: GitHub davetini kabul et, depoyu klonla, ilk promptu çalıştır (`plan/ilk-prompt.md`)
+4. ✅ Hilal ve Ozan depoyu kurdu, ilk prompt sorunsuz (28 Eyl)
+
+## Sıradaki (Levent) — yeni komuta merkezi oturumu buradan başlar
+Hazırlık sprintinde Levent'te açık: **AB#149** OpenAPI sözleşme iskeleti (en geç 18 Eki; kod, yeni uygulama oturumu) ·
+**AB#131** AGENTS.md doğrulaması (Hilal/Ozan tamam, Claude tarafı AB#140'ta görüldü → kapanışı) · **AB#115** EVREN hesabı +
+Azure MCP PAT 401 düzeltmesi (kodsuz, Levent) · ekip Task'ları (AB#105, #110, #118). İlk soru: hangisiyle, hangi sırayla.
 
 ## Bekleyen kararlar
 - ADR-013 ortak altyapı — ÖNERİ, ekip onayı (A0.1 ile).

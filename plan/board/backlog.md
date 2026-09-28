@@ -113,5 +113,4 @@ Yük (Effort): Hilal 2 · Levent 5 · Ozan 5
 A0.3, A0.7, A0.8, A3.1, A3.2, A3.3, A3.4, A3.5, A3.6, A3.7, A4.1, A4.2, A4.3, A4.4, A4.5, A4.6, A4.7, A4.8, A4.9, A4.10, A5.1, A5.2, A5.3, A5.4, A6.1, A6.2, A6.3, A7.1, A7.2, A7.3, A7.4
 
 ## Kontrol uyarıları
-- Sprint 0 · Hilal: 16 Effort > 14
-- Sprint 1 · Hilal: 14 Effort > 13
+- yok

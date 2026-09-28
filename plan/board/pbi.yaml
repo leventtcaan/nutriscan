@@ -6,13 +6,15 @@
 #          adimlar[], kabul[], komutlar[]
 # Kural: prompt kuralları tekrar etmez, repo dosyalarına işaret eder. Kaynak/eşik/sayı UYDURULMAZ; bilinmeyen [..] kalır.
 
-# kapasite: kişi başı sprint Effort sınırı. Sprint 0 önden yüklü; Levent 20 platform rolü nedeniyle (ekip onayı 2026-09-27).
+# kapasite: kişi başı sprint Effort sınırı. Sprint 0 önden yüklü; Levent 20 platform rolü nedeniyle (ekip onayı 2026-09-27). Hilal Sprint 0: 16, Sprint 1: 14 — AB#136 (CI backend) bilinçli devri (Levent, 2026-09-28).
 kapasite:
   varsayilan: 13
   Sprint 0:
     L: 20
-    H: 14
+    H: 16
     O: 14
+  Sprint 1:
+    H: 14
 varsayilan_baglam:
 - AGENTS.md (kök)
 - docs/anayasa.md (S1–S22, K01–K20)

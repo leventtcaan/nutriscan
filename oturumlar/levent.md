@@ -45,3 +45,14 @@
 - takıldım:   Ozan'ın Azure adresi Google hesabı değil → Drive paylaşımı olmadı
 - sıradaki:   Ozan'ın Gmail adresiyle paylaşım · AZURE_BOARDS_PAT secret (AB#261 gelince) · 30 Eyl takvim onayı · 2 Eki danışman + MR1
 - AI:         Claude Code · klasör/tablo/not oluşturma, mesaj taslağı · Levent: klasörün açılması ve paylaşım kararı
+
+## 2026-09-28 · komuta merkezi (ortak altyapı, board, repo) — oturum devri
+- yaptım:     ADR-013 ortak altyapı (depo = planlama klasörü, AGENTS.md, anayasa, 9 skill, oturum günlükleri) · ADR'ler ayrı dosyalara ·
+              GitHub repo + koruma (yönetici istisnası) + davetler · Azure Boards ↔ GitHub App (AB#128 ile doğrulandı) · board sütunları
+              Scrum durumlarına bağlandı · 21 kişi payı · commit geçmişinden Claude izi temizlendi, PR/commit'te araç adı yok kuralı ·
+              AB#161 Sprint 1'e, Hilal kapasitesi S0 16 / S1 14 · AB#140 sonrası doğrulama (3 test yeşil, PR #2 metni temizlendi)
+- karar:      ADR-013; öğrenme protokolü (kodu agent yazar, üç aşamalı referanslı aktarım — CLAUDE.local.md); MR1 Levent başlatınca
+- takıldım:   Azure süreç geçişi organizasyon yetkisi istedi (Hilal yaptı) · board sütunları geçişte bozuk kalmıştı
+- sıradaki:   yeni komuta merkezi oturumu: sıradaki işin seçimi (DURUM › Sıradaki) · AB#149 yeni uygulama oturumunda
+- AI:         AI agent · araştırma, betikler, board/GitHub yapılandırması, dokümanlar · Levent: tüm kararlar ve onaylar
+
