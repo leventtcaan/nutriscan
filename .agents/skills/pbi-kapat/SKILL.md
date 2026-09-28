@@ -12,4 +12,4 @@ description: NutriScan'de bir PBI üzerindeki çalışmayı bitirirken ya da otu
 5. **Karar:** oturumda mimari/ürün kararı alındıysa `karar-yaz` skill'iyle ADR taslağı (durum ÖNERİ).
 6. **Oturum günlüğü:** `oturumlar/<kişi>.md` sonuna 5 satır (yaptım · karar · takıldım · sıradaki · AI). Eski girdiye dokunma.
 7. **DURUM.md:** yalnız aşama/öncelik/risk değiştiyse; ≤60 satır kuralı.
-8. İnsana hatırlat: PR'ı aç, inceleyeni ata (modül sahibi ya da vekil — `plan/calisma-akisi.md` §8), Cuma demosunda anlatılacak kısmı seç.
+8. İnsana hatırlat: PR'ı aç, inceleyeni ata (modül sahibi ya da vekil — `plan/calisma-akisi.md` §8), Cuma demosunda anlatılacak kısmı seç. Her hatırlatma tıklanabilir bağlantıyla verilir (iş öğesi, PR, sprint backlog; biçim `pbi-baslat` › Çıktı).

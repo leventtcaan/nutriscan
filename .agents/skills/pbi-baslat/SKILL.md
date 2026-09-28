@@ -24,3 +24,7 @@ Amaç: her agent (Claude Code, Codex, Antigravity) bir işe aynı şekilde başl
 
 ## Çıktı (kullanıcıya)
 - PBI özeti (1 cümle) · hazır mı (evet/hayır + neden) · plan · ilk komut.
+- **Tıklanabilir bağlantılar** (board adresi `DURUM.md` › Board satırından, takım ve sprint board'dan; elle yazma):
+  iş öğesi `<board>/_workitems/edit/<AB>` · üst Feature ve Epic aynı biçimde · sprint backlog
+  `<board>/_sprints/backlog/<takım>/<iteration path>` · prompt dosyası ve bağlı PBI'ların promptları (depo içi bağlantı).
+  Kullanıcı hiçbir öğeyi board'da arayarak bulmak zorunda kalmamalı.
