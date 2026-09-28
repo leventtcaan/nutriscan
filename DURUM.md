@@ -33,7 +33,7 @@ anahtar kasaya; EVREN denemesi A1.9 en geç 30 Eki) · 2) [A1.6-a · OpenAPI isk
 - Kalıcı tasarım dili (renk/yazı) — A1.7-a'da `frontend-design` planıyla; prototip paleti taslak.
 
 ## Açık riskler
-- **Azure DevOps MCP:** 401'in nedeni PAT'in hiç olmamasıydı (`PERSONAL_ACCESS_TOKEN` tanımsız). 29 Eyl: salt-okuma PAT (Work Items + Project/Team Read, 27 Ara'da biter) Anahtar Zinciri'nde, `~/.zshenv` yüklüyor; API 200. Ardından ikinci 401 nedeni paketin base64(`:PAT`) beklemesi → `~/.zshenv` kodlayarak veriyor (REST 200); Claude oturumu yeniden başlayınca MCP doğrulanacak. 27 Ara öncesi yenile.
+- **Azure DevOps MCP — çözüldü, yalnız yenileme riski:** masaüstü uygulaması `~/.zshenv` okumadığı için `.mcp.json` artık `tools/ado-mcp.sh` başlatıcısını kullanıyor (PAT'i env'den ya da Anahtar Zinciri `nutriscan-ado-pat` kaydından alır, base64(`:PAT`) yapar). MCP ile AB#115 get + list_comments doğrulandı (401 yok). Salt-okuma PAT 27 Ara'da biter → öncesinde yenile, Anahtar Zinciri kaydını değiştirmek yeter.
 - **marketfiyati izni:** dönüş yok (24 Eyl); en geç ~9 Eki hatırlatma. B planı ekip fiyat turu (AB#186).
 - **EVREN ücretsiz dönemi 1 Kasım'da bitiyor:** deneme (AB#158) en geç 30 Ekim.
 - Eski projenin sırları (SMTP/DB) iptal edildi mi teyit edilmedi; eski Azure Repos'ta 4 depo duruyor (dokunulmadı).
