@@ -22,8 +22,8 @@ updated: 2026-09-29
 4. ✅ Hilal ve Ozan depoyu kurdu, ilk prompt sorunsuz (28 Eyl)
 
 ## Sıradaki (Levent) — yeni komuta merkezi oturumu buradan başlar
-Sıra (29 Eyl): 1) [A0.4-a · EVREN + PAT](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/115) — önce PAT
-(ado MCP hâlâ 401), EVREN en geç 30 Eki · 2) [A1.6-a · OpenAPI iskeleti](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/149)
+Sıra (29 Eyl): 1) [A0.4-a · EVREN hesabı](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/115) — PAT ✅ (29 Eyl),
+EVREN en geç 30 Eki · 2) [A1.6-a · OpenAPI iskeleti](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/149)
 — kritik yol (A1.6-b, A1.8-a, A1.2-b, A2.7-a bekliyor), yeni uygulama oturumu · 3) [A1.1-a · AGENTS.md doğrulaması](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/131)
 — eksik: anayasa K sütununa test adı/PBI, üç araç kanıtı · 4) ekip Task'ları: [A0.1-a-L](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/105) (30 Eyl) ·
 [A0.2-a-L](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/110) · [A0.5-a-L](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/118) (9 Eki).
@@ -33,7 +33,7 @@ Sıra (29 Eyl): 1) [A0.4-a · EVREN + PAT](https://dev.azure.com/hilalhocaoglu20
 - Kalıcı tasarım dili (renk/yazı) — A1.7-a'da `frontend-design` planıyla; prototip paleti taslak.
 
 ## Açık riskler
-- **Azure DevOps MCP:** organizasyon kişisel Microsoft hesaplı → uzak sunucu desteklenmiyor; yerel sunucu bağlandı ama PAT ile 401 (28 Eyl) → PAT yetkisi/süresi kontrol edilmeli (Levent).
+- **Azure DevOps MCP:** 401'in nedeni PAT'in hiç olmamasıydı (`PERSONAL_ACCESS_TOKEN` tanımsız). 29 Eyl: salt-okuma PAT (Work Items + Project/Team Read, 27 Ara'da biter) Anahtar Zinciri'nde, `~/.zshenv` yüklüyor; API 200. Oturum yeniden başlayınca MCP doğrulanacak; 27 Ara öncesi yenile.
 - **marketfiyati izni:** dönüş yok (24 Eyl); en geç ~9 Eki hatırlatma. B planı ekip fiyat turu (AB#186).
 - **EVREN ücretsiz dönemi 1 Kasım'da bitiyor:** deneme (AB#158) en geç 30 Ekim.
 - Eski projenin sırları (SMTP/DB) iptal edildi mi teyit edilmedi; eski Azure Repos'ta 4 depo duruyor (dokunulmadı).
