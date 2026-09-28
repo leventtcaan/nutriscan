@@ -1,0 +1,6 @@
+# Contract fragment of the backend "pantry" module. Owner: that module's owner (plan/calisma-akisi.md §8);
+# consumer approval is required for every change. Add this module's paths and schemas here, then
+# reference each path from ../openapi.yaml. Shared schemas: ../shared.yaml.
+paths: {}
+components:
+  schemas: {}
