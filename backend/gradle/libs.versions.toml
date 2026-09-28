@@ -1,0 +1,21 @@
+# Single source of truth for every version in the backend (AB#140, AC3).
+# Verified against Maven Central on 2026-09-28.
+
+[versions]
+java = "25"
+spring-boot = "4.1.1"
+spring-modulith = "2.1.1"
+
+[libraries]
+spring-boot-bom = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
+spring-modulith-bom = { module = "org.springframework.modulith:spring-modulith-bom", version.ref = "spring-modulith" }
+
+# Versions below come from the BOMs above.
+spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter" }
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
+spring-modulith-starter-core = { module = "org.springframework.modulith:spring-modulith-starter-core" }
+spring-modulith-starter-test = { module = "org.springframework.modulith:spring-modulith-starter-test" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
