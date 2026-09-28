@@ -20,7 +20,7 @@ Fixes AB#
 <!-- yok / eklemeli / kırıcı (kırıcıysa contract-change etiketi + iki sahip onayı) -->
 
 ## AI kullanımı
-<!-- Araç (Claude Code / Codex / Antigravity) · ne için · hangi kısmı insan yazdı ya da karar verdi · agent'ın önerip reddedilen şey -->
+<!-- "AI agent" de, araç adı yazma · ne için kullanıldı · hangi kısmı insan yazdı ya da karar verdi · agent'ın önerip reddedilen şey -->
 
 ## Sürprizler
 <!-- Beklenmeyen davranış, yarım kalan, sonraki PBI'a taşınan -->

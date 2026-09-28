@@ -82,7 +82,7 @@ Ne değişti · neden · alternatif neydi · hangi test neyi kanıtlıyor · ins
 - Kod değişikliği `main`'e doğrudan girmez (planlama/altyapı dosyalarında depo yöneticisi istisnası: ADR-013). Dal: `<modül>/AB<no>-kisa-ad`. Commit: Conventional + iş öğesi, ör. `feat(safety): gluten kuralı AB#179`.
 - PR gövdesinde `Fixes AB#<no>`; şablon eksiksiz; "AI kullanımı" bölümü zorunlu.
 - PR'ı modülün sahibi ya da vekili onaylar (`plan/calisma-akisi.md` §8); sahip kendi PR'ını onaylamaz. **Agent onay vermez.**
-- **Commit ve PR'da AI imzası yok** (`Co-Authored-By`, "Generated with…"): yazar insandır; AI kullanımı PR'da beyan edilir.
+- **Commit ve PR'da AI imzası yok** (`Co-Authored-By`, "Generated with…") ve **araç adı yok** (commit mesajı, PR başlığı/gövdesi, yorum): yazar insandır; AI kullanımı PR'ın "AI kullanımı" bölümünde "AI agent" diye, araç adı verilmeden beyan edilir.
 - AI kullanımı serbest ve açıktır; şart: her satır ve karar sahibi tarafından **anlatılabilir ve savunulabilir** olmalı
   (Cuma demosunda agent'ın yazdığı bir parça anlatılır).
 
