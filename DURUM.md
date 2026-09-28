@@ -11,7 +11,7 @@ updated: 2026-09-28
 - **Aşama 0 · Karar ve proposal (→ 18 Ekim)**, Hazırlık sprinti (28 Eyl – 18 Eki). Sonra Sprint 0 (19 Eki – 1 Kas): temel + walking skeleton.
 - Ürün yönü tez v5.1 (`arastirma/07-tez-v5.md`), ürün tanımı v5.1 (29 FR), proposal v0 hazır (6 sayfa). Prototip: `plan/prototip-kaynak/`.
 - Ortak altyapı kuruldu (28 Eyl, ADR-013): bu depo, `AGENTS.md`, `docs/anayasa.md`, skill'ler, oturum günlükleri,
-  board ↔ `plan/board/pbi.yaml`. Backend iskeleti AB#140: PR #2 incelemede (vekil Hilal); 13 modül, sınırlar testle korunuyor (ADR-014).
+  board ↔ `plan/board/pbi.yaml`. Backend iskeleti AB#140 Done (PR #2 merge, 28 Eyl): 13 modül, sınırlar testle korunuyor (ADR-014). Board senkronu AB#261 (Hilal).
 - Board: https://dev.azure.com/hilalhocaoglu20/NutriScan — 8 Epic · 65 Feature · 65 PBI · 21 Task, hepsi atanmış.
 - Depo: https://github.com/leventtcaan/nutriscan (private) — Azure Boards'a GitHub App ile bağlı: commit/PR'da `AB#<no>` iş öğesine bağlanır, `Fixes AB#<no>` merge'de kapatır.
 

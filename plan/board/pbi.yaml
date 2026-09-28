@@ -383,8 +383,8 @@ pbi:
 - id: A1.2-d
   feature: A1.2
   baslik: Board senkronu — dal/PR olaylarıyla Azure Boards durum geçişleri + yapılandırma yoksa PR'a aksiyon listesi
-  sahip: L
-  agent: claude-code
+  sahip: H
+  agent: codex
   modul: .github/workflows/, tools/board-sync/
   area: platform
   effort: 2
