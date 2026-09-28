@@ -38,3 +38,10 @@
 - takıldım:   Azure'a yazma ilk denemede izin engeline takıldı (sonra izin verildi) · etiket güncellemesinde `add` ekliyor, `replace` gerekli
 - sıradaki:   AZURE_BOARDS_PAT secret + repo değişkenleri (A1.2-d için, Levent) · 30 Eyl takvim onayı · 2 Eki danışman + MR1
 - AI:         Claude Code · board REST (validateOnly → yazma), betik, mesaj taslakları · Levent: atama ve dağıtım kararları
+
+## 2026-09-28 · AB#109 fiş ve kiler kaydı klasörü (aynı oturum)
+- yaptım:     Drive klasörü (kişi başı fiş klasörleri + Bitti-Attım tablosu + kullanım notu), Hilal'le paylaşıldı; DURUM › Bağlantılar; ekip mesajı
+- karar:      yok (erişim yalnız ekip, link paylaşımı kapalı — KVKK)
+- takıldım:   Ozan'ın Azure adresi Google hesabı değil → Drive paylaşımı olmadı
+- sıradaki:   Ozan'ın Gmail adresiyle paylaşım · AZURE_BOARDS_PAT secret (AB#261 gelince) · 30 Eyl takvim onayı · 2 Eki danışman + MR1
+- AI:         Claude Code · klasör/tablo/not oluşturma, mesaj taslağı · Levent: klasörün açılması ve paylaşım kararı
