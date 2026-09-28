@@ -310,8 +310,8 @@ pbi:
 - id: A1.2-a
   feature: A1.2
   baslik: CI — backend (build/test, Modulith verify, ArchUnit, Spotless, coverage)
-  sahip: L
-  agent: claude-code
+  sahip: H
+  agent: codex
   modul: .github/workflows/, backend/src/test/**/architecture
   area: platform
   effort: 3

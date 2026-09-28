@@ -30,7 +30,7 @@ Yük (Effort): Hilal 5 · Levent 15 · Ozan 11
 |---|---|---|---|---|---|---|
 | A1.1-b | Modül AGENTS.md/CLAUDE.md iskeletleri + CODEOWNERS | Levent | claude-code | 2 | A1.1-a, A1.3-a | 29 Ekim |
 | A1.1-c | ci-guard — talimat dosyası ve skill yapısı denetimi | Levent | claude-code | 2 | A1.1-b | 29 Ekim |
-| A1.2-a | CI — backend (build/test, Modulith verify, ArchUnit, Spotless, coverage) | Levent | claude-code | 3 | A1.3-a | 29 Ekim |
+| A1.2-a | CI — backend (build/test, Modulith verify, ArchUnit, Spotless, coverage) | Hilal | codex | 3 | A1.3-a | 29 Ekim |
 | A1.2-b | CI — apps + contracts + gizli bilgi (ESLint/Prettier, oasdiff, istemci güncel mi, gitleaks) | Levent | claude-code | 2 | A1.6-a, A1.6-b | 29 Ekim |
 | A1.2-c | CI — veri doğrulayıcıları (şema, sözlük üyeliği, alerjen kapanışı, sağlık kuralı kaynağı) | Hilal | codex | 3 | A0.6-b, A1.12-a | 29 Ekim |
 | A1.3-b | Veritabanı — PostgreSQL 18 + pgvector, Flyway (modül başına klasör), Testcontainers, compose dev | Hilal | codex | 3 | A1.3-a | 29 Ekim |
@@ -48,7 +48,7 @@ Yük (Effort): Hilal 5 · Levent 15 · Ozan 11
 | A1.12-a | Sağlık durumu kuralı şeması (data/schemas/health-rule.schema.json) | Hilal | codex | 2 | A0.6-b | 25 Ekim |
 | A1.12-b | Eşik tablosu v0 — kaynak derleme (4 durum) | Ozan | antigravity | 5 | A1.12-a | 1 Kasım |
 
-Yük (Effort): Hilal 14 · Levent 20 · Ozan 14
+Yük (Effort): Hilal 17 · Levent 17 · Ozan 14
 
 ## Sprint 2
 | PBI | İş | Sahip | Agent | Effort | Bağlı | En geç |
@@ -113,4 +113,4 @@ Yük (Effort): Hilal 2 · Levent 5 · Ozan 5
 A0.3, A0.7, A0.8, A3.1, A3.2, A3.3, A3.4, A3.5, A3.6, A3.7, A4.1, A4.2, A4.3, A4.4, A4.5, A4.6, A4.7, A4.8, A4.9, A4.10, A5.1, A5.2, A5.3, A5.4, A6.1, A6.2, A6.3, A7.1, A7.2, A7.3, A7.4
 
 ## Kontrol uyarıları
-- yok
+- Sprint 0 · Hilal: 17 Effort > 14
