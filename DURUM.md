@@ -1,6 +1,6 @@
 ---
 title: Durum — NutriScan
-updated: 2026-09-28
+updated: 2026-09-29
 ---
 # Durum
 
@@ -22,9 +22,11 @@ updated: 2026-09-28
 4. ✅ Hilal ve Ozan depoyu kurdu, ilk prompt sorunsuz (28 Eyl)
 
 ## Sıradaki (Levent) — yeni komuta merkezi oturumu buradan başlar
-Hazırlık sprintinde Levent'te açık: **AB#149** OpenAPI sözleşme iskeleti (en geç 18 Eki; kod, yeni uygulama oturumu) ·
-**AB#131** AGENTS.md doğrulaması (Hilal/Ozan tamam, Claude tarafı AB#140'ta görüldü → kapanışı) · **AB#115** EVREN hesabı +
-Azure MCP PAT 401 düzeltmesi (kodsuz, Levent) · ekip Task'ları (AB#105, #110, #118). İlk soru: hangisiyle, hangi sırayla.
+Sıra (29 Eyl): 1) [A0.4-a · EVREN + PAT](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/115) — önce PAT
+(ado MCP hâlâ 401), EVREN en geç 30 Eki · 2) [A1.6-a · OpenAPI iskeleti](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/149)
+— kritik yol (A1.6-b, A1.8-a, A1.2-b, A2.7-a bekliyor), yeni uygulama oturumu · 3) [A1.1-a · AGENTS.md doğrulaması](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/131)
+— eksik: anayasa K sütununa test adı/PBI, üç araç kanıtı · 4) ekip Task'ları: [A0.1-a-L](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/105) (30 Eyl) ·
+[A0.2-a-L](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/110) · [A0.5-a-L](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/118) (9 Eki).
 
 ## Bekleyen kararlar
 - ADR-013 ortak altyapı — ÖNERİ, ekip onayı (A0.1 ile).
