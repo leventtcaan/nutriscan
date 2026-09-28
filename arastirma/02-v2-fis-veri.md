@@ -231,6 +231,7 @@ Kategori fallback'inde bir de **varsayılan paket boyu** tahmini gerekir; hata p
   - yeniden dağıtım yok, atıf var;
   - talep: toplu dışa aktarım ya da anahtarlı API.
   - Cevap gelmezse B planı: OFF + kendi topluluk kataloğumuz.
+- **Sonuç (28 Eyl 2026, Market Fiyatı ekibinin e-postası):** Talep reddedildi. TÜBİTAK BİLGEM projenin teknik yürütücüsü; üçüncü taraflara, bağımsız geliştiricilere ya da akademik çalışmalara ham veri, CSV ya da API vermeye yetkili değil. Paylaşım yalnız Sanayi ve Teknoloji Bakanlığı ile Ticaret Bakanlığı'nın resmî sözleşme ve kurumlar arası protokolleriyle. Yukarıdaki üç değer (eşleme hedefi katalog, sahte fiyat referansı, `searchAlternative`) kaybedildi; eşleme hedefi kendi doğrulanmış kataloğumuz (Migros → A101) + OFF adayları. Yazılı red sonrası kazıma kesin kapsam dışı (ADR-002).
 
 ---
 
