@@ -14,7 +14,7 @@ updated: 2026-09-29
 - Ortak altyapı kuruldu (28 Eyl, ADR-013): bu depo, `AGENTS.md`, `docs/anayasa.md`, skill'ler, oturum günlükleri,
   board ↔ `plan/board/pbi.yaml`. Backend iskeleti AB#140 Done (PR #2 merge, 28 Eyl): 13 modül, sınırlar testle korunuyor (ADR-014). Board senkronu AB#261 (Hilal).
 - Board: https://dev.azure.com/hilalhocaoglu20/NutriScan — 8 Epic · 65 Feature · 67 PBI · 18 Task. Gözle takip: GitHub Project
-  https://github.com/users/leventtcaan/projects/3 (`python3 plan/board/github_proje.py`, pbi.yaml'dan). Azure v5.2 ile senkron (29 Eyl: 26 güncelleme + A2.4-c AB#262; eski A2.4-b ekip payı Task'ları 187–189 kapatılmayı bekliyor). Kapasite (Effort/sprint): varsayılan 13 · Sprint 0 Levent 20, Hilal 16 · Sprint 1 Hilal 14.
+  https://github.com/users/leventtcaan/projects/3 (`python3 plan/board/github_proje.py`, pbi.yaml'dan). Azure v5.2 ile senkron (29 Eyl: 26 güncelleme + A2.4-c AB#262; eski A2.4-b ekip payı Task'ları 187–189 Removed). Kapasite (Effort/sprint): varsayılan 13 · Sprint 0 Levent 20, Hilal 16 · Sprint 1 Hilal 14.
 - Depo: https://github.com/leventtcaan/nutriscan (private) — Azure Boards'a GitHub App ile bağlı: commit/PR'da `AB#<no>` iş öğesine bağlanır, `Fixes AB#<no>` merge'de kapatır.
 
 ## Bu haftanın öncelikleri (tarihler "en geç"; erken bitirmek serbest)
