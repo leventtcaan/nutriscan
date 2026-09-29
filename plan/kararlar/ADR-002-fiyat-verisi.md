@@ -1,5 +1,7 @@
 # ADR-002 · Fiyat verisi: marketfiyati.org.tr izni + yedek
 
+> **Yerine geçen (B planı için): ADR-015** (2026-09-29, ÖNERİ) — fiyat turu + fiş yerine izinli web kataloglarından toplayıcı. marketfiyati reddi ve kazıma yasağı (Sonuç satırı) geçerli kalır.
+
 **Tarih / onay:** 2026-09-24
 
 - **Ne:** marketfiyati.org.tr'den yazılı izin istendi (Levent maili 24 Eylül 2026'da gönderdi). Yanıt gelene kadar ve yedek olarak: hanelerin fişleri + ekip fiyat turu (2 haftada bir) + her fiyatta yaş etiketi.

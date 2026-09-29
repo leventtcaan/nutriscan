@@ -1,6 +1,6 @@
 ---
 title: NutriScan — Karar kayıtları (dizin)
-updated: 2026-09-28
+updated: 2026-09-29
 ---
 # Karar kayıtları
 
@@ -25,3 +25,4 @@ Durum: **ÖNERİ** (ekip onayı bekliyor) · **KABUL** (ekip ya da ürün sahibi
 | [ADR-012](kararlar/ADR-012-calisma-akisi-board.md) | Çalışma akışı + board'un tek kaynaktan üretilmesi | 2026-09-27, taslak — ekip onayı A0.1 ile |
 | [ADR-013](kararlar/ADR-013-ortak-altyapi.md) | Ortak altyapı: depo = planlama klasörü, tek talimat dosyası, ortak skill'ler, dosyada hafıza | 2026-09-28, ÖNERİ |
 | [ADR-014](kararlar/ADR-014-modul-sinirlari.md) | Backend modül sınırları: açık izin listesi, en dar başlangıç | 2026-09-28, ÖNERİ (AB#140, PR #2) |
+| [ADR-015](kararlar/ADR-015-fiyat-toplayici-sok-tarimkredi.md) | Fiyat ve ürün verisi: web kataloglarından sözlükle sınırlı toplayıcı (demo/deney; canlı ürün yazılı izin/lisansla); pilot ŞOK + Tarım Kredi; fiş çıkar; K21 | 2026-09-29, ÖNERİ (Levent yön kararı; ekip onayı bekliyor) |
