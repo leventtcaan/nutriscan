@@ -38,7 +38,7 @@ Sıra (29 Eyl): ✅ A0.4-a Done · ✅ [A1.6-a · OpenAPI iskeleti](https://dev.
 ## Açık riskler
 - **Azure DevOps MCP — çözüldü, yalnız yenileme riski:** masaüstü uygulaması `~/.zshenv` okumadığı için `.mcp.json` artık `tools/ado-mcp.sh` başlatıcısını kullanıyor (PAT'i env'den ya da Anahtar Zinciri `nutriscan-ado-pat` kaydından alır, base64(`:PAT`) yapar). MCP ile AB#115 get + list_comments doğrulandı (401 yok). Salt-okuma PAT 27 Ara'da biter → öncesinde yenile, Anahtar Zinciri kaydını değiştirmek yeter.
 - **Fiyat verisi (29 Eyl, ADR-015 ÖNERİ):** marketfiyati reddetti (ADR-002) → Ürün ve Fiyat Toplayıcı, pilot **ŞOK + Tarım Kredi**, fiş çıktı, K21.
-  Toplayıcı çekirdeği + ŞOK [A2.4-b · toplayıcı](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/186) Levent (Sprint 0) → Tarım Kredi A2.4-c → katalog A2.4-a (20 Kas). Kabul edilen risk: online fiyat mağazadan
+  Toplayıcı çekirdeği + ŞOK [A2.4-b · toplayıcı](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/186) Hilal (Sprint 1) + Tarım Kredi A2.4-c + katalog A2.4-a (20 Kas). Kabul edilen risk: online fiyat mağazadan
   farklı olabilir (etiket "online katalog fiyatı · tarih") · kamuya açık sürüm için yazılı izin/lisans D3 öncesi (A4.8) · Hilal teyidi + ekip onayı bekliyor.
 - **EVREN ücretsiz dönemi 1 Kasım'da bitiyor:** deneme (AB#158) en geç 30 Ekim. Levent'in anahtarı Anahtar Zinciri'nde
   (`nutriscan-evren-api-key`, son kullanma 31.12.2026 → öncesinde yenile). LLM şartları v1 onaylandı (28 Eyl); fiyat hâlâ 0 CR, 1 Kasım sonrası ilan edilmedi;

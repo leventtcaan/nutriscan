@@ -85,3 +85,12 @@
               stacked PR rebase çakışması → --onto; squash sonrası main merge (force push yok) · anlatım ilk turlarda fazla üst düzeydi
 - sıradaki:   v5.2 revizyonu (tez, ürün tanımı, proposal, takvim, pbi.yaml, anayasa K21) → ekip bildirimi · Mockito agent işi (ayrı oturum)
 - AI:         AI agent · kod, test, araştırma ajanları, deneme istekleri, ADR/araştırma metinleri · Levent: kütüphane/PR/yerleşim/zincir/fiş/K21 kararları, PR düğmeleri
+
+## 2026-09-29 · komuta merkezi (v5.2 fiyat yolu, board, prototip)
+- yaptım:     fiyat verisi araştırması (arastirma/12) → ADR-015 (toplayıcı ŞOK + Tarım Kredi, fiş çıktı, K21) · tez/ürün tanımı/proposal/takvim v5.2 ·
+              proposal PDF 6 sayfa · board denetimi + GitHub Project · prototip v5.2 (76 ekran, durumlarıyla) · ekip incelemesi (sağlık eşiği,
+              etiket, toplayıcı, rıza, "güven") işleniyor · iş dağılımı yeniden dengelendi
+- karar:      ADR-015 ÖNERİ · anayasa K21 ve §3.3 (onaysız sağlık kuralı karar üretmez) ÖNERİ · raf fiyatı doğrulaması yok (kabul edilen risk)
+- takıldım:   Azure toplu yazımı izin sınıflandırıcısına takıldı (21 kalem bekliyor; izin kuralı eklendi) · proposal ilk üretimde 7 sayfa
+- sıradaki:   prototip düzeltmelerini yayınla · Azure + GitHub senkronu · ekip mesajı ("şu tarihe kadar")
+- AI:         AI agent · araştırma ajanları, metinler, board betikleri, prototip üretimi · Levent: yön, zincir, fiş, K21, dağılım kararları
