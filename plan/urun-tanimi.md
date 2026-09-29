@@ -127,6 +127,6 @@ Her karar "Neden?" taşır · dört sonuç (Uygun değil · Dikkat · Engel bulu
 ## 10. Başarı ölçütleri (proposal §3 "Success criteria"a)
 - **E1:** Birleşik planlama modelinin kesin çözücü ve sezgisel yöntemlerle kıyası (20 senaryo × 30 tohum; hypervolume, IGD+, optimallik boşluğu); "önce menü sonra liste" tabanına göre fark gerçek veriyle raporlanır.
 - **E2:** Yalnız-LLM planlayıcıya karşı kısıt ihlali, bütçe ihlali, uydurma fiyat; asistan tool-call doğruluğu ve enjeksiyon dayanıklılığı.
-- **E3:** 20–40 hanelik beta (≥10 hanede kesin kısıt): takas/plan kabulü, planlanan fiyat ↔ mağaza raf fiyatı sapması (periyodik örnek) ve fiyat tazeliği, SKT'li kiler kullanımı, 4. hafta tutunma.
+- **E3:** 20–40 hanelik beta (≥10 hanede kesin kısıt): takas/plan kabulü, fiyat tazeliği (medyan fiyat yaşı, "Doğrulanamadı" oranı), SKT'li kiler kullanımı, 4. hafta tutunma.
 - **Sağlık durumu kuralları:** eşik tablosu test setinde %100 uyum; RAG eşleme önerisi, tam/bulanık eşlemeye karşı altın sette recall/precision ile raporlanır.
 - **Güvenlik kapısı:** altın sette 0 yanlış negatif; hiçbir öneride kesin kısıt ihlali yok.

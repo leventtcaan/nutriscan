@@ -21,7 +21,8 @@
   6. **Tazelik ve sağlık:** her fiyat kaynak + tarih taşır; bir zincirin çekimi başarısız olur ya da TTL aşılırsa o zincirin fiyatları
      `COULD_NOT_VERIFY`, optimizasyona girmez (S8, K11). Çekim işi heartbeat yayar (K18). TTL ve hız sınırı yapılandırmadadır.
   7. **Fiş ürünün tamamından çıkar** (fiyat, kiler, eşleştirme). Kiler: barkod + "bitti" + alışveriş listesinde "aldım" işareti.
-     E3 yeniden tanımlanır: planlanan fiyat ↔ mağaza raf fiyatı (periyodik örnek ölçüm) + fiyat tazeliği.
+     E3'ün fiyat ölçütü fiyat tazeliğidir (medyan fiyat yaşı, `COULD_NOT_VERIFY` oranı). Mağaza raf fiyatı doğrulaması yapılmaz (Levent kararı
+     29 Eyl: efor/değer); fiyat arayüzde "online katalog fiyatı · tarih" olarak etiketlenir.
   8. **Taze meyve-sebze boşluğu:** online kataloglarda zayıf; eksik kalemde hal / WFP fiyatı yalnız "tahmini" referans, karar girdisi değil.
   9. **Anayasaya K21** (metin aşağıda; anayasada ÖNERİ işaretiyle).
 - **K21 metni:** Dış kaynaktan otomatik veri toplama yalnız robots.txt'in izin verdiği yollardan, kendini tanıtan bot adı ve iletişimle,
@@ -49,7 +50,7 @@
   koruması; aşmak TCK m.243 riski · (f) süresi ve sonucu belirsiz; paralel başvuru, kritik yola konmaz.
 - **Geri dönmenin maliyeti:** orta. Adapter katmanı fiyat kaynağını soyutlar: bir zincir kapanırsa ya da izinli/lisanslı bir kaynak
   gelirse yalnız adapter değişir; MSM ve katalog şeması aynı kalır. Metin revizyonu tek seferlik.
-- **Açık risk:** (1) online fiyatın mağaza raf fiyatına eşitliği doğrulanmadı — tek mağazada 10–20 ürünle ölçülür, E3 sürekli izler.
+- **Açık risk:** (1) online fiyat mağaza raf fiyatından farklı olabilir — **kabul edilen risk**; etiket dürüst ("online katalog fiyatı · tarih").
   (2) Canlı öncesi izin/lisans gelmezse fiyat karşılaştırma canlıda kapalı kalır; demo ve deneyler etkilenmez. (3) Site yapısı
   değişirse adapter kırılır → sağlık kontrolü + `COULD_NOT_VERIFY`. (4) FSEK Ek m.8 gri alanı kapsam sınırıyla küçülür, sıfırlanmaz.
 - **Etkilenen:**

@@ -45,7 +45,7 @@ Calorie estimation from plate photos, continuous glucose monitoring, placing ord
 - Safety gate: zero false negatives on the allergen gold set (n ≥ 300), 100% agreement of health-condition decisions with the threshold table on their test set, and no hard-constraint violation in any generated plan or swap (property tests over ≥10,000 random households).
 - Planning (E1): the joint model is compared with sequential "menu first, then list" baselines and with a metaheuristic (NSGA-II [15]) over 20 scenarios × 30 seeds; we report optimality gap, hypervolume and runtime.
 - Assistant (E2): compared with an LLM-only planner on 50–100 household scenarios; we report constraint violations, budget violations, invented prices, tool-call accuracy and prompt-injection robustness; RAG ingredient mapping is compared with exact/fuzzy matching on the gold set (precision, recall).
-- Beta (E3, spring): 20–40 households (≥10 with a hard constraint); plan/swap acceptance, planned price vs. in-store shelf price (periodic sample) and price freshness, use of expiring pantry items, week-4 retention.
+- Beta (E3, spring): 20–40 households (≥10 with a hard constraint); plan/swap acceptance, price freshness, use of expiring pantry items, week-4 retention.
 - Performance: shelf decision p95 ≤ 1.5 s; swap suggestion p95 ≤ 1 s.
 
 ## 4. Similar Systems and Background
@@ -72,7 +72,7 @@ Baseline below; the full list (29 items) is kept in the repository.
 | FR-7 | The system shall propose at most k swaps (k = 1, 3, 5) for a list and, when a plan is infeasible, suggest which soft limits could be relaxed (never hard constraints). | Must |
 | FR-8 | The system shall provide a text assistant that answers common intents by calling the decision engines, shows its steps and never changes a decision; medical/dose questions get a fixed safety response. | Must |
 | FR-9 | The system shall record every decision in an append-only decision record, keep a tamper-evident audit log, and let moderators approve catalogue corrections with a reason. | Must |
-| FR-10 | The system shall maintain a catalogue for two pilot chains (ŞOK, Tarım Kredi) with pack sizes, ingredient text, prices, source and price age, filled by a collector limited to the recipe ingredient dictionary, and track the pantry (barcode, "bought" marks on the list, "finished"). | Must |
+| FR-10 | The system shall keep a catalogue for two pilot chains (ŞOK, Tarım Kredi) with pack sizes, ingredients, prices, source and price age, and track the pantry (barcode, "bought", "finished"). | Must |
 | FR-11 | The system shall suggest mappings from unseen label ingredient names to the dictionary with semantic search (RAG), apply them only after moderator approval, and quote rule sources in explanations. | Should |
 | FR-12 | The system shall generate a proactive weekly plan that changes nothing until approved, split the list across at most two chains, and accept natural-language constraints that are read back for confirmation. | Should |
 | FR-13 | The web app shall provide a Planning Studio with cost–health trade-offs and a "why is the plan like this" view. | Should |
@@ -92,7 +92,7 @@ Baseline below; the full list (29 items) is kept in the repository.
 
 **Architecture outline.** Mobile (Expo) and web/admin (React) clients use a TypeScript client generated from the OpenAPI contract → Spring Boot modular monolith → PostgreSQL (with pgvector). Inside: the safety rule engine (allergens and health-condition rules) filters and scores candidates before the Household Planning Engine (OR-Tools CP-SAT [16]) solves the joint model; the assistant (Spring AI) calls the engines as tools through a privacy gateway that routes household-context requests to EVREN (open models hosted in Türkiye); a RAG component over pgvector suggests ingredient mappings for moderators and retrieves rule sources for explanations, but is never on the decision path; every decision is written to the decision record and shown in the admin trace view.
 
-**Data.** Open Food Facts (ODbL) [17] as a mirrored source; a product and price catalogue for two pilot chains, ŞOK and Tarım Kredi, built by a weekly collector that reads only the products matching our recipe ingredient dictionary from the chains' public web catalogues, following robots.txt with an identified user agent and a rate limit, never bypassing access controls, keeping the source URL and date of every record and not republishing the data (the public price platform does not provide data or API access for third-party or academic use); stale prices are reported as "could not verify"; a public app-store release uses prices only with the chains' written permission or a licensed source; 200 team-written Turkish home recipes with an allergen ontology based on the Turkish Food Codex labelling regulation; a versioned health-rule threshold table with a source for every row (Turkish Food Codex nutrition-claim limits, WHO sugar and sodium guidelines [19][20]), reviewed by a dietitian; synthetic households for development.
+**Data.** Open Food Facts (ODbL) [17] as a mirrored source; prices for two pilot chains (ŞOK, Tarım Kredi) from a weekly collector limited to our ingredient dictionary, within robots.txt and never bypassing access controls, each with source and date (public release only with the chains' permission; the public price platform gives no third-party access); 200 team-written Turkish home recipes with an allergen ontology based on the Turkish Food Codex labelling regulation; a versioned health-rule threshold table with a source for every row (Turkish Food Codex nutrition-claim limits, WHO sugar and sodium guidelines [19][20]), reviewed by a dietitian; synthetic households for development.
 
 | Layer / component | Technology or tool | Reason for the choice |
 |---|---|---|
@@ -128,8 +128,7 @@ By the end of this semester: working prototype (mobile + web + admin) with the v
 | Risk | Likelihood | Impact | Mitigation plan |
 |---|---|---|---|
 | Missing or wrong product/allergen data | High | High | Verified catalogue; "could not verify" instead of guessing; gold-set release gate |
-| Collected prices go stale, a chain's site changes, or online prices differ from shelf prices | Medium | Medium | Health check on every collection run; a chain whose data exceeds its age limit is reported as "could not verify"; one small adapter per chain; online vs. shelf prices sampled in stores (E3); CI checks priced-SKU coverage ≥ 90% |
-| A chain objects to collection or refuses permission for the public release | Low | Medium | Collection for that chain stops (rule K21); the adapter design lets another chain or a licensed source replace it; development, experiments and demo keep their recorded data |
+| Collected prices go stale, a site changes or a chain objects | Medium | Medium | Health check per run; stale → "could not verify"; replaceable adapter per chain; stop on objection (K21); CI priced-SKU coverage ≥ 90% |
 | Joint optimisation too slow at scale | Medium | Medium | Time-limited exact solver with gap badge; metaheuristic (E1) |
 | LLM unreliable or unavailable | Medium | Medium | LLM never decides; workflow intents; template fallback |
 | Medical-device boundary for health-condition features [22] | Medium | High | Informational wording only, no diagnosis or treatment claims, source-cited rules, dietitian review, in-app disclaimer |
@@ -141,20 +140,20 @@ By the end of this semester: working prototype (mobile + web + admin) with the v
 [2] Türk-İş, "Ağustos 2026 Açlık ve Yoksulluk Sınırı," turkis.org.tr.
 [3] T.C. Sağlık Bakanlığı, "Türkiye'de Tuz Tüketiminin Azaltılması Programı 2017–2021."
 [4] Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği, Resmî Gazete 29960, 26.01.2017.
-[5] Webrazzi, "Sofralar artık yapay zekâ destekli MAYA ile kuruluyor," 13.12.2024; LOG, "Migros yapay zekâ asistanı MAYA AI," 2026.
+[5] Webrazzi, "Sofralar artık yapay zekâ destekli MAYA ile kuruluyor," 13.12.2024; LOG, "MAYA AI," 2026.
 [6] Yuka, "What are Yuka's limitations," https://help.yuka.io/l/en/article/wz3cbbztf3-what-are-yuka-s-limitations
 [7] Fig, https://foodisgood.com/
 [8] Ürün Dedektörü, https://urundedektoru.com/
 [9] marketfiyati.org.tr, TÜBİTAK BİLGEM, https://marketfiyati.org.tr
 [10] G. J. Stigler, "The Cost of Subsistence," J. Farm Econ., vol. 27, no. 2, pp. 303–314, 1945.
-[11] M. Maillot et al., "Individual diet modeling translates nutrient recommendations into realistic and individual-specific food choices," Am. J. Clin. Nutr., vol. 91, no. 2, pp. 421–430, 2010, doi:10.3945/ajcn.2009.28426.
+[11] M. Maillot et al., "Individual diet modeling translates nutrient recommendations into realistic and individual-specific food choices," Am. J. Clin. Nutr. 91(2):421–430, 2010, doi:10.3945/ajcn.2009.28426.
 [12] L. van Rooijen et al., Resources, Conservation & Recycling, vol. 205, 107559, 2024, doi:10.1016/j.resconrec.2024.107559.
 [13] A. Hua et al., "NutriBench," arXiv:2407.12843.
 [14] "Cooking Up Risks / FoodGuardBench," arXiv:2604.01444, 2026.
-[15] K. Deb et al., "A fast and elitist multiobjective genetic algorithm: NSGA-II," IEEE TEVC, 6(2), 2002, doi:10.1109/4235.996017.
-[16] Google OR-Tools, https://developers.google.com/optimization ; Spring Modulith, https://spring.io/projects/spring-modulith
+[15] K. Deb et al., "A fast and elitist multiobjective genetic algorithm: NSGA-II," IEEE TEVC 6(2), 2002, doi:10.1109/4235.996017.
+[16] Google OR-Tools, developers.google.com/optimization; Spring Modulith, spring.io/projects/spring-modulith
 [17] Open Food Facts API and data (ODbL), https://openfoodfacts.github.io/openfoodfacts-server/api/
-[18] Kişisel Verilerin Korunması Kanunu No. 6698 (amended by Law No. 7499, 2024); KVKK, "Üretken Yapay Zekâ ve Kişisel Verilerin Korunması Rehberi," 2025.
+[18] KVKK No. 6698 (amended by No. 7499, 2024); KVKK, "Üretken Yapay Zekâ ve Kişisel Verilerin Korunması Rehberi," 2025.
 [19] Türk Gıda Kodeksi Beslenme ve Sağlık Beyanları Yönetmeliği, 2017; T.C. Sağlık Bakanlığı, TÜBER 2022.
 [20] WHO, "Guideline: Sugars intake for adults and children," 2015; WHO, "Guideline: Sodium intake…," 2012.
 [21] P. Lewis et al., "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks," NeurIPS 2020, arXiv:2005.11401.

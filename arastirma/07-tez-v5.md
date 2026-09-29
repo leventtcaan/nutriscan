@@ -16,8 +16,8 @@ alışkanlığını gösterir, fiyat turu 2 haftada ~300 ürün; ikisi de sunumd
 3. **İki kullanım katmanı:** geliştirme, deneyler (E1–E3, beta dahil) ve jüri demosu bu sınırlı, kaynağı kaydedilmiş, yayımlanmayan veriyle;
    **App Store'daki kamuya açık sürüm** ancak zincirlerin yazılı izni ya da lisanslı bir kaynakla (D3 öncesi talep; yoksa fiyat
    karşılaştırma o sürümde kapalı).
-4. **Fiş ürünün tamamından çıktı** (fiyat, kiler, eşleştirme). Kiler: barkod + "bitti" + listede "aldım". E3'ün TL ölçütü: planlanan fiyat ↔
-   mağaza raf fiyatı (periyodik örnek) + fiyat tazeliği.
+4. **Fiş ürünün tamamından çıktı** (fiyat, kiler, eşleştirme). Kiler: barkod + "bitti" + listede "aldım". E3'ün fiyat ölçütü: fiyat tazeliği
+   (medyan fiyat yaşı, "Doğrulanamadı" oranı). Fiyat arayüzde "online katalog fiyatı · tarih" olarak gösterilir; mağazada farklı olabilir (kabul edilen risk).
 5. **İçindekiler metni** alerjen motoruna aday veri olur (K04 karantina, K12 moderasyon). Eşleme ürünle ürün değil **malzemeyle ürün**; barkod gerekmez.
 
 ## 0.1 v5 → v5.1: ne değişti (2026-09-27, ADR-011)
@@ -88,7 +88,7 @@ Görünür AI yüzeyleri: Asistan (yazı + ses, adımları görünür), Pazar sa
 |---|---|---|---|
 | **E1 — Hane Planlama Motoru** | Birleşik planlama ne kazandırır, hangi ölçekte exact kopar, sezgisel orada ne kadar iyi? | Exact (CP-SAT/SCIP) vs güçlü sıralı tabanlar (B2, B3) vs NSGA-II / matsezgisel (GA menüyü seçer, sepeti exact çözer); gerçek veri (ŞOK + Tarım Kredi katalog ve fiyatları + tarifler) + sentetik; 20 senaryo × 30 tohum | Hypervolume, IGD+, time-to-target, optimallik boşluğu; en güçlü tabana göre değer (VoI); etkileşimli kullanımda 3 sn zaman sınırı + "en iyiye en fazla %X uzak" rozeti |
 | **E2 — "Neden LLM yetmez?"** | Yalnız-LLM planlayıcı hane kısıtlarını ve bütçeyi tutturabilir mi? | Yalnız-LLM planlayıcı (bulut + TR modeli) vs NutriScan, 50–100 hane senaryosu; asistan eval'leri | Kesin kısıt ihlali, bütçe ihlali, uydurma fiyat, TL farkı; tool-call doğruluğu, grounding, enjeksiyon saldırı başarısı, gizlilik sızıntısı (kanarya), claim checker'ın yakalamadığı çelişki oranı; **içerik eşleme: RAG önerisi vs tam/bulanık eşleme** (altın set, recall/precision) |
-| **E3 — Beta** | Gerçek hanelerde işe yarıyor mu? | 20–40 hane (≥10'unda kesin kısıt ya da sağlık durumu; iOS TestFlight, Android katılımcılar için dağıtım yolu açık soru), 1–2 hafta taban + 4–5 hafta müdahale | Plan ve takas kabulü, planlanan fiyat ↔ mağaza raf fiyatı sapması (periyodik örnek) ve fiyat tazeliği, SKT'li kiler kullanım oranı, W4 tutunma, haftalık emek; güven kalibrasyonu ("Neden?" açılma, "Doğrulanamadı" sonrası etiket çekme, öneriyi geçersiz kılma) |
+| **E3 — Beta** | Gerçek hanelerde işe yarıyor mu? | 20–40 hane (≥10'unda kesin kısıt ya da sağlık durumu; iOS TestFlight, Android katılımcılar için dağıtım yolu açık soru), 1–2 hafta taban + 4–5 hafta müdahale | Plan ve takas kabulü, fiyat tazeliği (medyan fiyat yaşı, "Doğrulanamadı" oranı), SKT'li kiler kullanım oranı, W4 tutunma, haftalık emek; güven kalibrasyonu ("Neden?" açılma, "Doğrulanamadı" sonrası etiket çekme, öneriyi geçersiz kılma) |
 
 **Güvenlik sürüm kapısı:** alerjen altın setinde (n ≥ 300) **0 yanlış negatif** — %95 güvenle gerçek oran ≤ ~%1 demek; asıl garanti mimaride (belirsizlik "Doğrulanamadı"ya düşer).
 
@@ -101,7 +101,7 @@ Görünür AI yüzeyleri: Asistan (yazı + ses, adımları görünür), Pazar sa
 | Hane bağlamı taşıyan her tur Türkiye'de işlenir; yurt dışına yalnız ürün görseli ve maskelenmiş metin gider; bu yol tek bayrakla kapanır | 05-agent-mimarisi §2.6; yer tutucu KVKK muafiyeti değildir (yorum, hukukçuya sorulacak) |
 | Alerjen FN: altın sette 0 = %95 güvenle ≤ ~%1 | Sürüm kapısı tanımı |
 | Açık veri katkısı: 200 Türk ev yemeği + alerjen ontolojisi; etiket ve eşleme setleri iç değerlendirme amaçlı | 05-menu §1; 06-kirmizi-takim H3 |
-| Fiyatlar zincirlerin herkese açık web kataloğundan, sözlükle sınırlı, kaynak + tarihle; kamuya açık sürüm yazılı izin/lisansla | ADR-015, K21; online fiyat = raf fiyatı varsayımı ölçülecek (E3) |
+| Fiyatlar zincirlerin herkese açık web kataloğundan, sözlükle sınırlı, kaynak + tarihle; kamuya açık sürüm yazılı izin/lisansla | ADR-015, K21; arayüzde "online katalog fiyatı · tarih" etiketi — mağaza fiyatı farklı olabilir, kabul edilen risk |
 | Migros MAYA'nın öğün planlayıcısı var (Ara 2024); MAYA AI sohbet + ChatGPT (Tem 2026); basın metinlerinde üye bazlı kısıt ifadesi yok | Webrazzi 2024, LOG/Technopat 2026 |
 | Ekrandaki TL tutarları | Prototipte **örnek**; üründe fiyat kaynağı ve yaşıyla gösterilir |
 

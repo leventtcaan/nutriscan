@@ -106,7 +106,7 @@ Temel gıda ~580 · atıştırmalık ~490 · içecek ~290 · et ~200 · şarküt
 - **KVKK:** fiyat ve ürün için ilgisiz (kişi verisi toplanmıyor).
 
 ## 7. Açık sorular
-1. **Online fiyat = mağaza raf fiyatı mı?** (ŞOK, Tarım Kredi) — tek mağazada 10–20 ürünle doğrulanmalı. Kararın en kritik varsayımı.
+1. **Online fiyat = mağaza raf fiyatı mı?** (ŞOK, Tarım Kredi) — doğrulanmayacak (29 Eyl, efor/değer); kabul edilen risk, arayüz etiketi "online katalog fiyatı · tarih" (ADR-015).
 2. Tarım Kredi'nin Antalya'da şubesi ve online kataloğun bölgeye göre değişip değişmediği.
 3. ŞOK üye sözleşmesinin tam metni.
 4. BİM aktüel sayfasının yapısı (deneme adresi yanlıştı).
