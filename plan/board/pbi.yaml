@@ -950,7 +950,7 @@ pbi:
   omurga: zemin
   kurallar: S10 (kesin kısıtı yalnız sahibi gevşetir), S16 (profil sürümü), S19 (herkes kendi verisini verir), ADR-011 (sağlık durumu profil parçası), K 'hane verisi
     DB düzeyinde ayrık'
-  sozlesme: eklemeli (contracts/openapi/household.yaml)
+  sozlesme: eklemeli (contracts/openapi/modules/household.yaml)
   baglam:
   - plan/prototip-kaynak/M02-Hane.dc.html
   - plan/prototip-kaynak/M15-Hane.dc.html
@@ -960,7 +960,7 @@ pbi:
     şifreli (ADR-008).
   degistir:
   - backend/src/main/java/**/household/
-  - contracts/openapi/household.yaml
+  - contracts/openapi/modules/household.yaml
   - ilgili migration
   kabul:
   - Yetişkin üyenin kısıtını başkası değiştiremiyor (test)
@@ -981,7 +981,7 @@ pbi:
   - A2.2-b
   omurga: zemin
   kurallar: S20 (geri alma ve silme gerçek), FR-3, KVKK m.6 (sağlık verisi açık rıza)
-  sozlesme: eklemeli (contracts/openapi/consent.yaml)
+  sozlesme: eklemeli (contracts/openapi/modules/consent.yaml)
   baglam:
   - plan/prototip-kaynak/M03-Riza.dc.html
   - arastirma/01-mevzuat-risk.md §1–2
@@ -989,7 +989,7 @@ pbi:
     hesap silme = şifre anahtarının imhası + kayıtların silinmesi (audit'te yalnız olayın kendisi kalır).
   degistir:
   - backend/src/main/java/**/consent/
-  - contracts/openapi/consent.yaml
+  - contracts/openapi/modules/consent.yaml
   - ilgili migration
   kabul:
   - Rıza geri alındıktan sonra sağlık alanı okunamıyor (test)
@@ -1379,7 +1379,7 @@ pbi:
   - A2.4-a
   omurga: guvence1
   kurallar: S11, S18, NFR-3, FR-5/FR-7
-  sozlesme: eklemeli (contracts/openapi/scan.yaml)
+  sozlesme: eklemeli (contracts/openapi/modules/safety.yaml)
   baglam:
   - plan/prototip-kaynak/M09-Tarama.dc.html
   - plan/prototip-kaynak/M10-Neden.dc.html
@@ -1388,7 +1388,7 @@ pbi:
     + etiket okuma yolu. Yanıtta üye adı + kısıt birlikte bildirime gitmez (S18 — yalnız ekranda).
   degistir:
   - backend/src/main/java/**/safety/scan/
-  - contracts/openapi/scan.yaml
+  - contracts/openapi/modules/safety.yaml
   kabul:
   - p95 ≤ 1,5 sn (yük testi, katalogdaki ürünler)
   - Katalog dışı ürün → COULD_NOT_VERIFY (test)
@@ -1433,7 +1433,7 @@ pbi:
   - A2.7-b
   omurga: motor
   kurallar: FR-7, S10, önce güvenlik sırası
-  sozlesme: eklemeli (contracts/openapi/planning.yaml)
+  sozlesme: eklemeli (contracts/openapi/modules/planning.yaml)
   baglam:
   - plan/prototip-kaynak/M06-Takas.dc.html
   - plan/prototip-kaynak/M07-TakasNeden.dc.html
@@ -1442,7 +1442,7 @@ pbi:
     kesin kısıt kontrolü); olursuzlukta gevşetilebilir yumuşak sınır seçenekleri.
   degistir:
   - backend/src/main/java/**/planning/swap/
-  - contracts/openapi/planning.yaml
+  - contracts/openapi/modules/planning.yaml
   kabul:
   - p95 ≤ 1 sn (test verisiyle)
   - Zorunlu değişiklik k'ya sayılmıyor (test)
@@ -1564,7 +1564,7 @@ pbi:
   - A2.4-a
   omurga: zemin
   kurallar: FR-9, FR-15/16, S17 (düzeltme sözü)
-  sozlesme: eklemeli (contracts/openapi/admin.yaml)
+  sozlesme: eklemeli (contracts/openapi/modules/catalog.yaml + modules/audit.yaml)
   baglam:
   - plan/prototip-kaynak/A01-KararIzi.dc.html
   - plan/prototip-kaynak/A02-Katalog.dc.html
@@ -1574,7 +1574,7 @@ pbi:
   degistir:
   - backend/src/main/java/**/catalog/admin/
   - backend/src/main/java/**/audit/api/
-  - contracts/openapi/admin.yaml
+  - contracts/openapi/modules/catalog.yaml + modules/audit.yaml
   kabul:
   - Gerekçesiz onay reddediliyor (test)
   - Etki sayısı doğru (test)
