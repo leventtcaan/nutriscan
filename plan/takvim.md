@@ -69,7 +69,7 @@ Amaç: herkesin aynı standartla, aynı veriyle, çakışmadan çalışabileceğ
 | A1.9 | **EVREN denemesi:** Türkçe tool-call doğruluğu, p95, gömme boyutu, kullanım şartları | L | A0.4 | **30 Ekim** (ücretsiz dönem) | Asistan bulut + yer tutucu ile başlar, TR kararı 15 Kasım'a |
 | A1.10 | Teknoloji denemeleri: OR-Tools native Docker imajı, JUnit 6 + jqwik/PIT uyumu (test araçları Sprint 1'de, en geç 13 Kasım; Expo barkod + Türkçe STT denemesi A2.8'in ilk işi) | L (OR-Tools) · H (test) | A1.3 | 1 Kasım | Yedek araçlar (raporda listeli) |
 | A1.11 | Contabo sunucu kurulumu: Docker Compose, Caddy (TLS), yedek, SOPS | L | A0.9 | 13 Kasım | Staging yerelde |
-| A1.12 | Sağlık durumu eşik tablosu v0 (diyabet, hipertansiyon, çölyak, hamilelik; her satır kaynaklı: TGK beyan eşikleri, WHO, TÜBER) | O (derleme) · H (şema, onay) | A0.6, ADR-011 | 1 Kasım | Kural motoru yalnız alerjen + çölyakla başlar, sağlık kuralları Aralık'a |
+| A1.12 | Sağlık durumu eşik tablosu v0 (diyabet, hipertansiyon, çölyak, hamilelik; her satır kaynaklı: TGK beyan eşikleri, WHO, TÜBER) | L (derleme) · H (şema, onay) | A0.6, ADR-011 | 1 Kasım | Kural motoru yalnız alerjen + çölyakla başlar, sağlık kuralları Aralık'a |
 
 ### Aşama 2 — Güvenilir çekirdek → CSE 491 prototipi (2 Kasım → 18 Aralık)
 Sıra mantığı: önce **veri + güvenlik** (her şey onların üstünde), sonra **raf ve plan**, sonra **asistan ve admin**.

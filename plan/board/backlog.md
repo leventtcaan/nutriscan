@@ -28,8 +28,8 @@ Yük (Effort): Hilal 5 · Levent 15 · Ozan 11
 ## Sprint 0
 | PBI | İş | Sahip | Agent | Effort | Bağlı | En geç |
 |---|---|---|---|---|---|---|
-| A1.1-b | Modül AGENTS.md/CLAUDE.md iskeletleri + CODEOWNERS | Levent | claude-code | 2 | A1.1-a, A1.3-a | 29 Ekim |
-| A1.1-c | ci-guard — talimat dosyası ve skill yapısı denetimi | Levent | claude-code | 2 | A1.1-b | 29 Ekim |
+| A1.1-b | Modül AGENTS.md/CLAUDE.md iskeletleri + CODEOWNERS | Ozan | antigravity | 2 | A1.1-a, A1.3-a | 29 Ekim |
+| A1.1-c | ci-guard — talimat dosyası ve skill yapısı denetimi | Ozan | antigravity | 2 | A1.1-b | 29 Ekim |
 | A1.2-a | CI — backend (build/test, Modulith verify, ArchUnit, Spotless, coverage) | Hilal | codex | 3 | A1.3-a | 29 Ekim |
 | A1.2-b | CI — apps + contracts + gizli bilgi (ESLint/Prettier, oasdiff, istemci güncel mi, gitleaks) | Levent | claude-code | 2 | A1.6-a, A1.6-b | 29 Ekim |
 | A1.2-c | CI — veri doğrulayıcıları (şema, sözlük üyeliği, alerjen kapanışı, sağlık kuralı kaynağı) | Hilal | codex | 3 | A0.6-b, A1.12-a | 29 Ekim |
@@ -45,10 +45,9 @@ Yük (Effort): Hilal 5 · Levent 15 · Ozan 11
 | A1.9-a | EVREN denemesi — Türkçe tool-call, p95, gömme, şartlar (rapor) | Levent | claude-code | 3 | A0.4-a | 30 Ekim (ücretsiz dönem) |
 | A1.10-a | OR-Tools CP-SAT (Java) Docker imajında + küçük MSM örneği | Levent | claude-code | 2 | A1.3-a | 1 Kasım |
 | A1.12-a | Sağlık durumu kuralı şeması (data/schemas/health-rule.schema.json) | Hilal | codex | 2 | A0.6-b | 25 Ekim |
-| A1.12-b | Eşik tablosu v0 — kaynak derleme (4 durum) | Ozan | antigravity | 5 | A1.12-a | 1 Kasım |
-| A2.4-b | Ürün ve Fiyat Toplayıcı çekirdeği + ŞOK adapter'ı (K21) | Levent | claude-code | 3 | A0.6-b | 20 Kasım |
+| A1.12-b | Eşik tablosu v0 — kaynak derleme (4 durum) | Levent | claude-code | 5 | A1.12-a | 1 Kasım |
 
-Yük (Effort): Hilal 16 · Levent 20 · Ozan 14
+Yük (Effort): Hilal 16 · Levent 18 · Ozan 13
 
 ## Sprint 2
 | PBI | İş | Sahip | Agent | Effort | Bağlı | En geç |
@@ -70,20 +69,21 @@ Yük (Effort): Hilal 13 · Levent 12 · Ozan 13
 | PBI | İş | Sahip | Agent | Effort | Bağlı | En geç |
 |---|---|---|---|---|---|---|
 | A1.4-b | Log/metrik/iz şeması + "sağlık verisi logda yok" kanarya testi | Levent | claude-code | 3 | A1.3-a | 13 Kasım |
-| A1.10-b | Test araçları uyumu — JUnit 6, jqwik (property), PIT (mutation) | Hilal | codex | 1 | A1.3-a | 13 Kasım |
+| A1.10-b | Test araçları uyumu — JUnit 6, jqwik (property), PIT (mutation) | Levent | claude-code | 1 | A1.3-a | 13 Kasım |
 | A1.11-a | Contabo sunucu — Docker Compose staging, Caddy TLS, SOPS sırlar, yedek | Levent | claude-code | 3 | A0.9-a | 13 Kasım |
 | A2.8-a | Expo barkod gecikmesi + cihazda Türkçe konuşma tanıma denemesi | Ozan | antigravity | 2 | A1.7-a | 9 Aralık |
 | A2.12-a | Web + admin iskeleti (Vite + React, TanStack Router/Query, shadcn/ui) | Ozan | antigravity | 3 | A1.6-b, A1.7-b | 16 Aralık |
 | A2.1-a | CSE 491 ara rapor + ara sunum | Ekip | insan | 2 | — | 6 Kasım |
-| A2.2-a | Kimlik — Keycloak realm + Spring Security resource server (OAuth2 PKCE, roller) | Hilal | codex | 3 | A1.3-b | 20 Kasım |
+| A2.2-a | Kimlik — Keycloak realm + Spring Security resource server (OAuth2 PKCE, roller) | Levent | claude-code | 3 | A1.3-b | 20 Kasım |
 | A2.2-b | Hane + üye + davet + veli onayı + profil sürümü (API + tablolar) | Hilal | codex | 5 | A2.2-a, A1.4-a | 20 Kasım |
 | A2.4-a | Katalog v0 — ürün/SKU/paket/fiyat + kaynak ve fiyat yaşı, toplayıcı çıktısını içe aktarma | Hilal | codex | 3 | A0.6-b, A1.5-b, A2.4-b | 20 Kasım |
-| A2.4-c | Tarım Kredi adapter'ı + fiyat tazeliği panosu | Levent | claude-code | 2 | A2.4-b | 20 Kasım |
+| A2.4-b | Ürün ve Fiyat Toplayıcı çekirdeği + ŞOK adapter'ı (K21) | Hilal | codex | 3 | A0.6-b | 20 Kasım |
+| A2.4-c | Tarım Kredi adapter'ı + fiyat tazeliği panosu | Hilal | codex | 2 | A2.4-b | 20 Kasım |
 | A2.5-a | İlk 30 tarif (şemaya uygun, malzemeler sözlükte) | Ozan | antigravity | 5 | A0.6-a, A0.6-b | 15 Kasım |
 | A2.6-a | TR model karar kapısı — EVREN birincil mi (ADR-009 kesinleşir) | Levent | insan | 1 | A1.9-a | 15 Kasım |
 | A2.7-a | Motor sözleşmesi — PlanRequest/PlanResult şeması + golden fixture'lar | Levent | claude-code | 2 | A1.6-a | 4 Aralık |
 
-Yük (Effort): Hilal 13 · Levent 12 · Ozan 11
+Yük (Effort): Hilal 14 · Levent 14 · Ozan 11
 
 ## Sprint 3
 | PBI | İş | Sahip | Agent | Effort | Bağlı | En geç |

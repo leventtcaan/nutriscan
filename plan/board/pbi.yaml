@@ -14,6 +14,7 @@ kapasite:
     H: 16
     O: 14
   Sprint 1:
+    L: 14
     H: 14
 varsayilan_baglam:
 - AGENTS.md (kök)
@@ -238,8 +239,8 @@ pbi:
 - id: A1.1-b
   feature: A1.1
   baslik: Modül AGENTS.md/CLAUDE.md iskeletleri + CODEOWNERS
-  sahip: L
-  agent: claude-code
+  sahip: O
+  agent: antigravity
   modul: .github/, */AGENTS.md
   area: platform
   effort: 2
@@ -267,8 +268,8 @@ pbi:
 - id: A1.1-c
   feature: A1.1
   baslik: ci-guard — talimat dosyası ve skill yapısı denetimi
-  sahip: L
-  agent: claude-code
+  sahip: O
+  agent: antigravity
   modul: .claude/, .agents/, tools/scripts/
   area: platform
   effort: 2
@@ -749,8 +750,8 @@ pbi:
 - id: A1.10-b
   feature: A1.10
   baslik: Test araçları uyumu — JUnit 6, jqwik (property), PIT (mutation)
-  sahip: H
-  agent: codex
+  sahip: L
+  agent: claude-code
   modul: backend/
   area: backend
   effort: 1
@@ -822,8 +823,8 @@ pbi:
 - id: A1.12-b
   feature: A1.12
   baslik: Eşik tablosu v0 — kaynak derleme (4 durum)
-  sahip: O
-  agent: antigravity
+  sahip: L
+  agent: claude-code
   modul: data/health-rules
   area: data
   effort: 5
@@ -912,8 +913,8 @@ pbi:
 - id: A2.2-a
   feature: A2.2
   baslik: Kimlik — Keycloak realm + Spring Security resource server (OAuth2 PKCE, roller)
-  sahip: H
-  agent: codex
+  sahip: L
+  agent: claude-code
   modul: backend/…/identity, infra/keycloak
   area: backend\identity
   effort: 3
@@ -1159,12 +1160,12 @@ pbi:
 - id: A2.4-b
   feature: A2.4
   baslik: Ürün ve Fiyat Toplayıcı çekirdeği + ŞOK adapter'ı (K21)
-  sahip: L
-  agent: claude-code
+  sahip: H
+  agent: codex
   modul: backend/…/catalog
   area: backend\catalog
   effort: 3
-  sprint: Sprint 0
+  sprint: Sprint 1
   en_gec: 20 Kasım
   bagli:
   - A0.6-b
@@ -1177,7 +1178,7 @@ pbi:
     ve zaman penceresi, kapsam yalnız malzeme sözlüğünden gelen ürün listesi, koruma/CAPTCHA görülürse dur; zamanlanmış çekim + heartbeat (K18); çekim sağlık
     kontrolü (başarısız ya da TTL aşımı → o zincirin fiyatları COULD_NOT_VERIFY). ŞOK adapter'ı (ürün sayfasından fiyat, indirimsiz fiyat, marka, gramaj,
     içindekiler, kaynak URL + tarih). Geliştirme ve testler sentetik fixture ile (gerçek sayfa yapısı, uydurma içerik; depoya üçüncü taraf sayfa girmez). HTML
-    ayrıştırıcı kütüphanesi PBI başında onaya sunulur. Hilal'in modülünde vekil olarak (calisma-akisi §8); PR'ı Hilal onaylar.
+    ayrıştırıcı kütüphanesi PBI başında onaya sunulur.
   degistir:
   - backend/src/main/java/**/catalog/
   - backend/src/test/**/catalog/
@@ -1188,8 +1189,8 @@ pbi:
 - id: A2.4-c
   feature: A2.4
   baslik: Tarım Kredi adapter'ı + fiyat tazeliği panosu
-  sahip: L
-  agent: claude-code
+  sahip: H
+  agent: codex
   modul: backend/…/catalog
   area: backend\catalog
   effort: 2
@@ -1203,7 +1204,7 @@ pbi:
   - plan/kararlar/ADR-015-fiyat-toplayici-sok-tarimkredi.md
   - arastirma/12-fiyat-verisi-edinim.md §4 (kategori sayfası 18 ürün/sayfa, ürün sayfasında içindekiler)
   gorev: A2.4-b arayüzüyle Tarım Kredi Koop adapter'ı (kategori/ürün sayfası; fiyat, gramaj, içindekiler, kaynak URL + tarih); zincir başına son başarılı çekim,
-    fiyatlı SKU sayısı ve medyan fiyat yaşı panosu (tez §7 haftalık pano). Sahip Hilal'in modülünde vekil olarak (calisma-akisi §8); PR'ı Hilal onaylar.
+    fiyatlı SKU sayısı ve medyan fiyat yaşı panosu (tez §7 haftalık pano). Sahip
   degistir:
   - backend/src/main/java/**/catalog/
   - backend/src/test/**/catalog/
