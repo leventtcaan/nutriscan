@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>A05b · Toplayıcı: itiraz geldi, durduruldu — MUST (v5.2)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Instrument+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Instrument Sans',system-ui,sans-serif;color:#1c2420;background:#f3f1ec}
+*{box-sizing:border-box}
+a{color:#1f5c45}a:hover{color:#15432f}
+.disp{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-0.01em;margin:0}
+.eb{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#56615b}
+.mut{color:#56615b}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11.5px;color:#56615b}
+.src{font-size:11.5px;color:#56615b}
+.v{display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 8px;border-radius:7px;font-size:12px;font-weight:700;white-space:nowrap}
+.vno{background:#f6ddd6;color:#7d2317}
+.vwarn{background:#f7e8c4;color:#6b4700}
+.vok{background:#dbece2;color:#17503a}
+.vunk{background:#e4e7e9;color:#3c4750}
+.av{width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;color:#fff;flex-shrink:0}
+.chip{display:inline-flex;align-items:center;gap:5px;min-height:26px;padding:0 9px;border-radius:999px;border:1px solid #d6cdb9;background:#fffdf8;font-size:12px;font-weight:600}
+.hard{border:1.5px solid #8e2b1d;color:#7d2317;background:#fbeee9}
+.cond{border:1.5px solid #2d5a7b;color:#1f4460;background:#e8f0f6}
+.soft{border:1.5px dashed #8a7433;color:#5e4d17;background:#fbf5e3}
+.none{border:1px solid #d6cdb9;color:#56615b;background:#fffdf8}
+.condtag{font-size:11.5px;font-weight:700;color:#1f4460;background:#e8f0f6;border:1px solid #2d5a7b;border-radius:6px;padding:1px 6px}
+.bn{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border-radius:12px;font-size:13px;line-height:1.45}
+.bn svg{flex-shrink:0}
+.bninfo{background:#eef5f0;border:1px solid #bcd6c6;color:#17503a}
+.bnwarn{background:#fbf5e3;border:1px solid #e6d7a9;color:#5e4d17}
+.bnerr{background:#fbeee9;border:1px solid #e0b6aa;color:#7d2317}
+.bnmute{background:#eceae4;border:1px solid #d6d2c7;color:#3c4750}
+.skel{background:#e9e3d6;border-radius:8px}
+.dr{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;color:#56615b;background:#efeadf;border-radius:5px;padding:1px 5px}
+.xr{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:700;border-radius:5px;padding:1px 6px;border:1.5px solid}
+.xrm{color:#17503a;border-color:#17503a;background:#eef5f0}
+.xrl{color:#4b3f8a;border-color:#4b3f8a;background:#f0eefa}
+.xrf{color:#3c4750;border-color:#3c4750;background:#eceae4}
+label.fl{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:700;color:#3d4742}
+input.in,select.in{height:46px;border:1.5px solid #cfc6b3;border-radius:12px;padding:0 12px;font:inherit;font-size:15px;background:#fff;color:#1c2420}
+.tg{position:relative;width:44px;height:26px;border-radius:13px;background:#cfc6b3;flex-shrink:0;display:inline-block}
+.tg::after{content:'';position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff}
+.tgon{background:#1f5c45}
+.tgon::after{left:21px}
+.w{width:1440px;height:900px;background:#f3f1ec;display:flex;overflow:hidden}
+.side{width:240px;background:#1c2420;color:#d9ded9;display:flex;flex-direction:column;padding:22px 14px;gap:4px;flex-shrink:0}
+.sl{display:flex;align-items:center;height:38px;padding:0 12px;border-radius:9px;font-size:14px;font-weight:600;color:#c3cac5;text-decoration:none}
+.sl:hover{color:#fff;background:#2a332e}
+.slon{background:#2f3a34;color:#fff}
+.card{background:#fff;border:1px solid #e0dcd2;border-radius:14px;padding:18px 20px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th{text-align:left;font-size:12px;color:#58625c;font-weight:700;padding:8px 10px;border-bottom:1px solid #e0dcd2}
+td{padding:9px 10px;border-bottom:1px solid #eeeae2;vertical-align:top}
+.cf{display:inline-flex;height:22px;align-items:center;padding:0 7px;border-radius:6px;font-size:11.5px;font-weight:700}
+.hi{background:#dbece2;color:#17503a}
+.md{background:#f7e8c4;color:#6b4700}
+.lo{background:#f6ddd6;color:#7d2317}
+.gr{background:#e4e7e9;color:#3c4750}
+.b{display:inline-flex;align-items:center;justify-content:center;min-height:40px;border-radius:10px;font-weight:700;font-size:14px;font-family:inherit;cursor:pointer;padding:0 16px;text-decoration:none}
+.bok{background:#1f5c45;color:#fff;border:0}
+.bok:hover{color:#fff}
+.bed{background:#fff;color:#1c2420;border:1.5px solid #cfc9bb}
+.bno{background:#fff;color:#7d2317;border:1.5px solid #e0b6aa}
+textarea{width:100%;height:60px;border:1.5px solid #cfc9bb;border-radius:10px;padding:10px 12px;font:inherit;font-size:14px;resize:none;color:#1c2420}
+</style>
+</helmet>
+<div class="w"><nav class="side" aria-label="Admin gezinme"><div style="font-family: 'Fraunces', Georgia, serif; font-size: 18px; color: #fff; padding: 0 12px 16px">NutriScan <span style="font-family: 'Instrument Sans', sans-serif; font-size: 12px; color: #9aa59f">admin</span></div><a class="sl" href="A04-Operasyon.dc.html">Operasyon</a><a class="sl slon" href="A05-Toplayici.dc.html">Toplayıcı</a><a class="sl" href="A01-KararIzi.dc.html">Karar izi</a><a class="sl" href="A02-Katalog.dc.html">Katalog moderasyonu</a><a class="sl" href="A06-Esleme.dc.html">Eşleme kuyruğu</a><a class="sl" href="A08-Kurallar.dc.html">Kurallar ve sözlük</a><a class="sl" href="A07-SozlesmePanosu.dc.html">Sözleşme panosu</a><a class="sl" href="A03-Audit.dc.html">Audit log</a><a class="sl" href="A09-KVKK.dc.html">KVKK talepleri</a><div style="margin-top: auto; font-size: 12.5px; color: #9aa59f; padding: 0 12px">Levent · Admin</div></nav><div style="flex-grow: 1; display: flex; flex-direction: column; padding: 26px 32px; gap: 16px; min-width: 0"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px"><h1 class="disp" style="font-size: 28px">Toplayıcı</h1><div class="mut" style="font-size: 13.5px; text-align: right">Tarım Kredi durduruldu · 27 Eyl 2026 10:42</div></div><div class="bn bnwarn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5M12 16.5v.01"></path></svg><span><b>Tarım Kredi'de toplama durduruldu:</b> kaynaktan itiraz geldi (27 Eyl). K21 gereği itiraz kapanana kadar yeni çekim yapılmaz. Tarım Kredi fiyatları <b>Doğrulanamadı</b>; planlar yalnız ŞOK fiyatıyla kuruluyor.</span></div><div style="display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 16px; flex-grow: 1; min-height: 0"><div style="display: flex; flex-direction: column; gap: 16px; min-width: 0"><div class="card" style="padding: 14px 18px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><h2 class="disp" style="font-size: 19px">Zincirler</h2></div><table style="margin-top: 6px; table-layout: fixed"><thead><tr><th style="width: 100px">Zincir</th><th style="width: 120px">Durum</th><th>Çekim</th><th style="width: 124px">İzin</th><th style="width: 150px">Eylem</th></tr></thead><tbody><tr><td style="padding: 10px 8px"><b>ŞOK</b></td><td style="padding: 10px 8px"><span class="cf hi">Çalışıyor</span></td><td style="padding: 10px 8px">Son başarılı 28 Eyl 03:00<br>heartbeat 2 dk önce</td><td style="padding: 10px 8px"><span class="cf gr">Talep edilmedi</span></td><td style="padding: 10px 8px"><button class="b bed" type="button" style="">Şimdi çek</button></td></tr><tr><td style="padding: 10px 8px"><b>Tarım Kredi</b></td><td style="padding: 10px 8px"><span class="cf gr">Durduruldu</span><div class="mut" style="font-size: 12px; margin-top: 4px">itiraz · 27 Eyl 10:42</div></td><td style="padding: 10px 8px">Son başarılı 26 Eyl 03:00<br>iş kapalı · heartbeat “durduruldu”</td><td style="padding: 10px 8px"><span class="cf md">İtiraz açık</span></td><td style="padding: 10px 8px"><button class="b bed" type="button" disabled style="opacity: .55; white-space: nowrap">Yeniden başlat</button><div class="mut" style="font-size: 11.5px; margin-top: 4px">İtiraz kapanana kadar kapalı</div></td></tr></tbody></table></div><div class="card"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><h2 class="disp" style="font-size: 19px">Olay akışı</h2><span class="mut" style="font-size: 12.5px">K21 · K16 · S16</span></div><div style="margin-top: 6px"><div style="display: flex; gap: 12px; padding: 8px 0; border-top: 1px solid #eeeae2"><span class="mono" style="width: 86px; flex-shrink: 0">27 Eyl 09:58</span><div><div style="font-size: 14px; font-weight: 700">İtiraz alındı</div><div class="mut" style="font-size: 12.5px">User-Agent'taki iletişim adresine, Tarım Kredi'den</div></div></div><div style="display: flex; gap: 12px; padding: 8px 0; border-top: 1px solid #eeeae2"><span class="mono" style="width: 86px; flex-shrink: 0">27 Eyl 10:42</span><div><div style="font-size: 14px; font-weight: 700">Toplama durduruldu</div><div class="mut" style="font-size: 12.5px">Levent · gerekçe ve talep no audit'te · <span class="mono">collector.pause</span></div></div></div><div style="display: flex; gap: 12px; padding: 8px 0; border-top: 1px solid #eeeae2"><span class="mono" style="width: 86px; flex-shrink: 0">27 Eyl 10:42</span><div><div style="font-size: 14px; font-weight: 700">Fiyatlar Doğrulanamadı</div><div class="mut" style="font-size: 12.5px">Tarım Kredi fiyatları karara ve optimizasyona girmiyor (K11)</div></div></div><div style="display: flex; gap: 12px; padding: 8px 0; border-top: 1px solid #eeeae2"><span class="mono" style="width: 86px; flex-shrink: 0">27 Eyl 10:44</span><div><div style="font-size: 14px; font-weight: 700">Planlar yeniden değerlendirildi</div><div class="mut" style="font-size: 12.5px"><span class="dr">[..]</span> plan · yalnız ŞOK fiyatıyla</div></div></div><div style="display: flex; gap: 12px; padding: 8px 0; border-top: 1px solid #eeeae2"><span class="mono" style="width: 86px; flex-shrink: 0">açık</span><div><div style="font-size: 14px; font-weight: 700">Mevcut kayıtlar</div><div class="mut" style="font-size: 12.5px">silme ya da saklama: <span class="dr">[ekip kararı · ADR]</span></div></div></div><div style="display: flex; gap: 12px; padding: 8px 0; border-top: 1px solid #eeeae2"><span class="mono" style="width: 86px; flex-shrink: 0">açık</span><div><div style="font-size: 14px; font-weight: 700">İtirazın yanıtı</div><div class="mut" style="font-size: 12.5px"><span class="dr">[..]</span> · yeniden başlatma yalnız itiraz kapanınca</div></div></div></div></div></div><div style="display: flex; flex-direction: column; gap: 16px"><div class="card" style="border: 2px solid #1c2420; display: flex; flex-direction: column; gap: 12px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><h2 class="disp" style="font-size: 19px">Zinciri durdur · Tarım Kredi</h2></div><label class="fl" for="nd">Neden<select class="in" id="nd"><option>Kaynaktan itiraz</option><option>Açık ret</option><option>Koruma ya da CAPTCHA algılandı</option><option>Adapter bakımı</option></select></label><label class="fl" for="ref">Yazışma ya da talep numarası<input class="in" id="ref" type="text" value="ITR-2026-001"></label><label class="fl" for="gr">Gerekçe (zorunlu)<textarea id="gr">Tarım Kredi yazılı itiraz iletti; K21 gereği toplama durduruluyor.</textarea></label><div class="mut" style="font-size: 12.5px; line-height: 1.45; ">Onaylayınca: zamanlanmış iş kapanır · Tarım Kredi fiyatları Doğrulanamadı olur ve optimizasyona girmez · açık planlar yeniden değerlendirilir (S16) · işlem audit log'a yazılır (K16). Audit yazılamazsa durdurma da yapılmaz.</div><div style="display: flex; gap: 10px"><button class="b bok" type="button" style="">Durdur ve kaydet</button><button class="b bed" type="button" style="">Vazgeç</button></div></div><div class="card" style="background: #1c2420; color: #d9ded9; border: 0"><div style="font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 8px">Audit kaydı</div><div class="mono" style="color: #c3cac5; line-height: 1.7">collector.pause · chain=TARIM_KREDI<br>reason=SOURCE_OBJECTION · ref=ITR-2026-001<br>actor=levent · role=ADMIN · 2026-09-27T10:42<br>prevHash=9c1e… · hash=4a7b…</div><div style="margin-top: 8px"><a href="A03-Audit.dc.html" style="color: #9fd4b8">Audit log'da aç</a></div></div></div></div></div></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1440, "height": 900}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

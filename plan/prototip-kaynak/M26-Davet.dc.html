@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>M26 · Davet gönderildi / bekliyor — MUST (v5.2)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Instrument+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Instrument Sans',system-ui,sans-serif;color:#1c2420;background:#f5f1e8}
+*{box-sizing:border-box}
+a{color:#1f5c45}a:hover{color:#15432f}
+.disp{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-0.01em;margin:0}
+.eb{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#56615b}
+.mut{color:#56615b}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11.5px;color:#56615b}
+.src{font-size:11.5px;color:#56615b}
+.v{display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 8px;border-radius:7px;font-size:12px;font-weight:700;white-space:nowrap}
+.vno{background:#f6ddd6;color:#7d2317}
+.vwarn{background:#f7e8c4;color:#6b4700}
+.vok{background:#dbece2;color:#17503a}
+.vunk{background:#e4e7e9;color:#3c4750}
+.av{width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;color:#fff;flex-shrink:0}
+.chip{display:inline-flex;align-items:center;gap:5px;min-height:26px;padding:0 9px;border-radius:999px;border:1px solid #d6cdb9;background:#fffdf8;font-size:12px;font-weight:600}
+.hard{border:1.5px solid #8e2b1d;color:#7d2317;background:#fbeee9}
+.cond{border:1.5px solid #2d5a7b;color:#1f4460;background:#e8f0f6}
+.soft{border:1.5px dashed #8a7433;color:#5e4d17;background:#fbf5e3}
+.none{border:1px solid #d6cdb9;color:#56615b;background:#fffdf8}
+.condtag{font-size:11.5px;font-weight:700;color:#1f4460;background:#e8f0f6;border:1px solid #2d5a7b;border-radius:6px;padding:1px 6px}
+.bn{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border-radius:12px;font-size:13px;line-height:1.45}
+.bn svg{flex-shrink:0}
+.bninfo{background:#eef5f0;border:1px solid #bcd6c6;color:#17503a}
+.bnwarn{background:#fbf5e3;border:1px solid #e6d7a9;color:#5e4d17}
+.bnerr{background:#fbeee9;border:1px solid #e0b6aa;color:#7d2317}
+.bnmute{background:#eceae4;border:1px solid #d6d2c7;color:#3c4750}
+.skel{background:#e9e3d6;border-radius:8px}
+.dr{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;color:#56615b;background:#efeadf;border-radius:5px;padding:1px 5px}
+.xr{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:700;border-radius:5px;padding:1px 6px;border:1.5px solid}
+.xrm{color:#17503a;border-color:#17503a;background:#eef5f0}
+.xrl{color:#4b3f8a;border-color:#4b3f8a;background:#f0eefa}
+.xrf{color:#3c4750;border-color:#3c4750;background:#eceae4}
+label.fl{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:700;color:#3d4742}
+input.in,select.in{height:46px;border:1.5px solid #cfc6b3;border-radius:12px;padding:0 12px;font:inherit;font-size:15px;background:#fff;color:#1c2420}
+.tg{position:relative;width:44px;height:26px;border-radius:13px;background:#cfc6b3;flex-shrink:0;display:inline-block}
+.tg::after{content:'';position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff}
+.tgon{background:#1f5c45}
+.tgon::after{left:21px}
+.s{width:390px;height:844px;background:#f5f1e8;display:flex;flex-direction:column;overflow:hidden;position:relative;flex-shrink:0}
+.pad{padding-left:16px;padding-right:16px}
+.card{background:#fffdf8;border:1px solid #e2dbcb;border-radius:16px;padding:12px 14px}
+.ib{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid #e2dbcb;background:#fffdf8;color:#1c2420;text-decoration:none;flex-shrink:0}
+.why{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:700;color:#1f5c45;text-decoration:none}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:14px;background:#1f5c45;color:#fff;font-weight:700;font-size:15px;text-decoration:none;border:0;font-family:inherit;cursor:pointer;padding:0 16px}
+.btn:hover{color:#fff;background:#184a37}
+.btn2{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:14px;background:#fffdf8;color:#1c2420;font-weight:700;font-size:14px;text-decoration:none;border:1.5px solid #cfc6b3;font-family:inherit;cursor:pointer;padding:0 14px}
+.btn2:hover{color:#1c2420}
+.sb{height:38px;border-radius:10px;font:inherit;font-weight:700;font-size:13.5px;cursor:pointer;padding:0 12px;background:#1f5c45;color:#fff;border:0;text-decoration:none;display:inline-flex;align-items:center}
+.sb:hover{color:#fff}
+.sb2{height:38px;border-radius:10px;font:inherit;font-weight:700;font-size:13.5px;cursor:pointer;padding:0 12px;background:#fffdf8;color:#1c2420;border:1.5px solid #cfc6b3;text-decoration:none;display:inline-flex;align-items:center}
+.mr{display:flex;align-items:center;gap:10px;padding:9px 0;text-decoration:none;color:#1c2420;border-top:1px solid #ece5d6}
+.mr:hover{color:#1c2420;background:#faf6ee}
+.li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid #ece5d6;font-size:14px}
+.step{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;line-height:1.4;color:#3d4742;padding:3px 0}
+.dot{width:16px;height:16px;border-radius:50%;background:#dbece2;color:#17503a;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.me{align-self:flex-end;max-width:82%;background:#1c2420;color:#fff;border-radius:18px 18px 4px 18px;padding:10px 14px;font-size:14.5px;line-height:1.4}
+.bot{align-self:flex-start;max-width:92%;background:#fffdf8;border:1px solid #e2dbcb;border-radius:18px 18px 18px 4px;padding:12px 14px;font-size:14px;line-height:1.45}
+.sheet{position:absolute;left:0;right:0;bottom:0;background:#fffdf8;border-radius:22px 22px 0 0;border-top:1px solid #e2dbcb;padding:10px 16px 24px;display:flex;flex-direction:column;gap:10px}
+.grab{width:40px;height:5px;border-radius:3px;background:#d6cdb9;align-self:center}
+.scrim{position:absolute;inset:0;background:rgba(28,36,32,.38)}
+.toast{position:absolute;left:16px;right:16px;bottom:96px;background:#1c2420;color:#fff;border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:10px;font-size:14px}
+.toast a{color:#9fd4b8;font-weight:700;margin-left:auto;text-decoration:none}
+.tabs{margin-top:auto;height:80px;border-top:1px solid #e2dbcb;background:#fffdf8;display:flex;justify-content:space-around;align-items:flex-start;padding-top:10px;flex-shrink:0}
+.tab{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#56615b;text-decoration:none;width:64px}
+.tab:hover{color:#1c2420}
+.tabon{color:#1f5c45}
+.cap{font-size:13px;font-weight:700;color:#3d4742;height:28px;display:flex;align-items:center;gap:8px}
+.capn{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;border-radius:6px;background:#1c2420;color:#fff;font-size:11.5px;padding:0 6px}
+</style>
+</helmet>
+<div style="width: 1250px; height: 880px; display: flex; gap: 40px"><div style="display: flex; flex-direction: column; gap: 8px; width: 390px"><div class="cap"><span class="capn">1</span>Gönderildi · bekliyor</div><div class="s"><div style="display: flex; align-items: center; gap: 12px; padding: 16px 16px 8px"><a class="ib" href="M02-Hane.dc.html" aria-label="Geri"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></a><div style="flex-grow: 1; min-width: 0"><div class="eb">Aydın hanesi</div><h1 class="disp" style="font-size: 24px">Murat'a davet</h1></div></div><div class="pad" style="flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; padding-top: 12px; padding-bottom: 8px"><div class="card" style="display: flex; gap: 12px"><span class="av" style="background: #3d5a80">M</span><div style="flex-grow: 1; min-width: 0"><div style="font-weight: 700">Murat <span class="mut" style="font-weight: 500">· davet bekliyor</span></div><div class="mut" style="font-size: 12.5px; margin-top: 6px; line-height: 1.4">Kısıtı bilinmiyor. Katılana kadar onun için “Engel bulunmadı” göstermeyiz; sonucu <span class="v vunk"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5v.7M12 17v.01"></path></svg>Doğrulanamadı</span> olur.</div></div></div><div class="card" style="display: flex; flex-direction: column; gap: 8px"><div style="font-size: 13px; font-weight: 700; color: #3d4742; padding-bottom: 2px">Davet bağlantısı</div><div style="display: flex; align-items: center; gap: 8px; background: #efeadf; border-radius: 10px; padding: 10px 12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#56615b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg><span class="mono" style="font-size: 12.5px; color: #1c2420; flex-grow: 1">[davet bağlantısı]</span></div><div class="mut" style="font-size: 12.5px">Tek kullanımlık · 21 Eylül’de gönderildi · 28 Eylül’e kadar geçerli</div><div style="display: flex; gap: 8px"><button class="sb" type="button" style="flex: 1; justify-content: center; min-height: 44px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5M5 14v6h14v-6"></path></svg>&#160;WhatsApp ile paylaş</button><button class="sb2" type="button" style="flex: 1; justify-content: center; min-height: 44px">Bağlantıyı kopyala</button></div></div><div class="card"><div style="font-size: 13px; font-weight: 700; color: #3d4742; padding-bottom: 2px">Mesajda ne yazıyor</div><div style="font-size: 13.5px; line-height: 1.45; font-style: italic">“Selin seni NutriScan’de Aydın hanesine davet etti. [davet bağlantısı]”</div><div class="mut" style="font-size: 12px; margin-top: 4px">Mesajda kimsenin kısıtı ya da sağlık bilgisi yok.</div></div></div><div class="pad" style="display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-bottom: 24px; flex-shrink: 0"><div style="display: flex; gap: 8px"><button class="btn2" type="button" style="flex: 1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"></path><path d="M10 20a2 2 0 0 0 4 0"></path></svg>Hatırlat</button><button class="btn2" type="button" style="flex: 1; color: #7d2317">Daveti iptal et</button></div></div></div></div><div style="display: flex; flex-direction: column; gap: 8px; width: 390px"><div class="cap"><span class="capn">2</span>Süresi doldu</div><div class="s"><div style="display: flex; align-items: center; gap: 12px; padding: 16px 16px 8px"><a class="ib" href="M02-Hane.dc.html" aria-label="Geri"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></a><div style="flex-grow: 1; min-width: 0"><div class="eb">Aydın hanesi</div><h1 class="disp" style="font-size: 24px">Murat'a davet</h1></div></div><div class="pad" style="flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; padding-top: 12px; padding-bottom: 8px"><div class="bn bnwarn"><span style="display: flex; flex-shrink: 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span><span>Davetin süresi 28 Eylül’de doldu. Bağlantı artık açılmaz; kimse onunla katılamaz.</span></div><div class="card" style="display: flex; gap: 12px"><span class="av" style="background: #3d5a80">M</span><div style="flex-grow: 1; min-width: 0"><div style="font-weight: 700">Murat <span class="mut" style="font-weight: 500">· davetin süresi doldu</span></div><div class="mut" style="font-size: 12.5px; margin-top: 6px; line-height: 1.4">Kısıtı bilinmiyor. Katılana kadar onun için “Engel bulunmadı” göstermeyiz; sonucu <span class="v vunk"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5v.7M12 17v.01"></path></svg>Doğrulanamadı</span> olur.</div></div></div><div class="mut" style="font-size: 12px; line-height: 1.4">Tek kullanımlık bağlantılar 7 gün geçerli. Yeni davet eskisini geçersiz kılar.</div></div><div class="pad" style="display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-bottom: 24px; flex-shrink: 0"><a class="btn" href="M26-Davet.dc.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 5v6h-6"></path></svg>Yeni davet gönder</a><button class="btn2" type="button" style="color: #7d2317">Murat’ı haneden çıkar</button></div></div></div><div style="display: flex; flex-direction: column; gap: 8px; width: 390px"><div class="cap"><span class="capn">3</span>Katılım isteği · kurucu onayı</div><div class="s"><div style="display: flex; align-items: center; gap: 12px; padding: 16px 16px 8px"><a class="ib" href="M02-Hane.dc.html" aria-label="Geri"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></a><div style="flex-grow: 1; min-width: 0"><div class="eb">Aydın hanesi</div><h1 class="disp" style="font-size: 24px">Murat'a davet</h1></div></div><div class="pad" style="flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; padding-top: 12px; padding-bottom: 8px"><div class="card" style="display: flex; gap: 12px"><span class="av" style="background: #3d5a80">M</span><div style="flex-grow: 1; min-width: 0"><div style="font-weight: 700">Murat <span class="mut" style="font-weight: 500">· katılmak istiyor</span></div></div></div><div class="card" style="border-color: #bcd6c6; background: #eef5f0; display: flex; flex-direction: column; gap: 6px"><b style="font-size: 15px; color: #17503a">Murat katılmak istiyor</b><div style="font-size: 13.5px; line-height: 1.45; color: #17503a">Bağlantıyı açtı, kendi iznini verdi ve profilini kurdu. Onaylarsan haneye katılır; kısıtlarını ve sağlık durumunu kendisi yönetir.</div></div><div class="card"><div style="font-size: 13px; font-weight: 700; color: #3d4742; padding-bottom: 2px">Hanede görünecek olan</div><div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px"><span class="chip cond"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-4 4 8 2-4h6"></path></svg>Diyabet</span><span class="chip soft">Hedef: şekeri azalt</span></div><div class="mut" style="font-size: 12.5px; margin-top: 6px">Murat bunları paylaşmayı seçti; istediği an “yalnız sonuç” yapabilir.</div></div><div class="bn bnmute"><span style="display: flex; flex-shrink: 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path></svg></span><span>Bu kişiyi tanımıyorsan ya da bağlantı başkasına geçtiyse reddet.</span></div></div><div class="pad" style="display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-bottom: 24px; flex-shrink: 0"><a class="btn" href="M02-Hane.dc.html">Onayla</a><button class="btn2" type="button" style="color: #7d2317">Reddet</button></div></div></div></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1250, "height": 880}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

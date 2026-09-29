@@ -1,419 +1,874 @@
 {
-  "v": 3,
-  "attachments": {},
-  "boards": {
-    "A01-KararIzi.dc.html": {
-      "h": 900,
-      "is_interactive": true,
-      "title": "A01 · Karar izi — MUST",
-      "w": 1440,
-      "x": 0,
-      "y": 6076
-    },
-    "A02-Katalog.dc.html": {
-      "h": 900,
-      "is_interactive": true,
-      "title": "A02 · Katalog moderasyonu — MUST",
-      "w": 1440,
-      "x": 1520,
-      "y": 6076
-    },
-    "A03-Audit.dc.html": {
-      "h": 900,
-      "is_interactive": true,
-      "title": "A03 · Audit log — MUST",
-      "w": 1440,
-      "x": 3040,
-      "y": 6076
-    },
-    "A04-Operasyon.dc.html": {
-      "h": 900,
-      "is_interactive": true,
-      "title": "A04 · Operasyon ve deneyler — SHOULD",
-      "w": 1440,
-      "x": 4560,
-      "y": 6076
-    },
-    "M02-Hane.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M02 · Hane kur (kesin kısıt · sağlık durumu · hedef) — MUST",
-      "w": 390,
-      "x": 470,
-      "y": 0
-    },
-    "M03-Riza.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M03 · Rıza (ayrı metinler) — MUST",
-      "w": 390,
-      "x": 940,
-      "y": 0
-    },
-    "M04-Liste.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M04 · İlk liste + bütçe — MUST",
-      "w": 390,
-      "x": 1410,
-      "y": 0
-    },
-    "M05-BuHafta.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M05 · Bu hafta — MUST",
-      "w": 390,
-      "x": 0,
-      "y": 1204
-    },
-    "M06-Takas.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M06 · Takas önerileri (1·3·5 tıklanır) — MUST / kaydırıcı SHOULD",
-      "w": 390,
-      "x": 470,
-      "y": 1204
-    },
-    "M07-TakasNeden.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M07 · Takas: Neden? — MUST",
-      "w": 390,
-      "x": 940,
-      "y": 1204
-    },
-    "M08-Olursuz.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M08 · Plan çıkmadı — MUST",
-      "w": 390,
-      "x": 1410,
-      "y": 1204
-    },
-    "M09-Tarama.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M09 · Rafta: hane şeridi — MUST",
-      "w": 390,
-      "x": 0,
-      "y": 2408
-    },
-    "M10-Neden.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M10 · Karar: Neden? — MUST",
-      "w": 390,
-      "x": 470,
-      "y": 2408
-    },
-    "M11-Dogrulanamadi.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M11 · Doğrulanamadı → etiket okuma — SHOULD",
-      "w": 390,
-      "x": 940,
-      "y": 2408
-    },
-    "M12-Market.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M12 · Market bölme — SHOULD",
-      "w": 390,
-      "x": 1410,
-      "y": 2408
-    },
-    "M13-Fis.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M13 · Fiş satır onayı — SHOULD",
-      "w": 390,
-      "x": 0,
-      "y": 3612
-    },
-    "M14-PlanGercek.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M14 · Plan ve gerçek — SHOULD",
-      "w": 390,
-      "x": 470,
-      "y": 3612
-    },
-    "M15-Hane.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M15 · Hane ve gizlilik — MUST",
-      "w": 390,
-      "x": 940,
-      "y": 3612
-    },
-    "M16-Asistan.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M16 · Asistan: markette sesli soru, adımlar görünür — D1",
-      "w": 390,
-      "x": 0,
-      "y": -1470
-    },
-    "M17-PazarPlani.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M17 · Pazar sabahı proaktif plan — D2",
-      "w": 390,
-      "x": 470,
-      "y": -1470
-    },
-    "M18-Menu.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M18 · Haftanın menüsü — D2",
-      "w": 390,
-      "x": 940,
-      "y": -1470
-    },
-    "M19-Mutfak.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M19 · Mutfak / kiler — D2",
-      "w": 390,
-      "x": 1410,
-      "y": -1470
-    },
-    "M20-Radar.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M20 · İçerik değişikliği radarı — D2",
-      "w": 390,
-      "x": 1880,
-      "y": -1470
-    },
-    "M21-TibbiSinir.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M21 · Tıbbi sınır: sabit güvenlik yanıtı — D1",
-      "w": 390,
-      "x": 2350,
-      "y": -1470
-    },
-    "Main.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M01 · Karşılama — MUST",
-      "w": 390,
-      "x": 0,
-      "y": 0
-    },
-    "W01-Studyo.dc.html": {
-      "h": 900,
-      "is_interactive": true,
-      "title": "W01 · Planlama Stüdyosu (A–D tıklanır) — SHOULD",
-      "w": 1440,
-      "x": 0,
-      "y": 4816
-    },
-    "W02-SaglikFiyati.dc.html": {
-      "h": 900,
-      "is_interactive": true,
-      "title": "W02 · Sağlığın fiyatı — SHOULD",
-      "w": 1440,
-      "x": 1520,
-      "y": 4816
-    },
-    "W03-Panel.dc.html": {
-      "h": 900,
-      "is_interactive": true,
-      "title": "W03 · Hane paneli — SHOULD (enflasyon, diyetisyen: COULD)",
-      "w": 1440,
-      "x": 3040,
-      "y": 4816
-    },
-    "W04-Seffaflik.dc.html": {
-      "h": 900,
-      "is_interactive": true,
-      "title": "W04 · Nasıl karar veriyoruz — MUST",
-      "w": 1440,
-      "x": 4560,
-      "y": 4816
-    },
-    "W05-PlanNeden.dc.html": {
-      "h": 900,
-      "is_interactive": true,
-      "title": "W05 · Bu plan neden böyle? (web) — D2",
-      "w": 1440,
-      "x": 2820,
-      "y": -1470
-    },
-    "M22-NedenSaglik.dc.html": {
-      "h": 844,
-      "is_interactive": true,
-      "title": "M22 · Neden? — sağlık durumu (diyabet) — MUST (v5.1)",
-      "w": 390,
-      "x": 2420,
-      "y": 2408
-    }
+ "v": 3,
+ "attachments": {},
+ "boards": {
+  "A01-KararIzi.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "A01 · Karar izi — MUST",
+   "w": 1440,
+   "x": 0,
+   "y": 6076
   },
-  "createdOnFiles": {
-    "at": "2026-09-24T15:11:32Z",
-    "v": 1
+  "A02-Katalog.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "A02 · Katalog moderasyonu — MUST",
+   "w": 1440,
+   "x": 1520,
+   "y": 6076
   },
-  "designSystems": [],
-  "launch": {
-    "view": "canvas"
+  "A03-Audit.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "A03 · Audit log — MUST",
+   "w": 1440,
+   "x": 3040,
+   "y": 6076
   },
-  "notes": {
-    "s0": {
-      "fill": "orange",
-      "size": 24,
-      "text": "NutriScan prototip · v1 24 Eylül, v5.1 güncellemesi 27 Eylül 2026 (v4 ekranları en üst sırada)\n\nÖrnek hane: Selin (çölyak), Ela 7 (fındık + yer fıstığı alerjisi), Murat (sağlık durumu: diyabet; hedef: şeker azalt), Can 14 (kısıt yok). Bütçe haftalık 6.500 TL.\n\nTüm isim, fiyat, eşik ve oranlar ÖRNEKTİR; ölçülmemiş deney sonuçları [ölçülecek], derlenmemiş kaynaklar [KAYNAK] yazıyor.\n\nPlay ile tıklanabilir akış: Karşılama → Hane → Rıza → Liste → Bu hafta → Takas → Neden; Tara → Neden (Ela) / Neden dikkat (Murat). M06'da 1·3·5, W01'de A–D çalışır.\n\nBaşlıklardaki öncelik: MUST = D1 (CSE 491, ~18 Aralık) + Ocak menü · SHOULD = D2 (~5 Mart) · COULD = demo şeridi.",
-      "w": 460,
-      "x": -560,
-      "y": 0
-    },
-    "s1": {
-      "fill": "blue",
-      "text": "Karşılamada 4 kapı var, hiçbiri fiş istemiyor. Hane kurarken kesin kısıt (kilitli, kırmızı), sağlık durumu (mavi, isteğe bağlı, kişi kendisi seçer) ve hedef (kesikli) görsel olarak ayrışıyor; teşhis konmuyor. Yetişkin üye davetle bağlanıp kendi onayını veriyor; çocuk için veli onayı. Aydınlatma metni ve açık rıza ayrı; kutular boş başlıyor; sağlık bilgisi vermeden de devam edilebiliyor.",
-      "w": 440,
-      "x": 1900,
-      "y": 0
-    },
-    "s2": {
-      "fill": "blue",
-      "text": "Zorunlu değişiklik (kesin kısıt ihlali) ile isteğe bağlı takas ayrı kartlarda; zorunlu olan takas sayısına girmiyor. Her takasın Neden? ekranı: hangi hedef, sepete etkisi, fiyat kaynağı ve tarihi, neden bu alternatif, kesin kısıt kontrolü, veri sürümü. Plan çıkmazsa hata değil: hangi kısıtı gevşetirsen olur; kesin kısıt asla gevşemez.",
-      "w": 440,
-      "x": 1900,
-      "y": 1204
-    },
-    "s3": {
-      "fill": "blue",
-      "text": "Dört sonuç: Uygun değil · Dikkat · Engel bulunmadı · Doğrulanamadı. 'Güvenli' kelimesi yok. Her satır Neden?'e gidiyor: vurgulu içerik, hangi kural ve sürümü, kaynak, tarih, güven, profil sürümü. Katalogda olmayan ürün için tahmin yok; etiket okunur, kullanıcı onaylar, moderasyona düşer. Fiyatların yaşı gösteriliyor.",
-      "w": 440,
-      "x": 1900,
-      "y": 2408
-    },
-    "s4": {
-      "fill": "blue",
-      "text": "Fiş opsiyonel kanal. Emin olunmayan satır tahmin edilmiyor; tek dokunuşla soruluyor; onaylar zincirin kısaltma sözlüğünü büyütüyor. Kart ve kasa bilgisi maskeleniyor. Plan ve gerçek ekranı yargılamıyor: yapılmayan takas daha seyrek öneriliyor. Profil değişiklikleri sürümlü; eski kararlar hangi sürümle verildiyse onu gösteriyor.",
-      "w": 440,
-      "x": 1900,
-      "y": 3612
-    },
-    "s5": {
-      "fill": "blue",
-      "text": "Web mobilin kopyası değil: planlama, analiz ve şeffaflık. Yazıyla verilen istek önce 'anladığım şu' diye geri okunuyor; sağlık terimleri yorumlamadan önce çıkarılıyor; kesin kısıt yazıyla gevşemiyor. Sağlığın fiyatı eğrisinde her nokta o düzeyi sağlayan en ucuz plan. 'Evdeki alerjinin maliyeti' bilgi olarak gösteriliyor, gevşetilmiyor.",
-      "w": 460,
-      "x": 6080,
-      "y": 4816
-    },
-    "s6": {
-      "fill": "blue",
-      "text": "Karar izi, kullanıcının gördüğü Neden? ekranıyla aynı kayıttan besleniyor: geçen yılki 'loglar açıklayıcı değil' eleştirisine doğrudan cevap. Moderasyon bir değişikliğin geçmiş taramaları nasıl etkileyeceğini gösteriyor ve gerekçe zorunlu. Audit log değiştirilemez; destek erişimi süreli ve gerekçeli. Deney sonuçları henüz ölçülmedi.",
-      "w": 460,
-      "x": 6080,
-      "y": 6076
-    },
-    "s8": {
-      "fill": "green",
-      "text": "v4 prototip v1 · 24 Eylül 2026\n\nYeni sekme yapısı: Bu hafta · Menü · Tara · Mutfak · Asistan (hane, avatar üzerinden).\n\nAsistan görünür ama karar vermez: her cevabın üstünde yaptığı adımlar, hükümler kural motorundan gelen rozetler, altta karar kimliği. Tıbbi sınır ve acil durum yanıtları sabit; yapay zekâya sorulmaz.\n\nPazar planı onaylanmadan hiçbir şey değişmez; 'Bu plan neden böyle?' birleşik menü–alışveriş–market optimizasyonunu ve 'önce menü sonra liste' yaklaşımına göre farkı gösterir.\n\nRadar: içerik değişince ürünü alan ya da kilerinde tutan her haneye bildirim; eski paket uyarısı.\n\nBaşlıklardaki D1/D2: yayın dalgası (D1 Aralık · CSE 491, D2 Mart). Tüm rakamlar örnektir.",
-      "w": 460,
-      "x": 4340,
-      "y": -1470
-    },
-    "t0": {
-      "kind": "title1",
-      "maxW": 4260,
-      "text": "0 · v4 — Evin gıda asistanı (yeni ekranlar)",
-      "w": 240,
-      "x": 0,
-      "y": -1730
-    },
-    "t1": {
-      "kind": "title1",
-      "maxW": 1800,
-      "text": "1 · İlk kullanım — önce değer, sağlık verisi izinle",
-      "w": 240,
-      "x": 0,
-      "y": -260
-    },
-    "t2": {
-      "kind": "title1",
-      "maxW": 1800,
-      "text": "2 · PLANLA — en az değişiklikle daha iyi sepet",
-      "w": 240,
-      "x": 0,
-      "y": 944
-    },
-    "t3": {
-      "kind": "title1",
-      "maxW": 1800,
-      "text": "3 · AL — rafta, evdeki herkes için",
-      "w": 240,
-      "x": 0,
-      "y": 2148
-    },
-    "t4": {
-      "kind": "title1",
-      "maxW": 1800,
-      "text": "4 · ÖĞREN — fiş, plan ve gerçek, hane",
-      "w": 240,
-      "x": 0,
-      "y": 3352
-    },
-    "t5": {
-      "kind": "title1",
-      "maxW": 6000,
-      "text": "5 · Web — aynı kullanıcı için Planlama Stüdyosu",
-      "w": 240,
-      "x": 0,
-      "y": 4556
-    },
-    "t6": {
-      "kind": "title1",
-      "maxW": 6000,
-      "text": "6 · Admin — her kararın izi",
-      "w": 240,
-      "x": 0,
-      "y": 5816
-    },
-    "s9": {
-      "fill": "green",
-      "w": 440,
-      "x": 2890,
-      "y": 2408,
-      "text": "v5.1 · 27 Eylül 2026 (ADR-011)\n\nSağlık durumu profili: diyabet, hipertansiyon, çölyak, hamilelik. Her durum kaynaklı, sürümlü bir kurala bağlı (ör. 100 g'da şeker eşiği). Kararı kural motoru veriyor; sonuç 'Dikkat' + besin bilgisi, 'zararlı/riskli' denmiyor.\n\nÖnce güvenlik: kesin kısıt → sağlık kuralları ve hedefler → tercih ve kiler → fiyat. Bütçe sınırdır, amaç değil.\n\nRAG (anlamsal arama) kararda değil: M22'de kaynağın alıntısını getiriyor; A02'de yeni içerik adı için sözlük eşlemesi öneriyor, moderatör onaylıyor.\n\nGüncellenen ekranlar: M02, M09, M22 (yeni), A01, A02, M03, M07, M15, M16, W04, M01 (veri konumu: uygulama verisi AB'de, hane bağlamlı yapay zekâ Türkiye'de)."
-    }
+  "A04-Operasyon.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "A04 · Operasyon ve deneyler — SHOULD",
+   "w": 1440,
+   "x": 4560,
+   "y": 6076
   },
-  "order": [
-    "Main.dc.html",
-    "M16-Asistan.dc.html",
-    "M17-PazarPlani.dc.html",
-    "M18-Menu.dc.html",
-    "M19-Mutfak.dc.html",
-    "M20-Radar.dc.html",
-    "M21-TibbiSinir.dc.html",
-    "W05-PlanNeden.dc.html",
-    "M02-Hane.dc.html",
-    "M03-Riza.dc.html",
-    "M04-Liste.dc.html",
-    "M05-BuHafta.dc.html",
-    "M06-Takas.dc.html",
-    "M07-TakasNeden.dc.html",
-    "M08-Olursuz.dc.html",
-    "M09-Tarama.dc.html",
-    "M10-Neden.dc.html",
-    "M22-NedenSaglik.dc.html",
-    "M11-Dogrulanamadi.dc.html",
-    "M12-Market.dc.html",
-    "M13-Fis.dc.html",
-    "M14-PlanGercek.dc.html",
-    "M15-Hane.dc.html",
-    "W01-Studyo.dc.html",
-    "W02-SaglikFiyati.dc.html",
-    "W03-Panel.dc.html",
-    "W04-Seffaflik.dc.html",
-    "A01-KararIzi.dc.html",
-    "A02-Katalog.dc.html",
-    "A03-Audit.dc.html",
-    "A04-Operasyon.dc.html"
-  ],
-  "pages": [],
-  "title": "NutriScan Prototipleri"
+  "M02-Hane.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M02 · Hane kur (kesin kısıt · sağlık durumu · hedef) — MUST",
+   "w": 390,
+   "x": 470,
+   "y": 0
+  },
+  "M03-Riza.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M03 · Rıza (ayrı metinler) — MUST",
+   "w": 390,
+   "x": 940,
+   "y": 0
+  },
+  "M04-Liste.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M04 · İlk liste + bütçe — MUST",
+   "w": 390,
+   "x": 1410,
+   "y": 0
+  },
+  "M05-BuHafta.dc.html": {
+   "h": 880,
+   "is_interactive": true,
+   "title": "M05 · Bu hafta — MUST",
+   "w": 1250,
+   "x": 0,
+   "y": 1204
+  },
+  "M06-Takas.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M06 · Takas önerileri (1·3·5 tıklanır) — MUST / kaydırıcı SHOULD",
+   "w": 390,
+   "x": 1330,
+   "y": 1204
+  },
+  "M07-TakasNeden.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M07 · Takas: Neden? — MUST",
+   "w": 390,
+   "x": 1800,
+   "y": 1204
+  },
+  "M08-Olursuz.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M08 · Plan çıkmadı — MUST",
+   "w": 390,
+   "x": 2270,
+   "y": 1204
+  },
+  "M09-Tarama.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M09 · Rafta: hane şeridi — MUST",
+   "w": 390,
+   "x": 0,
+   "y": 2408
+  },
+  "M10-Neden.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M10 · Karar: Neden? — MUST",
+   "w": 390,
+   "x": 470,
+   "y": 2408
+  },
+  "M11-Dogrulanamadi.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M11 · Doğrulanamadı → etiket okuma — SHOULD",
+   "w": 390,
+   "x": 940,
+   "y": 2408
+  },
+  "M12-Market.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M12 · Market bölme — SHOULD",
+   "w": 390,
+   "x": 1410,
+   "y": 2408
+  },
+  "M13-Fis.dc.html": {
+   "h": 880,
+   "is_interactive": true,
+   "title": "M13 · Markette: aldım → kiler — MUST (v5.2)",
+   "w": 1250,
+   "x": 0,
+   "y": 3612
+  },
+  "M14-PlanGercek.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M14 · Plan ve gerçek (katalog fiyatıyla) — SHOULD",
+   "w": 390,
+   "x": 1330,
+   "y": 3612
+  },
+  "M15-Hane.dc.html": {
+   "h": 880,
+   "is_interactive": true,
+   "title": "M15 · Hane ve gizlilik — MUST",
+   "w": 820,
+   "x": 1800,
+   "y": 3612
+  },
+  "M16-Asistan.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M16 · Asistan: markette sesli soru, adımlar görünür — D1",
+   "w": 390,
+   "x": 0,
+   "y": -1470
+  },
+  "M17-PazarPlani.dc.html": {
+   "h": 880,
+   "is_interactive": true,
+   "title": "M17 · Pazar sabahı proaktif plan — D2",
+   "w": 820,
+   "x": 470,
+   "y": -1470
+  },
+  "M18-Menu.dc.html": {
+   "h": 880,
+   "is_interactive": true,
+   "title": "M18 · Haftanın menüsü — D2",
+   "w": 820,
+   "x": 1370,
+   "y": -1470
+  },
+  "M19-Mutfak.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M19 · Mutfak / kiler — D2",
+   "w": 390,
+   "x": 2270,
+   "y": -1470
+  },
+  "M20-Radar.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M20 · İçerik değişikliği radarı — D2",
+   "w": 390,
+   "x": 2740,
+   "y": -1470
+  },
+  "M21-TibbiSinir.dc.html": {
+   "h": 880,
+   "is_interactive": true,
+   "title": "M21 · Tıbbi sınır: sabit güvenlik yanıtı — D1",
+   "w": 820,
+   "x": 3210,
+   "y": -1470
+  },
+  "Main.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "M01 · Karşılama — MUST",
+   "w": 390,
+   "x": 0,
+   "y": 0
+  },
+  "W01-Studyo.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "W01 · Planlama Stüdyosu (A–D tıklanır) — SHOULD",
+   "w": 1440,
+   "x": 0,
+   "y": 4816
+  },
+  "W02-SaglikFiyati.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "W02 · Sağlığın fiyatı — SHOULD",
+   "w": 1440,
+   "x": 1520,
+   "y": 4816
+  },
+  "W03-Panel.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "W03 · Hane paneli — SHOULD (enflasyon, diyetisyen: COULD)",
+   "w": 1440,
+   "x": 3040,
+   "y": 4816
+  },
+  "W04-Seffaflik.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "W04 · Nasıl karar veriyoruz — MUST",
+   "w": 1440,
+   "x": 4560,
+   "y": 4816
+  },
+  "W05-PlanNeden.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "W05 · Bu plan neden böyle? (web) — D2",
+   "w": 1440,
+   "x": 4110,
+   "y": -1470
+  },
+  "M22-NedenSaglik.dc.html": {
+   "h": 880,
+   "is_interactive": true,
+   "title": "M22 · Neden? — sağlık durumu (diyabet) — MUST (v5.1)",
+   "w": 1680,
+   "x": 1880,
+   "y": 2408
+  },
+  "M23-Giris.dc.html": {
+   "x": 0,
+   "y": 7359,
+   "w": 2110,
+   "h": 880,
+   "title": "M23 · Giriş ve hesap — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M24-UyeEkle.dc.html": {
+   "x": 2190,
+   "y": 7359,
+   "w": 1680,
+   "h": 880,
+   "title": "M24 · Üye ekle — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M25-KisitSecici.dc.html": {
+   "x": 3950,
+   "y": 7359,
+   "w": 1680,
+   "h": 880,
+   "title": "M25 · Kesin kısıt, sağlık durumu ve hedef seçici — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M26-Davet.dc.html": {
+   "x": 5710,
+   "y": 7359,
+   "w": 1250,
+   "h": 880,
+   "title": "M26 · Davet gönderildi / bekliyor — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M27-DavetKabul.dc.html": {
+   "x": 7040,
+   "y": 7359,
+   "w": 1680,
+   "h": 880,
+   "title": "M27 · Davet kabul (Murat'ın telefonu) — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M28-PlanHazirlaniyor.dc.html": {
+   "x": 0,
+   "y": 8622,
+   "w": 2110,
+   "h": 880,
+   "title": "M28 · Plan hazırlanıyor (canlı adımlar · 4 sonuç) — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M29-PlanFarki.dc.html": {
+   "x": 2190,
+   "y": 8622,
+   "w": 1250,
+   "h": 880,
+   "title": "M29 · Plan farkı: onay, geri al, plan eskidi — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M30-YemekDetay.dc.html": {
+   "x": 3520,
+   "y": 8622,
+   "w": 1250,
+   "h": 880,
+   "title": "M30 · Yemek detayı: Neden bu yemek? — SHOULD (v5.2)",
+   "is_interactive": true
+  },
+  "M31-PlanNedenMobil.dc.html": {
+   "x": 4850,
+   "y": 8622,
+   "w": 1250,
+   "h": 880,
+   "title": "M31 · Bu plan neden böyle? (mobil) — SHOULD (v5.2)",
+   "is_interactive": true
+  },
+  "M32-DogalDil.dc.html": {
+   "x": 6180,
+   "y": 8622,
+   "w": 1680,
+   "h": 880,
+   "title": "M32 · Doğal dille değişiklik: Anladığım şu — SHOULD (v5.2)",
+   "is_interactive": true
+  },
+  "M33-Liste.dc.html": {
+   "x": 7940,
+   "y": 8622,
+   "w": 2540,
+   "h": 880,
+   "title": "M33 · Alışveriş listesi: ŞOK / Tarım Kredi / doğrulanamayan — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M42-LLMKapali.dc.html": {
+   "x": 10560,
+   "y": 8622,
+   "w": 1250,
+   "h": 880,
+   "title": "M42 · Asistan kapalı: butonlarla devam — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M43-OnayKarti.dc.html": {
+   "x": 11890,
+   "y": 8622,
+   "w": 1250,
+   "h": 880,
+   "title": "M43 · Onay kartı, 10 sn geri al, iddia denetimi — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M44-Sesli.dc.html": {
+   "x": 13220,
+   "y": 8622,
+   "w": 1680,
+   "h": 880,
+   "title": "M44 · Sesli mod: ad + kısıt birlikte okunmaz — COULD (v5.2)",
+   "is_interactive": true
+  },
+  "M45-Rontgen.dc.html": {
+   "x": 14980,
+   "y": 8622,
+   "w": 1250,
+   "h": 880,
+   "title": "M45 · Röntgen modu: motor · LLM · sabit yanıt — SHOULD (v5.2)",
+   "is_interactive": true
+  },
+  "M34-Tarayici.dc.html": {
+   "x": 0,
+   "y": 9885,
+   "w": 1680,
+   "h": 1808,
+   "title": "M34 · Tarayıcı vizörü — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M35-UrunKaynak.dc.html": {
+   "x": 1760,
+   "y": 9885,
+   "w": 2110,
+   "h": 1808,
+   "title": "M35 · Ürün kartı: veri nereden geliyor? — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M36-EtiketCekim.dc.html": {
+   "x": 3950,
+   "y": 9885,
+   "w": 1680,
+   "h": 880,
+   "title": "M36 · Etiket çekimi ve onay sonrası — SHOULD (v5.2)",
+   "is_interactive": true
+  },
+  "M37-Enjeksiyon.dc.html": {
+   "x": 5710,
+   "y": 9885,
+   "w": 1250,
+   "h": 880,
+   "title": "M37 · Enjeksiyon denemesi: etiketteki talimat — SHOULD (v5.2 · demo adım 4)",
+   "is_interactive": true
+  },
+  "M38-HataBildir.dc.html": {
+   "x": 7040,
+   "y": 9885,
+   "w": 1250,
+   "h": 880,
+   "title": "M38 · Hata bildir — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M39-RafFoto.dc.html": {
+   "x": 8370,
+   "y": 9885,
+   "w": 1680,
+   "h": 880,
+   "title": "M39 · Raf fotoğrafı — COULD (v5.2)",
+   "is_interactive": true
+  },
+  "M40-KilereEkle.dc.html": {
+   "x": 10130,
+   "y": 9885,
+   "w": 2110,
+   "h": 880,
+   "title": "M40 · Kilere ekle: eve girdi — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M41-Kiler.dc.html": {
+   "x": 12320,
+   "y": 9885,
+   "w": 1250,
+   "h": 1808,
+   "title": "M41 · Kiler listesi ve kalem ayrıntısı — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M46-Bildirim.dc.html": {
+   "x": 0,
+   "y": 12076,
+   "w": 1250,
+   "h": 880,
+   "title": "M46 · Kilit ekranı bildirimleri — SHOULD (v5.2 · demo adım 1)",
+   "is_interactive": true
+  },
+  "M47-GelenKutusu.dc.html": {
+   "x": 1330,
+   "y": 12076,
+   "w": 1680,
+   "h": 880,
+   "title": "M47 · Gelen kutusu ve P0 şeridi — SHOULD (v5.2)",
+   "is_interactive": true
+  },
+  "M48-Duzeltme.dc.html": {
+   "x": 3090,
+   "y": 12076,
+   "w": 1680,
+   "h": 880,
+   "title": "M48 · Düzeltme bildirimi ara ekranı — MUST (v5.2 · demo adım 6)",
+   "is_interactive": true
+  },
+  "M49-ProfilSurum.dc.html": {
+   "x": 4850,
+   "y": 12076,
+   "w": 2110,
+   "h": 880,
+   "title": "M49 · Profil düzenle ve sürüm geçmişi — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M50-Rizalar.dc.html": {
+   "x": 7040,
+   "y": 12076,
+   "w": 1680,
+   "h": 880,
+   "title": "M50 · Rızalar ve geri alma önizlemesi — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M51-VeriIndir.dc.html": {
+   "x": 8800,
+   "y": 12076,
+   "w": 1680,
+   "h": 880,
+   "title": "M51 · Verilerimi indir — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M52-HesapSil.dc.html": {
+   "x": 10560,
+   "y": 12076,
+   "w": 1680,
+   "h": 880,
+   "title": "M52 · Hesabı sil — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M53-Ayarlar.dc.html": {
+   "x": 12320,
+   "y": 12076,
+   "w": 820,
+   "h": 880,
+   "title": "M53 · Ayarlar — SHOULD (v5.2)",
+   "is_interactive": true
+  },
+  "M54-SistemDurumlari.dc.html": {
+   "x": 13220,
+   "y": 12076,
+   "w": 1680,
+   "h": 1808,
+   "title": "M54 · Sistem durumları — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M55-BosDurumlar.dc.html": {
+   "x": 14980,
+   "y": 12076,
+   "w": 1680,
+   "h": 880,
+   "title": "M55 · Boş durumlar — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "M56-Erisilebilirlik.dc.html": {
+   "x": 16740,
+   "y": 12076,
+   "w": 1250,
+   "h": 880,
+   "title": "M56 · Erişilebilirlik varyantları — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "W06-GirisWeb.dc.html": {
+   "x": 0,
+   "y": 14267,
+   "w": 1440,
+   "h": 900,
+   "title": "W06 · Web giriş (QR · hatırla kapalı · 30 dk · ekran paylaşımı) — SHOULD (v5.2)",
+   "is_interactive": true
+  },
+  "W07-HaneWeb.dc.html": {
+   "x": 1520,
+   "y": 14267,
+   "w": 1440,
+   "h": 900,
+   "title": "W07 · Hane ve gizlilik (web) — SHOULD (v5.2)",
+   "is_interactive": true
+  },
+  "W08-StudyoDurumlar.dc.html": {
+   "x": 3040,
+   "y": 14267,
+   "w": 1440,
+   "h": 900,
+   "title": "W08 · Stüdyo durumları (8 hâl) — SHOULD (v5.2)",
+   "is_interactive": true
+  },
+  "W09-Diyetisyen.dc.html": {
+   "x": 4560,
+   "y": 14267,
+   "w": 1440,
+   "h": 900,
+   "title": "W09 · Diyetisyen paylaşımı — COULD (v5.2)",
+   "is_interactive": true
+  },
+  "A05-Toplayici.dc.html": {
+   "x": 0,
+   "y": 15550,
+   "w": 1440,
+   "h": 900,
+   "title": "A05 · Toplayıcı sağlığı (ŞOK çalışıyor · Tarım Kredi kırıldı) — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "A05b-ToplayiciDurduruldu.dc.html": {
+   "x": 1520,
+   "y": 15550,
+   "w": 1440,
+   "h": 900,
+   "title": "A05b · Toplayıcı: itiraz geldi, durduruldu — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "A06-Esleme.dc.html": {
+   "x": 3040,
+   "y": 15550,
+   "w": 1440,
+   "h": 900,
+   "title": "A06 · Malzeme–ürün eşleme kuyruğu — MUST (RAG ayrıntısı SHOULD) (v5.2)",
+   "is_interactive": true
+  },
+  "A07-SozlesmePanosu.dc.html": {
+   "x": 4560,
+   "y": 15550,
+   "w": 1440,
+   "h": 900,
+   "title": "A07 · Sözleşme panosu (S1–S22, K01–K21) — MUST (v5.2)",
+   "is_interactive": true
+  },
+  "A08-Kurallar.dc.html": {
+   "x": 6080,
+   "y": 15550,
+   "w": 1440,
+   "h": 900,
+   "title": "A08 · Kurallar ve sözlük — SHOULD (v5.2)",
+   "is_interactive": true
+  },
+  "A09-KVKK.dc.html": {
+   "x": 7600,
+   "y": 15550,
+   "w": 1440,
+   "h": 900,
+   "title": "A09 · KVKK talepleri ve destek erişimi — SHOULD (v5.2)",
+   "is_interactive": true
+  },
+  "A10-AdminGiris.dc.html": {
+   "x": 9120,
+   "y": 15550,
+   "w": 1440,
+   "h": 900,
+   "title": "A10 · Admin girişi, MFA ve roller — MUST (v5.2)",
+   "is_interactive": true
+  }
+ },
+ "createdOnFiles": {
+  "at": "2026-09-24T15:11:32Z",
+  "v": 1
+ },
+ "designSystems": [],
+ "launch": {
+  "view": "canvas"
+ },
+ "notes": {
+  "s0": {
+   "fill": "orange",
+   "size": 24,
+   "text": "NutriScan prototip · v1 24 Eylül, v5.1 güncellemesi 27 Eylül 2026 (v4 ekranları en üst sırada)\n\nv5.2 · 29 Eylül 2026 (ADR-015): fiyat ve içindekiler ŞOK + Tarım Kredi web kataloğundan (toplayıcı, K21), her fiyat kaynak + tarih; fiş kaldırıldı, listede 'aldım' kilere düşer; barkod zincir ürününe 'Bu ürün hangisi?' ile bağlanır (A06).\n\nÖrnek hane: Selin (çölyak), Ela 7 (fındık + yer fıstığı alerjisi), Murat (sağlık durumu: diyabet; hedef: şeker azalt), Can 14 (kısıt yok). Bütçe haftalık 6.500 TL.\n\nTüm isim, fiyat, eşik ve oranlar ÖRNEKTİR; ölçülmemiş deney sonuçları [ölçülecek], derlenmemiş kaynaklar [KAYNAK] yazıyor.\n\nPlay ile tıklanabilir akış: Karşılama → Hane → Rıza → Liste → Bu hafta → Takas → Neden; Tara → Neden (Ela) / Neden dikkat (Murat). M06'da 1·3·5, W01'de A–D çalışır.\n\nBaşlıklardaki öncelik: MUST = D1 (CSE 491, ~18 Aralık) + Ocak menü · SHOULD = D2 (~5 Mart) · COULD = demo şeridi.",
+   "w": 460,
+   "x": 1920,
+   "y": 0
+  },
+  "s1": {
+   "fill": "blue",
+   "text": "Karşılamada 4 kapı var: haftalık liste, raf taraması, kilere ekleme ve örnek hane; giriş ayrı. Hane kurarken kesin kısıt (kilitli, kırmızı), sağlık durumu (mavi, isteğe bağlı, kişi kendisi seçer) ve hedef (kesikli) görsel olarak ayrışıyor; teşhis konmuyor. Yetişkin üye davetle bağlanıp kendi onayını veriyor; çocuk için veli onayı. Aydınlatma metni ve açık rıza ayrı; kutular boş başlıyor; sağlık bilgisi vermeden de devam edilebiliyor.",
+   "w": 440,
+   "x": 1920,
+   "y": 0
+  },
+  "s2": {
+   "fill": "blue",
+   "text": "Zorunlu değişiklik (kesin kısıt ihlali) ile isteğe bağlı takas ayrı kartlarda; zorunlu olan takas sayısına girmiyor. Her takasın Neden? ekranı: hangi hedef, sepete etkisi, fiyat kaynağı ve tarihi, neden bu alternatif, kesin kısıt kontrolü, veri sürümü. Plan çıkmazsa hata değil: hangi kısıtı gevşetirsen olur; kesin kısıt asla gevşemez.",
+   "w": 440,
+   "x": 2780,
+   "y": 1204
+  },
+  "s3": {
+   "fill": "blue",
+   "text": "Dört sonuç: Uygun değil · Dikkat · Engel bulunmadı · Doğrulanamadı. 'Güvenli' kelimesi yok. Her satır Neden?'e gidiyor: vurgulu içerik, hangi kural ve sürümü, kaynak, tarih, güven, profil sürümü. Katalogda olmayan ürün için tahmin yok; etiket okunur, kullanıcı onaylar, moderasyona düşer. Her fiyat kaynağı ve tarihiyle görünüyor (ŞOK ya da Tarım Kredi · online katalog · tarih); süresi geçen fiyat 'Doğrulanamadı' olur, optimizasyona girmez.",
+   "w": 440,
+   "x": 3680,
+   "y": 2408
+  },
+  "s4": {
+   "fill": "blue",
+   "text": "Markette listede 'aldım' işaretlenen kalem alışveriş bitince kilere düşer; geri alınabilir. 'Yoktu' denen kalemin yerine kurallardan geçmiş bir alternatif önerilir, yalnız etkilenen yemek yeniden hesaplanır. Plan ve gerçek ekranı katalog fiyatıyla karşılaştırır, kasadaki tutarı bilmez; yargılamıyor: yapılmayan takas daha seyrek öneriliyor. Profil değişiklikleri sürümlü; eski kararlar hangi sürümle verildiyse onu gösteriyor.",
+   "w": 440,
+   "x": 2740,
+   "y": 3612
+  },
+  "s5": {
+   "fill": "blue",
+   "text": "Web mobilin kopyası değil: planlama, analiz ve şeffaflık. Yazıyla verilen istek önce 'anladığım şu' diye geri okunuyor; sağlık terimleri yorumlamadan önce çıkarılıyor; kesin kısıt yazıyla gevşemiyor. Sağlığın fiyatı eğrisinde her nokta o düzeyi sağlayan en ucuz plan. 'Evdeki alerjinin maliyeti' bilgi olarak gösteriliyor, gevşetilmiyor.",
+   "w": 460,
+   "x": 6120,
+   "y": 4816
+  },
+  "s6": {
+   "fill": "blue",
+   "text": "Karar izi, kullanıcının gördüğü Neden? ekranıyla aynı kayıttan besleniyor: geçen yılki 'loglar açıklayıcı değil' eleştirisine doğrudan cevap. Moderasyon bir değişikliğin geçmiş taramaları nasıl etkileyeceğini gösteriyor ve gerekçe zorunlu. Audit log değiştirilemez; destek erişimi süreli ve gerekçeli. Deney sonuçları henüz ölçülmedi.",
+   "w": 460,
+   "x": 6120,
+   "y": 6076
+  },
+  "s8": {
+   "fill": "green",
+   "text": "v4 prototip v1 · 24 Eylül 2026\n\nYeni sekme yapısı: Bu hafta · Menü · Tara · Mutfak · Asistan (hane, avatar üzerinden).\n\nAsistan görünür ama karar vermez: her cevabın üstünde yaptığı adımlar, hükümler kural motorundan gelen rozetler, altta karar kimliği. Tıbbi sınır ve acil durum yanıtları sabit; yapay zekâya sorulmaz.\n\nPazar planı onaylanmadan hiçbir şey değişmez; 'Bu plan neden böyle?' birleşik menü–alışveriş–market optimizasyonunu ve 'önce menü sonra liste' yaklaşımına göre farkı gösterir.\n\nRadar: içerik değişince ürünü alan ya da kilerinde tutan her haneye bildirim; eski paket uyarısı.\n\nBaşlıklardaki D1/D2: yayın dalgası (D1 Aralık · CSE 491, D2 Mart). Tüm rakamlar örnektir.",
+   "w": 460,
+   "x": 5670,
+   "y": -1470
+  },
+  "t0": {
+   "kind": "title1",
+   "maxW": 5550,
+   "text": "0 · v4 — Evin gıda asistanı (yeni ekranlar)",
+   "w": 240,
+   "x": 0,
+   "y": -1730
+  },
+  "t1": {
+   "kind": "title1",
+   "maxW": 1800,
+   "text": "1 · İlk kullanım — önce değer, sağlık verisi izinle",
+   "w": 240,
+   "x": 0,
+   "y": -260
+  },
+  "t2": {
+   "kind": "title1",
+   "maxW": 2660,
+   "text": "2 · PLANLA — en az değişiklikle daha iyi sepet",
+   "w": 240,
+   "x": 0,
+   "y": 944
+  },
+  "t3": {
+   "kind": "title1",
+   "maxW": 3560,
+   "text": "3 · AL — rafta, evdeki herkes için",
+   "w": 240,
+   "x": 0,
+   "y": 2148
+  },
+  "t4": {
+   "kind": "title1",
+   "maxW": 2620,
+   "text": "4 · ÖĞREN — aldım → kiler, plan ve gerçek, hane",
+   "w": 240,
+   "x": 0,
+   "y": 3352
+  },
+  "t5": {
+   "kind": "title1",
+   "maxW": 6000,
+   "text": "5 · Web — aynı kullanıcı için Planlama Stüdyosu",
+   "w": 240,
+   "x": 0,
+   "y": 4556
+  },
+  "t6": {
+   "kind": "title1",
+   "maxW": 6000,
+   "text": "6 · Admin — her kararın izi",
+   "w": 240,
+   "x": 0,
+   "y": 5816
+  },
+  "s9": {
+   "fill": "green",
+   "w": 440,
+   "x": 3680,
+   "y": 2408,
+   "text": "v5.1 · 27 Eylül 2026 (ADR-011)\n\nSağlık durumu profili: diyabet, hipertansiyon, çölyak, hamilelik. Her durum kaynaklı, sürümlü bir kurala bağlı (ör. 100 g'da şeker eşiği). Kararı kural motoru veriyor; sonuç 'Dikkat' + besin bilgisi, 'zararlı/riskli' denmiyor.\n\nÖnce güvenlik: kesin kısıt → sağlık kuralları ve hedefler → tercih ve kiler → fiyat. Bütçe sınırdır, amaç değil.\n\nRAG (anlamsal arama) kararda değil: M22'de kaynağın alıntısını getiriyor; A02'de yeni içerik adı için sözlük eşlemesi öneriyor, moderatör onaylıyor.\n\nGüncellenen ekranlar: M02, M09, M22 (yeni), A01, A02, M03, M07, M15, M16, W04, M01 (veri konumu: uygulama verisi AB'de, hane bağlamlı yapay zekâ Türkiye'de)."
+  },
+  "t7": {
+   "x": 0,
+   "y": 7096,
+   "text": "7 · v5.2 — Hesap, hane ve davet",
+   "kind": "title1",
+   "maxW": 8720
+  },
+  "t8": {
+   "x": 0,
+   "y": 8359,
+   "text": "8 · v5.2 — Plan, liste ve asistan",
+   "kind": "title1",
+   "maxW": 16230
+  },
+  "t9": {
+   "x": 0,
+   "y": 9622,
+   "text": "9 · v5.2 — Tara, ürün kaynağı ve kiler",
+   "kind": "title1",
+   "maxW": 13570
+  },
+  "t10": {
+   "x": 0,
+   "y": 11813,
+   "text": "10 · v5.2 — Bildirim, ayarlar, gizlilik ve sistem durumları",
+   "kind": "title1",
+   "maxW": 17990
+  },
+  "t11": {
+   "x": 0,
+   "y": 14004,
+   "text": "11 · v5.2 — Web: giriş, hane, stüdyo durumları, diyetisyen",
+   "kind": "title1",
+   "maxW": 6000
+  },
+  "t12": {
+   "x": 0,
+   "y": 15287,
+   "text": "12 · v5.2 — Admin: toplayıcı, eşleme, sözleşme panosu, kurallar, KVKK",
+   "kind": "title1",
+   "maxW": 10560
+  },
+  "s10": {
+   "x": 8760,
+   "y": 7359,
+   "w": 560,
+   "maxH": 1200,
+   "fill": "green",
+   "text": "v5.2 · 29 Eylül 2026 — 45 yeni ekran, her biri durumlarıyla (yükleniyor · hata · boş · içerik + ürüne özgü)\n\nAkışlar (Play ile tıklanır):\n• İlk kurulum: M01 → M23 → M02 (+M24 → M25, M26) → M03 → M04 → M28 → M05\n• Davetli üye: M26 → M27 → M25 → M05\n• Pazar planı (demo 1): M46 → M05 → M17 (→ M31 | M45) → Onayla/Geri al → M18 → M33\n• Doğal dil (demo 2): M16/M18 → M32 → M28 → M29 → A01 → A04\n• Market: M33 → M12 → M13 (aldım, Yoktu) → M41 → M14\n• Raf (demo 3): Tara → M34 → M09 / M35 → M10 | M22 → M38; katalogda yok: M11 → M36; enjeksiyon (demo 4): M37\n• Kiler: M19 → M40 → M41\n• Asistan: M16 → M43 | M21; LLM kapalı M42; ses M44; Röntgen M45\n• Düzeltme (demo 6): A05/A06 → A02 → M46 → M47 → M48\n• Gizlilik: M15 → M49 | M50 | M51 | M52; M53\n• Dayanıklılık (demo 7): M45 → A04 LLM'siz mod → M42 → M54\n• Web (demo 5): W06 → W03 → W01 (→ W08) → W05 → W02 → W04; W07; W09\n• Admin: A10 → A04 → A05 → A06 → A02 → A01 → A03; A07; A08; A09\n\nBarkodun verisi (M35): içindekiler ve fiyat ŞOK + Tarım Kredi web kataloğundan (toplayıcı, K21), her fiyat kaynak + tarih; barkod zincir ürününe bağlı değilse 'Bu ürün hangisi?' → hane için aday eşleme → A06 moderasyonu; Open Food Facts yalnız riski artırır."
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "M16-Asistan.dc.html",
+  "M17-PazarPlani.dc.html",
+  "M18-Menu.dc.html",
+  "M19-Mutfak.dc.html",
+  "M20-Radar.dc.html",
+  "M21-TibbiSinir.dc.html",
+  "W05-PlanNeden.dc.html",
+  "M02-Hane.dc.html",
+  "M03-Riza.dc.html",
+  "M04-Liste.dc.html",
+  "M05-BuHafta.dc.html",
+  "M06-Takas.dc.html",
+  "M07-TakasNeden.dc.html",
+  "M08-Olursuz.dc.html",
+  "M09-Tarama.dc.html",
+  "M10-Neden.dc.html",
+  "M22-NedenSaglik.dc.html",
+  "M11-Dogrulanamadi.dc.html",
+  "M12-Market.dc.html",
+  "M13-Fis.dc.html",
+  "M14-PlanGercek.dc.html",
+  "M15-Hane.dc.html",
+  "W01-Studyo.dc.html",
+  "W02-SaglikFiyati.dc.html",
+  "W03-Panel.dc.html",
+  "W04-Seffaflik.dc.html",
+  "A01-KararIzi.dc.html",
+  "A02-Katalog.dc.html",
+  "A03-Audit.dc.html",
+  "A04-Operasyon.dc.html",
+  "M23-Giris.dc.html",
+  "M24-UyeEkle.dc.html",
+  "M25-KisitSecici.dc.html",
+  "M26-Davet.dc.html",
+  "M27-DavetKabul.dc.html",
+  "M28-PlanHazirlaniyor.dc.html",
+  "M29-PlanFarki.dc.html",
+  "M30-YemekDetay.dc.html",
+  "M31-PlanNedenMobil.dc.html",
+  "M32-DogalDil.dc.html",
+  "M33-Liste.dc.html",
+  "M42-LLMKapali.dc.html",
+  "M43-OnayKarti.dc.html",
+  "M44-Sesli.dc.html",
+  "M45-Rontgen.dc.html",
+  "M34-Tarayici.dc.html",
+  "M35-UrunKaynak.dc.html",
+  "M36-EtiketCekim.dc.html",
+  "M37-Enjeksiyon.dc.html",
+  "M38-HataBildir.dc.html",
+  "M39-RafFoto.dc.html",
+  "M40-KilereEkle.dc.html",
+  "M41-Kiler.dc.html",
+  "M46-Bildirim.dc.html",
+  "M47-GelenKutusu.dc.html",
+  "M48-Duzeltme.dc.html",
+  "M49-ProfilSurum.dc.html",
+  "M50-Rizalar.dc.html",
+  "M51-VeriIndir.dc.html",
+  "M52-HesapSil.dc.html",
+  "M53-Ayarlar.dc.html",
+  "M54-SistemDurumlari.dc.html",
+  "M55-BosDurumlar.dc.html",
+  "M56-Erisilebilirlik.dc.html",
+  "W06-GirisWeb.dc.html",
+  "W07-HaneWeb.dc.html",
+  "W08-StudyoDurumlar.dc.html",
+  "W09-Diyetisyen.dc.html",
+  "A05-Toplayici.dc.html",
+  "A05b-ToplayiciDurduruldu.dc.html",
+  "A06-Esleme.dc.html",
+  "A07-SozlesmePanosu.dc.html",
+  "A08-Kurallar.dc.html",
+  "A09-KVKK.dc.html",
+  "A10-AdminGiris.dc.html"
+ ],
+ "pages": [],
+ "title": "NutriScan Prototipleri"
 }

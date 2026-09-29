@@ -37,8 +37,8 @@ a{color:#1f5c45}a:hover{color:#15432f}
     <a class="nl" href="W03-Panel.dc.html">Bu hafta</a>
     <a class="nl nlon" href="W01-Studyo.dc.html">Planlama Stüdyosu</a>
     <a class="nl" href="W02-SaglikFiyati.dc.html">Sağlığın fiyatı</a>
-    <a class="nl" href="W03-Panel.dc.html">Geçmiş ve fişler</a>
-    <a class="nl" href="M15-Hane.dc.html">Hane</a>
+    <a class="nl" href="W03-Panel.dc.html">Geçmiş</a>
+    <a class="nl" href="W07-HaneWeb.dc.html">Hane</a>
     <a class="nl" href="W04-Seffaflik.dc.html">Nasıl karar veriyoruz</a>
     <span style="margin-left: auto; font-size: 14px; font-weight: 600">Aydın hanesi · Selin</span>
   </nav>
@@ -51,7 +51,7 @@ a{color:#1f5c45}a:hover{color:#15432f}
       <div class="st"><span class="n">1</span><div><b style="font-size: 16px">Kileri okuduk</b><div class="mut" style="font-size: 14px; margin-top: 2px">12 kalem. Ispanak (28 Eyl) ve yoğurt (29 Eyl) bu hafta bozulacağı için “önce kullan” kısıtı eklendi.</div></div><span class="v vok" style="justify-self: end">2 kalem kurtarıldı</span></div>
       <div class="st"><span class="n">2</span><div><b style="font-size: 16px">Kesin kısıtlarla adayları eledik</b><div class="mut" style="font-size: 14px; margin-top: 2px">84 tariften 31'i çıktı: 9'u Ela (fındık, yer fıstığı), 22'si Selin (gluten) yüzünden. Bu tarifler çözücüye hiç verilmedi.</div></div><span class="v vno" style="justify-self: end">31 tarif elendi</span></div>
       <div class="st"><span class="n">3</span><div><b style="font-size: 16px">Beğeniyi tahmin ettik</b><div class="mut" style="font-size: 14px; margin-top: 2px">Geçmişte onayladığınız ve reddettiğiniz yemekler, benzer kısıtlı hanelerin tercihleri. Yeni tarifleri de ara ara deniyoruz.</div></div><span class="mono" style="justify-self: end">öneri modeli v0.4</span></div>
-      <div class="st"><span class="n">4</span><div><b style="font-size: 16px">Menüyü, alışverişi ve marketi birlikte planladık</b><div class="mut" style="font-size: 14px; margin-top: 2px">Paket boyutları, ortak malzemeler (iki yemekte aynı soğan), ≤2 market ve bütçe aynı modelde. Çözüm 0,8 sn, bu örnekte en iyisi olduğu kanıtlandı.</div></div><span class="mono" style="justify-self: end">optimallik boşluğu %0</span></div>
+      <div class="st"><span class="n">4</span><div><b style="font-size: 16px">Menüyü, alışverişi ve marketi birlikte planladık</b><div class="mut" style="font-size: 14px; margin-top: 2px">Paket boyutları, ortak malzemeler (iki yemekte aynı soğan), ≤2 market ve bütçe aynı modelde. Çözüm 0,8 sn, bu örnekte en iyisi olduğu kanıtlandı. Fiyatlar: online katalog (ŞOK, Tarım Kredi), en eski 3 gün.</div></div><span class="mono" style="justify-self: end">optimallik boşluğu %0</span></div>
       <div class="st"><span class="n">5</span><div><b style="font-size: 16px">Sonucu yeniden kontrol ettik</b><div class="mut" style="font-size: 14px; margin-top: 2px">5 yemek × 4 kişi = 20 öğün ve 23 alışveriş kalemi kural motorundan tekrar geçti. Açıklamalar bu kayıttan yazıldı.</div></div><span class="v vok" style="justify-self: end">0 ihlal</span></div>
     </div>
     <div style="display: flex; flex-direction: column; gap: 16px; min-height: 0">
@@ -66,6 +66,20 @@ a{color:#1f5c45}a:hover{color:#15432f}
         <div class="eb" style="color: #7d2317">Evdeki alerjinin bu haftaki maliyeti</div>
         <div class="big" style="margin-top: 4px">62 TL</div>
         <div style="font-size: 14px; line-height: 1.5; margin-top: 4px">Selin'in glutensiz pizza tabanı ve ekmeği, Ela için pirinç patlağı. Bu bir kısıtın bedeli; gevşetmiyoruz, yalnızca görünür kılıyoruz.</div>
+      </div>
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: baseline"><div class="eb">Deney E1 · Hane Planlama Motoru</div><span class="mono">[ölçülecek]</span></div>
+        <div style="font-size: 13px; color: #3d4742; margin-top: 4px">CP-SAT, B2/B3 temel çizgileri ve NSGA-II/matsezgisel: optimallik boşluğu ve süre</div>
+        <svg width="398" height="96" viewBox="0 0 398 96" role="img" aria-label="E1 karşılaştırma grafiği, sonuçlar henüz ölçülmedi" style="margin-top: 8px">
+          <g font-family="Instrument Sans, sans-serif" font-size="12" fill="#56615b">
+            <line x1="0" y1="78" x2="398" y2="78" stroke="#cfc6b3"></line>
+            <rect x="10" y="18" width="70" height="60" rx="6" fill="none" stroke="#1f5c45" stroke-width="1.5" stroke-dasharray="4 4"></rect><text x="45" y="94" text-anchor="middle">CP-SAT</text>
+            <rect x="110" y="18" width="70" height="60" rx="6" fill="none" stroke="#b9ae96" stroke-width="1.5" stroke-dasharray="4 4"></rect><text x="145" y="94" text-anchor="middle">B2</text>
+            <rect x="210" y="18" width="70" height="60" rx="6" fill="none" stroke="#b9ae96" stroke-width="1.5" stroke-dasharray="4 4"></rect><text x="245" y="94" text-anchor="middle">B3</text>
+            <rect x="310" y="18" width="70" height="60" rx="6" fill="none" stroke="#b9ae96" stroke-width="1.5" stroke-dasharray="4 4"></rect><text x="345" y="94" text-anchor="middle">NSGA-II</text>
+            <text x="199" y="52" text-anchor="middle" font-weight="700" fill="#3d4742">[ölçülecek]</text>
+          </g>
+        </svg>
       </div>
       <div class="card" style="font-size: 14px; line-height: 1.5">
         <b>Beğenmediğin bir şey mi var?</b>

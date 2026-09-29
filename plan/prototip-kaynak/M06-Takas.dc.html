@@ -61,11 +61,14 @@ a{color:#1f5c45}a:hover{color:#15432f}
         <div style="display: flex; justify-content: space-between; align-items: center"><span class="v soft">{{w.who}}</span><a class="why" href="M07-TakasNeden.dc.html">Neden?</a></div>
         <div style="font-size: 15px; margin-top: 8px"><span class="mut" style="text-decoration: line-through">{{w.from}}</span> → <b>{{w.to}}</b></div>
         <div style="display: flex; gap: 12px; font-size: 12.5px; margin-top: 4px"><b style="color: #17503a">{{w.tl}}</b><span class="mut">{{w.h}}</span></div>
-        <div style="display: flex; gap: 8px; margin-top: 10px"><button class="sb ok" type="button">Kabul</button><button class="sb no" type="button">İstemiyorum</button></div>
+        <sc-if value="{{w.open}}" hint-placeholder-val="{{true}}"><div style="display: flex; gap: 8px; margin-top: 10px"><button class="sb ok" type="button" onClick="{{w.accept}}">Kabul</button><button class="sb no" type="button" onClick="{{w.reject}}">İstemiyorum</button></div></sc-if>
+        <sc-if value="{{w.done}}" hint-placeholder-val="{{false}}"><div style="margin-top: 10px; font-size: 13px; font-weight: 700; color: #3d4742">{{w.doneText}}</div></sc-if>
       </div>
     </sc-for>
+    <div class="mut" style="font-size: 12px; line-height: 1.4; padding: 0 2px">Fiyatlar: online katalog fiyatı · ŞOK ve Tarım Kredi · en eski 3 gün. Fiyatı eski olan takas gösterilmez.</div>
     <a href="M08-Olursuz.dc.html" style="font-size: 13px; font-weight: 600; text-align: center; padding: 8px 0">Bütçemi 4.000 TL yapsam ne olur?</a>
   </div>
+  <sc-if value="{{toast.on}}" hint-placeholder-val="{{false}}"><div role="status" style="position: absolute; left: 16px; right: 16px; bottom: 24px; background: #1c2420; color: #fff; border-radius: 14px; padding: 8px 8px 8px 14px; display: flex; align-items: center; gap: 10px; font-size: 14px; line-height: 1.35"><span>{{toast.text}}</span><button type="button" onClick="{{toast.undo}}" style="margin-left: auto; min-height: 44px; padding: 0 12px; border: 0; border-radius: 10px; background: transparent; color: #9fd4b8; font: inherit; font-weight: 700; cursor: pointer; flex-shrink: 0">Geri al</button></div></sc-if>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
@@ -84,8 +87,28 @@ class Component extends DCLogic {
       3: { tl: '−340 TL', sugar: '−%25', ch: '3 değişiklik' },
       5: { tl: '−410 TL', sugar: '−%31', ch: '5 değişiklik' }
     };
-    const mk = (n) => ({ label: String(n), on: k === n, off: k !== n, pick: () => this.setState({ k: n }) });
-    return { opts: [mk(1), mk(3), mk(5)], swaps: all.slice(0, k), sum: sums[k] };
+    const dec = (this.state && this.state.dec) ? this.state.dec : {};
+    const last = (this.state && this.state.last !== undefined) ? this.state.last : null;
+    const setDec = (i, v) => {
+      const d = Object.assign({}, dec);
+      if (v) { d[i] = v; } else { delete d[i]; }
+      this.setState({ k: k, dec: d, last: v ? i : null });
+    };
+    const mk = (n) => ({ label: String(n), on: k === n, off: k !== n, pick: () => this.setState({ k: n, dec: {}, last: null }) });
+    const swaps = all.slice(0, k).map((w, i) => Object.assign({}, w, {
+      open: !dec[i],
+      done: !!dec[i],
+      doneText: dec[i] === 'acc' ? 'Kabul edildi · liste güncellendi' : 'İstemedin · bu türü daha seyrek önereceğiz',
+      accept: () => setDec(i, 'acc'),
+      reject: () => setDec(i, 'rej')
+    }));
+    const lw = (last !== null && dec[last]) ? all[last] : null;
+    const toast = {
+      on: !!lw,
+      text: lw ? ((dec[last] === 'acc' ? 'Kabul edildi: ' : 'İstemedin: ') + lw.from + ' → ' + lw.to) : '',
+      undo: () => setDec(last, null)
+    };
+    return { opts: [mk(1), mk(3), mk(5)], swaps: swaps, sum: sums[k], toast: toast };
   }
 }
 </script>

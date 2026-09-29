@@ -40,18 +40,18 @@ p{margin:0;font-size:14px;line-height:1.55}
     <a class="nl" href="W03-Panel.dc.html">Bu hafta</a>
     <a class="nl" href="W01-Studyo.dc.html">Planlama Stüdyosu</a>
     <a class="nl" href="W02-SaglikFiyati.dc.html">Sağlığın fiyatı</a>
-    <a class="nl" href="W03-Panel.dc.html">Geçmiş ve fişler</a>
-    <a class="nl" href="M15-Hane.dc.html">Hane</a>
+    <a class="nl" href="W03-Panel.dc.html">Geçmiş</a>
+    <a class="nl" href="W07-HaneWeb.dc.html">Hane</a>
     <a class="nl nlon" href="W04-Seffaflik.dc.html">Nasıl karar veriyoruz</a>
   </nav>
-  <div style="display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 40px; padding: 32px 48px; flex-grow: 1; min-height: 0">
+  <div style="display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 40px; padding: 24px 48px 16px; flex-grow: 1; min-height: 0">
     <div class="toc">
       <div class="eb" style="margin-bottom: 4px">Bu sayfada</div>
       <a href="#dort">Dört sonuç</a><a href="#kisit">Kesin kısıt, sağlık durumu, hedef</a><a href="#veri">Veriyi nereden alıyoruz</a><a href="#oneri">Önerileri nasıl hesaplıyoruz</a><a href="#ai">Yapay zekâ nerede</a><a href="#bilmiyoruz">Bilmediklerimiz</a>
     </div>
-    <div style="display: flex; flex-direction: column; gap: 16px; min-height: 0">
+    <div style="display: flex; flex-direction: column; gap: 12px; min-height: 0">
       <div><h1 class="disp" style="font-size: 34px">Nasıl karar veriyoruz</h1><p class="mut" style="margin-top: 6px; font-size: 15.5px; max-width: 760px">Uygulamada gördüğün her sonucun arkasında ne olduğunu burada anlatıyoruz. Bir şeyi bilmiyorsak bunu da söylüyoruz.</p></div>
-      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 16px">
         <div class="card" id="dort">
           <div class="h3">Dört sonuç, tek dil</div>
           <div class="st"><span class="v vno" style="justify-self: start">Uygun değil</span><span>O kişinin kesin kısıtı içerikte açıkça geçiyor.</span></div>
@@ -62,23 +62,23 @@ p{margin:0;font-size:14px;line-height:1.55}
         <div class="card" id="kisit">
           <div class="h3">Kesin kısıt, sağlık durumu ve hedef</div>
           <p><b>Kesin kısıt</b> (alerji, çölyak, diyet tercihi): o kişiye hiçbir koşulda önermeyiz; hiçbir plan, bütçe ya da yazılı istek bunu gevşetemez.</p>
-          <p style="margin-top: 8px"><b>Sağlık durumu</b> (diyabet, tansiyon, hamilelik; isteğe bağlı, sen seçersin): kaynağı belli besin eşikleriyle “Dikkat” deriz ve kaynağı gösteririz. Bilgi veririz; teşhis koymaz, tedavi önermeyiz.</p><p style="margin-top: 8px"><b>Hedef</b> (şekeri, tuzu azaltmak): mümkün olduğunca gözetiriz; bütçe ya da alışkanlıkla çatışırsa sana seçenek sunarız.</p>
+          <p style="margin-top: 8px"><b>Sağlık durumu</b> (diyabet, tansiyon, hamilelik; isteğe bağlı, sen seçersin): kaynağı belli besin eşikleriyle “Dikkat” deriz ve kaynağı gösteririz. Bilgi veririz; teşhis koymayız.</p><p style="margin-top: 8px"><b>Hedef</b> (şekeri, tuzu azaltmak): mümkün olduğunca gözetiriz; bütçe ya da alışkanlıkla çatışırsa sana seçenek sunarız.</p>
         </div>
         <div class="card" id="veri">
           <div class="h3">Veriyi nereden alıyoruz</div>
-          <p><b>Ürün içeriği:</b> ekibimizin etiketten doğruladığı katalog; Open Food Facts; senin onayladığın etiket okumaları.<br><b>Fiyat:</b> senin ve diğer hanelerin fişleri, katalog. Her fiyatın tarihini gösteriyoruz.<br><b>Beslenme önerileri:</b> Türkiye Beslenme Rehberi (TÜBER 2022) ve Dünya Sağlık Örgütü.</p>
+          <p><b>Fiyat ve içindekiler:</b> ŞOK ve Tarım Kredi'nin herkese açık web kataloğundan; yalnız tariflerimizin gerektirdiği ürünler, kaynak bağlantısı ve tarihle. Robots kurallarına uyan, kendini tanıtan bir toplayıcıyla; veriyi yayımlamıyoruz. Mağaza fiyatı farklı olabilir. Eski fiyat “Doğrulanamadı”. İçindekiler ekip doğrulamasından geçer; Open Food Facts yalnız aday veridir.</p>
         </div>
         <div class="card" id="oneri">
           <div class="h3">Önerileri nasıl hesaplıyoruz</div>
-          <p>Sıra hep aynı: önce kesin kısıtlar, sonra sağlık durumu ve hedefler, sonra alışkanlıkların ve kilerin, en son fiyat. Bütçeni ve herkesin kesin kısıtlarını asla aşmayan, <b>en az değişiklik</b> isteyen planı matematiksel optimizasyonla buluyoruz. Kaç değişiklik istediğini sen seçiyorsun; hangi takası kabul ettiğine bakıp sonraki önerileri buna göre ayarlıyoruz.</p>
+          <p>Sıra hep aynı: önce kesin kısıtlar, sonra sağlık durumu ve hedefler, sonra alışkanlıkların ve kilerin, en son fiyat. Bütçeni ve herkesin kesin kısıtlarını asla aşmayan, <b>en az değişiklik</b> isteyen planı matematiksel optimizasyonla buluyoruz. Kaç değişiklik istediğini sen seçiyorsun; hangi takası kabul ettiğine bakıp sonraki önerileri buna göre ayarlıyoruz. <b>Beslenme önerileri:</b> Türkiye Beslenme Rehberi (TÜBER 2022) ve Dünya Sağlık Örgütü.</p>
         </div>
         <div class="card" id="ai">
           <div class="h3">Yapay zekâ nerede var, nerede yok</div>
-          <p><b>Var:</b> etiket ve fiş fotoğrafını okumak, yazdığın isteği kısıtlara çevirmek, yeni içerik adları için sözlükte eşleşme önermek (ekip onaylar), açıklamada kaynağı alıntılamak. Hepsi onaydan geçer.<br><b>Yok:</b> “bu ürün uygun mu” kararı, kesin kısıtlar ve sağlık durumu kuralları. Bunlar sabit, denetlenebilir kurallarla verilir. Yurt dışındaki yapay zekâya sağlık bilgin gönderilmez.</p>
+          <p><b>Var:</b> etiket fotoğrafını okumak, yazdığın isteği kısıtlara çevirmek, yeni içerik adları için sözlükte eşleşme önermek (ekip onaylar), açıklamada kaynağı alıntılamak. Hepsi onaydan geçer.<br><b>Yok:</b> “bu ürün uygun mu” kararı, kesin kısıtlar ve sağlık durumu kuralları. Bunlar sabit, denetlenebilir kurallarla verilir. Yurt dışındaki yapay zekâya sağlık bilgin gönderilmez.</p>
         </div>
         <div class="card" id="bilmiyoruz">
           <div class="h3">Bilmediklerimiz</div>
-          <p>Satın aldığını görüyoruz, yediğini değil. Pazardan ya da fişsiz aldıklarını, dışarıda yediklerini bilmiyoruz. Üretici tarifi değiştirebilir; etiketi her zaman kontrol et. NutriScan tıbbi tavsiye vermez.</p>
+          <p>Listede “aldım” işaretlediğini görüyoruz, yediğini değil. Pazardan aldıklarını, listede “aldım” işaretlemediklerini ve dışarıda yediklerini bilmiyoruz. Üretici tarifi değiştirebilir; etiketi her zaman kontrol et. NutriScan tıbbi tavsiye vermez. Uygulama tıbbi cihaz değildir; teşhis koymaz.</p>
         </div>
       </div>
     </div>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>M51 · Verilerimi indir — MUST (v5.2)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Instrument+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Instrument Sans',system-ui,sans-serif;color:#1c2420;background:#f5f1e8}
+*{box-sizing:border-box}
+a{color:#1f5c45}a:hover{color:#15432f}
+.disp{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-0.01em;margin:0}
+.eb{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#56615b}
+.mut{color:#56615b}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11.5px;color:#56615b}
+.src{font-size:11.5px;color:#56615b}
+.v{display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 8px;border-radius:7px;font-size:12px;font-weight:700;white-space:nowrap}
+.vno{background:#f6ddd6;color:#7d2317}
+.vwarn{background:#f7e8c4;color:#6b4700}
+.vok{background:#dbece2;color:#17503a}
+.vunk{background:#e4e7e9;color:#3c4750}
+.av{width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;color:#fff;flex-shrink:0}
+.chip{display:inline-flex;align-items:center;gap:5px;min-height:26px;padding:0 9px;border-radius:999px;border:1px solid #d6cdb9;background:#fffdf8;font-size:12px;font-weight:600}
+.hard{border:1.5px solid #8e2b1d;color:#7d2317;background:#fbeee9}
+.cond{border:1.5px solid #2d5a7b;color:#1f4460;background:#e8f0f6}
+.soft{border:1.5px dashed #8a7433;color:#5e4d17;background:#fbf5e3}
+.none{border:1px solid #d6cdb9;color:#56615b;background:#fffdf8}
+.condtag{font-size:11.5px;font-weight:700;color:#1f4460;background:#e8f0f6;border:1px solid #2d5a7b;border-radius:6px;padding:1px 6px}
+.bn{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border-radius:12px;font-size:13px;line-height:1.45}
+.bn svg{flex-shrink:0}
+.bninfo{background:#eef5f0;border:1px solid #bcd6c6;color:#17503a}
+.bnwarn{background:#fbf5e3;border:1px solid #e6d7a9;color:#5e4d17}
+.bnerr{background:#fbeee9;border:1px solid #e0b6aa;color:#7d2317}
+.bnmute{background:#eceae4;border:1px solid #d6d2c7;color:#3c4750}
+.skel{background:#e9e3d6;border-radius:8px}
+.dr{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;color:#56615b;background:#efeadf;border-radius:5px;padding:1px 5px}
+.xr{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:700;border-radius:5px;padding:1px 6px;border:1.5px solid}
+.xrm{color:#17503a;border-color:#17503a;background:#eef5f0}
+.xrl{color:#4b3f8a;border-color:#4b3f8a;background:#f0eefa}
+.xrf{color:#3c4750;border-color:#3c4750;background:#eceae4}
+label.fl{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:700;color:#3d4742}
+input.in,select.in{height:46px;border:1.5px solid #cfc6b3;border-radius:12px;padding:0 12px;font:inherit;font-size:15px;background:#fff;color:#1c2420}
+.tg{position:relative;width:44px;height:26px;border-radius:13px;background:#cfc6b3;flex-shrink:0;display:inline-block}
+.tg::after{content:'';position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff}
+.tgon{background:#1f5c45}
+.tgon::after{left:21px}
+.s{width:390px;height:844px;background:#f5f1e8;display:flex;flex-direction:column;overflow:hidden;position:relative;flex-shrink:0}
+.pad{padding-left:16px;padding-right:16px}
+.card{background:#fffdf8;border:1px solid #e2dbcb;border-radius:16px;padding:12px 14px}
+.ib{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid #e2dbcb;background:#fffdf8;color:#1c2420;text-decoration:none;flex-shrink:0}
+.why{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:700;color:#1f5c45;text-decoration:none}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:14px;background:#1f5c45;color:#fff;font-weight:700;font-size:15px;text-decoration:none;border:0;font-family:inherit;cursor:pointer;padding:0 16px}
+.btn:hover{color:#fff;background:#184a37}
+.btn2{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:14px;background:#fffdf8;color:#1c2420;font-weight:700;font-size:14px;text-decoration:none;border:1.5px solid #cfc6b3;font-family:inherit;cursor:pointer;padding:0 14px}
+.btn2:hover{color:#1c2420}
+.sb{height:38px;border-radius:10px;font:inherit;font-weight:700;font-size:13.5px;cursor:pointer;padding:0 12px;background:#1f5c45;color:#fff;border:0;text-decoration:none;display:inline-flex;align-items:center}
+.sb:hover{color:#fff}
+.sb2{height:38px;border-radius:10px;font:inherit;font-weight:700;font-size:13.5px;cursor:pointer;padding:0 12px;background:#fffdf8;color:#1c2420;border:1.5px solid #cfc6b3;text-decoration:none;display:inline-flex;align-items:center}
+.mr{display:flex;align-items:center;gap:10px;padding:9px 0;text-decoration:none;color:#1c2420;border-top:1px solid #ece5d6}
+.mr:hover{color:#1c2420;background:#faf6ee}
+.li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid #ece5d6;font-size:14px}
+.step{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;line-height:1.4;color:#3d4742;padding:3px 0}
+.dot{width:16px;height:16px;border-radius:50%;background:#dbece2;color:#17503a;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.me{align-self:flex-end;max-width:82%;background:#1c2420;color:#fff;border-radius:18px 18px 4px 18px;padding:10px 14px;font-size:14.5px;line-height:1.4}
+.bot{align-self:flex-start;max-width:92%;background:#fffdf8;border:1px solid #e2dbcb;border-radius:18px 18px 18px 4px;padding:12px 14px;font-size:14px;line-height:1.45}
+.sheet{position:absolute;left:0;right:0;bottom:0;background:#fffdf8;border-radius:22px 22px 0 0;border-top:1px solid #e2dbcb;padding:10px 16px 24px;display:flex;flex-direction:column;gap:10px}
+.grab{width:40px;height:5px;border-radius:3px;background:#d6cdb9;align-self:center}
+.scrim{position:absolute;inset:0;background:rgba(28,36,32,.38)}
+.toast{position:absolute;left:16px;right:16px;bottom:96px;background:#1c2420;color:#fff;border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:10px;font-size:14px}
+.toast a{color:#9fd4b8;font-weight:700;margin-left:auto;text-decoration:none}
+.tabs{margin-top:auto;height:80px;border-top:1px solid #e2dbcb;background:#fffdf8;display:flex;justify-content:space-around;align-items:flex-start;padding-top:10px;flex-shrink:0}
+.tab{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#56615b;text-decoration:none;width:64px}
+.tab:hover{color:#1c2420}
+.tabon{color:#1f5c45}
+.cap{font-size:13px;font-weight:700;color:#3d4742;height:28px;display:flex;align-items:center;gap:8px}
+.capn{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;border-radius:6px;background:#1c2420;color:#fff;font-size:11.5px;padding:0 6px}
+</style>
+</helmet>
+<div style="width: 1680px; height: 880px; display: flex; gap: 40px"><div style="display: flex; flex-direction: column; gap: 8px; width: 390px"><div class="cap"><span class="capn">1</span>Talep</div><div class="s"><div style="display: flex; align-items: center; gap: 12px; padding: 16px 16px 8px"><a class="ib" href="M15-Hane.dc.html" aria-label="Geri"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></a><div style="flex-grow: 1; min-width: 0"><div class="eb">Hane ve gizlilik</div><h1 class="disp" style="font-size: 24px">Verilerimi indir</h1></div></div><div class="pad" style="flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; padding-top: 12px; padding-bottom: 8px"><div class="card"><div style="font-size: 13px; font-weight: 700; color: #3d4742; padding-bottom: 2px">Dosyada neler var</div><div class="step"><span class="dot"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M14 3v4h4M9 12h6M9 16h6"></path></svg></span><span>Senin profilin, sürümleri ve rızaların</span></div><div class="step"><span class="dot"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M14 3v4h4M9 12h6M9 16h6"></path></svg></span><span>Velisi olduğun Ela ve Can’ın profilleri</span></div><div class="step"><span class="dot"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M14 3v4h4M9 12h6M9 16h6"></path></svg></span><span>Planlar, listeler, “aldım” işaretleri, kiler</span></div><div class="step"><span class="dot"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M14 3v4h4M9 12h6M9 16h6"></path></svg></span><span>Tarama geçmişi ve hata bildirimlerin</span></div></div><div class="card"><div style="font-size: 13px; font-weight: 700; color: #3d4742; padding-bottom: 2px">Diğer yetişkinler</div><div style="font-size: 13.5px; line-height: 1.45">Murat dosyanda “hane üyesi 2” olarak görünür; adı, kısıtı ve sağlık bilgisi yer almaz.</div></div><div class="bn bninfo"><span style="display: flex; flex-shrink: 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path></svg></span><span>İki biçim: makinece okunur JSON ve okunur PDF özeti. Bağlantı yalnız uygulama içinde açılır; e-postayla gönderilmez.</span></div></div><div class="pad" style="display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-bottom: 24px; flex-shrink: 0"><a class="btn" href="M51-VeriIndir.dc.html">Verilerimi hazırla</a></div></div></div><div style="display: flex; flex-direction: column; gap: 8px; width: 390px"><div class="cap"><span class="capn">2</span>Hazırlanıyor</div><div class="s"><div style="display: flex; align-items: center; gap: 12px; padding: 16px 16px 8px"><a class="ib" href="M15-Hane.dc.html" aria-label="Geri"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></a><div style="flex-grow: 1; min-width: 0"><div class="eb">Hane ve gizlilik</div><h1 class="disp" style="font-size: 24px">Verilerimi indir</h1></div></div><div class="pad" style="flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; padding-top: 12px; padding-bottom: 8px"><div class="card"><div style="font-size: 13px; font-weight: 700; color: #3d4742; padding-bottom: 2px">Hazırlanıyor</div><div class="step"><span class="dot"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span><span>Profil, sürümler ve rızalar</span></div><div class="step"><span class="dot"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span><span>Planlar, listeler ve kiler</span></div><div class="step"><span class="dot" style="background: #f7e8c4; color: #6b4700"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span><span>Diğer yetişkinler maskeleniyor</span></div><div class="step"><span class="dot" style="background: #fffdf8; border: 1.5px solid #cfc6b3"></span><span>Okunur PDF özeti</span></div></div><div class="bn bnmute"><span style="display: flex; flex-shrink: 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span><span>Süre: [ölçülecek]. Sayfadan çıkabilirsin; hazır olunca uygulama içinde bildiririz. Bildirimde veri özeti yok.</span></div></div><div class="pad" style="display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-bottom: 24px; flex-shrink: 0"><button class="btn2" type="button">Talebi iptal et</button></div></div></div><div style="display: flex; flex-direction: column; gap: 8px; width: 390px"><div class="cap"><span class="capn">3</span>Hazır · 24 saat · tek kullanım</div><div class="s"><div style="display: flex; align-items: center; gap: 12px; padding: 16px 16px 8px"><a class="ib" href="M15-Hane.dc.html" aria-label="Geri"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></a><div style="flex-grow: 1; min-width: 0"><div class="eb">Hane ve gizlilik</div><h1 class="disp" style="font-size: 24px">Verilerimi indir</h1></div></div><div class="pad" style="flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; padding-top: 12px; padding-bottom: 8px"><div class="bn bninfo"><span style="display: flex; flex-shrink: 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span><span>Hazır. Bağlantı 24 saat geçerli ve tek kullanımlık: 28 Eylül 14:05’e kadar.</span></div><div class="card"><div class="li" style="border-top: 0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M14 3v4h4M9 12h6M9 16h6"></path></svg><span style="flex-grow: 1"><b style="display: block">Veri dosyası · JSON</b><span class="mut" style="font-size: 12.5px">[boyut]</span></span></div><div class="li"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"></path><path d="M14 3v4h4M9 12h6M9 16h6"></path></svg><span style="flex-grow: 1"><b style="display: block">Okunur özet · PDF</b><span class="mut" style="font-size: 12.5px">Hane: Selin (sen), Ela, Can, hane üyesi 2</span></span></div></div><div class="mut" style="font-size: 12px; line-height: 1.4">İndirme bu cihazda, uygulama içinde olur. Paylaşmadan önce dosyada sağlık bilgisi olduğunu unutma.</div></div><div class="pad" style="display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-bottom: 24px; flex-shrink: 0"><button class="btn" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 11v4M8 12a4 4 0 0 1 8 0c0 3-1 6-2 8M6 14c0-4 2.5-7 6-7s6 3 6 7M9 20c.8-1.5 1.2-3.5 1.2-6"></path></svg>Face ID ile indir</button></div></div></div><div style="display: flex; flex-direction: column; gap: 8px; width: 390px"><div class="cap"><span class="capn">4</span>Kullanıldı / süresi doldu</div><div class="s"><div style="display: flex; align-items: center; gap: 12px; padding: 16px 16px 8px"><a class="ib" href="M15-Hane.dc.html" aria-label="Geri"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></a><div style="flex-grow: 1; min-width: 0"><div class="eb">Hane ve gizlilik</div><h1 class="disp" style="font-size: 24px">Verilerimi indir</h1></div></div><div class="pad" style="flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; padding-top: 12px; padding-bottom: 8px"><div class="bn bnmute"><span style="display: flex; flex-shrink: 0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg></span><span>Bağlantı 27 Eylül 14:20’de kullanıldı ve kapandı. Yeni bir kopya için yeniden talep et.</span></div><div class="card"><div style="display: flex; align-items: center; gap: 10px; padding: 6px 0; min-height: 52px; "><span style="flex-grow: 1; min-width: 0"><b style="display: block; font-size: 14px">Son talep</b><span class="mut" style="display: block; font-size: 12.5px; line-height: 1.4; margin-top: 2px">27 Eylül 2026 · JSON + PDF · kullanıldı</span></span><span style="display: inline-flex; align-items: center; gap: 4px; font-size: 11.5px; font-weight: 700; border-radius: 6px; padding: 2px 7px; background: #e4e7e9; color: #3c4750">Kapandı</span></div></div></div><div class="pad" style="display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-bottom: 24px; flex-shrink: 0"><a class="btn" href="M51-VeriIndir.dc.html">Yeniden talep et</a></div></div></div></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1680, "height": 880}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

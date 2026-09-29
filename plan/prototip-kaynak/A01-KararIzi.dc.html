@@ -39,13 +39,14 @@ pre{margin:0;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;l
   <nav class="side" aria-label="Admin gezinme">
     <div style="font-family: 'Fraunces', Georgia, serif; font-size: 18px; color: #fff; padding: 0 12px 16px">NutriScan <span style="font-family: 'Instrument Sans', sans-serif; font-size: 12px; color: #9aa59f">admin</span></div>
     <a class="sl" href="A04-Operasyon.dc.html">Operasyon</a>
+    <a class="sl" href="A05-Toplayici.dc.html">Toplayıcı</a>
     <a class="sl slon" href="A01-KararIzi.dc.html">Karar izi</a>
     <a class="sl" href="A02-Katalog.dc.html">Katalog moderasyonu</a>
-    <a class="sl" href="A02-Katalog.dc.html">Fiş eşleştirme kuyruğu</a>
-    <a class="sl" href="A03-Audit.dc.html">Kurallar ve sözlük</a>
-    <a class="sl" href="A04-Operasyon.dc.html">Deneyler</a>
+    <a class="sl" href="A06-Esleme.dc.html">Eşleme kuyruğu</a>
+    <a class="sl" href="A08-Kurallar.dc.html">Kurallar ve sözlük</a>
+    <a class="sl" href="A07-SozlesmePanosu.dc.html">Sözleşme panosu</a>
     <a class="sl" href="A03-Audit.dc.html">Audit log</a>
-    <a class="sl" href="A03-Audit.dc.html">KVKK talepleri</a>
+    <a class="sl" href="A09-KVKK.dc.html">KVKK talepleri</a>
     <div style="margin-top: auto; font-size: 12.5px; color: #9aa59f; padding: 0 12px">Levent · Admin</div>
   </nav>
   <div style="flex-grow: 1; display: flex; flex-direction: column; padding: 26px 32px; gap: 18px; min-width: 0">
@@ -55,50 +56,54 @@ pre{margin:0;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;l
     </div>
     <div style="display: grid; grid-template-columns: minmax(0, 1fr) 470px; gap: 18px; flex-grow: 1; min-height: 0">
       <div class="card" style="overflow: hidden">
-        <div style="display: flex; justify-content: space-between; align-items: baseline"><div style="font-size: 17px; font-weight: 700">Raf taraması · 24 Eylül 2026 14:02:11</div><div class="mut" style="font-size: 13px">toplam 184 ms</div></div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline"><div style="font-size: 17px; font-weight: 700">Raf taraması · 28 Eylül 2026 14:02:11</div><div class="mut" style="font-size: 13px">toplam 184 ms</div></div>
         <div class="mut" style="font-size: 13px; margin-top: 2px">Kullanıcının gördüğü “Neden?” ekranı bu kayıttan üretildi.</div>
         <div style="margin-top: 10px">
-          <div class="ev"><span class="dot"></span><div><div class="t">14:02:11.020</div><div style="font-size: 14px">Hane <span class="mono">h_12</span> (anonim kullanıcı <span class="mono">u_7c1…</span>) Migros Lara'da barkod okuttu.</div></div></div>
-          <div class="ev"><span class="dot"></span><div><div class="t">+14 ms</div><div style="font-size: 14px">Ürün doğrulanmış katalogda bulundu · <b>katalog v0.3</b> · etiket doğrulaması 12 Eylül, <b>Hilal</b>.</div></div></div>
+          <div class="ev"><span class="dot"></span><div><div class="t">14:02:11.020</div><div style="font-size: 14px">Hane <span class="mono">h_12</span> (anonim kullanıcı <span class="mono">u_7c1…</span>) ŞOK alışveriş modunda barkod okuttu.</div></div></div>
+          <div class="ev"><span class="dot"></span><div><div class="t">+14 ms</div><div style="font-size: 14px">Ürün katalogda bulundu · <b>katalog v0.3</b> · içindekiler: ŞOK web kataloğu, doğrulama 12 Eylül, <b>Hilal</b>.</div></div></div>
           <div class="ev"><span class="dot"></span><div><div class="t">+21 ms</div><div style="font-size: 14px">Profiller yüklendi: Ela <b>v3</b> · Selin <b>v2</b> · Murat <b>v2</b> (diyabet) · Can <b>v1</b>.</div></div></div>
+          <div class="ev"><span class="dot"></span><div><div class="t">+30 ms</div><div style="font-size: 14px">Fiyat: ŞOK online katalog <b>18,50 TL</b> · 26 Eyl · TTL içinde.</div></div></div>
           <div class="ev"><span class="dot"></span><div><div class="t">+38 ms</div><div style="font-size: 14px; line-height: 1.6"><span class="mono">ALG-FNDK-02 v2</span> “fındık ezmesi” eşleşti → Ela <span class="v vno">Uygun değil</span><br><span class="mono">ALG-GLTN-01 v1</span> “buğday unu” eşleşti → Selin <span class="v vno">Uygun değil</span><br><span class="mono">TRACE-01 v1</span> “eser miktarda yer fıstığı” → Ela <span class="v vwarn">Dikkat</span> <span class="mut">(daha ağır karar geçerli)</span><br><span class="mono">HLT-SUGAR-01 v1</span> besin tablosu: 100 g'da 58 g şeker ≥ 22,5 g (eşik tablosu v0) → Murat <span class="v vwarn">Dikkat</span><br>Can → <span class="v vok">Engel bulunmadı</span></div></div></div>
           <div class="ev"><span class="dot"></span><div><div class="t">+96 ms</div><div style="font-size: 14px">Alternatif: katalogdan 3 aday, hepsi 4 kişi için kontrol edildi → <b>Sade pirinç patlağı</b> seçildi (en yakın kategori, en ucuz).</div></div></div>
           <div class="ev"><span class="dot"></span><div><div class="t">+102 ms</div><div style="font-size: 14px">Açıklama şablondan üretildi · <b>yapay zekâ kullanılmadı</b>.</div></div></div>
           <div class="ev"><span class="dot" style="background: #b9ae96"></span><div><div class="t">14:02:19</div><div style="font-size: 14px">Kullanıcı Ela satırında “Neden?” ekranını açtı.</div></div></div>
         </div>
-        <div style="display: flex; gap: 10px; margin-top: 8px"><button class="btn2" type="button">Bu kararı test setine ekle</button><a class="btn2" href="A03-Audit.dc.html" style="text-decoration: none">ALG-FNDK-02 kuralını aç</a></div>
+        <div style="display: flex; gap: 10px; margin-top: 8px"><button class="btn2" type="button">Bu kararı test setine ekle</button><a class="btn2" href="A08-Kurallar.dc.html" style="text-decoration: none">ALG-FNDK-02 kuralını aç</a></div>
       </div>
       <div style="background: #1c2420; border-radius: 14px; padding: 18px 20px; overflow: hidden">
         <div style="font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 10px">Ham kayıt · Decision Record</div>
-<pre>{
+<pre style="font-size: 11.5px; line-height: 1.5">{
   "event": "verdict.issued",
-  "scanId": "scn_8f3a2c",
-  "traceId": "4bf92f…",
-  "householdId": "h_12",
-  "userIdHash": "u_7c1…",
+  "scanId": "scn_8f3a2c", "traceId": "4bf92f…",
+  "householdId": "h_12", "userIdHash": "u_7c1…",
   "product": {
-    "source": "CATALOG",
-    "catalogVersion": "0.3",
-    "verifiedAt": "2026-09-12",
-    "verifiedBy": "hilal"
+    "source": "CATALOG", "catalogVersion": "0.3",
+    "ingredientSource": "SOK_WEB_CATALOG",
+    "sourceUrl": "[kaynak bağlantısı]",
+    "verifiedAt": "2026-09-12", "verifiedBy": "hilal"
   },
+  "price": {"amount": 18.50, "chain": "SOK",
+            "priceFetchedAt": "2026-09-26", "ttl": "OK"},
   "profiles": {"ela": 3, "selin": 2,
-               "murat": 1, "can": 1},
+               "murat": 2, "can": 1},
   "rulesFired": [
-    {"id": "ALG-FNDK-02", "v": 2,
-     "match": "fındık ezmesi",
-     "member": "ela", "result": "NOT_SUITABLE"},
-    {"id": "ALG-GLTN-01", "v": 1,
-     "match": "buğday unu",
-     "member": "selin", "result": "NOT_SUITABLE"},
-    {"id": "TRACE-01", "v": 1,
+    {"id": "ALG-FNDK-02", "v": 2, "member": "ela",
+     "match": "fındık ezmesi", "result": "NOT_SUITABLE"},
+    {"id": "ALG-GLTN-01", "v": 1, "member": "selin",
+     "match": "buğday unu", "result": "NOT_SUITABLE"},
+    {"id": "TRACE-01", "v": 1, "member": "ela",
      "match": "eser miktarda yer fıstığı",
-     "member": "ela", "result": "CAUTION"}
+     "result": "CAUTION"},
+    {"id": "HLT-SUGAR-01", "v": 1, "member": "murat",
+     "sugarPer100g": 58, "threshold": 22.5,
+     "thresholdTable": "v0", "result": "CAUTION"}
   ],
-  "alternative": {"candidates": 3,
-                  "chosen": "sku_…"},
-  "explanation": {"mode": "TEMPLATE",
-                  "llm": false},
+  "verdicts": {"ela": "NOT_SUITABLE",
+               "selin": "NOT_SUITABLE",
+               "murat": "CAUTION",
+               "can": "NO_CONFLICT_FOUND"},
+  "alternative": {"candidates": 3, "chosen": "sku_…"},
+  "explanation": {"mode": "TEMPLATE", "llm": false},
   "latencyMs": 184
 }</pre>
       </div>
