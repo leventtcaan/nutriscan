@@ -17,7 +17,7 @@ kapasite:
     H: 14
 varsayilan_baglam:
 - AGENTS.md (kök)
-- docs/anayasa.md (S1–S22, K01–K20)
+- docs/anayasa.md (S1–S22, K01–K21)
 - plan/calisma-akisi.md (akış, DoR/DoD, PR kuralları)
 pbi:
 - id: A0.1-a
@@ -42,25 +42,22 @@ pbi:
       PBI'a yorum yaz; yoksa grupta tek satır onay ver.
 - id: A0.2-a
   feature: A0.2
-  baslik: Ekip hanelerinde fiş + "bitti/attım" kaydı başlasın
+  baslik: Ekip hanelerinde "bitti/attım" kaydı başlasın
   sahip: E
   agent: insan
   area: data
   effort: 1
   sprint: Hazırlık
   omurga: veri
-  gorev: Her üye kendi hanesinin market fişlerini fotoğraflar ve biten/atılan ürünü not eder (kiler ve fiş eşleştirme için gerçek veri). Görseller repoya girmez (KVKK);
-    ortak klasör Levent belirler.
+  gorev: Her üye kendi hanesinde biten ya da atılan ürünü not eder (kiler modeli için gerçek veri). v5.2 (ADR-015) ile fiş kaydı kapsamdan çıktı; fiş fotoğrafı
+    toplanmaz.
   kabul:
   - Üç hanede en az 1 haftalık kayıt başladı
   - Kayıt biçimi (tarih, ürün, olay) ortak
   paylar:
-    L: Kendi hanende 28 Eylül'den itibaren market fişlerini fotoğrafla, biten ya da atılan ürünü tarih · ürün · olay (bitti/attım/eve girdi) olarak ortak tabloya
-      yaz. Ortak klasörü ve tablo biçimini ilk gün kur ve gruba paylaş. Görseller repoya girmez (KVKK).
-    H: Kendi hanende 28 Eylül'den itibaren market fişlerini fotoğrafla, biten ya da atılan ürünü tarih · ürün · olay (bitti/attım/eve girdi) olarak ortak tabloya
-      yaz. Görseller repoya girmez (KVKK).
-    O: Kendi hanende 28 Eylül'den itibaren market fişlerini fotoğrafla, biten ya da atılan ürünü tarih · ürün · olay (bitti/attım/eve girdi) olarak ortak tabloya
-      yaz. Görseller repoya girmez (KVKK).
+    L: Kendi hanende biten ya da atılan ürünü tarih · ürün · olay (bitti/attım/eve girdi) olarak ortak tabloya yaz. Ortak tablo biçimini gruba paylaş.
+    H: Kendi hanende biten ya da atılan ürünü tarih · ürün · olay (bitti/attım/eve girdi) olarak ortak tabloya yaz.
+    O: Kendi hanende biten ya da atılan ürünü tarih · ürün · olay (bitti/attım/eve girdi) olarak ortak tabloya yaz.
 - id: A0.4-a
   feature: A0.4
   baslik: EVREN hesabı + API anahtarı (kasaya)
@@ -213,14 +210,14 @@ pbi:
   bagli:
   - A0.9-a
   omurga: zemin
-  kurallar: tümü (S1–S22, K01–K20, ADR-011 sağlık kuralları)
+  kurallar: tümü (S1–S22, K01–K21, ADR-011 sağlık kuralları)
   sozlesme: yok
   baglam:
   - arastirma/06-tez-v4.md §7–8, arastirma/05-sistem-fmea.md (K kuralları kaynağı)
   - arastirma/08-ekip-calisma-modeli.md §3.d (talimat mimarisi)
   - plan/calisma-akisi.md, plan/kararlar.md (ADR-001…011)
   gorev: 'Ekibin üç agent''ının (Claude Code, Codex, Antigravity) okuyacağı tek kaynak talimat: kök AGENTS.md (≤150 satır, yönlendirici) + docs/anayasa.md (S1–S22,
-    K01–K20, sağlık dili; her maddenin yanında zorlayan test/PBI). 28 Eylül''de ortak altyapıyla birlikte kuruldu (ADR-013); bu PBI''ın kalanı: üç araçta yüklemenin
+    K01–K21, sağlık dili; her maddenin yanında zorlayan test/PBI). 28 Eylül''de ortak altyapıyla birlikte kuruldu (ADR-013); bu PBI''ın kalanı: üç araçta yüklemenin
     denenerek doğrulanması.'
   degistir:
   - AGENTS.md
@@ -1130,7 +1127,7 @@ pbi:
   - Metinlerde 'zararlı/riskli/tedavi/önler' yok (test)
 - id: A2.4-a
   feature: A2.4
-  baslik: Katalog v0 — ürün/SKU/paket/fiyat + fiyat yaşı, Migros içe aktarma
+  baslik: Katalog v0 — ürün/SKU/paket/fiyat + kaynak ve fiyat yaşı, toplayıcı çıktısını içe aktarma
   sahip: H
   agent: codex
   modul: backend/…/catalog, data/catalog
@@ -1140,43 +1137,79 @@ pbi:
   bagli:
   - A0.6-b
   - A1.5-b
+  - A2.4-b
   omurga: veri
-  kurallar: K 'mağaza içi barkod global anahtar değil', K 'OFF girdisi güvenilmeyen metin', S8
-  sozlesme: eklemeli (contracts/openapi/catalog.yaml)
+  kurallar: K 'mağaza içi barkod global anahtar değil', K 'OFF girdisi güvenilmeyen metin', K04, K11, K12, K21, S8
+  sozlesme: eklemeli (contracts/openapi/modules/catalog.yaml)
   baglam:
-  - plan/kararlar.md ADR-002, ADR-003
-  - arastirma/02-v2-fis-veri.md
-  gorev: Ürün (EAN, ad, marka, içindekiler, alerjen beyanı, besin tablosu, kaynak + doğrulayan + tarih), SKU (zincir, paket boyutu, birim), fiyat (tutar, kaynak,
-    tarih → fiyat yaşı). data/catalog CSV'lerinden içe aktarma; OFF yalnız aday kaynak, doğrulanmadan 'katalogda doğrulandı' sayılmaz. Malzeme sözlüğüyle SKU eşleme
-    alanı.
+  - plan/kararlar/ADR-015-fiyat-toplayici-sok-tarimkredi.md
+  - arastirma/12-fiyat-verisi-edinim.md
+  gorev: Ürün (ad, marka, içindekiler metni, alerjen beyanı, besin tablosu, kaynak URL + doğrulayan + tarih), SKU (zincir, paket boyutu, birim), fiyat (tutar,
+    indirimsiz tutar, kaynak URL, tarih → fiyat yaşı). Toplayıcı çıktısını (A2.4-b, A2.4-c) içe aktarma; toplayıcının içindekiler metni ve OFF yalnız aday
+    kaynak, moderasyonla doğrulanmadan 'katalogda doğrulandı' sayılmaz. Malzeme sözlüğüyle SKU eşleme alanı (malzeme → zincir başına aday ürünler; barkod
+    zorunlu değil).
   degistir:
   - backend/src/main/java/**/catalog/
   - data/catalog/
-  - contracts/openapi/catalog.yaml
+  - contracts/openapi/modules/catalog.yaml
   kabul:
   - İçe aktarma şema doğrulamasından geçmeyen satırı reddediyor
-  - Fiyat yaşı hesaplanıyor; 14 günden eski fiyat işaretli (test)
+  - Fiyat yaşı hesaplanıyor; yapılandırmadaki TTL'den eski fiyat COULD_NOT_VERIFY (test)
   - Doğrulanmamış ürün 'doğrulandı' dönmüyor (test)
 - id: A2.4-b
   feature: A2.4
-  baslik: 'Migros fiyat turu #1 (~300 ürün, üç kişiye bölünür)'
-  sahip: E
-  agent: insan
-  area: data
-  effort: 1
+  baslik: Ürün ve Fiyat Toplayıcı çekirdeği + ŞOK adapter'ı (K21)
+  sahip: L
+  agent: claude-code
+  modul: backend/…/catalog
+  area: backend\catalog
+  effort: 3
+  sprint: Sprint 0
+  en_gec: 20 Kasım
+  bagli:
+  - A0.6-b
+  omurga: veri
+  kurallar: K21, K11, K18, S8
+  baglam:
+  - plan/kararlar/ADR-015-fiyat-toplayici-sok-tarimkredi.md
+  - arastirma/12-fiyat-verisi-edinim.md §4
+  gorev: Adapter arayüzü (zincir başına bir sınıf); K21 korkulukları kodda — kendini tanıtan bot adı + iletişim, robots.txt denetimi, yapılandırmadan hız sınırı
+    ve zaman penceresi, kapsam yalnız malzeme sözlüğünden gelen ürün listesi, koruma/CAPTCHA görülürse dur; zamanlanmış çekim + heartbeat (K18); çekim sağlık
+    kontrolü (başarısız ya da TTL aşımı → o zincirin fiyatları COULD_NOT_VERIFY). ŞOK adapter'ı (ürün sayfasından fiyat, indirimsiz fiyat, marka, gramaj,
+    içindekiler, kaynak URL + tarih). Geliştirme ve testler sentetik fixture ile (gerçek sayfa yapısı, uydurma içerik; depoya üçüncü taraf sayfa girmez). HTML
+    ayrıştırıcı kütüphanesi PBI başında onaya sunulur. Hilal'in modülünde vekil olarak (calisma-akisi §8); PR'ı Hilal onaylar.
+  degistir:
+  - backend/src/main/java/**/catalog/
+  - backend/src/test/**/catalog/
+  kabul:
+  - Bot adı, robots.txt uyumu, hız sınırı ve sözlük kapsamı testle zorlanıyor (K21)
+  - Fixture'dan fiyat, marka, gramaj, içindekiler ve kaynak/tarih okunuyor (test)
+  - Çekim başarısızsa ya da TTL aşılmışsa zincirin fiyatları COULD_NOT_VERIFY (test)
+- id: A2.4-c
+  feature: A2.4
+  baslik: Tarım Kredi adapter'ı + fiyat tazeliği panosu
+  sahip: L
+  agent: claude-code
+  modul: backend/…/catalog
+  area: backend\catalog
+  effort: 2
   sprint: Sprint 1
   en_gec: 20 Kasım
+  bagli:
+  - A2.4-b
   omurga: veri
-  gorev: 'marketfiyati izni yoksa (ADR-002 B planı): 60 tarifin malzemelerine karşılık gelen ~300 Migros ürününün fiyatı üç kişiye bölünerek CSV''ye girilir (ürün,
-    paket, fiyat, tarih, kaynak: mağaza/site). Etiket fotoğrafı gereken ürünler aynı turda çekilir (görseller repoya girmez).'
+  kurallar: K21, K11, S8
+  baglam:
+  - plan/kararlar/ADR-015-fiyat-toplayici-sok-tarimkredi.md
+  - arastirma/12-fiyat-verisi-edinim.md §4 (kategori sayfası 18 ürün/sayfa, ürün sayfasında içindekiler)
+  gorev: A2.4-b arayüzüyle Tarım Kredi Koop adapter'ı (kategori/ürün sayfası; fiyat, gramaj, içindekiler, kaynak URL + tarih); zincir başına son başarılı çekim,
+    fiyatlı SKU sayısı ve medyan fiyat yaşı panosu (tez §7 haftalık pano). Sahip Hilal'in modülünde vekil olarak (calisma-akisi §8); PR'ı Hilal onaylar.
+  degistir:
+  - backend/src/main/java/**/catalog/
+  - backend/src/test/**/catalog/
   kabul:
-  - data/catalog/prices-migros-<tarih>.csv, şemadan geçiyor
-  - Kişi başı ~100 ürün
-  paylar:
-    L: 'Kuru gıda, bakliyat, tahıl, makarna, un ürünleri (~100 ürün): Migros fiyatlarını data/catalog/prices-migros-<tarih>.csv biçiminde gir (ürün, paket, fiyat,
-      tarih, kaynak).'
-    H: 'Süt ürünleri, et-tavuk-balık, yumurta, şarküteri (~100 ürün): Migros fiyatlarını aynı CSV biçiminde gir; etiket fotoğrafı gereken ürünleri aynı turda çek.'
-    O: 'Sebze-meyve, yağ, sos-baharat, içecek, atıştırmalık (~100 ürün): Migros fiyatlarını aynı CSV biçiminde gir.'
+  - Fixture'dan fiyat, gramaj, içindekiler ve kaynak/tarih okunuyor (test)
+  - Pano zincir başına son çekim, kapsam ve medyan fiyat yaşını gösteriyor
 - id: A2.5-a
   feature: A2.5
   baslik: İlk 30 tarif (şemaya uygun, malzemeler sözlükte)
@@ -1205,7 +1238,7 @@ pbi:
   - Hilal çift onayı
 - id: A2.5-b
   feature: A2.5
-  baslik: Tarif 31–60 + Migros fiyatlı SKU kapsaması ≥ %90
+  baslik: Tarif 31–60 + iki zincirde (ŞOK + Tarım Kredi) fiyatlı SKU kapsaması ≥ %90
   sahip: O
   agent: antigravity
   modul: data/recipes
@@ -1216,7 +1249,8 @@ pbi:
   - A2.5-a
   - A2.4-a
   omurga: veri
-  gorev: 30 tarif daha; ardından 60 tarifin tüm malzemeleri için Migros'ta fiyatlı SKU kapsamasını ölç (CI kapsama raporu) ve eksikleri fiyat turu listesine ekle.
+  gorev: 30 tarif daha; ardından 60 tarifin tüm malzemeleri için malzeme → ürün eşleme listesini (ŞOK + Tarım Kredi) tamamla, fiyatlı SKU kapsamasını ölç (CI
+    kapsama raporu); eksik malzemeyi (ör. taze meyve-sebze) "tahmini" referans listesine ekle.
   degistir:
   - data/recipes/
   - data/catalog/ (yalnız eşleme listesi)
@@ -1308,7 +1342,7 @@ pbi:
   - Zaman sınırında boşluk raporlanıyor; olursuzlukta gevşetme önerisi (test)
 - id: A2.7-c
   feature: A2.7
-  baslik: MSM gerçek veriyle (60 tarif + Migros) + E1 v0 ölçümü
+  baslik: MSM gerçek veriyle (60 tarif + ŞOK + Tarım Kredi) + E1 v0 ölçümü
   sahip: L
   agent: claude-code
   modul: backend/…/planning, research/e1

@@ -1,17 +1,17 @@
 ---
 title: NutriScan backlog özeti (üretildi — elle düzenleme)
-updated: 2026-09-28
+updated: 2026-09-29
 kaynak: plan/board/pbi.yaml + plan/takvim.md
 ---
 # Backlog özeti
 
-8 epic · 65 feature · 66 PBI (54 promptlu). PBI'a bölünmemiş feature'lar sırası gelince bölünür (sprint planlamadan önce).
+8 epic · 65 feature · 67 PBI (56 promptlu). PBI'a bölünmemiş feature'lar sırası gelince bölünür (sprint planlamadan önce).
 
 ## Hazırlık
 | PBI | İş | Sahip | Agent | Effort | Bağlı | En geç |
 |---|---|---|---|---|---|---|
 | A0.1-a | Takvim v1.5 + çalışma akışı + vekil tablosu ekip onayı | Ekip | insan | 1 | — | 30 Eylül |
-| A0.2-a | Ekip hanelerinde fiş + "bitti/attım" kaydı başlasın | Ekip | insan | 1 | — | 5 Ekim |
+| A0.2-a | Ekip hanelerinde "bitti/attım" kaydı başlasın | Ekip | insan | 1 | — | 5 Ekim |
 | A0.4-a | EVREN hesabı + API anahtarı (kasaya) | Levent | insan | 1 | — | 10 Ekim |
 | A0.5-a | Proposal eksikleri + ekip okuması | Ekip | insan | 2 | — | 9 Ekim |
 | A0.6-a | Tarif şeması v0 (JSON Schema) + 3 örnek tarif | Ozan | antigravity | 3 | A0.9-a | 16 Ekim |
@@ -46,8 +46,9 @@ Yük (Effort): Hilal 5 · Levent 15 · Ozan 11
 | A1.10-a | OR-Tools CP-SAT (Java) Docker imajında + küçük MSM örneği | Levent | claude-code | 2 | A1.3-a | 1 Kasım |
 | A1.12-a | Sağlık durumu kuralı şeması (data/schemas/health-rule.schema.json) | Hilal | codex | 2 | A0.6-b | 25 Ekim |
 | A1.12-b | Eşik tablosu v0 — kaynak derleme (4 durum) | Ozan | antigravity | 5 | A1.12-a | 1 Kasım |
+| A2.4-b | Ürün ve Fiyat Toplayıcı çekirdeği + ŞOK adapter'ı (K21) | Levent | claude-code | 3 | A0.6-b | 20 Kasım |
 
-Yük (Effort): Hilal 16 · Levent 17 · Ozan 14
+Yük (Effort): Hilal 16 · Levent 20 · Ozan 14
 
 ## Sprint 2
 | PBI | İş | Sahip | Agent | Effort | Bağlı | En geç |
@@ -57,7 +58,7 @@ Yük (Effort): Hilal 16 · Levent 17 · Ozan 14
 | A2.2-d | Mobil — hane kurma + rıza ekranları (M02, M03) | Ozan | antigravity | 3 | A2.2-b, A1.7-b | 20 Kasım |
 | A2.3-a | Kural motoru çekirdeği — 4 durum, alerjen eşleme, Doğrulanamadı ilkesi | Hilal | codex | 5 | A0.6-b, A1.4-a, A2.2-b | 27 Kasım |
 | A2.3-b | Alerjen altın set v1 (n ≥ 200) + CI regresyonu (FN = 0) | Hilal | codex | 3 | A2.3-a | 27 Kasım |
-| A2.5-b | Tarif 31–60 + Migros fiyatlı SKU kapsaması ≥ %90 | Ozan | antigravity | 5 | A2.5-a, A2.4-a | 27 Kasım |
+| A2.5-b | Tarif 31–60 + iki zincirde (ŞOK + Tarım Kredi) fiyatlı SKU kapsaması ≥ %90 | Ozan | antigravity | 5 | A2.5-a, A2.4-a | 27 Kasım |
 | A2.5-c | Tarif ve sözlük çift onayı (60 tarif) | Hilal | insan | 2 | A2.5-a | 27 Kasım |
 | A2.7-b | MSM çözücü v0 — CP-SAT modeli sentetik veriyle (önce güvenlik sıralı amaç) | Levent | claude-code | 5 | A2.7-a, A1.10-a, A1.5-a | 4 Aralık |
 | A2.8-c | Mobil raf ekranı — hane şeridi + Neden? (M09, M10, M22) | Ozan | antigravity | 5 | A2.8-a, A1.7-b | 9 Aralık |
@@ -76,20 +77,20 @@ Yük (Effort): Hilal 13 · Levent 12 · Ozan 13
 | A2.1-a | CSE 491 ara rapor + ara sunum | Ekip | insan | 2 | — | 6 Kasım |
 | A2.2-a | Kimlik — Keycloak realm + Spring Security resource server (OAuth2 PKCE, roller) | Hilal | codex | 3 | A1.3-b | 20 Kasım |
 | A2.2-b | Hane + üye + davet + veli onayı + profil sürümü (API + tablolar) | Hilal | codex | 5 | A2.2-a, A1.4-a | 20 Kasım |
-| A2.4-a | Katalog v0 — ürün/SKU/paket/fiyat + fiyat yaşı, Migros içe aktarma | Hilal | codex | 3 | A0.6-b, A1.5-b | 20 Kasım |
-| A2.4-b | Migros fiyat turu #1 (~300 ürün, üç kişiye bölünür) | Ekip | insan | 1 | — | 20 Kasım |
+| A2.4-a | Katalog v0 — ürün/SKU/paket/fiyat + kaynak ve fiyat yaşı, toplayıcı çıktısını içe aktarma | Hilal | codex | 3 | A0.6-b, A1.5-b, A2.4-b | 20 Kasım |
+| A2.4-c | Tarım Kredi adapter'ı + fiyat tazeliği panosu | Levent | claude-code | 2 | A2.4-b | 20 Kasım |
 | A2.5-a | İlk 30 tarif (şemaya uygun, malzemeler sözlükte) | Ozan | antigravity | 5 | A0.6-a, A0.6-b | 15 Kasım |
 | A2.6-a | TR model karar kapısı — EVREN birincil mi (ADR-009 kesinleşir) | Levent | insan | 1 | A1.9-a | 15 Kasım |
 | A2.7-a | Motor sözleşmesi — PlanRequest/PlanResult şeması + golden fixture'lar | Levent | claude-code | 2 | A1.6-a | 4 Aralık |
 
-Yük (Effort): Hilal 14 · Levent 11 · Ozan 12
+Yük (Effort): Hilal 13 · Levent 12 · Ozan 11
 
 ## Sprint 3
 | PBI | İş | Sahip | Agent | Effort | Bağlı | En geç |
 |---|---|---|---|---|---|---|
 | A2.3-c | safety.api — EligibilityService (planlamaya uygun aday kümesi) | Hilal | codex | 2 | A2.3-a | 2 Aralık |
 | A2.16-a | Sağlık durumu kuralları kural motorunda + test seti (%100 tablo uyumu) | Hilal | codex | 3 | A1.12-b, A2.3-a | 9 Aralık |
-| A2.7-c | MSM gerçek veriyle (60 tarif + Migros) + E1 v0 ölçümü | Levent | claude-code | 3 | A2.7-b, A2.5-b, A2.3-c, A2.4-a | 4 Aralık |
+| A2.7-c | MSM gerçek veriyle (60 tarif + ŞOK + Tarım Kredi) + E1 v0 ölçümü | Levent | claude-code | 3 | A2.7-b, A2.5-b, A2.3-c, A2.4-a | 4 Aralık |
 | A2.8-b | Raf API — barkod → üye başına karar + alternatif (p95 ≤ 1,5 sn) | Hilal | codex | 3 | A2.2-b, A2.3-a, A2.4-a | 9 Aralık |
 | A2.9-a | Akıllı Takas API — k = 1·3·5, zorunlu değişiklik ayrı, olursuzluk açıklaması | Levent | claude-code | 3 | A2.7-b | 9 Aralık |
 | A2.9-b | Mobil liste + takas ekranları (M04, M06–M08) | Ozan | antigravity | 3 | A2.9-a | 9 Aralık |
