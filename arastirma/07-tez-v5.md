@@ -25,7 +25,7 @@ Tetikleyen: Ozan'ın hatırlatması + geçen yıl danışmana anlatılan konsept
 1. **Sağlık durumu profili (yeni, Must):** üye isterse diyabet, hipertansiyon, çölyak, hamilelik seçer. Her durum **kaynaklı, sürümlü besin/içerik kurallarına** bağlanır; kararı kural motoru verir (§3.1).
 2. **Önce güvenlik sırası:** planlamada öncelik (1) kesin kısıtlar → (2) sağlık durumu kuralları ve hedefler → (3) hane tercihi ve kiler → (4) fiyat. **Bütçe amaç değil sınırdır**; asistan "en ucuz"u değil, "herkese uygun ve bütçeye sığan"ı arar.
 3. **RAG'ın yeri netleşti:** anlamsal arama **kararda değil**; (a) etiketteki içerik adları için sözlüğe eşleme **önerisi** (insan onaylar, karar yalnız onaylı sözlükle), (b) açıklamada kaynak pasajını alıntılama. Benzerlik araması kararı verirse sistem deterministik olmaz.
-4. **Dil:** hastalık kuralları bilgilendirme dilinde ("100 g'da 58 g şeker; kaynaklı 'yüksek' eşiği 22,5 g" — prototip M22), "zararlı / riskli / hastalığına iyi gelir" yok — tıbbi cihaz sınırı (`01-mevzuat-risk.md` §3).
+4. **Dil:** hastalık kuralları bilgilendirme dilinde ("100 g'da 58 g şeker; kaynaklı ve onaylı 'yüksek' eşiği [..] g" — prototip M22; onaysız kural karar üretmez, anayasa §3.3), "zararlı / riskli / hastalığına iyi gelir" yok — tıbbi cihaz sınırı (`01-mevzuat-risk.md` §3).
 5. **Ölçüm:** RAG destekli eşleme vs tam/bulanık eşleme altın sette (E2'ye ek ölçüt).
 
 ## 0. v4 → v5: ne değişti
@@ -70,7 +70,7 @@ Türkiye'de haneler her hafta aynı kararı sıfırdan veriyor: ne pişirilecek,
 | Hipertansiyon | Besin eşiği: tuz/sodyum (100 g) | Besin tablosu | Dikkat / Engel bulunmadı / Doğrulanamadı | Haftalık tuz hedefi (yumuşak) |
 | Hamilelik | İçerik kuralları (alkol, belirli peynir/çiğ ürün, yüksek kafein) | İçindekiler + ürün kategorisi | Dikkat / Doğrulanamadı | Aday dışı (üye seçerse) |
 
-- **Eşik tablosu:** `data/` altında YAML, her satırda kaynak + madde + tarih + sürüm (aday kaynaklar: TGK Beslenme ve Sağlık Beyanları Yönetmeliği eşikleri, WHO şeker ve sodyum kılavuzları, TÜBER 2022, ön yüz etiketi "yüksek" eşikleri). CI şemayı ve kaynak alanını doğrular; tablo diyetisyen gözünden geçer (ikame tablosuyla birlikte).
+- **Eşik tablosu:** `data/` altında YAML, her satırda kaynak + madde + tarih + sürüm (ürün eşiği için aday kaynaklar: TGK Beslenme ve Sağlık Beyanları Yönetmeliği eşikleri, ön yüz etiketi "yüksek" ölçütleri [doğrulanacak]; WHO şeker/sodyum kılavuzları ve TÜBER 2022 popülasyon düzeyinde olduğu için yalnız haftalık hedef bağlamı, 100 g eşiği değil). CI şemayı ve kaynak alanını doğrular; tablo diyetisyen gözünden geçer; kaynak, doğrulayan ya da diyetisyen onayı eksik satır karar üretmez (Doğrulanamadı).
 - **Kapsam dışı (şimdilik):** böbrek hastalığı (potasyum/fosfor etikette yok → hep "Doğrulanamadı" olurdu), ilaç–gıda etkileşimi, doz/porsiyon önerisi.
 - **Dil:** hastalık kuralları "Uygun değil" üretmez (çölyak hariç), "Dikkat" + besin bilgisi verir. Ürün "tıbbi cihaz değildir, teşhis/tedavi etmez" uyarısını taşır; teşhis sorulmaz, üye durumu kendisi seçer.
 - **Veri:** sağlık durumu KVKK'da alerjiyle aynı sınıf (özel nitelikli) — aynı açık rıza, şifreleme ve log yasağı (ADR-008); ayrı bir risk yaratmaz.

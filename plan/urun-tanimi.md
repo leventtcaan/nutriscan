@@ -61,7 +61,7 @@ Her karar "Neden?" taşır · dört sonuç (Uygun değil · Dikkat · Engel bulu
 | Alan | Durum | Ürüne etkisi / çözüm |
 |---|---|---|
 | Ürün içeriği | OFF'ta TR içerik kapsamı %15–25, Türkçe alerjen taksonomisi yok | Doğrulanmış katalog: toplayıcının içindekiler metni (ŞOK + Tarım Kredi) aday veri, etiket okuma + moderasyonla doğrulanır; katalog dışı ürün "Doğrulanamadı" |
-| Sağlık kuralları | Kişiye özel klinik eşik yok; kılavuzlar popülasyon düzeyinde | Kaynaklı, sürümlü eşik tablosu (TGK beyan eşikleri, WHO, TÜBER 2022), diyetisyen incelemesi; besin tablosu yoksa "Doğrulanamadı"; böbrek hastalığı kapsam dışı (etikette potasyum/fosfor yok) |
+| Sağlık kuralları | Kişiye özel klinik eşik yok; kılavuzlar popülasyon düzeyinde | Kaynaklı, sürümlü eşik tablosu (ürün eşiği: TGK beyan eşikleri, ön yüz "yüksek" ölçütleri [doğrulanacak]; WHO ve TÜBER yalnız haftalık hedef bağlamı), diyetisyen onayı; onaysız satır karar üretmez; besin tablosu yoksa "Doğrulanamadı"; böbrek hastalığı kapsam dışı (etikette potasyum/fosfor yok) |
 | Tarif | Temiz lisanslı Türkçe set yok | Ekibin yazdığı 200 ev yemeği (60 → 120 → 200) |
 | Fiyat | marketfiyati reddetti (28 Eyl); ürün düzeyinde hazır yasal kaynak yok (arastirma/12) | Ürün ve Fiyat Toplayıcı: ŞOK + Tarım Kredi web kataloğu, sözlükle sınırlı, kaynak + tarih, K21; eski fiyat "Doğrulanamadı"; kamuya açık sürüm yazılı izin/lisansla (ADR-015) |
 | Barındırma | Tüm ortamlar Contabo (TR lokasyonu yok) | KVKK yolu ADR-008: minimizasyon, alan şifreleme, loglarda sağlık alanı yok, yerel-öncelikli kısıt seçeneği, standart sözleşme, uzman görüşü |

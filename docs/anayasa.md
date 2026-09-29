@@ -62,8 +62,12 @@ Madde eklemek, kaldırmak ya da gevşetmek = yeni ADR + ekip onayı.
 | **K21** | **Dış veri toplama** *(ÖNERİ — ADR-015, ekip onayı bekliyor)*: otomatik toplama yalnız robots.txt'in izin verdiği yollardan, kendini tanıtan bot adı ve iletişimle, yapılandırmadaki hız sınırıyla; giriş, CAPTCHA, bot koruması ya da IP döndürmeyle hiçbir engel aşılmaz; kapsam tarif sözlüğüyle sınırlı, katalog aynalanmaz; her kayıt kaynak URL + tarih taşır; ham veri yeniden yayımlanmaz. **Kamuya açık canlı ürün ancak kaynağın yazılı izni ya da lisansla**; o zamana kadar veri yalnız geliştirme, deney ve demoda. Açık ret ya da itiraz gelen kaynakta toplama durur. | Veri lisansı (01-mevzuat-risk §6, arastirma/12 §6) | Adapter testleri: bot adı, robots.txt uyumu, hız sınırı, sözlük kapsamı (toplayıcı PBI'ı, A2.4) |
 
 ## 3. Sağlık durumu dili ve RAG sınırı (ADR-011)
-1. Hastalık kuralları **bilgilendirme** dilindedir: "100 g'da 58 g şeker; kaynaklı 'yüksek' eşiği 22,5 g". Yasak: "zararlı", "riskli", "hastalığına iyi gelir", "tedavi", "önler", "güvenli", "doktor onaylı".
+1. Hastalık kuralları **bilgilendirme** dilindedir: "100 g'da 58 g şeker; kaynaklı ve onaylı 'yüksek' eşiği [..] g". Yasak: "zararlı", "riskli", "hastalığına iyi gelir", "tedavi", "önler", "güvenli", "doktor onaylı".
 2. Teşhis sorulmaz; üye durumu kendisi seçer. Çölyak kesin kısıttır (Uygun değil); diyabet/hipertansiyon/hamilelik "Dikkat" + besin bilgisi + kaynak üretir; besin tablosu yoksa "Doğrulanamadı".
 3. Her eşik satırı kaynaklı ve sürümlüdür (belge, madde, tarih, doğrulayan); kaynaksız eşik yayına çıkmaz (CI, A1.2-c).
+   *(ÖNERİ — 29 Eyl ekip incelemesi)* Kaynağı, sürümü, doğrulayanı ya da gerekli uzman (diyetisyen) onayı tamamlanmamış kural
+   **karar üretmez**: sonuç "Doğrulanamadı — kural kaynağı/onayı bekleniyor"; yönetim ekranı yayını engelleyen eksikleri gösterir.
+   Popülasyon düzeyindeki kılavuzlar (ör. WHO serbest şeker önerisi: günlük enerjinin oranı) 100 g başına ürün eşiği sayılmaz;
+   yalnız haftalık hedef bağlamında kullanılır. Ürün eşiği ürün sınıflandırma ölçütü olan bir kaynaktan gelir.
 4. **Anlamsal arama (RAG) karar yolunda yoktur:** yalnız sözlüğe eşleme **önerir** (moderatör onaylar) ve açıklamada kaynak pasajını alıntılar. Karar yalnız onaylı sözlük + sürümlü kurallarla verilir.
 5. Uygulama "tıbbi cihaz değildir, teşhis/tedavi etmez" uyarısını taşır.
