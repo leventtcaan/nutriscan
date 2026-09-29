@@ -25,7 +25,7 @@ Hepsini baştan okuma; ihtiyaç olduğunda aç.
 | Tüm iş listesi (tek kaynak) | `plan/board/pbi.yaml` → özet `plan/board/backlog.md` | İş seçerken |
 | Tarihler ("en geç") ve bağımlılık | `plan/takvim.md` | Plan sorusunda |
 | Süreç: akış, DoR/DoD, sprint, PR, sahip/vekil | `plan/calisma-akisi.md` | Süreç sorusunda |
-| Değişmez kurallar (S1–S22, K01–K20, sağlık dili) | `docs/anayasa.md` | Kod ya da metin yazarken |
+| Değişmez kurallar (S1–S22, K01–K21, sağlık dili) | `docs/anayasa.md` | Kod ya da metin yazarken |
 | Kararlar | `plan/kararlar.md` (dizin) → `plan/kararlar/ADR-0NN-*.md` | Bir karara dokunurken |
 | Ürün: persona, ekranlar, FR/NFR | `plan/urun-tanimi.md` | Kapsam sorusunda |
 | Ekran akışları (prototip) | `plan/prototip-kaynak/*.dc.html` | Arayüz işinde |

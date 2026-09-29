@@ -1,6 +1,6 @@
 ---
 title: NutriScan anayasası — ürün sözleşmesi (S) + mimari kurallar (K) + sağlık dili
-updated: 2026-09-28
+updated: 2026-09-29
 durum: KABUL (tez v4/v5.1, ADR-001, ADR-011) — değişiklik yalnız ADR ile
 kaynak: arastirma/06-tez-v4.md §7–8 · arastirma/05-sistem-fmea.md §8 · arastirma/05-akislar-edge-case.md · plan/kararlar/ADR-011
 ---
@@ -36,7 +36,7 @@ Madde eklemek, kaldırmak ya da gevşetmek = yeni ADR + ekip onayı.
 | S21 | Asistan çökse de ürün çalışır; LLM'siz mod vardır. | Chaos testi (LLM kapalı) |
 | S22 | Karar yalnız renkle verilmez: ikon + metin + renk. | UI bileşen testi (A1.7-b) |
 
-## 2. Mimari kurallar (K01–K20)
+## 2. Mimari kurallar (K01–K21)
 | # | Kural | Kapattığı FM | Kanıt |
 |---|---|---|---|
 | **K01** | **LLM hiçbir uygunluk kararını, kısıtı, fiyatı, kiler miktarını ve optimizasyon sonucunu üretemez ya da değiştiremez.** Kullanıcıya görünen her hüküm rozeti yalnız Decision Record'dan çizilir. | LLM-01, 02, 05, 06, 07 | ArchUnit (LLM modülünden karar yazma API'sine bağımlılık yok); UI bileşen testi (rozet yalnız DR alır) |
@@ -59,6 +59,7 @@ Madde eklemek, kaldırmak ya da gevşetmek = yeni ADR + ekip onayı.
 | **K18** | **Gözlemlenebilirlik sözleşmesi:** W3C traceparent mobil → backend → LLM → çözücü uçtan uca; üç katmanlı log (teknik / domain olayı / audit) şemalı; logda sağlık verisi ve ham kişisel veri yok (allowlist + scrubbing); her zamanlanmış iş heartbeat yayar. | OPS-01, 02, 07 | Log kanarya testi; açıklama tatbikatı; dead-man's switch |
 | **K19** | **Prod verisi prod dışına çıkmaz:** test/staging/demo yalnız sentetik hane üreteciyle çalışır; geliştiricilerin ve AI kodlama ajanlarının prod DB/sır erişimi yok; prod erişimi break-glass ve loglu. | OPS-06, ALT-07 | Erişim logu denetimi; ajan talimat dosyası kuralı |
 | **K20** | **Her değişiklik geri alınabilir, her kurtarma kanıtlanır:** göçler expand/contract, enum'lar STRING; API N-1 mobil sürümü destekler + uzaktan min-version; deploy otomatik rollback'li; aylık restore tatbikatı; dönemde bir KVKK 72 saat tatbikatı. | OPS-04, 05, ALT-06, 09 | Tatbikat raporları; göç testleri |
+| **K21** | **Dış veri toplama** *(ÖNERİ — ADR-015, ekip onayı bekliyor)*: otomatik toplama yalnız robots.txt'in izin verdiği yollardan, kendini tanıtan bot adı ve iletişimle, yapılandırmadaki hız sınırıyla; giriş, CAPTCHA, bot koruması ya da IP döndürmeyle hiçbir engel aşılmaz; kapsam tarif sözlüğüyle sınırlı, katalog aynalanmaz; her kayıt kaynak URL + tarih taşır; ham veri yeniden yayımlanmaz. **Kamuya açık canlı ürün ancak kaynağın yazılı izni ya da lisansla**; o zamana kadar veri yalnız geliştirme, deney ve demoda. Açık ret ya da itiraz gelen kaynakta toplama durur. | Veri lisansı (01-mevzuat-risk §6, arastirma/12 §6) | Adapter testleri: bot adı, robots.txt uyumu, hız sınırı, sözlük kapsamı (toplayıcı PBI'ı, A2.4) |
 
 ## 3. Sağlık durumu dili ve RAG sınırı (ADR-011)
 1. Hastalık kuralları **bilgilendirme** dilindedir: "100 g'da 58 g şeker; kaynaklı 'yüksek' eşiği 22,5 g". Yasak: "zararlı", "riskli", "hastalığına iyi gelir", "tedavi", "önler", "güvenli", "doktor onaylı".
