@@ -1,6 +1,6 @@
 ---
 title: Durum — NutriScan
-updated: 2026-09-28
+updated: 2026-09-29
 ---
 # Durum
 
@@ -16,14 +16,14 @@ updated: 2026-09-28
 - Depo: https://github.com/leventtcaan/nutriscan (private) — Azure Boards'a GitHub App ile bağlı: commit/PR'da `AB#<no>` iş öğesine bağlanır, `Fixes AB#<no>` merge'de kapatır.
 
 ## Bu haftanın öncelikleri (tarihler "en geç"; erken bitirmek serbest)
-1. **AB#104** takvim + çalışma akışı onayı (ekip, 30 Eyl) · **AB#109** fiş/"bitti" kaydı (ekip, 5 Eki)
+1. **AB#104** takvim + çalışma akışı onayı (ekip, 30 Eyl) · **AB#109** "bitti/attım" kaydı (ekip, 5 Eki; fiş v5.2 ile çıktı)
 2. **2 Ekim Cuma** danışman görüşmesi + **MR1** Teams'e aynı gün (hazırlık Levent başlatınca; önceden gündeme getirilmez)
 3. **AB#117** proposal eksikleri (öğrenci no, grup no; 9 Eki danışmana; PDF eski — teslimden önce `.docx` Pages'te açılıp Dosya → Dışa Aktar → PDF) · **AB#122/123** tarif şeması + sözlük (Ozan, 16 Eki)
 4. ✅ Hilal ve Ozan depoyu kurdu, ilk prompt sorunsuz (28 Eyl)
 
 ## Sıradaki (Levent) — yeni komuta merkezi oturumu buradan başlar
-Sıra (28 Eyl): ✅ A0.4-a Done (EVREN anahtarı kasada, şartlar v1 onaylı) · 1) [A1.6-a · OpenAPI iskeleti](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/149)
-— kritik yol (A1.6-b, A1.8-a, A1.2-b, A2.7-a bekliyor), yeni uygulama oturumu; açılışta 2 onay: sözleşme testi bağımlılığı + `contracts/AGENTS.md` ·
+Sıra (29 Eyl): ✅ A0.4-a Done · ✅ [A1.6-a · OpenAPI iskeleti](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/149) Done (PR #3 + #4; A1.6-b Ozan'a açıldı) ·
+1) **v5.2 fiyat revizyonu** (ADR-015 ÖNERİ) → ekip bildirimi ·
 2) [A1.1-a · AGENTS.md doğrulaması](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/131) — eksik: anayasa K sütununa test adı/PBI, üç araç kanıtı ·
 3) ekip Task'ları: [A0.1-a-L](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/105) (30 Eyl) ·
 [A0.2-a-L](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/110) · [A0.5-a-L](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/118) (9 Eki).
@@ -34,9 +34,9 @@ Sıra (28 Eyl): ✅ A0.4-a Done (EVREN anahtarı kasada, şartlar v1 onaylı) ·
 
 ## Açık riskler
 - **Azure DevOps MCP — çözüldü, yalnız yenileme riski:** masaüstü uygulaması `~/.zshenv` okumadığı için `.mcp.json` artık `tools/ado-mcp.sh` başlatıcısını kullanıyor (PAT'i env'den ya da Anahtar Zinciri `nutriscan-ado-pat` kaydından alır, base64(`:PAT`) yapar). MCP ile AB#115 get + list_comments doğrulandı (401 yok). Salt-okuma PAT 27 Ara'da biter → öncesinde yenile, Anahtar Zinciri kaydını değiştirmek yeter.
-- **marketfiyati: reddedildi (28 Eyl)** — BİLGEM akademik projeye ham veri/API vermeye yetkili değil (ADR-002 sonuç satırı).
-  B planı tek fiyat yolu: [A2.4-b · Migros fiyat turu](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/186) (20 Kas) → A101 (A3.1, 15 Oca).
-  Kazıma kesin kapsam dışı. Tez v5.1 ve proposal'daki "izin maili gönderildi" satırları 18 Eki öncesi güncellenmeli.
+- **Fiyat verisi (29 Eyl, ADR-015 ÖNERİ):** marketfiyati reddetti (ADR-002) → Ürün ve Fiyat Toplayıcı, pilot **ŞOK + Tarım Kredi**, fiş çıktı, K21.
+  Toplayıcı çekirdeği + ŞOK [A2.4-b · toplayıcı](https://dev.azure.com/hilalhocaoglu20/NutriScan/_workitems/edit/186) Levent (Sprint 0) → Tarım Kredi A2.4-c → katalog A2.4-a (20 Kas). Açık risk: online fiyat = raf fiyatı
+  doğrulanmadı (tek mağazada 10–20 ürün) · kamuya açık sürüm için yazılı izin/lisans D3 öncesi (A4.8) · Hilal teyidi + ekip onayı bekliyor.
 - **EVREN ücretsiz dönemi 1 Kasım'da bitiyor:** deneme (AB#158) en geç 30 Ekim. Levent'in anahtarı Anahtar Zinciri'nde
   (`nutriscan-evren-api-key`, son kullanma 31.12.2026 → öncesinde yenile). LLM şartları v1 onaylandı (28 Eyl); fiyat hâlâ 0 CR, 1 Kasım sonrası ilan edilmedi;
   şartlar anahtar paylaşımını yasaklıyor, saklama süresi yazılı değil (`arastirma/09-evren-ve-board-notu.md`).
@@ -50,6 +50,6 @@ Board/prompt: `python3 plan/board/board_uret.py` · Takvim mesajı: `python3 pla
 Proposal: `python3 plan/proposal/build_docx.py` · Ekip paketi: `python3 plan/ekip_paketi_uret.py <klasör>`
 
 ## Bağlantılar
-Fiş ve kiler kayıtları (Drive, yalnız ekip; görseller depoya girmez): https://drive.google.com/drive/folders/1epph-aHH7v28m11WbxFwLXEksCyVMCEi
+Kiler kayıtları (Drive, yalnız ekip; fiş klasörleri v5.2 ile kullanılmıyor): https://drive.google.com/drive/folders/1epph-aHH7v28m11WbxFwLXEksCyVMCEi
 Kurallar `AGENTS.md` · Anayasa `docs/anayasa.md` · Süreç `plan/calisma-akisi.md` · Takvim `plan/takvim.md` ·
 Kararlar `plan/kararlar.md` · İlk açılış `plan/ilk-prompt.md` · Tez `arastirma/07-tez-v5.md` · Ürün `plan/urun-tanimi.md`

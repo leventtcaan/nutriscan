@@ -35,7 +35,7 @@ Households in Türkiye make the same tiring decision every week: what to cook, w
 1. Build a deterministic, explainable suitability engine for Turkish food products that covers allergens and health-condition rules (source-cited nutrient thresholds and ingredient rules), with four outcomes and a full decision record.
 2. Formulate and implement the Household Planning Engine: a joint menu–basket–market integer model (weekday dinners, pack-size integrality, pantry and expiry, ≤2 chains, limited number of swaps) solved with an exact solver under a time limit.
 3. Build a verifiable assistant in which an LLM orchestrates tools but can never change a decision, a RAG component that suggests ingredient mappings and cites rule sources without deciding, and a privacy layer that keeps household-context LLM processing in Türkiye (application data hosted in the EU, minimised and encrypted).
-4. Create a clean-licensed dataset of Turkish home recipes with an allergen ontology, a verified product catalogue for two chains, and an allergen gold test set.
+4. Create a clean-licensed dataset of Turkish home recipes with an allergen ontology, a product catalogue for two pilot chains (ŞOK and Tarım Kredi), and an allergen gold test set.
 5. Deliver mobile, web and admin clients and evaluate the system in a beta with real households.
 
 **Out of scope**
@@ -45,7 +45,7 @@ Calorie estimation from plate photos, continuous glucose monitoring, placing ord
 - Safety gate: zero false negatives on the allergen gold set (n ≥ 300), 100% agreement of health-condition decisions with the threshold table on their test set, and no hard-constraint violation in any generated plan or swap (property tests over ≥10,000 random households).
 - Planning (E1): the joint model is compared with sequential "menu first, then list" baselines and with a metaheuristic (NSGA-II [15]) over 20 scenarios × 30 seeds; we report optimality gap, hypervolume and runtime.
 - Assistant (E2): compared with an LLM-only planner on 50–100 household scenarios; we report constraint violations, budget violations, invented prices, tool-call accuracy and prompt-injection robustness; RAG ingredient mapping is compared with exact/fuzzy matching on the gold set (precision, recall).
-- Beta (E3, spring): 20–40 households (≥10 with a hard constraint); plan/swap acceptance, planned vs. paid amount, use of expiring pantry items, week-4 retention.
+- Beta (E3, spring): 20–40 households (≥10 with a hard constraint); plan/swap acceptance, planned price vs. in-store shelf price (periodic sample) and price freshness, use of expiring pantry items, week-4 retention.
 - Performance: shelf decision p95 ≤ 1.5 s; swap suggestion p95 ≤ 1 s.
 
 ## 4. Similar Systems and Background
@@ -72,7 +72,7 @@ Baseline below; the full list (29 items) is kept in the repository.
 | FR-7 | The system shall propose at most k swaps (k = 1, 3, 5) for a list and, when a plan is infeasible, suggest which soft limits could be relaxed (never hard constraints). | Must |
 | FR-8 | The system shall provide a text assistant that answers common intents by calling the decision engines, shows its steps and never changes a decision; medical/dose questions get a fixed safety response. | Must |
 | FR-9 | The system shall record every decision in an append-only decision record, keep a tamper-evident audit log, and let moderators approve catalogue corrections with a reason. | Must |
-| FR-10 | The system shall maintain a verified catalogue (Migros, then A101) with pack sizes, nutrition tables, prices and price age, and track the pantry (barcode, e-invoice/receipt, "finished"). | Must |
+| FR-10 | The system shall maintain a catalogue for two pilot chains (ŞOK, Tarım Kredi) with pack sizes, ingredient text, prices, source and price age, filled by a collector limited to the recipe ingredient dictionary, and track the pantry (barcode, "bought" marks on the list, "finished"). | Must |
 | FR-11 | The system shall suggest mappings from unseen label ingredient names to the dictionary with semantic search (RAG), apply them only after moderator approval, and quote rule sources in explanations. | Should |
 | FR-12 | The system shall generate a proactive weekly plan that changes nothing until approved, split the list across at most two chains, and accept natural-language constraints that are read back for confirmation. | Should |
 | FR-13 | The web app shall provide a Planning Studio with cost–health trade-offs and a "why is the plan like this" view. | Should |
@@ -92,7 +92,7 @@ Baseline below; the full list (29 items) is kept in the repository.
 
 **Architecture outline.** Mobile (Expo) and web/admin (React) clients use a TypeScript client generated from the OpenAPI contract → Spring Boot modular monolith → PostgreSQL (with pgvector). Inside: the safety rule engine (allergens and health-condition rules) filters and scores candidates before the Household Planning Engine (OR-Tools CP-SAT [16]) solves the joint model; the assistant (Spring AI) calls the engines as tools through a privacy gateway that routes household-context requests to EVREN (open models hosted in Türkiye); a RAG component over pgvector suggests ingredient mappings for moderators and retrieves rule sources for explanations, but is never on the decision path; every decision is written to the decision record and shown in the admin trace view.
 
-**Data.** Open Food Facts (ODbL) [17] as a mirrored source; a verified catalogue for Migros and A101 (team-collected prices refreshed biweekly plus household receipts, each with a price-age label; the public price platform does not provide data or API access for third-party or academic use); 200 team-written Turkish home recipes with an allergen ontology based on the Turkish Food Codex labelling regulation; a versioned health-rule threshold table with a source for every row (Turkish Food Codex nutrition-claim limits, WHO sugar and sodium guidelines [19][20]), reviewed by a dietitian; synthetic households for development.
+**Data.** Open Food Facts (ODbL) [17] as a mirrored source; a product and price catalogue for two pilot chains, ŞOK and Tarım Kredi, built by a weekly collector that reads only the products matching our recipe ingredient dictionary from the chains' public web catalogues, following robots.txt with an identified user agent and a rate limit, never bypassing access controls, keeping the source URL and date of every record and not republishing the data (the public price platform does not provide data or API access for third-party or academic use); stale prices are reported as "could not verify"; a public app-store release uses prices only with the chains' written permission or a licensed source; 200 team-written Turkish home recipes with an allergen ontology based on the Turkish Food Codex labelling regulation; a versioned health-rule threshold table with a source for every row (Turkish Food Codex nutrition-claim limits, WHO sugar and sodium guidelines [19][20]), reviewed by a dietitian; synthetic households for development.
 
 | Layer / component | Technology or tool | Reason for the choice |
 |---|---|---|
@@ -111,7 +111,7 @@ Week 1 = 14 September 2026; each package has a latest date and a fallback in the
 | WP | Work package and its output | Responsible member(s) | Weeks |
 |---|---|---|---|
 | WP1 | Requirements, architecture, repository, CI gates, agent rules, walking skeleton | Levent (all review) | 3–7 |
-| WP2 | Data factory: recipe schema, ingredient dictionary, allergen ontology, health-rule threshold table, Migros catalogue, 60 recipes with prices | Ozan (content, rule sources), Hilal (schema, catalogue) | 4–11 |
+| WP2 | Data factory: recipe schema, ingredient dictionary, allergen ontology, health-rule threshold table, price-and-product collector (ŞOK, Tarım Kredi), 60 recipes with prices | Ozan (content, rule sources), Hilal (schema, catalogue) | 4–11 |
 | WP3 | Safety core: household and consent flows, rule engine (allergens + health conditions), gold sets, decision record integration | Hilal | 7–13 |
 | WP4 | Household Planning Engine v0 on real data; swaps; first E1 measurement | Levent | 7–13 |
 | WP5 | Mobile shelf scan with household strip and "Why?", list/swaps UI, web and admin v0 | Ozan (with Hilal for admin backend) | 6–14 |
@@ -128,7 +128,8 @@ By the end of this semester: working prototype (mobile + web + admin) with the v
 | Risk | Likelihood | Impact | Mitigation plan |
 |---|---|---|---|
 | Missing or wrong product/allergen data | High | High | Verified catalogue; "could not verify" instead of guessing; gold-set release gate |
-| Team-collected prices go stale or miss items | Medium | Medium | Biweekly price tour (~300 items, split across three members); price age shown on every price; stale price → "could not verify"; CI checks priced-SKU coverage ≥ 90% |
+| Collected prices go stale, a chain's site changes, or online prices differ from shelf prices | Medium | Medium | Health check on every collection run; a chain whose data exceeds its age limit is reported as "could not verify"; one small adapter per chain; online vs. shelf prices sampled in stores (E3); CI checks priced-SKU coverage ≥ 90% |
+| A chain objects to collection or refuses permission for the public release | Low | Medium | Collection for that chain stops (rule K21); the adapter design lets another chain or a licensed source replace it; development, experiments and demo keep their recorded data |
 | Joint optimisation too slow at scale | Medium | Medium | Time-limited exact solver with gap badge; metaheuristic (E1) |
 | LLM unreliable or unavailable | Medium | Medium | LLM never decides; workflow intents; template fallback |
 | Medical-device boundary for health-condition features [22] | Medium | High | Informational wording only, no diagnosis or treatment claims, source-cited rules, dietitian review, in-app disclaimer |

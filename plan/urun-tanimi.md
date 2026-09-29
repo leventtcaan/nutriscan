@@ -1,8 +1,9 @@
 ---
-title: NutriScan — Ürün Tanımı v5.1 + Gereksinimler (FR/NFR)
-updated: 2026-09-27
+title: NutriScan — Ürün Tanımı v5.2 + Gereksinimler (FR/NFR)
+updated: 2026-09-29
 durum: TASLAK — ekip incelemesi, 2 Ekim görüşmesine götürülecek (takvim A0.3)
-dayanak: arastirma/07-tez-v5.md · plan/kararlar.md (ADR-001…011) · plan/takvim.md · arastirma/06-tez-v4.md §7–8 (S1–S22, K01–K20) · arastirma/05-akislar-edge-case.md · prototip v1
+dayanak: arastirma/07-tez-v5.md · plan/kararlar.md (ADR-001…011) · plan/takvim.md · arastirma/06-tez-v4.md §7–8 + docs/anayasa.md (S1–S22, K01–K21) · arastirma/05-akislar-edge-case.md · prototip v1
+v5.2 (29 Eylül, ADR-015 ÖNERİ): fiyat ve ürün içeriği toplayıcıdan (pilot ŞOK + Tarım Kredi, K21); fiş çıktı (FR-8, FR-17, FR-23, M13–M14, E3)
 v5.1 (27 Eylül, ADR-011): sağlık durumu profili (FR-2 yeniden, FR-28 yeni), RAG içerik eşleme (FR-29), önce güvenlik sırası
 önceki sürüm: v3 (24 Eylül) — liste optimizasyonu odaklıydı; v5 tezine göre yeniden yazıldı
 ---
@@ -40,7 +41,7 @@ NutriScan, hangi zincirden alışveriş yapılırsa yapılsın hanenin **haftal�
 | M09–M10 Rafta hane şeridi, karar "Neden?"; M22 sağlık durumu "Neden dikkat?" | 4 durumlu karar üye başına; içerik, kural, kaynak, tarih, güven, profil sürümü; M22'de besin eşiği + kaynak alıntısı | D1 |
 | M11 Doğrulanamadı → etiket okuma | Tahmin yok; etiket okunur, kullanıcı onaylar, moderasyona düşer | D2 |
 | M12 Market bölme | ≤2 market, tasarruf, fiyat yaşı | D2 |
-| M13–M14 Fiş onayı, plan ve gerçek | Emin olunmayan satır sorulur; yargılamayan özet | D2 |
+| M13–M14 Alışveriş kapanışı, plan ve gerçek (v5.2: fiş yerine) | Listede "aldım" işaretleri kilere düşer; planlanan fiyat ile kaynak/tarihli fiyat özeti, yargılamayan dil | D2 |
 | M15 Hane ve gizlilik | Rıza durumu, profil sürümleri, veri indir/sil | D1 |
 | M16 Asistan (yazı + ses) | Adımlar görünür; hüküm rozeti karar kaydından | D1 (iş akışları) / D2 (ses: demo şeridi) |
 | M17 Pazar planı | Proaktif plan + "nasıl hazırladım" + onay | D2 |
@@ -59,10 +60,10 @@ Her karar "Neden?" taşır · dört sonuç (Uygun değil · Dikkat · Engel bulu
 ## 6. Kısıtlar (ürün gözüyle)
 | Alan | Durum | Ürüne etkisi / çözüm |
 |---|---|---|
-| Ürün içeriği | OFF'ta TR içerik kapsamı %15–25, Türkçe alerjen taksonomisi yok | Doğrulanmış katalog (Migros → A101), etiket okuma + moderasyon; katalog dışı ürün "Doğrulanamadı" |
+| Ürün içeriği | OFF'ta TR içerik kapsamı %15–25, Türkçe alerjen taksonomisi yok | Doğrulanmış katalog: toplayıcının içindekiler metni (ŞOK + Tarım Kredi) aday veri, etiket okuma + moderasyonla doğrulanır; katalog dışı ürün "Doğrulanamadı" |
 | Sağlık kuralları | Kişiye özel klinik eşik yok; kılavuzlar popülasyon düzeyinde | Kaynaklı, sürümlü eşik tablosu (TGK beyan eşikleri, WHO, TÜBER 2022), diyetisyen incelemesi; besin tablosu yoksa "Doğrulanamadı"; böbrek hastalığı kapsam dışı (etikette potasyum/fosfor yok) |
 | Tarif | Temiz lisanslı Türkçe set yok | Ekibin yazdığı 200 ev yemeği (60 → 120 → 200) |
-| Fiyat | marketfiyati izni beklemede | B planı: ~300 ürün iki haftada bir elle + beta fişleri + fiyat yaşı etiketi |
+| Fiyat | marketfiyati reddetti (28 Eyl); ürün düzeyinde hazır yasal kaynak yok (arastirma/12) | Ürün ve Fiyat Toplayıcı: ŞOK + Tarım Kredi web kataloğu, sözlükle sınırlı, kaynak + tarih, K21; eski fiyat "Doğrulanamadı"; kamuya açık sürüm yazılı izin/lisansla (ADR-015) |
 | Barındırma | Tüm ortamlar Contabo (TR lokasyonu yok) | KVKK yolu ADR-008: minimizasyon, alan şifreleme, loglarda sağlık alanı yok, yerel-öncelikli kısıt seçeneği, standart sözleşme, uzman görüşü |
 | LLM | Hane bağlamı EVREN (TR); ücretsiz dönem 1 Kasım'da biter | Kişisel olmayan işler ucuz bulut; EVREN uygun değilse asistan şablon moduna iner |
 | Mağaza | Apple Developer hesabı var; Google Play şimdilik yok | Beta TestFlight üzerinden |
@@ -70,7 +71,7 @@ Her karar "Neden?" taşır · dört sonuç (Uygun değil · Dikkat · Engel bulu
 
 ## 7. Kapsam kademeleri (proposal'daki öncelik)
 - **MUST (taahhüt):** D1 güvenilir çekirdek (alerjen + sağlık durumu kuralları dahil) + Ocak menü planlayıcı + beta.
-- **SHOULD (planlı):** RAG içerik eşleme önerisi + kaynak alıntısı (Ocak); D2 döngü + wow (proaktif plan, market bölme, doğal dille kısıt, web Stüdyo, öneri v1, fiş eşleştirme, Gizlilik Kapısı v1, Röntgen modu).
+- **SHOULD (planlı):** RAG içerik eşleme önerisi + kaynak alıntısı (Ocak); D2 döngü + wow (proaktif plan, market bölme, doğal dille kısıt, web Stüdyo, öneri v1, Gizlilik Kapısı v1, Röntgen modu).
 - **COULD (hedef / demo şeridi):** ses, içerik değişikliği radarı, raf fotoğrafı, buzdolabı onayı, mutfak enflasyonu, diyetisyen bağlantısı.
 - **Out of scope:** tabak fotoğrafıyla kalori, CGM/Health Connect, markete sepet aktarma, tam diyetisyen paneli, gamification, Android mağaza yayını (şimdilik), taklit/tağşiş uyarısı.
 
@@ -85,7 +86,7 @@ Her karar "Neden?" taşır · dört sonuç (Uygun değil · Dikkat · Engel bulu
 | FR-28 | The system shall map each health condition to versioned, source-cited rules (nutrient thresholds per 100 g, ingredient rules) and report them as "Caution" with the nutrient fact and the threshold's source, or "Could not verify" when the nutrition table is missing; it shall use informational wording only (no "harmful", "risky" or treatment claims). | Must |
 | FR-6 | The system shall scan EAN/UPC barcodes on mobile and show a household strip with one outcome per member within 1.5 s (p95) for catalogued products. | Must |
 | FR-7 | The system shall attach an explanation to every decision: matched ingredient, rule and version, data source and date, confidence and profile version ("Why?"). | Must |
-| FR-8 | The system shall maintain a verified product catalogue (first chain Migros, then A101) with pack sizes, prices and price age. | Must |
+| FR-8 | The system shall maintain a product catalogue for two pilot chains (ŞOK and Tarım Kredi) filled by a collector that reads only the products matching the recipe ingredient dictionary from the chains' public web catalogues, storing pack size, price, ingredient text, source URL and date; ingredient text is verified by moderation, and a public release requires the chains' written permission or a licensed source. | Must |
 | FR-9 | The system shall let a user build a weekly shopping list and propose at most k swaps (k = 1, 3, 5) that keep the list within budget and never violate any member's hard constraint. | Must |
 | FR-10 | The system shall plan weekday dinners, the shopping list and the chain choice in a single optimisation model that uses pantry items before their expiry, respects the budget and all hard constraints, and reports the optimality gap. | Must |
 | FR-11 | The system shall explain an infeasible plan by listing which soft limits (budget, number of changes, quantities) could be relaxed; hard constraints shall never be offered for relaxation. | Must |
@@ -94,13 +95,13 @@ Her karar "Neden?" taşır · dört sonuç (Uygun değil · Dikkat · Engel bulu
 | FR-14 | The system shall record every decision in an append-only decision record and show it to administrators as a human-readable trace. | Must |
 | FR-15 | The system shall keep a tamper-evident audit log of all administrative changes (who, what, when, before/after, reason). | Must |
 | FR-16 | The system shall let moderators review and approve catalogue corrections with a mandatory reason, and show which past decisions a correction would affect. | Must |
-| FR-17 | The system shall track the pantry through barcode "added", e-invoice/receipt import and "finished" actions, and estimate items that are about to run out. | Must |
+| FR-17 | The system shall track the pantry through barcode "added", "bought" marks on the shopping list and "finished" actions, and estimate items that are about to run out. | Must |
 | FR-18 | The system shall generate a proactive weekly plan (e.g., Sunday morning) that changes nothing until the user approves it. | Should |
 | FR-19 | The system shall split the list across at most two chains and show the saving and price age. | Should |
 | FR-20 | The system shall turn a natural-language request ("guests on Saturday, budget 7,000") into constraint chips, read them back for confirmation and never relax hard constraints from text. | Should |
 | FR-21 | The web app shall provide a Planning Studio with cost–health trade-off options, a "price of health" curve and a "why is the plan like this" view. | Should |
 | FR-22 | The system shall recommend recipes and substitutes that are pre-filtered for all members' hard constraints and ranked by learned household preference. | Should |
-| FR-23 | The system shall read product labels and receipts from photos, ask the user to confirm uncertain lines, and send corrections to moderation. | Should |
+| FR-23 | The system shall read product labels from photos, ask the user to confirm uncertain lines, and send corrections to moderation. | Should |
 | FR-24 | The system shall offer an "X-ray mode" that marks every UI element as engine-decided or LLM-narrated. | Should |
 | FR-29 | The system shall suggest mappings from unseen label ingredient names to the ingredient dictionary using semantic search (RAG, pgvector), apply a mapping only after moderator approval, and quote the rule's source passage in explanations; similarity search shall never decide suitability. | Should |
 | FR-25 | The system shall notify households that bought or keep a product when its ingredients change and it becomes unsuitable for a member. | Could |
@@ -126,6 +127,6 @@ Her karar "Neden?" taşır · dört sonuç (Uygun değil · Dikkat · Engel bulu
 ## 10. Başarı ölçütleri (proposal §3 "Success criteria"a)
 - **E1:** Birleşik planlama modelinin kesin çözücü ve sezgisel yöntemlerle kıyası (20 senaryo × 30 tohum; hypervolume, IGD+, optimallik boşluğu); "önce menü sonra liste" tabanına göre fark gerçek veriyle raporlanır.
 - **E2:** Yalnız-LLM planlayıcıya karşı kısıt ihlali, bütçe ihlali, uydurma fiyat; asistan tool-call doğruluğu ve enjeksiyon dayanıklılığı.
-- **E3:** 20–40 hanelik beta (≥10 hanede kesin kısıt): takas/plan kabulü, planlanan vs ödenen TL hatası, SKT'li kiler kullanımı, 4. hafta tutunma.
+- **E3:** 20–40 hanelik beta (≥10 hanede kesin kısıt): takas/plan kabulü, planlanan fiyat ↔ mağaza raf fiyatı sapması (periyodik örnek) ve fiyat tazeliği, SKT'li kiler kullanımı, 4. hafta tutunma.
 - **Sağlık durumu kuralları:** eşik tablosu test setinde %100 uyum; RAG eşleme önerisi, tam/bulanık eşlemeye karşı altın sette recall/precision ile raporlanır.
 - **Güvenlik kapısı:** altın sette 0 yanlış negatif; hiçbir öneride kesin kısıt ihlali yok.

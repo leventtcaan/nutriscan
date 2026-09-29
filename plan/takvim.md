@@ -1,7 +1,7 @@
 ---
 title: NutriScan — Takvim (yalnız "en geç" tarihleri, bağımlılık sırasıyla)
-updated: 2026-09-27
-durum: v1.5 (27 Eyl: PBI kırılımı sonrası yük dengesi — A0.9 öne, A1.1/A1.11 tarih, A1.7/A1.10 kapsam) · v1.4 (ADR-011 → A1.12, A2.16, A3.7) — ekip incelemesi bekliyor · önceki v1.3: görüşmeler her Cuma, Teams MR teslimleri sabitlendi
+updated: 2026-09-29
+durum: v1.6 (29 Eyl: ADR-015 ÖNERİ — fiyat toplayıcı ŞOK + Tarım Kredi, fiş çıktı: A0.2, A2.4, A2.5, A3.1, A3.3, A4.4, A4.8) · v1.5 (27 Eyl: PBI kırılımı sonrası yük dengesi — A0.9 öne, A1.1/A1.11 tarih, A1.7/A1.10 kapsam) · v1.4 (ADR-011 → A1.12, A2.16, A3.7) — ekip incelemesi bekliyor · önceki v1.3: görüşmeler her Cuma, Teams MR teslimleri sabitlendi
 dayanak: arastirma/07-tez-v5.md §8 · arastirma/06-v4-kirmizi-takim.md §6 · plan/kararlar.md (ADR-001…011) · kaynak/CSE-BitirmeProjesiEsaslari-2024-07-08.pdf
 ---
 # Takvim
@@ -45,7 +45,7 @@ dayanak: arastirma/07-tez-v5.md §8 · arastirma/06-v4-kirmizi-takim.md §6 · p
 | ID | İş | Sahip | Bağlı olduğu | En geç | Kaçarsa |
 |---|---|---|---|---|---|
 | A0.1 | Takvimin ekipçe onayı | E | ADR-001…011 | 30 Eylül | Taslak haliyle 2 Ekim görüşmesine götürülür |
-| A0.2 | Ekip hanelerinin fiş + "bitti/attım" kaydına başlaması | E | — | 5 Ekim | Veri seti Kasım'a kayar, kiler modeli sentetikle başlar |
+| A0.2 | Ekip hanelerinin "bitti/attım" kaydına başlaması (v5.2: fiş çıktı) | E | — | 5 Ekim | Kiler modeli sentetikle başlar |
 | A0.3 | Ürün tanımı v5.1 + FR/NFR (proposal §5) — 2 Ekim görüşmesine | L | Tez v5.1 | 1 Ekim | Görüşmeye tez v5 + FR/NFR iskeletiyle gidilir |
 | A0.4 | EVREN hesabı + API anahtarı | L | — | 10 Ekim | Deneme için süre daralır (1 Kasım sınırı) |
 | A0.5 | Proposal taslağı (şablon: `kaynak/CSE491_Project_Proposal_Template.docx`) — danışmana e-postayla | L (+H, O bölümleri) | A0.3, 2 Ekim görüşmesi | 9 Ekim | Taslak en geç 12 Ekim'de gider |
@@ -79,8 +79,8 @@ Sıra mantığı: önce **veri + güvenlik** (her şey onların üstünde), sonr
 | A2.2 | Hane + üye + rıza akışları (davet, veli onayı, profil sürümü) | H | A1.4, A1.5 | 20 Kasım | Tek üyeli hane ile devam |
 | A2.3 | Kural motoru + alerjen ontolojisi + altın set v1 (n ≥ 200, FN = 0) | H | A0.6, A1.4 | 27 Kasım | Raf kararı yalnız "Doğrulanamadı" + kesin eşleşmelerle çalışır |
 | A2.16 | Sağlık durumu kuralları kural motorunda (besin eşiği → Dikkat / Doğrulanamadı) + test seti (%100 tablo uyumu) | H | A1.12, A2.3 | 9 Aralık | Yalnız diyabet + hipertansiyon (şeker, tuz) |
-| A2.4 | Katalog v0: Migros (SKU, paket, fiyat, fiyat yaşı) | H | A0.6, A1.5 | 20 Kasım | Katalog 150 SKU ile başlar |
-| A2.5 | **60 tarif** + bu tariflerin malzemelerinde Migros fiyatlı SKU kapsaması ≥ %90 | O (içerik) · H (onay) | A0.6, A2.4 | 27 Kasım | Planlama motoru ilk ölçümü 40 tarifle |
+| A2.4 | Ürün ve Fiyat Toplayıcı + katalog v0: ŞOK + Tarım Kredi adapter'ları (sözlükle sınırlı; SKU, paket, fiyat, içindekiler, kaynak + tarih; K21) + çekim sağlık kontrolü | H | A0.6, A1.5 | 20 Kasım | Tek zincirle (ŞOK) başlar |
+| A2.5 | **60 tarif** + bu tariflerin malzemelerinde iki zincirde (ŞOK + Tarım Kredi) fiyatlı SKU kapsaması ≥ %90 | O (içerik) · H (onay) | A0.6, A2.4 | 27 Kasım | Planlama motoru ilk ölçümü 40 tarifle |
 | A2.6 | TR model karar kapısı (EVREN birincil mi) | L | A1.9 | 15 Kasım | Bulut + yer tutucu rotası sürer |
 | A2.7 | Planlama motoru (MSM) — sentetik veriyle geliştirme, 60 tarif gelince gerçek veriyle ilk sürüm + E1 v0 ölçümü | L | A2.3, A2.4, A2.5 | 4 Aralık | Tek sepet takası (Akıllı Takas) ile prototipe girer |
 | A2.8 | Raf: barkod → hane şeridi + "Neden?" (mobil; önce Expo barkod gecikmesi + Türkçe STT denemesi) | O (arayüz) · H (API) | A2.2, A2.3, A2.4, A1.7 | 9 Aralık | Tek üye için karar |
@@ -95,9 +95,9 @@ Sıra mantığı: önce **veri + güvenlik** (her şey onların üstünde), sonr
 ### Aşama 3 — Kış kampı (4 Ocak → 31 Ocak)
 | ID | İş | Sahip | Bağlı olduğu | En geç | Kaçarsa |
 |---|---|---|---|---|---|
-| A3.1 | **120 tarif** + A101 fiyatları (2. zincir) | O · H | A2.5 | 15 Ocak | Menü 60–90 tarifle çıkar |
+| A3.1 | **120 tarif** (2. zincir v5.2'de A2.4 ile geldi) | O · H | A2.5 | 15 Ocak | Menü 60–90 tarifle çıkar |
 | A3.2 | Menü planlayıcı üründe: 5 akşam, ≤2 market, zaman sınırlı exact + boşluk rozeti | L | A2.7, A3.1 | 29 Ocak | Tek market ile |
-| A3.3 | Kiler: barkod "eve girdi", e-Arşiv/fiş, "bitti", tükenme modeli v0 | H | A2.4, A0.2 | 29 Ocak | Yalnız barkod + "bitti" |
+| A3.3 | Kiler: barkod "eve girdi", listede "aldım", "bitti", tükenme modeli v0 | H | A2.4, A0.2 | 29 Ocak | Yalnız barkod + "bitti" |
 | A3.4 | Beta protokolü + rıza/aydınlatma metinleri + (gerekirse) etik kurul başvurusu | E (derleyen L) | Güz görüşmelerinin cevapları | 15 Ocak | Beta ertelenir → kapanış daralır |
 | A3.5 | KVKK: uzman görüşü + Contabo standart sözleşme denemesi + yerel-öncelikli kısıt tasarım kararı | L · H | ADR-008 | 31 Ocak | Beta öncesi TR sunucu geri dönüş yolu (ADR-008) |
 | A3.6 | Raf fotoğrafı denemesi (en fazla 1 hafta, zaman kutulu) | O | A2.8 | 31 Ocak | Demo şeridinden düşer |
@@ -109,11 +109,11 @@ Sıra mantığı: önce **veri + güvenlik** (her şey onların üstünde), sonr
 | A4.1 | **200 tarif** | O · H | A3.1 | 1 Mart | 150 tarifle beta |
 | A4.2 | Gizlilik Kapısı v1 + TR rotası (kanarya/sızıntı testleri) | L | A2.10, A2.6 | 1 Mart | Asistan hane bağlamında şablon moduna iner |
 | A4.3 | Proaktif Pazar planı + onay akışı | L (motor) · O (arayüz) | A3.2, A3.3 | 26 Şubat | Kullanıcı planı elle tetikler |
-| A4.4 | Market bölme (≤2 zincir) | L | A3.2, A3.1 | 26 Şubat | Tek zincir |
+| A4.4 | Market bölme (≤2 zincir) | L | A3.2, A2.4 | 26 Şubat | Tek zincir |
 | A4.5 | Doğal dille kısıt ("anladığım şu") | L | A4.2 | 5 Mart | Form ile kısıt girişi |
 | A4.6 | Web Planlama Stüdyosu + sağlığın/israfın fiyatı + "Bu plan neden böyle?" | O (arayüz) · L (API) | A3.2 | 5 Mart | Stüdyo salt okunur |
 | A4.7 | Öneri sistemi v1 (kısıt-farkında, beğeni puanı → motor) | H | A3.2 | 5 Mart | Öneri v0 (popülerlik) |
-| A4.8 | Fiş eşleştirme v1 + moderasyon kuyruğu | H (backend) · O (admin arayüz) | A3.3 | 5 Mart | Fiş yalnız kategori düzeyinde |
+| A4.8 | Kamuya açık sürüm için fiyat kaynağı: ŞOK, Tarım Kredi, Migros'a yazılı izin talebi · CimriMarket/MarketTamam lisans sorusu · Bakanlık meta veri talebi (v5.2; fiş eşleştirmenin yerine) | L | A2.4 | 5 Mart | App Store sürümünde fiyat karşılaştırma kapalı; beta ve demo etkilenmez |
 | A4.9 | Röntgen modu | O · L | A1.4 | 5 Mart | Admin karar izi ile gösterilir |
 | A4.10 | Beta işe alımı (20–40 hane, ≥10'unda kesin kısıt) + TestFlight dağıtımı | E | A3.4 | 5 Mart | 15 hane ile beta |
 
