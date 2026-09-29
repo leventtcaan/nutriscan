@@ -74,3 +74,14 @@
 - takıldım:   EVREN sayfaları JS ile çiziliyor (WebFetch boş) → tarayıcı · proposal PDF'i Pages'ten betikle üretilemedi (PDF eski, 18 Eki öncesi elle)
 - sıradaki:   A1.6-a (AB#149) yeni uygulama oturumu · EVREN e-posta yanıtı → arastirma/09 · Feature A0.4 (AB#114) board'da kapanacak
 - AI:         AI agent · MCP/Keychain kurulumu, araştırma, tarayıcıdan okuma, notlar ve metin düzeltmeleri · Levent: hesap, anahtar, şart onayı, e-postalar, kararlar
+
+## 2026-09-29 · A1.6-a (AB#149) OpenAPI sözleşmesi + sözleşme testi → komuta merkezi (fiyat verisi)
+- yaptım:     contracts/openapi (OpenAPI 3.1, Verdict/Problem/sayfalama, ping, 12 modül parçası, AGENTS.md) PR #3 · ping + 13 sözleşme testi
+              (validator, iki yönlü uç nokta listesi, Problem alanları, Verdict/SAFE, DatabaseProbe) PR #4 · ikisi merge, AB#149 Done ·
+              seviye merdiveniyle aktarım + Apple Notes U·2 · fiyat verisi araştırması (13 zincir, hazır kaynaklar, emsaller) + deneme → arastirma/12
+- karar:      openapi-request-validator 3.0.0 · iki PR · Verdict shared kökte · ADR-015 ÖNERİ (toplayıcı, ŞOK + Tarım Kredi, fiş çıkar, K21) ·
+              anlatım kuralı: seviye merdiveni + tek koşan örnek + İngilizce terim (CLAUDE.local.md)
+- takıldım:   canlı curl'de Spring hata gövdesinde `type` yok → sözleşme düzeltildi, test eklendi · Gradle cache contract'ı izlemiyordu → inputs.dir ·
+              stacked PR rebase çakışması → --onto; squash sonrası main merge (force push yok) · anlatım ilk turlarda fazla üst düzeydi
+- sıradaki:   v5.2 revizyonu (tez, ürün tanımı, proposal, takvim, pbi.yaml, anayasa K21) → ekip bildirimi · Mockito agent işi (ayrı oturum)
+- AI:         AI agent · kod, test, araştırma ajanları, deneme istekleri, ADR/araştırma metinleri · Levent: kütüphane/PR/yerleşim/zincir/fiş/K21 kararları, PR düğmeleri
