@@ -10,7 +10,7 @@ description: NutriScan'in mobil (Expo/React Native), web ve admin (Vite/React) a
 3. Web/admin ya da yeni görsel yön: `frontend-design` (önce 4–6 renkli token planı, sonra kod; jenerik varsayılanları ele).
 
 ## Görsel kaynak ve tasarım dili
-- Ekran akışlarının kaynağı prototip: `plan/prototip-kaynak/*.dc.html` (M01–M56, W01–W09, A01–A10; v5.2). Özellik × ekran
+- Ekran akışlarının kaynağı prototip: `plan/prototip-kaynak/*.dc.html` (M01–M57, W01–W09, A01–A10; v5.2). Özellik × ekran
   haritası ve akışlar: `plan/prototip-kaynak/v52-bosluk-analizi.md`; tuvaldeki akış notu. Yeni ekran `uretec/lib.py` bileşenleriyle. **Akış, içerik ve durumlar bağlayıcıdır; renk ve yazı tipi taslaktır.**
 - Taslak palet (krem zemin + serif başlık + büyük harfli küçük etiketler) `frontend-design`'ın saydığı AI izleriyle örtüşüyor. Kalıcı tasarım dili A1.7-a'da bilinçli seçilir: `frontend-design` iki geçişli planı → ekip onayı → ADR → `packages/ui` token'ları. O zamana kadar yeni ekran prototip taslağını izler.
 - Token'lar tek yerde: `packages/ui` (renk, aralık, yazı ölçeği, yarıçap, gölge, hareket). Ekranda ham hex/px/yazı tipi adı yok; kural lint'e bağlanır.

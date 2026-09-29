@@ -10,12 +10,11 @@ updated: 2026-09-29
 ## Şu an
 - **Aşama 0 · Karar ve proposal (→ 18 Ekim)**, Hazırlık sprinti (28 Eyl – 18 Eki). Sonra Sprint 0 (19 Eki – 1 Kas): temel + walking skeleton.
 - Ürün yönü tez v5.2 (`arastirma/07-tez-v5.md`, ADR-015 fiyat yolu), ürün tanımı v5.2, proposal v0 (6 sayfa, PDF güncel). Prototip v5.2:
-  76 ekran, durumlarıyla (`plan/prototip-kaynak/`, tuval Version 11).
+  77 ekran, durumlarıyla, ekip incelemesi işlendi (`plan/prototip-kaynak/`, tuval Version 14).
 - Ortak altyapı kuruldu (28 Eyl, ADR-013): bu depo, `AGENTS.md`, `docs/anayasa.md`, skill'ler, oturum günlükleri,
   board ↔ `plan/board/pbi.yaml`. Backend iskeleti AB#140 Done (PR #2 merge, 28 Eyl): 13 modül, sınırlar testle korunuyor (ADR-014). Board senkronu AB#261 (Hilal).
-- Board: https://dev.azure.com/hilalhocaoglu20/NutriScan — 8 Epic · 65 Feature · 67 PBI · 21 Task. Gözle takip: GitHub Project
-  https://github.com/users/leventtcaan/projects/3 (`python3 plan/board/github_proje.py`, pbi.yaml'dan). **Azure'da v5.2'nin 21 kalemi yazılmadı**
-  (izin engeli; A2.4/A2.4-a/b, yeni A2.4-c, A2.5(-b), A2.7-c, A0.2 + Task'lar, A3.1, A3.3, A4.4, A4.8, A1.10 + alt işler, A1.2-d) → Levent. Kapasite (Effort/sprint): varsayılan 13 · Sprint 0 Levent 20, Hilal 16 · Sprint 1 Hilal 14.
+- Board: https://dev.azure.com/hilalhocaoglu20/NutriScan — 8 Epic · 65 Feature · 67 PBI · 18 Task. Gözle takip: GitHub Project
+  https://github.com/users/leventtcaan/projects/3 (`python3 plan/board/github_proje.py`, pbi.yaml'dan). Azure v5.2 ile senkron (29 Eyl: 26 güncelleme + A2.4-c AB#262; eski A2.4-b ekip payı Task'ları 187–189 kapatılmayı bekliyor). Kapasite (Effort/sprint): varsayılan 13 · Sprint 0 Levent 20, Hilal 16 · Sprint 1 Hilal 14.
 - Depo: https://github.com/leventtcaan/nutriscan (private) — Azure Boards'a GitHub App ile bağlı: commit/PR'da `AB#<no>` iş öğesine bağlanır, `Fixes AB#<no>` merge'de kapatır.
 
 ## Bu haftanın öncelikleri (tarihler "en geç"; erken bitirmek serbest)

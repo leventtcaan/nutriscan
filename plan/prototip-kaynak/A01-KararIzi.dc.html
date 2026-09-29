@@ -63,7 +63,7 @@ pre{margin:0;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;l
           <div class="ev"><span class="dot"></span><div><div class="t">+14 ms</div><div style="font-size: 14px">Ürün katalogda bulundu · <b>katalog v0.3</b> · içindekiler: ŞOK web kataloğu, doğrulama 12 Eylül, <b>Hilal</b>.</div></div></div>
           <div class="ev"><span class="dot"></span><div><div class="t">+21 ms</div><div style="font-size: 14px">Profiller yüklendi: Ela <b>v3</b> · Selin <b>v2</b> · Murat <b>v2</b> (diyabet) · Can <b>v1</b>.</div></div></div>
           <div class="ev"><span class="dot"></span><div><div class="t">+30 ms</div><div style="font-size: 14px">Fiyat: ŞOK online katalog <b>18,50 TL</b> · 26 Eyl · TTL içinde.</div></div></div>
-          <div class="ev"><span class="dot"></span><div><div class="t">+38 ms</div><div style="font-size: 14px; line-height: 1.6"><span class="mono">ALG-FNDK-02 v2</span> “fındık ezmesi” eşleşti → Ela <span class="v vno">Uygun değil</span><br><span class="mono">ALG-GLTN-01 v1</span> “buğday unu” eşleşti → Selin <span class="v vno">Uygun değil</span><br><span class="mono">TRACE-01 v1</span> “eser miktarda yer fıstığı” → Ela <span class="v vwarn">Dikkat</span> <span class="mut">(daha ağır karar geçerli)</span><br><span class="mono">HLT-SUGAR-01 v1</span> besin tablosu: 100 g'da 58 g şeker ≥ 22,5 g (eşik tablosu v0) → Murat <span class="v vwarn">Dikkat</span><br>Can → <span class="v vok">Engel bulunmadı</span></div></div></div>
+          <div class="ev"><span class="dot"></span><div><div class="t">+38 ms</div><div style="font-size: 14px; line-height: 1.6"><span class="mono">ALG-FNDK-02 v2</span> “fındık ezmesi” eşleşti → Ela <span class="v vno">Uygun değil</span><br><span class="mono">ALG-GLTN-01 v1</span> “buğday unu” eşleşti → Selin <span class="v vno">Uygun değil</span><br><span class="mono">TRACE-01 v1</span> “eser miktarda yer fıstığı” → Ela <span class="v vwarn">Dikkat</span> <span class="mut">(daha ağır karar geçerli)</span><br><span class="mono">HLT-SUGAR-01 v0 (taslak)</span> kaynak, doğrulayan, diyetisyen onayı eksik → kural karar üretmedi; besin tablosu yalnız bilgi olarak kaydedildi (100 g'da 58 g şeker · eşik ≥ [onaylı eşik]) → Murat <span class="v" style="background: #e4e7e9; color: #3c4750"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5v.7M12 17v.01"></path></svg>Doğrulanamadı</span> <span class="mono">RULE_PENDING_APPROVAL</span><br>Can → <span class="v vok">Engel bulunmadı</span></div></div></div>
           <div class="ev"><span class="dot"></span><div><div class="t">+96 ms</div><div style="font-size: 14px">Alternatif: katalogdan 3 aday, hepsi 4 kişi için kontrol edildi → <b>Sade pirinç patlağı</b> seçildi (en yakın kategori, en ucuz).</div></div></div>
           <div class="ev"><span class="dot"></span><div><div class="t">+102 ms</div><div style="font-size: 14px">Açıklama şablondan üretildi · <b>yapay zekâ kullanılmadı</b>.</div></div></div>
           <div class="ev"><span class="dot" style="background: #b9ae96"></span><div><div class="t">14:02:19</div><div style="font-size: 14px">Kullanıcı Ela satırında “Neden?” ekranını açtı.</div></div></div>
@@ -94,13 +94,15 @@ pre{margin:0;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;l
     {"id": "TRACE-01", "v": 1, "member": "ela",
      "match": "eser miktarda yer fıstığı",
      "result": "CAUTION"},
-    {"id": "HLT-SUGAR-01", "v": 1, "member": "murat",
-     "sugarPer100g": 58, "threshold": 22.5,
-     "thresholdTable": "v0", "result": "CAUTION"}
+    {"id": "HLT-SUGAR-01", "v": 0, "status": "DRAFT",
+     "member": "murat", "sugarPer100g": 58,
+     "threshold": null, "thresholdTable": "v0-draft",
+     "result": "COULD_NOT_VERIFY",
+     "reason": "RULE_PENDING_APPROVAL"}
   ],
   "verdicts": {"ela": "NOT_SUITABLE",
                "selin": "NOT_SUITABLE",
-               "murat": "CAUTION",
+               "murat": "COULD_NOT_VERIFY",
                "can": "NO_CONFLICT_FOUND"},
   "alternative": {"candidates": 3, "chosen": "sku_…"},
   "explanation": {"mode": "TEMPLATE", "llm": false},
