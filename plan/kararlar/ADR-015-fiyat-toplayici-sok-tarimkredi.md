@@ -16,6 +16,10 @@
        ortaklığı sorusu; Bakanlık/TÜBİTAK'a meta veri talebi. TÜBİTAK'ın o uygulamalarla paylaşması NutriScan'e hak doğurmaz.
   4. **Eşleme malzeme → ürün:** "yoğurt 1 kg" → her zincirde uygun aday ürünler. LLM eşleme önerebilir; kabul kural ya da insan
      onayıyla (K01). Barkod gerekmez (iki zincirin sayfasında da yok).
+  4a. **Barkod → zincir ürünü:** rafta taranan barkod katalogda bir zincir ürününe bağlı değilse kullanıcıya "Bu ürün hangisi?"
+     diye zincir kataloğundan adaylar (ad, marka, gramaj) gösterilir; seçim o hane için **aday** eşleme olur ve moderasyon kuyruğuna
+     (admin A06) düşer; onaylanınca herkes için kalıcı. Eşleme tablosu kullanımla büyür. Open Food Facts kaydı yalnız aday veridir
+     ve yalnız riski artırır: alerjen eşleşirse "Uygun değil (aday veri)", aksi hâlde "Doğrulanamadı"; asla "Engel bulunmadı" (K03).
   5. **İçindekiler metni aday veridir:** güvenilmeyen içerik olarak karantina çıkarıcıdan geçer (K04); "katalogda doğrulandı" ancak
      moderasyonla; riski azaltan değişiklik tek kaynaktan kabul edilmez (K12).
   6. **Tazelik ve sağlık:** her fiyat kaynak + tarih taşır; bir zincirin çekimi başarısız olur ya da TTL aşılırsa o zincirin fiyatları
