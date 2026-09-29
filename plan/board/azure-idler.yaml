@@ -74,6 +74,7 @@ A2.16-a: 183
 A2.4: 184
 A2.4-a: 185
 A2.4-b: 186
+A2.4-c: 262
 A2.5: 190
 A2.5-a: 191
 A2.5-b: 192
@@ -151,6 +152,7 @@ A0.5-a-O: 120
 A2.1-a-L: 170
 A2.1-a-H: 171
 A2.1-a-O: 172
+# v5.2: A2.4-b tek sahipli; 187-189 ekip payı görevleri board’da yetim (Removed bekliyor)
 A2.4-b-L: 187
 A2.4-b-H: 188
 A2.4-b-O: 189
