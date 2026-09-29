@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: nutriscan
+  mvc:
+    problemdetails:
+      # Errors as RFC 9457 application/problem+json (contracts/openapi/shared.yaml#Problem).
+      enabled: true
+
+nutriscan:
+  system:
+    # Upper bound for the database check in GET /api/system/ping; whole seconds, at least 1s.
+    database-check-timeout: 2s
