@@ -94,3 +94,11 @@
 - takıldım:   Azure toplu yazımı izin sınıflandırıcısına takıldı (21 kalem bekliyor; izin kuralı eklendi) · proposal ilk üretimde 7 sayfa
 - sıradaki:   prototip düzeltmelerini yayınla · Azure + GitHub senkronu · ekip mesajı ("şu tarihe kadar")
 - AI:         AI agent · araştırma ajanları, metinler, board betikleri, prototip üretimi · Levent: yön, zincir, fiş, K21, dağılım kararları
+
+## 2026-09-29 · komuta merkezi (devam: senkron ve yayın)
+- yaptım:     Azure v5.2 senkronu (26 güncelleme, validateOnly sonrası; yeni A2.4-c AB#262) · GitHub Project + Apple Notes güncel ·
+              prototip Version 14 (ekip incelemesi işlendi, M57 Profil + sağ üst avatar; 77 ekran) repoya yedeklendi
+- karar:      yok (yalnız uygulama)
+- takıldım:   eski A2.4-b ekip payı Task'ları (187–189) Removed'a çekilemedi: durum değişikliği izin kuralının kapsamı dışında
+- sıradaki:   187–189 için karar · ekip mesajı · A1.1-a AGENTS.md doğrulaması
+- AI:         AI agent · senkron betikleri, prototip düzeltmeleri · Levent: onay ve kapsam
