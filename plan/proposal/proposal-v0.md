@@ -3,7 +3,7 @@ title: CSE 491 Project Proposal — draft v0 (content source for the .docx)
 updated: 2026-09-27 (v5.1: health-condition profile, safety-first order, RAG placement — ADR-011)
 durum: TASLAK — ekip + danışman incelemesi (takvim A0.5, en geç 9 Ekim; teslim 18 Ekim)
 dayanak: arastirma/07-tez-v5.md · plan/urun-tanimi.md · plan/kararlar.md · plan/takvim.md
-eksik: grup no, öğrenci numaraları, teslim tarihi → [..] ile işaretli
+eksik: grup no, teslim tarihi → [..] ile işaretli
 ---
 
 # NutriScan — A Verifiable Household Food Planning Assistant
@@ -17,9 +17,9 @@ eksik: grup no, öğrenci numaraları, teslim tarihi → [..] ile işaretli
 
 | # | Name and surname | Student no. | Role / responsibility in the project |
 |---|---|---|---|
-| 1 | Levent Can Ceylan | [NO] | Architecture and project infrastructure; Household Planning Engine (optimisation); assistant orchestration; Privacy Gateway; decision record and observability; experiments E1–E2 |
-| 2 | Şükran Hilal Hocaoğlu | [NO] | Safety rule engine (allergens, health rules); allergen data and gold set; household, identity and consent; catalogue and prices; pantry; recommendation; admin backend |
-| 3 | Ozan Karadaş | [NO] | Mobile, web and admin clients; recipe content and health-rule sources; label-reading demo |
+| 1 | Levent Can Ceylan | 20220808045 | Architecture and project infrastructure; Household Planning Engine (optimisation); assistant orchestration; Privacy Gateway; decision record and observability; experiments E1–E2 |
+| 2 | Şükran Hilal Hocaoğlu | 20210808005 | Safety rule engine (allergens, health rules); allergen data and gold set; household, identity and consent; catalogue and prices; pantry; recommendation; admin backend |
+| 3 | Ozan Karadaş | 20220808007 | Mobile, web and admin clients; recipe content and health-rule sources; label-reading demo |
 
 ## 1. Summary
 Households in Türkiye make the same tiring decision every week: what to cook, what to buy, where to buy it, what is already at home and what is suitable for whom. They do it under high food inflation (33.79% year-on-year, August 2026) and with different hard constraints inside the same home, such as a child's nut allergy, a parent's coeliac disease or a grandparent's diabetes. Existing tools solve one dimension at a time: product scores (Yuka, local label scanners), prices (marketfiyati.org.tr) or a single retailer's basket (Migros MAYA AI). NutriScan is a chain-independent assistant that plans a household's week with a safety-first order: hard constraints first, then health-condition rules and goals, then household preferences and pantry, and cost last, with the budget as a limit rather than the goal. Its core is the Household Planning Engine, a single integer optimisation model that jointly selects weekday dinners, the shopping list and at most two chains while using pantry items before expiry, respecting the budget and never violating any member's hard constraint. A deterministic rule engine decides product suitability per member for allergens and for self-declared health conditions (diabetes, hypertension, coeliac disease, pregnancy) using source-cited, versioned nutrient and ingredient rules, with four honest outcomes including "could not verify". Retrieval-augmented generation (RAG) only proposes ingredient mappings and quotes rule sources; an LLM-based assistant only interprets requests and explains results, and every decision is traceable. This semester we deliver a working mobile, web and admin prototype with the verified core, the planning engine on real data and first experiment results.
