@@ -8,6 +8,11 @@ updated: 2026-09-29
 > işler → Azure Boards + `plan/board/`, bulgular → `arastirma/`. Aşama ya da öncelik değişince güncellenir.
 
 ## Şu an
+> ⚠️ **YÖN DEĞİŞTİ (2 Ekim danışman görüşmesi, MR1):** hane planlama / fiyat / barkod yönü bırakıldı. Yeni çekirdek: paketin
+> içindekiler kısmı OCR ile okunur → içerikler kanıta dayalı **hastalık–içerik eşleşmesi**yle karşılaştırılır → sonuç kullanıcıya
+> doğru ve belirsizliğiyle anlatılır. Literatürle savunulabilir ve rakiplerden ayrışan bir yaklaşım şart. Kaynak: `toplanti/2026-10-02-MR1-*`,
+> Ozan'ın dokümanları `toplanti/2026-10-02-ozan-*.pdf`. Aşağıdaki maddeler, tez v5.x, ürün tanımı, ADR-015 ve board **eski yöndür**;
+> yeniden kurgu bitene kadar ürün kaynağı olarak kullanılmaz. Kırmızı çizgiler (AGENTS.md) geçerli.
 - **Aşama 0 · Karar ve proposal (→ 18 Ekim)**, Hazırlık sprinti (28 Eyl – 18 Eki). Sonra Sprint 0 (19 Eki – 1 Kas): temel + walking skeleton.
 - Ürün yönü tez v5.2 (`arastirma/07-tez-v5.md`, ADR-015 fiyat yolu), ürün tanımı v5.2, proposal v0 (6 sayfa, PDF güncel). Prototip v5.2:
   77 ekran, durumlarıyla, ekip incelemesi işlendi (`plan/prototip-kaynak/`, tuval Version 14).
