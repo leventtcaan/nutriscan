@@ -13,10 +13,11 @@ Paketli gıdanın içindekiler listesini ve besin tablosunu okuyup kullanıcın�
 *3) Yarın hocanın iki görevine cevabımız*
 *a) Literatür — vektör / graf / hibrit:*
 Biyomedikal terim eşlemede literatür hibrit aramayı destekliyor: sözlük/harf eşleşmesi + anlam yakınlığı birlikte (BioSyn 2020, SapBERT 2021). Önerimiz: kayıt ve kurallar için PostgreSQL; eşleme için önce sözlük + bulanık eşleşme, üstüne deney olarak vektör arama (pgvector ya da Qdrant — ölçüme göre). Graf yalnız çok adımlı kanıt zincirleri gerekirse; kural sorgularımız 1–2 adımlı.
-*b) Değerlendirme — ayrı bir deney fazı değil, geliştirmenin parçası:*
-• *Eşleme testi:* gerçek Türkçe etiketlerden 100 ifade ve doğru cevapları (biri yazar, öbürü kontrol eder; bazılarının doğru cevabı "Doğrulanamadı"). Aynı kod iki ayarla çalışır: "yalnız sözlük" ve "sözlük + vektör (hibrit)". Ölçütler: doğru sayısı, cevap verme oranı, verdiği cevaplarda isabet, yanlış uydurma.
-• *Kural kabul testi:* 20 ürün × hastalık senaryosu; beklenen sonuç kılavuza göre yazılır, sistem karşılaştırılır (kaçırılan uyarı, gereksiz uyarı, "Doğrulanamadı" oranı).
-• Finalde tek tablo: vektör katmanının katkısını sayıyla gösteriyoruz ("neden vektör?" sorusunun cevabı).
+*b) Deney — ayrı bir iş değil, yaptığımız işi test etmek:*
+Bunu bir sınav gibi düşünün.
+• *Eşleme sınavı:* Marketteki paketlerden 100 gerçek içerik ifadesi toplarız ("E102", "buğday unu", "sarı renklendirici", "aroma verici"…). Her birinin doğru cevabını yazarız (E102 → tartrazin). Bazılarının doğru cevabı "bilinmiyor"dur; "aroma verici" hangi madde, belli değil. Sonra sistemimiz bu 100 ifadeyi iki şekilde çözer: *sadece sözlükle* ve *sözlük + vektör aramayla (hibrit)*. İkisinin kaçını doğru bildiğine, kaçında uydurduğuna bakarız. Böylece "vektör arama gerçekten işe yarıyor mu?" sorusunu sayıyla cevaplarız.
+• *Kural sınavı:* 20 ürün × hastalık örneği hazırlarız (ör. buğday unlu bisküvi × çölyak). Her biri için kılavuza bakıp beklenen sonucu yazarız ("Uygun değil"), sonra sistemin aynı sonucu verip vermediğine bakarız. En önemli hata: sistemin uyarması gereken yerde uyarmaması.
+• Finalde bunu tek tabloyla gösteririz. Ayrı bir deney fazı açmıyoruz; zaten yazdığımız kodun testi.
 
 *4) Görüşme akışı (~15 dk)*
 • Proje ve üç katman (eşleme · kural · şeffaflık) → Levent
