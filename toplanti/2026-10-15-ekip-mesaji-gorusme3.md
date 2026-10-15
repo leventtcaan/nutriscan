@@ -13,9 +13,10 @@ Paketli gıdanın içindekiler listesini ve besin tablosunu okuyup kullanıcın�
 *3) Yarın hocanın iki görevine cevabımız*
 *a) Literatür — vektör / graf / hibrit:*
 Biyomedikal terim eşlemede literatür hibrit aramayı destekliyor: sözlük/harf eşleşmesi + anlam yakınlığı birlikte (BioSyn 2020, SapBERT 2021). Önerimiz: kayıt ve kurallar için PostgreSQL; eşleme için önce sözlük + bulanık eşleşme, üstüne deney olarak vektör arama (pgvector ya da Qdrant — ölçüme göre). Graf yalnız çok adımlı kanıt zincirleri gerekirse; kural sorgularımız 1–2 adımlı.
-*b) Deney taslağı:*
-• Deney A (ana katkı): 100–300 gerçek Türkçe etiket ifadesinden altın set; 5 yöntem karşılaştırması (birebir · bulanık · sözlük · vektör · hibrit). Ölçütler: doğruluk, kapsam, "Doğrulanamadı" oranı, tür doğruluğu.
-• Deney B: ürün × hastalık senaryolarında iki ekip üyesi kılavuza göre beklenen sonucu bağımsız yazar; ekip içi uyum ve sistemin uyumu ölçülür (kaçırılan uyarı, gereksiz uyarı).
+*b) Değerlendirme — ayrı bir deney fazı değil, geliştirmenin parçası:*
+• *Eşleme testi:* gerçek Türkçe etiketlerden 100 ifade ve doğru cevapları (biri yazar, öbürü kontrol eder; bazılarının doğru cevabı "Doğrulanamadı"). Aynı kod iki ayarla çalışır: "yalnız sözlük" ve "sözlük + vektör (hibrit)". Ölçütler: doğru sayısı, cevap verme oranı, verdiği cevaplarda isabet, yanlış uydurma.
+• *Kural kabul testi:* 20 ürün × hastalık senaryosu; beklenen sonuç kılavuza göre yazılır, sistem karşılaştırılır (kaçırılan uyarı, gereksiz uyarı, "Doğrulanamadı" oranı).
+• Finalde tek tablo: vektör katmanının katkısını sayıyla gösteriyoruz ("neden vektör?" sorusunun cevabı).
 
 *4) Görüşme akışı (~15 dk)*
 • Proje ve üç katman (eşleme · kural · şeffaflık) → Levent
@@ -28,6 +29,9 @@ Biyomedikal terim eşlemede literatür hibrit aramayı destekliyor: sözlük/har
 2. Pilot hastalıklar: çölyak, diyabet, kronik böbrek hastalığı ile başlamak uygun mu?
 3. TÜBİTAK 2209-A (son gün 11 Kasım): başvurmamızı önerir mi, danışmanlık yapar mı?
 4. Proposal (teslim 18 Ekim): yeni yönle güncelleyeceğimiz taslağı nasıl onaylatalım?
+5. Ara rapor ve final tarihleri (bizdeki not: ~6 Kasım, ~18 Aralık) doğru mu?
 
-*6) Sonrası (sıra var, tarih yok)*
-Proposal güncelleme (Cumartesi) → repo sıfırlama (sade yapı) → altın set → sözlük v0 → temel eşleyici + ilk ölçüm → vektör kolu + karşılaştırma → kural tablosu (önce çölyak).
+*6) Sonrası — teslimlere göre*
+• *18 Ekim · Proposal:* yeni yön, üç katman, değerlendirme planı
+• *~6 Kasım · Ara rapor:* çalışan eşleme hattı v0 (böl → türle → sözlük + bulanık) · 100 ifadelik test seti ve ilk skor · çölyak kuralı
+• *~18 Aralık · Final + demo:* vektör katmanı eklenmiş hibrit · iki ayarın karşılaştırma tablosu · diyabet ve böbrek kuralları · 20 senaryo · mobilde OCR ile uçtan uca demo
