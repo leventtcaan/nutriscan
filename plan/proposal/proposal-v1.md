@@ -2,7 +2,7 @@
 title: CSE 491 Project Proposal — v1 (content source for the .docx)
 updated: 2026-10-17 (re-scoped after advisor meetings of 2, 9 and 16 October; decisions in docs/mimari-karar-belgesi.md)
 durum: TESLİM TASLAĞI — teslim 18 Ekim
-eksik: grup no → [..]
+eksik: yok
 ---
 
 # NutriScan — Evidence-Based Food Ingredient and Health-Condition Matching
@@ -10,8 +10,8 @@ eksik: grup no → [..]
 | | |
 |---|---|
 | Project title | NutriScan: Evidence-Based Food Ingredient and Health-Condition Matching |
-| Group no. | [GROUP NO] |
-| Project supervisor | Res. Asst. Dr. Taha Yiğit Alkan |
+| Group no. | 9 |
+| Project supervisor | Dr. Taha Yiğit Alkan |
 | Submission date | 18.10.2026 |
 
 | # | Name and surname | Student no. | Role / responsibility in the project |
@@ -123,19 +123,19 @@ A working mobile prototype that reads real Turkish labels and returns explained,
 | Medical-device boundary [16] | Low | High | Informational wording, no diagnosis or treatment claims, in-app disclaimer |
 
 ## 9. References
-[1] Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği, Resmî Gazete 29960, 26.01.2017.
+[1] Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği, Resmî Gazete 29960 (mükerrer), 26.01.2017.
 [2] Yuka, help centre, https://help.yuka.io
 [3] Fig, https://foodisgood.com/
 [4] Fooducate, https://www.fooducate.com/
 [5] Ürün Dedektörü, https://urundedektoru.com/
-[6] A. P. Davis et al., "Comparative Toxicogenomics Database (CTD): update 2025," Nucleic Acids Research, vol. 53, no. D1, p. D1328, 2025.
+[6] A. P. Davis et al., "Comparative Toxicogenomics Database's 20th anniversary: update 2025," Nucleic Acids Research, vol. 53, no. D1, pp. D1328–D1334, 2025.
 [7] WHO, "Evaluations of the Joint FAO/WHO Expert Committee on Food Additives (JECFA)," https://apps.who.int/food-additives-contaminants-jecfa-database/
-[8] M. Sung et al., "Biomedical Entity Representations with Synonym Marginalization," in Proc. ACL, 2020, pp. 3641–3650.
-[9] F. Liu et al., "Self-Alignment Pretraining for Biomedical Entity Representations," in Proc. NAACL-HLT, 2021, pp. 4228–4238.
-[10] Türk Gıda Kodeksi Gıda Katkı Maddeleri Yönetmeliği, current consolidated text, https://www.mevzuat.gov.tr
+[8] M. Sung, H. Jeon, J. Lee and J. Kang, "Biomedical Entity Representations with Synonym Marginalization," in Proc. 58th Annual Meeting of the ACL, 2020, pp. 3641–3650.
+[9] F. Liu, E. Shareghi, Z. Meng, M. Basaldella and N. Collier, "Self-Alignment Pretraining for Biomedical Entity Representations," in Proc. NAACL-HLT, 2021, pp. 4228–4238.
+[10] Türk Gıda Kodeksi Gıda Katkı Maddeleri Yönetmeliği, Resmî Gazete 28693, 30.06.2013 (with later amendments).
 [11] Open Food Facts, ingredients taxonomy, https://github.com/openfoodfacts/openfoodfacts-server/blob/main/taxonomies/food/ingredients.txt
 [12] NCBI PubChem, https://pubchem.ncbi.nlm.nih.gov/
-[13] American Diabetes Association, "Standards of Care in Diabetes—2026, Section 5," Diabetes Care, vol. 49, suppl. 1, 2026.
-[14] KDIGO, "2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease," Kidney International, vol. 105, no. 4S, 2024.
-[15] FooDB, data compliance and licence, https://foodb.ca/compliance
-[16] TİTCK, Tıbbi Cihaz Yönetmeliği, Resmî Gazete 31499, 2021; Regulation (EU) 2017/745.
+[13] American Diabetes Association Professional Practice Committee, "5. Facilitating Positive Health Behaviors and Well-being to Improve Health Outcomes: Standards of Care in Diabetes—2026," Diabetes Care, vol. 49, suppl. 1, pp. S89–S131, 2026, doi:10.2337/dc26-S005.
+[14] KDIGO CKD Work Group, "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease," Kidney International, vol. 105, no. 4S, pp. S117–S314, 2024, doi:10.1016/j.kint.2023.10.018.
+[15] FooDB Version 1.0, licence statement (CC BY-NC 4.0), https://foodb.ca/
+[16] TİTCK, Tıbbi Cihaz Yönetmeliği, Resmî Gazete 31499 (mükerrer), 02.06.2021; Regulation (EU) 2017/745 on medical devices.
