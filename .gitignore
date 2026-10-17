@@ -2,7 +2,6 @@
 CLAUDE.local.md
 .claude/settings.local.json
 plan/notlar/
-plan/board/kisiler.yaml
 
 # Sırlar ve ortam
 .env
@@ -12,7 +11,6 @@ plan/board/kisiler.yaml
 *.key
 
 # Üretilen ara çıktılar
-plan/board/azure-items.json
 toplanti/ekip-takvim.html
 __pycache__/
 *.pyc
@@ -29,3 +27,4 @@ coverage/
 .idea/
 .vscode/
 *.swp
+plan/board/

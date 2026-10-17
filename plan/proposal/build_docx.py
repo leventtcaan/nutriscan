@@ -1,12 +1,12 @@
 """proposal-v0.md → kaynak/CSE491_Project_Proposal_Template.docx şablonuyla doldurulmuş .docx
-Çalıştır: python3 plan/proposal/build_docx.py [v0|v1]
+Çalıştır: python3 plan/proposal/build_docx.py [v1]
 Kaynak metin tek yer: plan/proposal/proposal-v0.md (burada elle metin yazma).
 """
 import copy, re, pathlib, sys
 import docx
 
 KOK = pathlib.Path(__file__).resolve().parents[2]
-SURUM = sys.argv[1] if len(sys.argv) > 1 else "v0"
+SURUM = sys.argv[1] if len(sys.argv) > 1 else "v1"
 MD = KOK / f"plan/proposal/proposal-{SURUM}.md"
 TPL = KOK / "kaynak/CSE491_Project_Proposal_Template.docx"
 OUT = KOK / f"plan/proposal/NutriScan_CSE491_Proposal_{SURUM}.docx"
