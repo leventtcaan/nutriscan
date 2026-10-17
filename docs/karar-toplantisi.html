@@ -141,16 +141,16 @@ html{scroll-behavior:smooth}
 
 <div class="bar"><div class="in">
   <nav aria-label="Bölümler">
-    <a href="#urun">Ürün</a><a href="#akis">Akış</a><a href="#kararlar">Kararlar</a><a href="#sema">Şema</a><a href="#kaynaklar">Kaynaklar</a><a href="#turkce">Türkçe</a><a href="#test">Test</a><a href="#sahiplik">Sahiplik</a><a href="#takvim">Takvim</a><a href="#bu-aksam">Bu akşam</a>
+    <a href="#urun">Ürün</a><a href="#akis">Akış</a><a href="#kararlar">Kararlar</a><a href="#sema">Şema</a><a href="#kaynaklar">Kaynaklar</a><a href="#turkce">Türkçe</a><a href="#test">Test</a><a href="#sahiplik">Sahiplik</a><a href="#takvim">Takvim</a><a href="#bu-aksam">Sonraki adımlar</a>
   </nav>
   <div class="tally" aria-live="polite" id="tally"></div>
 </div></div>
 
 <div class="wrap">
 <header class="hero" id="urun">
-  <span class="eyebrow">Mimari karar belgesi v1 · 17 Ekim 2026 ekip toplantısı</span>
+  <span class="eyebrow">Mimari karar belgesi v1.1 · 17 Ekim 2026 ekip kararlarıyla</span>
   <h1>Etiketi oku, doğru kimliğe bağla, kaynaklı kuralla değerlendir.</h1>
-  <p class="lead">NutriScan paketli gıdanın içindekiler listesini ve besin tablosunu okur, kullanıcının sağlık durumu için kaynaklı kurallarla değerlendirir ve aynı kategorideki ürünler arasında daha iyi seçeneği gerekçesi ve belirsizliğiyle gösterir. Kararı kural tablosu verir; LLM ve vektör arama karar vermez.</p>
+  <p class="lead">NutriScan paketli gıdanın içindekiler listesini ve besin tablosunu okur, kullanıcının sağlık durumu için kaynaklı kurallarla değerlendirir ve sonucu gerekçesi ve belirsizliğiyle, kullanıcının anlayacağı bir dille gösterir. Kararı kural tablosu verir; vektör arama yalnız kelimeyi tanır, LLM yalnız son mesajı yazar.</p>
 
   <div class="label" aria-label="Örnek etiket">
     <div class="head"><span class="eyebrow">Örnek etiket · Selin: çölyak + diyabet</span><span class="muted" style="font-size:13px">Her parça önce türüne ayrılır</span></div>
@@ -176,24 +176,24 @@ html{scroll-behavior:smooth}
 <section id="akis">
   <div class="sec-h"><span class="eyebrow">Uçtan uca</span><h2>Altı adım</h2></div>
   <div class="flow">
-    <div class="step"><span class="n">1 · OCR</span><h3>Oku</h3><p>Fotoğraf metne döner, kullanıcı ya da ekip düzeltir, metin saklanır.</p></div>
+    <div class="step"><span class="n">1 · OCR</span><h3>Oku</h3><p>Fotoğraf metne döner, kullanıcı düzeltir. Ürün saklanmaz; analiz anında yapılır.</p></div>
     <div class="step"><span class="n">2 · Türle</span><h3>Böl</h3><p>Virgül ve paranteze göre parçala, her parçanın türünü belirle.</p></div>
     <div class="step key"><span class="n">3 · Eşle</span><h3>Kimlik bul</h3><p>Birebir sözlük → bulanık eşleşme → Qdrant adayı. Eşik altıysa "Doğrulanamadı".</p></div>
     <div class="step key"><span class="n">4 · Karar</span><h3>Kurala bak</h3><p>Çölyak × buğday → Uygun değil. Kaynak: Gıda Kodeksi. Kararı yalnız kural verir.</p></div>
     <div class="step"><span class="n">5 · Kanıt</span><h3>Bilgi ekle</h3><p>E102 için CTD ilişkileri ve JECFA değerlendirmesi, link ile. Uyarı üretmez.</p></div>
-    <div class="step"><span class="n">6 · Göster</span><h3>Karşılaştır</h3><p>Ürün kartı + aynı kategoride profile daha uygun 3 ürün, gerekçesiyle.</p></div>
+    <div class="step"><span class="n">6 · Anlat</span><h3>Mesajı yaz</h3><p>LLM kural sonucunu sade Türkçeye çevirir; sonucu değiştiremez, yeni bilgi ekleyemez.</p></div>
   </div>
 </section>
 
 <section id="kararlar">
   <div class="sec-h"><span class="eyebrow">Toplantının ana bölümü</span><h2>On iki karar</h2>
-  <p class="muted">Her satırda tek soru: onaylıyor muyuz? Değiştiriliyorsa yeni hali bir cümleyle yazılır. İşaretler bu tarayıcıda saklanır.</p></div>
+  <p class="muted">17 Ekim ekip toplantısında alındı. Değişen kararlar turuncu, onaylananlar yeşil işaretli.</p></div>
   <div class="decisions" id="decisions"></div>
 </section>
 
 <section id="sema">
   <div class="sec-h"><span class="eyebrow">PostgreSQL</span><h2>Veri şeması</h2>
-  <p class="muted">Kayıtların tek kaynağı PostgreSQL. Qdrant yalnız <span class="mono">alias</span> tablosunun vektör kopyasını tutar.</p></div>
+  <p class="muted">Veritabanı yalnız <b>bilgi tabanını</b> tutar; ürün saklanmaz. Taranan etiket istek içinde işlenir ve atılır. Qdrant yalnız <span class="mono">alias</span> tablosunun vektör kopyasını tutar.</p></div>
   <div class="schema" id="schema"></div>
 </section>
 
@@ -207,7 +207,7 @@ html{scroll-behavior:smooth}
       <tr><td>Kimyasal kimlik (CAS, MeSH)</td><td>CTD Chemical Vocabulary · PubChem (eksikler, ön hazırlıkta)</td><td class="mono">concept</td><td>CTD şartları · PubChem açık</td></tr>
       <tr><td>Kanıt, yalnız bilgi</td><td>CTD Chemical–Disease · WHO JECFA</td><td class="mono">evidence</td><td>Atıf; yalnız listemizdeki maddeler</td></tr>
       <tr><td>Kural</td><td>ADA 2026 / TEMD · KDIGO 2024 · Gıda Kodeksi gluten tanımı</td><td class="mono">rule</td><td>Kendi cümlemizle, bölüm atfıyla</td></tr>
-      <tr><td>Ürünler</td><td>Ekibin OCR taraması, 3 kategori × ~70 ürün</td><td class="mono">product, label_text</td><td>Kendi verimiz</td></tr>
+      <tr><td>Test verisi</td><td>Gerçek etiketlerden 100 ifade + 20 senaryo (dosya olarak, veritabanında değil)</td><td class="mono">tests/</td><td>Kendi verimiz</td></tr>
       <tr class="out"><td>v1'de yok</td><td>FooDB · ChEBI · FoodOn · UMLS</td><td>—</td><td>FooDB CC BY-NC; kapsam daraltma</td></tr>
     </tbody>
   </table></div>
@@ -257,32 +257,36 @@ html{scroll-behavior:smooth}
   <div class="scroll"><table>
     <thead><tr><th>Teslim</th><th>O güne kadar hazır</th></tr></thead>
     <tbody>
+      <tr><td><b>11 Kasım</b><br>TÜBİTAK 2209-A</td><td>Araştırma sorusu: Türkçe etiket ifadelerinde sözlük ile hibrit (sözlük + vektör) eşlemenin karşılaştırılması.</td></tr>
       <tr><td><b>18 Ekim</b><br>Proposal</td><td>Bu belgenin ürün, akış, kararlar, kaynaklar ve test bölümleri proposal'a dönüşür.</td></tr>
-      <tr><td><b>~6 Kasım</b><br>Ara rapor <span class="muted">(teyit)</span></td><td>Repo sıfırlandı · 3 kategoride tarama başladı · sözlük v0 · eşleme hattı (birebir + bulanık) · 100 ifadelik test ve ilk skor · çölyak kuralı</td></tr>
-      <tr><td><b>~18 Aralık</b><br>Final + demo <span class="muted">(teyit)</span></td><td>Qdrant adımı ve karşılaştırma tablosu · diyabet ve böbrek kuralları · 20 senaryo · "daha iyi seçenekler" · mobilde OCR ile uçtan uca demo</td></tr>
+      <tr><td><b>~6 Kasım</b><br>Ara rapor <span class="muted">(teyit)</span></td><td>Repo sıfırlandı · sözlük v0 · eşleme hattı (birebir + bulanık) · 100 ifadelik test ve ilk skor · ilk hastalık grubunun kuralları</td></tr>
+      <tr><td><b>~18 Aralık</b><br>Final + demo <span class="muted">(teyit)</span></td><td>Qdrant adımı ve karşılaştırma tablosu · kural tablosu ~15–20 durum · 20 senaryo · LLM mesaj katmanı · mobilde OCR ile uçtan uca demo</td></tr>
     </tbody>
   </table></div>
 </section>
 
 <section id="bu-aksam">
-  <div class="sec-h"><span class="eyebrow">Toplantıdan çıkmadan</span><h2>Bu akşam karar verilecekler</h2></div>
-  <div class="tonight">
-    <div class="box field"><h3>Üç ürün kategorisi</h3>
-      <div class="chips" id="cats"></div></div>
-    <div class="two">
-      <div class="box field"><h3>TÜBİTAK 2209-A (son gün 11 Kasım)</h3>
-        <div class="chips" id="tubitak"></div></div>
-      <div class="box field"><h3>Proposal (yarın teslim)</h3>
-        <label for="prop" class="muted" style="font-size:14px">Kim, hangi bölüm, saat kaçta?</label>
-        <input type="text" id="prop" placeholder="ör. Levent: ürün + akış · Hilal: kural + test · Ozan: eşleme · 14:00'te birleştirme"></div>
-    </div>
-    <div class="copy">
-      <button class="btn" id="copyBtn" type="button">Toplantı özetini kopyala</button>
-      <button class="btn ghost" id="resetBtn" type="button">İşaretleri sıfırla</button>
-      <span class="muted" id="copyMsg" role="status"></span>
-    </div>
-    <pre class="out" id="out" hidden></pre>
+  <div class="sec-h"><span class="eyebrow">17 Ekim toplantı sonucu</span><h2>Sonraki adımlar</h2></div>
+  <div class="two">
+    <div class="box"><h3>Alınan kararlar</h3><ul>
+      <li>Ürün saklanmaz; veritabanı yalnız bilgi tabanı (kavram, eşanlamlı, hastalık, kural, kanıt, kaynak).</li>
+      <li>Kapsam: kılavuzu olan bütün durumlar; kural yoksa "Doğrulanamadı" + araştırma bilgisi.</li>
+      <li>Tek odak: içerik × hastalık. Karşılaştırma ek özellik, sonraya.</li>
+      <li>LLM yalnız son mesajı yazar, sonucu değiştiremez.</li>
+      <li>TÜBİTAK 2209-A'ya başvuruyoruz (11 Kasım).</li></ul></div>
+    <div class="box"><h3>Sıradaki işler</h3><ol>
+      <li>Proposal'ı bu kararlarla güncelle (18 Ekim).</li>
+      <li>Hastalık listesi + her biri için kılavuz kaynağı (Hilal).</li>
+      <li>Sözlük v0: E-kodları + OFF taksonomisi + CTD sözlüğü (Ozan).</li>
+      <li>Repo sıfırlama + bilgi tabanı şeması (Levent).</li>
+      <li>100 ifadelik eşleme test seti (hep birlikte).</li></ol></div>
   </div>
+  <div class="copy">
+    <button class="btn" id="copyBtn" type="button">Karar özetini kopyala</button>
+    <button class="btn ghost" id="resetBtn" type="button">İşaretleri sıfırla</button>
+    <span class="muted" id="copyMsg" role="status"></span>
+  </div>
+  <pre class="out" id="out" hidden></pre>
 </section>
 
 <footer>Kaynak metin: depodaki <span class="mono">docs/mimari-karar-belgesi.md</span>. Bu sayfadaki işaretler yalnız bu tarayıcıda durur; özeti kopyalayıp gruba atın.</footer>
@@ -290,31 +294,27 @@ html{scroll-behavior:smooth}
 
 <script>
 const DECISIONS=[
- {id:"K1",topic:"Girdi",what:"Etiket OCR ile okunur, düzeltilir ve sistemde saklanır; analiz saklanan metin üzerinden yapılır.",why:"MR2'deki 'listeler saklanır' ile OCR akışını birleştirir. Barkod yok."},
- {id:"K2",topic:"Pilot durumlar",what:"Çölyak (var/yok) · diyabet (besin miktarı) · kronik böbrek (sodyum; potasyum/fosfor etikette yoksa kısmi).",why:"İki farklı kural mekanizmasını sınar; kılavuzları net."},
- {id:"K3",topic:"Ürün vaadi",what:"Tek ürün kararı + aynı kategoride daha iyi seçenekler.",why:"LLM sarmalayıcısı olmamak. Bedeli: ürün kütüphanesi (tarama)."},
- {id:"K4",topic:"Kimyasala inme",what:"Yalnız etiket tek bir maddeyi adıyla söylüyorsa kimyasala bağlanır. Doymuş yağ sınıf, glikoz şurubu karışım, buğday unu hammadde kalır.",why:"Yanlış kimyasal üretmemek; kurallar zaten o seviyede konuşur."},
- {id:"K5",topic:"Kararı kim verir",what:"Yalnız kural tablosu (kılavuz + kaynak + sürüm). CTD/JECFA, Qdrant ve LLM karar vermez.",why:"Savunulabilirlik ve tutarlılık.",fixed:"MR2'de alındı"},
- {id:"K6",topic:"Doğrulama",what:"Her kural satırını iki ekip üyesi bağımsız kontrol eder. İddia: kılavuza uygunluk, klinik doğrulama değil.",why:"Uzmana bağımlılık yok; iddia dürüst."},
- {id:"K7",topic:"Qdrant'ın yeri",what:"Yalnız eşleme hattının 3. adımı: alias vektörleri + concept_id. Ürün, kural, kanıt PostgreSQL'de.",why:"Tek görev; katkısı aç/kapa ile ölçülür."},
- {id:"K8",topic:"Türkçeleştirme",what:"Veritabanı çevrilmez; yalnız gereken terimler alias tablosuna eklenir.",why:"En az iş, izlenebilir."},
- {id:"K9",topic:"Değerlendirme",what:"Eşleme sınavı (100 ifade, sözlük vs hibrit) + kural sınavı (20 senaryo); finalde tek tablo.",why:"Hocanın deney isteği, ayrı faz açmadan."},
- {id:"K10",topic:"Teknoloji",what:"Python + FastAPI · PostgreSQL · Qdrant · Expo (React Native) · cihazda OCR (kütüphane ilk 20 etiketle seçilir).",why:"Embedding ve NLP ekosistemi Python'da; tek servis."},
- {id:"K11",topic:"LLM'in rolü",what:"v1'de yok. Yalnız bir kerelik toplu terim çevirisinde, insan kontrollü.",why:"'Wrapper' algısı ve tutarsızlık riski."},
- {id:"K12",topic:"Süreç",what:"Sade repo (README + karar belgesi + kod); Azure ve CI kapıları yok; kısa dallar, sahibi merge eder; haftalık ortak inceleme.",why:"Ekibe uymayan ağır süreç bırakıldı."}
+ {id:"K1",topic:"Girdi",what:"Etiket OCR ile okunur, kullanıcı düzeltir; analiz anında yapılır. Ürün saklanmaz, ürün kütüphanesi yok.",why:"Öneri/karşılaştırma sistemi olmadığı için ürünü saklamanın anlamı yok. Barkod yok.",fixed:"değişti",kind:"edit"},
+ {id:"K2",topic:"Hastalık kapsamı",what:"Pilot değil: kılavuzu olan, etiketten kontrol edilebilen bütün durumlar (~15–20). Kural yoksa \"Doğrulanamadı\" + o hastalığa özel CTD araştırma bilgisi.",why:"Uygulamanın tam hali sunulur; kapsam her durum için açık yazılır.",fixed:"değişti",kind:"edit"},
+ {id:"K3",topic:"Odak",what:"Tek odak: içerik × hastalık eşleşmesi ve doğru anlatım. \"Aynı kategoride daha iyi seçenekler\" ek özellik, sonraya.",why:"Hoca odağın tek yerde toplanmasını istiyor.",fixed:"değişti",kind:"edit"},
+ {id:"K4",topic:"Kimyasala inme",what:"Yalnız etiket tek bir maddeyi adıyla söylüyorsa kimyasala bağlanır. Doymuş yağ sınıf, glikoz şurubu karışım, buğday unu hammadde kalır.",why:"Yanlış kimyasal üretmemek.",fixed:"onay"},
+ {id:"K5",topic:"Kararı kim verir",what:"Yalnız kural tablosu (kılavuz + kaynak + sürüm). Varlık kararları içindekilerden, miktar kararları besin tablosundan. CTD/JECFA, Qdrant ve LLM karar vermez.",why:"Savunulabilirlik ve tutarlılık.",fixed:"onay"},
+ {id:"K6",topic:"Doğrulama",what:"Her kural satırını iki ekip üyesi bağımsız kontrol eder. İddia: kılavuza uygunluk, klinik doğrulama değil.",why:"Uzmana bağımlılık yok; iddia dürüst.",fixed:"onay"},
+ {id:"K7",topic:"Qdrant'ın yeri",what:"Yalnız eşleme hattının 3. adımı: alias vektörleri + concept_id. Kural ve kanıt PostgreSQL'de.",why:"Tek görev; katkısı aç/kapa ile ölçülür.",fixed:"onay"},
+ {id:"K8",topic:"Türkçeleştirme",what:"Veritabanı çevrilmez; yalnız gereken terimler alias tablosuna eklenir.",why:"En az iş, izlenebilir.",fixed:"onay"},
+ {id:"K9",topic:"Değerlendirme",what:"Eşleme sınavı (100 ifade, sözlük vs hibrit) + kural sınavı (20 senaryo); finalde tek tablo. TÜBİTAK araştırma sorusu da bu.",why:"Hocanın deney isteği, ayrı faz açmadan.",fixed:"onay"},
+ {id:"K10",topic:"Teknoloji",what:"Python + FastAPI · PostgreSQL · Qdrant · Expo (React Native) · cihazda OCR (kütüphane ilk 20 etiketle seçilir).",why:"Embedding ve NLP ekosistemi Python'da; tek servis.",fixed:"onay"},
+ {id:"K11",topic:"LLM'in rolü",what:"Son mesajı LLM yazar: kural sonucu + kaynaklar + kapsam yapılandırılmış veri olarak verilir, LLM sade Türkçeye çevirir. Sonucu değiştiremez, yeni bilgi ekleyemez; yasaklı kelime denetimi var; LLM çalışmazsa şablon metin gösterilir.",why:"Hoca LLM'in bir yerde olmasını istedi; en güvenli ve en görünür yeri anlatım.",fixed:"değişti",kind:"edit"},
+ {id:"K12",topic:"Süreç",what:"Sade repo (README + karar belgesi + kod); Azure ve CI kapıları yok; kısa dallar, sahibi merge eder; haftalık ortak inceleme.",why:"Ekibe uymayan ağır süreç bırakıldı.",fixed:"onay"}
 ];
 const SCHEMA=[
- {n:"product",f:["id","ad, marka, kategori","kaynak, tarama_tarihi"]},
- {n:"label_text",f:["product_id","ham_icindekiler","ham_besin_tablosu","ocr_guveni, duzelten"]},
- {n:"ingredient_mention",f:["id, product_id, sira","ham_metin, normalize_metin","tur: kimyasal|sinif|karisim|hammadde|besin|bilinmeyen"]},
  {n:"concept",f:["id, tur","ad_tr, ad_en","e_kodu, cas, mesh_id, pubchem_cid"]},
  {n:"alias",f:["concept_id, metin, dil","iliski: SAME_AS|CONTEXTUAL|IS_A|CONTAINS|MAY_CONTAIN","kaynak, surum, durum"],tag:"→ Qdrant"},
- {n:"mention_match",f:["mention_id, concept_id","yontem: birebir|bulanik|vektor","skor, durum"]},
- {n:"nutrient_value",f:["product_id, besin","deger, birim","baz: 100g|100ml|porsiyon"]},
- {n:"condition",f:["id, ad_tr, mesh_id"]},
- {n:"rule",f:["condition_id, kural_turu","hedef, kosul, sonuc","kaynak_belge, bolum, surum","kontrol_eden_1, kontrol_eden_2"],cls:"decide",tag:"karar"},
- {n:"evidence",f:["concept_id, condition_id","kaynak: CTD|JECFA","iliski_turu, pmid_url"],cls:"info",tag:"yalnız bilgi"},
- {n:"result",f:["product_id, condition_id","sonuc, kullanilan_kurallar","kapsam, kural_surumu"]}
+ {n:"condition",f:["id, ad_tr, mesh_id","kapsam_notu (neleri kontrol ediyoruz)"]},
+ {n:"rule",f:["condition_id, kural_turu: varlik|miktar|beyan","hedef, kosul, sonuc, eksik_veri_sonucu","kaynak_belge, bolum, surum","kontrol_eden_1, kontrol_eden_2"],cls:"decide",tag:"karar"},
+ {n:"evidence",f:["concept_id, condition_id","kaynak: CTD|JECFA","iliski_turu, calisma_sayisi, pmid_url"],cls:"info",tag:"yalnız bilgi"},
+ {n:"source",f:["id, ad, url","surum / indirme tarihi","lisans, alinan_alanlar"]},
+ {n:"scan (saklanmaz)",f:["istek: ham_icindekiler, besin_degerleri, profil","yanit: mention listesi, eslesmeler, sonuclar, mesaj"],cls:"info",tag:"istek içinde"}
 ];
 const CATS=["Bisküvi / kraker","Kahvaltılık gevrek","Atıştırmalık (cips, bar)","Ekmek / unlu mamul","Süt ürünleri","İçecek"];
 const TUB=["Başvuruyoruz","Başvurmuyoruz","Hocaya soracağız"];
@@ -327,7 +327,7 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",
 function renderDecisions(){
   const box=document.getElementById("decisions");box.innerHTML="";
   DECISIONS.forEach(d=>{
-    const cur=st.d[d.id]||{};const s=cur.s||(d.fixed?"ok":"");
+    const cur=st.d[d.id]||{};const s=cur.s||(d.kind||(d.fixed?"ok":""));
     const el=document.createElement("article");el.className="dc";el.dataset.s=s;el.id="d-"+d.id;
     el.innerHTML=`<div class="id">${d.id}</div>
       <div><div class="topic">${esc(d.topic)}${d.fixed?` · <span class="fixed">${esc(d.fixed)}</span>`:""}</div>
@@ -348,7 +348,7 @@ function renderDecisions(){
     box.appendChild(el);
   });
 }
-function status(d){const c=st.d[d.id]||{};return c.s||(d.fixed?"ok":"")}
+function status(d){const c=st.d[d.id]||{};return c.s||(d.kind||(d.fixed?"ok":""))}
 function updateTally(){
   let ok=0,ed=0,ho=0;DECISIONS.forEach(d=>{const s=status(d);if(s==="ok")ok++;else if(s==="edit")ed++;else if(s==="hold")ho++});
   const open=DECISIONS.length-ok-ed-ho;
@@ -367,19 +367,15 @@ function renderChips(id,items,multi){
       save();renderChips(id,items,multi)});
     box.appendChild(b)});
 }
-const prop=document.getElementById("prop");prop.value=st.prop||"";
-prop.addEventListener("input",()=>{st.prop=prop.value;save()});
 
 function summary(){
   const L={ok:"✅",edit:"✏️",hold:"⏸","":"❔"};
   const lines=["*NutriScan · 17 Ekim karar toplantısı*",""];
   DECISIONS.forEach(d=>{const s=status(d);const c=st.d[d.id]||{};
     let t=`${L[s]} ${d.id} ${d.topic}`;
-    if(s==="ok")t+=" — onay";else if(s==="edit")t+=" — değişti: "+(c.n||"(yeni hali yazılmadı)");else if(s==="hold")t+=" — sonraya";else t+=" — konuşulmadı";
+    if(s==="ok")t+=" — onay";else if(s==="edit")t+=" — "+(c.n||d.what);else if(s==="hold")t+=" — sonraya";else t+=" — konuşulmadı";
     lines.push(t)});
-  lines.push("","*Kategoriler:* "+(st.cats.length?st.cats.join(", "):"seçilmedi"));
-  lines.push("*TÜBİTAK 2209-A:* "+(st.tub||"karar yok"));
-  lines.push("*Proposal:* "+(st.prop||"belirlenmedi"));
+  lines.push("","*TÜBİTAK 2209-A:* başvuruyoruz (11 Kasım)");
   lines.push("","Kaynak: docs/mimari-karar-belgesi.md");
   return lines.join("\n");
 }
@@ -394,8 +390,8 @@ function selectOut(){const r=document.createRange();r.selectNodeContents(documen
 const resetBtn=document.getElementById("resetBtn");let armed=false;
 resetBtn.addEventListener("click",()=>{
   if(!armed){armed=true;resetBtn.textContent="Emin misin? Tekrar tıkla";setTimeout(()=>{armed=false;resetBtn.textContent="İşaretleri sıfırla"},3000);return}
-  st={d:{},cats:[],tub:"",prop:""};save();prop.value="";armed=false;resetBtn.textContent="İşaretleri sıfırla";
-  renderDecisions();renderChips("cats",CATS,true);renderChips("tubitak",TUB,false);updateTally();document.getElementById("out").hidden=true;
+  st={d:{},cats:[],tub:"",prop:""};save();armed=false;resetBtn.textContent="İşaretleri sıfırla";
+  renderDecisions();updateTally();document.getElementById("out").hidden=true;
 });
-renderDecisions();renderSchema();renderChips("cats",CATS,true);renderChips("tubitak",TUB,false);updateTally();
+renderDecisions();renderSchema();updateTally();
 </script>

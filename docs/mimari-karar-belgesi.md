@@ -1,6 +1,6 @@
 # NutriScan — Mimari Karar Belgesi (v1)
 
-**Durum:** TASLAK — 17 Ekim 2026 ekip toplantısında onaylanacak · **Editör:** Levent
+**Durum:** v1.1 — 17 Ekim 2026 ekip toplantısında karara bağlandı (K1, K2, K3, K11 değişti) · **Editör:** Levent
 **Dayanak:** MR1 (2 Ekim), MR2 (9 Ekim), 16 Ekim görüşmesi · Ozan'ın normalizasyon dokümanları · Hilal'in araştırma dosyaları
 
 > **Bu belge nasıl kullanılır?**
@@ -45,39 +45,35 @@ kaynaklı kurallarla değerlendirir ve **aynı kategorideki ürünler arasında 
 
 | # | Konu | Karar | Neden | Durum |
 |---|---|---|---|---|
-| K1 | Girdi | Etiket **OCR** ile okunur, kullanıcı/ekip düzeltebilir, **sistemde saklanır**; analiz saklanan metin üzerinden yapılır | MR2 ("listeler saklanır") ile Ozan'ın akışını (OCR) birleştirir | ÖNERİ |
-| K2 | Pilot durumlar | Çölyak (var/yok kuralı) · diyabet (besin miktarı) · kronik böbrek (sodyum; potasyum/fosfor etikette yoksa kısmi) | İki farklı kural mekanizmasını sınar; kılavuzları net | ÖNERİ |
-| K3 | Ürün vaadi | Tek ürün kararı + **aynı kategoride daha iyi seçenekler** | LLM sarmalayıcısı olmamak; ürün kütüphanesi gerektirir | ÖNERİ |
-| K4 | Kimyasala inme kuralı | Bir ifade **ancak etiket tek bir maddeyi adıyla söylüyorsa** kimyasala bağlanır (E102, askorbik asit). "Doymuş yağ" sınıf, "glikoz şurubu" karışım, "buğday unu" hammadde olarak kalır | Yanlış kimyasal üretmemek; kurallar zaten o seviyede konuşur | ÖNERİ |
+| K1 | Girdi | Etiket **OCR** ile okunur, kullanıcı düzeltir; analiz anında yapılır. **Ürün saklanmaz**, ürün kütüphanesi yok | Öneri/karşılaştırma sistemi olmadığı için saklamanın anlamı yok | KARAR (17 Eki, değişti) |
+| K2 | Hastalık kapsamı | Pilot değil: kılavuzu olan, etiketten kontrol edilebilen **bütün durumlar** (~15–20). Kural yoksa "Doğrulanamadı" + o hastalığa özel CTD araştırma bilgisi | Uygulamanın tam hali; kapsam her durum için açık | KARAR (17 Eki, değişti) |
+| K3 | Odak | Tek odak: içerik × hastalık eşleşmesi ve doğru anlatım. "Aynı kategoride daha iyi seçenekler" **ek özellik, sonraya** | Hoca odağı tek yerde istiyor | KARAR (17 Eki, değişti) |
+| K4 | Kimyasala inme kuralı | Bir ifade **ancak etiket tek bir maddeyi adıyla söylüyorsa** kimyasala bağlanır (E102, askorbik asit). "Doymuş yağ" sınıf, "glikoz şurubu" karışım, "buğday unu" hammadde olarak kalır | Yanlış kimyasal üretmemek; kurallar zaten o seviyede konuşur | KARAR (17 Eki) |
 | K5 | Kararı kim verir | Yalnız **kural tablosu** (klinik kılavuz + kaynak + sürüm). CTD/JECFA, Qdrant, LLM karar vermez | Savunulabilirlik, tutarlılık | KARAR (MR2) |
-| K6 | Doğrulama | Her kural satırını **iki ekip üyesi bağımsız** kontrol eder; iddia "kılavuza uygunluk", klinik doğrulama değil | Uzmana bağımlılık yok; iddia dürüst | ÖNERİ |
-| K7 | Qdrant'ın yeri | **Yalnız eşleme hattının 3. adımı** (yedek): alias vektörleri + `concept_id` payload. Ürün, kural, kanıt PostgreSQL'de | Tek görev, ölçülebilir katkı (aç/kapa) | ÖNERİ |
-| K8 | Türkçeleştirme | Veritabanları çevrilmez; **alias tablosuna yalnız gereken terimler** eklenir (bkz. §6) | En az iş, izlenebilir | ÖNERİ |
-| K9 | Değerlendirme | Eşleme sınavı (100 ifade, sözlük vs hibrit) + kural sınavı (20 senaryo); finalde tek tablo (bkz. §7) | Hocanın deney isteği, ayrı faz açmadan | ÖNERİ |
-| K10 | Teknoloji | Python + FastAPI (eşleme/kural servisi) · PostgreSQL · Qdrant · mobil: Expo (React Native) · OCR: cihazda metin tanıma [kütüphane ilk 20 etiketle denenip seçilecek] | Embedding/NLP ekosistemi Python'da; tek servis | ÖNERİ |
-| K11 | LLM'in rolü | v1'de **yok**. Yalnız bir kerelik toplu terim çevirisinde yardımcı (insan kontrollü) | "Wrapper" algısı ve tutarsızlık riski | ÖNERİ |
-| K12 | Süreç | Sade repo (README + bu belge + kod), Azure ve CI kapıları yok; kısa dallar, sahibi merge eder; haftalık ortak inceleme | Ekibe uymayan ağır süreç bırakıldı | ÖNERİ |
+| K6 | Doğrulama | Her kural satırını **iki ekip üyesi bağımsız** kontrol eder; iddia "kılavuza uygunluk", klinik doğrulama değil | Uzmana bağımlılık yok; iddia dürüst | KARAR (17 Eki) |
+| K7 | Qdrant'ın yeri | **Yalnız eşleme hattının 3. adımı** (yedek): alias vektörleri + `concept_id` payload. Ürün, kural, kanıt PostgreSQL'de | Tek görev, ölçülebilir katkı (aç/kapa) | KARAR (17 Eki) |
+| K8 | Türkçeleştirme | Veritabanları çevrilmez; **alias tablosuna yalnız gereken terimler** eklenir (bkz. §6) | En az iş, izlenebilir | KARAR (17 Eki) |
+| K9 | Değerlendirme | Eşleme sınavı (100 ifade, sözlük vs hibrit) + kural sınavı (20 senaryo); finalde tek tablo (bkz. §7) | Hocanın deney isteği, ayrı faz açmadan | KARAR (17 Eki) |
+| K10 | Teknoloji | Python + FastAPI (eşleme/kural servisi) · PostgreSQL · Qdrant · mobil: Expo (React Native) · OCR: cihazda metin tanıma [kütüphane ilk 20 etiketle denenip seçilecek] | Embedding/NLP ekosistemi Python'da; tek servis | KARAR (17 Eki) |
+| K11 | LLM'in rolü | **Son mesajı LLM yazar:** kural sonucu + kaynaklar + kapsam yapılandırılmış veri olarak verilir, LLM sade Türkçeye çevirir. Sonucu değiştiremez, yeni bilgi ekleyemez; yasaklı kelime denetimi; LLM çalışmazsa şablon metin | Hoca LLM'in bir yerde olmasını istedi; en güvenli yer anlatım | KARAR (17 Eki, değişti) |
+| K12 | Süreç | Sade repo (README + bu belge + kod), Azure ve CI kapıları yok; kısa dallar, sahibi merge eder; haftalık ortak inceleme | Ekibe uymayan ağır süreç bırakıldı | KARAR (17 Eki) |
 
-## 4. Veri şeması (PostgreSQL)
+## 4. Veri şeması (PostgreSQL — yalnız bilgi tabanı)
+
+Ürün saklanmaz (K1). Taranan etiket istek içinde işlenir, yanıt döner, kayıt tutulmaz.
 
 ```
-product            id, ad, marka, kategori, kaynak, tarama_tarihi
-label_text         product_id, ham_icindekiler, ham_besin_tablosu, ocr_guveni, duzelten, duzeltme_tarihi
-ingredient_mention id, product_id, sira, ham_metin, normalize_metin, tur, ust_mention_id   -- tur: tekil_kimyasal|kimyasal_sinif|karisim|gida_hammaddesi|besin|bilinmeyen
-concept            id, tur, ad_tr, ad_en, e_kodu, cas, mesh_id, pubchem_cid
-alias              id, concept_id, metin, dil, iliski, kaynak, kaynak_surumu, durum             -- iliski: SAME_AS|CONTEXTUAL|IS_A|CONTAINS|MAY_CONTAIN
-mention_match      mention_id, concept_id, yontem, skor, durum                                 -- yontem: birebir|bulanik|vektor · durum: otomatik|onayli|red
-nutrient_value     product_id, besin, deger, birim, baz                                        -- baz: 100g|100ml|porsiyon
-condition          id, ad_tr, mesh_id
-rule               id, condition_id, kural_turu, hedef, kosul, sonuc, kaynak_belge, bolum, surum,
-                   kontrol_eden_1, kontrol_eden_2, eksik_veri_sonucu
-evidence           concept_id, condition_id, kaynak, iliski_turu, pmid_url, kaynak_surumu         -- yalnız bilgi, karar vermez
-result             product_id, condition_id, sonuc, kullanilan_kurallar, kapsam, kural_surumu, tarih
-```
+concept     id, tur, ad_tr, ad_en, e_kodu, cas, mesh_id, pubchem_cid
+alias       id, concept_id, metin, dil, iliski, kaynak, kaynak_surumu, durum      -- iliski: SAME_AS|CONTEXTUAL|IS_A|CONTAINS|MAY_CONTAIN · Qdrant'a vektör kopyası
+condition   id, ad_tr, mesh_id, kapsam_notu
+rule        id, condition_id, kural_turu (varlik|miktar|beyan), hedef, kosul, sonuc, eksik_veri_sonucu,
+            kaynak_belge, bolum, surum, kontrol_eden_1, kontrol_eden_2
+evidence    concept_id, condition_id, kaynak (CTD|JECFA), iliski_turu, calisma_sayisi, pmid_url, kaynak_surumu   -- yalnız bilgi
+source      id, ad, url, surum_tarihi, lisans, alinan_alanlar
 
-**Örnek satırlar:** `concept(42, tekil_kimyasal, "Tartrazin", "Tartrazine", "E102", "1934-21-0", <mesh>)` ·
-`alias("sarı renklendirici" → 42, tr, SAME_AS, ekip_ceviri, onayli)` ·
-`rule(çölyak, icerik_varligi, hedef: gluten içeren tahıl, sonuc: Uygun değil, kaynak: Gıda Kodeksi …)`
+istek (saklanmaz):  ham_icindekiler, besin_degerleri, profil
+yanıt (saklanmaz):  mention listesi, eşleşmeler, kural sonuçları, araştırma bilgisi, LLM mesajı
+```
 
 ## 5. Veri kaynakları (v1)
 
@@ -88,7 +84,7 @@ result             product_id, condition_id, sonuc, kullanilan_kurallar, kapsam,
 | Kimyasal kimlik | CTD Chemical Vocabulary · PubChem (eksikler, ön hazırlıkta) | concept | CTD kullanım şartları; PubChem açık |
 | Kanıt (bilgi) | CTD Chemical–Disease · WHO JECFA | evidence | Atıf; yalnız listemizdeki maddeler |
 | Kural | ADA 2026 / TEMD · KDIGO 2024 · Gıda Kodeksi (gluten) | rule | Kendi cümlelerimizle, bölüm atfıyla |
-| Ürünler | Ekibin OCR taraması (3 kategori × ~70) | product, label_text | Kendi verimiz |
+| Test verisi | Gerçek etiketlerden 100 ifade + 20 senaryo (dosya) | tests/ | Kendi verimiz |
 | **v1'de yok** | FooDB (CC BY-NC), ChEBI, FoodOn, UMLS | — | Kapsam ve lisans |
 
 Her kaynak için `kaynak, sürüm/indirme tarihi, lisans, alınan alanlar` bir envanter dosyasında tutulur (Hilal).
@@ -132,9 +128,7 @@ Kullanıcıya görünen bütün metinler ekip tarafından Türkçe yazılır.
 | **~6 Kasım · Ara rapor** [tarih teyit] | Repo sıfırlandı · ilk 3 kategoride ürün taraması başladı · sözlük v0 · eşleme hattı (birebir + bulanık) · 100 ifadelik test ve ilk skor · çölyak kuralı |
 | **~18 Aralık · Final + demo** [tarih teyit] | Qdrant adımı + karşılaştırma tablosu · diyabet ve böbrek kuralları · 20 senaryo · "daha iyi seçenekler" · mobilde OCR ile uçtan uca demo |
 
-## 10. Bu akşam karar verilecekler
+## 10. 17 Ekim toplantı sonucu ve sıradaki işler
 
-1. K1–K12: onay ya da değişiklik
-2. **3 ürün kategorisi** (öneri: bisküvi/kraker · kahvaltılık gevrek · atıştırmalık)
-3. TÜBİTAK 2209-A (son gün 11 Kasım): başvuruyor muyuz?
-4. Proposal: kim, hangi bölüm, ne zamana?
+- TÜBİTAK 2209-A: **başvuruyoruz** (son gün 11 Kasım); araştırma sorusu §7'deki eşleme sınavı.
+- Sıradaki: proposal güncelleme (18 Ekim) · hastalık listesi + kılavuz kaynakları (Hilal) · sözlük v0 (Ozan) · repo sıfırlama + bilgi tabanı şeması (Levent) · 100 ifadelik eşleme test seti (hep birlikte).
