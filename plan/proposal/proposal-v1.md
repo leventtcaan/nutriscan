@@ -129,13 +129,13 @@ A working mobile prototype that reads real Turkish labels and returns explained,
 [4] Fooducate, https://www.fooducate.com/
 [5] Ürün Dedektörü, https://urundedektoru.com/
 [6] A. P. Davis et al., "Comparative Toxicogenomics Database's 20th anniversary: update 2025," Nucleic Acids Research, vol. 53, no. D1, pp. D1328–D1334, 2025.
-[7] WHO, "Evaluations of the Joint FAO/WHO Expert Committee on Food Additives (JECFA)," https://apps.who.int/food-additives-contaminants-jecfa-database/
+[7] WHO, JECFA evaluations database, https://apps.who.int/food-additives-contaminants-jecfa-database/
 [8] M. Sung, H. Jeon, J. Lee and J. Kang, "Biomedical Entity Representations with Synonym Marginalization," in Proc. 58th Annual Meeting of the ACL, 2020, pp. 3641–3650.
 [9] F. Liu, E. Shareghi, Z. Meng, M. Basaldella and N. Collier, "Self-Alignment Pretraining for Biomedical Entity Representations," in Proc. NAACL-HLT, 2021, pp. 4228–4238.
 [10] Türk Gıda Kodeksi Gıda Katkı Maddeleri Yönetmeliği, Resmî Gazete 28693, 30.06.2013 (with later amendments).
-[11] Open Food Facts, ingredients taxonomy, https://github.com/openfoodfacts/openfoodfacts-server/blob/main/taxonomies/food/ingredients.txt
+[11] Open Food Facts, ingredients taxonomy (taxonomies/food/ingredients.txt), github.com/openfoodfacts/openfoodfacts-server
 [12] NCBI PubChem, https://pubchem.ncbi.nlm.nih.gov/
 [13] American Diabetes Association Professional Practice Committee, "5. Facilitating Positive Health Behaviors and Well-being to Improve Health Outcomes: Standards of Care in Diabetes—2026," Diabetes Care, vol. 49, suppl. 1, pp. S89–S131, 2026, doi:10.2337/dc26-S005.
 [14] KDIGO CKD Work Group, "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease," Kidney International, vol. 105, no. 4S, pp. S117–S314, 2024, doi:10.1016/j.kint.2023.10.018.
 [15] FooDB Version 1.0, licence statement (CC BY-NC 4.0), https://foodb.ca/
-[16] TİTCK, Tıbbi Cihaz Yönetmeliği, Resmî Gazete 31499 (mükerrer), 02.06.2021; Regulation (EU) 2017/745 on medical devices.
+[16] Tıbbi Cihaz Yönetmeliği, Resmî Gazete 31499 (mükerrer), 02.06.2021; Regulation (EU) 2017/745.

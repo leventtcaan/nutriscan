@@ -182,5 +182,15 @@ if SURUM == "v1":
         if par.text.strip().startswith("5. Preliminary Requirements"):
             par.paragraph_format.page_break_before = True
 
+# belge sonundaki zorunlu boş paragraf onay tablosundan sonra boş bir sayfa açmasın
+from docx.shared import Pt
+last = d.paragraphs[-1]
+if not last.text.strip():  # son boş paragraf
+    last.paragraph_format.space_before = Pt(0); last.paragraph_format.space_after = Pt(0)
+    last.paragraph_format.line_spacing = Pt(1)
+    from docx.oxml import OxmlElement
+    ppr = last._p.get_or_add_pPr(); rpr = OxmlElement("w:rPr"); sz = OxmlElement("w:sz"); sz.set(qn("w:val"), "2")
+    rpr.append(sz); ppr.append(rpr)
+
 d.save(OUT)
 print("yazıldı:", OUT)
