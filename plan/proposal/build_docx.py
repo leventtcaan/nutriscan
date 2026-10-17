@@ -1,14 +1,15 @@
 """proposal-v0.md → kaynak/CSE491_Project_Proposal_Template.docx şablonuyla doldurulmuş .docx
-Çalıştır: python3 plan/proposal/build_docx.py
+Çalıştır: python3 plan/proposal/build_docx.py [v0|v1]
 Kaynak metin tek yer: plan/proposal/proposal-v0.md (burada elle metin yazma).
 """
-import copy, re, pathlib
+import copy, re, pathlib, sys
 import docx
 
 KOK = pathlib.Path(__file__).resolve().parents[2]
-MD = KOK / "plan/proposal/proposal-v0.md"
+SURUM = sys.argv[1] if len(sys.argv) > 1 else "v0"
+MD = KOK / f"plan/proposal/proposal-{SURUM}.md"
 TPL = KOK / "kaynak/CSE491_Project_Proposal_Template.docx"
-OUT = KOK / "plan/proposal/NutriScan_CSE491_Proposal_v0.docx"
+OUT = KOK / f"plan/proposal/NutriScan_CSE491_Proposal_{SURUM}.docx"
 
 # ---------- markdown'ı bölümlere ayır
 text = MD.read_text(encoding="utf-8")
@@ -174,6 +175,12 @@ WIDTHS = {2: [3.6, 5.6, 8.8], 3: [1.5, 12.6, 3.9], 4: [1.5, 10.6, 5.9],
           5: [3.2, 6.6, 8.2], 6: [1.3, 8.9, 5.6, 2.2], 7: [5.4, 2.1, 2.0, 8.5]}
 for ti, cms in WIDTHS.items():
     set_widths(d.tables[ti], cms)
+
+# Pages tablo başlığını sayfa sonunda yalnız bırakıyordu: v1'de gereksinimler bölümü yeni sayfadan başlar
+if SURUM == "v1":
+    for par in d.paragraphs:
+        if par.text.strip().startswith("5. Preliminary Requirements"):
+            par.paragraph_format.page_break_before = True
 
 d.save(OUT)
 print("yazıldı:", OUT)
