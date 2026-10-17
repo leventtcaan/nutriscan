@@ -1,0 +1,233 @@
+<title>NutriScan Akış Diyagramı</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: tek figür; yatay akan diyagram kendi kabında kayar, sayfa kaymaz */
+:root{
+  --bg:#f4f6f5; --ink:#17201c; --muted:#5b6862; --line:#cfd7d2; --box:#ffffff;
+  --la:#eef2fb; --lb:#eef5f1; --lc:#f3f0fa; --ld:#f6f3ec;
+  --flow:#2f43b0; --data:#0f7a6e; --prep:#8a6a1e; --risk:#b3261e; --riskbg:#fdeceb;
+  --vec:#e8eefc; --rule:#e7f3ec; --ex:#5b3fa0;
+  --f-d:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --f-b:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+  --f-m:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#101513; --ink:#e4ebe7; --muted:#9aa8a1; --line:#33403a; --box:#18201d;
+  --la:#161c2a; --lb:#14211b; --lc:#1c1828; --ld:#211d14;
+  --flow:#93a3ff; --data:#5fd0c0; --prep:#e0b765; --risk:#ff8a80; --riskbg:#3a1714;
+  --vec:#1d2540; --rule:#16301f; --ex:#c2a8ff; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101513; --ink:#e4ebe7; --muted:#9aa8a1; --line:#33403a; --box:#18201d;
+  --la:#161c2a; --lb:#14211b; --lc:#1c1828; --ld:#211d14;
+  --flow:#93a3ff; --data:#5fd0c0; --prep:#e0b765; --risk:#ff8a80; --riskbg:#3a1714;
+  --vec:#1d2540; --rule:#16301f; --ex:#c2a8ff; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 15px/1.55 var(--f-b);margin:0}
+.wrap{max-width:1620px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px;display:grid;gap:16px}
+h1{font:700 clamp(24px,3vw,34px)/1.15 var(--f-d);margin:0;text-wrap:balance}
+p{margin:0;max-width:95ch} .muted{color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13.5px;align-items:center}
+.legend span{display:inline-flex;gap:8px;align-items:center}
+.legend i{display:inline-block;width:28px;height:0;border-top:2.5px solid currentColor}
+.legend i.d{border-top-style:dashed} .legend i.p{border-top-style:dotted}
+.legend b{display:inline-block;width:14px;height:14px;border-radius:4px}
+.k-flow{color:var(--flow)} .k-data{color:var(--data)} .k-prep{color:var(--prep)} .k-risk{color:var(--risk)} .k-ex{color:var(--ex)}
+figure{margin:0;display:grid;gap:10px}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--bg)}
+svg{display:block;width:100%;min-width:1240px;max-width:1540px;height:auto;margin:0 auto}
+figcaption{font-size:14px;color:var(--muted)}
+/* svg sınıfları */
+.lane{stroke:none} .la{fill:var(--la)} .lb{fill:var(--lb)} .lc{fill:var(--lc)} .ld{fill:var(--ld)}
+.lane-h{font:700 13px var(--f-m);letter-spacing:.08em;fill:var(--ink)} .lane-s{font:400 11px var(--f-m);fill:var(--muted)}
+.box{fill:var(--box);stroke:var(--line);stroke-width:1.2}
+.excard{fill:var(--box);stroke:var(--ex);stroke-width:1.2;stroke-dasharray:5 4}
+.num{fill:var(--flow)} .numt{font:600 12px var(--f-b);fill:var(--box)}
+.h{font:700 14.5px var(--f-d);fill:var(--ink)}
+.t{font:400 12.5px var(--f-b);fill:var(--ink)}
+.ex{font:500 11px var(--f-m);fill:var(--ex)}
+.mono{font:400 13px var(--f-m);fill:var(--ink)}
+.rk{font:500 12px var(--f-b);fill:var(--risk)}
+.riskbg{fill:var(--riskbg)}
+.sep{stroke:var(--line);stroke-width:1}
+.store{fill:var(--box);stroke:var(--data);stroke-width:1.4} .store.vec{fill:var(--vec)} .store.rule{fill:var(--rule)}
+.src{fill:var(--box);stroke:var(--prep);stroke-width:1.2;stroke-dasharray:3 3}
+.sh{font:600 13px var(--f-b);fill:var(--ink)} .st{font:400 12px var(--f-b);fill:var(--muted)}
+.ln{fill:none;stroke-width:2;stroke-linejoin:round}
+.flow{stroke:var(--flow);stroke-width:2.6} .data{stroke:var(--data);stroke-dasharray:6 4} .prep{stroke:var(--prep);stroke-dasharray:2 4;stroke-linecap:round}
+.al{font:500 11.5px var(--f-m)} .flowt{fill:var(--flow)} .datat{fill:var(--data)} .prept{fill:var(--prep)}
+.mk-flow{fill:var(--flow)} .mk-data{fill:var(--data)} .mk-prep{fill:var(--prep)}
+.say{border-left:3px solid var(--flow);padding-left:14px;max-width:110ch}
+</style>
+<div class="wrap">
+  <h1>NutriScan: bir etiketin baştan sona yolculuğu</h1>
+  <p class="muted">Soldan sağa ana yol (1 → 8). Her kutuda: ne yapar · nasıl · örnek değer · <span class="k-risk">ters giderse</span>. Alt şeritler, adımların okuduğu veriyi ve o verinin nereden geldiğini gösterir.</p>
+  <div class="legend">
+    <span class="k-flow"><i></i>ana akış (her taramada)</span>
+    <span class="k-data"><i class="d"></i>bilgi tabanından okuma</span>
+    <span class="k-prep"><i class="p"></i>önceden hazırlık (ekip)</span>
+    <span class="k-ex"><b style="background:currentColor;opacity:.25"></b>örnek değer</span>
+    <span class="k-risk"><b style="background:var(--riskbg);border:1px solid currentColor"></b>ters giderse</span>
+  </div>
+  <figure>
+    <div class="scroll">
+      <svg viewBox="0 0 1540 1052" role="img" aria-label="NutriScan akışı: telefonda fotoğraf ve OCR, serviste böl-türle, eşle (sözlük, bulanık, Qdrant), kural motoru karar verir, kanıt bilgi olarak eklenir, LLM mesajı yazar ve denetlenir, sonuç telefonda gösterilir; bilgi tabanı ve kaynakları altta.">
+        <defs>
+          <marker id="m-flow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-flow"/></marker>
+          <marker id="m-data" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-data"/></marker>
+          <marker id="m-prep" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-prep"/></marker>
+        </defs>
+<rect x="8" y="16" width="1524" height="252" rx="12" class="lane la"/><text transform="translate(26,142.0) rotate(-90)" text-anchor="middle" class="lane-h">TELEFON</text><text transform="translate(42,142.0) rotate(-90)" text-anchor="middle" class="lane-s">Expo · React Native</text>
+<rect x="8" y="282" width="1524" height="330" rx="12" class="lane lb"/><text transform="translate(26,447.0) rotate(-90)" text-anchor="middle" class="lane-h">SERVİS</text><text transform="translate(42,447.0) rotate(-90)" text-anchor="middle" class="lane-s">Python · FastAPI · her taramada</text>
+<rect x="8" y="626" width="1524" height="166" rx="12" class="lane lc"/><text transform="translate(26,709.0) rotate(-90)" text-anchor="middle" class="lane-h">BİLGİ TABANI</text><text transform="translate(42,709.0) rotate(-90)" text-anchor="middle" class="lane-s">PostgreSQL + Qdrant</text>
+<rect x="8" y="806" width="1524" height="238" rx="12" class="lane ld"/><text transform="translate(26,925.0) rotate(-90)" text-anchor="middle" class="lane-h">ÖNCEDEN HAZIRLANIR</text><text transform="translate(42,925.0) rotate(-90)" text-anchor="middle" class="lane-s">ekip · bir kez</text>
+<g transform="translate(44,0)">
+<rect x="30" y="62" width="196" height="190" rx="10" class="box"/>
+<circle cx="48" cy="82" r="11" class="num"/>
+<text x="48" y="86" class="numt" text-anchor="middle">1</text>
+<text x="66" y="87" class="h">Profil + fotoğraf</text>
+<text x="42" y="108" class="t"><tspan x="42" dy="0">Kullanıcı durumlarını seçer</tspan><tspan x="42" dy="15">Profil yalnız telefonda</tspan><tspan x="42" dy="15">Paketin arkası çekilir</tspan></text>
+<line x1="42" y1="151" x2="214" y2="151" class="sep"/>
+<text x="42" y="165" class="ex"><tspan x="42" dy="0">Selin: çölyak + diyabet</tspan></text>
+<rect x="36" y="180" width="184" height="44" rx="6" class="riskbg"/>
+<text x="42" y="195" class="rk"><tspan x="42" dy="0">Kural tablosunda olmayan</tspan><tspan x="42" dy="15">durum → kapsam kartı uyarır</tspan></text>
+<rect x="250" y="62" width="206" height="190" rx="10" class="box"/>
+<circle cx="268" cy="82" r="11" class="num"/>
+<text x="268" y="86" class="numt" text-anchor="middle">2</text>
+<text x="286" y="87" class="h">OCR + düzeltme</text>
+<text x="262" y="108" class="t"><tspan x="262" dy="0">Cihazda metin tanıma</tspan><tspan x="262" dy="15">Kullanıcı hatayı düzeltir</tspan></text>
+<line x1="262" y1="136" x2="444" y2="136" class="sep"/>
+<text x="262" y="150" class="ex"><tspan x="262" dy="0">Fotoğraf → düz metin</tspan></text>
+<rect x="256" y="165" width="194" height="59" rx="6" class="riskbg"/>
+<text x="262" y="180" class="rk"><tspan x="262" dy="0">Okunamadı → tekrar çek / elle yaz</tspan><tspan x="262" dy="15">Besin tablosu yok → miktar</tspan><tspan x="262" dy="15">kuralları &quot;Doğrulanamadı&quot;</tspan></text>
+<rect x="480" y="62" width="736" height="132" rx="10" class="excard"/>
+<text x="494" y="84" class="sh">Örnek etiket · diyagramdaki bütün örnek değerler bu pakete ait</text>
+<text x="494" y="110" class="mono"><tspan x="494" dy="0">İçindekiler: buğday unu, şeker, glikoz şurubu, bitkisel yağ (palm),</tspan><tspan x="494" dy="18">             renklendirici (E102), eser miktarda süt içerebilir.</tspan><tspan x="494" dy="18">Besin değerleri / 100 g: karbonhidrat 72 g · şekerler 48 g ·</tspan><tspan x="494" dy="18">                         doymuş yağ 9 g · tuz 0,3 g</tspan></text>
+<rect x="1240" y="62" width="240" height="190" rx="10" class="box"/>
+<circle cx="1258" cy="82" r="11" class="num"/>
+<text x="1258" y="86" class="numt" text-anchor="middle">8</text>
+<text x="1276" y="87" class="h">Sonuç ekranı</text>
+<text x="1252" y="108" class="t"><tspan x="1252" dy="0">Durum başına 4 sonuçtan biri</tspan><tspan x="1252" dy="15">Gerekçe · kaynak · kapsam ▸</tspan></text>
+<line x1="1252" y1="136" x2="1468" y2="136" class="sep"/>
+<text x="1252" y="150" class="ex"><tspan x="1252" dy="0">Çölyak: Uygun değil (buğday)</tspan><tspan x="1252" dy="15">Diyabet: şeker 48 g/100 g</tspan></text>
+<rect x="1246" y="180" width="228" height="29" rx="6" class="riskbg"/>
+<text x="1252" y="195" class="rk"><tspan x="1252" dy="0">Sunucuda hiçbir şey saklanmaz</tspan></text>
+<rect x="30" y="330" width="238" height="270" rx="10" class="box"/>
+<circle cx="48" cy="350" r="11" class="num"/>
+<text x="48" y="354" class="numt" text-anchor="middle">3</text>
+<text x="66" y="355" class="h">Böl + türle</text>
+<text x="42" y="376" class="t"><tspan x="42" dy="0">Virgül ve paranteze göre böl</tspan><tspan x="42" dy="15">&quot;E&quot; + 3 rakam → katkı kodu</tspan><tspan x="42" dy="15">Tür: kimyasal · sınıf · karışım ·</tspan><tspan x="42" dy="15">hammadde · besin · bilinmeyen</tspan></text>
+<line x1="42" y1="434" x2="256" y2="434" class="sep"/>
+<text x="42" y="448" class="ex"><tspan x="42" dy="0">E102 → tekil kimyasal</tspan><tspan x="42" dy="15">doymuş yağ → kimyasal sınıf</tspan><tspan x="42" dy="15">buğday unu → gıda hammaddesi</tspan></text>
+<rect x="36" y="493" width="226" height="44" rx="6" class="riskbg"/>
+<text x="42" y="508" class="rk"><tspan x="42" dy="0">&quot;aroma verici&quot; → tür: bilinmeyen</tspan><tspan x="42" dy="15">&quot;içerebilir&quot; → MAY_CONTAIN ayrılır</tspan></text>
+<rect x="284" y="330" width="238" height="270" rx="10" class="box"/>
+<circle cx="302" cy="350" r="11" class="num"/>
+<text x="302" y="354" class="numt" text-anchor="middle">4</text>
+<text x="320" y="355" class="h">Eşle (kimlik bul)</text>
+<text x="296" y="376" class="t"><tspan x="296" dy="0">① birebir sözlük</tspan><tspan x="296" dy="15">② bulanık eşleşme (harf farkı)</tspan><tspan x="296" dy="15">③ Qdrant: anlamca en yakın</tspan><tspan x="296" dy="15">     eşanlamlı + güven eşiği</tspan></text>
+<line x1="296" y1="434" x2="510" y2="434" class="sep"/>
+<text x="296" y="448" class="ex"><tspan x="296" dy="0">E102 → Tartrazin (①)</tspan><tspan x="296" dy="15">sarı gıda boyası → Tartrazin (③)</tspan><tspan x="296" dy="15">buğday unu → Buğday (①)</tspan></text>
+<rect x="290" y="493" width="226" height="59" rx="6" class="riskbg"/>
+<text x="296" y="508" class="rk"><tspan x="296" dy="0">Eşik altı → &quot;Doğrulanamadı&quot;</tspan><tspan x="296" dy="15">Sınıf / karışım kimyasala inmez</tspan><tspan x="296" dy="15">Aynı ad, farklı tür → tür denetimi</tspan></text>
+<rect x="538" y="330" width="238" height="270" rx="10" class="box"/>
+<circle cx="556" cy="350" r="11" class="num"/>
+<text x="556" y="354" class="numt" text-anchor="middle">5</text>
+<text x="574" y="355" class="h">Kural motoru (karar)</text>
+<text x="550" y="376" class="t"><tspan x="550" dy="0">Seçili her durum için ayrı</tspan><tspan x="550" dy="15">Varlık: içerikte var mı?</tspan><tspan x="550" dy="15">Miktar: besin tablosu değeri</tspan><tspan x="550" dy="15">Beyan: &quot;glutensiz&quot; vb. ibare</tspan></text>
+<line x1="550" y1="434" x2="764" y2="434" class="sep"/>
+<text x="550" y="448" class="ex"><tspan x="550" dy="0">çölyak × buğday → Uygun değil</tspan><tspan x="550" dy="15">diyabet × şeker 48 g → bilgi</tspan><tspan x="550" dy="15">&quot;içerebilir&quot; uyarısı → Dikkat</tspan></text>
+<rect x="544" y="493" width="226" height="59" rx="6" class="riskbg"/>
+<text x="550" y="508" class="rk"><tspan x="550" dy="0">Kural yok → &quot;Doğrulanamadı&quot;</tspan><tspan x="550" dy="15">Tuz ↔ sodyum: sodyum = tuz ÷ 2,5</tspan><tspan x="550" dy="15">İki durum farklı → ayrı ayrı göster</tspan></text>
+<rect x="792" y="330" width="238" height="270" rx="10" class="box"/>
+<circle cx="810" cy="350" r="11" class="num"/>
+<text x="810" y="354" class="numt" text-anchor="middle">6</text>
+<text x="828" y="355" class="h">Kanıt ekle (bilgi)</text>
+<text x="804" y="376" class="t"><tspan x="804" dy="0">Yalnız tekil kimyasallar için</tspan><tspan x="804" dy="15">CTD: ilişki bildiren çalışmalar</tspan><tspan x="804" dy="15">JECFA: katkı değerlendirmesi, ADI</tspan></text>
+<line x1="804" y1="419" x2="1018" y2="419" class="sep"/>
+<text x="804" y="433" class="ex"><tspan x="804" dy="0">E102: CTD ilişkileri + JECFA</tspan><tspan x="804" dy="15">→ &quot;Kaynaklar ▸&quot; altında</tspan></text>
+<rect x="798" y="463" width="226" height="59" rx="6" class="riskbg"/>
+<text x="804" y="478" class="rk"><tspan x="804" dy="0">İlişki ≠ neden → uyarı üretmez</tspan><tspan x="804" dy="15">Etikette miktar yok → ADI</tspan><tspan x="804" dy="15">hesabı yapılmaz, yalnız bilgi</tspan></text>
+<rect x="1046" y="330" width="238" height="270" rx="10" class="box"/>
+<circle cx="1064" cy="350" r="11" class="num"/>
+<text x="1064" y="354" class="numt" text-anchor="middle">7</text>
+<text x="1082" y="355" class="h">Mesajı yaz (LLM)</text>
+<text x="1058" y="376" class="t"><tspan x="1058" dy="0">Girdi: yapılandırılmış sonuç</tspan><tspan x="1058" dy="15">LLM sade Türkçe metin yazar</tspan><tspan x="1058" dy="15">Denetleyici: sonuç aynı mı,</tspan><tspan x="1058" dy="15">yasaklı kelime var mı?</tspan></text>
+<line x1="1058" y1="434" x2="1272" y2="434" class="sep"/>
+<text x="1058" y="448" class="ex"><tspan x="1058" dy="0">&quot;Buğday unu içerdiği için</tspan><tspan x="1058" dy="15"> çölyak açısından uygun değil.&quot;</tspan></text>
+<rect x="1052" y="478" width="226" height="59" rx="6" class="riskbg"/>
+<text x="1058" y="493" class="rk"><tspan x="1058" dy="0">Sonucu değiştirdi / &quot;güvenli&quot;</tspan><tspan x="1058" dy="15">yazdı → reddedilir → şablon</tspan><tspan x="1058" dy="15">LLM yanıt vermedi → şablon</tspan></text>
+<rect x="284" y="668" width="238" height="118" rx="8" class="store db"/>
+<text x="296" y="690" class="sh">concept + alias</text>
+<text x="296" y="710" class="st"><tspan x="296" dy="0">Kimlik: E-kodu, CAS, MeSH</tspan><tspan x="296" dy="15">Eşanlamlılar + ilişki türü:</tspan><tspan x="296" dy="15">SAME_AS · IS_A ·</tspan><tspan x="296" dy="15">CONTAINS · MAY_CONTAIN</tspan></text>
+<rect x="538" y="668" width="238" height="118" rx="8" class="store vec"/>
+<text x="550" y="690" class="sh">Qdrant</text>
+<text x="550" y="710" class="st"><tspan x="550" dy="0">Yalnız alias vektörleri</tspan><tspan x="550" dy="15">+ concept_id etiketi</tspan><tspan x="550" dy="15">Kapatılıp açılarak ölçülür</tspan></text>
+<rect x="792" y="668" width="238" height="118" rx="8" class="store rule"/>
+<text x="804" y="690" class="sh">condition + rule</text>
+<text x="804" y="710" class="st"><tspan x="804" dy="0">Durum başına kurallar</tspan><tspan x="804" dy="15">tür · koşul · sonuç · eksik veri</tspan><tspan x="804" dy="15">kaynak · bölüm · sürüm · 2 onay</tspan></text>
+<rect x="1046" y="668" width="238" height="118" rx="8" class="store db"/>
+<text x="1058" y="690" class="sh">evidence</text>
+<text x="1058" y="710" class="st"><tspan x="1058" dy="0">CTD / JECFA kayıtları</tspan><tspan x="1058" dy="15">ilişki türü · çalışma sayısı</tspan><tspan x="1058" dy="15">Yalnız bilgi, karar vermez</tspan></text>
+<rect x="1300" y="668" width="180" height="118" rx="8" class="store db"/>
+<text x="1312" y="690" class="sh">source</text>
+<text x="1312" y="710" class="st"><tspan x="1312" dy="0">Kaynak + lisans</tspan><tspan x="1312" dy="15">sürüm · indirme tarihi</tspan><tspan x="1312" dy="15">Kaydı olmayan</tspan><tspan x="1312" dy="15">veri girmez</tspan></text>
+<rect x="30" y="890" width="210" height="100" rx="8" class="src"/>
+<text x="40" y="910" class="sh">Türk Gıda Kodeksi</text>
+<text x="40" y="928" class="st"><tspan x="40" dy="0">E-kodları + resmî Türkçe adlar</tspan><tspan x="40" dy="15">etiketleme ve beyan kuralları</tspan></text>
+<rect x="252" y="890" width="200" height="100" rx="8" class="src"/>
+<text x="262" y="910" class="sh">OFF içerik taksonomisi</text>
+<text x="262" y="928" class="st"><tspan x="262" dy="0">Türkçe ↔ İngilizce gıda adları</tspan><tspan x="262" dy="15">(ürün kaydı değil, sözlük)</tspan></text>
+<rect x="464" y="890" width="200" height="100" rx="8" class="src"/>
+<text x="474" y="910" class="sh">CTD sözlüğü + PubChem</text>
+<text x="474" y="928" class="st"><tspan x="474" dy="0">Kimyasal adları, CAS, MeSH,</tspan><tspan x="474" dy="15">eşanlamlılar</tspan></text>
+<rect x="676" y="890" width="150" height="100" rx="8" class="src"/>
+<text x="686" y="910" class="sh">Embedding modeli</text>
+<text x="686" y="928" class="st"><tspan x="686" dy="0">Çok dilli; alias</tspan><tspan x="686" dy="15">metinleri → vektör</tspan></text>
+<rect x="838" y="890" width="230" height="100" rx="8" class="src"/>
+<text x="848" y="910" class="sh">Klinik kılavuzlar</text>
+<text x="848" y="928" class="st"><tspan x="848" dy="0">ADA 2026 / TEMD · KDIGO 2024</tspan><tspan x="848" dy="15">Gıda Kodeksi (gluten)</tspan></text>
+<rect x="1080" y="890" width="200" height="100" rx="8" class="src"/>
+<text x="1090" y="910" class="sh">CTD ilişkileri + JECFA</text>
+<text x="1090" y="928" class="st"><tspan x="1090" dy="0">kimyasal–hastalık ilişkileri</tspan><tspan x="1090" dy="15">katkı değerlendirmeleri</tspan></text>
+<rect x="1292" y="890" width="188" height="100" rx="8" class="src"/>
+<text x="1302" y="910" class="sh">Ekip denetimi</text>
+<text x="1302" y="928" class="st"><tspan x="1302" dy="0">2 kişi bağımsız onay</tspan><tspan x="1302" dy="15">lisans kaydı</tspan></text>
+<polyline points="226,157 250,157" class="ln flow" marker-end="url(#m-flow)"/>
+<polyline points="353,252 353,300 149,300 149,330" class="ln flow" marker-end="url(#m-flow)"/>
+<text x="362" y="294" class="al flowt" text-anchor="start">metin + besin değerleri + profil (HTTPS)</text>
+<polyline points="268,351 284,351" class="ln flow" marker-end="url(#m-flow)"/>
+<polyline points="522,351 538,351" class="ln flow" marker-end="url(#m-flow)"/>
+<polyline points="776,351 792,351" class="ln flow" marker-end="url(#m-flow)"/>
+<polyline points="1030,351 1046,351" class="ln flow" marker-end="url(#m-flow)"/>
+<polyline points="1284,351 1360,351 1360,252" class="ln flow" marker-end="url(#m-flow)"/>
+<text x="1368" y="296" class="al flowt" text-anchor="start">mesaj + gerekçe</text>
+<polyline points="360,600 360,668" class="ln data" marker-end="url(#m-data)"/>
+<text x="366" y="640" class="al datat" text-anchor="start">okur</text>
+<polyline points="480,600 480,632 657,632 657,668" class="ln data" marker-end="url(#m-data)"/>
+<text x="560" y="626" class="al datat" text-anchor="start">③ benzer alias</text>
+<polyline points="911,600 911,668" class="ln data" marker-end="url(#m-data)"/>
+<text x="917" y="640" class="al datat" text-anchor="start">kuralları okur</text>
+<polyline points="1165,600 1165,668" class="ln data" marker-end="url(#m-data)"/>
+<text x="1171" y="640" class="al datat" text-anchor="start">okur</text>
+<polyline points="135,890 135,866 403,866 403,786" class="ln prep" marker-end="url(#m-prep)"/>
+<text x="412" y="860" class="al prept" text-anchor="start">içe aktar + 2 onay</text>
+<polyline points="352,890 352,866" class="ln prep" marker-end="url(#m-prep)"/>
+<polyline points="564,890 564,866 403,866" class="ln prep" marker-end="url(#m-prep)"/>
+<polyline points="522,728 538,728" class="ln prep" marker-end="url(#m-prep)"/>
+<polyline points="751,890 751,846 657,846 657,786" class="ln prep" marker-end="url(#m-prep)"/>
+<text x="666" y="840" class="al prept" text-anchor="start">vektöre çevir</text>
+<polyline points="953,890 953,866 911,866 911,786" class="ln prep" marker-end="url(#m-prep)"/>
+<text x="920" y="860" class="al prept" text-anchor="start">kurala çevir + 2 onay</text>
+<polyline points="1180,890 1180,866 1165,866 1165,786" class="ln prep" marker-end="url(#m-prep)"/>
+<text x="1188" y="860" class="al prept" text-anchor="start">seçili maddeler</text>
+<polyline points="1386,890 1386,786" class="ln prep" marker-end="url(#m-prep)"/>
+<text x="1394" y="860" class="al prept" text-anchor="start">kaydeder</text>
+</g>
+      </svg>
+    </div>
+    <figcaption>Kararı yalnız 5. adım (kural tablosu) verir. Qdrant yalnız kelimeyi tanımaya yardım eder, CTD/JECFA yalnız bilgi ekler, LLM yalnız mesajı yazar ve denetlenir. Emin olunmayan her yerde sonuç "Doğrulanamadı".</figcaption>
+  </figure>
+  <p class="say"><b>60 saniyede anlatım.</b> Kullanıcı sağlık durumlarını seçip paketin arkasının fotoğrafını çeker; metin telefonda okunur ve gerekirse düzeltilir. Servis listeyi parçalara ayırır ve her parçanın türünü belirler: tek bir madde mi, sınıf mı, karışım mı, hammadde mi, besin değeri mi. Sonra her parçayı önce sözlükte birebir, sonra harf benzerliğiyle, en son Qdrant'ta anlam yakınlığıyla bir kimliğe bağlar; emin değilse "Doğrulanamadı" der. Kimliği belli parçalar kural tablosuna gider: çölyakta buğday varsa "Uygun değil", diyabette şeker miktarı besin tablosundan okunur. Tek maddeler için CTD ve JECFA'dan bilgi eklenir ama uyarı üretmez. LLM sonucu sade Türkçeye çevirir; sonucu değiştirirse ya da yanıt vermezse şablon metin gösterilir. Bilgi tabanını ekip önceden doldurur: Gıda Kodeksi, OFF taksonomisi ve CTD sözlüğünden eşanlamlılar, klinik kılavuzlardan iki kişi onaylı kurallar.</p>
+</div>
