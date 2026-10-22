@@ -16,6 +16,9 @@ def normalize(text: str) -> str:
     s = re.sub(r"[(\[]\s*[)\]]", " ", s)          # parentheses left empty after removing a percentage
     s = re.sub(r"[\"'“”‘’*•·_]", " ", s)
     s = re.sub(r"\s+", " ", s)
+    if s.count("(") != s.count(")"):          # leftovers of a broken parenthesis: "su)" → "su"
+        s = s.replace("(", " ").replace(")", " ")
+        s = re.sub(r"\s+", " ", s)
     return s.strip(" .;:-")
 
 
@@ -58,6 +61,11 @@ def _mentions_from_list(text: str, kind: str, parent: str = ""):
     for item in _split_top(text):
         m = re.match(r"^(.*?)\s*[(\[](.*)[)\]]\s*$", item)
         head, inner = (m.group(1), m.group(2)) if m else (item, "")
+        if not inner and ":" in head:              # "emülgatör: lesitin" → class: member
+            head, inner = head.split(":", 1)
+        c = re.match(r"^(.+?)\s+içerir$", normalize(head))
+        if c and not inner:                        # allergen statement "gluten içerir" → the substance itself
+            head = c.group(1)
         if not head.strip() and inner:          # "(E102)" alone
             head, inner = inner, ""
         mention = Mention(raw=head.strip(), norm=normalize(head), kind=kind, parent=parent)

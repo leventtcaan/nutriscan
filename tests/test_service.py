@@ -34,6 +34,10 @@ class TextTests(unittest.TestCase):
         self.assertEqual([m.norm for m in mentions], ["mısır unu", "tuz"])
         self.assertIn("glutensiz", full)
 
+    def test_class_colon_member(self):
+        mentions, _, _ = split_label("İçindekiler: emülgatör: lesitin, şeker.")
+        self.assertEqual(mentions[0].children[0].norm, "lesitin")
+
     def test_may_contain_is_separated(self):
         mentions, may, _ = split_label("İçindekiler: şeker. Eser miktarda süt ve fındık içerebilir.")
         self.assertEqual([m.norm for m in may], ["süt", "fındık"])
@@ -42,6 +46,9 @@ class TextTests(unittest.TestCase):
 class RuleTests(unittest.TestCase):
     def test_wheat_flour_is_gluten_through_is_a_chain(self):
         self.assertEqual(run("İçindekiler: buğday unu, şeker.")["colyak"]["sonuc"], "Uygun değil")
+
+    def test_gluten_statement_triggers_coeliac_rule(self):
+        self.assertEqual(run("İçindekiler: mısır nişastası, şeker. Gluten içerir.")["colyak"]["sonuc"], "Uygun değil")
 
     def test_glucose_syrup_alone_is_not_gluten(self):   # Reg. (EU) 1169/2011 Annex II exemption
         self.assertNotEqual(run("İçindekiler: glikoz şurubu, şeker.")["colyak"]["sonuc"], "Uygun değil")

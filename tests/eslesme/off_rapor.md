@@ -1,8 +1,8 @@
 # Eşleme ve kural raporu — 60 etiket
 
-Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü: 39 · bulanık: 28 · fonksiyon adı: 0 · **tanınmayan: 238** (%26)
+Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü: 44 · bulanık: 28 · fonksiyon adı: 0 · **tanınmayan: 223** (%25)
 
-**Tanınmayan ifadeler (Türkçeleştirme listesi):** süt ürünü ×7, gluten içerir ×6, vitaminler ×4, b12 ×4, pamuk ×4, b2 ×3, siyanokobalamin ×3, ergokalsiferol ×3, emülgatör: lesitin ×3, şeker (s) veya fruktoz-glukoz şurubu (f) ×2, portakal pulpu ×2, ağaç reçinesinin gliserol esterleri ×2, yumurta beyazı tozu ×2, hindistan cevizi sütü ×2, ) (hindistan cevizi kreması, su ×2, yağ asitlerinin mono ve digliseritlerinin mono ve diasetil tartarik asit esterleri ×2, kakao kuru maddesi en az dur ×2, laktik asit ×2, gofret yaprağı ×2, 98 mg/l ×2, yumurta akı tozu ×2, karnauba mumu ×2, şeker veya fruktoz-glikoz şurubu, portakal suyu konsantresi, yulaf karışımı, buğda veya mısırdan, kakao kitle peynir altı suyu permeati, palm ya tuz, doğal hindistancevizi aroması, d2, tam tahıllı çavdar unu, bitter çikolata kapli seu dolgulu kek içindekiler: pastorize edilmiş süt, emulgator: lesitin, bitter çikolatada kakao kuru maddesi minimum, ürünlerimizde domuz yağı ve katkıları yoktur, doğal maden suyu, toz krema, lesitin soya, vanilya ekstraktı, keçiboynuzu gamı, dl-alfa-tokoferil asetat, çıtır kadayıf parçacıkları, 4) [ buğday unu , şeker, amonyum fosfatitler, spirulina ekstraktı, doğal limon aroma vericileri, tam hidrojenize palm, palm çekirdeği) fındık püresi (, patates unu, yoğurt aromalı ve mevsim yeşillikli çeşni, ) [ peynir altı suyu tozu , şeker, tuz, sarımsak tozu , soğan tozu , aroma vericiler, asitlik düzenleyici (sitrik asit), ekşi maya, sade yağ ( süt ), bitkisel yağ (ayçiçek), dereotu , maydanoz, buğday kepeği, susam tohumu, 100 g ürün içindeki g miktarı, öğütülmüş kahve, bicarbonate 2470 mg/l phosphorus 0.9 mg/l sulfate 21.99 mg/l clorine 135.39 mg/l calcium 49.58 mg/l magnesium 16.57 mg/dl sodium 776.02 mg/l ıron 19.24 pg/l potassium 10.86 mg/l, çiğ iç fındık, the küçük couldans, pair, aroma ene vericiler, süt içerir, en cheese crackers, ıngredients: wheat flour, contain milk, may contain traces of egg, sesame and hazelnuts bir paket yaklaşık 5 porsiyondur./ one pack is about 5 portions, tuz se lif pro, kakaolu krema, kakao kuru maddesi en az tür, gıda sanayi tuzu, aroma vericiler (tereyağı, vanilya), buğday unu (gluten içerir), gliserol, yağ asitlerinin poligliserol esterleri, modifiye patates nişastası, koruyucu (potasyum sorbat, portakal jölesi, modifiye pirinç nişastası, renklendirici (beta karoten, ) [şeker, kakao kitlesi, kakao yağı, kakao tozu, emülgatör (ayçiçek lesitini), aroma verici, kakao kuru maddesi içermektedir, ) kaplı karamel (, kızartılmış yerfıstığı, ) ve nuga (, içindekiler: şeker, buğday veya mısırdan, peynir altı suyu permeati, sütlü çikolatadaki kakao kuru maddesi en az tir, domuz yağı içermez sütlü çikolata kakao yağına ek olarak bitkisel yağ da içermektedir, yağlı inek sütü, albümin, buğday proteini, ay çekirdeği, ıcindekiler: su, renklendird, asitlik düzenleyici ffosforik asit), maks, 150 g/1, enerji ve besin ojeleri (100 ml için): enerji: 180 kj/42 kcal, yağ: og, doymus 9, tuz: 0.1 kutu için (330 ml): enerji: 594 kj/139 kcal yağ:0 g, doymuş yağ: 0 g, karbonhidrat:35g, sekerler:35 9, protein: 0 g, tuz: 0 g, 1 kutu için (330ml) %ra : ener, doymuş yağ, karbonhidrat: % şekerler, ortalama bi yetişkinin referans alım (ra) değeri (8400 kj/2000 kcall, değişen miktarlarda ayçiçek, yoğurt tozu, kalsiyum disodyum edta, ürünlerimizin hiçbir çeşidinde domuz yağı ve katkıları yoktur, pastörize yumurta, malt ekstraktı, arpa ürünü, kepek, mono ve digliseritlerin diasetil tartarik asit esterleri, kakao kuru maddesi en az dir, karamelize şeker şurubu, kola aroma verici, pı gercek yaşam gerçek lezzet doğal 100 net: 1l e yağlı süt pinat, pastörize inek milk, kefir mayası, kefir kültürü, semi skimmed uht milk, konsantreden elde edilen meyve suyu, mandalina suyu, doğal aroma verici maddeler, meyve suyu oranı en az, kurutulmuş patates, palmiye yağı, mısır kaynaklı, amonyum sülfıt karamel, fosforık asıt, doğal, kafeın, 1 g/l, acılı ketçap içindekiler: su, domates salçası, şeker (s) veya glikoz-fruktoz şurubu (g), acı biber ekstraktı, &quot, kullanılan şeker veya glikoz-fruktoz şurubu ambalaj üzerine kodlanmıştır, bu ürün hardal içeren ürünler ile aynı hatta üretilmiştir, tavsiye edilen tüketim tarihi (tett) ve parti/seri no (sn) ambalajın üzerindedir, şişmiş ve sızıntılı ambalajları satın almayınız, serin ve kuru yerde muhafaza ediniz, güneş ışığından koruyunuz, açıldıktan sonra buzdolabında saklayınız, enerji ve besin öğeleri 100 g için enerji (kj/kcal) 396/96 yağ (g) 0, 1 - doymuş yağ (g) 0, 0 karbonhidrat (g) 22, 4 - şekerler (g) 17, 4 lif 1, 0 protein (g) 1, 0 tuz (g) 2, 0 gıda işletmecisi: bim birleşik mağazalar a.ş, abdurrahmangazi mah, ebubekir cad, no: 73 sancaktepe/istanbul bu ürün (khc turkey gıda sanayi a.ş, tarafından) bım birleşik mağazalar a.ş, adına üretilmiştir, üretici adresi: kepekler mah, sivritepe mevkii, susurluk/balıkesir işletme kayıt no: tr-10-k-000054 üretici tel no: (0266) 864 14 15, karmelize şeker şurubu, çeşidine göre doğal meyve ve bitki konsantreleri, mürver, siyah kuşüzümü, kırmızı kuşüzümü, kırmızı üzüm, mürver ekstraktı, dost tam yağlı homojenize yoğurt içindekiler: pastörize inek sütü, yoğurt kültürü, son tüketim tarihi (stt) ve parti no (p) ambalaj üzerinde olup, son tüketim tarihine kadar tüketilmelidir, buzdolabında (+4°c de) saklayınız, homojenize edildiğinden yağı üzerinde birikmez, hardal içerir, fındık kreması, maya ekstraktı, toz şeker, kakao alerjen uyarısı: fındık, süt tozu içerir, trans yağ içermez, ürünümüz domuz yağı ve katkılarını içermez, ürünümüz yüksek oranda fındık içermesi ve emülgatör kullanılmaması sebebiyle çabuk yağlanacaktır, lütfen karıştırarak tüketiniz, susam ezmesi, keçiboynuzu unu, domates püresi, bitki özütleri, çinko laktat, manolya kabuğu ekstraktı, aspir çiçeği konsantresi
+**Tanınmayan ifadeler (Türkçeleştirme listesi):** vitaminler ×4, b12 ×4, pamuk ×4, b2 ×3, siyanokobalamin ×3, ergokalsiferol ×3, emülgatör: lesitin ×3, şeker (s) veya fruktoz-glukoz şurubu (f) ×2, ağaç reçinesinin gliserol esterleri ×2, yumurta beyazı tozu ×2, hindistan cevizi sütü ×2, ) (hindistan cevizi kreması, su ×2, yağ asitlerinin mono ve digliseritlerinin mono ve diasetil tartarik asit esterleri ×2, kakao kuru maddesi en az dur ×2, laktik asit ×2, gofret yaprağı ×2, 98 mg/l ×2, enerji ×2, doymuş yağ ×2, karbonhidrat ×2, karnauba mumu ×2, şeker veya fruktoz-glikoz şurubu, portakal pulpu, portakal suyu konsantresi, yulaf karışımı, buğda veya mısırdan, kakao kitle peynir altı suyu permeati, palm ya tuz, doğal hindistancevizi aroması, d2, tam tahıllı çavdar unu, bitter çikolata kapli seu dolgulu kek içindekiler: pastorize edilmiş süt, emulgator: lesitin, bitter çikolatada kakao kuru maddesi minimum, ürünlerimizde domuz yağı ve katkıları yoktur, doğal maden suyu, toz krema, lesitin soya, vanilya ekstraktı, keçiboynuzu gamı, dl-alfa-tokoferil asetat, çıtır kadayıf parçacıkları, 4 [ buğday unu , şeker, amonyum fosfatitler, spirulina ekstraktı, doğal limon aroma vericileri, tam hidrojenize palm, palm çekirdeği) fındık püresi (, patates unu, yoğurt aromalı ve mevsim yeşillikli çeşni, [ peynir altı suyu tozu , şeker, tuz, sarımsak tozu , soğan tozu , aroma vericiler, asitlik düzenleyici sitrik asit , ekşi maya, sade yağ süt , bitkisel yağ ayçiçek , dereotu , maydanoz, buğday kepeği, susam tohumu, 100 g ürün içindeki g miktarı, öğütülmüş kahve, bicarbonate 2470 mg/l phosphorus 0.9 mg/l sulfate 21.99 mg/l clorine 135.39 mg/l calcium 49.58 mg/l magnesium 16.57 mg/dl sodium 776.02 mg/l ıron 19.24 pg/l potassium 10.86 mg/l, çiğ iç fındık, the küçük couldans, pair, aroma ene vericiler, en cheese crackers, ıngredients, contain milk, may contain traces of egg, sesame and hazelnuts bir paket yaklaşık 5 porsiyondur./ one pack is about 5 portions, tuz se lif pro, kakaolu krema, kakao kuru maddesi en az tür, gıda sanayi tuzu, aroma vericiler (tereyağı, vanilya), portakal jölesi, [şeker, kakao kitlesi, kakao yağı, kakao tozu, emülgatör ayçiçek lesitini , aroma verici, kakao kuru maddesi içermektedir, ) kaplı karamel (, kızartılmış yerfıstığı, ) ve nuga (, içindekiler, buğday veya mısırdan, peynir altı suyu permeati, sütlü çikolatadaki kakao kuru maddesi en az tir, domuz yağı içermez sütlü çikolata kakao yağına ek olarak bitkisel yağ da içermektedir, yağlı inek sütü, albümin, buğday proteini, ay çekirdeği, ıcindekiler, renklendird, asitlik düzenleyici ffosforik asit, maks, 150 g/1, enerji ve besin ojeleri (100 ml için), 180 kj/42 kcal, og, doymus 9, 0.1 kutu için (330 ml), 594 kj/139 kcal yağ, sekerler, 1 kutu için (330ml) %ra, ener, % şekerler, ortalama bi yetişkinin referans alım ra değeri 8400 kj/2000 kcall, değişen miktarlarda ayçiçek, yoğurt tozu, kalsiyum disodyum edta, ürünlerimizin hiçbir çeşidinde domuz yağı ve katkıları yoktur, pastörize yumurta, malt ekstraktı, arpa ürünü, kepek, mono ve digliseritlerin diasetil tartarik asit esterleri, kakao kuru maddesi en az dir, karamelize şeker şurubu, kola aroma verici, pı gercek yaşam gerçek lezzet doğal 100 net, 1l e yağlı süt pinat, pastörize inek milk, kefir mayası, kefir kültürü, semi skimmed uht milk, konsantreden elde edilen meyve suyu, mandalina suyu, doğal aroma verici maddeler, meyve suyu oranı en az, kurutulmuş patates, palmiye yağı, mısır kaynaklı, amonyum sülfıt karamel, fosforık asıt, doğal, kafeın, 1 g/l, acılı ketçap içindekiler, domates salçası, şeker (s) veya glikoz-fruktoz şurubu (g), acı biber ekstraktı, &quot, kullanılan şeker veya glikoz-fruktoz şurubu ambalaj üzerine kodlanmıştır, bu ürün hardal içeren ürünler ile aynı hatta üretilmiştir, tavsiye edilen tüketim tarihi (tett) ve parti/seri no (sn) ambalajın üzerindedir, şişmiş ve sızıntılı ambalajları satın almayınız, serin ve kuru yerde muhafaza ediniz, güneş ışığından koruyunuz, açıldıktan sonra buzdolabında saklayınız, enerji ve besin öğeleri 100 g için enerji (kj/kcal) 396/96 yağ (g) 0, 1 - doymuş yağ (g) 0, 0 karbonhidrat (g) 22, 4 - şekerler (g) 17, 4 lif 1, 0 protein (g) 1, 0 tuz (g) 2, 0 gıda işletmecisi, bim birleşik mağazalar a.ş, abdurrahmangazi mah, ebubekir cad, no, 73 sancaktepe/istanbul bu ürün (khc turkey gıda sanayi a.ş, tarafından) bım birleşik mağazalar a.ş, adına üretilmiştir, üretici adresi, kepekler mah, sivritepe mevkii, susurluk/balıkesir işletme kayıt no, tr-10-k-000054 üretici tel no, karmelize şeker şurubu, çeşidine göre doğal meyve ve bitki konsantreleri, mürver, siyah kuşüzümü, kırmızı kuşüzümü, kırmızı üzüm, mürver ekstraktı, dost tam yağlı homojenize yoğurt içindekiler, pastörize inek sütü, yoğurt kültürü, son tüketim tarihi (stt) ve parti no (p) ambalaj üzerinde olup, son tüketim tarihine kadar tüketilmelidir, buzdolabında (+4°c de) saklayınız, homojenize edildiğinden yağı üzerinde birikmez, fındık kreması, maya ekstraktı, toz şeker, kakao alerjen uyarısı, trans yağ içermez, ürünümüz domuz yağı ve katkılarını içermez, ürünümüz yüksek oranda fındık içermesi ve emülgatör kullanılmaması sebebiyle çabuk yağlanacaktır, lütfen karıştırarak tüketiniz, susam ezmesi, keçiboynuzu unu, yumurta akı tozu, domates püresi, bitki özütleri, çinko laktat, manolya kabuğu ekstraktı, aspir çiçeği konsantresi
 
 ## Coca-Cola Gazlı İçecek 1 L
 
@@ -80,7 +80,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: yulaf) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: yulaf) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 0.0 g / 100 ml (≤ 0.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.04 g / 100 ml (≤ 0.04); -: tanınmayan içerik: Yulaf karışımı, vitaminler, B2, B12, Siyanokobalamin, Ergokalsiferol | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 
@@ -134,7 +134,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: yulaf) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: yulaf) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 3.1 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.04 g / 100 ml (≤ 0.04); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: trikalsiyum fosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
 
@@ -294,7 +294,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: buğday unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: buğday unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 33.1 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.102 g / 100 g (≤ 0.12); -: tanınmayan içerik: Bitter Çikolata Kapli Seu Dolgulu Kek İçindekiler: Pastorize edilmiş süt, emulgator: lesitin, Bitter çikolatada kakao kuru maddesi minimum %35, Ürünlerimizde domuz yağı ve katkıları yoktur | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 
@@ -339,7 +339,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: Buğday unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: Buğday unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Doğrulanamadı** | DM-02: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: disodyum difosfat); CKD-03: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
 
@@ -477,17 +477,17 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | Etiketteki ifade | Eşleşen kavram | Yöntem |
 |---|---|---|
 | _Yulaf_ ezmesi | tahıl ezmesi `en:oat-flakes` | exact |
-| _Gluten_ içerir | — `` | unknown |
+| gluten | glüten `en:gluten` | exact |
 | fındık *(içerebilir)* | fındık `en:hazelnut` | exact |
-| süt ürünü *(içerebilir)* | — `` | unknown |
+| süt ürünü *(içerebilir)* | Mandıra ürünü `en:dairy` | exact |
 | yer fıstığı *(içerebilir)* | yer fıstığı `en:peanut` | exact |
 | yumurta *(içerebilir)* | yumurta `en:egg` | exact |
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: _Yulaf_ ezmesi) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: _Yulaf_ ezmesi, gluten) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 1.33333333333333 g / 100 ml (≤ 2.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
-| Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.008 g / 100 ml (≤ 0.04); -: tanınmayan içerik: _Gluten_ içerir | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Kronik böbrek hastalığı | **Engel bulunmadı** | CKD-01: sodyum 0.008 g / 100 ml (≤ 0.04) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 
 ## ülker çikolata
 
@@ -510,7 +510,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: Buğday unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: Buğday unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 38.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.104 g / 100 g (≤ 0.12); -: tanınmayan içerik: tam hidrojenize palm, palm çekirdeği) fındık püresi (%10 | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 
@@ -553,7 +553,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: *Buğday unu*, *tam buğday unu*, *buğday gluteni*, yulaf ezmesi) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: *Buğday unu*, *tam buğday unu*, *buğday gluteni*, yulaf ezmesi) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 4.6 g / 100 g (≤ 5.0) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.92 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: disodyum difosfat, trikalsiyum fosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
 
@@ -575,7 +575,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: _Buğday_ unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: _Buğday_ unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 2.0 g / 100 ml (≤ 2.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.445 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 
@@ -626,7 +626,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Çölyak | **Dikkat** | CEL-02: Etikette gluten içeren tahıl için 'içerebilir' uyarısı var (içerebilir: gluten) | Reg. (EU) 1169/2011 Ek II madde 1; ekip kararı (belirsizlik riski artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 3.1 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 2.36 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 
@@ -648,14 +648,15 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | invert şeker şurubu | invert sugar syrup `en:invert-sugar-syrup` | exact |
 | şeker | Şeker `en:sugar` | exact |
 | aroma Ene vericiler | — `` | unknown |
-| süt içerir | — `` | unknown |
+| süt | Süt `en:milk` | exact |
 | yağsız süttozu | yağsız süt tozu `en:skimmed-milk-powder` | fuzzy (0.966) |
 | peynir tozu | cheese powder `en:cheese-powder` | exact |
 | 2 | — `` | noise |
 | un işlem maddesi | Flour treatment agent `en:flour-treatment-agent` | exact |
 | sodyum metabisülfit | Sodyum metabisulfit `E223` | exact |
 | EN Cheese Crackers | — `` | unknown |
-| Ingredients: Wheat flour | — `` | unknown |
+| Ingredients | — `` | unknown |
+| Wheat flour | buğday unu `en:wheat-flour` | exact |
 | vegetable fat | vegetable fat `en:vegetable-fat` | exact |
 | palm | palm `en:palm` | exact |
 | raising agents | Kabartma ajanı `en:raising-agent` | fuzzy (0.963) |
@@ -684,7 +685,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: Buğday unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: Buğday unu, Wheat flour) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 7.3 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 1.2 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: disodyum difosfat, disodium diphosphate) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
 
@@ -706,7 +707,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | Yağı Azaltılmış Kakao Tozu %8 | fat reduced cocoa powder `en:fat-reduced-cocoa-powder` | exact |
 | 6 | — `` | noise |
 | Peynir Altı Suyu Tozu | peynir altı suyu tozu `en:whey-powder` | exact |
-| *Süt Ürünü* | — `` | unknown |
+| *Süt Ürünü* | Mandıra ürünü `en:dairy` | exact |
 | Kakao Kitlesi | kakao kitlesi `en:cocoa-paste` | exact |
 | Emülgatör | Emulsifier `en:emulsifier` | exact |
 | Ayçiçek Lesitini | sunflower lecithin `en:sunflower-lecithin` | exact |
@@ -720,7 +721,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | Bitkisel Yağ | Bitkisel yağ `en:vegetable-oil` | exact |
 | Palm | palm `en:palm` | exact |
 | Tereyağı | tereyağı `en:butter` | exact |
-| *Süt Ürünü* | — `` | unknown |
+| *Süt Ürünü* | Mandıra ürünü `en:dairy` | exact |
 | Yağı Azaltılmış Kakao Tozu | fat reduced cocoa powder `en:fat-reduced-cocoa-powder` | exact |
 | Kakao Yağı | kakao yağı `en:cocoa-butter` | exact |
 | Emülgatör | Emulsifier `en:emulsifier` | exact |
@@ -732,7 +733,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | Gofret Yaprağı %7 | — `` | unknown |
 | 4 | — `` | noise |
 | *Buğday Unu* | buğday unu `en:wheat-flour` | exact |
-| Gluten içerir | — `` | unknown |
+| gluten | glüten `en:gluten` | exact |
 | Patates Nişastası | potato starch `en:potato-starch` | exact |
 | Hindistan Cevizi Yağı | Hindistan cevizi yağı `en:coconut-oil` | exact |
 | Emülgatör | Emulsifier `en:emulsifier` | exact |
@@ -745,7 +746,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: *Buğday Unu*) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: *Buğday Unu*, gluten) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 35.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.2 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: Sodyum Asit Pirofosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
 
@@ -780,7 +781,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | Etiketteki ifade | Eşleşen kavram | Yöntem |
 |---|---|---|
 | Buğday unu | buğday unu `en:wheat-flour` | exact |
-| Gluten İçerir. | — `` | unknown |
+| gluten | glüten `en:gluten` | exact |
 | Bitkisel Yağ | Bitkisel yağ `en:vegetable-oil` | exact |
 | Palm | palm `en:palm` | exact |
 | Beyaz Şeker | beyaz şeker `en:white-sugar` | exact |
@@ -802,7 +803,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: Buğday unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: Buğday unu, gluten) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 24.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.28 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: Sodyum Asit Piro Fosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
 
@@ -813,45 +814,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | Etiketteki ifade | Eşleşen kavram | Yöntem |
 |---|---|---|
 | Kek | Kek `en:cake` | exact |
-| %35) | — `` | noise |
-| *Buğday unu (gluten içerir)* | — `` | unknown |
-| şeker | Şeker `en:sugar` | exact |
-| bitkisel yağ | Bitkisel yağ `en:vegetable-oil` | exact |
-| palm | palm `en:palm` | exact |
-| buğday nişastası | wheat starch `en:wheat-starch` | exact |
-| nem verici | Humectant `en:humectant` | exact |
-| sorbitol | Sorbitol `E420` | exact |
-| gliserol | — `` | unknown |
-| glukoz şurubu | glikoz şurubu `en:glucose-syrup` | exact |
-| *yumurta* | yumurta `en:egg` | exact |
-| yumurta akı tozu | — `` | unknown |
-| emülgatör | Emulsifier `en:emulsifier` | exact |
-| yağ asitlerinin poligliserol esterleri | — `` | unknown |
-| yağ asitlerinin mono ve digliseritleri | Mono- and diglycerides of fatty acids `E471` | exact |
-| kabartıcı | Kabartma ajanı `en:raising-agent` | exact |
-| amonyum bikarbonat | Ammonium carbonates `E503` | exact |
-| sodyum asit pirofosfat | Difosfat `E450` | exact |
-| sodyum bikarbonat | Sodium carbonates `E500` | exact |
-| yağsız *süt tozu* | yağsız süt tozu `en:skimmed-milk-powder` | exact |
-| modifiye patates nişastası | — `` | unknown |
-| tuz | tuz `en:salt` | exact |
-| aroma verici | flavouring `en:flavouring` | exact |
-| koruyucu (potasyum sorbat | — `` | unknown |
 | Portakal Jölesi | — `` | unknown |
-| %33) | — `` | noise |
-| glukoz şurubu | glikoz şurubu `en:glucose-syrup` | exact |
-| şeker | Şeker `en:sugar` | exact |
-| portakal pulpu | — `` | unknown |
-| glukoz-fruktoz şurubu | glucose-fructose syrup `en:glucose-fructose-syrup` | exact |
-| nem verici | Humectant `en:humectant` | exact |
-| sorbitol | Sorbitol `E420` | exact |
-| kıvam arttırıcı | Thickener `en:thickener` | exact |
-| pektin | Pektin `E440` | exact |
-| modifiye pirinç nişastası | — `` | unknown |
-| aroma verici | flavouring `en:flavouring` | exact |
-| asitlik düzenleyici | Acidity regulator `en:acidity-regulator` | exact |
-| sitrik asit | sitrik asit `E330` | exact |
-| renklendirici (beta karoten | — `` | unknown |
 | Bitter Çikolata | bitter çikolata `en:dark-chocolate` | exact |
 | %32) [şeker, kakao kitlesi, kakao yağı, kakao tozu, emülgatör (ayçiçek lesitini), aroma verici | — `` | unknown |
 | Bitter çikolata min | bitter çikolata `en:dark-chocolate` | fuzzy (0.882) |
@@ -861,7 +824,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 |---|---|---|---|
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 44.6 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
-| Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.16 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: sodyum asit pirofosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.16 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 
 ## 2 Snickers
 
@@ -873,7 +836,8 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | 35%) Kaplı Karamel (28% | — `` | unknown |
 | Kızartılmış Yerfıstığı | — `` | unknown |
 | 22%) ve Nuga (14% | — `` | unknown |
-| İçindekiler: şeker | — `` | unknown |
+| İçindekiler | — `` | unknown |
+| şeker | Şeker `en:sugar` | exact |
 | glikoz şurubu | glikoz şurubu `en:glucose-syrup` | exact |
 | buğday veya mısırdan | — `` | unknown |
 | yer fıstığı | yer fıstığı `en:peanut` | exact |
@@ -942,13 +906,13 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | Etiketteki ifade | Eşleşen kavram | Yöntem |
 |---|---|---|
 | *Yulaf ezmesi* | tahıl ezmesi `en:oat-flakes` | exact |
-| gluten içerir | — `` | unknown |
+| gluten | glüten `en:gluten` | exact |
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: *Yulaf ezmesi*) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: *Yulaf ezmesi*, gluten) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 1.3 g / 100 ml (≤ 2.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
-| Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.008 g / 100 ml (≤ 0.04); -: tanınmayan içerik: gluten içerir | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Kronik böbrek hastalığı | **Engel bulunmadı** | CKD-01: sodyum 0.008 g / 100 ml (≤ 0.04) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 
 ## Rulokat Fındıklı Kremalı Rulo Gofret
 
@@ -977,7 +941,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: _buğday_ unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: _buğday_ unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 42.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.152 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 
@@ -1010,7 +974,8 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Etiketteki ifade | Eşleşen kavram | Yöntem |
 |---|---|---|
-| Icindekiler: Su | — `` | unknown |
+| Icindekiler | — `` | unknown |
+| Su | Su `en:water` | exact |
 | şeker | Şeker `en:sugar` | exact |
 | karbondioksit | Karbondioksit `E290` | exact |
 | renklendird | — `` | unknown |
@@ -1021,21 +986,35 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | maks | — `` | unknown |
 | 0 | — `` | noise |
 | 150 g/1 | — `` | unknown |
-| Enerji ve Besin Ojeleri (100 ml için): Enerji: 180 kJ/42 kcal | — `` | unknown |
-| Yağ: Og | — `` | unknown |
+| Enerji ve Besin Ojeleri (100 ml için) | — `` | unknown |
+| Enerji | — `` | unknown |
+| 180 kJ/42 kcal | — `` | unknown |
+| Yağ | yağ `en:oil` | exact |
+| Og | — `` | unknown |
 | Doymus 9 | — `` | unknown |
-| Tuz: 0.1 kutu için (330 ml): Enerji: 594 kJ/139 kcal Yağ:0 g | — `` | unknown |
-| Doymuş yağ: 0 g | — `` | unknown |
-| Karbonhidrat:35g | — `` | unknown |
-| Sekerler:35 9 | — `` | unknown |
-| Protein: 0 g | — `` | unknown |
-| Tuz: 0 g | — `` | unknown |
-| 1 kutu için (330ml) %RA*: Ener %7 | — `` | unknown |
-| Yağ: %0 | yağ `en:oil` | exact |
-| Doymuş yağ: %0 | — `` | unknown |
-| Karbonhidrat: % Şekerler: %39 | — `` | unknown |
-| Protein: %0 | Protein `en:protein` | exact |
-| Tuz: %0 | tuz `en:salt` | exact |
+| Tuz | tuz `en:salt` | exact |
+| 0.1 kutu için (330 ml) | — `` | unknown |
+| Enerji | — `` | unknown |
+| 594 kJ/139 kcal Yağ | — `` | unknown |
+| 0 g | — `` | noise |
+| Doymuş yağ | — `` | unknown |
+| 0 g | — `` | noise |
+| Karbonhidrat | — `` | unknown |
+| 35g | — `` | noise |
+| Sekerler | — `` | unknown |
+| 35 9 | — `` | noise |
+| Protein | Protein `en:protein` | exact |
+| 0 g | — `` | noise |
+| Tuz | tuz `en:salt` | exact |
+| 0 g | — `` | noise |
+| 1 kutu için (330ml) %RA* | — `` | unknown |
+| Ener %7 | — `` | unknown |
+| Yağ | yağ `en:oil` | exact |
+| Doymuş yağ | — `` | unknown |
+| Karbonhidrat | — `` | unknown |
+| % Şekerler | — `` | unknown |
+| Protein | Protein `en:protein` | exact |
+| Tuz | tuz `en:salt` | exact |
 | *Ortalama bi yetişkinin referans alım (RA) değeri (8400 kJ/2000 kcall | — `` | unknown |
 
 | Durum | Sonuç | Neden | Kaynak |
@@ -1059,10 +1038,10 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | yumurta sansı | Yumurta sarısı `en:egg-yolk` | fuzzy (0.889) |
 | tuz | tuz `en:salt` | exact |
 | peynir tozu | cheese powder `en:cheese-powder` | exact |
-| süt ürünü | — `` | unknown |
+| süt ürünü | Mandıra ürünü `en:dairy` | exact |
 | sirke | sirke `en:vinegar` | exact |
 | yoğurt tozu | — `` | unknown |
-| süt ürünü | — `` | unknown |
+| süt ürünü | Mandıra ürünü `en:dairy` | exact |
 | maya özütü | maya özütü `en:yeast-extract` | exact |
 | asitlik düzenleyiciler | Acidity regulator `en:acidity-regulator` | plural |
 | fosforik asit | Fosforik asit `E338` | exact |
@@ -1088,7 +1067,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Çölyak | **Dikkat** | CEL-02: Etikette gluten içeren tahıl için 'içerebilir' uyarısı var (içerebilir: gluten) | Reg. (EU) 1169/2011 Ek II madde 1; ekip kararı (belirsizlik riski artırır) |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 2.6 g / 100 g (≤ 5.0) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.72 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: fosforik asit) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
 
@@ -1129,7 +1108,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | kakao yağı | kakao yağı `en:cocoa-butter` | exact |
 | kakao kitlesi | kakao kitlesi `en:cocoa-paste` | exact |
 | tereyağı | tereyağı `en:butter` | exact |
-| *süt ürünü* | — `` | unknown |
+| *süt ürünü* | Mandıra ürünü `en:dairy` | exact |
 | bitkisel yağ | Bitkisel yağ `en:vegetable-oil` | exact |
 | palm | palm `en:palm` | exact |
 | yağsız *süt tozu* | yağsız süt tozu `en:skimmed-milk-powder` | exact |
@@ -1142,7 +1121,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: *buğday unu*, tam buğday unu %24) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: *buğday unu*, tam buğday unu %24) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 26.4 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.32 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: sodyum asit pirofosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
 
@@ -1178,13 +1157,14 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Etiketteki ifade | Eşleşen kavram | Yöntem |
 |---|---|---|
-| PI Gercek Yaşam Gerçek Lezzet Doğal 0%100 Net: 1L e Yağlı Süt Pinat | — `` | unknown |
+| PI Gercek Yaşam Gerçek Lezzet Doğal 0%100 Net | — `` | unknown |
+| 1L e Yağlı Süt Pinat | — `` | unknown |
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 4.8 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
-| Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.04 g / 100 ml (≤ 0.04); -: tanınmayan içerik: PI Gercek Yaşam Gerçek Lezzet Doğal 0%100 Net: 1L e Yağlı Süt Pinat | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.04 g / 100 ml (≤ 0.04); -: tanınmayan içerik: PI Gercek Yaşam Gerçek Lezzet Doğal 0%100 Net, 1L e Yağlı Süt Pinat | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 
 ## Altınkılıç Kefir 1 L
 
@@ -1360,7 +1340,8 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Etiketteki ifade | Eşleşen kavram | Yöntem |
 |---|---|---|
-| ACILI KETÇAP İÇİNDEKİLER: Su | — `` | unknown |
+| ACILI KETÇAP İÇİNDEKİLER | — `` | unknown |
+| Su | Su `en:water` | exact |
 | domates salçası | — `` | unknown |
 | şeker (S)* veya glikoz-fruktoz şurubu (G)* | — `` | unknown |
 | sirke | sirke `en:vinegar` | exact |
@@ -1383,14 +1364,19 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | 4 Lif 1 | — `` | unknown |
 | 0 Protein (g) 1 | — `` | unknown |
 | 0 Tuz (g) 2 | — `` | unknown |
-| 0 Gıda İşletmecisi: BİM BİRLEŞİK MAĞAZALAR A.Ş | — `` | unknown |
+| 0 Gıda İşletmecisi | — `` | unknown |
+| BİM BİRLEŞİK MAĞAZALAR A.Ş | — `` | unknown |
 | Abdurrahmangazi Mah | — `` | unknown |
 | Ebubekir Cad | — `` | unknown |
-| No: 73 Sancaktepe/İstanbul Bu ürün (KHC Turkey Gıda Sanayi A.Ş, tarafından) BIM Birleşik Mağazalar A.Ş | — `` | unknown |
+| No | — `` | unknown |
+| 73 Sancaktepe/İstanbul Bu ürün (KHC Turkey Gıda Sanayi A.Ş, tarafından) BIM Birleşik Mağazalar A.Ş | — `` | unknown |
 | adına üretilmiştir | — `` | unknown |
-| Üretici Adresi: Kepekler Mah | — `` | unknown |
+| Üretici Adresi | — `` | unknown |
+| Kepekler Mah | — `` | unknown |
 | Sivritepe Mevkii | — `` | unknown |
-| Susurluk/Balıkesir İşletme Kayıt No: TR-10-K-000054 Üretici Tel No: (0266) 864 14 15 | — `` | unknown |
+| Susurluk/Balıkesir İşletme Kayıt No | — `` | unknown |
+| TR-10-K-000054 Üretici Tel No | — `` | unknown |
+| (0266) 864 14 15 | — `` | noise |
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
@@ -1440,7 +1426,8 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Etiketteki ifade | Eşleşen kavram | Yöntem |
 |---|---|---|
-| DOST TAM YAĞLI HOMOJENİZE YOĞURT İÇİNDEKİLER: Pastörize inek sütü | — `` | unknown |
+| DOST TAM YAĞLI HOMOJENİZE YOĞURT İÇİNDEKİLER | — `` | unknown |
+| Pastörize inek sütü | — `` | unknown |
 | yoğurt kültürü | — `` | unknown |
 | Son Tüketim Tarihi (STT) ve Parti No (P) ambalaj üzerinde olup | — `` | unknown |
 | son tüketim tarihine kadar tüketilmelidir | — `` | unknown |
@@ -1451,7 +1438,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 |---|---|---|---|
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 5.1 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
-| Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.08 g / 100 ml (≤ 0.12); -: tanınmayan içerik: DOST TAM YAĞLI HOMOJENİZE YOĞURT İÇİNDEKİLER: Pastörize inek sütü, yoğurt kültürü, Son Tüketim Tarihi (STT) ve Parti No (P) ambalaj üzerinde olup, son tüketim tarihine kadar tüketilmelidir, Buzdolabında (+4°C'de) saklayınız, Homojenize edildiğinden yağı üzerinde birikmez | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.08 g / 100 ml (≤ 0.12); -: tanınmayan içerik: DOST TAM YAĞLI HOMOJENİZE YOĞURT İÇİNDEKİLER, Pastörize inek sütü, yoğurt kültürü, Son Tüketim Tarihi (STT) ve Parti No (P) ambalaj üzerinde olup, son tüketim tarihine kadar tüketilmelidir, Buzdolabında (+4°C'de) saklayınız, Homojenize edildiğinden yağı üzerinde birikmez | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 
 ## Heinz Sarımsak Sosu 230 G
 
@@ -1469,7 +1456,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | modifiye nişasta | modified starch `en:modified-starch` | exact |
 | tuz | tuz `en:salt` | exact |
 | baharatlar | spice `en:spice` | plural |
-| hardal içerir | — `` | unknown |
+| hardal | hardal `en:mustard` | exact |
 | soğan | soğan `en:onion` | exact |
 | asitliği düzenleyici | Acidity regulator `en:acidity-regulator` | exact |
 | sitrik asit | sitrik asit `E330` | exact |
@@ -1501,7 +1488,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | 7 | — `` | noise |
 | kakao | Kakao `en:cocoa` | exact |
 | peynir altı suyu tozu | peynir altı suyu tozu `en:whey-powder` | exact |
-| _süt ürünü_ | — `` | unknown |
+| _süt ürünü_ | Mandıra ürünü `en:dairy` | exact |
 | emülgatör | Emulsifier `en:emulsifier` | exact |
 | ayçiçek lesitini | sunflower lecithin `en:sunflower-lecithin` | exact |
 | aroma verici | flavouring `en:flavouring` | exact |
@@ -1509,7 +1496,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | gofret yaprağı %26 | — `` | unknown |
 | 9 | — `` | noise |
 | _buğday_ unu | buğday unu `en:wheat-flour` | exact |
-| _gluten_ içerir | — `` | unknown |
+| gluten | glüten `en:gluten` | exact |
 | nişasta | Nişasta `en:starch` | exact |
 | tuz | tuz `en:salt` | exact |
 | Hindistan cevizi yağı | Hindistan cevizi yağı `en:coconut-oil` | exact |
@@ -1524,7 +1511,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: _buğday_ unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: _buğday_ unu, gluten) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 31.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.184 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: sodyum asit pirofosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
 
@@ -1538,8 +1525,9 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | Toz Şeker | — `` | unknown |
 | Süt Tozu | Süt tozu `en:milk-powder` | exact |
 | Fındık Yağı | fındık yağı `en:hazelnut-oil` | exact |
-| Kakao (%5) Alerjen Uyarısı: Fındık | — `` | unknown |
-| Süt Tozu İçerir | — `` | unknown |
+| Kakao (%5) Alerjen Uyarısı | — `` | unknown |
+| Fındık | fındık `en:hazelnut` | exact |
+| süt tozu | Süt tozu `en:milk-powder` | exact |
 | *Koruyucu | Preservative `en:preservative` | exact |
 | emulgator | Emulsifier `en:emulsifier` | exact |
 | trans yağ içermez | — `` | unknown |
@@ -1589,7 +1577,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Çölyak | **Dikkat** | CEL-02: Etikette gluten içeren tahıl için 'içerebilir' uyarısı var (içerebilir: gluten) | Reg. (EU) 1169/2011 Ek II madde 1; ekip kararı (belirsizlik riski artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 55.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.104 g / 100 g (≤ 0.12); -: tanınmayan içerik: Kakao kuru maddesi en az %30'dur | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 
@@ -1600,7 +1588,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | Etiketteki ifade | Eşleşen kavram | Yöntem |
 |---|---|---|
 | Buğday Unu | buğday unu `en:wheat-flour` | exact |
-| Gluten içerir | — `` | unknown |
+| gluten | glüten `en:gluten` | exact |
 | Bitkisel Yağ | Bitkisel yağ `en:vegetable-oil` | exact |
 | Palm | palm `en:palm` | exact |
 | Ayçiçek | sunflower `en:sunflower` | exact |
@@ -1625,7 +1613,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 | Yağı Azaltılmış Kakao Tozu %6 | fat reduced cocoa powder `en:fat-reduced-cocoa-powder` | exact |
 | Fındık Püresi | hazelnut paste `en:hazelnut-paste` | exact |
 | Laktoz | Laktoz `en:lactose` | exact |
-| Süt Ürünü | — `` | unknown |
+| Süt Ürünü | Mandıra ürünü `en:dairy` | exact |
 | Keçiboynuzu Unu | — `` | unknown |
 | Emülgatör | Emulsifier `en:emulsifier` | exact |
 | Ayçiçek Lesitini | sunflower lecithin `en:sunflower-lecithin` | exact |
@@ -1634,7 +1622,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: Buğday Unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: Buğday Unu, gluten) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 32.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.24 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: Sodyum Asit Pirofosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
 
@@ -1665,7 +1653,7 @@ Toplam ifade: **906** · E-kodu: 4 · birebir: 538 · çoğul: 59 · gürültü:
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: _buğday_ unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: _buğday_ unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 49.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.09 g / 100 g (≤ 0.12); -: tanınmayan içerik: _yumurta_ akı tozu | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 

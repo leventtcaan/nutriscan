@@ -19,7 +19,7 @@ Toplam ifade: **20** · E-kodu: 4 · birebir: 16 · çoğul: 0 · gürültü: 0 
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Uygun değil** | CEL-01: Gluten içeren tahıl ya da ondan yapılmış içerik var (bulunan: buğday unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
+| Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: buğday unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 48.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Engel bulunmadı** | CKD-01: sodyum 0.12 g / 100 g (≤ 0.12) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 
