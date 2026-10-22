@@ -1,13 +1,7 @@
 kavram_id,tur,ad_tr,ad_en,e_kodu,wikidata,ust_kavramlar,kaynak
 E100,katki_maddesi,kurkumin,Curcumin,E100,Q312266,,OFF additives.txt @14cbdc68
-E100,katki_maddesi,,E100(i),E100,,,OFF additives.txt @14cbdc68
-E100,katki_maddesi,,E100(ii),E100,,,OFF additives.txt @14cbdc68
 E106,katki_maddesi,,flavin mononucleotide,E106,Q376061,,OFF additives.txt @14cbdc68
 E101,katki_maddesi,,Riboflavins,E101,Q130365,,OFF additives.txt @14cbdc68
-E101,katki_maddesi,E101(i),E101(i),E101,Q130365,,OFF additives.txt @14cbdc68
-E101,katki_maddesi,,E101(ii),E101,Q376061,,OFF additives.txt @14cbdc68
-E101,katki_maddesi,,E101(iii),E101,,,OFF additives.txt @14cbdc68
-E101,katki_maddesi,,E101(iv),E101,,,OFF additives.txt @14cbdc68
 E101A,katki_maddesi,,E101a food additive,E101A,Q376061,,OFF additives.txt @14cbdc68
 E102,katki_maddesi,Tartrazin,Tartrazine,E102,Q407158,,OFF additives.txt @14cbdc68
 E103,katki_maddesi,,Alkannin,E103,Q418237,,OFF additives.txt @14cbdc68
@@ -31,11 +25,7 @@ E131,katki_maddesi,,Patent blue v,E131,Q420087,,OFF additives.txt @14cbdc68
 E132,katki_maddesi,,Indigotine,E132,Q410120,,OFF additives.txt @14cbdc68
 E133,katki_maddesi,,Brilliant blue FCF,E133,Q420093,,OFF additives.txt @14cbdc68
 E140,katki_maddesi,,Chlorophylls and Chlorophyllins,E140,Q26806091,,OFF additives.txt @14cbdc68
-E140,katki_maddesi,E140(i),E140(i),E140,Q43177,,OFF additives.txt @14cbdc68
-E140,katki_maddesi,,E140(ii),E140,Q379123,,OFF additives.txt @14cbdc68
 E141,katki_maddesi,,Copper complexes of chlorophylls and chlorophyllins,E141,Q18967203,,OFF additives.txt @14cbdc68
-E141,katki_maddesi,,E141(i),E141,Q18967203,,OFF additives.txt @14cbdc68
-E141,katki_maddesi,,E141(ii),E141,Q18967203,,OFF additives.txt @14cbdc68
 E142,katki_maddesi,,Green s,E142,Q420143,,OFF additives.txt @14cbdc68
 E143,katki_maddesi,,Fast Green FCF,E143,Q898299,,OFF additives.txt @14cbdc68
 E150,katki_maddesi,Karamel,Caramel,E150,Q183440,,OFF additives.txt @14cbdc68
@@ -51,51 +41,22 @@ E155,katki_maddesi,,Brown ht,E155,Q424541,,OFF additives.txt @14cbdc68
 E159,katki_maddesi,,E15x food additive,E159,,,OFF additives.txt @14cbdc68
 E160,katki_maddesi,,Carotenoids,E160,Q191907,,OFF additives.txt @14cbdc68
 E160A,katki_maddesi,karoten,carotene,E160A,Q190156,,OFF additives.txt @14cbdc68
-E160A,katki_maddesi,,E160a(i),E160A,Q306135,,OFF additives.txt @14cbdc68
-E160A,katki_maddesi,,E160a(ii),E160A,,,OFF additives.txt @14cbdc68
-E160A,katki_maddesi,,E160a(iii),E160A,,,OFF additives.txt @14cbdc68
-E160A,katki_maddesi,,E160a(iv),E160A,,,OFF additives.txt @14cbdc68
 E160B,katki_maddesi,,Annatto,E160B,Q425902,,OFF additives.txt @14cbdc68
-E160B,katki_maddesi,,E160b(i),E160B,,,OFF additives.txt @14cbdc68
-E160B,katki_maddesi,,E160b(ii),E160B,,,OFF additives.txt @14cbdc68
-E160B,katki_maddesi,,E160b(iii),E160B,,,OFF additives.txt @14cbdc68
 E160C,katki_maddesi,Paprika ekstraktı,Paprika extract,E160C,,,OFF additives.txt @14cbdc68
-E160C,katki_maddesi,,E160c(i),E160C,,,OFF additives.txt @14cbdc68
-E160C,katki_maddesi,,E160c(ii),E160C,,,OFF additives.txt @14cbdc68
 E160D,katki_maddesi,,Lycopene,E160D,Q208130,,OFF additives.txt @14cbdc68
-E160D,katki_maddesi,,E160d(i),E160D,,,OFF additives.txt @14cbdc68
-E160D,katki_maddesi,,E160d(ii),E160D,,,OFF additives.txt @14cbdc68
-E160D,katki_maddesi,,E160d(iii),E160D,,,OFF additives.txt @14cbdc68
 E160E,katki_maddesi,,Beta-apo-8′-carotenal (c30),E160E,,,OFF additives.txt @14cbdc68
 E160F,katki_maddesi,,Ethyl ester of beta-apo-8'-carotenic acid (C 30),E160F,,,OFF additives.txt @14cbdc68
 E161,katki_maddesi,,Xanthophylls,E161,,,OFF additives.txt @14cbdc68
 E161A,katki_maddesi,,Flavoxanthin,E161A,,,OFF additives.txt @14cbdc68
 E161B,katki_maddesi,Lutein,Lutein,E161B,Q422067,,OFF additives.txt @14cbdc68
-E161B,katki_maddesi,,E161b(i),E161B,,,OFF additives.txt @14cbdc68
-E161B,katki_maddesi,,E161b(ii),E161B,,,OFF additives.txt @14cbdc68
-E161B,katki_maddesi,,E161b(iii),E161B,,,OFF additives.txt @14cbdc68
 E161C,katki_maddesi,Kriptoksantin,Cryptoaxanthin,E161C,,,OFF additives.txt @14cbdc68
 E161D,katki_maddesi,,Rubixanthin,E161D,,,OFF additives.txt @14cbdc68
 E161E,katki_maddesi,,Violaxanthin,E161E,,,OFF additives.txt @14cbdc68
 E161F,katki_maddesi,Rodoksantin,Rhodoxanthin,E161F,,,OFF additives.txt @14cbdc68
 E161G,katki_maddesi,,Canthaxanthin,E161G,,,OFF additives.txt @14cbdc68
 E161H,katki_maddesi,Zeaksantin,Zeaxanthin,E161H,,,OFF additives.txt @14cbdc68
-E161H,katki_maddesi,,E161h(i),E161H,,,OFF additives.txt @14cbdc68
-E161H,katki_maddesi,,E161h(ii),E161H,,,OFF additives.txt @14cbdc68
-E161,katki_maddesi,Sitranaksantin,Citranaxanthin,E161,,,OFF additives.txt @14cbdc68
-E161,katki_maddesi,Astaksantin,Astaxanthin,E161,,,OFF additives.txt @14cbdc68
 E162,katki_maddesi,,Beetroot red,E162,Q420138,,OFF additives.txt @14cbdc68
 E163,katki_maddesi,Antosiyanin,Anthocyanins,E163,Q262547,,OFF additives.txt @14cbdc68
-E163,katki_maddesi,,E163(ii),E163,,,OFF additives.txt @14cbdc68
-E163,katki_maddesi,,E163(iii),E163,,,OFF additives.txt @14cbdc68
-E163,katki_maddesi,,E163(iv),E163,,,OFF additives.txt @14cbdc68
-E163,katki_maddesi,,E163(v),E163,,,OFF additives.txt @14cbdc68
-E163,katki_maddesi,,E163(vi),E163,,,OFF additives.txt @14cbdc68
-E163,katki_maddesi,,E163(vii),E163,,,OFF additives.txt @14cbdc68
-E163,katki_maddesi,,E163(viii),E163,,,OFF additives.txt @14cbdc68
-E163,katki_maddesi,,E163(ix),E163,,,OFF additives.txt @14cbdc68
-E163,katki_maddesi,,E163(x),E163,,,OFF additives.txt @14cbdc68
-E163,katki_maddesi,,E163(xi),E163,,,OFF additives.txt @14cbdc68
 E163A,katki_maddesi,Siyanidin,Cyanidin,E163A,Q417606,,OFF additives.txt @14cbdc68
 E163B,katki_maddesi,,Delphinidin,E163B,Q367258,,OFF additives.txt @14cbdc68
 E163C,katki_maddesi,,Malvidin,E163C,Q137220,,OFF additives.txt @14cbdc68
@@ -105,12 +66,9 @@ E163F,katki_maddesi,,Petunidin,E163F,Q27145212,,OFF additives.txt @14cbdc68
 E164,katki_maddesi,safran,saffron,E164,Q25434,,OFF additives.txt @14cbdc68
 E165,katki_maddesi,,Gardenia Blue,E165,,,OFF additives.txt @14cbdc68
 E166,katki_maddesi,,Sandalwood,E166,,,OFF additives.txt @14cbdc68
-E170,katki_maddesi,E170(i),E170(i),E170,Q23767,,OFF additives.txt @14cbdc68
+E170,katki_maddesi,Kalsiyum karbonat,Calcium carbonate,E170,Q23767,,OFF additives.txt @14cbdc68
 E171,katki_maddesi,Titanyum dioksit,Titanium dioxide,E171,Q193521,,OFF additives.txt @14cbdc68
 E172,katki_maddesi,,Iron oxides and iron hydroxides,E172,Q3045754,,OFF additives.txt @14cbdc68
-E172,katki_maddesi,,E172(i),E172,Q3045754,,OFF additives.txt @14cbdc68
-E172,katki_maddesi,E172(ii),E172(ii),E172,Q3045754,,OFF additives.txt @14cbdc68
-E172,katki_maddesi,,E172(iii),E172,Q3045754,,OFF additives.txt @14cbdc68
 E173,katki_maddesi,,Aluminium,E173,Q663,,OFF additives.txt @14cbdc68
 E174,katki_maddesi,,Silver,E174,Q1090,,OFF additives.txt @14cbdc68
 E175,katki_maddesi,,Gold,E175,Q897,,OFF additives.txt @14cbdc68
@@ -162,11 +120,7 @@ E251,katki_maddesi,Sodyum nitrat,Sodium nitrate,E251,Q184373,,OFF additives.txt 
 E252,katki_maddesi,Potasyum nitrat,Potassium nitrate,E252,Q177836,,OFF additives.txt @14cbdc68
 E260,katki_maddesi,Asetik asit,Acetic acid,E260,Q47512,,OFF additives.txt @14cbdc68
 E261,katki_maddesi,Potasyum asetat,Potassium acetate,E261,Q409199,,OFF additives.txt @14cbdc68
-E261,katki_maddesi,,E261(i),E261,,,OFF additives.txt @14cbdc68
-E261,katki_maddesi,,E261(ii),E261,,,OFF additives.txt @14cbdc68
 E262,katki_maddesi,,Sodium acetates,E262,Q339940,,OFF additives.txt @14cbdc68
-E262,katki_maddesi,E262(i),E262(i),E262,Q339940,,OFF additives.txt @14cbdc68
-E262,katki_maddesi,,E262(ii),E262,Q409655,,OFF additives.txt @14cbdc68
 E263,katki_maddesi,Kalsiyum asetat,Calcium acetate,E263,Q409251,,OFF additives.txt @14cbdc68
 E264,katki_maddesi,,Ammonium acetate,E264,,,OFF additives.txt @14cbdc68
 E265,katki_maddesi,,Dehydroacetic acid,E265,Q920725,,OFF additives.txt @14cbdc68
@@ -186,8 +140,6 @@ E301,katki_maddesi,Sodyum askorbat,Sodium ascorbate,E301,Q424551,,OFF additives.
 E302,katki_maddesi,,Calcium ascorbate,E302,Q283033,,OFF additives.txt @14cbdc68
 E303,katki_maddesi,Potasyum askorbat,Potassium ascorbate,E303,Q56410901,,OFF additives.txt @14cbdc68
 E304,katki_maddesi,Askorbik asidin yağ asidi esterleri,Fatty acid esters of ascorbic acid,E304,Q43303953,,OFF additives.txt @14cbdc68
-E304,katki_maddesi,,E304(i),E304,Q424521,,OFF additives.txt @14cbdc68
-E304,katki_maddesi,,E304(ii),E304,Q424521,,OFF additives.txt @14cbdc68
 E306,katki_maddesi,,Tocopherol-rich extract,E306,Q141180,,OFF additives.txt @14cbdc68
 E307A,katki_maddesi,,D-Alpha-tocopherol,E307A,Q158348,,OFF additives.txt @14cbdc68
 E307B,katki_maddesi,,concentrated tocopherol,E307B,Q158348,,OFF additives.txt @14cbdc68
@@ -208,9 +160,6 @@ E319,katki_maddesi,,Tertiary-butylhydroquinone (tbhq),E319,Q662443,,OFF additive
 E320,katki_maddesi,,Butylated hydroxyanisole (bha),E320,Q409401,,OFF additives.txt @14cbdc68
 E321,katki_maddesi,Butillendirilmiş hidroksi toluen,Butylated hydroxytoluene,E321,Q221945,,OFF additives.txt @14cbdc68
 E322,katki_maddesi,,Lecithins,E322,Q241595,,OFF additives.txt @14cbdc68
-E322,katki_maddesi,E322(i),E322(i),E322,Q241595,,OFF additives.txt @14cbdc68
-E322,katki_maddesi,,E322(ii),E322,Q241595,,OFF additives.txt @14cbdc68
-E322,katki_maddesi,,E322(iii),E322,,,OFF additives.txt @14cbdc68
 E322A,katki_maddesi,Yulaf lesitini,Oat lecithin,E322A,,,OFF additives.txt @14cbdc68
 E323,katki_maddesi,Anoksomer,Anoxomer,E323,,,OFF additives.txt @14cbdc68
 E324,katki_maddesi,,Ethoxyquin,E324,Q1657816,,OFF additives.txt @14cbdc68
@@ -221,56 +170,24 @@ E328,katki_maddesi,,ammonium lactate,E328,Q663358,,OFF additives.txt @14cbdc68
 E329,katki_maddesi,,Magnesium lactate,E329,Q594836,,OFF additives.txt @14cbdc68
 E330,katki_maddesi,sitrik asit,Citric acid,E330,Q159683,,OFF additives.txt @14cbdc68
 E331,katki_maddesi,,Sodium citrates,E331,Q6460572,,OFF additives.txt @14cbdc68
-E331,katki_maddesi,,E331(i),E331,Q4179018,,OFF additives.txt @14cbdc68
-E331,katki_maddesi,,E331(ii),E331,Q4177124,,OFF additives.txt @14cbdc68
-E331,katki_maddesi,,E331(iii),E331,,,OFF additives.txt @14cbdc68
 E332,katki_maddesi,,Potassium citrates,E332,Q419921,,OFF additives.txt @14cbdc68
-E332,katki_maddesi,,E332(i),E332,,,OFF additives.txt @14cbdc68
-E332,katki_maddesi,,E332(ii),E332,Q419921,,OFF additives.txt @14cbdc68
 E333,katki_maddesi,,Calcium citrates,E333,Q420280,,OFF additives.txt @14cbdc68
-E333,katki_maddesi,,E333(i),E333,Q420280,,OFF additives.txt @14cbdc68
-E333,katki_maddesi,,E333(ii),E333,Q420280,,OFF additives.txt @14cbdc68
-E333,katki_maddesi,,E333(iii),E333,Q420280,,OFF additives.txt @14cbdc68
 E334,katki_maddesi,Tartarik asit,L(+)-tartaric acid,E334,Q194322,,OFF additives.txt @14cbdc68
 E335,katki_maddesi,,Sodium tartrates,E335,Q58641683,,OFF additives.txt @14cbdc68
-E335,katki_maddesi,,E335(i),E335,Q836451,,OFF additives.txt @14cbdc68
-E335,katki_maddesi,,E335(ii),E335,Q17997701,,OFF additives.txt @14cbdc68
 E336,katki_maddesi,,Potassium tartrates,E336,Q65770886,,OFF additives.txt @14cbdc68
-E336,katki_maddesi,,E336(i),E336,Q18745,,OFF additives.txt @14cbdc68
-E336,katki_maddesi,,E336(ii),E336,Q418064,,OFF additives.txt @14cbdc68
 E337,katki_maddesi,,Potassium sodium tartrate,E337,Q303489,,OFF additives.txt @14cbdc68
 E338,katki_maddesi,Fosforik asit,Phosphoric acid,E338,Q184782,,OFF additives.txt @14cbdc68
 E339,katki_maddesi,,Sodium phosphates,E339,Q3249706,,OFF additives.txt @14cbdc68
-E339,katki_maddesi,,E339(i),E339,Q415877,,OFF additives.txt @14cbdc68
-E339,katki_maddesi,,E339(ii),E339,Q418448,,OFF additives.txt @14cbdc68
-E339,katki_maddesi,,E339(iii),E339,Q3249706,,OFF additives.txt @14cbdc68
 E340,katki_maddesi,Potasyum fosfat,Potassium phosphates,E340,Q3381491,,OFF additives.txt @14cbdc68
-E340,katki_maddesi,,E340(i),E340,Q415049,,OFF additives.txt @14cbdc68
-E340,katki_maddesi,,E340(ii),E340,Q403721,,OFF additives.txt @14cbdc68
-E340,katki_maddesi,,E340(iii),E340,Q423852,,OFF additives.txt @14cbdc68
 E341,katki_maddesi,,Calcium phosphates,E341,Q426664,,OFF additives.txt @14cbdc68
-E341,katki_maddesi,,E341(i),E341,Q414673,,OFF additives.txt @14cbdc68
-E341,katki_maddesi,,E341(ii),E341,Q414619,,OFF additives.txt @14cbdc68
-E341,katki_maddesi,,E341(iii),E341,Q278387,,OFF additives.txt @14cbdc68
 E342,katki_maddesi,,Ammonium phosphate,E342,Q18967184,,OFF additives.txt @14cbdc68
-E342,katki_maddesi,,E342(i),E342,,,OFF additives.txt @14cbdc68
-E342,katki_maddesi,,E342(ii),E342,,,OFF additives.txt @14cbdc68
 E343,katki_maddesi,,Magnesium phosphates,E343,Q6731399,,OFF additives.txt @14cbdc68
-E343,katki_maddesi,,E343(i),E343,Q4161317,,OFF additives.txt @14cbdc68
-E343,katki_maddesi,,E343(ii),E343,Q14325507,,OFF additives.txt @14cbdc68
-E343,katki_maddesi,,E343(iii),E343,,,OFF additives.txt @14cbdc68
 E344,katki_maddesi,,Lecithin citrate,E344,Q13081794,,OFF additives.txt @14cbdc68
 E345,katki_maddesi,,Magnesium citrate,E345,Q45044,,OFF additives.txt @14cbdc68
 E349,katki_maddesi,,ammonium malate,E349,Q4747303,,OFF additives.txt @14cbdc68
 E350,katki_maddesi,Sodyum malatlar,Sodium malates,E350,Q836788,,OFF additives.txt @14cbdc68
-E350,katki_maddesi,,E350(i),E350,Q836788,,OFF additives.txt @14cbdc68
-E350,katki_maddesi,,E350(ii),E350,Q42807545,,OFF additives.txt @14cbdc68
 E351,katki_maddesi,,Potassium malate,E351,Q408755,,OFF additives.txt @14cbdc68
-E351,katki_maddesi,,E351(i),E351,,,OFF additives.txt @14cbdc68
-E351,katki_maddesi,,E351(ii),E351,,,OFF additives.txt @14cbdc68
 E352,katki_maddesi,,Calcium malates,E352,Q1356722,,OFF additives.txt @14cbdc68
-E352,katki_maddesi,,E352(i),E352,Q1356722,,OFF additives.txt @14cbdc68
-E352,katki_maddesi,,E352(ii),E352,Q1356722,,OFF additives.txt @14cbdc68
 E353,katki_maddesi,,Metatartaric acid,E353,Q17997708,,OFF additives.txt @14cbdc68
 E354,katki_maddesi,,Calcium tartrate,E354,Q416767,,OFF additives.txt @14cbdc68
 E355,katki_maddesi,,Adipic acid,E355,Q357415,,OFF additives.txt @14cbdc68
@@ -278,9 +195,7 @@ E356,katki_maddesi,,Sodium adipate,E356,Q423296,,OFF additives.txt @14cbdc68
 E357,katki_maddesi,,Potassium adipate,E357,Q931445,,OFF additives.txt @14cbdc68
 E359,katki_maddesi,,ammonium adipate,E359,Q4747299,,OFF additives.txt @14cbdc68
 E363,katki_maddesi,,Succinic acid,E363,Q213050,,OFF additives.txt @14cbdc68
-E364,katki_maddesi,,E364(i),E364,,,OFF additives.txt @14cbdc68
-E364,katki_maddesi,,E364(ii),E364,,,OFF additives.txt @14cbdc68
-E364,katki_maddesi,Sodyum süksinat,Sodium succinates,E364,,,OFF additives.txt @14cbdc68
+E364,katki_maddesi,,Monosodium succinate,E364,,,OFF additives.txt @14cbdc68
 E365,katki_maddesi,,Sodium fumarate,E365,,,OFF additives.txt @14cbdc68
 E366,katki_maddesi,,Potassium fumarate,E366,Q723321,,OFF additives.txt @14cbdc68
 E367,katki_maddesi,,Calcium fumarate,E367,Q836445,,OFF additives.txt @14cbdc68
@@ -317,18 +232,12 @@ E415,katki_maddesi,Ksantan zamkı,Xanthan gum,E415,Q410768,,OFF additives.txt @1
 E416,katki_maddesi,,Karaya-gum,E416,Q421167,,OFF additives.txt @14cbdc68
 E417,katki_maddesi,,Tara gum,E417,Q15089452,,OFF additives.txt @14cbdc68
 E418,katki_maddesi,,Gellan gum,E418,Q416694,,OFF additives.txt @14cbdc68
-E418,katki_maddesi,,E418(i),E418,,,OFF additives.txt @14cbdc68
-E418,katki_maddesi,,E418(ii),E418,,,OFF additives.txt @14cbdc68
 E419,katki_maddesi,Gati zamkı,Gum ghatti,E419,Q18967232,,OFF additives.txt @14cbdc68
 E420,katki_maddesi,Sorbitol,Sorbitol,E420,Q245280,,OFF additives.txt @14cbdc68
-E420,katki_maddesi,,E420(i),E420,Q245280,,OFF additives.txt @14cbdc68
-E420,katki_maddesi,,E420(ii),E420,Q245280,,OFF additives.txt @14cbdc68
 E421,katki_maddesi,,Mannitol,E421,Q407646,,OFF additives.txt @14cbdc68
 E422,katki_maddesi,Gliserin,Glycerol,E422,Q132501,,OFF additives.txt @14cbdc68
 E424,katki_maddesi,Kurdlan,Curdlan,E424,Q616242,,OFF additives.txt @14cbdc68
 E425,katki_maddesi,,Konjac,E425,,,OFF additives.txt @14cbdc68
-E425,katki_maddesi,,E425(i),E425,,,OFF additives.txt @14cbdc68
-E425,katki_maddesi,,E425(ii),E425,,,OFF additives.txt @14cbdc68
 E426,katki_maddesi,,Soybean hemicellulose,E426,Q18967285,,OFF additives.txt @14cbdc68
 E427,katki_maddesi,,Cassia gum,E427,Q3110379,,OFF additives.txt @14cbdc68
 E428,katki_maddesi,Jelatin,Gelatine,E428,Q179254,,OFF additives.txt @14cbdc68
@@ -341,61 +250,29 @@ E434,katki_maddesi,,Polyoxyethylene sorbitan monopalmitate,E434,Q1413823,,OFF ad
 E435,katki_maddesi,,Polyoxyethylene sorbitan monostearate,E435,Q2103104,,OFF additives.txt @14cbdc68
 E436,katki_maddesi,,Polyoxyethylene sorbitan tristearate,E436,Q2103107,,OFF additives.txt @14cbdc68
 E440A,katki_maddesi,,,E440A,Q188154,,OFF additives.txt @14cbdc68
-E440A,katki_maddesi,,E440a(ii),E440A,Q188154,,OFF additives.txt @14cbdc68
-E440A,katki_maddesi,,E440a(iii),E440A,Q188154,,OFF additives.txt @14cbdc68
-E440A,katki_maddesi,,E440a(iv),E440A,Q188154,,OFF additives.txt @14cbdc68
 E440B,katki_maddesi,,,E440B,Q188154,,OFF additives.txt @14cbdc68
 E440,katki_maddesi,Pektin,Pectins,E440,Q188154,,OFF additives.txt @14cbdc68
-E440,katki_maddesi,,E440(i),E440,Q188154,,OFF additives.txt @14cbdc68
-E440,katki_maddesi,E440(ii),E440(ii),E440,Q42807519,,OFF additives.txt @14cbdc68
 E441,katki_maddesi,,Superglycerinated hydrogenated rapeseed oil,E441,,,OFF additives.txt @14cbdc68
 E442,katki_maddesi,,Ammonium phosphatides,E442,Q695975,,OFF additives.txt @14cbdc68
 E443,katki_maddesi,Bromlu bitkisel yağ,Brominated vegetable oil,E443,Q4164502,,OFF additives.txt @14cbdc68
 E444,katki_maddesi,,Sucrose acetate isobutyrate,E444,Q410537,,OFF additives.txt @14cbdc68
 E445,katki_maddesi,,Glycerol esters of wood rosin,E445,Q836765,,OFF additives.txt @14cbdc68
-E445,katki_maddesi,,E445(i),E445,,,OFF additives.txt @14cbdc68
-E445,katki_maddesi,,E445(ii),E445,,,OFF additives.txt @14cbdc68
-E445,katki_maddesi,,E445(iii),E445,,,OFF additives.txt @14cbdc68
 E446,katki_maddesi,Sükkistearin,Succistearin,E446,Q18601547,,OFF additives.txt @14cbdc68
 E540,katki_maddesi,,,E540,Q18967208,,OFF additives.txt @14cbdc68
 E541,katki_maddesi,,Sodium aluminium phosphate,E541,Q1220360,,OFF additives.txt @14cbdc68
-E541,katki_maddesi,,E541(i),E541,Q1220360,,OFF additives.txt @14cbdc68
-E541,katki_maddesi,,E541(ii),E541,Q1220360,,OFF additives.txt @14cbdc68
 E542,katki_maddesi,Kemik fosfat,Bone phosphate,E542,Q18967189,,OFF additives.txt @14cbdc68
 E543,katki_maddesi,,E543 food additive,E543,Q18967200,,OFF additives.txt @14cbdc68
 E544,katki_maddesi,,,E544,Q18967198,,OFF additives.txt @14cbdc68
 E545,katki_maddesi,,,E545,Q2770473,,OFF additives.txt @14cbdc68
 E546,katki_maddesi,magnezyum pirofosfat,Magnesium pyrophosphate,E546,,,OFF additives.txt @14cbdc68
 E550,katki_maddesi,Sodyum silikat,Sodium silicate,E550,Q18944661,,OFF additives.txt @14cbdc68
-E550,katki_maddesi,,E550(i),E550,,,OFF additives.txt @14cbdc68
-E550,katki_maddesi,,E550(ii),E550,,,OFF additives.txt @14cbdc68
 E450,katki_maddesi,Difosfat,Diphosphates,E450,Q55506489,,OFF additives.txt @14cbdc68
-E450,katki_maddesi,,E450(i),E450,Q418498,,OFF additives.txt @14cbdc68
-E450,katki_maddesi,,E450(ii),E450,Q290828,,OFF additives.txt @14cbdc68
-E450,katki_maddesi,,E450(iii),E450,Q418504,,OFF additives.txt @14cbdc68
-E450,katki_maddesi,E450(iv),E450(iv),E450,Q290828,,OFF additives.txt @14cbdc68
-E450,katki_maddesi,,E450(v),E450,Q290828,,OFF additives.txt @14cbdc68
-E450,katki_maddesi,,E450(vi),E450,Q4363460,,OFF additives.txt @14cbdc68
-E450,katki_maddesi,,E450(vii),E450,Q290828,,OFF additives.txt @14cbdc68
-E450,katki_maddesi,E450(viii),E450(viii),E450,Q290828,,OFF additives.txt @14cbdc68
-E450,katki_maddesi,,E450(ix),E450,,,OFF additives.txt @14cbdc68
 E451,katki_maddesi,Trifosfatlar,Triphosphates,E451,Q29145,,OFF additives.txt @14cbdc68
-E451,katki_maddesi,,E451(i),E451,Q29145,,OFF additives.txt @14cbdc68
-E451,katki_maddesi,,E451(ii),E451,Q15632716,,OFF additives.txt @14cbdc68
-E451,katki_maddesi,,E451(iii),E451,,,OFF additives.txt @14cbdc68
 E452,katki_maddesi,Polifosfatlar,Polyphosphates,E452,Q11867365,,OFF additives.txt @14cbdc68
-E452,katki_maddesi,,E452(i),E452,Q11867365,,OFF additives.txt @14cbdc68
-E452,katki_maddesi,,E452(ii),E452,Q42807555,,OFF additives.txt @14cbdc68
-E452,katki_maddesi,,E452(iii),E452,Q18967198,,OFF additives.txt @14cbdc68
-E452,katki_maddesi,E452(iv),E452(iv),E452,Q18967198,,OFF additives.txt @14cbdc68
-E452,katki_maddesi,E452(v),E452(v),E452,Q2770473,,OFF additives.txt @14cbdc68
-E452,katki_maddesi,E452(vi),E452(vi),E452,Q11867365,,OFF additives.txt @14cbdc68
 E457,katki_maddesi,Alfa-Siklodekstrin,Alpha-Cyclodextrine,E457,,,OFF additives.txt @14cbdc68
 E458,katki_maddesi,Gama-Siklodekstrin,Gamma-Cyclodextrine,E458,,,OFF additives.txt @14cbdc68
 E459,katki_maddesi,Beta-Siklodekstrin,Beta-cyclodextrine,E459,,,OFF additives.txt @14cbdc68
 E460,katki_maddesi,Selüloz,Cellulose,E460,Q80294,,OFF additives.txt @14cbdc68
-E460,katki_maddesi,,E460(i),E460,Q80294,,OFF additives.txt @14cbdc68
-E460,katki_maddesi,,E460(ii),E460,Q80294,,OFF additives.txt @14cbdc68
 E461,katki_maddesi,,methyl cellulose,E461,Q416312,,OFF additives.txt @14cbdc68
 E462,katki_maddesi,,Ethyl cellulose,E462,Q420113,,OFF additives.txt @14cbdc68
 E463,katki_maddesi,,Hydroxypropyl cellulose,E463,Q724426,,OFF additives.txt @14cbdc68
@@ -406,13 +283,7 @@ E467,katki_maddesi,,Ethulose,E467,Q5404436,,OFF additives.txt @14cbdc68
 E468,katki_maddesi,,Cross-linked sodium carboxymethylcellulose,E468,Q18967204,,OFF additives.txt @14cbdc68
 E469,katki_maddesi,,Enzymatically hydrolysed carboxymethylcellulose,E469,Q18935689,,OFF additives.txt @14cbdc68
 E470,katki_maddesi,,Sodium/potassium/calcium and magnesium salts of fatty acids,E470,,,OFF additives.txt @14cbdc68
-E470,katki_maddesi,,E470(i),E470,,,OFF additives.txt @14cbdc68
-E470,katki_maddesi,,E470(ii),E470,,,OFF additives.txt @14cbdc68
-E470,katki_maddesi,,E470(iii),E470,,,OFF additives.txt @14cbdc68
 E470A,katki_maddesi,,Sodium/potassium and calcium salts of fatty acids,E470A,,,OFF additives.txt @14cbdc68
-E470A,katki_maddesi,E470a(i),E470a(i),E470A,,,OFF additives.txt @14cbdc68
-E470A,katki_maddesi,,E470a(ii),E470A,,,OFF additives.txt @14cbdc68
-E470A,katki_maddesi,E470a(iii),E470a(iii),E470A,,,OFF additives.txt @14cbdc68
 E470B,katki_maddesi,,Magnesium salts of fatty acids,E470B,,,OFF additives.txt @14cbdc68
 E471,katki_maddesi,,Mono- and diglycerides of fatty acids,E471,Q416711,,OFF additives.txt @14cbdc68
 E472,katki_maddesi,yağ asitlerinin mono ve digiseridleri,acid esters of mono- and diglycerides of fatty acids,E472,,,OFF additives.txt @14cbdc68
@@ -432,11 +303,7 @@ E477,katki_maddesi,,Propane-1\,E477,Q18944660,,OFF additives.txt @14cbdc68
 E478,katki_maddesi,,Lactylated fatty acid esters of glycerol and propane-1,E478,Q18935693,,OFF additives.txt @14cbdc68
 E479B,katki_maddesi,,Thermally oxidised soya bean oil interacted with mono- and diglycerides of fatty acids,E479B,,,OFF additives.txt @14cbdc68
 E481,katki_maddesi,,Sodium stearoyl-2-lactylate,E481,Q416058,,OFF additives.txt @14cbdc68
-E481,katki_maddesi,,E481(i),E481,,,OFF additives.txt @14cbdc68
-E481,katki_maddesi,,E481(ii),E481,,,OFF additives.txt @14cbdc68
 E482,katki_maddesi,,Calcium stearoyl-2-lactylate,E482,Q788535,,OFF additives.txt @14cbdc68
-E482,katki_maddesi,,E482(i),E482,,,OFF additives.txt @14cbdc68
-E482,katki_maddesi,,E482(ii),E482,,,OFF additives.txt @14cbdc68
 E483,katki_maddesi,,Stearyl tartrate,E483,Q673260,,OFF additives.txt @14cbdc68
 E484,katki_maddesi,Stearil sitrat,Stearyl citrate,E484,Q18608830,,OFF additives.txt @14cbdc68
 E485,katki_maddesi,,Sodium stearoyl fumarate,E485,Q18967283,,OFF additives.txt @14cbdc68
@@ -452,19 +319,10 @@ E494,katki_maddesi,,Sorbitan monooleate,E494,Q18944664,,OFF additives.txt @14cbd
 E495,katki_maddesi,,Sorbitan monopalmitate,E495,Q18601367,,OFF additives.txt @14cbdc68
 E496,katki_maddesi,,Sorbitan trioleate,E496,Q18601524,,OFF additives.txt @14cbdc68
 E500,katki_maddesi,,Sodium carbonates,E500,Q190227,,OFF additives.txt @14cbdc68
-E500,katki_maddesi,E500(i),E500(i),E500,Q190227,,OFF additives.txt @14cbdc68
-E500,katki_maddesi,E500(ii),E500(ii),E500,Q179731,,OFF additives.txt @14cbdc68
-E500,katki_maddesi,,E500(iii),E500,Q2234978,,OFF additives.txt @14cbdc68
 E501,katki_maddesi,,Potassium carbonates,E501,Q379885,,OFF additives.txt @14cbdc68
-E501,katki_maddesi,,E501(i),E501,Q379885,,OFF additives.txt @14cbdc68
-E501,katki_maddesi,,E501(ii),E501,Q410529,,OFF additives.txt @14cbdc68
 E502,katki_maddesi,,Carbonates,E502,,,OFF additives.txt @14cbdc68
 E503,katki_maddesi,,Ammonium carbonates,E503,Q204873,,OFF additives.txt @14cbdc68
-E503,katki_maddesi,,E503(i),E503,Q204873,,OFF additives.txt @14cbdc68
-E503,katki_maddesi,,E503(ii),E503,Q421123,,OFF additives.txt @14cbdc68
 E504,katki_maddesi,,Magnesium carbonates,E504,Q407931,,OFF additives.txt @14cbdc68
-E504,katki_maddesi,,E504(i),E504,Q407931,,OFF additives.txt @14cbdc68
-E504,katki_maddesi,,E504(ii),E504,Q407931,,OFF additives.txt @14cbdc68
 E505,katki_maddesi,,Ferrous carbonate,E505,Q18967227,,OFF additives.txt @14cbdc68
 E507,katki_maddesi,,Hydrochloric acid,E507,Q2409,,OFF additives.txt @14cbdc68
 E508,katki_maddesi,,Potassium chloride,E508,Q184630,,OFF additives.txt @14cbdc68
@@ -474,11 +332,7 @@ E511,katki_maddesi,,Magnesium chloride,E511,Q265414,,OFF additives.txt @14cbdc68
 E512,katki_maddesi,,Stannous chloride,E512,Q204964,,OFF additives.txt @14cbdc68
 E513,katki_maddesi,,Sulphuric acid,E513,Q4118,,OFF additives.txt @14cbdc68
 E514,katki_maddesi,Sodyum sülfatlar,Sodium sulphates,E514,Q211737,,OFF additives.txt @14cbdc68
-E514,katki_maddesi,,E514(i),E514,Q211737,,OFF additives.txt @14cbdc68
-E514,katki_maddesi,,E514(ii),E514,Q211737,,OFF additives.txt @14cbdc68
 E515,katki_maddesi,,Potassium sulphates,E515,Q193054,,OFF additives.txt @14cbdc68
-E515,katki_maddesi,,E515(i),E515,Q193054,,OFF additives.txt @14cbdc68
-E515,katki_maddesi,,E515(ii),E515,Q193054,,OFF additives.txt @14cbdc68
 E516,katki_maddesi,Kalsiyum sülfat,Calcium sulphate,E516,Q407258,,OFF additives.txt @14cbdc68
 E517,katki_maddesi,,Ammonium sulphate,E517,Q191831,,OFF additives.txt @14cbdc68
 E518,katki_maddesi,,Magnesium sulphate,E518,Q288266,,OFF additives.txt @14cbdc68
@@ -502,12 +356,7 @@ E539,katki_maddesi,,sodium thiosulfate,E539,Q339866,,OFF additives.txt @14cbdc68
 E551,katki_maddesi,Silisyum dioksit,Silicon dioxide,E551,Q116269,,OFF additives.txt @14cbdc68
 E552,katki_maddesi,,Calcium silicate,E552,Q416365,,OFF additives.txt @14cbdc68
 E553,katki_maddesi,,Magnesium silicates,E553,,,OFF additives.txt @14cbdc68
-E553,katki_maddesi,,E553(i),E553,,,OFF additives.txt @14cbdc68
-E553,katki_maddesi,,E553(ii),E553,,,OFF additives.txt @14cbdc68
-E553,katki_maddesi,,E553(iii),E553,,,OFF additives.txt @14cbdc68
 E553A,katki_maddesi,sentetik magnezyum silikatlar,synthetic magnesium silicates,E553A,,,OFF additives.txt @14cbdc68
-E553A,katki_maddesi,E553a(i),E553a(i),E553A,,,OFF additives.txt @14cbdc68
-E553A,katki_maddesi,,E553a(ii),E553A,,,OFF additives.txt @14cbdc68
 E553B,katki_maddesi,Talk,Talc,E553B,Q134583,,OFF additives.txt @14cbdc68
 E554,katki_maddesi,,Sodium aluminium silicate,E554,Q18967277,,OFF additives.txt @14cbdc68
 E555,katki_maddesi,,Potassium aluminium silicate,E555,Q18944658,,OFF additives.txt @14cbdc68
@@ -550,8 +399,6 @@ E637,katki_maddesi,,Ethyl maltol,E637,,,OFF additives.txt @14cbdc68
 E638,katki_maddesi,Sodyum aspartam,,E638,,,OFF additives.txt @14cbdc68
 E639,katki_maddesi,Alanin,Alanin,E639,,,OFF additives.txt @14cbdc68
 E640,katki_maddesi,,Glycine and its sodium salt,E640,Q18967228,,OFF additives.txt @14cbdc68
-E640,katki_maddesi,,E640(i),E640,Q18967228,,OFF additives.txt @14cbdc68
-E640,katki_maddesi,E640(ii),E640(ii),E640,Q18967228,,OFF additives.txt @14cbdc68
 E641,katki_maddesi,Lösin,Leucine,E641,Q483745,,OFF additives.txt @14cbdc68
 E642,katki_maddesi,Lizin hidroklorür,,E642,,,OFF additives.txt @14cbdc68
 E650,katki_maddesi,Çinko asetat,Zinc acetate,E650,Q204639,,OFF additives.txt @14cbdc68
@@ -568,8 +415,6 @@ E905,katki_maddesi,,Synthetic wax,E905,Q579764,,OFF additives.txt @14cbdc68
 E905A,katki_maddesi,,mineral oil,E905A,Q583582,,OFF additives.txt @14cbdc68
 E905B,katki_maddesi,Vazelin,petroleum jelly,E905B,Q457239,,OFF additives.txt @14cbdc68
 E905C,katki_maddesi,Petrol mumu,Petroleum wax,E905C,Q579764,,OFF additives.txt @14cbdc68
-E905C,katki_maddesi,,E905c(i),E905C,Q579764,,OFF additives.txt @14cbdc68
-E905C,katki_maddesi,E905c(ii),E905c(ii),E905C,Q579764,,OFF additives.txt @14cbdc68
 E905D,katki_maddesi,,Mineral oil high viscosity,E905D,Q579764,,OFF additives.txt @14cbdc68
 E905E,katki_maddesi,,Mineral oil medium viscosity,E905E,Q579764,,OFF additives.txt @14cbdc68
 E905F,katki_maddesi,,Mineral oil medium and low viscosity class II,E905F,Q579764,,OFF additives.txt @14cbdc68
@@ -620,15 +465,8 @@ E949,katki_maddesi,,Hydrogen,E949,Q556,,OFF additives.txt @14cbdc68
 E950,katki_maddesi,,Acesulfame k,E950,Q132037,,OFF additives.txt @14cbdc68
 E951,katki_maddesi,Aspartam,Aspartame,E951,Q182040,,OFF additives.txt @14cbdc68
 E952,katki_maddesi,Siklamat,Cyclamic acid and its Na and Ca salts,E952,Q2130929,,OFF additives.txt @14cbdc68
-E952,katki_maddesi,,E952(i),E952,,,OFF additives.txt @14cbdc68
-E952,katki_maddesi,,E952(ii),E952,,,OFF additives.txt @14cbdc68
-E952,katki_maddesi,,E952(iv),E952,,,OFF additives.txt @14cbdc68
 E953,katki_maddesi,Izomalt,isomalt,E953,Q412068,,OFF additives.txt @14cbdc68
 E954,katki_maddesi,sakarin,saccharin and its salts,E954,Q191381,,OFF additives.txt @14cbdc68
-E954,katki_maddesi,,E954(i),E954,,,OFF additives.txt @14cbdc68
-E954,katki_maddesi,,E954(ii),E954,,,OFF additives.txt @14cbdc68
-E954,katki_maddesi,,E954(iii),E954,,,OFF additives.txt @14cbdc68
-E954,katki_maddesi,,E954(iv),E954,,,OFF additives.txt @14cbdc68
 E955,katki_maddesi,,Sucralose,E955,Q410209,,OFF additives.txt @14cbdc68
 E956,katki_maddesi,Alitam,Alitame,E956,Q424676,,OFF additives.txt @14cbdc68
 E957,katki_maddesi,Taumatin,Thaumatin,E957,Q414048,,OFF additives.txt @14cbdc68
@@ -644,38 +482,15 @@ E962,katki_maddesi,,Salt of aspartame-acesulfame,E962,Q409847,,OFF additives.txt
 E963,katki_maddesi,Tagatoz,Tagatose,E963,Q414089,,OFF additives.txt @14cbdc68
 E964,katki_maddesi,Poligliserol şurubu,Polyglycitol syrup,E964,Q18601425,,OFF additives.txt @14cbdc68
 E965,katki_maddesi,,maltitol,E965,Q423882,,OFF additives.txt @14cbdc68
-E965,katki_maddesi,,E965(i),E965,Q423882,,OFF additives.txt @14cbdc68
-E965,katki_maddesi,E965(ii),E965(ii),E965,Q423882,,OFF additives.txt @14cbdc68
 E966,katki_maddesi,,Lactitol,E966,Q415020,,OFF additives.txt @14cbdc68
 E967,katki_maddesi,,Xylitol,E967,Q212093,,OFF additives.txt @14cbdc68
 E968,katki_maddesi,,Erythritol,E968,Q421873,,OFF additives.txt @14cbdc68
 E969,katki_maddesi,,Advantame,E969,,,OFF additives.txt @14cbdc68
 E999,katki_maddesi,,Quillaia extract,E999,Q118843,,OFF additives.txt @14cbdc68
-E999,katki_maddesi,,E999(i),E999,,,OFF additives.txt @14cbdc68
-E999,katki_maddesi,,E999(ii),E999,,,OFF additives.txt @14cbdc68
-E999,katki_maddesi,,Exxx,E999,Q118843,,OFF additives.txt @14cbdc68
 E1000,katki_maddesi,Kolik asit,Cholic acid,E1000,Q287415,,OFF additives.txt @14cbdc68
 E1001,katki_maddesi,Kolin tuzu,Choline salt,E1001,Q18668392,,OFF additives.txt @14cbdc68
-E1001,katki_maddesi,,E1001(i),E1001,,,OFF additives.txt @14cbdc68
-E1001,katki_maddesi,,E1001(ii),E1001,,,OFF additives.txt @14cbdc68
-E1001,katki_maddesi,,E1001(iii),E1001,,,OFF additives.txt @14cbdc68
-E1001,katki_maddesi,,E1001(iv),E1001,,,OFF additives.txt @14cbdc68
-E1001,katki_maddesi,,E1001(v),E1001,,,OFF additives.txt @14cbdc68
-E1001,katki_maddesi,,E1001(vi),E1001,,,OFF additives.txt @14cbdc68
 E1100,katki_maddesi,,Alpha-Amylase,E1100,Q17153,,OFF additives.txt @14cbdc68
-E1100,katki_maddesi,,E1100(i),E1100,,,OFF additives.txt @14cbdc68
-E1100,katki_maddesi,,E1100(ii),E1100,,,OFF additives.txt @14cbdc68
-E1100,katki_maddesi,,E1100(iii),E1100,,,OFF additives.txt @14cbdc68
-E1100,katki_maddesi,,E1100(iv),E1100,,,OFF additives.txt @14cbdc68
-E1100,katki_maddesi,,E1100(v),E1100,,,OFF additives.txt @14cbdc68
-E1100,katki_maddesi,,E1100(vi),E1100,,,OFF additives.txt @14cbdc68
 E1101,katki_maddesi,Proteaz,Protease,E1101,Q212410,,OFF additives.txt @14cbdc68
-E1101,katki_maddesi,,E1101(i),E1101,,,OFF additives.txt @14cbdc68
-E1101,katki_maddesi,,E1101(ii),E1101,,,OFF additives.txt @14cbdc68
-E1101,katki_maddesi,,E1101(iii),E1101,,,OFF additives.txt @14cbdc68
-E1101,katki_maddesi,,E1101(iv),E1101,,,OFF additives.txt @14cbdc68
-E1101,katki_maddesi,,E1101(v),E1101,,,OFF additives.txt @14cbdc68
-E1101,katki_maddesi,,E1101(vi),E1101,,,OFF additives.txt @14cbdc68
 E1102,katki_maddesi,,Glucose oxidase,E1102,Q419321,,OFF additives.txt @14cbdc68
 E1103,katki_maddesi,,Invertase,E1103,Q419189,,OFF additives.txt @14cbdc68
 E1104,katki_maddesi,Lipaz,lipase,E1104,Q380967,,OFF additives.txt @14cbdc68
@@ -724,6 +539,59 @@ E1518,katki_maddesi,,Glyceryl triacetate,E1518,Q83253,,OFF additives.txt @14cbdc
 E1519,katki_maddesi,Benzil alkol,Benzyl alcohol,E1519,Q52353,,OFF additives.txt @14cbdc68
 E1520,katki_maddesi,Propilen glikol,Propylene glycol,E1520,Q161495,,OFF additives.txt @14cbdc68
 E1521,katki_maddesi,,Polyethylene glycol,E1521,Q410083,,OFF additives.txt @14cbdc68
+en:acid,katki_sinifi,,Acid,,Q337038,,OFF additives_classes.txt @14cbdc68
+en:acidity-regulator,katki_sinifi,,Acidity regulator,,Q898753,,OFF additives_classes.txt @14cbdc68
+en:anti-caking-agent,katki_sinifi,,Anti-caking agent,,Q726460,,OFF additives_classes.txt @14cbdc68
+en:anti-foaming-agent,katki_sinifi,,Anti-foaming agent,,Q904035,,OFF additives_classes.txt @14cbdc68
+en:antioxidant,katki_sinifi,,Antioxidant,,Q133948,,OFF additives_classes.txt @14cbdc68
+en:natural-antioxidant,katki_sinifi,,natural antioxidant,,,en:antioxidant,OFF additives_classes.txt @14cbdc68
+en:release-agent,katki_sinifi,,release agent,,,,OFF additives_classes.txt @14cbdc68
+en:bleaching-agent,katki_sinifi,ağartma maddesi,Bleaching agent,,,,OFF additives_classes.txt @14cbdc68
+en:bulking-agent,katki_sinifi,,Bulking agent,,,,OFF additives_classes.txt @14cbdc68
+en:anti-bulking-agent,katki_sinifi,,anti-bulking agent,,,,OFF additives_classes.txt @14cbdc68
+en:carbonating-agent,katki_sinifi,Karbonatlaşma ajanı,Carbonating agent,,,,OFF additives_classes.txt @14cbdc68
+en:carrier,katki_sinifi,,Carrier,,,,OFF additives_classes.txt @14cbdc68
+en:colour,katki_sinifi,,Colour,,Q753009,,OFF additives_classes.txt @14cbdc68
+en:concentrated-plant-colour,katki_sinifi,konsantre bitki rengi,concentrated plant colour,,,en:colour,OFF additives_classes.txt @14cbdc68
+en:natural-colours,katki_sinifi,,natural colours,,,en:colour,OFF additives_classes.txt @14cbdc68
+en:crust-colorant,katki_sinifi,kabuk renklendirici,crust colorant,,,en:colour,OFF additives_classes.txt @14cbdc68
+en:colour-retention-agent,katki_sinifi,,colour retention agent,,,,OFF additives_classes.txt @14cbdc68
+en:emulsifier,katki_sinifi,,Emulsifier,,Q907356,,OFF additives_classes.txt @14cbdc68
+en:natural-emulsifier,katki_sinifi,doğal emülgatör,natural emulsifier,,,en:emulsifier,OFF additives_classes.txt @14cbdc68
+en:emulsifying-salts,katki_sinifi,,Emulsifying salts,,Q50419202,,OFF additives_classes.txt @14cbdc68
+en:firming-agent,katki_sinifi,,Firming agent,,Q1408496,,OFF additives_classes.txt @14cbdc68
+en:natural-firming-agent,katki_sinifi,,Natural firming agent,,,en:firming-agent,OFF additives_classes.txt @14cbdc68
+en:flavour-enhancer,katki_sinifi,,Flavour enhancer,,Q898745,,OFF additives_classes.txt @14cbdc68
+en:flour-treatment-agent,katki_sinifi,,Flour treatment agent,,Q469842,,OFF additives_classes.txt @14cbdc68
+en:foaming-agent,katki_sinifi,,Foaming agent,,Q759922,,OFF additives_classes.txt @14cbdc68
+en:gelling-agent,katki_sinifi,,Gelling agent,,Q27862636,,OFF additives_classes.txt @14cbdc68
+en:glazing-agent,katki_sinifi,,Glazing agent,,Q334582,,OFF additives_classes.txt @14cbdc68
+en:humectant,katki_sinifi,,Humectant,,Q911854,,OFF additives_classes.txt @14cbdc68
+en:modified-starch,katki_sinifi,,Modified starch,,Q415766,,OFF additives_classes.txt @14cbdc68
+en:packaging-gas,katki_sinifi,,Packaging gas,,,,OFF additives_classes.txt @14cbdc68
+en:preservative,katki_sinifi,,Preservative,,Q274579,,OFF additives_classes.txt @14cbdc68
+en:fruit-preservative,katki_sinifi,meyve koruyucu,fruit preservative,,,en:preservative,OFF additives_classes.txt @14cbdc68
+en:natural-preservative,katki_sinifi,doğal koruyucu,natural preservative,,,en:preservative,OFF additives_classes.txt @14cbdc68
+en:propellent-gas,katki_sinifi,,Propellent gas,,Q1875049,,OFF additives_classes.txt @14cbdc68
+en:raising-agent,katki_sinifi,,Raising agent,,Q908833,,OFF additives_classes.txt @14cbdc68
+en:sequestrant,katki_sinifi,,Sequestrant,,Q905648,,OFF additives_classes.txt @14cbdc68
+en:stabiliser,katki_sinifi,,Stabiliser,,Q7595716,,OFF additives_classes.txt @14cbdc68
+en:natural-stabilizer,katki_sinifi,,natural stabilizer,,,en:stabiliser,OFF additives_classes.txt @14cbdc68
+en:colour-stabiliser,katki_sinifi,,colour stabiliser,,,en:stabiliser,OFF additives_classes.txt @14cbdc68
+en:sweetener,katki_sinifi,,Sweetener,,Q626292,,OFF additives_classes.txt @14cbdc68
+en:thickener,katki_sinifi,,Thickener,,Q911138,,OFF additives_classes.txt @14cbdc68
+en:natural-thickener,katki_sinifi,,natural thickener,,,en:thickener,OFF additives_classes.txt @14cbdc68
+en:enriching-substances,katki_sinifi,,enriching substances,,,,OFF additives_classes.txt @14cbdc68
+en:minerals,katki_sinifi,,Minerals,,,,OFF additives_classes.txt @14cbdc68
+en:amino-acids,katki_sinifi,,Amino acids,,,,OFF additives_classes.txt @14cbdc68
+en:nucleotides,katki_sinifi,,Nucleotides,,,,OFF additives_classes.txt @14cbdc68
+en:other-nutritional-substances,katki_sinifi,,Other nutritional substances,,,,OFF additives_classes.txt @14cbdc68
+en:coagulant,katki_sinifi,,coagulant,,,,OFF additives_classes.txt @14cbdc68
+en:salt-substitute,katki_sinifi,tuz ikamesi,salt substitute,,,,OFF additives_classes.txt @14cbdc68
+en:creaming-agent,katki_sinifi,,creaming agent,,,,OFF additives_classes.txt @14cbdc68
+en:enhancer,katki_sinifi,,enhancer,,,,OFF additives_classes.txt @14cbdc68
+en:bread-improver,katki_sinifi,,bread improver,,,en:enhancer,OFF additives_classes.txt @14cbdc68
+en:cooking-enhancer,katki_sinifi,,cooking enhancer,,,en:enhancer,OFF additives_classes.txt @14cbdc68
 en:imazalil,gida_kavrami,,imazalil,,Q421576,,OFF ingredients.txt @14cbdc68
 en:frying,gida_kavrami,,frying,,,,OFF ingredients.txt @14cbdc68
 en:caramel-syrup,gida_kavrami,,caramel syrup,,,,OFF ingredients.txt @14cbdc68

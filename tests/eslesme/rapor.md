@@ -1,8 +1,6 @@
 # Eşleme ve kural raporu — 3 etiket
 
-Toplam ifade: **20** · E-kodu: 4 · birebir: 9 · bulanık: 0 · fonksiyon adı: 4 · **tanınmayan: 3** (%15)
-
-**Tanınmayan ifadeler (Türkçeleştirme listesi):** mısır unu, pirinç unu, aroma verici
+Toplam ifade: **20** · E-kodu: 4 · birebir: 16 · çoğul: 0 · gürültü: 0 · bulanık: 0 · fonksiyon adı: 0 · **tanınmayan: 0** (%0)
 
 ## Örnek bisküvi (diyagramdaki) *(örnek etiket)*
 
@@ -15,7 +13,7 @@ Toplam ifade: **20** · E-kodu: 4 · birebir: 9 · bulanık: 0 · fonksiyon adı
 | glikoz şurubu | glikoz şurubu `en:glucose-syrup` | exact |
 | bitkisel yağ | Bitkisel yağ `en:vegetable-oil` | exact |
 | palm | palm `en:palm` | exact |
-| renklendirici | — `` | function_label |
+| renklendirici | Colour `en:colour` | exact |
 | E102 | Tartrazin `E102` | e_code |
 | süt *(içerebilir)* | Süt `en:milk` | exact |
 
@@ -31,16 +29,16 @@ Toplam ifade: **20** · E-kodu: 4 · birebir: 9 · bulanık: 0 · fonksiyon adı
 
 | Etiketteki ifade | Eşleşen kavram | Yöntem |
 |---|---|---|
-| mısır unu | — `` | unknown |
-| pirinç unu | — `` | unknown |
+| mısır unu | corn flour `en:corn-flour` | exact |
+| pirinç unu | rice flour `en:rice-flour` | exact |
 | ayçiçek yağı | Ayçiçek yağı `en:sunflower-oil` | exact |
 | tuz | tuz `en:salt` | exact |
-| kabartıcı | — `` | function_label |
-| E500 | E500(iii) `E500` | e_code |
+| kabartıcı | Kabartma ajanı `en:raising-agent` | exact |
+| E500 | Sodium carbonates `E500` | e_code |
 
 | Durum | Sonuç | Neden | Kaynak |
 |---|---|---|---|
-| Çölyak | **Doğrulanamadı** | CEL-03: Gluten kaynağı yok ve etikette 'glutensiz' beyanı var (≤ 20 mg/kg) (beyan: glutensiz); -: tanınmayan içerik: mısır unu, pirinç unu | Karar belgesi ilke 3; Reg. (EU) No 828/2014 ('gluten-free' ≤ 20 mg/kg) |
+| Çölyak | **Engel bulunmadı** | CEL-03: Gluten kaynağı yok ve etikette 'glutensiz' beyanı var (≤ 20 mg/kg) (beyan: glutensiz) | Reg. (EU) No 828/2014 ('gluten-free' ≤ 20 mg/kg) |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 2.1 g / 100 g (≤ 5.0) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.56 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
 
@@ -52,10 +50,10 @@ Toplam ifade: **20** · E-kodu: 4 · birebir: 9 · bulanık: 0 · fonksiyon adı
 |---|---|---|
 | su | Su `en:water` | exact |
 | şeker | Şeker `en:sugar` | exact |
-| asitlik düzenleyici | — `` | function_label |
+| asitlik düzenleyici | Acidity regulator `en:acidity-regulator` | exact |
 | E330 | sitrik asit `E330` | e_code |
-| aroma verici | — `` | unknown |
-| renklendirici | — `` | function_label |
+| aroma verici | flavouring `en:flavouring` | exact |
+| renklendirici | Colour `en:colour` | exact |
 | E150d | Sülfit amonyak karamel `E150D` | e_code |
 
 | Durum | Sonuç | Neden | Kaynak |

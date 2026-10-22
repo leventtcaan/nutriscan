@@ -6,29 +6,29 @@ E100,Curcumin,en,SAME_AS,OFF additives.txt @14cbdc68
 E100,Turmeric extract,en,SAME_AS,OFF additives.txt @14cbdc68
 E100,curcuma extract,en,SAME_AS,OFF additives.txt @14cbdc68
 E100,turmeric color,en,SAME_AS,OFF additives.txt @14cbdc68
-E100,E100(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E100,E100(ii),en,SAME_AS,OFF additives.txt @14cbdc68
+E100,E100(i),en,IS_A,OFF additives.txt @14cbdc68
+E100,E100(ii),en,IS_A,OFF additives.txt @14cbdc68
 E106,E106,en,SAME_AS,OFF additives.txt @14cbdc68
 E106,flavin mononucleotide,en,SAME_AS,OFF additives.txt @14cbdc68
 E101,E101,en,SAME_AS,OFF additives.txt @14cbdc68
 E101,Riboflavins,en,SAME_AS,OFF additives.txt @14cbdc68
 E101,riboflavin color,en,SAME_AS,OFF additives.txt @14cbdc68
-E101,E101(i),tr,SAME_AS,OFF additives.txt @14cbdc68
-E101,Riboflavin,tr,SAME_AS,OFF additives.txt @14cbdc68
-E101,Laktoflavin,tr,SAME_AS,OFF additives.txt @14cbdc68
-E101,E101(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E101,Riboflavin,en,SAME_AS,OFF additives.txt @14cbdc68
-E101,Riboflavine,en,SAME_AS,OFF additives.txt @14cbdc68
-E101,Flavaxin,en,SAME_AS,OFF additives.txt @14cbdc68
-E101,Lactoflavine,en,SAME_AS,OFF additives.txt @14cbdc68
-E101,Lactoflavin,en,SAME_AS,OFF additives.txt @14cbdc68
-E101,E101(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E101,Riboflavin-5′-phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E101,phosphate lactoflavina,en,SAME_AS,OFF additives.txt @14cbdc68
-E101,E101(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E101,Riboflavin from Bacillus subtilis,en,SAME_AS,OFF additives.txt @14cbdc68
-E101,E101(iv),en,SAME_AS,OFF additives.txt @14cbdc68
-E101,Riboflavin from Ashbya gossypii,en,SAME_AS,OFF additives.txt @14cbdc68
+E101,E101(i),tr,IS_A,OFF additives.txt @14cbdc68
+E101,Riboflavin,tr,IS_A,OFF additives.txt @14cbdc68
+E101,Laktoflavin,tr,IS_A,OFF additives.txt @14cbdc68
+E101,E101(i),en,IS_A,OFF additives.txt @14cbdc68
+E101,Riboflavin,en,IS_A,OFF additives.txt @14cbdc68
+E101,Riboflavine,en,IS_A,OFF additives.txt @14cbdc68
+E101,Flavaxin,en,IS_A,OFF additives.txt @14cbdc68
+E101,Lactoflavine,en,IS_A,OFF additives.txt @14cbdc68
+E101,Lactoflavin,en,IS_A,OFF additives.txt @14cbdc68
+E101,E101(ii),en,IS_A,OFF additives.txt @14cbdc68
+E101,Riboflavin-5′-phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E101,phosphate lactoflavina,en,IS_A,OFF additives.txt @14cbdc68
+E101,E101(iii),en,IS_A,OFF additives.txt @14cbdc68
+E101,Riboflavin from Bacillus subtilis,en,IS_A,OFF additives.txt @14cbdc68
+E101,E101(iv),en,IS_A,OFF additives.txt @14cbdc68
+E101,Riboflavin from Ashbya gossypii,en,IS_A,OFF additives.txt @14cbdc68
 E101A,E101a,en,SAME_AS,OFF additives.txt @14cbdc68
 E101A,E101a food additive,en,SAME_AS,OFF additives.txt @14cbdc68
 E102,E102,tr,SAME_AS,OFF additives.txt @14cbdc68
@@ -164,27 +164,27 @@ E133,fd&c blue no. 1,en,SAME_AS,OFF additives.txt @14cbdc68
 E133,Blue 1 lake,en,SAME_AS,OFF additives.txt @14cbdc68
 E140,E140,en,SAME_AS,OFF additives.txt @14cbdc68
 E140,Chlorophylls and Chlorophyllins,en,SAME_AS,OFF additives.txt @14cbdc68
-E140,E140(i),tr,SAME_AS,OFF additives.txt @14cbdc68
-E140,Klorofil,tr,SAME_AS,OFF additives.txt @14cbdc68
-E140,E140(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E140,Chlorophylls,en,SAME_AS,OFF additives.txt @14cbdc68
-E140,Magnesium Chlorophyll,en,SAME_AS,OFF additives.txt @14cbdc68
-E140,chlorophyll,en,SAME_AS,OFF additives.txt @14cbdc68
-E140,E140(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E140,Chlorophyllins,en,SAME_AS,OFF additives.txt @14cbdc68
-E140,CI Natural Green 5,en,SAME_AS,OFF additives.txt @14cbdc68
-E140,Sodium Chlorophyllin,en,SAME_AS,OFF additives.txt @14cbdc68
+E140,E140(i),tr,IS_A,OFF additives.txt @14cbdc68
+E140,Klorofil,tr,IS_A,OFF additives.txt @14cbdc68
+E140,E140(i),en,IS_A,OFF additives.txt @14cbdc68
+E140,Chlorophylls,en,IS_A,OFF additives.txt @14cbdc68
+E140,Magnesium Chlorophyll,en,IS_A,OFF additives.txt @14cbdc68
+E140,chlorophyll,en,IS_A,OFF additives.txt @14cbdc68
+E140,E140(ii),en,IS_A,OFF additives.txt @14cbdc68
+E140,Chlorophyllins,en,IS_A,OFF additives.txt @14cbdc68
+E140,CI Natural Green 5,en,IS_A,OFF additives.txt @14cbdc68
+E140,Sodium Chlorophyllin,en,IS_A,OFF additives.txt @14cbdc68
 E141,E141,en,SAME_AS,OFF additives.txt @14cbdc68
 E141,Copper complexes of chlorophylls and chlorophyllins,en,SAME_AS,OFF additives.txt @14cbdc68
 E141,Copper complexes of chlorophyll and chlorophyllins,en,SAME_AS,OFF additives.txt @14cbdc68
-E141,E141(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E141,Copper complexes of chlorophylls,en,SAME_AS,OFF additives.txt @14cbdc68
-E141,Copper Chlorophyll,en,SAME_AS,OFF additives.txt @14cbdc68
-E141,E141(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E141,Copper complexes of chlorophyllins,en,SAME_AS,OFF additives.txt @14cbdc68
-E141,Sodium Copper Chlorophyllin,en,SAME_AS,OFF additives.txt @14cbdc68
-E141,Potassium Copper Chlorophyllin,en,SAME_AS,OFF additives.txt @14cbdc68
-E141,Copper Chlorophyllin,en,SAME_AS,OFF additives.txt @14cbdc68
+E141,E141(i),en,IS_A,OFF additives.txt @14cbdc68
+E141,Copper complexes of chlorophylls,en,IS_A,OFF additives.txt @14cbdc68
+E141,Copper Chlorophyll,en,IS_A,OFF additives.txt @14cbdc68
+E141,E141(ii),en,IS_A,OFF additives.txt @14cbdc68
+E141,Copper complexes of chlorophyllins,en,IS_A,OFF additives.txt @14cbdc68
+E141,Sodium Copper Chlorophyllin,en,IS_A,OFF additives.txt @14cbdc68
+E141,Potassium Copper Chlorophyllin,en,IS_A,OFF additives.txt @14cbdc68
+E141,Copper Chlorophyllin,en,IS_A,OFF additives.txt @14cbdc68
 E142,E142,en,SAME_AS,OFF additives.txt @14cbdc68
 E142,Green s,en,SAME_AS,OFF additives.txt @14cbdc68
 E142,CI Food Green 4,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -259,16 +259,16 @@ E160A,karotenler,tr,SAME_AS,OFF additives.txt @14cbdc68
 E160A,E160a,en,SAME_AS,OFF additives.txt @14cbdc68
 E160A,carotene,en,SAME_AS,OFF additives.txt @14cbdc68
 E160A,carotene color,en,SAME_AS,OFF additives.txt @14cbdc68
-E160A,E160a(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E160A,Beta-carotene,en,SAME_AS,OFF additives.txt @14cbdc68
-E160A,b-carotene,en,SAME_AS,OFF additives.txt @14cbdc68
-E160A,beta-carotene color,en,SAME_AS,OFF additives.txt @14cbdc68
-E160A,E160a(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E160A,Plant carotenes,en,SAME_AS,OFF additives.txt @14cbdc68
-E160A,E160a(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E160A,Beta-carotene from blakeslea trispora,en,SAME_AS,OFF additives.txt @14cbdc68
-E160A,E160a(iv),en,SAME_AS,OFF additives.txt @14cbdc68
-E160A,Algal carotenes,en,SAME_AS,OFF additives.txt @14cbdc68
+E160A,E160a(i),en,IS_A,OFF additives.txt @14cbdc68
+E160A,Beta-carotene,en,IS_A,OFF additives.txt @14cbdc68
+E160A,b-carotene,en,IS_A,OFF additives.txt @14cbdc68
+E160A,beta-carotene color,en,IS_A,OFF additives.txt @14cbdc68
+E160A,E160a(ii),en,IS_A,OFF additives.txt @14cbdc68
+E160A,Plant carotenes,en,IS_A,OFF additives.txt @14cbdc68
+E160A,E160a(iii),en,IS_A,OFF additives.txt @14cbdc68
+E160A,Beta-carotene from blakeslea trispora,en,IS_A,OFF additives.txt @14cbdc68
+E160A,E160a(iv),en,IS_A,OFF additives.txt @14cbdc68
+E160A,Algal carotenes,en,IS_A,OFF additives.txt @14cbdc68
 E160B,E160b,en,SAME_AS,OFF additives.txt @14cbdc68
 E160B,Annatto,en,SAME_AS,OFF additives.txt @14cbdc68
 E160B,roucou,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -278,14 +278,14 @@ E160B,Terre orellana,en,SAME_AS,OFF additives.txt @14cbdc68
 E160B,L. Orange,en,SAME_AS,OFF additives.txt @14cbdc68
 E160B,CI Natural Orange 4,en,SAME_AS,OFF additives.txt @14cbdc68
 E160B,annatto color,en,SAME_AS,OFF additives.txt @14cbdc68
-E160B,E160b(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E160B,Annatto bixin,en,SAME_AS,OFF additives.txt @14cbdc68
-E160B,Bixin,en,SAME_AS,OFF additives.txt @14cbdc68
-E160B,E160b(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E160B,Annatto norbixin,en,SAME_AS,OFF additives.txt @14cbdc68
-E160B,Norbixin,en,SAME_AS,OFF additives.txt @14cbdc68
-E160B,E160b(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E160B,Oil-extracted annatto,en,SAME_AS,OFF additives.txt @14cbdc68
+E160B,E160b(i),en,IS_A,OFF additives.txt @14cbdc68
+E160B,Annatto bixin,en,IS_A,OFF additives.txt @14cbdc68
+E160B,Bixin,en,IS_A,OFF additives.txt @14cbdc68
+E160B,E160b(ii),en,IS_A,OFF additives.txt @14cbdc68
+E160B,Annatto norbixin,en,IS_A,OFF additives.txt @14cbdc68
+E160B,Norbixin,en,IS_A,OFF additives.txt @14cbdc68
+E160B,E160b(iii),en,IS_A,OFF additives.txt @14cbdc68
+E160B,Oil-extracted annatto,en,IS_A,OFF additives.txt @14cbdc68
 E160C,E160c,tr,SAME_AS,OFF additives.txt @14cbdc68
 E160C,Paprika ekstraktı,tr,SAME_AS,OFF additives.txt @14cbdc68
 E160C,E160c,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -299,19 +299,19 @@ E160C,paprika color,en,SAME_AS,OFF additives.txt @14cbdc68
 E160C,colored with paprika,en,SAME_AS,OFF additives.txt @14cbdc68
 E160C,paprika oleoresin color,en,SAME_AS,OFF additives.txt @14cbdc68
 E160C,oleoresin paprika color,en,SAME_AS,OFF additives.txt @14cbdc68
-E160C,E160c(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E160C,E160c(ii),en,SAME_AS,OFF additives.txt @14cbdc68
+E160C,E160c(i),en,IS_A,OFF additives.txt @14cbdc68
+E160C,E160c(ii),en,IS_A,OFF additives.txt @14cbdc68
 E160D,E160d,en,SAME_AS,OFF additives.txt @14cbdc68
 E160D,Lycopene,en,SAME_AS,OFF additives.txt @14cbdc68
-E160D,E160d(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E160D,Lycopene\,en,SAME_AS,OFF additives.txt @14cbdc68
-E160D,synthetic,en,SAME_AS,OFF additives.txt @14cbdc68
-E160D,E160d(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E160D,Lycopene\,en,SAME_AS,OFF additives.txt @14cbdc68
-E160D,tomato,en,SAME_AS,OFF additives.txt @14cbdc68
-E160D,E160d(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E160D,Lycopene\,en,SAME_AS,OFF additives.txt @14cbdc68
-E160D,Blakeslea trispora,en,SAME_AS,OFF additives.txt @14cbdc68
+E160D,E160d(i),en,IS_A,OFF additives.txt @14cbdc68
+E160D,Lycopene\,en,IS_A,OFF additives.txt @14cbdc68
+E160D,synthetic,en,IS_A,OFF additives.txt @14cbdc68
+E160D,E160d(ii),en,IS_A,OFF additives.txt @14cbdc68
+E160D,Lycopene\,en,IS_A,OFF additives.txt @14cbdc68
+E160D,tomato,en,IS_A,OFF additives.txt @14cbdc68
+E160D,E160d(iii),en,IS_A,OFF additives.txt @14cbdc68
+E160D,Lycopene\,en,IS_A,OFF additives.txt @14cbdc68
+E160D,Blakeslea trispora,en,IS_A,OFF additives.txt @14cbdc68
 E160E,E160e,en,SAME_AS,OFF additives.txt @14cbdc68
 E160E,Beta-apo-8′-carotenal (c30),en,SAME_AS,OFF additives.txt @14cbdc68
 E160E,Apocarotenal,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -336,11 +336,11 @@ E161B,Lutein,en,SAME_AS,OFF additives.txt @14cbdc68
 E161B,Mixed Carotenoids,en,SAME_AS,OFF additives.txt @14cbdc68
 E161B,Xanthophyll,en,SAME_AS,OFF additives.txt @14cbdc68
 E161B,tagete extract,en,SAME_AS,OFF additives.txt @14cbdc68
-E161B,E161b(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E161B,Lutein from Tagetes erecta,en,SAME_AS,OFF additives.txt @14cbdc68
-E161B,E161b(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E161B,E161b(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E161B,Lutein esters from Tagetes erecta,en,SAME_AS,OFF additives.txt @14cbdc68
+E161B,E161b(i),en,IS_A,OFF additives.txt @14cbdc68
+E161B,Lutein from Tagetes erecta,en,IS_A,OFF additives.txt @14cbdc68
+E161B,E161b(ii),en,IS_A,OFF additives.txt @14cbdc68
+E161B,E161b(iii),en,IS_A,OFF additives.txt @14cbdc68
+E161B,Lutein esters from Tagetes erecta,en,IS_A,OFF additives.txt @14cbdc68
 E161C,E161c,tr,SAME_AS,OFF additives.txt @14cbdc68
 E161C,Kriptoksantin,tr,SAME_AS,OFF additives.txt @14cbdc68
 E161C,E161c,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -360,18 +360,18 @@ E161H,E161h,tr,SAME_AS,OFF additives.txt @14cbdc68
 E161H,Zeaksantin,tr,SAME_AS,OFF additives.txt @14cbdc68
 E161H,E161h,en,SAME_AS,OFF additives.txt @14cbdc68
 E161H,Zeaxanthin,en,SAME_AS,OFF additives.txt @14cbdc68
-E161H,E161h(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E161H,Zeaxanthin\,en,SAME_AS,OFF additives.txt @14cbdc68
-E161H,synthetic,en,SAME_AS,OFF additives.txt @14cbdc68
-E161H,E161h(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E161,E161i,tr,SAME_AS,OFF additives.txt @14cbdc68
-E161,Sitranaksantin,tr,SAME_AS,OFF additives.txt @14cbdc68
-E161,E161i,en,SAME_AS,OFF additives.txt @14cbdc68
-E161,Citranaxanthin,en,SAME_AS,OFF additives.txt @14cbdc68
-E161,E161j,tr,SAME_AS,OFF additives.txt @14cbdc68
-E161,Astaksantin,tr,SAME_AS,OFF additives.txt @14cbdc68
-E161,E161j,en,SAME_AS,OFF additives.txt @14cbdc68
-E161,Astaxanthin,en,SAME_AS,OFF additives.txt @14cbdc68
+E161H,E161h(i),en,IS_A,OFF additives.txt @14cbdc68
+E161H,Zeaxanthin\,en,IS_A,OFF additives.txt @14cbdc68
+E161H,synthetic,en,IS_A,OFF additives.txt @14cbdc68
+E161H,E161h(ii),en,IS_A,OFF additives.txt @14cbdc68
+E161,E161i,tr,IS_A,OFF additives.txt @14cbdc68
+E161,Sitranaksantin,tr,IS_A,OFF additives.txt @14cbdc68
+E161,E161i,en,IS_A,OFF additives.txt @14cbdc68
+E161,Citranaxanthin,en,IS_A,OFF additives.txt @14cbdc68
+E161,E161j,tr,IS_A,OFF additives.txt @14cbdc68
+E161,Astaksantin,tr,IS_A,OFF additives.txt @14cbdc68
+E161,E161j,en,IS_A,OFF additives.txt @14cbdc68
+E161,Astaxanthin,en,IS_A,OFF additives.txt @14cbdc68
 E162,E162,en,SAME_AS,OFF additives.txt @14cbdc68
 E162,Beetroot red,en,SAME_AS,OFF additives.txt @14cbdc68
 E162,betanin,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -380,16 +380,16 @@ E163,Antosiyanin,tr,SAME_AS,OFF additives.txt @14cbdc68
 E163,E163,en,SAME_AS,OFF additives.txt @14cbdc68
 E163,Anthocyanins,en,SAME_AS,OFF additives.txt @14cbdc68
 E163,Anthocyanin,en,SAME_AS,OFF additives.txt @14cbdc68
-E163,E163(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E163,E163(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E163,E163(iv),en,SAME_AS,OFF additives.txt @14cbdc68
-E163,E163(v),en,SAME_AS,OFF additives.txt @14cbdc68
-E163,E163(vi),en,SAME_AS,OFF additives.txt @14cbdc68
-E163,E163(vii),en,SAME_AS,OFF additives.txt @14cbdc68
-E163,E163(viii),en,SAME_AS,OFF additives.txt @14cbdc68
-E163,E163(ix),en,SAME_AS,OFF additives.txt @14cbdc68
-E163,E163(x),en,SAME_AS,OFF additives.txt @14cbdc68
-E163,E163(xi),en,SAME_AS,OFF additives.txt @14cbdc68
+E163,E163(ii),en,IS_A,OFF additives.txt @14cbdc68
+E163,E163(iii),en,IS_A,OFF additives.txt @14cbdc68
+E163,E163(iv),en,IS_A,OFF additives.txt @14cbdc68
+E163,E163(v),en,IS_A,OFF additives.txt @14cbdc68
+E163,E163(vi),en,IS_A,OFF additives.txt @14cbdc68
+E163,E163(vii),en,IS_A,OFF additives.txt @14cbdc68
+E163,E163(viii),en,IS_A,OFF additives.txt @14cbdc68
+E163,E163(ix),en,IS_A,OFF additives.txt @14cbdc68
+E163,E163(x),en,IS_A,OFF additives.txt @14cbdc68
+E163,E163(xi),en,IS_A,OFF additives.txt @14cbdc68
 E163A,E163a,tr,SAME_AS,OFF additives.txt @14cbdc68
 E163A,Siyanidin,tr,SAME_AS,OFF additives.txt @14cbdc68
 E163A,E163a,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -430,16 +430,16 @@ E171,Titanium dioxide,en,SAME_AS,OFF additives.txt @14cbdc68
 E171,titanium dioxide color,en,SAME_AS,OFF additives.txt @14cbdc68
 E172,E172,en,SAME_AS,OFF additives.txt @14cbdc68
 E172,Iron oxides and iron hydroxides,en,SAME_AS,OFF additives.txt @14cbdc68
-E172,E172(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E172,Black iron oxide,en,SAME_AS,OFF additives.txt @14cbdc68
-E172,E172(ii),tr,SAME_AS,OFF additives.txt @14cbdc68
-E172,Kırmızı demir oksit,tr,SAME_AS,OFF additives.txt @14cbdc68
-E172,E172(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E172,Red iron oxide,en,SAME_AS,OFF additives.txt @14cbdc68
-E172,iron(III) oxide,en,SAME_AS,OFF additives.txt @14cbdc68
-E172,ferric oxide,en,SAME_AS,OFF additives.txt @14cbdc68
-E172,E172(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E172,Yellow iron oxide,en,SAME_AS,OFF additives.txt @14cbdc68
+E172,E172(i),en,IS_A,OFF additives.txt @14cbdc68
+E172,Black iron oxide,en,IS_A,OFF additives.txt @14cbdc68
+E172,E172(ii),tr,IS_A,OFF additives.txt @14cbdc68
+E172,Kırmızı demir oksit,tr,IS_A,OFF additives.txt @14cbdc68
+E172,E172(ii),en,IS_A,OFF additives.txt @14cbdc68
+E172,Red iron oxide,en,IS_A,OFF additives.txt @14cbdc68
+E172,iron(III) oxide,en,IS_A,OFF additives.txt @14cbdc68
+E172,ferric oxide,en,IS_A,OFF additives.txt @14cbdc68
+E172,E172(iii),en,IS_A,OFF additives.txt @14cbdc68
+E172,Yellow iron oxide,en,IS_A,OFF additives.txt @14cbdc68
 E173,E173,en,SAME_AS,OFF additives.txt @14cbdc68
 E173,Aluminium,en,SAME_AS,OFF additives.txt @14cbdc68
 E173,Aluminum,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -646,17 +646,17 @@ E261,E261,tr,SAME_AS,OFF additives.txt @14cbdc68
 E261,Potasyum asetat,tr,SAME_AS,OFF additives.txt @14cbdc68
 E261,E261,en,SAME_AS,OFF additives.txt @14cbdc68
 E261,Potassium acetate,en,SAME_AS,OFF additives.txt @14cbdc68
-E261,E261(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E261,E261(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E261,Potassium diacetate,en,SAME_AS,OFF additives.txt @14cbdc68
+E261,E261(i),en,IS_A,OFF additives.txt @14cbdc68
+E261,E261(ii),en,IS_A,OFF additives.txt @14cbdc68
+E261,Potassium diacetate,en,IS_A,OFF additives.txt @14cbdc68
 E262,E262,en,SAME_AS,OFF additives.txt @14cbdc68
 E262,Sodium acetates,en,SAME_AS,OFF additives.txt @14cbdc68
-E262,E262(i),tr,SAME_AS,OFF additives.txt @14cbdc68
-E262,Sodyum asetat,tr,SAME_AS,OFF additives.txt @14cbdc68
-E262,E262(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E262,Sodium acetate,en,SAME_AS,OFF additives.txt @14cbdc68
-E262,E262(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E262,Sodium diacetate,en,SAME_AS,OFF additives.txt @14cbdc68
+E262,E262(i),tr,IS_A,OFF additives.txt @14cbdc68
+E262,Sodyum asetat,tr,IS_A,OFF additives.txt @14cbdc68
+E262,E262(i),en,IS_A,OFF additives.txt @14cbdc68
+E262,Sodium acetate,en,IS_A,OFF additives.txt @14cbdc68
+E262,E262(ii),en,IS_A,OFF additives.txt @14cbdc68
+E262,Sodium diacetate,en,IS_A,OFF additives.txt @14cbdc68
 E263,E263,tr,SAME_AS,OFF additives.txt @14cbdc68
 E263,Kalsiyum asetat,tr,SAME_AS,OFF additives.txt @14cbdc68
 E263,E263,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -732,12 +732,12 @@ E304,Askorbik asidin yağ asidi esterleri,tr,SAME_AS,OFF additives.txt @14cbdc68
 E304,E304,en,SAME_AS,OFF additives.txt @14cbdc68
 E304,Fatty acid esters of ascorbic acid,en,SAME_AS,OFF additives.txt @14cbdc68
 E304,ascorbic acid esters of fatty acid,en,SAME_AS,OFF additives.txt @14cbdc68
-E304,E304(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E304,Ascorbyl palmitate,en,SAME_AS,OFF additives.txt @14cbdc68
-E304,L-Ascorbyl Palmitate,en,SAME_AS,OFF additives.txt @14cbdc68
-E304,E304(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E304,Ascorbyl stearate,en,SAME_AS,OFF additives.txt @14cbdc68
-E304,E305,en,SAME_AS,OFF additives.txt @14cbdc68
+E304,E304(i),en,IS_A,OFF additives.txt @14cbdc68
+E304,Ascorbyl palmitate,en,IS_A,OFF additives.txt @14cbdc68
+E304,L-Ascorbyl Palmitate,en,IS_A,OFF additives.txt @14cbdc68
+E304,E304(ii),en,IS_A,OFF additives.txt @14cbdc68
+E304,Ascorbyl stearate,en,IS_A,OFF additives.txt @14cbdc68
+E304,E305,en,IS_A,OFF additives.txt @14cbdc68
 E306,E306,en,SAME_AS,OFF additives.txt @14cbdc68
 E306,Tocopherol-rich extract,en,SAME_AS,OFF additives.txt @14cbdc68
 E306,Tocopherols,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -816,15 +816,15 @@ E321,bht added to preserve freshness,en,SAME_AS,OFF additives.txt @14cbdc68
 E322,E322,en,SAME_AS,OFF additives.txt @14cbdc68
 E322,Lecithins,en,SAME_AS,OFF additives.txt @14cbdc68
 E322,Phosphatides,en,SAME_AS,OFF additives.txt @14cbdc68
-E322,E322(i),tr,SAME_AS,OFF additives.txt @14cbdc68
-E322,Lesitin,tr,SAME_AS,OFF additives.txt @14cbdc68
-E322,E322(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E322,Lecithin,en,SAME_AS,OFF additives.txt @14cbdc68
-E322,E322(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E322,Partially hydrolyzed lecithin,en,SAME_AS,OFF additives.txt @14cbdc68
-E322,E322(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E322,Lecithin\,en,SAME_AS,OFF additives.txt @14cbdc68
-E322,hydroxylated,en,SAME_AS,OFF additives.txt @14cbdc68
+E322,E322(i),tr,IS_A,OFF additives.txt @14cbdc68
+E322,Lesitin,tr,IS_A,OFF additives.txt @14cbdc68
+E322,E322(i),en,IS_A,OFF additives.txt @14cbdc68
+E322,Lecithin,en,IS_A,OFF additives.txt @14cbdc68
+E322,E322(ii),en,IS_A,OFF additives.txt @14cbdc68
+E322,Partially hydrolyzed lecithin,en,IS_A,OFF additives.txt @14cbdc68
+E322,E322(iii),en,IS_A,OFF additives.txt @14cbdc68
+E322,Lecithin\,en,IS_A,OFF additives.txt @14cbdc68
+E322,hydroxylated,en,IS_A,OFF additives.txt @14cbdc68
 E322A,E322a,tr,SAME_AS,OFF additives.txt @14cbdc68
 E322A,Yulaf lesitini,tr,SAME_AS,OFF additives.txt @14cbdc68
 E322A,E322a,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -851,34 +851,34 @@ E330,E330,en,SAME_AS,OFF additives.txt @14cbdc68
 E330,Citric acid,en,SAME_AS,OFF additives.txt @14cbdc68
 E331,E331,en,SAME_AS,OFF additives.txt @14cbdc68
 E331,Sodium citrates,en,SAME_AS,OFF additives.txt @14cbdc68
-E331,E331(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E331,Monosodium citrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E331,E331(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E331,Disodium citrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E331,E331(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E331,Trisodium citrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E331,tri sodium citrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E331,tri-sodium citrate,en,SAME_AS,OFF additives.txt @14cbdc68
+E331,E331(i),en,IS_A,OFF additives.txt @14cbdc68
+E331,Monosodium citrate,en,IS_A,OFF additives.txt @14cbdc68
+E331,E331(ii),en,IS_A,OFF additives.txt @14cbdc68
+E331,Disodium citrate,en,IS_A,OFF additives.txt @14cbdc68
+E331,E331(iii),en,IS_A,OFF additives.txt @14cbdc68
+E331,Trisodium citrate,en,IS_A,OFF additives.txt @14cbdc68
+E331,tri sodium citrate,en,IS_A,OFF additives.txt @14cbdc68
+E331,tri-sodium citrate,en,IS_A,OFF additives.txt @14cbdc68
 E332,E332,en,SAME_AS,OFF additives.txt @14cbdc68
 E332,Potassium citrates,en,SAME_AS,OFF additives.txt @14cbdc68
-E332,E332(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E332,Monopotassium citrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E332,E332(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E332,Tripotassium citrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E332,tri-potassium citrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E332,tri potassium citrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E332,potassium citrate,en,SAME_AS,OFF additives.txt @14cbdc68
+E332,E332(i),en,IS_A,OFF additives.txt @14cbdc68
+E332,Monopotassium citrate,en,IS_A,OFF additives.txt @14cbdc68
+E332,E332(ii),en,IS_A,OFF additives.txt @14cbdc68
+E332,Tripotassium citrate,en,IS_A,OFF additives.txt @14cbdc68
+E332,tri-potassium citrate,en,IS_A,OFF additives.txt @14cbdc68
+E332,tri potassium citrate,en,IS_A,OFF additives.txt @14cbdc68
+E332,potassium citrate,en,IS_A,OFF additives.txt @14cbdc68
 E333,E333,en,SAME_AS,OFF additives.txt @14cbdc68
 E333,Calcium citrates,en,SAME_AS,OFF additives.txt @14cbdc68
 E333,Calcium citrate,en,SAME_AS,OFF additives.txt @14cbdc68
 E333,Calcium salts of citric acid,en,SAME_AS,OFF additives.txt @14cbdc68
-E333,E333(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E333,Monocalcium citrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E333,E333(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E333,Dicalcium citrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E333,E333(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E333,Tricalcium citrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E333,tri-calciumcitrate,en,SAME_AS,OFF additives.txt @14cbdc68
+E333,E333(i),en,IS_A,OFF additives.txt @14cbdc68
+E333,Monocalcium citrate,en,IS_A,OFF additives.txt @14cbdc68
+E333,E333(ii),en,IS_A,OFF additives.txt @14cbdc68
+E333,Dicalcium citrate,en,IS_A,OFF additives.txt @14cbdc68
+E333,E333(iii),en,IS_A,OFF additives.txt @14cbdc68
+E333,Tricalcium citrate,en,IS_A,OFF additives.txt @14cbdc68
+E333,tri-calciumcitrate,en,IS_A,OFF additives.txt @14cbdc68
 E334,E334,tr,SAME_AS,OFF additives.txt @14cbdc68
 E334,Tartarik asit,tr,SAME_AS,OFF additives.txt @14cbdc68
 E334,E334,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -894,22 +894,22 @@ E334,uvic acid,en,SAME_AS,OFF additives.txt @14cbdc68
 E334,paratartaric acid,en,SAME_AS,OFF additives.txt @14cbdc68
 E335,E335,en,SAME_AS,OFF additives.txt @14cbdc68
 E335,Sodium tartrates,en,SAME_AS,OFF additives.txt @14cbdc68
-E335,E335(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E335,Monosodium tartrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E335,E335(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E335,Disodium tartrate,en,SAME_AS,OFF additives.txt @14cbdc68
+E335,E335(i),en,IS_A,OFF additives.txt @14cbdc68
+E335,Monosodium tartrate,en,IS_A,OFF additives.txt @14cbdc68
+E335,E335(ii),en,IS_A,OFF additives.txt @14cbdc68
+E335,Disodium tartrate,en,IS_A,OFF additives.txt @14cbdc68
 E336,E336,en,SAME_AS,OFF additives.txt @14cbdc68
 E336,Potassium tartrates,en,SAME_AS,OFF additives.txt @14cbdc68
-E336,E336(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E336,Monopotassium tartrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E336,monopotassic tartrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E336,Potassium bitartrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E336,potassium hydrogen tartrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E336,cream of tartar,en,SAME_AS,OFF additives.txt @14cbdc68
-E336,E336(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E336,Dipotassium tartrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E336,dipotassic tartrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E336,Potassium tartrate,en,SAME_AS,OFF additives.txt @14cbdc68
+E336,E336(i),en,IS_A,OFF additives.txt @14cbdc68
+E336,Monopotassium tartrate,en,IS_A,OFF additives.txt @14cbdc68
+E336,monopotassic tartrate,en,IS_A,OFF additives.txt @14cbdc68
+E336,Potassium bitartrate,en,IS_A,OFF additives.txt @14cbdc68
+E336,potassium hydrogen tartrate,en,IS_A,OFF additives.txt @14cbdc68
+E336,cream of tartar,en,IS_A,OFF additives.txt @14cbdc68
+E336,E336(ii),en,IS_A,OFF additives.txt @14cbdc68
+E336,Dipotassium tartrate,en,IS_A,OFF additives.txt @14cbdc68
+E336,dipotassic tartrate,en,IS_A,OFF additives.txt @14cbdc68
+E336,Potassium tartrate,en,IS_A,OFF additives.txt @14cbdc68
 E337,E337,en,SAME_AS,OFF additives.txt @14cbdc68
 E337,Potassium sodium tartrate,en,SAME_AS,OFF additives.txt @14cbdc68
 E338,E338,tr,SAME_AS,OFF additives.txt @14cbdc68
@@ -921,19 +921,19 @@ E338,phosphoric(V) acid,en,SAME_AS,OFF additives.txt @14cbdc68
 E339,E339,en,SAME_AS,OFF additives.txt @14cbdc68
 E339,Sodium phosphates,en,SAME_AS,OFF additives.txt @14cbdc68
 E339,sodium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E339,E339(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E339,Monosodium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E339,Monosodium monophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E339,Acid monosodium monophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E339,Monosodium orthophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E339,Monobasic sodium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E339,E339(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E339,Disodium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E339,Disodium monophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E339,Secondary sodium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E339,E339(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E339,Trisodium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E339,Tribasic sodium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
+E339,E339(i),en,IS_A,OFF additives.txt @14cbdc68
+E339,Monosodium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E339,Monosodium monophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E339,Acid monosodium monophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E339,Monosodium orthophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E339,Monobasic sodium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E339,E339(ii),en,IS_A,OFF additives.txt @14cbdc68
+E339,Disodium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E339,Disodium monophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E339,Secondary sodium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E339,E339(iii),en,IS_A,OFF additives.txt @14cbdc68
+E339,Trisodium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E339,Tribasic sodium phosphate,en,IS_A,OFF additives.txt @14cbdc68
 E340,E340,tr,SAME_AS,OFF additives.txt @14cbdc68
 E340,Potasyum fosfat,tr,SAME_AS,OFF additives.txt @14cbdc68
 E340,Potasyum fosfatlar,tr,SAME_AS,OFF additives.txt @14cbdc68
@@ -942,96 +942,96 @@ E340,Potassium phosphates,en,SAME_AS,OFF additives.txt @14cbdc68
 E340,potassium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
 E340,E 340,en,SAME_AS,OFF additives.txt @14cbdc68
 E340,E-340,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E340(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E340,Monopotassium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,Monobasic potassium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,Monopotassium monophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E340i,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E 340i,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E-340i,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E340 i,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E340(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E340,Dipotassium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,Dipotassium monophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,Secondary potassium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,Dipotassium orthophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E340ii,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E 340ii,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E-340ii,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E340 ii,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E340(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E340,Tripotassium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,tripotassium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E340iii,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E 340iii,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E340 iii,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,E-340iii,en,SAME_AS,OFF additives.txt @14cbdc68
-E340,Tribasic potassium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
+E340,E340(i),en,IS_A,OFF additives.txt @14cbdc68
+E340,Monopotassium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E340,Monobasic potassium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E340,Monopotassium monophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E340,E340i,en,IS_A,OFF additives.txt @14cbdc68
+E340,E 340i,en,IS_A,OFF additives.txt @14cbdc68
+E340,E-340i,en,IS_A,OFF additives.txt @14cbdc68
+E340,E340 i,en,IS_A,OFF additives.txt @14cbdc68
+E340,E340(ii),en,IS_A,OFF additives.txt @14cbdc68
+E340,Dipotassium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E340,Dipotassium monophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E340,Secondary potassium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E340,Dipotassium orthophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E340,E340ii,en,IS_A,OFF additives.txt @14cbdc68
+E340,E 340ii,en,IS_A,OFF additives.txt @14cbdc68
+E340,E-340ii,en,IS_A,OFF additives.txt @14cbdc68
+E340,E340 ii,en,IS_A,OFF additives.txt @14cbdc68
+E340,E340(iii),en,IS_A,OFF additives.txt @14cbdc68
+E340,Tripotassium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E340,tripotassium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E340,E340iii,en,IS_A,OFF additives.txt @14cbdc68
+E340,E 340iii,en,IS_A,OFF additives.txt @14cbdc68
+E340,E340 iii,en,IS_A,OFF additives.txt @14cbdc68
+E340,E-340iii,en,IS_A,OFF additives.txt @14cbdc68
+E340,Tribasic potassium phosphate,en,IS_A,OFF additives.txt @14cbdc68
 E341,E341,en,SAME_AS,OFF additives.txt @14cbdc68
 E341,Calcium phosphates,en,SAME_AS,OFF additives.txt @14cbdc68
 E341,calcium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
 E341,calcium phosphates,en,SAME_AS,OFF additives.txt @14cbdc68
 E341,E 341,en,SAME_AS,OFF additives.txt @14cbdc68
 E341,E-341,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E341(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E341,Monocalcium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,Monobasic calcium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,mono-calcium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,monocalcium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E341i,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E 341i,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E-341i,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E341 i,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E341(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E341,Dicalcium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,Dibasic calcium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,di-calcium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,dicalcium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E341ii,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E 341ii,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E-341ii,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E341 ii,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E341(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E341,Tricalcium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,Tricalciumphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,tri-calcium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,tricalcium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E341iii,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E 341iii,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E-341iii,en,SAME_AS,OFF additives.txt @14cbdc68
-E341,E341 iii,en,SAME_AS,OFF additives.txt @14cbdc68
+E341,E341(i),en,IS_A,OFF additives.txt @14cbdc68
+E341,Monocalcium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E341,Monobasic calcium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E341,mono-calcium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E341,monocalcium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E341,E341i,en,IS_A,OFF additives.txt @14cbdc68
+E341,E 341i,en,IS_A,OFF additives.txt @14cbdc68
+E341,E-341i,en,IS_A,OFF additives.txt @14cbdc68
+E341,E341 i,en,IS_A,OFF additives.txt @14cbdc68
+E341,E341(ii),en,IS_A,OFF additives.txt @14cbdc68
+E341,Dicalcium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E341,Dibasic calcium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E341,di-calcium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E341,dicalcium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E341,E341ii,en,IS_A,OFF additives.txt @14cbdc68
+E341,E 341ii,en,IS_A,OFF additives.txt @14cbdc68
+E341,E-341ii,en,IS_A,OFF additives.txt @14cbdc68
+E341,E341 ii,en,IS_A,OFF additives.txt @14cbdc68
+E341,E341(iii),en,IS_A,OFF additives.txt @14cbdc68
+E341,Tricalcium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E341,Tricalciumphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E341,tri-calcium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E341,tricalcium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E341,E341iii,en,IS_A,OFF additives.txt @14cbdc68
+E341,E 341iii,en,IS_A,OFF additives.txt @14cbdc68
+E341,E-341iii,en,IS_A,OFF additives.txt @14cbdc68
+E341,E341 iii,en,IS_A,OFF additives.txt @14cbdc68
 E342,E342,en,SAME_AS,OFF additives.txt @14cbdc68
 E342,Ammonium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
 E342,monoammonium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
 E342,diammonium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E342,E342(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E342,Ammonium dihydrogen phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E342,E342(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E342,Diammonium hydrogen phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
+E342,E342(i),en,IS_A,OFF additives.txt @14cbdc68
+E342,Ammonium dihydrogen phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E342,E342(ii),en,IS_A,OFF additives.txt @14cbdc68
+E342,Diammonium hydrogen phosphate,en,IS_A,OFF additives.txt @14cbdc68
 E343,E343,en,SAME_AS,OFF additives.txt @14cbdc68
 E343,Magnesium phosphates,en,SAME_AS,OFF additives.txt @14cbdc68
 E343,magnesium phosphates,en,SAME_AS,OFF additives.txt @14cbdc68
 E343,E 343,en,SAME_AS,OFF additives.txt @14cbdc68
 E343,E-343,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,E343(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E343,Monomagnesium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,Magnesiumdihydrogenphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,Magnesiumphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,monobasic,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,magnesium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,E343(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E343,Dimagnesium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,Magnesiumhydrogenphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,Magnesiumphosphate - dibasic,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,Dimagnesium orthophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,magnesium hydrogen phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,dimagnesium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,E343ii,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,E 343ii,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,E-343ii,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,E343 ii,en,SAME_AS,OFF additives.txt @14cbdc68
-E343,E343(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E343,Trimagnesium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
+E343,E343(i),en,IS_A,OFF additives.txt @14cbdc68
+E343,Monomagnesium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E343,Magnesiumdihydrogenphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E343,Magnesiumphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E343,monobasic,en,IS_A,OFF additives.txt @14cbdc68
+E343,magnesium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E343,E343(ii),en,IS_A,OFF additives.txt @14cbdc68
+E343,Dimagnesium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E343,Magnesiumhydrogenphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E343,Magnesiumphosphate - dibasic,en,IS_A,OFF additives.txt @14cbdc68
+E343,Dimagnesium orthophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E343,magnesium hydrogen phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E343,dimagnesium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E343,E343ii,en,IS_A,OFF additives.txt @14cbdc68
+E343,E 343ii,en,IS_A,OFF additives.txt @14cbdc68
+E343,E-343ii,en,IS_A,OFF additives.txt @14cbdc68
+E343,E343 ii,en,IS_A,OFF additives.txt @14cbdc68
+E343,E343(iii),en,IS_A,OFF additives.txt @14cbdc68
+E343,Trimagnesium phosphate,en,IS_A,OFF additives.txt @14cbdc68
 E344,E344,en,SAME_AS,OFF additives.txt @14cbdc68
 E344,Lecithin citrate,en,SAME_AS,OFF additives.txt @14cbdc68
 E345,E345,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1042,21 +1042,21 @@ E350,E350,tr,SAME_AS,OFF additives.txt @14cbdc68
 E350,Sodyum malatlar,tr,SAME_AS,OFF additives.txt @14cbdc68
 E350,E350,en,SAME_AS,OFF additives.txt @14cbdc68
 E350,Sodium malates,en,SAME_AS,OFF additives.txt @14cbdc68
-E350,E350(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E350,Sodium malate,en,SAME_AS,OFF additives.txt @14cbdc68
-E350,E350(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E350,Sodium hydrogen malate,en,SAME_AS,OFF additives.txt @14cbdc68
+E350,E350(i),en,IS_A,OFF additives.txt @14cbdc68
+E350,Sodium malate,en,IS_A,OFF additives.txt @14cbdc68
+E350,E350(ii),en,IS_A,OFF additives.txt @14cbdc68
+E350,Sodium hydrogen malate,en,IS_A,OFF additives.txt @14cbdc68
 E351,E351,en,SAME_AS,OFF additives.txt @14cbdc68
 E351,Potassium malate,en,SAME_AS,OFF additives.txt @14cbdc68
-E351,E351(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E351,Potassium hydrogen malate,en,SAME_AS,OFF additives.txt @14cbdc68
-E351,E351(ii),en,SAME_AS,OFF additives.txt @14cbdc68
+E351,E351(i),en,IS_A,OFF additives.txt @14cbdc68
+E351,Potassium hydrogen malate,en,IS_A,OFF additives.txt @14cbdc68
+E351,E351(ii),en,IS_A,OFF additives.txt @14cbdc68
 E352,E352,en,SAME_AS,OFF additives.txt @14cbdc68
 E352,Calcium malates,en,SAME_AS,OFF additives.txt @14cbdc68
-E352,E352(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E352,Calcium malate,en,SAME_AS,OFF additives.txt @14cbdc68
-E352,E352(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E352,Calcium hydrogen malate,en,SAME_AS,OFF additives.txt @14cbdc68
+E352,E352(i),en,IS_A,OFF additives.txt @14cbdc68
+E352,Calcium malate,en,IS_A,OFF additives.txt @14cbdc68
+E352,E352(ii),en,IS_A,OFF additives.txt @14cbdc68
+E352,Calcium hydrogen malate,en,IS_A,OFF additives.txt @14cbdc68
 E353,E353,en,SAME_AS,OFF additives.txt @14cbdc68
 E353,Metatartaric acid,en,SAME_AS,OFF additives.txt @14cbdc68
 E354,E354,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1089,12 +1089,12 @@ E363,Acide butanedioique,en,SAME_AS,OFF additives.txt @14cbdc68
 E363,Acide succinique,en,SAME_AS,OFF additives.txt @14cbdc68
 E364,E364(i),en,SAME_AS,OFF additives.txt @14cbdc68
 E364,Monosodium succinate,en,SAME_AS,OFF additives.txt @14cbdc68
-E364,E364(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E364,Disodium succinate,en,SAME_AS,OFF additives.txt @14cbdc68
-E364,E364,tr,SAME_AS,OFF additives.txt @14cbdc68
-E364,Sodyum süksinat,tr,SAME_AS,OFF additives.txt @14cbdc68
-E364,E364,en,SAME_AS,OFF additives.txt @14cbdc68
-E364,Sodium succinates,en,SAME_AS,OFF additives.txt @14cbdc68
+E364,E364(ii),en,IS_A,OFF additives.txt @14cbdc68
+E364,Disodium succinate,en,IS_A,OFF additives.txt @14cbdc68
+E364,E364,tr,IS_A,OFF additives.txt @14cbdc68
+E364,Sodyum süksinat,tr,IS_A,OFF additives.txt @14cbdc68
+E364,E364,en,IS_A,OFF additives.txt @14cbdc68
+E364,Sodium succinates,en,IS_A,OFF additives.txt @14cbdc68
 E365,E365,en,SAME_AS,OFF additives.txt @14cbdc68
 E365,Sodium fumarate,en,SAME_AS,OFF additives.txt @14cbdc68
 E366,E366,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1242,9 +1242,9 @@ E418,E 418,en,SAME_AS,OFF additives.txt @14cbdc68
 E418,INS418,en,SAME_AS,OFF additives.txt @14cbdc68
 E418,INS-418,en,SAME_AS,OFF additives.txt @14cbdc68
 E418,INS 418,en,SAME_AS,OFF additives.txt @14cbdc68
-E418,E418(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E418,E418(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E418,Low-acyl clarified gellan gum,en,SAME_AS,OFF additives.txt @14cbdc68
+E418,E418(i),en,IS_A,OFF additives.txt @14cbdc68
+E418,E418(ii),en,IS_A,OFF additives.txt @14cbdc68
+E418,Low-acyl clarified gellan gum,en,IS_A,OFF additives.txt @14cbdc68
 E419,E419,tr,SAME_AS,OFF additives.txt @14cbdc68
 E419,Gati zamkı,tr,SAME_AS,OFF additives.txt @14cbdc68
 E419,E419,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1255,11 +1255,11 @@ E420,Sorbitol şurubu,tr,SAME_AS,OFF additives.txt @14cbdc68
 E420,E420,en,SAME_AS,OFF additives.txt @14cbdc68
 E420,Sorbitol,en,SAME_AS,OFF additives.txt @14cbdc68
 E420,glucitol,en,SAME_AS,OFF additives.txt @14cbdc68
-E420,E420(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E420,D-sorbitol,en,SAME_AS,OFF additives.txt @14cbdc68
-E420,D-glucitol,en,SAME_AS,OFF additives.txt @14cbdc68
-E420,E420(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E420,Sorbitol syrup,en,SAME_AS,OFF additives.txt @14cbdc68
+E420,E420(i),en,IS_A,OFF additives.txt @14cbdc68
+E420,D-sorbitol,en,IS_A,OFF additives.txt @14cbdc68
+E420,D-glucitol,en,IS_A,OFF additives.txt @14cbdc68
+E420,E420(ii),en,IS_A,OFF additives.txt @14cbdc68
+E420,Sorbitol syrup,en,IS_A,OFF additives.txt @14cbdc68
 E421,E421,en,SAME_AS,OFF additives.txt @14cbdc68
 E421,Mannitol,en,SAME_AS,OFF additives.txt @14cbdc68
 E422,E422,tr,SAME_AS,OFF additives.txt @14cbdc68
@@ -1276,11 +1276,11 @@ E424,E424,en,SAME_AS,OFF additives.txt @14cbdc68
 E424,Curdlan,en,SAME_AS,OFF additives.txt @14cbdc68
 E425,E425,en,SAME_AS,OFF additives.txt @14cbdc68
 E425,Konjac,en,SAME_AS,OFF additives.txt @14cbdc68
-E425,E425(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E425,Konjac gum,en,SAME_AS,OFF additives.txt @14cbdc68
-E425,Konjak gum,en,SAME_AS,OFF additives.txt @14cbdc68
-E425,E425(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E425,Konjac glucomannan,en,SAME_AS,OFF additives.txt @14cbdc68
+E425,E425(i),en,IS_A,OFF additives.txt @14cbdc68
+E425,Konjac gum,en,IS_A,OFF additives.txt @14cbdc68
+E425,Konjak gum,en,IS_A,OFF additives.txt @14cbdc68
+E425,E425(ii),en,IS_A,OFF additives.txt @14cbdc68
+E425,Konjac glucomannan,en,IS_A,OFF additives.txt @14cbdc68
 E426,E426,en,SAME_AS,OFF additives.txt @14cbdc68
 E426,Soybean hemicellulose,en,SAME_AS,OFF additives.txt @14cbdc68
 E427,E427,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1317,26 +1317,26 @@ E436,E436,en,SAME_AS,OFF additives.txt @14cbdc68
 E436,Polyoxyethylene sorbitan tristearate,en,SAME_AS,OFF additives.txt @14cbdc68
 E436,Polysorbate 65,en,SAME_AS,OFF additives.txt @14cbdc68
 E440A,E440a,en,SAME_AS,OFF additives.txt @14cbdc68
-E440A,E440a(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E440A,Sodium pectate,en,SAME_AS,OFF additives.txt @14cbdc68
-E440A,E440a(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E440A,Potassium pectate,en,SAME_AS,OFF additives.txt @14cbdc68
-E440A,E440a(iv),en,SAME_AS,OFF additives.txt @14cbdc68
-E440A,Ammonium Pectate,en,SAME_AS,OFF additives.txt @14cbdc68
+E440A,E440a(ii),en,IS_A,OFF additives.txt @14cbdc68
+E440A,Sodium pectate,en,IS_A,OFF additives.txt @14cbdc68
+E440A,E440a(iii),en,IS_A,OFF additives.txt @14cbdc68
+E440A,Potassium pectate,en,IS_A,OFF additives.txt @14cbdc68
+E440A,E440a(iv),en,IS_A,OFF additives.txt @14cbdc68
+E440A,Ammonium Pectate,en,IS_A,OFF additives.txt @14cbdc68
 E440B,E440b,en,SAME_AS,OFF additives.txt @14cbdc68
 E440,E440,tr,SAME_AS,OFF additives.txt @14cbdc68
 E440,Pektin,tr,SAME_AS,OFF additives.txt @14cbdc68
 E440,E440,en,SAME_AS,OFF additives.txt @14cbdc68
 E440,Pectins,en,SAME_AS,OFF additives.txt @14cbdc68
 E440,pectin,en,SAME_AS,OFF additives.txt @14cbdc68
-E440,E440(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E440,non-amidated pectin,en,SAME_AS,OFF additives.txt @14cbdc68
-E440,non-amidated pectines,en,SAME_AS,OFF additives.txt @14cbdc68
-E440,E440(ii),tr,SAME_AS,OFF additives.txt @14cbdc68
-E440,amidlenmiş pektin,tr,SAME_AS,OFF additives.txt @14cbdc68
-E440,E440(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E440,Amidated pectin,en,SAME_AS,OFF additives.txt @14cbdc68
-E440,pectin amide,en,SAME_AS,OFF additives.txt @14cbdc68
+E440,E440(i),en,IS_A,OFF additives.txt @14cbdc68
+E440,non-amidated pectin,en,IS_A,OFF additives.txt @14cbdc68
+E440,non-amidated pectines,en,IS_A,OFF additives.txt @14cbdc68
+E440,E440(ii),tr,IS_A,OFF additives.txt @14cbdc68
+E440,amidlenmiş pektin,tr,IS_A,OFF additives.txt @14cbdc68
+E440,E440(ii),en,IS_A,OFF additives.txt @14cbdc68
+E440,Amidated pectin,en,IS_A,OFF additives.txt @14cbdc68
+E440,pectin amide,en,IS_A,OFF additives.txt @14cbdc68
 E441,E441,en,SAME_AS,OFF additives.txt @14cbdc68
 E441,Superglycerinated hydrogenated rapeseed oil,en,SAME_AS,OFF additives.txt @14cbdc68
 E441,Hydrogenated rapeseed oil superglycerinated,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1357,11 +1357,11 @@ E445,Glycerol esters of wood rosin,en,SAME_AS,OFF additives.txt @14cbdc68
 E445,Glycerol ester of wood rosin,en,SAME_AS,OFF additives.txt @14cbdc68
 E445,glyceryl abietate,en,SAME_AS,OFF additives.txt @14cbdc68
 E445,ester gum,en,SAME_AS,OFF additives.txt @14cbdc68
-E445,E445(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E445,Glycerol ester of gum rosin,en,SAME_AS,OFF additives.txt @14cbdc68
-E445,E445(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E445,Glycerol ester of tall oil rosin,en,SAME_AS,OFF additives.txt @14cbdc68
-E445,E445(iii),en,SAME_AS,OFF additives.txt @14cbdc68
+E445,E445(i),en,IS_A,OFF additives.txt @14cbdc68
+E445,Glycerol ester of gum rosin,en,IS_A,OFF additives.txt @14cbdc68
+E445,E445(ii),en,IS_A,OFF additives.txt @14cbdc68
+E445,Glycerol ester of tall oil rosin,en,IS_A,OFF additives.txt @14cbdc68
+E445,E445(iii),en,IS_A,OFF additives.txt @14cbdc68
 E446,E446,tr,SAME_AS,OFF additives.txt @14cbdc68
 E446,Sükkistearin,tr,SAME_AS,OFF additives.txt @14cbdc68
 E446,E446,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1369,10 +1369,10 @@ E446,Succistearin,en,SAME_AS,OFF additives.txt @14cbdc68
 E540,E540,en,SAME_AS,OFF additives.txt @14cbdc68
 E541,E541,en,SAME_AS,OFF additives.txt @14cbdc68
 E541,Sodium aluminium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E541,E541(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E541,Acid sodium aluminium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E541,E541(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E541,Alkaline sodium aluminium phosphate,en,SAME_AS,OFF additives.txt @14cbdc68
+E541,E541(i),en,IS_A,OFF additives.txt @14cbdc68
+E541,Acid sodium aluminium phosphate,en,IS_A,OFF additives.txt @14cbdc68
+E541,E541(ii),en,IS_A,OFF additives.txt @14cbdc68
+E541,Alkaline sodium aluminium phosphate,en,IS_A,OFF additives.txt @14cbdc68
 E542,E542,tr,SAME_AS,OFF additives.txt @14cbdc68
 E542,Kemik fosfat,tr,SAME_AS,OFF additives.txt @14cbdc68
 E542,E542,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1393,9 +1393,9 @@ E550,Sodium silicate,en,SAME_AS,OFF additives.txt @14cbdc68
 E550,Sodium Silicates (i)\,en,SAME_AS,OFF additives.txt @14cbdc68
 E550,Sodium silicate (ii)\,en,SAME_AS,OFF additives.txt @14cbdc68
 E550,Sodium metasilicate,en,SAME_AS,OFF additives.txt @14cbdc68
-E550,E550(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E550,E550(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E550,Sodium metasilicate,en,SAME_AS,OFF additives.txt @14cbdc68
+E550,E550(i),en,IS_A,OFF additives.txt @14cbdc68
+E550,E550(ii),en,IS_A,OFF additives.txt @14cbdc68
+E550,Sodium metasilicate,en,IS_A,OFF additives.txt @14cbdc68
 E450,E450,tr,SAME_AS,OFF additives.txt @14cbdc68
 E450,Difosfat,tr,SAME_AS,OFF additives.txt @14cbdc68
 E450,E450,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1405,49 +1405,49 @@ E450,diphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
 E450,E-450,en,SAME_AS,OFF additives.txt @14cbdc68
 E450,e 450,en,SAME_AS,OFF additives.txt @14cbdc68
 E450,e450 stabilizer,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,E450(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E450,Disodium diphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,Sodium Acid Pyrophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,sapp,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,disodium dihydrogen pyrophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,disodium pyrophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,sodium acid pyrophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,disodium diphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,disodium dihydrogen diphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,E450(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E450,Trisodium diphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,e450ii,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,E450(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E450,Tetrasodium diphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,Tetrasodium pyrophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,Tetrasodiumpyrophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,Tetrasodium disphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,Tetrasodium diphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,sodium pyrophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,TSPP,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,e450iii,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,E450(iv),tr,SAME_AS,OFF additives.txt @14cbdc68
-E450,Dipotasyum dihidrojen pirofosfat,tr,SAME_AS,OFF additives.txt @14cbdc68
-E450,E450(iv),en,SAME_AS,OFF additives.txt @14cbdc68
-E450,dipotassium dihydrogenpyrophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,E450iv,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,E-450iv,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,E450(v),en,SAME_AS,OFF additives.txt @14cbdc68
-E450,Tetrapotassium diphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,tetrapotassium pyrophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,e450v,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,E450(vi),en,SAME_AS,OFF additives.txt @14cbdc68
-E450,Dicalcium diphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,dicalcium pyrophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,e450vi,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,E450(vii),en,SAME_AS,OFF additives.txt @14cbdc68
-E450,Calcium dihydrogen diphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,Acid calcium pyrophosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E450,E450(viii),tr,SAME_AS,OFF additives.txt @14cbdc68
-E450,Dimagnezyum difosfat,tr,SAME_AS,OFF additives.txt @14cbdc68
-E450,E450(viii),en,SAME_AS,OFF additives.txt @14cbdc68
-E450,E450(ix),en,SAME_AS,OFF additives.txt @14cbdc68
-E450,Magnesium dihydrogen diphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
+E450,E450(i),en,IS_A,OFF additives.txt @14cbdc68
+E450,Disodium diphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,Sodium Acid Pyrophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,sapp,en,IS_A,OFF additives.txt @14cbdc68
+E450,disodium dihydrogen pyrophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,disodium pyrophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,sodium acid pyrophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,disodium diphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,disodium dihydrogen diphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,E450(ii),en,IS_A,OFF additives.txt @14cbdc68
+E450,Trisodium diphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,e450ii,en,IS_A,OFF additives.txt @14cbdc68
+E450,E450(iii),en,IS_A,OFF additives.txt @14cbdc68
+E450,Tetrasodium diphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,Tetrasodium pyrophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,Tetrasodiumpyrophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,Tetrasodium disphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,Tetrasodium diphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,sodium pyrophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,TSPP,en,IS_A,OFF additives.txt @14cbdc68
+E450,e450iii,en,IS_A,OFF additives.txt @14cbdc68
+E450,E450(iv),tr,IS_A,OFF additives.txt @14cbdc68
+E450,Dipotasyum dihidrojen pirofosfat,tr,IS_A,OFF additives.txt @14cbdc68
+E450,E450(iv),en,IS_A,OFF additives.txt @14cbdc68
+E450,dipotassium dihydrogenpyrophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,E450iv,en,IS_A,OFF additives.txt @14cbdc68
+E450,E-450iv,en,IS_A,OFF additives.txt @14cbdc68
+E450,E450(v),en,IS_A,OFF additives.txt @14cbdc68
+E450,Tetrapotassium diphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,tetrapotassium pyrophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,e450v,en,IS_A,OFF additives.txt @14cbdc68
+E450,E450(vi),en,IS_A,OFF additives.txt @14cbdc68
+E450,Dicalcium diphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,dicalcium pyrophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,e450vi,en,IS_A,OFF additives.txt @14cbdc68
+E450,E450(vii),en,IS_A,OFF additives.txt @14cbdc68
+E450,Calcium dihydrogen diphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,Acid calcium pyrophosphate,en,IS_A,OFF additives.txt @14cbdc68
+E450,E450(viii),tr,IS_A,OFF additives.txt @14cbdc68
+E450,Dimagnezyum difosfat,tr,IS_A,OFF additives.txt @14cbdc68
+E450,E450(viii),en,IS_A,OFF additives.txt @14cbdc68
+E450,E450(ix),en,IS_A,OFF additives.txt @14cbdc68
+E450,Magnesium dihydrogen diphosphate,en,IS_A,OFF additives.txt @14cbdc68
 E451,E451,tr,SAME_AS,OFF additives.txt @14cbdc68
 E451,Trifosfatlar,tr,SAME_AS,OFF additives.txt @14cbdc68
 E451,E451,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1455,46 +1455,46 @@ E451,Triphosphates,en,SAME_AS,OFF additives.txt @14cbdc68
 E451,triphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
 E451,E 451,en,SAME_AS,OFF additives.txt @14cbdc68
 E451,e-451,en,SAME_AS,OFF additives.txt @14cbdc68
-E451,E451(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E451,Pentasodium triphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E451,Pentasodium tripolyphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E451,Sodium triphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E451,E451(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E451,Pentapotassium triphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E451,potassium triphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E451,potassium tripolyphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E451,KTPP,en,SAME_AS,OFF additives.txt @14cbdc68
-E451,E451(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E451,Sodium potassium triphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
+E451,E451(i),en,IS_A,OFF additives.txt @14cbdc68
+E451,Pentasodium triphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E451,Pentasodium tripolyphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E451,Sodium triphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E451,E451(ii),en,IS_A,OFF additives.txt @14cbdc68
+E451,Pentapotassium triphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E451,potassium triphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E451,potassium tripolyphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E451,KTPP,en,IS_A,OFF additives.txt @14cbdc68
+E451,E451(iii),en,IS_A,OFF additives.txt @14cbdc68
+E451,Sodium potassium triphosphate,en,IS_A,OFF additives.txt @14cbdc68
 E452,E452,tr,SAME_AS,OFF additives.txt @14cbdc68
 E452,Polifosfatlar,tr,SAME_AS,OFF additives.txt @14cbdc68
 E452,E452,en,SAME_AS,OFF additives.txt @14cbdc68
 E452,Polyphosphates,en,SAME_AS,OFF additives.txt @14cbdc68
 E452,Polyphosphate E452,en,SAME_AS,OFF additives.txt @14cbdc68
-E452,E452(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E452,Sodium polyphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E452,sodium hexametaphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E452,sodium polymetaphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E452,E452(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E452,Potassium polyphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E452,Potassium metaphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E452,Potassium polymetaphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E452,E452(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E452,Sodium calcium polyphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E452,Sodium calcium polyphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E452,E452(iv),tr,SAME_AS,OFF additives.txt @14cbdc68
-E452,Kalsiyum polifosfat,tr,SAME_AS,OFF additives.txt @14cbdc68
-E452,E452(iv),en,SAME_AS,OFF additives.txt @14cbdc68
-E452,Calcium polyphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E452,Calcium metaphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E452,E452(v),tr,SAME_AS,OFF additives.txt @14cbdc68
-E452,Amonyum polifosfat,tr,SAME_AS,OFF additives.txt @14cbdc68
-E452,E452(v),en,SAME_AS,OFF additives.txt @14cbdc68
-E452,Ammonium polyphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E452,E452(vi),tr,SAME_AS,OFF additives.txt @14cbdc68
-E452,Sodyum tripolifosfat,tr,SAME_AS,OFF additives.txt @14cbdc68
-E452,E452(vi),en,SAME_AS,OFF additives.txt @14cbdc68
-E452,Sodium tripolyphosphate,en,SAME_AS,OFF additives.txt @14cbdc68
+E452,E452(i),en,IS_A,OFF additives.txt @14cbdc68
+E452,Sodium polyphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E452,sodium hexametaphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E452,sodium polymetaphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E452,E452(ii),en,IS_A,OFF additives.txt @14cbdc68
+E452,Potassium polyphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E452,Potassium metaphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E452,Potassium polymetaphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E452,E452(iii),en,IS_A,OFF additives.txt @14cbdc68
+E452,Sodium calcium polyphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E452,Sodium calcium polyphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E452,E452(iv),tr,IS_A,OFF additives.txt @14cbdc68
+E452,Kalsiyum polifosfat,tr,IS_A,OFF additives.txt @14cbdc68
+E452,E452(iv),en,IS_A,OFF additives.txt @14cbdc68
+E452,Calcium polyphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E452,Calcium metaphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E452,E452(v),tr,IS_A,OFF additives.txt @14cbdc68
+E452,Amonyum polifosfat,tr,IS_A,OFF additives.txt @14cbdc68
+E452,E452(v),en,IS_A,OFF additives.txt @14cbdc68
+E452,Ammonium polyphosphate,en,IS_A,OFF additives.txt @14cbdc68
+E452,E452(vi),tr,IS_A,OFF additives.txt @14cbdc68
+E452,Sodyum tripolifosfat,tr,IS_A,OFF additives.txt @14cbdc68
+E452,E452(vi),en,IS_A,OFF additives.txt @14cbdc68
+E452,Sodium tripolyphosphate,en,IS_A,OFF additives.txt @14cbdc68
 E457,E457,tr,SAME_AS,OFF additives.txt @14cbdc68
 E457,Alfa-Siklodekstrin,tr,SAME_AS,OFF additives.txt @14cbdc68
 E457,E457,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1513,11 +1513,11 @@ E460,E460,en,SAME_AS,OFF additives.txt @14cbdc68
 E460,Cellulose,en,SAME_AS,OFF additives.txt @14cbdc68
 E460,cellulose powder to prevent caking,en,SAME_AS,OFF additives.txt @14cbdc68
 E460,cellulose powder added to prevent caking,en,SAME_AS,OFF additives.txt @14cbdc68
-E460,E460(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E460,Microcrystalline cellulose,en,SAME_AS,OFF additives.txt @14cbdc68
-E460,E460(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E460,Powdered cellulose,en,SAME_AS,OFF additives.txt @14cbdc68
-E460,Purified cellulose,en,SAME_AS,OFF additives.txt @14cbdc68
+E460,E460(i),en,IS_A,OFF additives.txt @14cbdc68
+E460,Microcrystalline cellulose,en,IS_A,OFF additives.txt @14cbdc68
+E460,E460(ii),en,IS_A,OFF additives.txt @14cbdc68
+E460,Powdered cellulose,en,IS_A,OFF additives.txt @14cbdc68
+E460,Purified cellulose,en,IS_A,OFF additives.txt @14cbdc68
 E461,E461,en,SAME_AS,OFF additives.txt @14cbdc68
 E461,methyl cellulose,en,SAME_AS,OFF additives.txt @14cbdc68
 E461,methylcellulose,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1557,22 +1557,22 @@ E469,Enzymatically hydrolysed carboxymethylcellulose,en,SAME_AS,OFF additives.tx
 E469,enzymatically hydrolised cellulose gum,en,SAME_AS,OFF additives.txt @14cbdc68
 E470,E470,en,SAME_AS,OFF additives.txt @14cbdc68
 E470,Sodium/potassium/calcium and magnesium salts of fatty acids,en,SAME_AS,OFF additives.txt @14cbdc68
-E470,E470(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E470,E470(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E470,E470(iii),en,SAME_AS,OFF additives.txt @14cbdc68
+E470,E470(i),en,IS_A,OFF additives.txt @14cbdc68
+E470,E470(ii),en,IS_A,OFF additives.txt @14cbdc68
+E470,E470(iii),en,IS_A,OFF additives.txt @14cbdc68
 E470A,E470a,en,SAME_AS,OFF additives.txt @14cbdc68
 E470A,Sodium/potassium and calcium salts of fatty acids,en,SAME_AS,OFF additives.txt @14cbdc68
 E470A,Sodium/potassium and calcium salts of fatty acids,en,SAME_AS,OFF additives.txt @14cbdc68
-E470A,E470a(i),tr,SAME_AS,OFF additives.txt @14cbdc68
-E470A,Yağ asitlerinin sodyum tuzları,tr,SAME_AS,OFF additives.txt @14cbdc68
-E470A,E470a(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E470A,Sodium salts of fatty acids,en,SAME_AS,OFF additives.txt @14cbdc68
-E470A,E470a(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E470A,Potassium salts of fatty acids,en,SAME_AS,OFF additives.txt @14cbdc68
-E470A,E470a(iii),tr,SAME_AS,OFF additives.txt @14cbdc68
-E470A,Yağ asitlerinin kalsiyum tuzları,tr,SAME_AS,OFF additives.txt @14cbdc68
-E470A,E470a(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E470A,Calcium salts of fatty acids,en,SAME_AS,OFF additives.txt @14cbdc68
+E470A,E470a(i),tr,IS_A,OFF additives.txt @14cbdc68
+E470A,Yağ asitlerinin sodyum tuzları,tr,IS_A,OFF additives.txt @14cbdc68
+E470A,E470a(i),en,IS_A,OFF additives.txt @14cbdc68
+E470A,Sodium salts of fatty acids,en,IS_A,OFF additives.txt @14cbdc68
+E470A,E470a(ii),en,IS_A,OFF additives.txt @14cbdc68
+E470A,Potassium salts of fatty acids,en,IS_A,OFF additives.txt @14cbdc68
+E470A,E470a(iii),tr,IS_A,OFF additives.txt @14cbdc68
+E470A,Yağ asitlerinin kalsiyum tuzları,tr,IS_A,OFF additives.txt @14cbdc68
+E470A,E470a(iii),en,IS_A,OFF additives.txt @14cbdc68
+E470A,Calcium salts of fatty acids,en,IS_A,OFF additives.txt @14cbdc68
 E470B,E470b,en,SAME_AS,OFF additives.txt @14cbdc68
 E470B,Magnesium salts of fatty acids,en,SAME_AS,OFF additives.txt @14cbdc68
 E471,E471,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1651,15 +1651,15 @@ E479B,Thermally oxidised soya bean oil interacted with mono­ and diglycerides o
 E481,E481,en,SAME_AS,OFF additives.txt @14cbdc68
 E481,Sodium stearoyl-2-lactylate,en,SAME_AS,OFF additives.txt @14cbdc68
 E481,Sodium stearoyl lactylate,en,SAME_AS,OFF additives.txt @14cbdc68
-E481,E481(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E481,E481(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E481,Sodium oleyl lactylate,en,SAME_AS,OFF additives.txt @14cbdc68
+E481,E481(i),en,IS_A,OFF additives.txt @14cbdc68
+E481,E481(ii),en,IS_A,OFF additives.txt @14cbdc68
+E481,Sodium oleyl lactylate,en,IS_A,OFF additives.txt @14cbdc68
 E482,E482,en,SAME_AS,OFF additives.txt @14cbdc68
 E482,Calcium stearoyl-2-lactylate,en,SAME_AS,OFF additives.txt @14cbdc68
-E482,E482(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E482,Calcium stearoyl lactylate,en,SAME_AS,OFF additives.txt @14cbdc68
-E482,E482(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E482,Calcium oleyl lactylate,en,SAME_AS,OFF additives.txt @14cbdc68
+E482,E482(i),en,IS_A,OFF additives.txt @14cbdc68
+E482,Calcium stearoyl lactylate,en,IS_A,OFF additives.txt @14cbdc68
+E482,E482(ii),en,IS_A,OFF additives.txt @14cbdc68
+E482,Calcium oleyl lactylate,en,IS_A,OFF additives.txt @14cbdc68
 E483,E483,en,SAME_AS,OFF additives.txt @14cbdc68
 E483,Stearyl tartrate,en,SAME_AS,OFF additives.txt @14cbdc68
 E483,Stearyl palmityl tartrate,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1700,46 +1700,46 @@ E496,Sorbitan trioleate,en,SAME_AS,OFF additives.txt @14cbdc68
 E500,E500,tr,SAME_AS,OFF additives.txt @14cbdc68
 E500,E500,en,SAME_AS,OFF additives.txt @14cbdc68
 E500,Sodium carbonates,en,SAME_AS,OFF additives.txt @14cbdc68
-E500,E500(i),tr,SAME_AS,OFF additives.txt @14cbdc68
-E500,Sodyum karbonat,tr,SAME_AS,OFF additives.txt @14cbdc68
-E500,E500(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E500,Sodium carbonate,en,SAME_AS,OFF additives.txt @14cbdc68
-E500,washing soda,en,SAME_AS,OFF additives.txt @14cbdc68
-E500,E500(ii),tr,SAME_AS,OFF additives.txt @14cbdc68
-E500,Sodyum bikarbonat,tr,SAME_AS,OFF additives.txt @14cbdc68
-E500,E500(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E500,Sodium hydrogen carbonate,en,SAME_AS,OFF additives.txt @14cbdc68
-E500,Sodium bicarbonate,en,SAME_AS,OFF additives.txt @14cbdc68
-E500,sodium acid carbonate,en,SAME_AS,OFF additives.txt @14cbdc68
-E500,Bicarbonate of soda,en,SAME_AS,OFF additives.txt @14cbdc68
-E500,baking soda,en,SAME_AS,OFF additives.txt @14cbdc68
-E500,E500(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E500,Sodium sesquicarbonate,en,SAME_AS,OFF additives.txt @14cbdc68
+E500,E500(i),tr,IS_A,OFF additives.txt @14cbdc68
+E500,Sodyum karbonat,tr,IS_A,OFF additives.txt @14cbdc68
+E500,E500(i),en,IS_A,OFF additives.txt @14cbdc68
+E500,Sodium carbonate,en,IS_A,OFF additives.txt @14cbdc68
+E500,washing soda,en,IS_A,OFF additives.txt @14cbdc68
+E500,E500(ii),tr,IS_A,OFF additives.txt @14cbdc68
+E500,Sodyum bikarbonat,tr,IS_A,OFF additives.txt @14cbdc68
+E500,E500(ii),en,IS_A,OFF additives.txt @14cbdc68
+E500,Sodium hydrogen carbonate,en,IS_A,OFF additives.txt @14cbdc68
+E500,Sodium bicarbonate,en,IS_A,OFF additives.txt @14cbdc68
+E500,sodium acid carbonate,en,IS_A,OFF additives.txt @14cbdc68
+E500,Bicarbonate of soda,en,IS_A,OFF additives.txt @14cbdc68
+E500,baking soda,en,IS_A,OFF additives.txt @14cbdc68
+E500,E500(iii),en,IS_A,OFF additives.txt @14cbdc68
+E500,Sodium sesquicarbonate,en,IS_A,OFF additives.txt @14cbdc68
 E501,E501,en,SAME_AS,OFF additives.txt @14cbdc68
 E501,Potassium carbonates,en,SAME_AS,OFF additives.txt @14cbdc68
-E501,E501(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E501,Potassium carbonate,en,SAME_AS,OFF additives.txt @14cbdc68
-E501,E501(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E501,Potassium hydrogen carbonate,en,SAME_AS,OFF additives.txt @14cbdc68
-E501,Potassium bicarbonate,en,SAME_AS,OFF additives.txt @14cbdc68
+E501,E501(i),en,IS_A,OFF additives.txt @14cbdc68
+E501,Potassium carbonate,en,IS_A,OFF additives.txt @14cbdc68
+E501,E501(ii),en,IS_A,OFF additives.txt @14cbdc68
+E501,Potassium hydrogen carbonate,en,IS_A,OFF additives.txt @14cbdc68
+E501,Potassium bicarbonate,en,IS_A,OFF additives.txt @14cbdc68
 E502,E502,en,SAME_AS,OFF additives.txt @14cbdc68
 E502,Carbonates,en,SAME_AS,OFF additives.txt @14cbdc68
 E503,E503,en,SAME_AS,OFF additives.txt @14cbdc68
 E503,Ammonium carbonates,en,SAME_AS,OFF additives.txt @14cbdc68
-E503,E503(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E503,Ammonium carbonate,en,SAME_AS,OFF additives.txt @14cbdc68
-E503,E503(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E503,Ammonium hydrogen carbonate,en,SAME_AS,OFF additives.txt @14cbdc68
-E503,Baker's ammonia,en,SAME_AS,OFF additives.txt @14cbdc68
-E503,Sal volatile,en,SAME_AS,OFF additives.txt @14cbdc68
-E503,Salt of hartshorn,en,SAME_AS,OFF additives.txt @14cbdc68
-E503,Ammonium bicarbonate,en,SAME_AS,OFF additives.txt @14cbdc68
+E503,E503(i),en,IS_A,OFF additives.txt @14cbdc68
+E503,Ammonium carbonate,en,IS_A,OFF additives.txt @14cbdc68
+E503,E503(ii),en,IS_A,OFF additives.txt @14cbdc68
+E503,Ammonium hydrogen carbonate,en,IS_A,OFF additives.txt @14cbdc68
+E503,Baker's ammonia,en,IS_A,OFF additives.txt @14cbdc68
+E503,Sal volatile,en,IS_A,OFF additives.txt @14cbdc68
+E503,Salt of hartshorn,en,IS_A,OFF additives.txt @14cbdc68
+E503,Ammonium bicarbonate,en,IS_A,OFF additives.txt @14cbdc68
 E504,E504,en,SAME_AS,OFF additives.txt @14cbdc68
 E504,Magnesium carbonates,en,SAME_AS,OFF additives.txt @14cbdc68
-E504,E504(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E504,Magnesium carbonate,en,SAME_AS,OFF additives.txt @14cbdc68
-E504,E504(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E504,Magnesium hydroxide carbonate,en,SAME_AS,OFF additives.txt @14cbdc68
+E504,E504(i),en,IS_A,OFF additives.txt @14cbdc68
+E504,Magnesium carbonate,en,IS_A,OFF additives.txt @14cbdc68
+E504,E504(ii),en,IS_A,OFF additives.txt @14cbdc68
+E504,Magnesium hydroxide carbonate,en,IS_A,OFF additives.txt @14cbdc68
 E505,E505,en,SAME_AS,OFF additives.txt @14cbdc68
 E505,Ferrous carbonate,en,SAME_AS,OFF additives.txt @14cbdc68
 E507,E507,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1773,22 +1773,22 @@ E514,E514,tr,SAME_AS,OFF additives.txt @14cbdc68
 E514,Sodyum sülfatlar,tr,SAME_AS,OFF additives.txt @14cbdc68
 E514,E514,en,SAME_AS,OFF additives.txt @14cbdc68
 E514,Sodium sulphates,en,SAME_AS,OFF additives.txt @14cbdc68
-E514,E514(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E514,Sodium sulphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E514,E514(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E514,Sodium hydrogen sulphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E514,Acid sodium sulphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E514,Sodium bisulphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E514,sodium bisulfate,en,SAME_AS,OFF additives.txt @14cbdc68
+E514,E514(i),en,IS_A,OFF additives.txt @14cbdc68
+E514,Sodium sulphate,en,IS_A,OFF additives.txt @14cbdc68
+E514,E514(ii),en,IS_A,OFF additives.txt @14cbdc68
+E514,Sodium hydrogen sulphate,en,IS_A,OFF additives.txt @14cbdc68
+E514,Acid sodium sulphate,en,IS_A,OFF additives.txt @14cbdc68
+E514,Sodium bisulphate,en,IS_A,OFF additives.txt @14cbdc68
+E514,sodium bisulfate,en,IS_A,OFF additives.txt @14cbdc68
 E515,E515,en,SAME_AS,OFF additives.txt @14cbdc68
 E515,Potassium sulphates,en,SAME_AS,OFF additives.txt @14cbdc68
 E515,Potassium sulfates,en,SAME_AS,OFF additives.txt @14cbdc68
 E515,potassium sulfate,en,SAME_AS,OFF additives.txt @14cbdc68
-E515,E515(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E515,Potassium sulphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E515,E515(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E515,Potassium hydrogen sulphate,en,SAME_AS,OFF additives.txt @14cbdc68
-E515,Potassium bisulphate,en,SAME_AS,OFF additives.txt @14cbdc68
+E515,E515(i),en,IS_A,OFF additives.txt @14cbdc68
+E515,Potassium sulphate,en,IS_A,OFF additives.txt @14cbdc68
+E515,E515(ii),en,IS_A,OFF additives.txt @14cbdc68
+E515,Potassium hydrogen sulphate,en,IS_A,OFF additives.txt @14cbdc68
+E515,Potassium bisulphate,en,IS_A,OFF additives.txt @14cbdc68
 E516,E516,tr,SAME_AS,OFF additives.txt @14cbdc68
 E516,Kalsiyum sülfat,tr,SAME_AS,OFF additives.txt @14cbdc68
 E516,E516,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -1876,21 +1876,21 @@ E552,Calcium silicate,en,SAME_AS,OFF additives.txt @14cbdc68
 E553,E553,en,SAME_AS,OFF additives.txt @14cbdc68
 E553,Magnesium silicates,en,SAME_AS,OFF additives.txt @14cbdc68
 E553,magnesium silicate,en,SAME_AS,OFF additives.txt @14cbdc68
-E553,E553(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E553,Magnesium silicate\,en,SAME_AS,OFF additives.txt @14cbdc68
-E553,synthetic,en,SAME_AS,OFF additives.txt @14cbdc68
-E553,E553(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E553,E553(iii),en,SAME_AS,OFF additives.txt @14cbdc68
+E553,E553(i),en,IS_A,OFF additives.txt @14cbdc68
+E553,Magnesium silicate\,en,IS_A,OFF additives.txt @14cbdc68
+E553,synthetic,en,IS_A,OFF additives.txt @14cbdc68
+E553,E553(ii),en,IS_A,OFF additives.txt @14cbdc68
+E553,E553(iii),en,IS_A,OFF additives.txt @14cbdc68
 E553A,E553a,tr,SAME_AS,OFF additives.txt @14cbdc68
 E553A,sentetik magnezyum silikatlar,tr,SAME_AS,OFF additives.txt @14cbdc68
 E553A,E553a,en,SAME_AS,OFF additives.txt @14cbdc68
 E553A,synthetic magnesium silicates,en,SAME_AS,OFF additives.txt @14cbdc68
-E553A,E553a(i),tr,SAME_AS,OFF additives.txt @14cbdc68
-E553A,Sentetik magnezyum silikat,tr,SAME_AS,OFF additives.txt @14cbdc68
-E553A,E553a(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E553A,Synthetic magnesium silicate,en,SAME_AS,OFF additives.txt @14cbdc68
-E553A,E553a(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E553A,Magnesium trisilicate,en,SAME_AS,OFF additives.txt @14cbdc68
+E553A,E553a(i),tr,IS_A,OFF additives.txt @14cbdc68
+E553A,Sentetik magnezyum silikat,tr,IS_A,OFF additives.txt @14cbdc68
+E553A,E553a(i),en,IS_A,OFF additives.txt @14cbdc68
+E553A,Synthetic magnesium silicate,en,IS_A,OFF additives.txt @14cbdc68
+E553A,E553a(ii),en,IS_A,OFF additives.txt @14cbdc68
+E553A,Magnesium trisilicate,en,IS_A,OFF additives.txt @14cbdc68
 E553B,E553b,tr,SAME_AS,OFF additives.txt @14cbdc68
 E553B,Talk,tr,SAME_AS,OFF additives.txt @14cbdc68
 E553B,E553b,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -2047,12 +2047,12 @@ E639,E369,en,SAME_AS,OFF additives.txt @14cbdc68
 E639,Alanin,en,SAME_AS,OFF additives.txt @14cbdc68
 E640,E640,en,SAME_AS,OFF additives.txt @14cbdc68
 E640,Glycine and its sodium salt,en,SAME_AS,OFF additives.txt @14cbdc68
-E640,E640(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E640,Glycine,en,SAME_AS,OFF additives.txt @14cbdc68
-E640,E640(ii),tr,SAME_AS,OFF additives.txt @14cbdc68
-E640,Sodyum glisinat,tr,SAME_AS,OFF additives.txt @14cbdc68
-E640,E640(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E640,Sodiumglycinate,en,SAME_AS,OFF additives.txt @14cbdc68
+E640,E640(i),en,IS_A,OFF additives.txt @14cbdc68
+E640,Glycine,en,IS_A,OFF additives.txt @14cbdc68
+E640,E640(ii),tr,IS_A,OFF additives.txt @14cbdc68
+E640,Sodyum glisinat,tr,IS_A,OFF additives.txt @14cbdc68
+E640,E640(ii),en,IS_A,OFF additives.txt @14cbdc68
+E640,Sodiumglycinate,en,IS_A,OFF additives.txt @14cbdc68
 E641,E641,tr,SAME_AS,OFF additives.txt @14cbdc68
 E641,Lösin,tr,SAME_AS,OFF additives.txt @14cbdc68
 E641,E641,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -2124,12 +2124,12 @@ E905C,E905c,tr,SAME_AS,OFF additives.txt @14cbdc68
 E905C,Petrol mumu,tr,SAME_AS,OFF additives.txt @14cbdc68
 E905C,E905c,en,SAME_AS,OFF additives.txt @14cbdc68
 E905C,Petroleum wax,en,SAME_AS,OFF additives.txt @14cbdc68
-E905C,E905c(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E905C,Microcrystalline wax,en,SAME_AS,OFF additives.txt @14cbdc68
-E905C,E905c(ii),tr,SAME_AS,OFF additives.txt @14cbdc68
-E905C,Parafin,tr,SAME_AS,OFF additives.txt @14cbdc68
-E905C,E905c(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E905C,Paraffin wax,en,SAME_AS,OFF additives.txt @14cbdc68
+E905C,E905c(i),en,IS_A,OFF additives.txt @14cbdc68
+E905C,Microcrystalline wax,en,IS_A,OFF additives.txt @14cbdc68
+E905C,E905c(ii),tr,IS_A,OFF additives.txt @14cbdc68
+E905C,Parafin,tr,IS_A,OFF additives.txt @14cbdc68
+E905C,E905c(ii),en,IS_A,OFF additives.txt @14cbdc68
+E905C,Paraffin wax,en,IS_A,OFF additives.txt @14cbdc68
 E905D,E905d,en,SAME_AS,OFF additives.txt @14cbdc68
 E905D,Mineral oil high viscosity,en,SAME_AS,OFF additives.txt @14cbdc68
 E905E,E905e,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -2315,10 +2315,10 @@ E952,Cyclamic acid and its Na and Ca salts,en,SAME_AS,OFF additives.txt @14cbdc6
 E952,Cyclamic acid,en,SAME_AS,OFF additives.txt @14cbdc68
 E952,sodium cyclamate,en,SAME_AS,OFF additives.txt @14cbdc68
 E952,cyclamates,en,SAME_AS,OFF additives.txt @14cbdc68
-E952,E952(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E952,E952(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E952,Calcium cyclamate,en,SAME_AS,OFF additives.txt @14cbdc68
-E952,E952(iv),en,SAME_AS,OFF additives.txt @14cbdc68
+E952,E952(i),en,IS_A,OFF additives.txt @14cbdc68
+E952,E952(ii),en,IS_A,OFF additives.txt @14cbdc68
+E952,Calcium cyclamate,en,IS_A,OFF additives.txt @14cbdc68
+E952,E952(iv),en,IS_A,OFF additives.txt @14cbdc68
 E953,E953,tr,SAME_AS,OFF additives.txt @14cbdc68
 E953,Izomalt,tr,SAME_AS,OFF additives.txt @14cbdc68
 E953,E953,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -2338,12 +2338,12 @@ E954,saccharin potassium salt,en,SAME_AS,OFF additives.txt @14cbdc68
 E954,saccharine potassium,en,SAME_AS,OFF additives.txt @14cbdc68
 E954,potassium saccharine,en,SAME_AS,OFF additives.txt @14cbdc68
 E954,sodium saccharin,en,SAME_AS,OFF additives.txt @14cbdc68
-E954,E954(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E954,E954(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E954,Calcium saccharin,en,SAME_AS,OFF additives.txt @14cbdc68
-E954,E954(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E954,Potassium saccharin,en,SAME_AS,OFF additives.txt @14cbdc68
-E954,E954(iv),en,SAME_AS,OFF additives.txt @14cbdc68
+E954,E954(i),en,IS_A,OFF additives.txt @14cbdc68
+E954,E954(ii),en,IS_A,OFF additives.txt @14cbdc68
+E954,Calcium saccharin,en,IS_A,OFF additives.txt @14cbdc68
+E954,E954(iii),en,IS_A,OFF additives.txt @14cbdc68
+E954,Potassium saccharin,en,IS_A,OFF additives.txt @14cbdc68
+E954,E954(iv),en,IS_A,OFF additives.txt @14cbdc68
 E955,E955,en,SAME_AS,OFF additives.txt @14cbdc68
 E955,Sucralose,en,SAME_AS,OFF additives.txt @14cbdc68
 E956,E956,tr,SAME_AS,OFF additives.txt @14cbdc68
@@ -2399,12 +2399,12 @@ E964,E964,en,SAME_AS,OFF additives.txt @14cbdc68
 E964,Polyglycitol syrup,en,SAME_AS,OFF additives.txt @14cbdc68
 E965,E965,en,SAME_AS,OFF additives.txt @14cbdc68
 E965,maltitol,en,SAME_AS,OFF additives.txt @14cbdc68
-E965,E965(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E965,D-Maltitol,en,SAME_AS,OFF additives.txt @14cbdc68
-E965,E965(ii),tr,SAME_AS,OFF additives.txt @14cbdc68
-E965,Maltitol şurubu,tr,SAME_AS,OFF additives.txt @14cbdc68
-E965,E965(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E965,Maltitol syrup,en,SAME_AS,OFF additives.txt @14cbdc68
+E965,E965(i),en,IS_A,OFF additives.txt @14cbdc68
+E965,D-Maltitol,en,IS_A,OFF additives.txt @14cbdc68
+E965,E965(ii),tr,IS_A,OFF additives.txt @14cbdc68
+E965,Maltitol şurubu,tr,IS_A,OFF additives.txt @14cbdc68
+E965,E965(ii),en,IS_A,OFF additives.txt @14cbdc68
+E965,Maltitol syrup,en,IS_A,OFF additives.txt @14cbdc68
 E966,E966,en,SAME_AS,OFF additives.txt @14cbdc68
 E966,Lactitol,en,SAME_AS,OFF additives.txt @14cbdc68
 E966,Lactit,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -2427,12 +2427,12 @@ E999,Panama bark extract,en,SAME_AS,OFF additives.txt @14cbdc68
 E999,Quillai extract,en,SAME_AS,OFF additives.txt @14cbdc68
 E999,Murillo bark extract,en,SAME_AS,OFF additives.txt @14cbdc68
 E999,Quillaia,en,SAME_AS,OFF additives.txt @14cbdc68
-E999,E999(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E999,Quillaia extract type 1,en,SAME_AS,OFF additives.txt @14cbdc68
-E999,E999(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E999,Quillaia extract type 2,en,SAME_AS,OFF additives.txt @14cbdc68
-E999,Exxx,en,SAME_AS,OFF additives.txt @14cbdc68
-E999,Exxx food additive,en,SAME_AS,OFF additives.txt @14cbdc68
+E999,E999(i),en,IS_A,OFF additives.txt @14cbdc68
+E999,Quillaia extract type 1,en,IS_A,OFF additives.txt @14cbdc68
+E999,E999(ii),en,IS_A,OFF additives.txt @14cbdc68
+E999,Quillaia extract type 2,en,IS_A,OFF additives.txt @14cbdc68
+E999,Exxx,en,IS_A,OFF additives.txt @14cbdc68
+E999,Exxx food additive,en,IS_A,OFF additives.txt @14cbdc68
 E1000,E1000,tr,SAME_AS,OFF additives.txt @14cbdc68
 E1000,Kolik asit,tr,SAME_AS,OFF additives.txt @14cbdc68
 E1000,E1000,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -2441,29 +2441,29 @@ E1001,E1001,tr,SAME_AS,OFF additives.txt @14cbdc68
 E1001,Kolin tuzu,tr,SAME_AS,OFF additives.txt @14cbdc68
 E1001,E1001,en,SAME_AS,OFF additives.txt @14cbdc68
 E1001,Choline salt,en,SAME_AS,OFF additives.txt @14cbdc68
-E1001,E1001(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E1001,Choline acetate,en,SAME_AS,OFF additives.txt @14cbdc68
-E1001,E1001(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E1001,Choline carbonate,en,SAME_AS,OFF additives.txt @14cbdc68
-E1001,E1001(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E1001,E1001(iv),en,SAME_AS,OFF additives.txt @14cbdc68
-E1001,Choline citrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E1001,E1001(v),en,SAME_AS,OFF additives.txt @14cbdc68
-E1001,Choline tartrate,en,SAME_AS,OFF additives.txt @14cbdc68
-E1001,E1001(vi),en,SAME_AS,OFF additives.txt @14cbdc68
-E1001,Choline lactate,en,SAME_AS,OFF additives.txt @14cbdc68
+E1001,E1001(i),en,IS_A,OFF additives.txt @14cbdc68
+E1001,Choline acetate,en,IS_A,OFF additives.txt @14cbdc68
+E1001,E1001(ii),en,IS_A,OFF additives.txt @14cbdc68
+E1001,Choline carbonate,en,IS_A,OFF additives.txt @14cbdc68
+E1001,E1001(iii),en,IS_A,OFF additives.txt @14cbdc68
+E1001,E1001(iv),en,IS_A,OFF additives.txt @14cbdc68
+E1001,Choline citrate,en,IS_A,OFF additives.txt @14cbdc68
+E1001,E1001(v),en,IS_A,OFF additives.txt @14cbdc68
+E1001,Choline tartrate,en,IS_A,OFF additives.txt @14cbdc68
+E1001,E1001(vi),en,IS_A,OFF additives.txt @14cbdc68
+E1001,Choline lactate,en,IS_A,OFF additives.txt @14cbdc68
 E1100,E1100,en,SAME_AS,OFF additives.txt @14cbdc68
 E1100,Alpha-Amylase,en,SAME_AS,OFF additives.txt @14cbdc68
 E1100,amylase,en,SAME_AS,OFF additives.txt @14cbdc68
 E1100,E-1100,en,SAME_AS,OFF additives.txt @14cbdc68
 E1100,E 1100,en,SAME_AS,OFF additives.txt @14cbdc68
-E1100,E1100(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E1100,E1100(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E1100,E1100(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E1100,E1100(iv),en,SAME_AS,OFF additives.txt @14cbdc68
-E1100,alpha-Amylase from Bacillus megaterium expressed in Bacillus subtilis,en,SAME_AS,OFF additives.txt @14cbdc68
-E1100,E1100(v),en,SAME_AS,OFF additives.txt @14cbdc68
-E1100,E1100(vi),en,SAME_AS,OFF additives.txt @14cbdc68
+E1100,E1100(i),en,IS_A,OFF additives.txt @14cbdc68
+E1100,E1100(ii),en,IS_A,OFF additives.txt @14cbdc68
+E1100,E1100(iii),en,IS_A,OFF additives.txt @14cbdc68
+E1100,E1100(iv),en,IS_A,OFF additives.txt @14cbdc68
+E1100,alpha-Amylase from Bacillus megaterium expressed in Bacillus subtilis,en,IS_A,OFF additives.txt @14cbdc68
+E1100,E1100(v),en,IS_A,OFF additives.txt @14cbdc68
+E1100,E1100(vi),en,IS_A,OFF additives.txt @14cbdc68
 E1101,E1101,tr,SAME_AS,OFF additives.txt @14cbdc68
 E1101,Proteaz,tr,SAME_AS,OFF additives.txt @14cbdc68
 E1101,E1101,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -2473,14 +2473,14 @@ E1101,proteinase,en,SAME_AS,OFF additives.txt @14cbdc68
 E1101,EC 3.4,en,SAME_AS,OFF additives.txt @14cbdc68
 E1101,E-1101,en,SAME_AS,OFF additives.txt @14cbdc68
 E1101,E 1101,en,SAME_AS,OFF additives.txt @14cbdc68
-E1101,E1101(i),en,SAME_AS,OFF additives.txt @14cbdc68
-E1101,E1101(ii),en,SAME_AS,OFF additives.txt @14cbdc68
-E1101,E1101(iii),en,SAME_AS,OFF additives.txt @14cbdc68
-E1101,E1101(iv),en,SAME_AS,OFF additives.txt @14cbdc68
-E1101,E1101(v),en,SAME_AS,OFF additives.txt @14cbdc68
-E1101,Protease from Streptomyces fradiae,en,SAME_AS,OFF additives.txt @14cbdc68
-E1101,E1101(vi),en,SAME_AS,OFF additives.txt @14cbdc68
-E1101,Proteases from Bacillus subtilis,en,SAME_AS,OFF additives.txt @14cbdc68
+E1101,E1101(i),en,IS_A,OFF additives.txt @14cbdc68
+E1101,E1101(ii),en,IS_A,OFF additives.txt @14cbdc68
+E1101,E1101(iii),en,IS_A,OFF additives.txt @14cbdc68
+E1101,E1101(iv),en,IS_A,OFF additives.txt @14cbdc68
+E1101,E1101(v),en,IS_A,OFF additives.txt @14cbdc68
+E1101,Protease from Streptomyces fradiae,en,IS_A,OFF additives.txt @14cbdc68
+E1101,E1101(vi),en,IS_A,OFF additives.txt @14cbdc68
+E1101,Proteases from Bacillus subtilis,en,IS_A,OFF additives.txt @14cbdc68
 E1102,E1102,en,SAME_AS,OFF additives.txt @14cbdc68
 E1102,Glucose oxidase,en,SAME_AS,OFF additives.txt @14cbdc68
 E1103,E1103,en,SAME_AS,OFF additives.txt @14cbdc68
@@ -2643,6 +2643,204 @@ E1520,methyl ethyl glycol,en,SAME_AS,OFF additives.txt @14cbdc68
 E1520,methylethylene glycol,en,SAME_AS,OFF additives.txt @14cbdc68
 E1521,E1521,en,SAME_AS,OFF additives.txt @14cbdc68
 E1521,Polyethylene glycol,en,SAME_AS,OFF additives.txt @14cbdc68
+en:acid,Acid,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:acid,Acidifier,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:acid,Acidulant,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:acid,tartness,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:acid,provides tartness,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:acid,Food acid,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:acidity-regulator,Acidity regulator,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:acidity-regulator,alkali,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:acidity-regulator,base,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:acidity-regulator,buffer,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:acidity-regulator,buffering agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:acidity-regulator,pH adjusting agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:acidity-regulator,corrector of acidity,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:acidity-regulator,acid regulator,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:acidity-regulator,controls acidity,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-caking-agent,Anti-caking agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-caking-agent,anticaking agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-caking-agent,anti-stick agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-caking-agent,anti-sticking,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-caking-agent,drying agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-caking-agent,dusting agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-caking-agent,prevent caking,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-caking-agent,prevents caking,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-caking-agent,anti-clumping,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-caking-agent,anticaking blend,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-caking-agent,anticake,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-foaming-agent,Anti-foaming agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-foaming-agent,de-foaming agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-foaming-agent,antifoaming agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-foaming-agent,defoaming agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-foaming-agent,anti-foaming,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:antioxidant,Antioxidant,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:antioxidant,antibrowning agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:antioxidant,antioxidant synergist,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:natural-antioxidant,natural antioxidant,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:release-agent,release agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:bleaching-agent,ağartma maddesi,tr,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:bleaching-agent,Bleaching agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:bulking-agent,Bulking agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:bulking-agent,filler,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:anti-bulking-agent,anti-bulking agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:carbonating-agent,Karbonatlaşma ajanı,tr,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:carbonating-agent,Carbonating agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:carbonating-agent,carbonation,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:carrier,Carrier,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:carrier,carrier solvant,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:carrier,diluent for other food additives,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:carrier,encapsulating agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:carrier,nutrient carrier,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,Colour,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,color,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,colouring,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,coloring,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,decorative pigment,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,surface colorant,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,for color,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,artificial color,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,artificial colour,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,color added,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,colors added,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,artificial color added,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,colorant,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,colours,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,colors,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,coloring food,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,colouring food,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,synthetic colour,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,colouring agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,coloring agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,colored,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,coloured,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,colourant,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour,colourants,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:concentrated-plant-colour,konsantre bitki rengi,tr,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:concentrated-plant-colour,concentrated plant colour,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:natural-colours,natural colours,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:crust-colorant,kabuk renklendirici,tr,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:crust-colorant,crust colorant,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:crust-colorant,crust colorants,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour-retention-agent,colour retention agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour-retention-agent,colour adjunct,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour-retention-agent,colour fixative,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour-retention-agent,colour stabilizer,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour-retention-agent,maintain color,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour-retention-agent,color retention,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifier,Emulsifier,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifier,clouding agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifier,crystallization inhibitor,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifier,density adjustment agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifier,dispersing agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifier,emulsifier blend,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifier,emulsifying agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifier,emulsifying,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifier,plasticizer,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifier,surface active agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifier,suspension agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:natural-emulsifier,doğal emülgatör,tr,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:natural-emulsifier,natural emulsifier,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifying-salts,Emulsifying salts,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifying-salts,emulsifying salt synergist,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifying-salts,melding salt,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifying-salts,Emulsifying salt,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:emulsifying-salts,melting salt,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:firming-agent,Firming agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:natural-firming-agent,Natural firming agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:flavour-enhancer,Flavour enhancer,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:flavour-enhancer,flavour synergist,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:flavour-enhancer,flavor enhancer,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:flavour-enhancer,flavor enhancers,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:flour-treatment-agent,Flour treatment agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:flour-treatment-agent,dough conditioner,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:flour-treatment-agent,dough strengthening agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:flour-treatment-agent,flour bleaching agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:flour-treatment-agent,flour improver,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:flour-treatment-agent,flour treatment agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:foaming-agent,Foaming agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:foaming-agent,aerating agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:foaming-agent,foaming agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:foaming-agent,whipping agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:gelling-agent,Gelling agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:gelling-agent,gelifier,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:glazing-agent,Glazing agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:glazing-agent,coating agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:glazing-agent,film forming agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:glazing-agent,polishing agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:glazing-agent,sealing agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:glazing-agent,surface-finishing agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:humectant,Humectant,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:humectant,moisture retention agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:humectant,water retention agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:humectant,wetting agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:humectant,moisture retention,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:modified-starch,Modified starch,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:packaging-gas,Packaging gas,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:preservative,Preservative,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:preservative,antimicrobial preservative,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:preservative,antimicrobial synergist,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:preservative,antimould and antirope agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:preservative,antimycotic agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:preservative,bacteriophage control agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:preservative,fungistatic agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:preservative,natural mold inhibitor,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:preservative,maintain freshness,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:preservative,protect flavor,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:fruit-preservative,meyve koruyucu,tr,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:fruit-preservative,fruit preservative,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:natural-preservative,doğal koruyucu,tr,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:natural-preservative,natural preservative,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:propellent-gas,Propellent gas,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:propellent-gas,propellant gas,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:propellent-gas,propellent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:propellent-gas,propellant,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:raising-agent,Raising agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:raising-agent,leavening,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:sequestrant,Sequestrant,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:stabiliser,Stabiliser,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:stabiliser,stabilizer,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:stabiliser,binder,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:stabiliser,colloidal stabilizer,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:stabiliser,emulsion stabilizer,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:stabiliser,foam stabilizer,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:stabiliser,stabilizer synergist,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:stabiliser,stabilizers,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:stabiliser,stabilizing agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:stabiliser,binding mixes,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:natural-stabilizer,natural stabilizer,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour-stabiliser,colour stabiliser,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:colour-stabiliser,color stabilizer,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:sweetener,Sweetener,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:sweetener,bulk sweetener,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:sweetener,intense sweetener,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:sweetener,natural sweetener,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:thickener,Thickener,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:thickener,bodying agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:thickener,texturizing agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:thickener,thickener synergist,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:thickener,thickening agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:thickener,provides body,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:thickener,provides thickness,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:natural-thickener,natural thickener,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:enriching-substances,enriching substances,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:enriching-substances,enriching additives,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:enriching-substances,enriching substance,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:minerals,Minerals,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:amino-acids,Amino acids,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:amino-acids,amino acid,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:nucleotides,Nucleotides,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:other-nutritional-substances,Other nutritional substances,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:coagulant,coagulant,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:coagulant,coagulum,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:coagulant,coagulating agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:coagulant,clotting agents,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:salt-substitute,tuz ikamesi,tr,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:salt-substitute,salt substitute,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:creaming-agent,creaming agent,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:enhancer,enhancer,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:bread-improver,bread improver,en,SAME_AS,OFF additives_classes.txt @14cbdc68
+en:cooking-enhancer,cooking enhancer,en,SAME_AS,OFF additives_classes.txt @14cbdc68
 en:imazalil,imazalil,en,SAME_AS,OFF ingredients.txt @14cbdc68
 en:frying,frying,en,SAME_AS,OFF ingredients.txt @14cbdc68
 en:caramel-syrup,caramel syrup,en,SAME_AS,OFF ingredients.txt @14cbdc68

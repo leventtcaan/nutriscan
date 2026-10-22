@@ -3,6 +3,7 @@
 Kaynaklar (ODbL, atıf gerekir — data/kaynaklar.md):
   taxonomies/food/ingredients.txt  → gıda kavramları + Türkçe/İngilizce adlar + üst kavram (IS_A) bağları
   taxonomies/additives.txt         → E-kodlu katkı maddeleri + Türkçe/İngilizce adlar
+  taxonomies/additives_classes.txt → katkı sınıfları (renklendirici, emülgatör…): madde değil, işlev adı
 
 Çalıştır:
   python3 data/uret_sozluk.py <indirilen_dosyalarin_klasoru> <off_commit>
@@ -53,17 +54,33 @@ def main(klasor, commit):
     kaynak_add = f"OFF additives.txt @{commit[:8]}"
     kavramlar, esler = [], []
 
+    seen = set()
     for k in parse(klasor / "additives.txt"):
         e = k["oz"].get("e_number")
         if not e:
             continue
         kid = "E" + e.upper()
-        ad_tr = next((x for x in k["ad"].get("tr", []) if not re.fullmatch(r"E\s?\d+\w*", x)), "")
-        ad_en = next((x for x in k["ad"]["en"] if not re.fullmatch(r"E\s?\d+\w*", x)), "")
+        if kid in seen:          # sub-variants (E322(i), E322(ii)…) share the group code: keep one concept, add names
+            for dil in DILLER:
+                for metin in k["ad"].get(dil, []):
+                    esler.append([kid, metin, dil, "IS_A", kaynak_add])
+            continue
+        seen.add(kid)
+        ad_tr = next((x for x in k["ad"].get("tr", []) if not re.fullmatch(r"E\s?\d+\w*(\([ivx]+\))?", x, re.I)), "")
+        ad_en = next((x for x in k["ad"]["en"] if not re.fullmatch(r"E\s?\d+\w*(\([ivx]+\))?", x, re.I)), "")
         kavramlar.append([kid, "katki_maddesi", ad_tr, ad_en, kid, k["oz"].get("wikidata", ""), "", kaynak_add])
         for dil in DILLER:
             for metin in k["ad"].get(dil, []):
                 esler.append([kid, metin, dil, "SAME_AS", kaynak_add])
+
+    kaynak_cls = f"OFF additives_classes.txt @{commit[:8]}"
+    for k in parse(klasor / "additives_classes.txt"):
+        ad_tr = (k["ad"].get("tr") or [""])[0]
+        kavramlar.append([k["id"], "katki_sinifi", ad_tr, k["ad"]["en"][0], "", k["oz"].get("wikidata", ""),
+                          "|".join(k["ust"]), kaynak_cls])
+        for dil in DILLER:
+            for metin in k["ad"].get(dil, []):
+                esler.append([k["id"], metin, dil, "SAME_AS", kaynak_cls])
 
     for k in parse(klasor / "ingredients.txt"):
         ad_tr = (k["ad"].get("tr") or [""])[0]
@@ -83,6 +100,8 @@ def main(klasor, commit):
         w.writerow(["kavram_id", "metin", "dil", "iliski", "kaynak"])
         w.writerows(esler)
 
+    sinif = [r for r in kavramlar if r[1] == "katki_sinifi"]
+    print(f"katkı sınıfı: {len(sinif)} (Türkçe adlı {sum(1 for r in sinif if r[2])})")
     katki = [r for r in kavramlar if r[1] == "katki_maddesi"]
     gida = [r for r in kavramlar if r[1] == "gida_kavrami"]
     print(f"kavram: {len(kavramlar)} (katkı {len(katki)}, Türkçe adlı {sum(1 for r in katki if r[2])}; "

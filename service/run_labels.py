@@ -62,7 +62,7 @@ def main(src, dst):
         lines.append("")
     total = sum(stats.values())
     head = [f"# Eşleme ve kural raporu — {len(labels)} etiket", "",
-            f"Toplam ifade: **{total}** · E-kodu: {stats['e_code']} · birebir: {stats['exact']} · "
+            f"Toplam ifade: **{total}** · E-kodu: {stats['e_code']} · birebir: {stats['exact']} · çoğul: {stats['plural']} · gürültü: {stats['noise']} · "
             f"bulanık: {stats['fuzzy']} · fonksiyon adı: {stats['function_label']} · **tanınmayan: {stats['unknown']}**"
             + (f" (%{100 * stats['unknown'] / total:.0f})" if total else ""), ""]
     if unknown_terms:

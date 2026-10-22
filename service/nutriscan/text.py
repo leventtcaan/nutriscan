@@ -14,7 +14,7 @@ def normalize(text: str) -> str:
     s = text.translate(_TR_LOWER).lower()
     s = _PERCENT.sub(" ", s)
     s = re.sub(r"[(\[]\s*[)\]]", " ", s)          # parentheses left empty after removing a percentage
-    s = re.sub(r"[\"'“”‘’*•·]", " ", s)
+    s = re.sub(r"[\"'“”‘’*•·_]", " ", s)
     s = re.sub(r"\s+", " ", s)
     return s.strip(" .;:-")
 
