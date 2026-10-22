@@ -5,7 +5,7 @@ Metin değişirse burada değiştir; koordinatlar ızgaradan hesaplanır.
 import html, pathlib
 
 OUT = pathlib.Path(__file__).resolve().parents[1] / "akis-diyagrami.html"
-W, H = 1540, 1052
+W, H = 1540, 1446
 LH = 15  # satır yüksekliği
 
 svg = []
@@ -97,17 +97,17 @@ step(1240, ay, 240, ah, 8, "Sonuç ekranı",
 by, bh, bw = 330, 270, 238
 xs = [30, 284, 538, 792, 1046]
 step(xs[0], by, bw, bh, 3, "Böl + türle",
-     ["Virgül ve paranteze göre böl", "\"E\" + 3 rakam → katkı kodu", "Tür: kimyasal · sınıf · karışım ·", "hammadde · besin · bilinmeyen"],
-     ["E102 → tekil kimyasal", "doymuş yağ → kimyasal sınıf", "buğday unu → gıda hammaddesi"],
-     ["\"aroma verici\" → tür: bilinmeyen", "\"içerebilir\" → MAY_CONTAIN ayrılır"])
+     ["Virgül ve paranteze göre böl", "\"sınıf: madde\", \"X içerir\" ayrılır", "\"içerebilir\" ve beyanlar ayrılır", "Türler aşağıdaki tabloda ↓"],
+     ["renklendirici (E102) → sınıf+E102", "süt içerebilir → içerebilir: süt", "Glutensiz. → beyan, içerik değil"],
+     ["Sayı/harf artığı (\"6\", \"b\") → gürültü", "Tanınmayan → \"bilinmeyen\""])
 step(xs[1], by, bw, bh, 4, "Eşle (kimlik bul)",
-     ["① birebir sözlük", "② bulanık eşleşme (harf farkı)", "③ Qdrant: anlamca en yakın", "     eşanlamlı + güven eşiği"],
-     ["E102 → Tartrazin (①)", "sarı gıda boyası → Tartrazin (③)", "buğday unu → Buğday (①)"],
-     ["Eşik altı → \"Doğrulanamadı\"", "Sınıf / karışım kimyasala inmez", "Aynı ad, farklı tür → tür denetimi"])
+     ["① E-kodu (E102, E 102, E-102)", "② birebir eşanlamlı (TR + EN)", "③ Türkçe çoğul (-ler/-lar)", "④ bulanık · ⑤ Qdrant (sıradaki)"],
+     ["E102 → Tartrazin (①)", "vericiler → verici (③ çoğul)", "60 etiket: tanınmayan %57 → %25"],
+     ["Tanınmayan → Türkçeleştirme listesi", "Qdrant eşik altı → \"bilinmeyen\"", "Tahmin yok, kimyasal uydurma yok"])
 step(xs[2], by, bw, bh, 5, "Kural motoru (karar)",
-     ["Seçili her durum için ayrı", "Varlık: içerikte var mı?", "Miktar: besin tablosu değeri", "Beyan: \"glutensiz\" vb. ibare"],
-     ["çölyak × buğday → Uygun değil", "diyabet × şeker 48 g → bilgi", "\"içerebilir\" uyarısı → Dikkat"],
-     ["Miktar gerekli, yok → besin tablosunu", "iste; gelmezse \"Doğrulanamadı\"", "Kural yok → \"Doğrulanamadı\"", "Tuz ↔ sodyum: sodyum = tuz ÷ 2,5"])
+     ["Her durum için kural türüne bak", "varlık · miktar · beyan · varsayılan", "IS_A: buğday unu → buğday", "7 durum · 17 kural · ağaç aşağıda ↓"],
+     ["çölyak × buğday unu → Uygun değil", "diyabet × şeker 48 g → Dikkat", "glikoz şurubu → gluten sayılmaz"],
+     ["Miktar gerekli, yok → besin tablosunu", "iste; gelmezse \"Doğrulanamadı\"", "Kural yok → \"Doğrulanamadı\"", "Tanınmayan varsa \"Engel yok\" denmez"])
 step(xs[3], by, bw, bh, 6, "Kanıt ekle (bilgi)",
      ["Yalnız tekil kimyasallar için", "CTD: ilişki bildiren çalışmalar", "JECFA: katkı değerlendirmesi, ADI"],
      ["E102: CTD ilişkileri + JECFA", "→ \"Kaynaklar ▸\" altında"],
@@ -119,19 +119,19 @@ step(xs[4], by, bw, bh, 7, "Mesajı yaz (LLM)",
 
 # ---------------- bilgi tabanı
 sy, sh_ = 668, 118
-store(284, sy, 238, sh_, "concept + alias", ["Kimlik: E-kodu, CAS, MeSH", "Eşanlamlılar + ilişki türü:", "SAME_AS · IS_A ·", "CONTAINS · MAY_CONTAIN"])
+store(284, sy, 238, sh_, "kavram + eşanlamlı", ["5.459 kavram · 10.465 eşanlamlı", "+ 81 ekip çevirisi (2 onay)", "İlişki: SAME_AS · IS_A ·", "CONTEXTUAL · üst kavram zinciri"])
 store(538, sy, 238, sh_, "Qdrant", ["Yalnız alias vektörleri", "+ concept_id etiketi", "Kapatılıp açılarak ölçülür"], "vec")
-store(792, sy, 238, sh_, "condition + rule", ["Durum başına kurallar", "tür · koşul · sonuç · eksik veri", "kaynak · bölüm · sürüm · 2 onay"], "rule")
+store(792, sy, 238, sh_, "kurallar + kanıt haritası", ["17 kural · 7 durum", "tür · hedef · sonuç · eksik veri", "kaynak · doğrulama · 2 onay"], "rule")
 store(1046, sy, 238, sh_, "evidence", ["CTD / JECFA kayıtları", "ilişki türü · çalışma sayısı", "Yalnız bilgi, karar vermez"])
 store(1300, sy, 180, sh_, "source", ["Kaynak + lisans", "sürüm · indirme tarihi", "Kaydı olmayan", "veri girmez"])
 
 # ---------------- kaynaklar
 dy, dh = 890, 100
-src(30, dy, 210, dh, "Türk Gıda Kodeksi", ["E-kodları + resmî Türkçe adlar", "etiketleme ve beyan kuralları"])
-src(252, dy, 200, dh, "OFF içerik taksonomisi", ["Türkçe ↔ İngilizce gıda adları", "(ürün kaydı değil, sözlük)"])
+src(30, dy, 210, dh, "OFF taksonomileri (ODbL)", ["içerik · katkı · katkı sınıfı", "TR/EN adlar, IS_A zinciri"])
+src(252, dy, 200, dh, "Ekip çevirisi", ["tanınmayan sık ifadeler", "→ Türkçe karşılık, 2 onay"])
 src(464, dy, 200, dh, "CTD sözlüğü + PubChem", ["Kimyasal adları, CAS, MeSH,", "eşanlamlılar"])
 src(676, dy, 150, dh, "Embedding modeli", ["Çok dilli; alias", "metinleri → vektör"])
-src(838, dy, 230, dh, "Klinik kılavuzlar", ["ADA 2026 / TEMD · KDIGO 2024", "Gıda Kodeksi (gluten)"])
+src(838, dy, 230, dh, "Mevzuat + kılavuzlar", ["AB 1169/2011 · 1924/2006 · 828/2014", "WHO 2012 · EFSA 2010 · KDIGO 2024"])
 src(1080, dy, 200, dh, "CTD ilişkileri + JECFA", ["kimyasal–hastalık ilişkileri", "katkı değerlendirmeleri"])
 src(1292, dy, 188, dh, "Ekip denetimi", ["2 kişi bağımsız onay", "lisans kaydı"])
 
@@ -162,6 +162,48 @@ arrow([(751, dy), (751, 846), (657, 846), (657, sy + sh_)], "prep", "vektöre ç
 arrow([(953, dy), (953, bus), (911, bus), (911, sy + sh_)], "prep", "kurala çevir + 2 onay", 920, bus - 6)
 arrow([(1180, dy), (1180, bus), (1165, bus), (1165, sy + sh_)], "prep", "seçili maddeler", 1188, bus - 6)
 arrow([(1386, dy), (1386, sy + sh_)], "prep", "kaydeder", 1394, bus - 6)
+
+# ---------------- adımların içi: türler (3. adım) ve karar ağacı (5. adım)
+LE = (1060, 372)
+lane(*LE, "ADIMLARIN İÇİ", "3. ve 5. adım ayrıntı", "lc")
+ty = 1086
+add(f'<text x="30" y="{ty+14}" class="h">3. adımın içi: etiketteki ifade türleri</text>')
+cols = (30, 214, 424)
+rows = [("Tür", "Örnek", "Nereye gider", "sh"),
+        ("katkı maddesi (E-kodu)", "E102, E330", "varlık kuralı + CTD bilgisi", "t"),
+        ("katkı sınıfı", "renklendirici, emülgatör", "yalnız etiket: madde değil", "t"),
+        ("gıda kavramı", "buğday unu, glikoz şurubu", "IS_A zinciri → varlık kuralı", "t"),
+        ("  (tekil / karışım / hammadde)", "gluten = karışım", "ayrımı kuralın türü belirler", "st"),
+        ("besin değeri (tablodan)", "şekerler 48 g, tuz 0,3 g", "miktar kuralı", "t"),
+        ("beyan", "glutensiz", "beyan kuralı", "t"),
+        ("içerebilir", "eser miktarda süt", "içerebilir kuralı → Dikkat", "t"),
+        ("bilinmeyen", "çevrilmemiş ifade", "\"Engel bulunmadı\"yı engeller", "t"),
+        ("gürültü", "\"6\", \"b\"", "sayılmaz", "t")]
+yy = ty + 44
+for a, b, c, cls in rows:
+    for x, txt in zip(cols, (a, b, c)):
+        add(f'<text x="{x}" y="{yy}" class="{cls}">{e(txt)}</text>')
+    add(f'<line x1="30" y1="{yy+8}" x2="690" y2="{yy+8}" class="sep"/>')
+    yy += 29
+
+tx = 726
+add(f'<text x="{tx}" y="{ty+14}" class="h">5. adımın içi: kullanıcının her durumu için karar ağacı</text>')
+add(f'<rect x="{tx}" y="{ty+30}" width="754" height="40" rx="8" class="box"/>')
+add(f'<text x="{tx+377}" y="{ty+55}" class="sh" text-anchor="middle">Kılavuz / mevzuat bu durum için neye bakıyor?</text>')
+bx = [(tx, 236, "VARLIK", ["çölyak × gluten · PKU × aspartam", "IS_A zincirinde hedef var mı?"],
+       [("var → Uygun değil", "rk"), ("\"içerebilir\" → Dikkat", "rk"), ("yok + beyan → Engel bulunmadı", "t"), ("yok, beyan yok → Dikkat", "t")]),
+      (tx + 258, 236, "MİKTAR", ["diyabet × şeker · böbrek × sodyum", "besin tablosu var mı?"],
+       [("var → yasal bantla karşılaştır", "t"), ("bant üstü → Dikkat", "rk"), ("yok → kullanıcıdan iste", "t"), ("gelmezse → Doğrulanamadı", "t")]),
+      (tx + 516, 238, "KURAL YOK", ["astım × E102 · fosfat (bekliyor)", "mevzuat/kılavuz bir şey demiyor"],
+       [("→ Doğrulanamadı", "t"), ("+ CTD'den araştırma bilgisi", "t"), ("  (uyarı değil, kaynakla)", "st")])]
+for x, w, title, sub, outs in bx:
+    add(f'<rect x="{x}" y="{ty+96}" width="{w}" height="214" rx="10" class="box"/>')
+    add(f'<text x="{x+12}" y="{ty+120}" class="h">{e(title)}</text>')
+    lines(x + 12, ty + 142, sub, "st")
+    add(f'<line x1="{x+12}" y1="{ty+178}" x2="{x+w-12}" y2="{ty+178}" class="sep"/>')
+    lines(x + 12, ty + 198, [(o, c) for o, c in outs], "t", 19)
+    arrow([(x + w / 2, ty + 70), (x + w / 2, ty + 96)], "flow")
+add(f'<text x="{tx}" y="{ty+334}" class="st">Her durumda: tanınmayan içerik varsa \"Engel bulunmadı\" → \"Doğrulanamadı\". Ayrımı içeriğin türü değil kuralın türü belirler.</text>')
 
 svg_txt = "\n".join(LANES) + '\n<g transform="translate(44,0)">\n' + "\n".join(svg) + "\n</g>"
 
