@@ -107,7 +107,7 @@ step(xs[1], by, bw, bh, 4, "Eşle (kimlik bul)",
 step(xs[2], by, bw, bh, 5, "Kural motoru (karar)",
      ["Seçili her durum için ayrı", "Varlık: içerikte var mı?", "Miktar: besin tablosu değeri", "Beyan: \"glutensiz\" vb. ibare"],
      ["çölyak × buğday → Uygun değil", "diyabet × şeker 48 g → bilgi", "\"içerebilir\" uyarısı → Dikkat"],
-     ["Kural yok → \"Doğrulanamadı\"", "Tuz ↔ sodyum: sodyum = tuz ÷ 2,5", "İki durum farklı → ayrı ayrı göster"])
+     ["Miktar gerekli, yok → besin tablosunu", "iste; gelmezse \"Doğrulanamadı\"", "Kural yok → \"Doğrulanamadı\"", "Tuz ↔ sodyum: sodyum = tuz ÷ 2,5"])
 step(xs[3], by, bw, bh, 6, "Kanıt ekle (bilgi)",
      ["Yalnız tekil kimyasallar için", "CTD: ilişki bildiren çalışmalar", "JECFA: katkı değerlendirmesi, ADI"],
      ["E102: CTD ilişkileri + JECFA", "→ \"Kaynaklar ▸\" altında"],
@@ -138,10 +138,13 @@ src(1292, dy, 188, dh, "Ekip denetimi", ["2 kişi bağımsız onay", "lisans kay
 # ---------------- akış okları (ana yol)
 mid = by + 21
 arrow([(226, 157), (250, 157)], "flow")
-arrow([(353, 252), (353, 300), (149, 300), (149, by)], "flow", "metin + besin değerleri + profil (HTTPS)", 362, 294)
+arrow([(353, 252), (353, 300), (149, 300), (149, by)], "flow", "metin + besin değerleri + profil (HTTPS)", 158, 318)
 for x0 in (268, 522, 776, 1030):
     arrow([(x0, mid), (x0 + 16, mid)], "flow")
 arrow([(1284, mid), (1360, mid), (1360, 252)], "flow", "mesaj + gerekçe", 1368, 296)
+
+# ---------------- eksik veri: kural motoru telefondan besin tablosunu ister
+arrow([(620, by), (620, 272), (430, 272), (430, 252)], "ask", "miktar gerekli → \"besin tablosunu da okut\"", 440, 268)
 
 # ---------------- veri okuma (taramada)
 arrow([(360, by + bh), (360, sy)], "data", "okur", 366, 640)
@@ -219,9 +222,9 @@ figcaption{{font-size:14px;color:var(--muted)}}
 .src{{fill:var(--box);stroke:var(--prep);stroke-width:1.2;stroke-dasharray:3 3}}
 .sh{{font:600 13px var(--f-b);fill:var(--ink)}} .st{{font:400 12px var(--f-b);fill:var(--muted)}}
 .ln{{fill:none;stroke-width:2;stroke-linejoin:round}}
-.flow{{stroke:var(--flow);stroke-width:2.6}} .data{{stroke:var(--data);stroke-dasharray:6 4}} .prep{{stroke:var(--prep);stroke-dasharray:2 4;stroke-linecap:round}}
+.flow{{stroke:var(--flow);stroke-width:2.6}} .data{{stroke:var(--data);stroke-dasharray:6 4}} .prep{{stroke:var(--prep);stroke-dasharray:2 4;stroke-linecap:round}} .ask{{stroke:var(--risk);stroke-width:2;stroke-dasharray:7 4}}
 .al{{font:500 11.5px var(--f-m)}} .flowt{{fill:var(--flow)}} .datat{{fill:var(--data)}} .prept{{fill:var(--prep)}}
-.mk-flow{{fill:var(--flow)}} .mk-data{{fill:var(--data)}} .mk-prep{{fill:var(--prep)}}
+.mk-flow{{fill:var(--flow)}} .mk-data{{fill:var(--data)}} .mk-prep{{fill:var(--prep)}} .mk-ask{{fill:var(--risk)}} .askt{{fill:var(--risk)}}
 .say{{border-left:3px solid var(--flow);padding-left:14px;max-width:110ch}}
 </style>
 <div class="wrap">
@@ -232,6 +235,7 @@ figcaption{{font-size:14px;color:var(--muted)}}
     <span class="k-data"><i class="d"></i>bilgi tabanından okuma</span>
     <span class="k-prep"><i class="p"></i>önceden hazırlık (ekip)</span>
     <span class="k-ex"><b style="background:currentColor;opacity:.25"></b>örnek değer</span>
+    <span class="k-risk"><i class="d"></i>eksik veriyi kullanıcıdan iste</span>
     <span class="k-risk"><b style="background:var(--riskbg);border:1px solid currentColor"></b>ters giderse</span>
   </div>
   <figure>
@@ -240,6 +244,7 @@ figcaption{{font-size:14px;color:var(--muted)}}
         <defs>
           <marker id="m-flow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-flow"/></marker>
           <marker id="m-data" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-data"/></marker>
+          <marker id="m-ask" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-ask"/></marker>
           <marker id="m-prep" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-prep"/></marker>
         </defs>
 {svg_txt}

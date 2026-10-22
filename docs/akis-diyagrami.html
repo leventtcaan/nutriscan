@@ -55,9 +55,9 @@ figcaption{font-size:14px;color:var(--muted)}
 .src{fill:var(--box);stroke:var(--prep);stroke-width:1.2;stroke-dasharray:3 3}
 .sh{font:600 13px var(--f-b);fill:var(--ink)} .st{font:400 12px var(--f-b);fill:var(--muted)}
 .ln{fill:none;stroke-width:2;stroke-linejoin:round}
-.flow{stroke:var(--flow);stroke-width:2.6} .data{stroke:var(--data);stroke-dasharray:6 4} .prep{stroke:var(--prep);stroke-dasharray:2 4;stroke-linecap:round}
+.flow{stroke:var(--flow);stroke-width:2.6} .data{stroke:var(--data);stroke-dasharray:6 4} .prep{stroke:var(--prep);stroke-dasharray:2 4;stroke-linecap:round} .ask{stroke:var(--risk);stroke-width:2;stroke-dasharray:7 4}
 .al{font:500 11.5px var(--f-m)} .flowt{fill:var(--flow)} .datat{fill:var(--data)} .prept{fill:var(--prep)}
-.mk-flow{fill:var(--flow)} .mk-data{fill:var(--data)} .mk-prep{fill:var(--prep)}
+.mk-flow{fill:var(--flow)} .mk-data{fill:var(--data)} .mk-prep{fill:var(--prep)} .mk-ask{fill:var(--risk)} .askt{fill:var(--risk)}
 .say{border-left:3px solid var(--flow);padding-left:14px;max-width:110ch}
 </style>
 <div class="wrap">
@@ -68,6 +68,7 @@ figcaption{font-size:14px;color:var(--muted)}
     <span class="k-data"><i class="d"></i>bilgi tabanından okuma</span>
     <span class="k-prep"><i class="p"></i>önceden hazırlık (ekip)</span>
     <span class="k-ex"><b style="background:currentColor;opacity:.25"></b>örnek değer</span>
+    <span class="k-risk"><i class="d"></i>eksik veriyi kullanıcıdan iste</span>
     <span class="k-risk"><b style="background:var(--riskbg);border:1px solid currentColor"></b>ters giderse</span>
   </div>
   <figure>
@@ -76,6 +77,7 @@ figcaption{font-size:14px;color:var(--muted)}
         <defs>
           <marker id="m-flow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-flow"/></marker>
           <marker id="m-data" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-data"/></marker>
+          <marker id="m-ask" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-ask"/></marker>
           <marker id="m-prep" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-prep"/></marker>
         </defs>
 <rect x="8" y="16" width="1524" height="252" rx="12" class="lane la"/><text transform="translate(26,142.0) rotate(-90)" text-anchor="middle" class="lane-h">TELEFON</text><text transform="translate(42,142.0) rotate(-90)" text-anchor="middle" class="lane-s">Expo · React Native</text>
@@ -138,8 +140,8 @@ figcaption{font-size:14px;color:var(--muted)}
 <text x="550" y="376" class="t"><tspan x="550" dy="0">Seçili her durum için ayrı</tspan><tspan x="550" dy="15">Varlık: içerikte var mı?</tspan><tspan x="550" dy="15">Miktar: besin tablosu değeri</tspan><tspan x="550" dy="15">Beyan: &quot;glutensiz&quot; vb. ibare</tspan></text>
 <line x1="550" y1="434" x2="764" y2="434" class="sep"/>
 <text x="550" y="448" class="ex"><tspan x="550" dy="0">çölyak × buğday → Uygun değil</tspan><tspan x="550" dy="15">diyabet × şeker 48 g → bilgi</tspan><tspan x="550" dy="15">&quot;içerebilir&quot; uyarısı → Dikkat</tspan></text>
-<rect x="544" y="493" width="226" height="59" rx="6" class="riskbg"/>
-<text x="550" y="508" class="rk"><tspan x="550" dy="0">Kural yok → &quot;Doğrulanamadı&quot;</tspan><tspan x="550" dy="15">Tuz ↔ sodyum: sodyum = tuz ÷ 2,5</tspan><tspan x="550" dy="15">İki durum farklı → ayrı ayrı göster</tspan></text>
+<rect x="544" y="493" width="226" height="74" rx="6" class="riskbg"/>
+<text x="550" y="508" class="rk"><tspan x="550" dy="0">Miktar gerekli, yok → besin tablosunu</tspan><tspan x="550" dy="15">iste; gelmezse &quot;Doğrulanamadı&quot;</tspan><tspan x="550" dy="15">Kural yok → &quot;Doğrulanamadı&quot;</tspan><tspan x="550" dy="15">Tuz ↔ sodyum: sodyum = tuz ÷ 2,5</tspan></text>
 <rect x="792" y="330" width="238" height="270" rx="10" class="box"/>
 <circle cx="810" cy="350" r="11" class="num"/>
 <text x="810" y="354" class="numt" text-anchor="middle">6</text>
@@ -196,13 +198,15 @@ figcaption{font-size:14px;color:var(--muted)}
 <text x="1302" y="928" class="st"><tspan x="1302" dy="0">2 kişi bağımsız onay</tspan><tspan x="1302" dy="15">lisans kaydı</tspan></text>
 <polyline points="226,157 250,157" class="ln flow" marker-end="url(#m-flow)"/>
 <polyline points="353,252 353,300 149,300 149,330" class="ln flow" marker-end="url(#m-flow)"/>
-<text x="362" y="294" class="al flowt" text-anchor="start">metin + besin değerleri + profil (HTTPS)</text>
+<text x="158" y="318" class="al flowt" text-anchor="start">metin + besin değerleri + profil (HTTPS)</text>
 <polyline points="268,351 284,351" class="ln flow" marker-end="url(#m-flow)"/>
 <polyline points="522,351 538,351" class="ln flow" marker-end="url(#m-flow)"/>
 <polyline points="776,351 792,351" class="ln flow" marker-end="url(#m-flow)"/>
 <polyline points="1030,351 1046,351" class="ln flow" marker-end="url(#m-flow)"/>
 <polyline points="1284,351 1360,351 1360,252" class="ln flow" marker-end="url(#m-flow)"/>
 <text x="1368" y="296" class="al flowt" text-anchor="start">mesaj + gerekçe</text>
+<polyline points="620,330 620,272 430,272 430,252" class="ln ask" marker-end="url(#m-ask)"/>
+<text x="440" y="268" class="al askt" text-anchor="start">miktar gerekli → &quot;besin tablosunu da okut&quot;</text>
 <polyline points="360,600 360,668" class="ln data" marker-end="url(#m-data)"/>
 <text x="366" y="640" class="al datat" text-anchor="start">okur</text>
 <polyline points="480,600 480,632 657,632 657,668" class="ln data" marker-end="url(#m-data)"/>
