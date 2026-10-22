@@ -25,6 +25,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 10.6 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.0 g / 100 ml (≤ 0.04); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: fosforik asit) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.0 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: şeker (S)* veya fruktoz-glukoz şurubu (F)* | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: şeker (S)* veya fruktoz-glukoz şurubu (F)* | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Cappy Pulpy Portakal 1 L
 
@@ -53,6 +57,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 4.4 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.016 g / 100 ml (≤ 0.04); -: tanınmayan içerik: şeker veya fruktoz-glikoz şurubu, portakal pulpu, portakal suyu konsantresi, ağaç reçinesinin gliserol esterleri | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.016 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: şeker veya fruktoz-glikoz şurubu, portakal pulpu, portakal suyu konsantresi, ağaç reçinesinin gliserol esterleri | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: şeker veya fruktoz-glikoz şurubu, portakal pulpu, portakal suyu konsantresi, ağaç reçinesinin gliserol esterleri | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Alpro Şekersiz Yulaf İçeceği 1 L
 
@@ -83,6 +91,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: yulaf) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 0.0 g / 100 ml (≤ 0.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.04 g / 100 ml (≤ 0.04); -: tanınmayan içerik: Yulaf karışımı, vitaminler, B2, B12, Siyanokobalamin, Ergokalsiferol | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.04 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: Yulaf karışımı, vitaminler, B2, B12, Siyanokobalamin, Ergokalsiferol | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Yulaf karışımı, vitaminler, B2, B12, Siyanokobalamin, Ergokalsiferol | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Nutella Kakaolu Fındık Kreması 750 G
 
@@ -108,6 +120,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 56.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.428 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.428 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: yağsız süt tozu) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: emülgatör: lesitin | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Alpro Yulaf İçeceği 1 L
 
@@ -137,6 +153,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: yulaf) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 3.1 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.04 g / 100 ml (≤ 0.04); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: trikalsiyum fosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.04 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: vitaminler, B2, B12, Siyanokobalamin, Ergokalsiferol | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: vitaminler, B2, B12, Siyanokobalamin, Ergokalsiferol | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Nutella
 
@@ -160,6 +180,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 56.3 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.044 g / 100 ml (≤ 0.12); -: tanınmayan içerik: emülgatör: lesitin | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.044 g / 100 ml (≤ 0.12) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: yağsız süt tozu) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: emülgatör: lesitin | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Snickers Çikolata Bar 50 G
 
@@ -187,6 +211,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 51.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.208 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.208 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: yağsız süttozu, süt) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: buğda veya mısırdan, kakao kitle peynir altı suyu permeati, palm ya tuz, yumurta beyazı tozu | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Alpro Hindistan Cevizi İçeceği Şekersiz 1 L
 
@@ -215,6 +243,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 0.0 g / 100 ml (≤ 0.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.028 g / 100 ml (≤ 0.04); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: trikalsiyum fosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.028 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: hindistan cevizi sütü, %7) (hindistan cevizi kreması, su, doğal hindistancevizi aroması, vitaminler, B12, D2 | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: hindistan cevizi sütü, %7) (hindistan cevizi kreması, su, doğal hindistancevizi aroması, vitaminler, B12, D2 | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Nutella Kakaolu Fındık Kreması 400 G
 
@@ -240,6 +272,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 56.3 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.043 g / 100 g (≤ 0.12); -: tanınmayan içerik: emülgatör: lesitin | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.043 g / 100 g (≤ 0.12) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: yağsız süt tozu) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: emülgatör: lesitin | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Original Çavdar Gevrek Ekmeği
 
@@ -258,6 +294,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 1.0 g / 100 ml (≤ 2.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.4 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.4 g / 100 ml (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: Tam tahıllı _çavdar_ unu | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Tam tahıllı _çavdar_ unu | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Kinder Pingui 30
 
@@ -297,6 +337,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: buğday unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 33.1 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.102 g / 100 g (≤ 0.12); -: tanınmayan içerik: Bitter Çikolata Kapli Seu Dolgulu Kek İçindekiler: Pastorize edilmiş süt, emulgator: lesitin, Bitter çikolatada kakao kuru maddesi minimum %35, Ürünlerimizde domuz yağı ve katkıları yoktur | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.102 g / 100 g (≤ 0.12) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: yağlı süt tozu, yağsız süt tozu) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Bitter Çikolata Kapli Seu Dolgulu Kek İçindekiler: Pastorize edilmiş süt, emulgator: lesitin, Bitter çikolatada kakao kuru maddesi minimum %35, Ürünlerimizde domuz yağı ve katkıları yoktur | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Beypazarı Doğal Maden Suyu
 
@@ -312,6 +356,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Doğrulanamadı** | DM-02: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-03: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
+| Hipertansiyon | **Doğrulanamadı** | HT-02: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: Doğal maden suyu | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Doğal maden suyu | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Çubuk kraker 40 g
 
@@ -342,6 +390,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: Buğday unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Doğrulanamadı** | DM-02: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: disodyum difosfat); CKD-03: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Doğrulanamadı** | HT-02: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: tam yağlı süttozu) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: yağ asitlerinin mono ve digliseritlerinin mono ve diasetil tartarik asit esterleri | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Schogetten Alpine Milk With Hazelnut Chocolatte
 
@@ -367,6 +419,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 51.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.052 g / 100 g (≤ 0.12); -: tanınmayan içerik: toz krema, lesitin soya, vanilya ekstraktı | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.052 g / 100 g (≤ 0.12) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: _süt_, tam yağlı _süt_ tozu) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: toz krema, lesitin soya, vanilya ekstraktı | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Alpro Hindistan Cevizi Badem İçeceği 1 L
 
@@ -407,6 +463,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 2.5 g / 100 ml (≤ 2.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.048 g / 100 ml (≤ 0.12); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: trikalsiyum fosfat, potasyum fosfatlar) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.048 g / 100 ml (≤ 0.12) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: hindistan cevizi sütü, 3%) (hindistan cevizi kreması, su, keçiboynuzu gamı, vitaminler, B2, B12, Siyanokobalamin, DL-alfa-tokoferil asetat, Ergokalsiferol | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: hindistan cevizi sütü, 3%) (hindistan cevizi kreması, su, keçiboynuzu gamı, vitaminler, B2, B12, Siyanokobalamin, DL-alfa-tokoferil asetat, Ergokalsiferol | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Ülker Çikolata Kadayıflı Dubai Lezzeti 93 G
 
@@ -444,6 +504,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 48.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.14 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.14 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: tam yağlı *süttozu*, peyniraltı suyu tozu, *süt*, yağsız *süttozu*) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: çıtır kadayıf parçacıkları, 4) [*buğday unu*, şeker, amonyum fosfatitler, spirulina ekstraktı, Kakao kuru maddesi en az %30'dur | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Sprite
 
@@ -469,6 +533,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 3.1 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.004 g / 100 ml (≤ 0.04); -: tanınmayan içerik: şeker (S)* veya fruktoz-glukoz şurubu (F)*, doğal limon aroma vericileri | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.004 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: şeker (S)* veya fruktoz-glukoz şurubu (F)*, doğal limon aroma vericileri | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Uygun değil** | PKU-01: Aspartam fenilalanin kaynağıdır (bulunan: aspartam**) | Reg. (EU) 1169/2011 Ek III ('fenilalanin kaynağı içerir' ibaresi) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: şeker (S)* veya fruktoz-glukoz şurubu (F)*, doğal limon aroma vericileri | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Lifalif Yulaf Ezmesi
 
@@ -488,6 +556,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: _Yulaf_ ezmesi, gluten) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 1.33333333333333 g / 100 ml (≤ 2.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Engel bulunmadı** | CKD-01: sodyum 0.008 g / 100 ml (≤ 0.04) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.008 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Engel bulunmadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan) | Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Engel bulunmadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan) | Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## ülker çikolata
 
@@ -513,6 +585,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: Buğday unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 38.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.104 g / 100 g (≤ 0.12); -: tanınmayan içerik: tam hidrojenize palm, palm çekirdeği) fındık püresi (%10 | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.104 g / 100 g (≤ 0.12) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: süt tozu) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: tam hidrojenize palm, palm çekirdeği) fındık püresi (%10 | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Ülker Altınbaşak Tahıl Cipsi 50 G
 
@@ -556,6 +632,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: *Buğday unu*, *tam buğday unu*, *buğday gluteni*, yulaf ezmesi) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 4.6 g / 100 g (≤ 5.0) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.92 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: disodyum difosfat, trikalsiyum fosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.92 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: patates unu, yoğurt aromalı ve mevsim yeşillikli çeşni, %6) [*peynir altı suyu tozu*, şeker, tuz, sarımsak tozu (%8), soğan tozu (%8), aroma vericiler, asitlik düzenleyici (sitrik asit), ekşi maya, sade yağ (*süt*), bitkisel yağ (ayçiçek), dereotu (%1), maydanoz (%1)., *buğday kepeği*, laktik asit, yağ asitlerinin mono ve digliseritlerinin mono ve diasetil tartarik asit esterleri | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Uygun değil** | SUL-01: Sülfit beyanı var (10 mg/kg üstü) (bulunan: sodyum metabisülfit) | Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Susamlı Gevrek Ekmek
 
@@ -578,6 +658,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: _Buğday_ unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 2.0 g / 100 ml (≤ 2.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.445 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.445 g / 100 ml (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: _susam_ tohumu, *100 g ürün içindeki g miktarı | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: _susam_ tohumu, *100 g ürün içindeki g miktarı | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Mehmet Effendi
 
@@ -592,6 +676,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Doğrulanamadı** | DM-02: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-03: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
+| Hipertansiyon | **Doğrulanamadı** | HT-02: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: Öğütülmüş Kahve | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Öğütülmüş Kahve | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Kızılay sade maden suyu afyon
 
@@ -606,6 +694,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 0.0 g / 100 ml (≤ 0.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.008 g / 100 ml (≤ 0.04); -: tanınmayan içerik: Bicarbonate 2470 mg/l Phosphorus 0.9 mg/l Sulfate 21.99 mg/l Clorine 135.39 mg/l Calcium 49.58 mg/l Magnesium 16.57 mg/dl Sodium 776.02 mg/l Iron 19.24 pg/l Potassium 10.86 mg/l | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.008 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: Bicarbonate 2470 mg/l Phosphorus 0.9 mg/l Sulfate 21.99 mg/l Clorine 135.39 mg/l Calcium 49.58 mg/l Magnesium 16.57 mg/dl Sodium 776.02 mg/l Iron 19.24 pg/l Potassium 10.86 mg/l | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Bicarbonate 2470 mg/l Phosphorus 0.9 mg/l Sulfate 21.99 mg/l Clorine 135.39 mg/l Calcium 49.58 mg/l Magnesium 16.57 mg/dl Sodium 776.02 mg/l Iron 19.24 pg/l Potassium 10.86 mg/l | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Kuru İncir
 
@@ -629,6 +721,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-02: Etikette gluten içeren tahıl için 'içerebilir' uyarısı var (içerebilir: gluten) | Reg. (EU) 1169/2011 Ek II madde 1; ekip kararı (belirsizlik riski artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 3.1 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 2.36 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 2.36 g / 100 ml (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: Çiğ İç Fındık, The Küçük couldans | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Çiğ İç Fındık, The Küçük couldans | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Çizi Peynirli Kraker
 
@@ -688,6 +784,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: Buğday unu, Wheat flour) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 7.3 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 1.2 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: disodyum difosfat, disodium diphosphate) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 1.2 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: peyniraltı suyu tozu, süt, yağsız süttozu, whey powder, skimmed milk powder) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Uygun değil** | SUL-01: Sülfit beyanı var (10 mg/kg üstü) (bulunan: sodyum metabisülfit, sodium metabisulphite) | Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Eti Karam Gurme Bitter Çikolatalı Gofret 50 G
 
@@ -749,6 +849,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: *Buğday Unu*, gluten) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 35.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.2 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: Sodyum Asit Pirofosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.2 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: Yağsız *Süt Tozu*, Peynir Altı Suyu Tozu) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Kakaolu Krema %66, Pamuk, Kakao Kuru Maddesi En Az %53'tür., Gofret Yaprağı %7 | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## coca-cola 1 L
 
@@ -772,6 +876,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Doğrulanamadı** | DM-02: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: fosforik asit); CKD-03: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Doğrulanamadı** | HT-02: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: 98 mg/L | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: 98 mg/L | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Süsse Finger bisküvi
 
@@ -806,6 +914,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: Buğday unu, gluten) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 24.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.28 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: Sodyum Asit Piro Fosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.28 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: Yağsız Süttozu) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Uygun değil** | SUL-01: Sülfit beyanı var (10 mg/kg üstü) (bulunan: Sodyum Metabisülfit) | Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Biscolata Pia Kek Portakallı 100 G
 
@@ -825,6 +937,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 44.6 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.16 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.16 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: Portakal Jölesi, %32) [şeker, kakao kitlesi, kakao yağı, kakao tozu, emülgatör (ayçiçek lesitini), aroma verici, %47 kakao kuru maddesi içermektedir | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Portakal Jölesi, %32) [şeker, kakao kitlesi, kakao yağı, kakao tozu, emülgatör (ayçiçek lesitini), aroma verici, %47 kakao kuru maddesi içermektedir | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## 2 Snickers
 
@@ -861,6 +977,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 51.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.205 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.205 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: yağsız süttozu, süt) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: 35%) Kaplı Karamel (28%, Kızartılmış Yerfıstığı, 22%) ve Nuga (14%, İçindekiler, buğday veya mısırdan, peynir altı suyu permeati, yumurta beyazı tozu, Sütlü çikolatadaki kakao kuru maddesi en az 25% 'tir, Domuz yağı içermez Sütlü çikolata kakao yağına ek olarak bitkisel yağ da içermektedir | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Coca-Cola 1,5 l
 
@@ -884,6 +1004,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 7.5 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.0 g / 100 ml (≤ 0.04); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: fosforik asit) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.0 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: 98 mg/l | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: 98 mg/l | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Dost Tam Yağlı Süt
 
@@ -898,6 +1022,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 4.72 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.08 g / 100 ml (≤ 0.12); -: tanınmayan içerik: Yağlı inek sütü | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.08 g / 100 ml (≤ 0.12) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: Yağlı inek sütü | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Yağlı inek sütü | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Eti Lifalif İnce Öğütülmüş Yulaf Ezmesi 350 G
 
@@ -913,6 +1041,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: *Yulaf ezmesi*, gluten) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 1.3 g / 100 ml (≤ 2.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Engel bulunmadı** | CKD-01: sodyum 0.008 g / 100 ml (≤ 0.04) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.008 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Engel bulunmadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan) | Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Engel bulunmadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan) | Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Rulokat Fındıklı Kremalı Rulo Gofret
 
@@ -944,6 +1076,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: _buğday_ unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 42.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.152 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.152 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: tam yağlı _süt_ tozu, yağsız _süt_ tozu, peyniraltı suyu tozu, _süt_) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: albümin, _buğday_ proteini | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Kavrulmuş Siyah Ay Çekirdeği
 
@@ -967,6 +1103,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-02: Etikette gluten içeren tahıl için 'içerebilir' uyarısı var (içerebilir: buğday gluteni) | Reg. (EU) 1169/2011 Ek II madde 1; ekip kararı (belirsizlik riski artırır) |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 0.0 g / 100 ml (≤ 0.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.072 g / 100 ml (≤ 0.12); -: tanınmayan içerik: Ay çekirdeği | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.072 g / 100 ml (≤ 0.12) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: Ay çekirdeği | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Ay çekirdeği | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Coca-Cola 330mk
 
@@ -1022,6 +1162,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 10.6 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-03: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
+| Hipertansiyon | **Doğrulanamadı** | HT-02: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: Icindekiler, renklendird, asitlik düzenleyici ffosforik asit), maks, 150 g/1, Enerji ve Besin Ojeleri (100 ml için), Enerji, 180 kJ/42 kcal, Og, Doymus 9, 0.1 kutu için (330 ml), Enerji, 594 kJ/139 kcal Yağ, Doymuş yağ, Karbonhidrat, Sekerler, 1 kutu için (330ml) %RA*, Ener %7, Doymuş yağ, Karbonhidrat, % Şekerler, *Ortalama bi yetişkinin referans alım (RA) değeri (8400 kJ/2000 kcall | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Icindekiler, renklendird, asitlik düzenleyici ffosforik asit), maks, 150 g/1, Enerji ve Besin Ojeleri (100 ml için), Enerji, 180 kJ/42 kcal, Og, Doymus 9, 0.1 kutu için (330 ml), Enerji, 594 kJ/139 kcal Yağ, Doymuş yağ, Karbonhidrat, Sekerler, 1 kutu için (330ml) %RA*, Ener %7, Doymuş yağ, Karbonhidrat, % Şekerler, *Ortalama bi yetişkinin referans alım (RA) değeri (8400 kJ/2000 kcall | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Ranch Sos
 
@@ -1070,6 +1214,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-02: Etikette gluten içeren tahıl için 'içerebilir' uyarısı var (içerebilir: gluten) | Reg. (EU) 1169/2011 Ek II madde 1; ekip kararı (belirsizlik riski artırır) |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 2.6 g / 100 g (≤ 5.0) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.72 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: fosforik asit) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.72 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: değişen miktarlarda ayçiçek, yoğurt tozu, laktik asit, kalsiyum disodyum EDTA, Ürünlerimizin hiçbir çeşidinde domuz yağı ve katkıları yoktur | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: değişen miktarlarda ayçiçek, yoğurt tozu, laktik asit, kalsiyum disodyum EDTA, Ürünlerimizin hiçbir çeşidinde domuz yağı ve katkıları yoktur | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Eti Burçak Sütlü Çikolatalı Bisküvi 114 G
 
@@ -1124,6 +1272,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: *buğday unu*, tam buğday unu %24) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 26.4 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.32 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: sodyum asit pirofosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.32 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: yağsız *süt tozu*, tam yağlı *süt tozu*, yağsız *süt tozu*) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: pamuk, pastörize *yumurta*, malt ekstraktı, arpa ürünü, kepek, mono ve digliseritlerin diasetil tartarik asit esterleri, kakao kuru maddesi en az %27'dir | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Haribo Happy Cola 80 G
 
@@ -1150,6 +1302,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 47.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.0 g / 100 g (≤ 0.04); -: tanınmayan içerik: karamelize şeker şurubu, kola aroma verici, karnauba mumu | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.0 g / 100 g (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: karamelize şeker şurubu, kola aroma verici, karnauba mumu | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: karamelize şeker şurubu, kola aroma verici, karnauba mumu | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Pinar Süt 1 lt
 
@@ -1165,6 +1321,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 4.8 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.04 g / 100 ml (≤ 0.04); -: tanınmayan içerik: PI Gercek Yaşam Gerçek Lezzet Doğal 0%100 Net, 1L e Yağlı Süt Pinat | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.04 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: PI Gercek Yaşam Gerçek Lezzet Doğal 0%100 Net, 1L e Yağlı Süt Pinat | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: PI Gercek Yaşam Gerçek Lezzet Doğal 0%100 Net, 1L e Yağlı Süt Pinat | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Altınkılıç Kefir 1 L
 
@@ -1181,6 +1341,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 1.7 g / 100 ml (≤ 2.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.079 g / 100 ml (≤ 0.12); -: tanınmayan içerik: Pastörize inek *milk*, kefir mayası, kefir kültürü | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.079 g / 100 ml (≤ 0.12) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: Pastörize inek *milk*, kefir mayası, kefir kültürü | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Pastörize inek *milk*, kefir mayası, kefir kültürü | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Eti Karam Bitter
 
@@ -1203,6 +1367,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 31.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Engel bulunmadı** | CKD-01: sodyum 0.004 g / 100 g (≤ 0.04) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.004 g / 100 g (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Engel bulunmadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan) | Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Engel bulunmadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan) | Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## İçim süt 1 litre yarım yağlı
 
@@ -1217,6 +1385,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 4.7 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.039 g / 100 ml (≤ 0.04); -: tanınmayan içerik: Semi Skimmed UHT Milk | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.039 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: Semi Skimmed UHT Milk | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Semi Skimmed UHT Milk | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Capri-Sun Safari Fruits 200 ml
 
@@ -1247,6 +1419,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 9.9 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.004 g / 100 ml (≤ 0.04); -: tanınmayan içerik: konsantreden elde edilen meyve suyu %11, mandalina suyu %1, doğal aroma verici maddeler, Meyve suyu oranı en az %11 | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.004 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: konsantreden elde edilen meyve suyu %11, mandalina suyu %1, doğal aroma verici maddeler, Meyve suyu oranı en az %11 | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: konsantreden elde edilen meyve suyu %11, mandalina suyu %1, doğal aroma verici maddeler, Meyve suyu oranı en az %11 | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Çokokrem Kakaolu Fındık Kreması
 
@@ -1275,6 +1451,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 60.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Engel bulunmadı** | CKD-01: sodyum 0.12 g / 100 g (≤ 0.12) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.12 g / 100 g (≤ 0.12) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: peyniraltı suyu tozu, _süt_, yağsız _süt_ tozu %4) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Engel bulunmadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan) | Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Sade Patates Cipsi
 
@@ -1305,6 +1485,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 2.0 g / 100 ml (≤ 2.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.48 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.48 g / 100 ml (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: Kurutulmuş Patates, Palmiye Yağı, Mısır Kaynaklı | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Kurutulmuş Patates, Palmiye Yağı, Mısır Kaynaklı | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## 2.5 LİTRE PEPSİ
 
@@ -1333,6 +1517,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 7.0 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.004 g / 100 ml (≤ 0.04); -: tanınmayan içerik: AMONYUM SÜLFIT KARAMEL, FOSFORIK ASIT, DOĞAL, KAFEIN, 1 g/L | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.004 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: AMONYUM SÜLFIT KARAMEL, FOSFORIK ASIT, DOĞAL, KAFEIN, 1 g/L | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: AMONYUM SÜLFIT KARAMEL, FOSFORIK ASIT, DOĞAL, KAFEIN, 1 g/L | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Acılı Ketçap
 
@@ -1383,6 +1571,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Doğrulanamadı** | DM-02: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-03: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
+| Hipertansiyon | **Doğrulanamadı** | HT-02: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: ACILI KETÇAP İÇİNDEKİLER, domates salçası, şeker (S)* veya glikoz-fruktoz şurubu (G)*, acı biber ekstraktı, &quot, Kullanılan şeker veya glikoz-fruktoz şurubu ambalaj üzerine kodlanmıştır, Bu ürün hardal içeren ürünler ile aynı hatta üretilmiştir, Tavsiye Edilen Tüketim Tarihi (TETT) ve Parti/Seri No (SN) ambalajın üzerindedir, Şişmiş ve sızıntılı ambalajları satın almayınız, Serin ve kuru yerde muhafaza ediniz, Güneş ışığından koruyunuz, Açıldıktan sonra buzdolabında saklayınız, Enerji ve Besin Öğeleri 100 g İçin Enerji (kJ/kcal) 396/96 Yağ (g) 0, 1 - Doymuş yağ (g) 0, 0 Karbonhidrat (g) 22, 4 - Şekerler (g) 17, 4 Lif 1, 0 Protein (g) 1, 0 Tuz (g) 2, 0 Gıda İşletmecisi, BİM BİRLEŞİK MAĞAZALAR A.Ş, Abdurrahmangazi Mah, Ebubekir Cad, No, 73 Sancaktepe/İstanbul Bu ürün (KHC Turkey Gıda Sanayi A.Ş, tarafından) BIM Birleşik Mağazalar A.Ş, adına üretilmiştir, Üretici Adresi, Kepekler Mah, Sivritepe Mevkii, Susurluk/Balıkesir İşletme Kayıt No, TR-10-K-000054 Üretici Tel No | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: ACILI KETÇAP İÇİNDEKİLER, domates salçası, şeker (S)* veya glikoz-fruktoz şurubu (G)*, acı biber ekstraktı, &quot, Kullanılan şeker veya glikoz-fruktoz şurubu ambalaj üzerine kodlanmıştır, Bu ürün hardal içeren ürünler ile aynı hatta üretilmiştir, Tavsiye Edilen Tüketim Tarihi (TETT) ve Parti/Seri No (SN) ambalajın üzerindedir, Şişmiş ve sızıntılı ambalajları satın almayınız, Serin ve kuru yerde muhafaza ediniz, Güneş ışığından koruyunuz, Açıldıktan sonra buzdolabında saklayınız, Enerji ve Besin Öğeleri 100 g İçin Enerji (kJ/kcal) 396/96 Yağ (g) 0, 1 - Doymuş yağ (g) 0, 0 Karbonhidrat (g) 22, 4 - Şekerler (g) 17, 4 Lif 1, 0 Protein (g) 1, 0 Tuz (g) 2, 0 Gıda İşletmecisi, BİM BİRLEŞİK MAĞAZALAR A.Ş, Abdurrahmangazi Mah, Ebubekir Cad, No, 73 Sancaktepe/İstanbul Bu ürün (KHC Turkey Gıda Sanayi A.Ş, tarafından) BIM Birleşik Mağazalar A.Ş, adına üretilmiştir, Üretici Adresi, Kepekler Mah, Sivritepe Mevkii, Susurluk/Balıkesir İşletme Kayıt No, TR-10-K-000054 Üretici Tel No | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Haribo Berries 80 G
 
@@ -1419,6 +1611,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 75.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.04 g / 100 g (≤ 0.04); -: tanınmayan içerik: karmelize şeker şurubu, çeşidine göre doğal meyve ve bitki konsantreleri, mürver, siyah kuşüzümü, kırmızı kuşüzümü, kırmızı üzüm, karnauba mumu, mürver ekstraktı | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.04 g / 100 g (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: karmelize şeker şurubu, çeşidine göre doğal meyve ve bitki konsantreleri, mürver, siyah kuşüzümü, kırmızı kuşüzümü, kırmızı üzüm, karnauba mumu, mürver ekstraktı | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: karmelize şeker şurubu, çeşidine göre doğal meyve ve bitki konsantreleri, mürver, siyah kuşüzümü, kırmızı kuşüzümü, kırmızı üzüm, karnauba mumu, mürver ekstraktı | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Doğal Yoğurt
 
@@ -1439,6 +1635,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 5.1 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.08 g / 100 ml (≤ 0.12); -: tanınmayan içerik: DOST TAM YAĞLI HOMOJENİZE YOĞURT İÇİNDEKİLER, Pastörize inek sütü, yoğurt kültürü, Son Tüketim Tarihi (STT) ve Parti No (P) ambalaj üzerinde olup, son tüketim tarihine kadar tüketilmelidir, Buzdolabında (+4°C'de) saklayınız, Homojenize edildiğinden yağı üzerinde birikmez | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.08 g / 100 ml (≤ 0.12) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: DOST TAM YAĞLI HOMOJENİZE YOĞURT İÇİNDEKİLER, Pastörize inek sütü, yoğurt kültürü, Son Tüketim Tarihi (STT) ve Parti No (P) ambalaj üzerinde olup, son tüketim tarihine kadar tüketilmelidir, Buzdolabında (+4°C'de) saklayınız, Homojenize edildiğinden yağı üzerinde birikmez | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: DOST TAM YAĞLI HOMOJENİZE YOĞURT İÇİNDEKİLER, Pastörize inek sütü, yoğurt kültürü, Son Tüketim Tarihi (STT) ve Parti No (P) ambalaj üzerinde olup, son tüketim tarihine kadar tüketilmelidir, Buzdolabında (+4°C'de) saklayınız, Homojenize edildiğinden yağı üzerinde birikmez | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Heinz Sarımsak Sosu 230 G
 
@@ -1470,6 +1670,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 8.4 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.52 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.52 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: peynir altı suyu tozu) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Engel bulunmadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan) | Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Hoşbeş Fındık Kremalı Gofret
 
@@ -1514,6 +1718,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: _buğday_ unu, gluten) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 31.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.184 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: sodyum asit pirofosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.184 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: _süt_ tozu, peynir altı suyu tozu) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: _Fındık_ kreması %73, gofret yaprağı %26, maya ekstraktı | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Tadıbu Kakaolu Fındık Ezmesi
 
@@ -1540,6 +1748,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 36.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.376 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.376 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: Süt Tozu, süt tozu) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Toz Şeker, Kakao (%5) Alerjen Uyarısı, trans yağ içermez, *Ürünümüz domuz yağı ve katkılarını içermez, *Ürünümüz yüksek oranda fındık içermesi ve emülgatör kullanılmaması sebebiyle çabuk yağlanacaktır, Lütfen Karıştırarak Tüketiniz | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Züber %100 Fıstık Ezmesi 315 G
 
@@ -1554,6 +1766,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Engel bulunmadı** | DM-01: sekerler 1.4 g / 100 ml (≤ 2.5) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Engel bulunmadı** | CKD-01: sodyum 0.0 g / 100 ml (≤ 0.04) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.0 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Engel bulunmadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan) | Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Engel bulunmadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan) | Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Ülker Bol Sütlü Kare Çikolata
 
@@ -1580,6 +1796,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-02: Etikette gluten içeren tahıl için 'içerebilir' uyarısı var (içerebilir: gluten) | Reg. (EU) 1169/2011 Ek II madde 1; ekip kararı (belirsizlik riski artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 55.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.104 g / 100 g (≤ 0.12); -: tanınmayan içerik: Kakao kuru maddesi en az %30'dur | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.104 g / 100 g (≤ 0.12) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: tam yağlı süttozu) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Kakao kuru maddesi en az %30'dur | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## tutku bisküvi
 
@@ -1625,6 +1845,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: Buğday Unu, gluten) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 32.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.24 g / 100 g (sınırın üstünde); CKD-02: Fosfat katkısı var; etikette miktarı olmadığı için hesap yapılmaz (bulunan: Sodyum Asit Pirofosfat) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün); [kaynak doğrulanacak: böbrek beslenme kılavuzlarında fosfat katkıları] |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.24 g / 100 g (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: Krema %30, Laktoz) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Pamuk, Pamuk, Susam Ezmesi, Keçiboynuzu Unu | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Dido Sütlü Çikolatalı Gofret
 
@@ -1656,6 +1880,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Uygun değil** | CEL-01: Gluten ya da gluten içeren tahıldan yapılmış içerik var (bulunan: _buğday_ unu) | Reg. (EU) 1169/2011 Ek II madde 1 (gluten içeren tahıllar ve muafiyetler); TGK Gıda Etiketleme Yönetmeliği (RG 29960) alerjen eki |
 | Diyabet | **Dikkat** | DM-01: sekerler 49.0 g / 100 g (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.09 g / 100 g (≤ 0.12); -: tanınmayan içerik: _yumurta_ akı tozu | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.09 g / 100 g (≤ 0.12) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Dikkat** | LAK-01: Süt/laktoz var; miktar etikette yok. Çoğunluk tek seferde 12 g'a kadar tolere eder, kişiden kişiye değişir (bulunan: tam yağlı _süt_ tozu) | Reg. (EU) 1169/2011 Ek II md. 7; EFSA Journal 2010;8(9):1777 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: _yumurta_ akı tozu | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## HEINZ EST 1869 TOMATO KETCHUP GROWN NOT MADE TETT:
 
@@ -1675,6 +1903,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 22.8 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Dikkat** | CKD-01: sodyum 0.72 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Dikkat** | HT-01: sodyum 0.72 g / 100 ml (sınırın üstünde) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: Domates püresi, bitki özütleri | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: Domates püresi, bitki özütleri | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## Mentos Clean Breath Naneli Sert Şeker 21 G
 
@@ -1693,6 +1925,10 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Doğrulanamadı** | DM-02: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-03: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
+| Hipertansiyon | **Doğrulanamadı** | HT-02: besin tablosu gerekli → kullanıcıdan istenir | Ekip kararı (K5 eksik veri) |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: çinko laktat, manolya kabuğu ekstraktı | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: çinko laktat, manolya kabuğu ekstraktı | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 
 ## ULUDAĞ LİMONATA 1L
 
@@ -1717,4 +1953,8 @@ Toplam ifade: **894** · E-kodu: 4 · birebir: 536 · çoğul: 59 · gürültü:
 | Çölyak | **Dikkat** | CEL-04: Gluten kaynağı görünmüyor ama 'glutensiz' beyanı yok; çapraz bulaşma bilinmiyor (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
 | Diyabet | **Dikkat** | DM-01: sekerler 12.0 g / 100 ml (sınırın üstünde) | Reg. (EC) No 1924/2006 Ek (SUGARS-FREE; LOW SUGARS); TGK Beslenme ve Sağlık Beyanları Yönetmeliği (RG 29960) Ek-1 |
 | Kronik böbrek hastalığı | **Doğrulanamadı** | CKD-01: sodyum 0.012 g / 100 ml (≤ 0.04); -: tanınmayan içerik: ağaç reçinesinin gliserol esterleri, aspir çiçeği konsantresi | Karar belgesi ilke 3; Reg. (EC) No 1924/2006 Ek (LOW / VERY LOW SODIUM/SALT); Reg. (EU) 1169/2011 Ek I (tuz = sodyum × 2,5); KDIGO 2024 (bağlam: sodyum < 2 g/gün) |
+| Hipertansiyon | **Engel bulunmadı** | HT-01: sodyum 0.012 g / 100 ml (≤ 0.04) | WHO Guideline: Sodium intake for adults and children (2012); Reg. (EC) 1924/2006 Ek; Reg. (EU) 1169/2011 Ek I |
+| Laktoz intoleransı | **Doğrulanamadı** | LAK-02: Süt/laktoz beyanı yok (beyan zorunlu) (varsayılan); -: tanınmayan içerik: ağaç reçinesinin gliserol esterleri, aspir çiçeği konsantresi | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 7 |
+| Fenilketonüri | **Doğrulanamadı** | PKU-02: Fenilalanin doğal proteinlerde de bulunur; etiketten hesaplanamaz (varsayılan) | Ekip kararı (belirsizlik riski yalnız artırır) |
+| Sülfit hassasiyeti | **Doğrulanamadı** | SUL-02: Sülfit beyanı yok (beyan 10 mg/kg üstünde zorunlu) (varsayılan); -: tanınmayan içerik: ağaç reçinesinin gliserol esterleri, aspir çiçeği konsantresi | Karar belgesi ilke 3; Reg. (EU) 1169/2011 Ek II md. 12 |
 

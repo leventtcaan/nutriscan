@@ -15,7 +15,8 @@ from nutriscan.rules import evaluate, load_rules          # noqa: E402
 from nutriscan.text import flatten, split_label           # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-CONDITIONS = {"colyak": "Çölyak", "diyabet": "Diyabet", "kronik_bobrek": "Kronik böbrek hastalığı"}
+CONDITIONS = {"colyak": "Çölyak", "diyabet": "Diyabet", "kronik_bobrek": "Kronik böbrek hastalığı", "hipertansiyon": "Hipertansiyon",
+              "laktoz_intoleransi": "Laktoz intoleransı", "fenilketonuri": "Fenilketonüri", "sulfit_hassasiyeti": "Sülfit hassasiyeti"}
 
 
 def num(v):
