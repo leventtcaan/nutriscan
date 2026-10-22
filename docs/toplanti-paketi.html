@@ -1,0 +1,169 @@
+<title>NutriScan Toplantı Paketi</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: tek sütun rapor; üstte ölçüm şeridi, ardından hocanın dört sorusuna sırayla cevap */
+:root{
+  --bg:#f4f6f5; --surface:#fff; --ink:#17201c; --muted:#5b6862; --line:#d9dfdb;
+  --accent:#2f43b0; --accent-soft:#e7eafb; --ok:#1f7a4d; --ok-soft:#e1f2e8; --warn:#9a5b00; --warn-soft:#fbefd9;
+  --bad:#b3261e; --bad-soft:#fdeceb; --unk:#5b6470; --unk-soft:#e9ecef;
+  --f-d:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif; --f-b:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif; --f-m:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111614; --surface:#18201d; --ink:#e6ece9; --muted:#9aa8a1; --line:#2b3531;
+  --accent:#93a3ff; --accent-soft:#232b52; --ok:#6fd39f; --ok-soft:#173326; --warn:#f0b65a; --warn-soft:#3a2c12;
+  --bad:#ff8a80; --bad-soft:#3a1714; --unk:#a9b2bc; --unk-soft:#262d33; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111614; --surface:#18201d; --ink:#e6ece9; --muted:#9aa8a1; --line:#2b3531;
+  --accent:#93a3ff; --accent-soft:#232b52; --ok:#6fd39f; --ok-soft:#173326; --warn:#f0b65a; --warn-soft:#3a2c12;
+  --bad:#ff8a80; --bad-soft:#3a1714; --unk:#a9b2bc; --unk-soft:#262d33; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--f-b);margin:0}
+.wrap{max-width:1000px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:32px 64px;display:grid;gap:40px}
+h1,h2,h3{font-family:var(--f-d);margin:0;line-height:1.15;text-wrap:balance}
+h1{font-size:clamp(28px,4.4vw,40px)} h2{font-size:clamp(21px,2.8vw,26px)} h3{font-size:17px}
+p{margin:0;max-width:72ch} .muted{color:var(--muted)} .mono{font-family:var(--f-m);font-size:.92em}
+.eyebrow{font:500 12px/1 var(--f-m);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+a{color:var(--accent)}
+section{display:grid;gap:14px}
+header{display:grid;gap:12px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;display:grid;gap:4px}
+.stat b{font:700 26px/1 var(--f-d);font-variant-numeric:tabular-nums} .stat span{font-size:13.5px;color:var(--muted)}
+.bars{display:grid;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
+.bar{display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr) 52px;gap:12px;align-items:center;font-size:14.5px}
+.track{height:16px;background:var(--unk-soft);border-radius:8px;overflow:hidden}
+.fill{height:100%;background:var(--bad);border-radius:8px}
+.bar .v{font:600 15px var(--f-m);text-align:right;font-variant-numeric:tabular-nums}
+@media (max-width:640px){.bar{grid-template-columns:minmax(0,1fr) 52px}.bar .track{grid-column:1 / -1;order:3}}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:640px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 12px/1.2 var(--f-m);letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+td.n{font-variant-numeric:tabular-nums;font-family:var(--f-m);white-space:nowrap}
+.pill{display:inline-block;padding:3px 9px;border-radius:999px;font:600 12.5px/1.3 var(--f-b);white-space:nowrap}
+.p-bad{background:var(--bad-soft);color:var(--bad)} .p-warn{background:var(--warn-soft);color:var(--warn)} .p-ok{background:var(--ok-soft);color:var(--ok)} .p-unk{background:var(--unk-soft);color:var(--unk)}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px} @media (max-width:720px){.two{grid-template-columns:minmax(0,1fr)}}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:8px;align-content:start;min-width:0}
+.box ul,.box ol{margin:0;padding-left:20px;display:grid;gap:4px;font-size:15px}
+.label{font:400 14px/1.7 var(--f-m);background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:14px 16px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chips span{font:400 13px var(--f-m);background:var(--unk-soft);border-radius:6px;padding:3px 7px}
+.answer{border-left:3px solid var(--accent);padding-left:14px;display:grid;gap:6px}
+</style>
+<div class="wrap">
+<header>
+  <span class="eyebrow">CSE 491 · Grup 9 · danışman görüşmesi, 23 Ekim 2026</span>
+  <h1>Topladık, Türkçeleştirdik, ölçtük: elimizdekiler</h1>
+  <p>NutriScan paketli gıdanın içindekiler listesini ve besin tablosunu okur, her ifadeyi standart bir kavrama bağlar ve kullanıcının sağlık durumu için kaynaklı kurallarla değerlendirir. Uçtan uca akış: <a href="https://claude.ai/artifact/3b2jpcUmTmh5YtmPSbEVYN">akış diyagramı</a>. Aşağıdaki sayılar repodaki kodu gerçek Türk etiketleri üzerinde çalıştırarak alındı.</p>
+  <div class="stats">
+    <div class="stat"><b>5.459</b><span>kavram (540 E-kodu grubu, 4.866 gıda kavramı, 53 katkı sınıfı)</span></div>
+    <div class="stat"><b>10.465</b><span>eşanlamlı; 1.032'si Türkçe (81'i ekip çevirisi)</span></div>
+    <div class="stat"><b>60</b><span>gerçek Türk etiketi, 894 içerik ifadesi</span></div>
+    <div class="stat"><b>%57 → %25</b><span>tanınmayan ifade oranı</span></div>
+    <div class="stat"><b>9</b><span>kural (çölyak, diyabet, kronik böbrek)</span></div>
+    <div class="stat"><b>12</b><span>otomatik test, hepsi geçiyor</span></div>
+  </div>
+</header>
+
+<section>
+  <span class="eyebrow">Hocanın sorusu 1</span>
+  <h2>Hangi veri, nereden, hangi lisansla?</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Veri</th><th>Kaynak</th><th>Ne aldık</th><th>Lisans / durum</th></tr></thead>
+    <tbody>
+      <tr><td>Gıda kavramları</td><td>Open Food Facts içerik taksonomisi (commit 14cbdc68)</td><td class="n">4.866 kavram · 501 Türkçe ad · üst kavram (IS_A) zinciri</td><td>ODbL · atıfla</td></tr>
+      <tr><td>Katkı maddeleri</td><td>OFF katkı taksonomisi</td><td class="n">540 E-kodu grubu (alt türleriyle 725) · 174 Türkçe ad</td><td>ODbL · resmî TGK listesiyle karşılaştırılacak</td></tr>
+      <tr><td>Katkı sınıfları</td><td>OFF sınıf taksonomisi + ekip çevirisi</td><td class="n">53 sınıf (emülgatör, kabartıcı…)</td><td>ODbL + ekip</td></tr>
+      <tr><td>Test etiketleri</td><td>OFF, Türkiye'de satılan ürünler (içindekiler metni)</td><td class="n">60 ürün, 894 ifade</td><td>ODbL · yalnız test için</td></tr>
+      <tr><td>Kural eşikleri</td><td>AB 1924/2006 Ek · AB 1169/2011 Ek I–II · AB 828/2014 (EUR-Lex'ten okundu) · TGK Beslenme Beyanları Yön. (RG 29960)</td><td class="n">şeker, sodyum, gluten tanımları</td><td>Resmî mevzuat · TR ekleri teyit ediliyor</td></tr>
+      <tr><td>Kullanılmayan</td><td>FooDB</td><td>—</td><td>CC BY-NC (ticari kullanıma kapalı)</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <span class="eyebrow">Hocanın sorusu 2</span>
+  <h2>Türkçeleştirme nasıl? Ölçerek</h2>
+  <p>Veritabanlarını çevirmiyoruz. Etiketlerde gerçekten geçen ifadeleri sözlüğe bağlıyoruz ve tanınmayanları sayıyoruz. Aynı 60 etiket, üç adımda:</p>
+  <div class="bars" role="img" aria-label="Tanınmayan ifade oranı: başlangıç yüzde 57, biçim düzeltmeleri sonrası yüzde 52, ekip çevirisi sonrası yüzde 25">
+    <div class="bar"><span>Yalnız OFF sözlüğü</span><div class="track"><div class="fill" style="width:57%"></div></div><span class="v">%57</span></div>
+    <div class="bar"><span>+ biçim: Türkçe çoğul ekleri, OFF işaretleri, gürültü</span><div class="track"><div class="fill" style="width:52%"></div></div><span class="v">%52</span></div>
+    <div class="bar"><span>+ 81 ekip çevirisi (katkı sınıfları ve sık ifadeler)</span><div class="track"><div class="fill" style="width:25%"></div></div><span class="v">%25</span></div>
+  </div>
+  <div class="two">
+    <div class="box"><h3>Kalan %25 neden tanınmıyor?</h3><ul>
+      <li><b>Vitamin ve kimyasal adları:</b> siyanokobalamin, ergokalsiferol, "b12"</li>
+      <li><b>Etikete karışmış başka metin:</b> adres, besin tablosu, saklama talimatı. OCR sonrası "yalnız içindekiler bölümünü ayıkla" adımı gerekiyor.</li>
+      <li><b>Gerçek çeviri açığı:</b> ekibin sıradaki Türkçeleştirme listesi</li></ul></div>
+    <div class="box"><h3>Sıradaki Türkçeleştirme listesinden örnekler</h3>
+      <div class="chips"><span>yumurta beyazı tozu</span><span>hindistan cevizi sütü</span><span>portakal suyu konsantresi</span><span>laktik asit</span><span>karnauba mumu</span><span>ağaç reçinesinin gliserol esterleri</span><span>gofret yaprağı</span><span>kakao kitlesi</span></div>
+      <p class="muted" style="font-size:14px">Her ekip çevirisi "taslak, 2 kişi onayı bekliyor" olarak kaydediliyor (<span class="mono">data/sozluk/ekip_esanlamli.csv</span>).</p></div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Hocanın sorusu 3</span>
+  <h2>Veri şeması ve Qdrant'ın yeri</h2>
+  <div class="two">
+    <div class="box"><h3>Bilgi tabanı (bugün CSV, sonra PostgreSQL)</h3><ul>
+      <li><span class="mono">kavram</span>: kimlik, tür, Türkçe/İngilizce ad, E-kodu, wikidata, üst kavramlar</li>
+      <li><span class="mono">esanlamli</span> + <span class="mono">ekip_esanlamli</span>: metin, dil, ilişki (SAME_AS · IS_A · CONTEXTUAL), kaynak, onay</li>
+      <li><span class="mono">kurallar</span>: durum, tür (varlık · miktar · beyan · eksik veri), hedef, sonuç, kaynak, doğrulama</li>
+      <li>Ürün ve sağlık profili saklanmıyor.</li></ul></div>
+    <div class="box"><h3>Eşleme sırası</h3><ol>
+      <li>E-kodu tanıma (E102, E 102, E-102)</li>
+      <li>Birebir eşanlamlı</li>
+      <li>Türkçe çoğul eki</li>
+      <li>Bulanık eşleşme (harf farkı)</li>
+      <li><b>Qdrant: anlam yakınlığı</b>, sıradaki adım. Kalan %25 üzerinde açık/kapalı ölçülecek.</li></ol></div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Hocanın sorusu 4</span>
+  <h2>Kural tablosu v0 ve uçtan uca örnek</h2>
+  <div class="label">İçindekiler: buğday unu, şeker, glikoz şurubu, bitkisel yağ (palm), renklendirici (E102). Eser miktarda süt içerebilir.<br>Besin değerleri / 100 g: şekerler 48 g · tuz 0,3 g</div>
+  <div class="scroll"><table>
+    <thead><tr><th>Durum</th><th>Sonuç</th><th>Neden</th><th>Dayanak</th></tr></thead>
+    <tbody>
+      <tr><td>Çölyak</td><td><span class="pill p-bad">Uygun değil</span></td><td>buğday unu → buğday (IS_A zinciri). Glikoz şurubu sayılmadı: buğday bazlı glikoz şurubu yasal muafiyet.</td><td>AB 1169/2011 Ek II md. 1</td></tr>
+      <tr><td>Diyabet</td><td><span class="pill p-warn">Dikkat</span></td><td>şekerler 48 g / 100 g; "düşük şeker" sınırı katıda 5 g</td><td>AB 1924/2006 Ek</td></tr>
+      <tr><td>Kronik böbrek</td><td><span class="pill p-ok">Engel bulunmadı</span></td><td>tuz 0,3 g → sodyum 0,12 g; "düşük sodyum" sınırı 0,12 g</td><td>AB 1924/2006 Ek · 1169/2011 Ek I</td></tr>
+    </tbody>
+  </table></div>
+  <p class="muted" style="font-size:14.5px">Kurallar <span class="mono">data/kurallar/kurallar_v0.csv</span> dosyasında: 9 satır, her birinde kaynak ve doğrulama durumu var. Eksik besin tablosunda sonuç "Doğrulanamadı" olur ve kullanıcıdan tablo istenir. Tanınmayan bir içerik varsa "Engel bulunmadı" denmez.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>60 gerçek etikette</th><th>Uygun değil</th><th>Dikkat</th><th>Engel bulunmadı</th><th>Doğrulanamadı</th></tr></thead>
+    <tbody>
+      <tr><td>Çölyak</td><td class="n">17</td><td class="n">43</td><td class="n">0</td><td class="n">0</td></tr>
+      <tr><td>Diyabet</td><td class="n">0</td><td class="n">40</td><td class="n">14</td><td class="n">6</td></tr>
+      <tr><td>Kronik böbrek</td><td class="n">0</td><td class="n">28</td><td class="n">5</td><td class="n">27</td></tr>
+    </tbody>
+  </table></div>
+  <p class="muted" style="font-size:14.5px">Taslak kurallarla alınmış ilk dağılım; bir değerlendirme değil. Çölyakta "Dikkat"lerin çoğu "glutensiz beyanı yok" kuralından, böbrekte "Doğrulanamadı"ların çoğu tanınmayan içerikten geliyor. Türkçeleştirme ilerledikçe bu sayılar değişecek.</p>
+</section>
+
+<section>
+  <span class="eyebrow">Plan</span>
+  <h2>Sıradaki iki hafta</h2>
+  <div class="two">
+    <div class="box"><h3>Aşama 1: eşlemeyi tamamla</h3><ul>
+      <li>Türkçeleştirme listesini kapat, ekip çevirilerini iki kişi onaylasın (Ozan)</li>
+      <li>Qdrant adımı ve açık/kapalı ölçüm (Ozan, Levent)</li>
+      <li>Ekipten 30 gerçek etiket, yalnız içindekiler bölümü (hep birlikte)</li>
+      <li>CTD bilgisi: yalnız tekil kimyasallar için, uyarı değil bilgi (Ozan)</li></ul></div>
+    <div class="box"><h3>Aşama 2: kuralları genişlet</h3><ul>
+      <li>TR ek metinleriyle eşik teyidi, kural satırlarının iki kişi onayı (Hilal)</li>
+      <li>Yeni durumlar: hipertansiyon, laktoz intoleransı, fenilketonüri (Hilal)</li>
+      <li>Servis (FastAPI) ve mobil OCR iskeleti (Levent, Ozan)</li>
+      <li>TÜBİTAK 2209-A metni, 2 Kasım'dan önce (hep birlikte)</li></ul></div>
+  </div>
+  <div class="answer"><h3>Hocaya soracaklarımız</h3>
+    <ol><li>Ölçüm yöntemi (tanınmayan oranı + iki kişi onaylı çeviri) Türkçeleştirme için yeterli mi?</li>
+    <li>Qdrant'ın katkısını kalan %25 üzerinde ölçmek, "vektör DB gerekli mi" sorusuna uygun bir cevap mı?</li>
+    <li>TÜBİTAK başvurusunda araştırma sorusunu "sözlük ile hibrit eşlemenin karşılaştırması" olarak kurmak uygun mu?</li></ol></div>
+</section>
+<p class="muted" style="font-size:13.5px">Kaynak kod ve veri: github.com/leventtcaan/nutriscan · <span class="mono">data/</span>, <span class="mono">service/</span>, <span class="mono">tests/</span> · Raporlar: <span class="mono">tests/eslesme/off_rapor.md</span></p>
+</div>
