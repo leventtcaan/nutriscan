@@ -5,6 +5,7 @@
 > Dayanak: Hilal'in 25 Ekim taslağı (yöntem titizliği, risk, bütçe, ÜYZ beyanı korundu) + tek araştırma sorusuna odak +
 > ön çalışma bulguları. Bütün künyeler 25 Ekim 2026'da Crossref / resmî sayfadan doğrulandı (bkz. en alttaki doğrulama notu).
 > Formdaki her başlık aşağıda aynı adla var; metin doğrudan kutuya yapıştırılır.
+> **26 Ekim:** Bilgi Notu gereği iş paketleri sıralı yapıldı (toplam süre 12 ayı aşamaz): 2+2+3+3+2 = 12.
 > **25 Ekim 2026 durumu:** proje bilgileri, araştırma önerisi, kaynakça ve bütçe TYBS'ye girildi ve kaydedildi. Takvimde "Proje Süresi (Ay)" alanı tek sayı kabul ettiği için faaliyetin süresi yazıldı, ay aralığı faaliyet metninin başında. Çağrı kuralı gereği sonuç raporu ayrı iş adımı yapılmadı (İP5 güncellendi).
 
 ---
@@ -69,7 +70,7 @@ Proje on iki ayda beş iş paketiyle yürütülecektir: protokol, altın küme, 
 
 **Taban yöntem (A).** İfade Türkçe küçük harf kuralı, yüzde ve işaret temizliğiyle normalleştirilir; ardından sırasıyla E-kodu, birebir eş anlamlı, Türkçe çoğul eki ayıklanmış biçim ve bulanık eşleşme denenir. Bulanık eşleşmede Ratcliff–Obershelp benzerlik ölçüsü kullanılır [16]; eşik geliştirme kümesinde seçilir. Hiçbiri tutmazsa sonuç çekimserdir ("tanınmayan").
 
-**Hibrit yöntem (B).** Taban yöntemin çekimser kaldığı ifadeler çok dilli bir cümle gömme modeliyle vektöre çevrilir ve sözlükteki bütün yazılışların vektörlerini tutan Qdrant koleksiyonunda en yakın 5 aday aranır [15]. Aday model LaBSE'dir [14]; ilk iki ayda geliştirme kümesinde en az bir alternatifle karşılaştırılarak seçilir ve sürümü sabitlenir. En yakın adayın benzerliği eşik değerin altındaysa ya da ilk iki aday farklı kavramlara ait olup aralarındaki fark küçükse sonuç çekimser kalır. Qdrant yalnız aday üretir; sağlık sonucunu belirlemez.
+**Hibrit yöntem (B).** Taban yöntemin çekimser kaldığı ifadeler çok dilli bir cümle gömme modeliyle vektöre çevrilir ve sözlükteki bütün yazılışların vektörlerini tutan Qdrant koleksiyonunda en yakın 5 aday aranır [15]. Aday model LaBSE'dir [14]; İP3'ün başında geliştirme kümesinde en az bir alternatifle karşılaştırılarak seçilir ve sürümü sabitlenir. En yakın adayın benzerliği eşik değerin altındaysa ya da ilk iki aday farklı kavramlara ait olup aralarındaki fark küçükse sonuç çekimser kalır. Qdrant yalnız aday üretir; sağlık sonucunu belirlemez.
 
 **İstatistiksel analiz (İP3).** İki yöntemin her test ifadesindeki doğru/yanlış sonuçları eşleştirilmiş 2×2 tabloda karşılaştırılır ve fark tam (exact) McNemar testiyle sınanır [17]. Oranlar Wilson %95 güven aralıklarıyla verilir [19]. Sonuçlar ifade türüne göre alt gruplarda raporlanır; örnek sayısı yetersiz alt gruplar için yalnız betimleyici sonuç verilir.
 
@@ -82,16 +83,16 @@ Proje on iki ayda beş iş paketiyle yürütülecektir: protokol, altın küme, 
 | Proje Süresi (Ay) | Faaliyetler | Kim(ler) Tarafından Gerçekleştirileceği | Başarı Ölçütü ve Araştırmanın Başarısına Katkısı |
 |---|---|---|---|
 | 1–2 | İP1 · Kapsam ve deney protokolü: sağlık durumu listesinin danışmanla netleştirilmesi, kaynak ve lisans envanteri, etiketleme kılavuzu, gömme modeli ve eşik seçim planı | Levent Can Ceylan (protokol), Şükran Hilal Hocaoğlu (kaynak ve lisans), Ozan Karadaş (model seçimi) | Yazılı protokol, lisans envanteri ve etiketleme kılavuzu tamamlanır. Katkı: %15 |
-| 2–4 | İP2 · Altın küme: ambalaj fotoğraflama, transkripsiyon, en az 400 ifadenin çift bağımsız etiketlenmesi, uzlaştırma, geliştirme/test bölmesi | Tüm ekip | 400/400 ifade çift etiketli; Cohen kappa raporlanır (hedef ≥ 0,80). Katkı: %20 |
-| 4–7 | İP3 · Hibrit eşleme deneyi: Qdrant koleksiyonu, model ve eşiğin geliştirme kümesinde sabitlenmesi, iki yöntemin test kümesinde karşılaştırılması, hata analizi | Ozan Karadaş (vektör araması), Levent Can Ceylan (deney ve analiz) | İki yöntem için metrik tablosu, McNemar testi ve hata sınıfları raporlanır. Katkı: %25 |
-| 5–9 | İP4 · Kaynaklı kural tablosu ve kural sınavı: kural satırlarının yazılması, iki bağımsız kontrol, en az 40 senaryonun hazırlanması ve çalıştırılması | Şükran Hilal Hocaoğlu (kurallar ve kaynaklar), Levent Can Ceylan (kural motoru) | Kontrol edilmemiş satır sayısı 0; kaçırılan uyarı, gereksiz uyarı ve "Doğrulanamadı" oranları raporlanır. Katkı: %25 |
-| 9–12 | İP5 · Bütünleşik prototip ve uçtan uca değerlendirme: OCR ve kullanıcı düzeltmesiyle etiket metninin alınması, eşleme ve kural adımlarının sunucu servisinde birleştirilmesi, prototipin kural sınavı senaryolarıyla uçtan uca sınanması | Levent Can Ceylan (entegrasyon), Ozan Karadaş (mobil ve OCR), Şükran Hilal Hocaoğlu (senaryolar) | Senaryoların tamamı uçtan uca prototipte çalıştırılır ve sonuçlar kural sınavıyla aynı çıkar. Katkı: %15 |
+| 3–4 | İP2 · Altın küme: ambalaj fotoğraflama, transkripsiyon, en az 400 ifadenin çift bağımsız etiketlenmesi, uzlaştırma, geliştirme/test bölmesi | Tüm ekip | 400/400 ifade çift etiketli; Cohen kappa raporlanır (hedef ≥ 0,80). Katkı: %20 |
+| 5–7 | İP3 · Hibrit eşleme deneyi: Qdrant koleksiyonu, model ve eşiğin geliştirme kümesinde sabitlenmesi, iki yöntemin test kümesinde karşılaştırılması, hata analizi | Ozan Karadaş (vektör araması), Levent Can Ceylan (deney ve analiz) | İki yöntem için metrik tablosu, McNemar testi ve hata sınıfları raporlanır. Katkı: %25 |
+| 8–10 | İP4 · Kaynaklı kural tablosu ve kural sınavı: kural satırlarının yazılması, iki bağımsız kontrol, en az 40 senaryonun hazırlanması ve çalıştırılması | Şükran Hilal Hocaoğlu (kurallar ve kaynaklar), Levent Can Ceylan (kural motoru) | Kontrol edilmemiş satır sayısı 0; kaçırılan uyarı, gereksiz uyarı ve "Doğrulanamadı" oranları raporlanır. Katkı: %25 |
+| 11–12 | İP5 · Bütünleşik prototip ve uçtan uca değerlendirme: OCR ve kullanıcı düzeltmesiyle etiket metninin alınması, eşleme ve kural adımlarının sunucu servisinde birleştirilmesi, prototipin kural sınavı senaryolarıyla uçtan uca sınanması | Levent Can Ceylan (entegrasyon), Ozan Karadaş (mobil ve OCR), Şükran Hilal Hocaoğlu (senaryolar) | Senaryoların tamamı uçtan uca prototipte çalıştırılır ve sonuçlar kural sınavıyla aynı çıkar. Katkı: %15 |
 
 ### 3.2. Risk Yönetimi
 
 | En Önemli Riskler | Alınacak Tedbirler (B Planı) |
 |---|---|
-| Altın küme için yeterli ve çeşitli gerçek etiket toplanamaması | Ön çalışmadaki 894 ifadeden tabakalı örneklem başlangıç kümesi olarak kullanılır; fotoğraflama ilk iki ayda başlar. Alt grup sayısı yetmezse o alt grup için yalnız betimleyici sonuç verilir; sentetik ifade gerçek etiket gibi sayılmaz. |
+| Altın küme için yeterli ve çeşitli gerçek etiket toplanamaması | Ön çalışmadaki 894 ifadeden tabakalı örneklem başlangıç kümesi olarak kullanılır; fotoğraflama İP2'nin ilk haftasında başlar. Alt grup sayısı yetmezse o alt grup için yalnız betimleyici sonuç verilir; sentetik ifade gerçek etiket gibi sayılmaz. |
 | Vektör aramasının yanlış kabulü artırması | Aday yalnız eşik üstündeyse ve ilk iki aday ayrışıyorsa kabul edilir; aksi halde çekimser kalınır. Yanlış kabul ayrı metrik olarak raporlanır; hibrit yöntem kötü sonuç verirse bu da araştırma bulgusu olarak sunulur ve prototipte taban yöntem kullanılır. |
 | İki etiketleyici arasında düşük uyum | Etiketleme kılavuzu geliştirme kümesinde denenip güncellenir; uyuşmazlıklar gerekçesiyle kaydedilir ve uzlaştırılır; kappa değeri olduğu gibi raporlanır. |
 | Kural eşiklerinde mevzuattaki beyan sınırı ile klinik önerinin karıştırılması | Her kural satırında kaynak türü (mevzuat, klinik kılavuz, EFSA görüşü) ayrı tutulur; kaynağı bulunmayan durum için kural yazılmaz ve sonuç "Doğrulanamadı" olur. |
