@@ -2,6 +2,7 @@
 CLAUDE.local.md
 .claude/settings.local.json
 plan/notlar/
+plan/defter/
 
 # Sırlar ve ortam
 .env
