@@ -5,6 +5,7 @@
 > Dayanak: Hilal'in 25 Ekim taslağı (yöntem titizliği, risk, bütçe, ÜYZ beyanı korundu) + tek araştırma sorusuna odak +
 > ön çalışma bulguları. Bütün künyeler 25 Ekim 2026'da Crossref / resmî sayfadan doğrulandı (bkz. en alttaki doğrulama notu).
 > Formdaki her başlık aşağıda aynı adla var; metin doğrudan kutuya yapıştırılır.
+> **25 Ekim 2026 durumu:** proje bilgileri, araştırma önerisi, kaynakça ve bütçe TYBS'ye girildi ve kaydedildi. Takvimde "Proje Süresi (Ay)" alanı tek sayı kabul ettiği için faaliyetin süresi yazıldı, ay aralığı faaliyet metninin başında. Çağrı kuralı gereği sonuç raporu ayrı iş adımı yapılmadı (İP5 güncellendi).
 
 ---
 
@@ -84,7 +85,7 @@ Proje on iki ayda beş iş paketiyle yürütülecektir: protokol, altın küme, 
 | 2–4 | İP2 · Altın küme: ambalaj fotoğraflama, transkripsiyon, en az 400 ifadenin çift bağımsız etiketlenmesi, uzlaştırma, geliştirme/test bölmesi | Tüm ekip | 400/400 ifade çift etiketli; Cohen kappa raporlanır (hedef ≥ 0,80). Katkı: %20 |
 | 4–7 | İP3 · Hibrit eşleme deneyi: Qdrant koleksiyonu, model ve eşiğin geliştirme kümesinde sabitlenmesi, iki yöntemin test kümesinde karşılaştırılması, hata analizi | Ozan Karadaş (vektör araması), Levent Can Ceylan (deney ve analiz) | İki yöntem için metrik tablosu, McNemar testi ve hata sınıfları raporlanır. Katkı: %25 |
 | 5–9 | İP4 · Kaynaklı kural tablosu ve kural sınavı: kural satırlarının yazılması, iki bağımsız kontrol, en az 40 senaryonun hazırlanması ve çalıştırılması | Şükran Hilal Hocaoğlu (kurallar ve kaynaklar), Levent Can Ceylan (kural motoru) | Kontrol edilmemiş satır sayısı 0; kaçırılan uyarı, gereksiz uyarı ve "Doğrulanamadı" oranları raporlanır. Katkı: %25 |
-| 9–12 | İP5 · Bütünleşik prototip ve sonuç: OCR ve kullanıcı düzeltmesiyle uçtan uca akış, sonuç raporu, bildiri taslağı | Tüm ekip | Uçtan uca çalışan prototip, final raporu ve bildiri taslağı. Katkı: %15 |
+| 9–12 | İP5 · Bütünleşik prototip ve uçtan uca değerlendirme: OCR ve kullanıcı düzeltmesiyle etiket metninin alınması, eşleme ve kural adımlarının sunucu servisinde birleştirilmesi, prototipin kural sınavı senaryolarıyla uçtan uca sınanması | Levent Can Ceylan (entegrasyon), Ozan Karadaş (mobil ve OCR), Şükran Hilal Hocaoğlu (senaryolar) | Senaryoların tamamı uçtan uca prototipte çalıştırılır ve sonuçlar kural sınavıyla aynı çıkar. Katkı: %15 |
 
 ### 3.2. Risk Yönetimi
 

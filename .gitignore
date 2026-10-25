@@ -29,3 +29,4 @@ coverage/
 .vscode/
 *.swp
 plan/board/
+plan/tubitak/*.pdf
