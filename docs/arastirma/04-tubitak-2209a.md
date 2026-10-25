@@ -1,6 +1,6 @@
 # 4. TÜBİTAK 2209-A başvurusu için araştırma planı
 
-**Kısa özet:** 2026 çağrısı 11 Kasım 2026, saat 17.30’da kapanıyor; başvuruyu TYBS’de öğrenci yürütücü yapıyor. Bilimsel puanlama dört ağırlıkta: bilimsel nitelik %35, yöntem %25, proje yönetimi %20, yaygın etki %20. NutriScan’i baştan sona “bitmiş sağlık ürünü” olarak sunmak yerine, test edilebilir bir araştırma sorusu seçmek daha savunulabilir: Türkçe gıda etiketi ifadelerini kanonik ingredient/chemical kavramlarına eşleştirme yöntemlerini ve kaynak izlenebilirliğini karşılaştırmak.
+**Kısa özet:** 2026 çağrısı 11 Kasım 2026, saat 17.30’da kapanıyor; başvuruyu TYBS’de öğrenci yürütücü yapıyor. Bilimsel puanlama dört ağırlıkta: bilimsel nitelik %35, yöntem %25, proje yönetimi %20, yaygın etki %20. Araştırma; Türkçe gıda etiketi ifadelerini kanonik kavramlara eşleştirme yöntemlerini ve kaynak izlenebilirliğini karşılaştırmayı, Türk Gıda Kodeksi'ndeki 14 alerji/intolerans etiket grubunun tamamını hedefleyen bir etiket kapsamı şemasıyla incelemeyi amaçlar. Bu hedef, depodaki mevcut kod/veri kapsamı veya klinik olarak doğrulanmış 14 hastalık profili anlamına gelmez.
 
 > Bu not başvuru taslağı hazırlığı içindir; TÜBİTAK’a gönderilecek nihai metin değildir. Başvuru metni ve kaynakları ekipçe doğrulanmalı, danışman incelemeli ve 2026 ÜYZ rehberine uyulmalıdır.
 
@@ -31,9 +31,15 @@ Başlıkta NutriScan ürün markasını öne çıkarmıyor. Ekip ve danışman, 
 
 Ürün etiketi ifadelerini türlendirip kanonik gıda/kimyasal kavram adayları üretmek ve yöntemleri uzman etiketli gold set ile karşılaştırmak. Çalışma, ingredient–disease otomatik hükmü üretmeyi değil; kaynaklı candidate matching ve evidence trail’in doğruluğunu incelemeyi hedefler.
 
+### Alerjen etiket kapsamı — araştırma hedefi
+
+Etiket sınıflandırma şeması, Bakanlığın yayımladığı “alerjiye veya intoleransa neden olan belirli madde veya ürünler” listesindeki **14 grubun tamamını** kapsar: gluten içeren tahıllar; kabuklular; yumurta; balık; yer fıstığı; soya fasulyesi; süt ve süt ürünleri (laktoz dahil); sert kabuklu meyveler; kereviz; hardal; susam; kükürt dioksit ve sülfitler; acı bakla; yumuşakçalar. Bu liste etiketleme gruplarını tanımlar; 14 eşdeğer klinik hastalık/profil oluşturmaz. Doğrudan içerik beyanı, ihtiyati “içerebilir/eser miktarda” beyanı ve okunamayan/eksik kanıt ayrı etiketlenir. Beyanın görülmemesi güvenlik veya yokluk kanıtı sayılmaz. Çölyak ile buğday alerjisi, laktoz intoleransı ile süt proteini alerjisi birbirine eşitlenmez. [Bakanlığın güncel 14 grup listesi](https://www.tarimorman.gov.tr/Konular/Gida-Ve-Yem-Hizmetleri/Gida-Hizmetleri/Kodeks)
+
+Bu 14 grup **araştırma hedefidir**. Mevcut prototipin tüm gruplar için alias, kural veya doğrulanmış ölçüm sağladığı iddia edilmez. Gerçek ambalaj örneklemesinde her grubun gözlenen kayıt sayısı ayrıca raporlanır; yeterli gerçek etiket bulunmayan grup için performans sonucu üretilmez ve sentetik örnekler pazar etiketi kanıtı gibi sayılmaz.
+
 ### Ölçülebilir alt hedefler
 
-1. Etiket ifadesi türleri, canonical ID, alias provenance, ambiguity ve unknown durumunu içeren sürümlü test kümesi oluşturmak.
+1. 14 resmî etiket grubunu, doğrudan/ihtiyati beyanı ve okunamayan/eksik kanıtı ayrı tutan; canonical ID, alias provenance, ambiguity ve unknown alanları bulunan sürümlü test şeması oluşturmak.
 2. Exact/alias, fuzzy, lexical, vector ve hybrid retrieval’ı aynı test bölmesinde kıyaslamak.
 3. Türkçe, İngilizce, additive code, composite food, ambiguous ve unknown alt gruplarındaki hata farkını raporlamak.
 4. Yanlış otomatik eşleşmeyi azaltmak için `abstain` davranışını ölçmek; coverage ile doğruluk arasındaki ilişkiyi göstermek.
@@ -42,12 +48,13 @@ Başlıkta NutriScan ürün markasını öne çıkarmıyor. Ekip ve danışman, 
 ## Yöntem taslağı
 
 1. **Araştırma tasarımı:** Karşılaştırmalı bilgi erişimi/entity linking değerlendirmesi; ürün/condition senaryolarında kural ve provenance review.
-2. **Veri:** Kendi/izinli kaynaklardan seçilmiş etiket ifadeleri ve izinli taxonomy/ontology alias’ları. Gold labels ekipten en az iki annotator ve uyuşmazlık çözümüyle hazırlanmalı; klinik kural uzman tarafından ayrı gözden geçirilmeli. Dış kaynağın commercial/reuse terms’i başvuru ve olası açık veri çıktısı öncesi kontrol edilmeli.
+2. **Veri:** Kendi/izinli kaynaklardan seçilmiş etiket ifadeleri ve izinli taxonomy/ontology alias’ları. Etiket örneklemi 14 gruba göre katmanlanır; ilk fizibilite turunda grupların erişilebilirliği ve sayıları kaydedilir. Tüm gruplar için örnek aranır; gerçek etiket bulunamazsa bu eksik kapsama olarak raporlanır ve o grupta performans iddiası kurulmaz. Gold labels ekipten en az iki annotator ve uyuşmazlık çözümüyle hazırlanmalı; klinik kural uzman tarafından ayrı gözden geçirilmeli. Dış kaynağın commercial/reuse terms’i başvuru ve olası açık veri çıktısı öncesi kontrol edilmeli.
 3. **Yöntem kolları:** exact identifier/curated aliases; normalized fuzzy; lexical full-text; dense biomedical/multilingual embedding; lexical+dense hybrid; optional reranker.
 4. **Data split:** Yakın eşanlamlıların train ve test arasında sızıntı yapmasını önleyen entity-held-out/surface-held-out düzeni; unknown ve ambiguous vakalar testte korunur.
 5. **Bağımsız değişkenler:** retrieval yöntemi/model; dil; mention type; ambiguity; candidate threshold. **Bağımlı ölçütler:** top-1, Recall@k, MRR, accepted precision, coverage/abstention, sınıf başına hata, latency ve provenance completeness.
-6. **Analiz:** Aynı test öğelerinde eşleştirilmiş karşılaştırma; confidence interval ve sınıf bazlı hata analizi. Klinik uyarı kararlarını ayrı expert assessment ile değerlendirin; retrieval metriğini clinical safety metric gibi sunmayın.
-7. **Etik/veri koruma:** Gerçek kullanıcı sağlık profili toplanması planlanıyorsa üniversitenin etik kurul ve kişisel veri süreçlerini başlamadan danışmanla belirleyin. İlk başvuruyu mümkünse açık/izinli veri ve sentetik profil senaryolarıyla sınırlayın; sentetik veri gerçek kullanıcı kanıtı değildir.
+6. **Alerjen kapsamı:** En az 120 gerçek etiket ifadesi 14 gruba göre katmanlanır; grup başına gözlem sayısı raporlanır. Örnek bulunmayan grupta performans metriği verilmez. Ayrıca 14 grup × 3 kanıt durumu (doğrudan, ihtiyati, eksik/okunamayan) için 42 ve çölyak/laktoz intoleransı/diyabet için 6 kontrollü senaryo hazırlanır; bu 48 senaryo gerçek pazar etiketi örneklemine dahil edilmez.
+7. **Analiz:** Aynı test öğelerinde eşleştirilmiş karşılaştırma; confidence interval ve sınıf bazlı hata analizi. Klinik uyarı kararlarını ayrı expert assessment ile değerlendirin; retrieval metriğini clinical safety metric gibi sunmayın.
+8. **Etik/veri koruma:** Gerçek kullanıcı sağlık profili toplanması planlanıyorsa üniversitenin etik kurul ve kişisel veri süreçlerini başlamadan danışmanla belirleyin. İlk başvuruyu mümkünse açık/izinli veri ve kontrollü profil senaryolarıyla sınırlayın; senaryolar gerçek kullanıcı kanıtı değildir.
 
 ### Başvuru metninde “yenilik” nasıl açıklanabilir?
 
@@ -78,10 +85,12 @@ TÜBİTAK bilgi notu başarı ölçütünün nicel/nitel ve izlenebilir olmasın
 | Label bilgisi eksik/çelişkili | Gold set ve ürün hesaplaması güvenilmez | Veri kalite durumunu etiketle, unknown/ambiguous ayrı sınıf yap, confidence’ı kanıt gibi kullanma |
 | Etik kurul/onay gereksinimi net değil | Başvuru yürürlüğü veya veri toplama gecikir | İlk aşamayı gerçek kişisel verisiz tasarla; üniversite etik biriminden yazılı yönlendirme al |
 | Zaman/bütçe kapsama yetmiyor | Plan aşırı genişler | Tek condition mekanizması ve sınırlı label schema ile pilotu daralt; Qdrant/graph kurulumunu ertele |
+| Nadir 14 grup için gerçek paket etiketi bulunamıyor | Bazı gruplarda deneysel ölçüm yapılamaz | İlk iki ayda 14 gruba göre örnekleme/fizibilite tablosu çıkar; erişilemeyen grubu açık kapsam açığı olarak bildir, sentetik veriyi gerçek etiket ölçümü diye sunma ve o grup için başarı iddiası kurma |
 
 ## Yaygın etki çıktıları
 
 - Türkçe ingredient label mention gold seti ve annotation kılavuzu (yalnızca paylaşım/lisans koşulları uygunsa).
+- 14 resmî etiket grubu için örneklem ve kapsama dökümü; veri bulunmayan gruplar ile ölçülemeyen metriklerin açık kaydı.
 - Kaynak, sürüm, eşleşme türü ve belirsizliği gösteren açık veri modeli.
 - Exact/lexical/vector/hybrid yöntem karşılaştırması ve hata analizi.
 - Uzman incelemesine giden kural kayıt tablosu ve pilot demo.
@@ -119,6 +128,8 @@ TÜBİTAK bilgi notu başarı ölçütünün nicel/nitel ve izlenebilir olmasın
 - [2209-A 2026 Başvuru İçeriği Bilgi Notu](https://tubitak.gov.tr/sites/default/files/2026-10/2209-A_Basvuru_Icerigi_Bilgi_Notu.pdf)
 - [TÜBİTAK Üretken Yapay Zekâ Rehberi sayfası](https://tubitak.gov.tr/tr/kurumsal/hakkimizda/uretken-yapay-zeka-rehberi)
 - [TÜBİTAK ÜYZ Rehberi PDF](https://tubitak.gov.tr/sites/default/files/2025-09/UYZ_Rehberi-v02.pdf)
+- [Tarım ve Orman Bakanlığı — Ek-1'deki 14 etiket grubu](https://www.tarimorman.gov.tr/Konular/Gida-Ve-Yem-Hizmetleri/Gida-Hizmetleri/Kodeks)
+- [Tarım ve Orman Bakanlığı — Gıda Etiketleme Kılavuzu ve 2026 güncelleme duyurusu](https://www.tarimorman.gov.tr/GKGM/Duyuru/681/)
 - [BioSyn, ACL 2020](https://aclanthology.org/2020.acl-main.335.pdf)
 - [SapBERT, NAACL 2021](https://aclanthology.org/2021.naacl-main.334/)
 - [FooDB data compliance](https://foodb.ca/compliance)
