@@ -6,7 +6,7 @@ durum: TESLİM EDİLDİ — tarihsel V1 proposal
 eksik: yok
 ---
 
-> **Teslim edilmiş tarihsel sürüm (18 Ekim 2026).** Bu kaynak 17 Ekim'de hazırlanan proposal v1'in Markdown metnidir. Sağladığın 18.10.2026 tarihli imzalı teslim kopyası [PDF olarak](NutriScan_CSE491_Proposal_v1.pdf) saklanmıştır. Bu proposal teslim günündeki kapsamı ve Qdrant'ı genel fallback eşleme adımı olarak yazan yaklaşımı kaydeder; 23 Ekim'de alınan sonraki kararlar ve AI/araç destekli kaynaklı kural taslağı için [güncel mimari karar belgesini](../../docs/mimari-karar-belgesi.md) esas alın.
+> **Teslim edilmiş tarihsel sürüm (18 Ekim 2026).** Bu kaynak 17 Ekim'de hazırlanan proposal v1'in Markdown metnidir. 18.10.2026 tarihli imzalı teslim kopyası [PDF olarak](NutriScan_CSE491_Proposal_v1.pdf) saklanmıştır. Bu proposal teslim günündeki kapsamı ve Qdrant'ı genel fallback eşleme adımı olarak yazan yaklaşımı kaydeder; 23 Ekim'de alınan sonraki kararlar ve AI/araç destekli kaynaklı kural taslağı için [güncel mimari karar belgesini](../../docs/mimari-karar-belgesi.md) esas alın.
 
 # NutriScan — Evidence-Based Food Ingredient and Health-Condition Matching
 

@@ -125,7 +125,7 @@ Kullanıcıya görünen bütün metinler ekip tarafından Türkçe yazılır.
 ## 9. Yol haritası ve tarih durumu
 
 > Aşağıdaki teslim tarihleri tarihli notlardaki hedeflerdir; resmi takvim olarak teyit edilmemiştir.
-> Proposal v1, 18 Ekim 2026'da teslim edildi. Kullanıcının sağladığı tarihli ve imzalı teslim kopyası `plan/proposal/NutriScan_CSE491_Proposal_v1.pdf` altında saklanır; proposal'ın kapsamı teslim gününü yansıtır ve sonraki kararların yerine geçmez.
+> Proposal v1, 18 Ekim 2026'da teslim edildi. Tarihli ve imzalı teslim kopyası `plan/proposal/NutriScan_CSE491_Proposal_v1.pdf` altında saklanır; proposal'ın kapsamı teslim gününü yansıtır ve sonraki kararların yerine geçmez.
 
 | Teslim | Son kayıt / hedeflenen içerik |
 |---|---|
