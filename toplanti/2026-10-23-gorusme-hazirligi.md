@@ -1,5 +1,7 @@
 # 23 Ekim 2026 danışman görüşmesi — hazırlık
 
+> **Tarihsel hazırlık notu.** Bu dosya görüşme öncesi hazırlanmıştır; içindeki “açık işler” toplantı sonucu değildir. Gerçekleşen 23 Ekim 4. toplantısının [resmî kaydını](2026-10-23-toplanti-4-kaydi.pdf), güncel kapsam/kararları için [mimari karar belgesini](../docs/mimari-karar-belgesi.md) kullanın.
+
 **Açılacaklar (Ozan'ın PC'si, `git pull` sonrası):** `docs/toplanti-paketi.html` · `docs/akis-diyagrami.html`
 Artifact sürümleri: paket https://claude.ai/artifact/LwT8iRcrjLBCMtFCSSmC4X · diyagram https://claude.ai/artifact/3b2jpcUmTmh5YtmPSbEVYN
 

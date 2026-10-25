@@ -1,9 +1,11 @@
 ---
 title: CSE 491 Project Proposal — v1 (content source for the .docx)
 updated: 2026-10-17 (re-scoped after advisor meetings of 2, 9 and 16 October; decisions in docs/mimari-karar-belgesi.md)
-durum: TESLİM TASLAĞI — teslim 18 Ekim
+durum: TARİHSEL V1 TASLAĞI — 18 Ekim hedefi geçti; teslim durumu repoda kayıtlı değil
 eksik: yok
 ---
+
+> **Tarihsel anlık görüntü.** Bu kaynak 17 Ekim'de 18 Ekim teslim hedefi için hazırlandı. Repoda teslim edilip edilmediği kayıtlı değildir. V1 kapsamını ve aynı kategoride alternatif önerisi gibi artık güncel olmayan taslak maddelerini içerir; güncel kapsam için [mimari karar belgesini](../../docs/mimari-karar-belgesi.md) esas alın. AI/araçlarla taslak kural çıkarımı yönlendirmesi bu sürümde henüz yer almıyor.
 
 # NutriScan — Evidence-Based Food Ingredient and Health-Condition Matching
 

@@ -1,5 +1,7 @@
 *NutriScan — neredeyiz, yarın ne sunuyoruz (16 Ekim görüşmesi)*
 
+> **Tarihsel hazırlık notu (15 Ekim).** Bu metin 16 Ekim görüşmesinden önceki kapsam önerilerini içerir; toplantı sonucu veya güncel plan olarak kullanılmamalıdır. Özellikle tarama metnini saklama önerisi K1 ile değişti. Güncel kapsam ve kararlar için [mimari karar belgesine](../docs/mimari-karar-belgesi.md) bakın.
+
 *1) Proje tek cümlede*
 Paketli gıdanın içindekiler listesini ve besin tablosunu okuyup kullanıcının hastalığına göre değerlendiren, sonucu kaynağı ve belirsizliğiyle gösteren bir uygulama. Emin olmadığımızda "Doğrulanamadı" diyoruz; "güvenli/zararlı" demiyoruz.
 

@@ -11,8 +11,10 @@ Bu dosyayı ekibin üç agent'ı (Claude Code, Codex, Antigravity) okur. Kısa t
 Levent (Claude Code) · Hilal (Codex) · Ozan (Antigravity). Alan sahipliği karar belgesi §8'de.
 
 ## Kırmızı çizgiler
-1. **Kararı yalnız kural tablosu verir.** Qdrant/vektör arama yalnız kelimeyi tanır; CTD/JECFA yalnız araştırma bilgisidir;
-   LLM yalnız son mesajı yazar ve sonucu değiştiremez.
+1. **Sağlık durumuna ilişkin sonucu yalnız gözden geçirilmiş kural tablosu belirler.** Qdrant yalnız eşleşme
+   adayı üretir; CTD/JECFA araştırma bilgisidir. LLM ve diğer araçlar kaynaklı kural araştırması/taslağına
+   yardımcı olabilir; iki ekip üyesi bağımsız doğrulamadan satır etkinleştirilmez. Qdrant, CTD, JECFA ve LLM
+   sonucu bağımsız belirleyemez. LLM yapılandırılmış sonucu anlatabilir; sonucu değiştiremez.
 2. Sonuç dört durumdan biridir: **Uygun değil · Dikkat · Engel bulunmadı · Doğrulanamadı.** "Güvenli", "zararlı",
    "tetikler", "tedavi", "önler" yok; teşhis yok.
 3. **Belirsizlik riski yalnız artırır:** eşleşme eşik altı, veri eksik ya da kural yoksa sonuç "Doğrulanamadı". Tahmin yok.
