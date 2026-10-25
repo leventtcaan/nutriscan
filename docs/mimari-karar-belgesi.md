@@ -125,11 +125,11 @@ Kullanıcıya görünen bütün metinler ekip tarafından Türkçe yazılır.
 ## 9. Yol haritası ve tarih durumu
 
 > Aşağıdaki teslim tarihleri tarihli notlardaki hedeflerdir; resmi takvim olarak teyit edilmemiştir.
-> 18 Ekim hedef tarihi geçti. Proposal'ın teslim edilip edilmediği bu repoda kayıtlı değildir.
+> Proposal v1, 18 Ekim 2026'da teslim edildi. Kullanıcının sağladığı tarihli ve imzalı teslim kopyası `plan/proposal/NutriScan_CSE491_Proposal_v1.pdf` altında saklanır; proposal'ın kapsamı teslim gününü yansıtır ve sonraki kararların yerine geçmez.
 
 | Teslim | Son kayıt / hedeflenen içerik |
 |---|---|
-| **18 Ekim · Proposal v1** | Hedef tarihi geçti; teslim durumu bilinmiyor. `plan/proposal/proposal-v1.md` tarihsel taslak olarak işaretlenmiştir. |
+| **18 Ekim · Proposal v1** | 18 Ekim 2026'da teslim edildi. [İmzalı PDF kopyası](../plan/proposal/NutriScan_CSE491_Proposal_v1.pdf); Markdown ve DOCX kaynakları teslim edilen tarihsel kapsamı kaydeder. |
 | **~6 Kasım · Ara rapor** [tarih teyit edilmedi] | 4. toplantıdaki aksiyon: sağlık durumu kapsamını, doğrulama ölçütlerini ve CTD/JECFA/Qdrant rollerini kaynak bağlantılarıyla rapora yazmak; kaynaklı kural tablosu hazırlığını başlatmak. |
 | **~18 Aralık · Final + demo** [tarih teyit edilmedi] | Etiketten sonuç üretme, kaynak/kapsam açıklaması, eşleme ve kural değerlendirmesi; mobil OCR ancak uygulama geliştirilirse. Aynı kategoride alternatif önerisi v1 teslim kapsamı değildir. |
 

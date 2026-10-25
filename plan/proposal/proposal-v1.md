@@ -1,11 +1,12 @@
 ---
 title: CSE 491 Project Proposal — v1 (content source for the .docx)
-updated: 2026-10-17 (re-scoped after advisor meetings of 2, 9 and 16 October; decisions in docs/mimari-karar-belgesi.md)
-durum: TARİHSEL V1 TASLAĞI — 18 Ekim hedefi geçti; teslim durumu repoda kayıtlı değil
+updated: 2026-10-17 (proposal content date; re-scoped after advisor meetings of 2, 9 and 16 October)
+submitted: 2026-10-18
+durum: TESLİM EDİLDİ — tarihsel V1 proposal
 eksik: yok
 ---
 
-> **Tarihsel anlık görüntü.** Bu kaynak 17 Ekim'de 18 Ekim teslim hedefi için hazırlandı. Repoda teslim edilip edilmediği kayıtlı değildir. V1 kapsamını ve aynı kategoride alternatif önerisi gibi artık güncel olmayan taslak maddelerini içerir; güncel kapsam için [mimari karar belgesini](../../docs/mimari-karar-belgesi.md) esas alın. AI/araçlarla taslak kural çıkarımı yönlendirmesi bu sürümde henüz yer almıyor.
+> **Teslim edilmiş tarihsel sürüm (18 Ekim 2026).** Bu kaynak 17 Ekim'de hazırlanan proposal v1'in Markdown metnidir. Sağladığın 18.10.2026 tarihli imzalı teslim kopyası [PDF olarak](NutriScan_CSE491_Proposal_v1.pdf) saklanmıştır. Bu proposal teslim günündeki kapsamı ve Qdrant'ı genel fallback eşleme adımı olarak yazan yaklaşımı kaydeder; 23 Ekim'de alınan sonraki kararlar ve AI/araç destekli kaynaklı kural taslağı için [güncel mimari karar belgesini](../../docs/mimari-karar-belgesi.md) esas alın.
 
 # NutriScan — Evidence-Based Food Ingredient and Health-Condition Matching
 

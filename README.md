@@ -39,7 +39,7 @@ OFF taksonomisinde bulunmayan Türkçe eşanlamlılar, gıda ve kimyasal terimle
 | `service/` | Etiket işleme, eşleme ve kural prototipi | Levent |
 | `app/` | Planlanan Expo mobil uygulaması | Ozan |
 | `toplanti/` | Tarihli toplantı kayıtları ve hazırlıklar; güncel karar belgesi esas alınır | — |
-| `plan/proposal/` | 18 Ekim hedefi için hazırlanmış tarihsel proposal v1 taslağı | — |
+| `plan/proposal/` | 18 Ekim 2026’da teslim edilmiş tarihsel proposal v1: [imzalı PDF](plan/proposal/NutriScan_CSE491_Proposal_v1.pdf), [Markdown kaynağı](plan/proposal/proposal-v1.md) ve [DOCX](plan/proposal/NutriScan_CSE491_Proposal_v1.docx) | — |
 | `kaynak/` | Ders şablonları (değiştirilmez) | — |
 
 ## Kural hazırlığı ve güvence
