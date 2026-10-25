@@ -145,7 +145,7 @@ Proje, CSE 491/492 bitirme projesi kapsamında başlatılmış ve danışman gö
 
 [10] EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA). (2010). Scientific opinion on lactose thresholds in lactose intolerance and galactosaemia. EFSA Journal, 8(9), 1777. https://doi.org/10.2903/j.efsa.2010.1777
 
-[11] Open Food Facts. Ingredients taxonomy (taxonomies/food/ingredients.txt), Open Database License (ODbL). Erişim: 22.10.2026. https://github.com/openfoodfacts/openfoodfacts-server/blob/main/taxonomies/food/ingredients.txt
+[11] Open Food Facts. Ingredients taxonomy (taxonomies/food/ingredients.txt), openfoodfacts-server deposu. Erişim: 22.10.2026. https://github.com/openfoodfacts/openfoodfacts-server/blob/main/taxonomies/food/ingredients.txt
 
 [12] Sung, M., Jeon, H., Lee, J., & Kang, J. (2020). Biomedical entity representations with synonym marginalization. Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL), 3641–3650. https://doi.org/10.18653/v1/2020.acl-main.335
 
@@ -184,6 +184,7 @@ Proje, CSE 491/492 bitirme projesi kapsamında başlatılmış ve danışman gö
 
 ## Doğrulama notu (forma girmez)
 
+- 26.10.2026 ikinci tur: 22 kaynağın 22'si kaynağından yeniden doğrulandı (11 DOI Crossref'te başlık/sayfa/cilt/yazar; [1] Resmî Gazete sayfası; [2]–[4] EUR-Lex OJ bilgisi; [6], [9], [11], [15], [16], [21] sayfaları). Atıf kapsamı tam (22/22). [11]'deki lisans ifadesi çıkarıldı: taksonomi dosyası AGPL-3.0 lisanslı sunucu deposunda, ayrıca ODbL ifadesi bulunamadı.
 - Crossref ile doğrulanan künyeler (25.10.2026): [5], [7] (başlık ve sayfa), [8], [10], [12], [13], [14], [17], [18], [19], [20].
 - EUR-Lex: [2], [3], [4] (OJ numarası, tarih, sayfa). [22]: PDF indirildi, "Yapay Zekâda Güvenilirlik Çözümleri" s. 201'de.
 - Sayılar `tests/eslesme/off_rapor.md` ve `data/` dosyalarından: 894 ifade, 223 tanınmayan (%25), 28 bulanık kararın 6'sı yanlış

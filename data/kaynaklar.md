@@ -4,8 +4,8 @@ Her satır bir kaynak. Veri repoya girmeden önce satırı doldurulur (bkz. `doc
 
 | Kaynak | URL | Sürüm / indirme | Lisans | Alınan alanlar | Kullanım | Kontrol eden |
 |---|---|---|---|---|---|---|
-| Open Food Facts — ingredients taxonomy | github.com/openfoodfacts/openfoodfacts-server · `taxonomies/food/ingredients.txt` | commit 14cbdc68, 22.10.2026 | ODbL 1.0 (atıf; türev veri tabanı paylaşım şartı incelenecek) | İngilizce/Türkçe adlar, üst kavram (IS_A), wikidata | `data/sozluk/` (kavram, eşanlamlı) | Levent · [2. kişi] |
-| Open Food Facts — additives taxonomy | aynı depo · `taxonomies/additives.txt` | commit 14cbdc68, 22.10.2026 | ODbL 1.0 | E-kodu, İngilizce/Türkçe ad, wikidata | `data/sozluk/` | Levent · [2. kişi] |
+| Open Food Facts — ingredients taxonomy | github.com/openfoodfacts/openfoodfacts-server · `taxonomies/food/ingredients.txt` | commit 14cbdc68, 22.10.2026 | [..] Dosya AGPL-3.0 lisanslı openfoodfacts-server deposunda; OFF veritabanı ODbL 1.0, taksonomi için ayrı ifade bulunamadı (26.10.2026) — OFF'a sorulacak | İngilizce/Türkçe adlar, üst kavram (IS_A), wikidata | `data/sozluk/` (kavram, eşanlamlı) | Levent · [2. kişi] |
+| Open Food Facts — additives taxonomy | aynı depo · `taxonomies/additives.txt` | commit 14cbdc68, 22.10.2026 | [..] aynı durum (depo AGPL-3.0) | E-kodu, İngilizce/Türkçe ad, wikidata | `data/sozluk/` | Levent · [2. kişi] |
 | Reg. (EC) No 1924/2006, konsolide 13.12.2014 — Ek | eur-lex.europa.eu · CELEX 02006R1924-20141213 | 22.10.2026'da okundu | AB mevzuatı (atıfla serbest) | şeker içermez / düşük şeker / düşük–çok düşük sodyum eşikleri | `data/kurallar/` DM-01, CKD-01 | Levent · [Hilal] |
 | Reg. (EU) No 1169/2011 — Ek I, Ek II | eur-lex.europa.eu · CELEX 32011R1169 | 22.10.2026'da okundu | AB mevzuatı | gluten içeren tahıllar ve muafiyetler; tuz = sodyum × 2,5 | `data/kurallar/` CEL-01/02, CKD-01 | Levent · [Hilal] |
 | Reg. (EU) No 828/2014 | eur-lex.europa.eu · CELEX 32014R0828 | 22.10.2026'da okundu | AB mevzuatı | "glutensiz" ≤ 20 mg/kg | `data/kurallar/` CEL-03 | Levent · [Hilal] |
