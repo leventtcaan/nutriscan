@@ -101,9 +101,9 @@ step(xs[0], by, bw, bh, 3, "Böl + türle",
      ["renklendirici (E102) → sınıf+E102", "süt içerebilir → içerebilir: süt", "Glutensiz. → beyan, içerik değil"],
      ["Sayı/harf artığı (\"6\", \"b\") → gürültü", "Tanınmayan → \"bilinmeyen\""])
 step(xs[1], by, bw, bh, 4, "Eşle (kimlik bul)",
-     ["① E-kodu (E102, E 102, E-102)", "② birebir eşanlamlı (TR + EN)", "③ Türkçe çoğul (-ler/-lar)", "④ bulanık · ⑤ Qdrant (sıradaki)"],
+     ["① E-kodu (E102, E 102, E-102)", "② birebir eşanlamlı (TR + EN)", "③ Türkçe çoğul (-ler/-lar)", "④ bulanık · ⑤ OFF'ta yoksa Qdrant vektör adayı"],
      ["E102 → Tartrazin (①)", "vericiler → verici (③ çoğul)", "60 etiket: tanınmayan %57 → %25"],
-     ["Tanınmayan → Türkçeleştirme listesi", "Qdrant eşik altı → \"bilinmeyen\"", "Tahmin yok, kimyasal uydurma yok"])
+     ["OFF'ta olmayan terim → embedding + Qdrant adayı", "Aday doğrulama/kanonik bağlama açık iş", "Belirsizse tahmin yok"])
 step(xs[2], by, bw, bh, 5, "Kural motoru (karar)",
      ["Her durum için kural türüne bak", "varlık · miktar · beyan · varsayılan", "IS_A: buğday unu → buğday", "7 durum · 17 kural · ağaç aşağıda ↓"],
      ["çölyak × buğday unu → Uygun değil", "diyabet × şeker 48 g → Dikkat", "glikoz şurubu → gluten sayılmaz"],
@@ -292,9 +292,10 @@ figcaption{{font-size:14px;color:var(--muted)}}
 {svg_txt}
       </svg>
     </div>
-    <figcaption>Kararı yalnız 5. adım (kural tablosu) verir. Qdrant yalnız kelimeyi tanımaya yardım eder, CTD/JECFA yalnız bilgi ekler, LLM yalnız mesajı yazar ve denetlenir. Emin olunmayan her yerde sonuç "Doğrulanamadı".</figcaption>
+    <figcaption>Sağlık sonucunu yalnız gözden geçirilmiş kural tablosu verir. OFF taksonomisinde olmayan terimler Qdrant vektör aramasıyla eşleşme adayı alır; aday doğrulama ve kanonik kavrama bağlama yöntemi açık iştir. CTD/JECFA araştırma bilgisi sağlar; LLM/araçlar kural araştırması ve taslağına yardım edebilir, doğrulanmamış kural etkinleştirilmez.</figcaption>
   </figure>
-  <p class="say"><b>60 saniyede anlatım.</b> Kullanıcı sağlık durumlarını seçip paketin arkasının fotoğrafını çeker; metin telefonda okunur ve gerekirse düzeltilir. Servis listeyi parçalara ayırır ve her parçanın türünü belirler: tek bir madde mi, sınıf mı, karışım mı, hammadde mi, besin değeri mi. Sonra her parçayı önce sözlükte birebir, sonra harf benzerliğiyle, en son Qdrant'ta anlam yakınlığıyla bir kimliğe bağlar; emin değilse "Doğrulanamadı" der. Kimliği belli parçalar kural tablosuna gider: çölyakta buğday varsa "Uygun değil", diyabette şeker miktarı besin tablosundan okunur. Tek maddeler için CTD ve JECFA'dan bilgi eklenir ama uyarı üretmez. LLM sonucu sade Türkçeye çevirir; sonucu değiştirirse ya da yanıt vermezse şablon metin gösterilir. Bilgi tabanını ekip önceden doldurur: Gıda Kodeksi, OFF taksonomisi ve CTD sözlüğünden eşanlamlılar, klinik kılavuzlardan iki kişi onaylı kurallar.</p>
+  <p class="say"><b>Kural hazırlığı.</b> AI veya uygun araçlar resmî mevzuat ve klinik kılavuzlardan kaynak konumu belirtilmiş taslak kural satırları çıkarabilir. İki ekip üyesi satırı kaynağından bağımsız doğrulamadan kural tablosuna girmez; AI eşik uydurmaz, kuralı onaylamaz ve kullanıcı sonucunu belirlemez. Araç seçimi henüz açık.</p>
+  <p class="say"><b>60 saniyede anlatım.</b> Kullanıcı sağlık durumlarını seçip paketin arkasının fotoğrafını çeker; metin telefonda okunur ve gerekirse düzeltilir. Servis listeyi parçalara ayırır ve her parçanın türünü belirler: tek bir madde mi, sınıf mı, karışım mı, hammadde mi, besin değeri mi. Sonra önce sözlükte birebir ve bulanık eşleşmeyi dener; OFF taksonomisinde bulunmayan içerik/kimyasal terimler embedding edilerek Qdrant'ta aday aranır. Adayı doğrulama ve kanonik kimliğe bağlama yöntemi netleşene kadar emin olunmayan eşleşmeye karar verilmez. Kimliği belli parçalar kural tablosuna gider: çölyakta buğday varsa "Uygun değil", diyabette şeker miktarı besin tablosundan okunur. Tek maddeler için CTD ve JECFA'dan bilgi eklenir ama uyarı üretmez. LLM sonucu sade Türkçeye çevirir; sonucu değiştirirse ya da yanıt vermezse şablon metin gösterilir. Bilgi tabanını ekip önceden doldurur: Gıda Kodeksi, OFF taksonomisi ve CTD sözlüğünden eşanlamlılar, klinik kılavuzlardan iki kişi onaylı kurallar.</p>
 </div>
 '''
 OUT.write_text(PAGE, encoding="utf-8")

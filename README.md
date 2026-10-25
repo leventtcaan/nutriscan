@@ -46,4 +46,8 @@ OFF taksonomisinde bulunmayan Türkçe eşanlamlılar, gıda ve kimyasal terimle
 
 AI veya ilgili araçlar, resmî mevzuat ve klinik kılavuzlardan kaynak konumu belirtilmiş aday kural satırları çıkarmada kullanılabilir. Eşik, kapsam ve istisnalar kaynaktan kontrol edilir; iki ekip üyesi bağımsız onaylamadan hiçbir satır `data/kurallar/` içine alınmaz. Kullanıcıya yönelik karar deterministik, onaylı kural tablosundan gelir.
 
+## Çalışma şekli
+
+Kısa dal açılır, sahibi merge eder; haftalık ortak inceleme yapılır. Kapsam ve karar değişikliği doğrudan belgeye yazılmaz: karar belgesine en fazla üç cümlelik öneri olarak gelir ve Çarşamba ekip senkronunda ya da Cuma danışman görüşmesinde karara bağlanır.
+
 Önceki yönün (hane planlama) belgeleri `arsiv/eski-yon-2026-10` etiketinde durur: `git checkout arsiv/eski-yon-2026-10`.
