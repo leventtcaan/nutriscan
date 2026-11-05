@@ -18,6 +18,8 @@ def blocks(md):
         lines = b.split("\n")
         if all(re.match(r"\d+\.\s", l) for l in lines):
             out.append("<ol>" + "".join(f"<li>{inline(re.sub(r'^\d+\.\s', '', l))}</li>" for l in lines) + "</ol>")
+        elif re.fullmatch(r"\*\*[^*]+\*\*", b.strip()):
+            out.append(f"<p class='alt'>{inline(b.strip())}</p>")
         elif not b.startswith(">"):
             out.append(f"<p>{inline(b.replace(chr(10), ' '))}</p>")
     return "".join(out)
@@ -70,6 +72,8 @@ td { border: 0.6pt solid #000; padding: 1.6mm; vertical-align: top; font-size: 9
 td:first-child { }
 .t31 td:first-child { text-align: center; width: 16mm; }
 .ref { margin: 0 0 1.6mm; text-align: left; }
+.box p.alt { margin: 3mm 0 1.2mm; break-after: avoid; page-break-after: avoid; }
+.box p.alt:first-child { margin-top: 0; }
 """
 
 doc = f"""<!doctype html><html lang="tr"><head><meta charset="utf-8"><title>2209-A Araştırma Önerisi Formu</title><style>{CSS}</style></head><body>
