@@ -166,15 +166,15 @@ Proje, Akdeniz Üniversitesi Bilgisayar Mühendisliği Bölümü CSE 491/492 bit
 
 [7] European Parliament and Council. 2011. “Regulation (EU) No 1169/2011 on the Provision of Food Information to Consumers”, Official Journal of the European Union, L 304, 18–63. https://eur-lex.europa.eu/eli/reg/2011/1169/oj
 
-[8] Feng, F., Yang, Y., Cer, D., Arivazhagan, N., Wang, W. 2022. “Language-agnostic BERT Sentence Embedding”, Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), 878–891. https://doi.org/10.18653/v1/2022.acl-long.62
+[8] Feng, F., Yang, Y., Cer, D., Arivazhagan, N., Wang, W. 2022. “Language-agnostic BERT Sentence Embedding”, Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), Dublin, Ireland, 878–891. https://doi.org/10.18653/v1/2022.acl-long.62
 
-[9] Gıda, Tarım ve Hayvancılık Bakanlığı. 2017. “Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği”, Resmî Gazete, Sayı 29960 (Mükerrer), 26 Ocak 2017.
+[9] Gıda, Tarım ve Hayvancılık Bakanlığı. 2017. “Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği”, Resmî Gazete, Sayı 29960 (Mükerrer), 26 Ocak 2017. https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6.htm
 
 [10] Joint FAO/WHO Expert Committee on Food Additives (JECFA). “Evaluations of the Joint FAO/WHO Expert Committee on Food Additives”. World Health Organization. https://apps.who.int/food-additives-contaminants-jecfa-database/, Son erişim tarihi: 25 Ekim 2026.
 
 [11] Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. 2024. “KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease”, Kidney International, 105 (4S), S117–S314. https://doi.org/10.1016/j.kint.2023.10.018
 
-[12] Liu, F., Shareghi, E., Meng, Z., Basaldella, M., Collier, N. 2021. “Self-Alignment Pretraining for Biomedical Entity Representations”, Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, 4228–4238. https://doi.org/10.18653/v1/2021.naacl-main.334
+[12] Liu, F., Shareghi, E., Meng, Z., Basaldella, M., Collier, N. 2021. “Self-Alignment Pretraining for Biomedical Entity Representations”, Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Online, 4228–4238. https://doi.org/10.18653/v1/2021.naacl-main.334
 
 [13] McNemar, Q. 1947. “Note on the Sampling Error of the Difference Between Correlated Proportions or Percentages”, Psychometrika, 12 (2), 153–157. https://doi.org/10.1007/BF02295996
 
@@ -188,9 +188,9 @@ Proje, Akdeniz Üniversitesi Bilgisayar Mühendisliği Bölümü CSE 491/492 bit
 
 [18] Singh, P., Arora, A., Strand, T. A., Leffler, D. A., Catassi, C., Green, P. H., Kelly, C. P., Ahuja, V., Makharia, G. K. 2018. “Global Prevalence of Celiac Disease: Systematic Review and Meta-analysis”, Clinical Gastroenterology and Hepatology, 16 (6), 823–836.e2. https://doi.org/10.1016/j.cgh.2017.06.037
 
-[19] Sung, M., Jeon, H., Lee, J., Kang, J. 2020. “Biomedical Entity Representations with Synonym Marginalization”, Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, 3641–3650. https://doi.org/10.18653/v1/2020.acl-main.335
+[19] Sung, M., Jeon, H., Lee, J., Kang, J. 2020. “Biomedical Entity Representations with Synonym Marginalization”, Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, Online, 3641–3650. https://doi.org/10.18653/v1/2020.acl-main.335
 
-[20] Türkiye Bilimsel ve Teknolojik Araştırma Kurumu (TÜBİTAK). 2026. “TÜBİTAK 2026–2028 Öncelikli Ar-Ge ve Yenilik Konuları, v01.07.2026”, s. 201. https://tubitak.gov.tr/sites/default/files/2026-08/TUBITAK_2026-2028_Ar-Ge_ve_Yenilik_Konulari-v01.07.2026.pdf, Son erişim tarihi: 25 Ekim 2026.
+[20] TÜBİTAK. 2026. “TÜBİTAK 2026–2028 Öncelikli Ar-Ge ve Yenilik Konuları, v01.07.2026”, s. 201. https://tubitak.gov.tr/sites/default/files/2026-08/TUBITAK_2026-2028_Ar-Ge_ve_Yenilik_Konulari-v01.07.2026.pdf, Son erişim tarihi: 25 Ekim 2026.
 
 [21] Wilson, E. B. 1927. “Probable Inference, the Law of Succession, and Statistical Inference”, Journal of the American Statistical Association, 22 (158), 209–212. https://doi.org/10.1080/01621459.1927.10502953
 
@@ -211,6 +211,7 @@ Proje, Akdeniz Üniversitesi Bilgisayar Mühendisliği Bölümü CSE 491/492 bit
 
 ## Doğrulama notu (forma girmez)
 
+- 06.11.2026: [9]'a Resmî Gazete adresi eklendi (20170126M1-6.htm sayfası doğrulandı); [8], [12], [19]'a bildiri yeri eklendi (ACL Anthology: Dublin, Ireland / Online / Online); [20]'de yazar "TÜBİTAK" yapıldı (metin içi atıfla aynı). Amaç: TYBS PDF'inde URL'lerin satır sonunda bölünmemesi (Mac Önizleme bölünen URL'yi yanlış açıyor).
 - 26.10.2026: atıflar TÜBİTAK "Bibliyografik Verilerin Düzenlenmesi" sayfasına göre yazar–yıl biçimine çevrildi, kaynakça soyadına göre alfabetik dizildi; DOI'ler korundu.
 - 26.10.2026 ikinci doğrulama: 22 kaynağın 22'si kaynağından yeniden doğrulandı (11 DOI Crossref'te başlık/sayfa/cilt/yazar; Resmî Gazete sayfası; EUR-Lex OJ bilgisi; NIDDK, WHO, Open Food Facts, Qdrant, Python difflib, JECFA sayfaları). Atıf kapsamı tam.
 - Düzeltmeler: Etiketleme Yönetmeliği'ni yayımlayan kurum "Gıda, Tarım ve Hayvancılık Bakanlığı" (Resmî Gazete başlığı; bakanlık 2018'de Tarım ve Orman adını aldı). Open Food Facts taksonomisi künyesinden doğrulanamayan lisans ifadesi çıkarıldı (dosya AGPL-3.0 lisanslı sunucu deposunda).

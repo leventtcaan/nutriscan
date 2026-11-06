@@ -43,7 +43,9 @@ t33 = table(sec("### 3.3. Araştırma Olanakları", "### 4."), ["Kuruluşta Bulu
 t4 = table(sec("### 4. Araştırma Önerisinin Yaygın Etkisi", "### 5."), ["Çıktı, Etki ve Kazanımlar", "Öngörülen Çıktı(lar), Etki(ler) ve Kazanım(lar)"])
 s5 = blocks(sec("### 5. Belirtmek İstediğiniz Diğer Konular", "### 6. Ekler"))
 refs = [l for l in sec("## Kaynaklar (Kaynakça kutusu, en fazla 32.000 karakter)", "\n---").split("\n\n") if l.startswith("[")]
-reflist = "".join(f"<p class='ref'>{html.escape(r)}</p>" for r in refs)
+def linked(r):  # gerçek bağlantı: PDF görüntüleyici satır sonunda bölünen URL'yi metinden tahmin etmesin
+    return re.sub(r"https?://[^\s,]+?(?=[.,]?(?:\s|$))", lambda m: f"<a href='{m.group(0)}'>{m.group(0)}</a>", html.escape(r, quote=False))
+reflist = "".join(f"<p class='ref'>{linked(r)}</p>" for r in refs)
 
 CSS = """
 @page { size: A4; margin: 18mm 16mm 18mm 16mm; }
@@ -72,6 +74,7 @@ td { border: 0.6pt solid #000; padding: 1.6mm; vertical-align: top; font-size: 9
 td:first-child { }
 .t31 td:first-child { text-align: center; width: 16mm; }
 .ref { margin: 0 0 1.6mm; text-align: left; }
+.ref a { color: inherit; text-decoration: none; }
 .box p.alt { margin: 3mm 0 1.2mm; break-after: avoid; page-break-after: avoid; }
 .box p.alt:first-child { margin-top: 0; }
 """
