@@ -57,7 +57,7 @@ Araştırmanın özgün katkısı, Türkçe gıda etiketi ifadelerinde sözlük 
 
 Bu doğrultuda araştırmada şu soruya yanıt aranacaktır: Sözlük ve bulanık eşleşme yöntemine, taksonomide karşılığı bulunamayan ifadeler için çok dilli anlamsal arama eklenmesi, Türkçe gıda etiketi ifadelerinde doğru kavrama bağlanma, yanlış kabul ve çekimser kalma oranlarını nasıl etkilemektedir? Araştırma iki hipotez üzerinden yürütülecektir. H1: Hibrit yöntem, aynı ifadelerde doğru kavrama bağlanma oranını taban yönteme göre artıracaktır. H2: Benzerlik eşiği ve aday doğrulama kuralları uygulandığında hibrit yöntemin yanlış kabul oranı, taban yöntemin yanlış kabul oranından önceden belirlenen kabul edilebilir fark sınırının üzerinde yüksek olmayacaktır. Hipotezler aynı test ifadeleri üzerinde gerçekleştirilecek karşılaştırmalı deneylerle sınanacak, başarı artışı önceden kabul edilmeyecek ve hipotezleri desteklemeyen sonuçlar da raporlanacaktır.
 
-Proje, TÜBİTAK 2026–2028 Öncelikli Ar-Ge ve Yenilik Konuları kapsamında yer alan "Yapay Zekâda Güvenilirlik Çözümleri" başlığıyla ilişkilidir (TÜBİTAK, 2026). Bu başlıkta yer alan geriye dönük izlenebilirlik, tekrarlanabilirlik ve verinin soyağacıyla kayıt altına alınması konularına, kararların kaynaklara dayandırılması, sözlük ve kural sürümlerinin kaydedilmesi ve deneylerin sabit bir test kümesi üzerinde tekrarlanabilir biçimde yürütülmesi yoluyla katkı sağlanması hedeflenmektedir.
+Proje, TÜBİTAK Öncelikli Ar-Ge ve Yenilik Konuları kapsamında yer alan "Yapay Zekâda Güvenilirlik Çözümleri" başlığıyla ilişkilidir (TÜBİTAK, 2026). Bu başlıkta yer alan geriye dönük izlenebilirlik, tekrarlanabilirlik ve verinin soyağacıyla kayıt altına alınması konularına, kararların kaynaklara dayandırılması, sözlük ve kural sürümlerinin kaydedilmesi ve deneylerin sabit bir test kümesi üzerinde tekrarlanabilir biçimde yürütülmesi yoluyla katkı sağlanması hedeflenmektedir.
 
 ### 1.2. Amaç ve Hedefler
 
@@ -85,7 +85,7 @@ Araştırmada gerçek ürün ambalajlarından elde edilen en az 400 Türkçe iç
 
 **2.3. Kavram Eşleştirme Yöntemleri (İP3)**
 
-Taban yöntemde (A) etiket ifadeleri Türkçe küçük harf dönüşümü ile yüzde değerlerinin ve gereksiz karakterlerin temizlenmesi işlemleriyle normalleştirilecek, ardından E-kodu, birebir eş anlamlı, Türkçe çoğul eki ayıklanmış biçim ve bulanık eşleşme kontrolleri sırasıyla uygulanacaktır. Bulanık eşleşmede Ratcliff ve Obershelp tarafından önerilen benzerlik ölçüsü kullanılacak (Python Software Foundation, 2026), kabul eşiği geliştirme kümesinde belirlenecektir. Bu adımların hiçbiri yeterli bir eşleşme sağlamadığında sistem çekimser kalacaktır.
+Taban yöntemde (A) etiket ifadeleri Türkçe küçük harf dönüşümü ile yüzde değerlerinin ve gereksiz karakterlerin temizlenmesi işlemleriyle normalleştirilecek, ardından E-kodu, birebir eş anlamlı, Türkçe çoğul eki ayıklanmış biçim ve bulanık eşleşme kontrolleri sırasıyla uygulanacaktır. Bulanık eşleşmede Ratcliff ve Obershelp tarafından önerilen benzerlik ölçüsü kullanılacak (Ratcliff ve Metzener, 1988; Python Software Foundation, 2026), kabul eşiği geliştirme kümesinde belirlenecektir. Bu adımların hiçbiri yeterli bir eşleşme sağlamadığında sistem çekimser kalacaktır.
 
 Hibrit yöntemde (B) taban yöntemin eşleştiremediği ifadeler çok dilli bir anlamsal temsil modeliyle anlamsal temsillere dönüştürülecek ve sözlükteki tüm yazılışların anlamsal temsillerini içeren Qdrant koleksiyonunda en yakın beş kavram adayı aranacaktır (Qdrant, 2026). Başlangıç modeli olarak LaBSE değerlendirilecek (Feng vd., 2022), üçüncü iş paketinin başında geliştirme kümesinde en az bir alternatif modelle karşılaştırılarak kullanılacak model seçilecek ve sürümü sabitlenecektir. Yanlış eşleştirmeleri sınırlandırmak amacıyla benzerlik eşiği ve ilk iki aday arasındaki benzerlik farkı dikkate alınacak, yeterli güvenilirlik sağlanamadığında sistem bir kavram kabul etmek yerine çekimser kalacaktır. Anlamsal arama yalnızca kavram adayı belirlemek için kullanılacak, sağlık durumuna ilişkin değerlendirmede rol almayacaktır.
 
@@ -150,7 +150,7 @@ Proje, Akdeniz Üniversitesi Bilgisayar Mühendisliği Bölümü CSE 491/492 bit
 
 ## Kaynaklar (Kaynakça kutusu, en fazla 32.000 karakter)
 
-> Metin içi atıflar yazar–yıl biçiminde (TÜBİTAK "Bibliyografik Verilerin Düzenlenmesi"); liste soyadına göre alfabetik. Numaraları TYBS'nin "Kaynakçayı Numaralandır" düğmesi veriyor (sistem numarasız kaydı kabul etmiyor).
+> Metin içi atıflar yazar–yıl biçiminde (TÜBİTAK "Bibliyografik Verilerin Düzenlenmesi"); liste soyadına göre alfabetik. Numaraları TYBS'nin "Kaynakçayı Numaralandır" düğmesi veriyor; TYBS numarasız kaydı reddediyor (6 Kasım 2026'da yeniden denendi: "Kaynakça formatlanmamış").
 
 [1] American Diabetes Association Professional Practice Committee for Diabetes. 2026. “5. Facilitating Positive Health Behaviors and Well-being to Improve Health Outcomes: Standards of Care in Diabetes—2026”, Diabetes Care, 49 (Supplement 1), S89–S131. https://doi.org/10.2337/dc26-S005
 
@@ -190,15 +190,17 @@ Proje, Akdeniz Üniversitesi Bilgisayar Mühendisliği Bölümü CSE 491/492 bit
 
 [19] Qdrant. “Search”. Qdrant Documentation. https://qdrant.tech/documentation/search/search/, Son erişim tarihi: 25 Ekim 2026.
 
-[20] Singh, P., Arora, A., Strand, T. A., Leffler, D. A., Catassi, C., Green, P. H., Kelly, C. P., Ahuja, V., Makharia, G. K. 2018. “Global Prevalence of Celiac Disease: Systematic Review and Meta-analysis”, Clinical Gastroenterology and Hepatology, 16 (6), 823–836.e2. https://doi.org/10.1016/j.cgh.2017.06.037
+[20] Ratcliff, J. W., Metzener, D. E. 1988. “Pattern Matching: The Gestalt Approach”, Dr. Dobb's Journal, 13 (7), 46–51.
 
-[21] Sung, M., Jeon, H., Lee, J., Kang, J. 2020. “Biomedical Entity Representations with Synonym Marginalization”, Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, Online, 3641–3650. https://doi.org/10.18653/v1/2020.acl-main.335
+[21] Singh, P., Arora, A., Strand, T. A., Leffler, D. A., Catassi, C., Green, P. H., Kelly, C. P., Ahuja, V., Makharia, G. K. 2018. “Global Prevalence of Celiac Disease: Systematic Review and Meta-analysis”, Clinical Gastroenterology and Hepatology, 16 (6), 823–836.e2. https://doi.org/10.1016/j.cgh.2017.06.037
 
-[22] TÜBİTAK. 2026. “TÜBİTAK 2026–2028 Öncelikli Ar-Ge ve Yenilik Konuları, v01.07.2026”, s. 201. https://tubitak.gov.tr/sites/default/files/2026-08/TUBITAK_2026-2028_Ar-Ge_ve_Yenilik_Konulari-v01.07.2026.pdf, Son erişim tarihi: 25 Ekim 2026.
+[22] Sung, M., Jeon, H., Lee, J., Kang, J. 2020. “Biomedical Entity Representations with Synonym Marginalization”, Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, Online, 3641–3650. https://doi.org/10.18653/v1/2020.acl-main.335
 
-[23] Wilson, E. B. 1927. “Probable Inference, the Law of Succession, and Statistical Inference”, Journal of the American Statistical Association, 22 (158), 209–212. https://doi.org/10.1080/01621459.1927.10502953
+[23] TÜBİTAK. 2026. “TÜBİTAK 2026–2028 Öncelikli Ar-Ge ve Yenilik Konuları, v01.07.2026”, s. 201. https://tubitak.gov.tr/sites/default/files/2026-08/TUBITAK_2026-2028_Ar-Ge_ve_Yenilik_Konulari-v01.07.2026.pdf, Son erişim tarihi: 25 Ekim 2026.
 
-[24] World Health Organization. 2012. Guideline: Sodium Intake for Adults and Children. Geneva: World Health Organization. https://www.who.int/publications/i/item/9789241504836
+[24] Wilson, E. B. 1927. “Probable Inference, the Law of Succession, and Statistical Inference”, Journal of the American Statistical Association, 22 (158), 209–212. https://doi.org/10.1080/01621459.1927.10502953
+
+[25] World Health Organization. 2012. Guideline: Sodium Intake for Adults and Children. Geneva: World Health Organization. https://www.who.int/publications/i/item/9789241504836
 
 ---
 
@@ -215,6 +217,7 @@ Proje, Akdeniz Üniversitesi Bilgisayar Mühendisliği Bölümü CSE 491/492 bit
 
 ## Doğrulama notu (forma girmez)
 
+- 06.11.2026 (5): Ratcliff ve Metzener (1988) eklendi (NIST DADS künyesi: Dr. Dobb's Journal, Temmuz 1988, s. 46; cilt/sayı 13 (7) tutarlı; bitiş sayfası 51 bağımsız doğrulanamadı), 2.3'te atıf verildi; numarasız kaynakça TYBS'de reddedildi, numaralı kaldı (25 girdi). 1.1'den "2026–2028" çıkarıldı. TYBS PDF motoru "ć" basmıyor ve paragraf başını ilk Türkçe harfe kadar Helvetica ile basıyor (ZWSP/ZWNJ/inline font denendi, çözülmedi).
 - 06.11.2026 (4): metin içi 6 "t.y." atfı erişim yılına çevrildi (2026), TÜBİTAK "Bibliyografik Verilerin Düzenlenmesi" sayfasındaki internet kaynağı atıf örneği gibi; kaynakçada yıl yok, Son erişim tarihi var.
 - 06.11.2026 (3): [1] komite adı 2026 sürümündeki adla düzeltildi ("…Professional Practice Committee for Diabetes", PubMed 41358898 ve Crossref; 2025'te "for Diabetes" yoktu). [17] yazar önce Crossref/PubMed'deki gibi "Seljak, B. K." yazıldı; 6 Kas'ta danışman/ekip isteğiyle yazarın kendi kullandığı bileşik soyadı "Koroušić Seljak, B." yapıldı. DOI'li 15 künye Crossref'le yazar/sıra/başlık/yıl/cilt/sayı/sayfa düzeyinde karşılaştırıldı.
 - 06.11.2026 (2): literatüre FoodOn (Dooley vd., 2018, Crossref) ve FoodBase (Popovski vd., 2019, Crossref) eklendi, kaynakça 24 girdi. %57 oranı ilk eşleştiricinin ölçümü (ifade ayrıştırması o sürümde 906 ifade veriyordu), %25 ise son sürümde 894 ifade; metin artık ikisini aynı paydaya bağlamıyor. Yöntem: hibrit etkinin ölçülebilmesi için tabakalama + alt küme raporu; kural sınavı İP4 (kural motoru) ve İP5 (uçtan uca).
