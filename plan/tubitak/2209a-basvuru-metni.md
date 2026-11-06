@@ -1,6 +1,6 @@
 # TÜBİTAK 2209-A 2026-1 — başvuru metni (TYBS alanlarına göre)
 
-> **Başvuru No:** 1919B012605960 (4 Kasım 2026'da danışman onayına gönderildi; yürütücü Levent Can Ceylan) · **Son gün:** 11 Kasım 2026 17.30 ·
+> **Başvuru No:** 1919B012605960 (4 Kasım 2026'da danışman onayına gönderildi, 6 Kasım'da danışman revizyon için iade etti, revizyon sonrası 6 Kasım 2026'da yeniden danışman onayına gönderildi; yürütücü Levent Can Ceylan) · **Son gün:** 11 Kasım 2026 17.30 ·
 > **Sıradaki:** danışman onayı en geç 11 Kasım 2026 17.30 · kuruluş yetkilisi e-imzası 16–23 Kasım 2026 (çağrı sayfası).
 > Dayanak: Hilal'in 25 Ekim taslağı (yöntem titizliği, risk, bütçe, ÜYZ beyanı korundu) + tek araştırma sorusuna odak +
 > ön çalışma bulguları. Bütün künyeler 25 Ekim 2026'da Crossref / resmî sayfadan doğrulandı (bkz. en alttaki doğrulama notu).
