@@ -152,7 +152,7 @@ Proje, Akdeniz Üniversitesi Bilgisayar Mühendisliği Bölümü CSE 491/492 bit
 
 > Metin içi atıflar yazar–yıl biçiminde (TÜBİTAK "Bibliyografik Verilerin Düzenlenmesi"); liste soyadına göre alfabetik. Numaraları TYBS'nin "Kaynakçayı Numaralandır" düğmesi veriyor (sistem numarasız kaydı kabul etmiyor).
 
-[1] American Diabetes Association Professional Practice Committee. 2026. “5. Facilitating Positive Health Behaviors and Well-being to Improve Health Outcomes: Standards of Care in Diabetes—2026”, Diabetes Care, 49 (Supplement 1), S89–S131. https://doi.org/10.2337/dc26-S005
+[1] American Diabetes Association Professional Practice Committee for Diabetes. 2026. “5. Facilitating Positive Health Behaviors and Well-being to Improve Health Outcomes: Standards of Care in Diabetes—2026”, Diabetes Care, 49 (Supplement 1), S89–S131. https://doi.org/10.2337/dc26-S005
 
 [2] Cohen, J. 1960. “A Coefficient of Agreement for Nominal Scales”, Educational and Psychological Measurement, 20 (1), 37–46. https://doi.org/10.1177/001316446002000104
 
@@ -184,7 +184,7 @@ Proje, Akdeniz Üniversitesi Bilgisayar Mühendisliği Bölümü CSE 491/492 bit
 
 [16] Open Food Facts. “Ingredients Taxonomy (taxonomies/food/ingredients.txt)”. openfoodfacts-server, GitHub. https://github.com/openfoodfacts/openfoodfacts-server/blob/main/taxonomies/food/ingredients.txt, Son erişim tarihi: 22 Ekim 2026.
 
-[17] Popovski, G., Koroušić Seljak, B., Eftimov, T. 2019. “FoodBase Corpus: A New Resource of Annotated Food Entities”, Database, 2019, baz121. https://doi.org/10.1093/database/baz121
+[17] Popovski, G., Seljak, B. K., Eftimov, T. 2019. “FoodBase Corpus: A New Resource of Annotated Food Entities”, Database, 2019, baz121. https://doi.org/10.1093/database/baz121
 
 [18] Python Software Foundation. “difflib — Helpers for Computing Deltas”. Python 3 Documentation. https://docs.python.org/3/library/difflib.html, Son erişim tarihi: 25 Ekim 2026.
 
@@ -215,6 +215,7 @@ Proje, Akdeniz Üniversitesi Bilgisayar Mühendisliği Bölümü CSE 491/492 bit
 
 ## Doğrulama notu (forma girmez)
 
+- 06.11.2026 (3): [1] komite adı 2026 sürümündeki adla düzeltildi ("…Professional Practice Committee for Diabetes", PubMed 41358898 ve Crossref; 2025'te "for Diabetes" yoktu). [17] yazar Crossref/PubMed'deki gibi "Seljak, B. K.". DOI'li 15 künye Crossref'le yazar/sıra/başlık/yıl/cilt/sayı/sayfa düzeyinde karşılaştırıldı.
 - 06.11.2026 (2): literatüre FoodOn (Dooley vd., 2018, Crossref) ve FoodBase (Popovski vd., 2019, Crossref) eklendi, kaynakça 24 girdi. %57 oranı ilk eşleştiricinin ölçümü (ifade ayrıştırması o sürümde 906 ifade veriyordu), %25 ise son sürümde 894 ifade; metin artık ikisini aynı paydaya bağlamıyor. Yöntem: hibrit etkinin ölçülebilmesi için tabakalama + alt küme raporu; kural sınavı İP4 (kural motoru) ve İP5 (uçtan uca).
 - 06.11.2026: [9]'a Resmî Gazete adresi eklendi (20170126M1-6.htm sayfası doğrulandı); [8], [12], [19]'a bildiri yeri eklendi (ACL Anthology: Dublin, Ireland / Online / Online); [20]'de yazar "TÜBİTAK" yapıldı (metin içi atıfla aynı). Amaç: TYBS PDF'inde URL'lerin satır sonunda bölünmemesi (Mac Önizleme bölünen URL'yi yanlış açıyor).
 - 26.10.2026: atıflar TÜBİTAK "Bibliyografik Verilerin Düzenlenmesi" sayfasına göre yazar–yıl biçimine çevrildi, kaynakça soyadına göre alfabetik dizildi; DOI'ler korundu.
