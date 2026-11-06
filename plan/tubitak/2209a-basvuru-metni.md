@@ -184,7 +184,7 @@ Proje, Akdeniz Üniversitesi Bilgisayar Mühendisliği Bölümü CSE 491/492 bit
 
 [16] Open Food Facts. “Ingredients Taxonomy (taxonomies/food/ingredients.txt)”. openfoodfacts-server, GitHub. https://github.com/openfoodfacts/openfoodfacts-server/blob/main/taxonomies/food/ingredients.txt, Son erişim tarihi: 22 Ekim 2026.
 
-[17] Popovski, G., Koroušić Seljak, B., Eftimov, T. 2019. “FoodBase Corpus: A New Resource of Annotated Food Entities”, Database, 2019, baz121. https://doi.org/10.1093/database/baz121
+[17] Popovski, G., Seljak, B. K., Eftimov, T. 2019. “FoodBase Corpus: A New Resource of Annotated Food Entities”, Database, 2019, baz121. https://doi.org/10.1093/database/baz121
 
 [18] Python Software Foundation. “difflib — Helpers for Computing Deltas”. Python 3 Documentation. https://docs.python.org/3/library/difflib.html, Son erişim tarihi: 25 Ekim 2026.
 
@@ -217,6 +217,7 @@ Proje, Akdeniz Üniversitesi Bilgisayar Mühendisliği Bölümü CSE 491/492 bit
 
 ## Doğrulama notu (forma girmez)
 
+- 06.11.2026 (6): TYBS PDF üreticisi Windows-1254 dışındaki karakterleri basmıyor: "ć" doğrudan → düşüyor, c+U+0301 → vurgu düşüyor, &#263; → harfiyen basılıyor. [17] bu yüzden Crossref/PubMed biçimi "Seljak, B. K.". Numarasız kaynakça sunucu kontrolünde reddediliyor (düğmeye basıp numarayı silmek ve boş satırla ayırmak da denendi). Paragraf başı Helvetica→Noto geçişi de aynı kısıttan: görünmez karakterler ve satır içi font stili sonuç vermedi; TYBS'nin standart çıktısı olduğu için olduğu gibi bırakıldı.
 - 06.11.2026 (5): Ratcliff ve Metzener (1988) eklendi (NIST DADS künyesi: Dr. Dobb's Journal, Temmuz 1988, s. 46; cilt/sayı 13 (7) tutarlı; bitiş sayfası 51 bağımsız doğrulanamadı), 2.3'te atıf verildi; numarasız kaynakça TYBS'de reddedildi, numaralı kaldı (25 girdi). 1.1'den "2026–2028" çıkarıldı. TYBS PDF motoru "ć" basmıyor ve paragraf başını ilk Türkçe harfe kadar Helvetica ile basıyor (ZWSP/ZWNJ/inline font denendi, çözülmedi).
 - 06.11.2026 (4): metin içi 6 "t.y." atfı erişim yılına çevrildi (2026), TÜBİTAK "Bibliyografik Verilerin Düzenlenmesi" sayfasındaki internet kaynağı atıf örneği gibi; kaynakçada yıl yok, Son erişim tarihi var.
 - 06.11.2026 (3): [1] komite adı 2026 sürümündeki adla düzeltildi ("…Professional Practice Committee for Diabetes", PubMed 41358898 ve Crossref; 2025'te "for Diabetes" yoktu). [17] yazar önce Crossref/PubMed'deki gibi "Seljak, B. K." yazıldı; 6 Kas'ta danışman/ekip isteğiyle yazarın kendi kullandığı bileşik soyadı "Koroušić Seljak, B." yapıldı. DOI'li 15 künye Crossref'le yazar/sıra/başlık/yıl/cilt/sayı/sayfa düzeyinde karşılaştırıldı.
