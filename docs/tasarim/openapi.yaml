@@ -1,0 +1,283 @@
+openapi: 3.1.0
+info:
+  title: NutriScan Analiz Servisi
+  version: 0.1.0-oneri
+  summary: Etiket metni + seçilen sağlık durumları → durum başına kaynaklı sonuç
+  description: |
+    ÖNERİ (18 Kasım 2026). Durumsuz servis: hiçbir istek gövdesi saklanmaz ve loglanmaz (K1, NFR-4).
+    Sonucu yalnız etkin kural satırları belirler (K5, K13). Belirsizlik bir hata değildir:
+    tanınmayan ifade, eksik besin değeri ya da kuralsız durum 200 yanıtında UNVERIFIED olarak döner.
+servers:
+  - url: http://localhost:8000
+    description: Yerel geliştirme (docker compose)
+paths:
+  /v1/analyses:
+    post:
+      operationId: createAnalysis
+      summary: Bir etiketi seçilen durumlara göre değerlendir
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/AnalysisRequest' }
+            example:
+              ingredients_text: "İçindekiler: buğday unu, şeker, glikoz şurubu, bitkisel yağ (palm), renklendirici (E102). Eser miktarda süt içerebilir."
+              nutrition: { basis: per_100g, sugars_g: 48, salt_g: 0.3 }
+              conditions: [colyak, diyabet]
+      responses:
+        '200':
+          description: Değerlendirme tamamlandı (sonuçlardan biri UNVERIFIED olabilir)
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/AnalysisResponse' }
+        '413': { $ref: '#/components/responses/Problem' }
+        '422': { $ref: '#/components/responses/Problem' }
+        '429': { $ref: '#/components/responses/Problem' }
+        '500': { $ref: '#/components/responses/Problem' }
+  /v1/conditions:
+    get:
+      operationId: listConditions
+      summary: Desteklenen sağlık durumları ve kapsamları
+      responses:
+        '200':
+          description: Durum listesi
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [versions, conditions]
+                properties:
+                  versions: { $ref: '#/components/schemas/Versions' }
+                  conditions:
+                    type: array
+                    items: { $ref: '#/components/schemas/ConditionInfo' }
+  /v1/version:
+    get:
+      operationId: getVersion
+      summary: Yüklü bilgi tabanı, kural, eşik ve model sürümleri
+      responses:
+        '200':
+          description: Sürümler
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Versions' }
+  /healthz:
+    get:
+      operationId: health
+      summary: Canlılık ve bağımlılık durumu (PostgreSQL, Qdrant, LLM)
+      responses:
+        '200':
+          description: Durum
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status: { type: string, enum: [ok, degraded] }
+                  dependencies:
+                    type: object
+                    additionalProperties: { type: string, enum: [ok, unavailable, disabled] }
+components:
+  responses:
+    Problem:
+      description: RFC 9457 problem details
+      content:
+        application/problem+json:
+          schema: { $ref: '#/components/schemas/Problem' }
+  schemas:
+    AnalysisRequest:
+      type: object
+      additionalProperties: false
+      required: [ingredients_text, conditions]
+      properties:
+        ingredients_text:
+          type: string
+          minLength: 1
+          maxLength: 8000
+          description: Kullanıcının düzelttiği içindekiler metni (OCR çıktısı değil, düzeltilmiş hali)
+        nutrition: { $ref: '#/components/schemas/Nutrition' }
+        conditions:
+          type: array
+          minItems: 1
+          maxItems: 10
+          uniqueItems: true
+          items: { type: string, pattern: '^[a-z_]+$' }
+          description: GET /v1/conditions'taki kimlikler; bilinmeyen kimlik 422 döner
+        locale: { type: string, enum: [tr-TR], default: tr-TR }
+        explain: { type: boolean, default: true, description: false ise C8 çalışmaz, yalnız şablon mesaj döner }
+    Nutrition:
+      type: object
+      additionalProperties: false
+      required: [basis]
+      description: Etiketteki beslenme bildirimi. Etikette olmayan değer gönderilmez (uydurulmaz).
+      properties:
+        basis: { type: string, enum: [per_100g, per_100ml] }
+        energy_kcal: { type: [number, 'null'], minimum: 0 }
+        sugars_g: { type: [number, 'null'], minimum: 0, maximum: 100 }
+        carbohydrate_g: { type: [number, 'null'], minimum: 0, maximum: 100 }
+        salt_g: { type: [number, 'null'], minimum: 0, maximum: 100 }
+        sodium_g: { type: [number, 'null'], minimum: 0, maximum: 40 }
+        protein_g: { type: [number, 'null'], minimum: 0, maximum: 100 }
+        fat_g: { type: [number, 'null'], minimum: 0, maximum: 100 }
+        saturated_fat_g: { type: [number, 'null'], minimum: 0, maximum: 100 }
+    AnalysisResponse:
+      type: object
+      required: [request_id, versions, mentions, results]
+      properties:
+        request_id: { type: string, format: uuid }
+        versions: { $ref: '#/components/schemas/Versions' }
+        mentions:
+          type: array
+          items: { $ref: '#/components/schemas/Mention' }
+        claims:
+          type: array
+          items: { $ref: '#/components/schemas/Claim' }
+        results:
+          type: array
+          items: { $ref: '#/components/schemas/ConditionResult' }
+        explanation: { $ref: '#/components/schemas/Explanation' }
+        disclaimer:
+          type: string
+          description: Sabit bilgilendirme metni (teşhis/tedavi değildir)
+    Mention:
+      type: object
+      required: [id, raw, normalized, kind, match]
+      properties:
+        id: { type: string, description: 'Yanıt içinde tekil, ör. m3 ya da m3.1 (alt bileşen)' }
+        raw: { type: string }
+        normalized: { type: string }
+        kind: { type: string, enum: [ingredient, may_contain] }
+        parent_id: { type: [string, 'null'] }
+        expression_type:
+          type: string
+          enum: [single_chemical, chemical_class, mixture, food_raw_material, food_concept, nutrient, unknown]
+        match: { $ref: '#/components/schemas/Match' }
+        allergen_group:
+          type: [string, 'null']
+          description: TGK alerjen grubu (bilgi alanı, sonucu etkilemez — K2)
+    Match:
+      type: object
+      required: [method]
+      properties:
+        concept_id: { type: [string, 'null'] }
+        concept_name_tr: { type: [string, 'null'] }
+        method:
+          type: string
+          enum: [e_code, exact, plural, fuzzy, semantic, ambiguous, noise, function_label, abstain, unknown]
+          description: ambiguous = takma ad birden çok kavrama gidiyor (concept_id null, candidates dolu); abstain = anlamsal adaylar eşik/fark kuralını geçemedi; unknown = hiçbir adım aday bulamadı
+        score: { type: [number, 'null'], minimum: 0, maximum: 1 }
+        matched_alias: { type: [string, 'null'] }
+        candidates:
+          type: array
+          maxItems: 5
+          description: Yalnız semantic/abstain için; şeffaflık amaçlı
+          items:
+            type: object
+            properties:
+              concept_id: { type: string }
+              alias: { type: string }
+              score: { type: number }
+    Claim:
+      type: object
+      required: [code, text, negated]
+      properties:
+        code: { type: string, description: 'dil_kaliplari.yaml içindeki beyan kodu (ör. gluten_free, lactose_free, no_added_sugar, additive_free, preservative_free); liste veri dosyasından gelir, şemada sabitlenmez' }
+        text: { type: string }
+        negated: { type: boolean, description: '"glutensiz değil" gibi olumsuz ifade; true ise beyan kuralı tetiklenmez' }
+    ConditionResult:
+      type: object
+      required: [condition_id, outcome, outcome_label_tr, reasons, coverage]
+      properties:
+        condition_id: { type: string }
+        outcome: { $ref: '#/components/schemas/Outcome' }
+        outcome_label_tr: { type: string, enum: [Uygun değil, Dikkat, Engel bulunmadı, Doğrulanamadı] }
+        reasons:
+          type: array
+          items: { $ref: '#/components/schemas/Reason' }
+        missing_inputs:
+          type: array
+          items: { type: string }
+          description: 'Sonucu kesinleştirmek için gereken besin alanları, ör. [sugars_g]'
+        unknown_mentions:
+          type: array
+          items: { type: string }
+          description: Bu durum için sonucu belirsizleştiren tanınmayan ifadelerin id'leri
+        coverage: { $ref: '#/components/schemas/Coverage' }
+        evidence:
+          type: array
+          description: CTD/JECFA kayıtları — yalnız araştırma bilgisi, sonucu etkilemez (K5)
+          items: { $ref: '#/components/schemas/Evidence' }
+    Outcome:
+      type: string
+      enum: [NOT_SUITABLE, CAUTION, NO_ISSUE_FOUND, UNVERIFIED]
+      description: 'Önem sırası NOT_SUITABLE > CAUTION > UNVERIFIED > NO_ISSUE_FOUND'
+    Reason:
+      type: object
+      required: [rule_id, rule_type, outcome, detail, source]
+      properties:
+        rule_id: { type: string, example: CEL-01 }
+        rule_version: { type: string }
+        rule_type: { type: string, enum: [presence, amount, claim, may_contain, default, missing_data, uncertainty] }
+        outcome: { $ref: '#/components/schemas/Outcome' }
+        detail: { type: string, description: 'Ör. "bulunan: buğday unu → buğday"' }
+        mention_ids: { type: array, items: { type: string } }
+        source: { $ref: '#/components/schemas/Source' }
+    Source:
+      type: object
+      required: [document]
+      properties:
+        document: { type: string, example: 'Reg. (EU) No 1169/2011' }
+        section: { type: [string, 'null'], example: 'Ek II madde 1' }
+        source_type: { type: string, enum: [regulation, clinical_guideline, efsa_opinion, team_decision] }
+        url: { type: [string, 'null'], format: uri }
+    Coverage:
+      type: object
+      required: [active_rules, note_tr]
+      properties:
+        active_rules: { type: integer, minimum: 0 }
+        note_tr: { type: string, description: 'Ör. "Bu durum için yalnız gluten varlığı ve beyanı kontrol edilir."' }
+    Evidence:
+      type: object
+      properties:
+        concept_id: { type: string }
+        source: { type: string, enum: [CTD, JECFA] }
+        relation: { type: string }
+        url: { type: string, format: uri }
+        source_version: { type: string }
+    Explanation:
+      type: object
+      required: [text_tr, generator]
+      properties:
+        text_tr: { type: string }
+        generator: { type: string, enum: [llm, template] }
+        guard_passed: { type: boolean }
+    ConditionInfo:
+      type: object
+      required: [condition_id, name_tr, active_rules, coverage_note_tr]
+      properties:
+        condition_id: { type: string }
+        name_tr: { type: string }
+        active_rules: { type: integer }
+        draft_rules: { type: integer }
+        coverage_note_tr: { type: string }
+        required_nutrition: { type: array, items: { type: string } }
+    Versions:
+      type: object
+      required: [service, kb, rules, thresholds]
+      properties:
+        service: { type: string }
+        kb: { type: string, description: 'git commit kısa karması + data/ içerik karması' }
+        rules: { type: string, description: 'etkin kural kümesinin karması' }
+        thresholds: { type: string }
+        explanation_prompt: { type: [string, 'null'], description: 'açıklama istem şablonunun sürümü' }
+        embedding_model: { type: [string, 'null'] }
+        llm_model: { type: [string, 'null'] }
+    Problem:
+      type: object
+      required: [type, title, status]
+      properties:
+        type: { type: string, format: uri }
+        title: { type: string }
+        status: { type: integer }
+        detail: { type: string }
+        instance: { type: string }
