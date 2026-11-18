@@ -3,12 +3,13 @@
 Paketli gıdanın içindekiler listesini ve besin tablosunu, kullanıcının seçtiği sağlık durumları için kaynaklı kurallarla değerlendirir; sonucu gerekçesi, kaynağı, kapsamı ve belirsizliğiyle gösterir. CSE 491/492 bitirme projesi · Akdeniz Üniversitesi Bilgisayar Mühendisliği · Grup 9 · Danışman: Dr. Taha Yiğit Alkan
 
 **Tek doğruluk kaynağı:** [docs/mimari-karar-belgesi.md](docs/mimari-karar-belgesi.md). Güncel kapsam, kararlar ve uygulama durumu oradadır.
+**Uygulama tasarımı:** [docs/tasarim/](docs/tasarim/README.md) (18 Kasım 2026 denetimi ve tasarım paketi, öneri durumunda).
 
 ## V1 kapsamı
 
 - Tek etiket başvurusu OCR ile okunur, kullanıcı metni düzeltebilir ve değerlendirme istek içinde yapılır.
 - Ürün kataloğu, saklanan tarama geçmişi ve aynı kategoride alternatif ürün önerileri v1 kapsamında değildir.
-- Hedef, etiketten kaynaklı kuralla değerlendirilebilen sağlık durumlarını kapsamak; kuralın olmadığı veya verinin yetmediği yerde **Doğrulanamadı** demektir. İlk kaynaklı kural tablosuna girecek sağlık durumlarının listesi 4. toplantı sonrası netleştirilecektir.
+- Hedef, etiketten kaynaklı kuralla değerlendirilebilen sağlık durumlarını kapsamak; kuralın olmadığı veya verinin yetmediği yerde **Doğrulanamadı** demektir. Sağlık durumu listesi için öneri (mevcut 7 durum) [docs/tasarim/12-karar-onerileri.md](docs/tasarim/12-karar-onerileri.md) Ö-05'te, ekip kararını bekliyor.
 - Depodaki güncel kural dosyasında 17 satır ve 7 sağlık durumu bulunur. Bu, mevcut veri kapsamıdır; hedef kapsamla karıştırılmamalıdır.
 
 ## Hedeflenen mimari akış

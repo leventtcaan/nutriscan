@@ -3,8 +3,11 @@
 Bu dosyayı ekibin üç agent'ı (Claude Code, Codex, Antigravity) okur. Kısa tutulur; ayrıntı karar belgesindedir.
 
 ## Önce oku
-- **[docs/mimari-karar-belgesi.md](docs/mimari-karar-belgesi.md)** — projenin tek doğruluk kaynağı. Akış, kararlar (K1–K12),
+- **[docs/mimari-karar-belgesi.md](docs/mimari-karar-belgesi.md)** — projenin tek doğruluk kaynağı. Akış, kararlar (K1–K13),
   veri şeması, kaynaklar, test planı, sahiplik. Burada yazmayan bir mimari karar verme; kullanıcıya sor.
+- **[docs/tasarim/](docs/tasarim/README.md)** — uygulama tasarım paketi (gereksinim, mimari, API, veri, eşleme, kural motoru,
+  değerlendirme, çalışma düzeni, yol haritası). Karar belgesi *ne*, tasarım paketi *nasıl* sorusunu cevaplar; çelişirse karar
+  belgesi kazanır ve tasarım güncellenir. Koda başlamadan ilgili bölümü ve kural motoru değişmezlerini (06 §2) oku.
 - Araştırma notları: `docs/arastirma/`. Toplantı kayıtları: `toplanti/`.
 
 ## Ekip

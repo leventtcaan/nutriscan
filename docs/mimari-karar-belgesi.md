@@ -141,3 +141,15 @@ Kullanıcıya görünen bütün metinler ekip tarafından Türkçe yazılır.
 - 4. toplantıdaki takip işleri: TÜBİTAK raporuna sağlık durumu kapsamı, kanıt doğrulama yaklaşımı ve CTD/JECFA/Qdrant rollerini kaynaklarla yazmak; bir sonraki hafta hastalık listesini ve kural kayıt şemasını netleştirip kaynaklı kural tablosunu hazırlamaya başlamak; Qdrant aday doğrulama/kanonik eşleme ile kural kayıtlarının dosya prototipi/PostgreSQL saklama ve onay akışını kararlaştırmak. Toplantı kaydında sorumlu kişi veya ara teslim tarihi belirtilmiyor.
 - Sonraki görüşme tarihi kayıtta 30 Ekim 2026 olarak geçer. Daha sonraki sonuç kaydı yoksa bu takip işleri tamamlanmış kabul edilmemelidir.
 - TÜBİTAK 2209-A ve diğer ara/final rapor tarihleri için son resmi takvim bu belgede doğrulanmış değildir.
+
+## 11. Tasarım paketi ve denetim (18 Kasım 2026)
+
+- Uygulama tasarımı `docs/tasarim/` altındadır: gereksinimler, C4 mimarisi, API sözleşmesi (`openapi.yaml`), veri modeli
+  (`schema.sql`), eşleme hattı, kural motoru değişmezleri, mobil uygulama, açıklama katmanı, değerlendirme protokolü, çalışma
+  düzeni ve yol haritası. Paket ÖNERİ durumundadır; bu belgedeki kararların yerine geçmez.
+- 18 Kasım denetimi (`docs/tasarim/00-denetim-raporu.md`) ön prototipte yanlış güvence veren sonuçlar buldu (ör. boş etiket ve
+  "tereyağı" için laktoz intoleransında "Engel bulunmadı") ve hiçbir kural satırının iki kişilik incelemeden geçmediğini kaydetti.
+  Düzeltmeler yol haritasında M0'dır.
+- Bu belgeyi değiştirmesi önerilen maddeler `docs/tasarim/12-karar-onerileri.md` dosyasında Ö-01…Ö-13 olarak bekler
+  (K2 liste, K7 aday doğrulama, K9 iki katman, K12 iş takibi ve hafif CI, K13 saklama-onay akışı, §4 kural şeması, §8 sahiplik).
+
