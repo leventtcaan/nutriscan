@@ -1,6 +1,7 @@
 # NutriScan uygulama tasarım paketi
 
-> **Durum:** ÖNERİ · 18 Kasım 2026 · ekip incelemesi ve Çarşamba senkronunda oylama bekliyor.
+> **Durum:** ÖNERİ · 18 Kasım 2026 · ekip incelemesi ve Çarşamba senkronunda oylama bekliyor. İstisna: 13 (iş planı),
+> 21 Kasım'dan beri KARAR.
 > **Kural:** karar belgesi ([docs/mimari-karar-belgesi.md](../mimari-karar-belgesi.md)) *ne* yapılacağını, bu paket
 > *nasıl* yapılacağını söyler. İkisi çelişirse karar belgesi kazanır; değişiklik önerileri
 > [12-karar-onerileri.md](12-karar-onerileri.md)'de bekler.
@@ -22,6 +23,7 @@
 | 10 | [Çalışma düzeni](10-calisma-duzeni.md) | Issue → dal → PR → CI → inceleme; DoR/DoD; agent kuralları | Herkes |
 | 11 | [Yol haritası](11-yol-haritasi.md) | M0–M4 kilometre taşları, sahipler, en geç tarihler | Herkes |
 | 12 | [Karar önerileri](12-karar-onerileri.md) | Karar belgesinde neyin değişmesi öneriliyor? | Toplantı gündemi |
+| 13 | [İş planı ve görev dağılımı](13-is-plani.md) | Kim, hangi dosyada, hangi sırayla? (KARAR) | Herkes, her gün |
 
 ## Tek sayfada sistem
 

@@ -8,7 +8,9 @@ Bu dosyayı ekibin üç agent'ı (Claude Code, Codex, Antigravity) okur. Kısa t
 - **[docs/tasarim/](docs/tasarim/README.md)** — uygulama tasarım paketi (gereksinim, mimari, API, veri, eşleme, kural motoru,
   değerlendirme, çalışma düzeni, yol haritası). Karar belgesi *ne*, tasarım paketi *nasıl* sorusunu cevaplar; çelişirse karar
   belgesi kazanır ve tasarım güncellenir. Koda başlamadan ilgili bölümü ve kural motoru değişmezlerini (06 §2) oku.
-- Araştırma notları: `docs/arastirma/`. Toplantı kayıtları: `toplanti/`.
+- **[docs/tasarim/13-is-plani.md](docs/tasarim/13-is-plani.md) ve [CONTRIBUTING.md](CONTRIBUTING.md)** — kim hangi dosyanın sahibi,
+  işler hangi sırayla. Agent yalnız kendi kişisinin sahibi olduğu dosyalara dokunur (`.github/CODEOWNERS`).
+- Araştırma notları: `docs/arastirma/`. Toplantı kayıtları: `toplanti/`. `toplanti/arsiv-eski-yon/` ve `docs/arsiv/` karar kaynağı değildir.
 
 ## Ekip
 Levent (Claude Code) · Hilal (Codex) · Ozan (Antigravity). Alan sahipliği karar belgesi §8'de.

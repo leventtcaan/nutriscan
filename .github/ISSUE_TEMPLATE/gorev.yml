@@ -1,0 +1,25 @@
+name: Görev
+description: İş planındaki bir iş (docs/tasarim/13-is-plani.md)
+labels: []
+body:
+  - type: input
+    id: plan_id
+    attributes: { label: Plan kimliği, placeholder: "M1-L2" }
+    validations: { required: true }
+  - type: textarea
+    id: is
+    attributes: { label: İş, description: Ne yapılacak (tek paragraf) }
+    validations: { required: true }
+  - type: textarea
+    id: kabul
+    attributes: { label: Kabul ölçütü, description: "Test edilebilir: girdi → beklenen çıktı" }
+    validations: { required: true }
+  - type: input
+    id: bagli
+    attributes: { label: Bağlı olduğu işler, placeholder: "#3, #5" }
+  - type: input
+    id: tasarim
+    attributes: { label: Tasarım bölümü, placeholder: "docs/tasarim/06-kural-motoru.md §2" }
+  - type: input
+    id: tarih
+    attributes: { label: En geç tarih, placeholder: "2026-12-02" }

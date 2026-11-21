@@ -1,0 +1,42 @@
+# Dosya sahipliği: docs/tasarim/13-is-plani.md §2.2. PR açılınca sahipler otomatik inceleyici atanır.
+# Satırda birden çok kişi varsa GitHub birinin onayını yeterli sayar; "iki/üç onay" kuralı ekip kuralıdır (CONTRIBUTING.md).
+# Son eşleşen satır kazanır; genelden özele sıralıdır.
+
+*                                   @leventtcaan
+
+# Platform, servis, kural motoru, açıklama, değerlendirme kodu (Levent)
+/service/                           @leventtcaan
+/infra/                             @leventtcaan
+/.github/                           @leventtcaan
+/eval/kod/                          @leventtcaan
+
+# Metin işleme, eşleme, anlamsal arama, mobil (Ozan)
+/service/nutriscan/text.py          @ozankrds
+/service/nutriscan/matching/        @ozankrds
+/app/                               @ozankrds
+/data/sozluk/                       @ozankrds @leventtcaan @HilalHocaoglu
+
+# Kurallar, kaynaklar, kanıt, senaryolar, kılavuz (Hilal)
+/service/nutriscan/evidence.py      @HilalHocaoglu
+/data/kurallar/                     @HilalHocaoglu @leventtcaan @ozankrds
+/data/kaynaklar.md                  @HilalHocaoglu
+/data/kaynaklar.csv                 @HilalHocaoglu
+/data/kanit/                        @HilalHocaoglu
+/data/sozluk/alerjen_gruplari.csv   @HilalHocaoglu @leventtcaan @ozankrds
+/eval/kilavuz.md                    @HilalHocaoglu
+/eval/senaryolar/                   @HilalHocaoglu
+/eval/saha.md                       @HilalHocaoglu
+
+# Etiket verisi: herkes kendi dosyasına yazar, diğer iki kişi inceler
+/eval/data/                         @leventtcaan @ozankrds @HilalHocaoglu
+
+# Sözleşmeler: üç onay (13-is-plani.md §2.4)
+/docs/tasarim/openapi.yaml          @leventtcaan @ozankrds @HilalHocaoglu
+/docs/tasarim/schema.sql            @leventtcaan @ozankrds @HilalHocaoglu
+/docs/tasarim/04-veri-modeli.md     @leventtcaan @ozankrds @HilalHocaoglu
+/service/nutriscan/types.py         @leventtcaan @ozankrds @HilalHocaoglu
+/data/config/                       @leventtcaan @ozankrds @HilalHocaoglu
+
+# Kararlar ve tasarım (editör Levent)
+/docs/                              @leventtcaan
+/AGENTS.md                          @leventtcaan @ozankrds @HilalHocaoglu

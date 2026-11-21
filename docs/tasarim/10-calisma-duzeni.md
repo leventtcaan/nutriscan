@@ -1,7 +1,7 @@
 # 10 · Çalışma düzeni (süreç, kalite, agent kuralları)
 
-> **Durum:** ÖNERİ (18 Kasım 2026). K12'yi ayrıntılandırır; Ö-07 (Issues) ve Ö-10 (hafif CI) kabul edilirse
-> geçerlidir. Amaç: üç kişi ve üç farklı agent aynı standartta, birbirinin işini bozmadan çalışsın.
+> **Durum:** KARAR (21 Kasım 2026; Ö-07 Issues ve Ö-10 hafif CI kabul edildi). K12'yi ayrıntılandırır. Kişi ve sıra için
+> [13-is-plani.md](13-is-plani.md), tek sayfalık özet için kökteki `CONTRIBUTING.md`. Amaç: üç kişi ve üç farklı agent aynı standartta, birbirinin işini bozmadan çalışsın.
 
 ## 1. İşin yaşam döngüsü
 

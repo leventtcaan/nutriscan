@@ -32,7 +32,9 @@ gantt
   Hata düzeltme, rapor, demo provası    :m4, 2026-12-14, 4d
 ```
 
-## M0 · Güvenlik ve karar (en geç 24 Kasım)
+> **21 Kasım notu:** kişi, dosya ve sıra ayrıntısı [13-is-plani.md](13-is-plani.md)'dedir; M0'ın en geç tarihi 25 Kasım'a çekildi.
+
+## M0 · Güvenlik ve karar (en geç 25 Kasım)
 
 | # | İş | Sahip | Kabul ölçütü | Bağımlılık |
 |---|---|---|---|---|
