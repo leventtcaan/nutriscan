@@ -109,7 +109,7 @@ başlanamayan işler. Tarih: en geç.
 | M1-O2 | Uygulama: profil ekranı (`GET /v1/conditions`), metin + besin girişi, sonuç listesi (mock) | Ozan | M0-O2 | Her ekranda 4 durumun ekran görüntüsü |
 | M1-H1 | `eval/saha.md`: mağaza izin metni, fotoğraf ve metne aktarma yönergesi, ilk 2 satış noktası (Ö-13) | Hilal | — | Yönerge birleşmiş; izinli noktalar listesi |
 | M1-H2 | Etiketleme kılavuzu v1 (`eval/kilavuz.md`) | Hilal | — | Levent + Ozan onayı |
-| M1-E1 | **MR5 (27 Kasım):** form + demo (G0, G1, iskelet) | Kayıt sorumlusu | — | `toplanti/2026-11-27-…` |
+| M1-E1 | **MR5 (27 Kasım):** form + demo (G0, G1, iskelet) | Levent (bu haftanın kayıt sorumlusu) | — | `toplanti/2026-11-27-…` |
 
 ### M2 · Veri ve anlamsal arama (en geç 9 Aralık)
 
@@ -169,3 +169,18 @@ gelmezse aynı plan dönem içi hedef olarak sürer.
 7. Kural ve takma ad satırları (iki kişilik inceleme isteyen veri) kodla aynı PR'a girmez; inceleme ayrı yapılır.
 8. Etiket ve saha dosyaları kişi başınadır (`eval/data/saha_<isim>_<tarih>.jsonl`, `etiket_<isim>.jsonl`); iki kişi aynı
    dosyaya yazmaz, birleştirme betikle yapılır.
+
+## 7. Plan kimliği → GitHub issue
+
+Milestone'lar: M0–M4 (CSE 491) ve S1–S5 (CSE 492). Her issue'da bağlı olduğu işler numarasıyla yazılıdır.
+
+- **M0:** M0-L1 [#7](https://github.com/leventtcaan/nutriscan/issues/7) · M0-L2 [#8](https://github.com/leventtcaan/nutriscan/issues/8) · M0-L3 [#9](https://github.com/leventtcaan/nutriscan/issues/9) · M0-O1 [#10](https://github.com/leventtcaan/nutriscan/issues/10) · M0-O2 [#11](https://github.com/leventtcaan/nutriscan/issues/11) · M0-H1 [#12](https://github.com/leventtcaan/nutriscan/issues/12) · M0-H2 [#13](https://github.com/leventtcaan/nutriscan/issues/13) · M0-H3 [#14](https://github.com/leventtcaan/nutriscan/issues/14) · M0-E1 [#15](https://github.com/leventtcaan/nutriscan/issues/15)
+- **M1:** M1-L1 [#16](https://github.com/leventtcaan/nutriscan/issues/16) · M1-L2 [#17](https://github.com/leventtcaan/nutriscan/issues/17) · M1-L3 [#18](https://github.com/leventtcaan/nutriscan/issues/18) · M1-O1 [#19](https://github.com/leventtcaan/nutriscan/issues/19) · M1-O2 [#20](https://github.com/leventtcaan/nutriscan/issues/20) · M1-H1 [#21](https://github.com/leventtcaan/nutriscan/issues/21) · M1-H2 [#22](https://github.com/leventtcaan/nutriscan/issues/22) · M1-E1 [#23](https://github.com/leventtcaan/nutriscan/issues/23)
+- **M2:** M2-E1 [#24](https://github.com/leventtcaan/nutriscan/issues/24) · M2-E2 [#25](https://github.com/leventtcaan/nutriscan/issues/25) · M2-O1 [#26](https://github.com/leventtcaan/nutriscan/issues/26) · M2-O2 [#27](https://github.com/leventtcaan/nutriscan/issues/27) · M2-O3 [#28](https://github.com/leventtcaan/nutriscan/issues/28) · M2-H1 [#29](https://github.com/leventtcaan/nutriscan/issues/29) · M2-H2 [#30](https://github.com/leventtcaan/nutriscan/issues/30) · M2-L1 [#31](https://github.com/leventtcaan/nutriscan/issues/31) · M2-L2 [#32](https://github.com/leventtcaan/nutriscan/issues/32)
+- **M3:** M3-L1 [#33](https://github.com/leventtcaan/nutriscan/issues/33) · M3-L2 [#34](https://github.com/leventtcaan/nutriscan/issues/34) · M3-O1 [#35](https://github.com/leventtcaan/nutriscan/issues/35) · M3-O2 [#36](https://github.com/leventtcaan/nutriscan/issues/36) · M3-H1 [#37](https://github.com/leventtcaan/nutriscan/issues/37) · M3-L3 [#38](https://github.com/leventtcaan/nutriscan/issues/38)
+- **M4:** M4-E1 [#39](https://github.com/leventtcaan/nutriscan/issues/39) · M4-L1 [#40](https://github.com/leventtcaan/nutriscan/issues/40) · M4-E2 [#41](https://github.com/leventtcaan/nutriscan/issues/41)
+- **S1:** S1 [#42](https://github.com/leventtcaan/nutriscan/issues/42)
+- **S2:** S2 [#43](https://github.com/leventtcaan/nutriscan/issues/43)
+- **S3:** S3 [#44](https://github.com/leventtcaan/nutriscan/issues/44)
+- **S4:** S4 [#45](https://github.com/leventtcaan/nutriscan/issues/45)
+- **S5:** S5 [#46](https://github.com/leventtcaan/nutriscan/issues/46)
