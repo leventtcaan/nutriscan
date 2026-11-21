@@ -14,4 +14,17 @@
 
 - [15 Ekim · 16 Ekim görüşmesi hazırlığı](2026-10-15-ekip-mesaji-gorusme3.md) — toplantı öncesi taslak, 17 Ekim K1–K3 kararlarıyla bazı yönleri değişmiştir.
 - [23 Ekim görüşmesi hazırlığı](2026-10-23-gorusme-hazirligi.md) — hazırlık notudur, görüşme sonucu değildir; sonuç için yukarıdaki 4. toplantı kaydına bakın.
-- [23 Ekim toplantı paketi](../docs/toplanti-paketi.html) — o tarihteki veri/ölçüm anlık görüntüsü; sonraki durum için karar belgesi esas alınır.
+- [23 Ekim toplantı paketi](../docs/arsiv/toplanti-paketi.html) — o tarihteki veri/ölçüm anlık görüntüsü; sonraki durum için karar belgesi esas alınır.
+
+## Toplantı kaydı nasıl eklenir
+
+Her Cuma görüşmesinden sonra o haftanın kayıt sorumlusu (dönüşümlü: Levent → Hilal → Ozan) Meeting Record formunu doldurur ve
+`YYYY-AA-GG-toplanti-N-kaydi.md` (gerekirse PDF'i de) olarak buraya ekler. Formda: son görüşmeden beri yapılanlar (issue
+numaralarıyla), alınan kararlar (karar belgesine işlenecekse Ö-numarası), sonraki görüşmeye kadar yapılacaklar.
+
+## Arşiv
+
+- [arsiv-eski-yon/](arsiv-eski-yon/) — 17 Ekim 2026'da bırakılan hane planlama yönünün ekip mesajları, v5.1 paketi ve takvimleri.
+  Yalnız tarihsel kayıttır; içindeki görevler, araçlar (Azure, Java/Spring) ve tarihler **geçersizdir**.
+- Resmî ilk görüşme kaydı (MR1, 2 Ekim) eski yön döneminden olduğu hâlde resmî kayıt olarak burada kalır.
+

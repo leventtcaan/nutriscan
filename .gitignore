@@ -12,7 +12,7 @@ plan/defter/
 *.key
 
 # Üretilen ara çıktılar
-toplanti/ekip-takvim.html
+toplanti/**/ekip-takvim.html
 __pycache__/
 *.pyc
 .venv/

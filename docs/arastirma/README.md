@@ -10,7 +10,7 @@
 1. [Hastalığa göre değerlendirme literatürü](01-hastalik-entegrasyonu.md) — “Hastalık–her içerik” eşleştirmesi yerine hangi tür klinik/beslenme kuralının hangi ürün verisiyle çalışabildiği.
 2. [Arama ve veritabanı seçenekleri](02-arama-veritabani-karsilastirmasi.md) — exact/fuzzy, lexical, vector, hybrid, relational ve graph seçeneklerini aynı ölçütlerle sınama.
 3. [Ingredient semantic matching tasarımı](03-ingredient-semantic-matching.md) — etiket ifadesinden doğrulanabilir kavrama, oradan kaynaklı kanıta giden katmanlı eşleştirme.
-4. [TÜBİTAK 2209-A başvuru planı](04-tubitak-2209a.md) — güncel 2026 çağrısı, araştırma sorusu, yöntem, iş paketi, risk ve başvuru kontrolü.
+4. [TÜBİTAK 2209-A başvuru planı](04-tubitak-2209a.md) — başvuru öncesi hazırlık notu (25 Ekim). **Yerini aldı:** gönderilen son metin `plan/tubitak/2209a-basvuru-metni.md`; deney protokolü `docs/tasarim/09-degerlendirme-protokolu.md`.
 5. [Ekip arkadaşının PDF değerlendirmesi](05-ekli-pdf-degerlendirmesi.md) — PDF’deki iddialar, iyi başlangıçlar, açık varsayımlar ve ticari kullanım açısından riskler.
 6. [Lisans ve telif kontrolü](06-lisans-ve-telif-kontrolu.md) — yayımlanmış araştırma, klinik kılavuz, veri tabanı ve uygulama varlıklarını kullanırken tutulacak izin/atıf envanteri.
 

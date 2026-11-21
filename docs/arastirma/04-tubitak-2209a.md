@@ -1,5 +1,9 @@
 # 4. TÜBİTAK 2209-A başvurusu için araştırma planı
 
+> **Tarihsel not (21 Kasım 2026):** bu, başvuru öncesi hazırlık notudur. Gönderilen son metin `plan/tubitak/2209a-basvuru-metni.md`,
+> uygulanacak deney protokolü `docs/tasarim/09-degerlendirme-protokolu.md` dosyasındadır. Buradaki sayılar (ör. 120 ifadelik altın küme)
+> ve 14 alerjen grubu hedefi güncel değildir.
+
 **Kısa özet:** 2026 çağrısı 11 Kasım 2026, saat 17.30’da kapanıyor; başvuruyu TYBS’de öğrenci yürütücü yapıyor. Bilimsel puanlama dört ağırlıkta: bilimsel nitelik %35, yöntem %25, proje yönetimi %20, yaygın etki %20. NutriScan’i baştan sona “bitmiş sağlık ürünü” olarak sunmak yerine, test edilebilir bir araştırma sorusu seçmek daha savunulabilir: Türkçe gıda etiketi ifadelerini kanonik ingredient/chemical kavramlarına eşleştirme yöntemlerini ve kaynak izlenebilirliğini karşılaştırmak.
 
 > Bu not başvuru taslağı hazırlığı içindir; TÜBİTAK’a gönderilecek nihai metin değildir. Başvuru metni ve kaynakları ekipçe doğrulanmalı, danışman incelemeli ve 2026 ÜYZ rehberine uyulmalıdır.
