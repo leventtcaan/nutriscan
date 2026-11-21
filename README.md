@@ -2,6 +2,7 @@
 
 Paketli gıdanın içindekiler listesini ve besin tablosunu, kullanıcının seçtiği sağlık durumları için kaynaklı kurallarla değerlendirir; sonucu gerekçesi, kaynağı, kapsamı ve belirsizliğiyle gösterir. CSE 491/492 bitirme projesi · Akdeniz Üniversitesi Bilgisayar Mühendisliği · Grup 9 · Danışman: Dr. Taha Yiğit Alkan
 
+**Nereden başlamalı:** [PLAN.md](PLAN.md) — kim neyi hangi sırayla yapıyor (hafta hafta, kişi kişi).
 **Tek doğruluk kaynağı:** [docs/mimari-karar-belgesi.md](docs/mimari-karar-belgesi.md). Güncel kapsam, kararlar ve uygulama durumu oradadır.
 **Uygulama tasarımı:** [docs/tasarim/](docs/tasarim/README.md) (18 Kasım 2026 denetimi ve tasarım paketi, öneri durumunda).
 

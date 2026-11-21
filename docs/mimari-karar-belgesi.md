@@ -1,6 +1,6 @@
 # NutriScan — Mimari Karar Belgesi (v1)
 
-**Durum:** v1.3 — 25 Ekim 2026; 23 Ekim 4. toplantı kararları ve açık işleri işlendi · 21 Kasım: §8 sahiplik ve K12 süreç güncellendi (Ö-06, Ö-07, Ö-10) · **Editör:** Levent
+**Durum:** v1.3 — 25 Ekim 2026; 23 Ekim 4. toplantı kararları ve açık işleri işlendi · 21 Kasım: §8 sahiplik ve K12 süreç güncellendi, süreç sadeleştirildi (PLAN.md) · **Editör:** Levent
 **Dayanak:** MR1 (2 Ekim), MR2 (9 Ekim), 16 Ekim görüşmesi, 23 Ekim 4. toplantı kaydı · Ozan'ın normalizasyon dokümanları · Hilal'in araştırma dosyaları
 
 > **Bu belge nasıl kullanılır?**
@@ -58,7 +58,7 @@ olmaksızın gerçekleşmez. Aynı girdi ve kural sürümü aynı sonucu üretir
 | K9 | Değerlendirme | Eşleme sınavı (100 ifade, sözlük vs hibrit) + kural sınavı (20 senaryo); finalde tek tablo (bkz. §7) | Hocanın deney isteği, ayrı faz açmadan | KARAR (17 Eki) |
 | K10 | Teknoloji | Python + FastAPI (eşleme/kural servisi) · PostgreSQL · Qdrant · mobil: Expo (React Native) · OCR: cihazda metin tanıma [kütüphane ilk 20 etiketle denenip seçilecek] | Embedding/NLP ekosistemi Python'da; tek servis | KARAR (17 Eki) |
 | K11 | LLM'in rolü | LLM, K13 sınırları içinde kaynaklı kural araştırması/taslağına destek verebilir; doğrulanmamış satır etkinleştirilmez. Kullanıcı mesajında yalnız gözden geçirilmiş tablonun yapılandırılmış sonucunu sadeleştirir; sonucu değiştiremez, yeni sağlık iddiası ekleyemez. LLM çalışmazsa şablon metin | Araştırma desteği ile kullanıcı kararını ayırmak | KARAR (17 Eki; kapsamı 23 Eki'de netleşti) |
-| K12 | Süreç | Sade repo, Azure yok; kısa dallar, sahibi merge eder; haftalık ortak inceleme. İş takibi GitHub Issues + Milestones; her PR'da hafif CI (birim testleri, sözleşme dosyaları); dosya sahipliği `.github/CODEOWNERS` (ayrıntı `docs/tasarim/13-is-plani.md`, `CONTRIBUTING.md`) | Ekibe uymayan ağır süreç bırakıldı; açık işlerin sahibi ve sırası görünür olmalı | KARAR (17 Eki); Issues + hafif CI 21 Kas'ta eklendi (Ö-07, Ö-10) |
+| K12 | Süreç | Sade repo, Azure yok. İş takibi kökteki `PLAN.md` (hafta → kişi → sıra) + GitHub Issues (kişiye atanmış). PR onayı yok: herkes kendi klasöründe çalışır, işini kendisi `main`'e birleştirir; CI yalnız testleri çalıştırır. Haftalık ortak inceleme | Küçük ekipte onay beklemek işi uzatıyor; sıra ve sahip tek sayfada görünmeli | KARAR (17 Eki); 21 Kas'ta sadeleştirildi |
 | K13 | Kural kaynağı ve AI/araç desteği | Her sağlık durumu için kaynaklı kural kayıtları hazırlanır. LLM/araçlar araştırma ve taslak hazırlığına yardım edebilir; **doğrulanmamış kural etkinleştirilmez**. Qdrant, CTD, JECFA ve LLM sağlık sonucunu bağımsız belirleyemez; sonucu yalnız gözden geçirilmiş kural tablosu üretir. Kural şeması ve dosya prototipi/PostgreSQL arasındaki saklama-onay akışı açık iştir | Kaynak izi, insan incelemesi ve deterministik sonuç | KARAR (4. toplantı, 23 Eki); şema ve saklama akışı açık |
 
 ## 4. Hedef veri şeması (PostgreSQL — yalnız bilgi tabanı)
@@ -117,7 +117,7 @@ Kullanıcıya görünen bütün metinler ekip tarafından Türkçe yazılır.
 | Levent | Veri şeması ve bilgi tabanı araçları, kural motoru, analiz servisi ve API, açıklama katmanı, değerlendirme kodu, uçtan uca entegrasyon, bu belgenin editörlüğü |
 | Hep birlikte | Saha fotoğrafı ve metne aktarma, çift etiketleme, veri satırı incelemeleri |
 
-Dosya düzeyinde sahiplik ve sıra: `docs/tasarim/13-is-plani.md` (KARAR, 21 Kasım 2026; Ö-06).
+Klasör sahipliği ve iş sırası: kökteki `PLAN.md` (21 Kasım 2026; Ö-06).
 
 1. Bu belge tek doğruluk kaynağıdır; grup mesajı değil.
 2. Ham agent çıktısı gruba atılmaz; öneri belgeye 3 cümleyle gelir.
