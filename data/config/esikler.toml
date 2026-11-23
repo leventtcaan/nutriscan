@@ -1,0 +1,7 @@
+# Araştırma eşikleri (docs/tasarim/05-esleme-hatti.md, 09-degerlendirme-protokolu.md).
+# Bu dosya bir sözleşmedir: değişikliği önce gruba haber verilir. Değerler yalnız geliştirme kümesinde sabitlenir;
+# test kümesine bakılarak değiştirilmez (NFR-8).
+
+# Bulanık eşleşmede kabul için en düşük Ratcliff–Obershelp benzerlik oranı (difflib).
+# 0.88 ön prototipten gelen geçici değerdir; geliştirme kümesi kurulunca (#27) yeniden seçilip burada dondurulur.
+fuzzy_cutoff = 0.88

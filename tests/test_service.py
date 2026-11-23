@@ -1,13 +1,10 @@
 """Behaviour tests for the matcher and rule table.  Run: python3 -m unittest discover -s tests -v"""
-import pathlib
-import sys
 import unittest
 
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / "service"))
-from nutriscan.matcher import Dictionary                      # noqa: E402
-from nutriscan.rules import evaluate, load_rules              # noqa: E402
-from nutriscan.text import e_code, normalize, split_label     # noqa: E402
-from run_labels import match_all                              # noqa: E402
+from nutriscan.matching import Dictionary
+from nutriscan.pipeline import match_all
+from nutriscan.rules import evaluate, load_rules
+from nutriscan.text import e_code, normalize, split_label
 
 D, RULES = Dictionary(), load_rules()
 

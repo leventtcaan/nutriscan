@@ -11,8 +11,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install check tools
-        run: python -m pip install --quiet pyyaml
+      - name: Install package and check tools
+        run: python -m pip install --quiet -e service pyyaml
       - name: Unit tests
         run: python -m unittest discover -s tests -v
       - name: Contract files parse

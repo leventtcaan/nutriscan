@@ -9,10 +9,10 @@ import csv
 import pathlib
 import sys
 
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from nutriscan.matcher import Dictionary, Match           # noqa: E402
-from nutriscan.rules import evaluate, load_rules          # noqa: E402
-from nutriscan.text import flatten, split_label           # noqa: E402
+from nutriscan.matching import Dictionary
+from nutriscan.pipeline import match_all
+from nutriscan.rules import evaluate, load_rules
+from nutriscan.text import split_label
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 CONDITIONS = {"colyak": "Çölyak", "diyabet": "Diyabet", "kronik_bobrek": "Kronik böbrek hastalığı", "hipertansiyon": "Hipertansiyon",
@@ -22,16 +22,6 @@ CONDITIONS = {"colyak": "Çölyak", "diyabet": "Diyabet", "kronik_bobrek": "Kron
 def num(v):
     v = (v or "").strip().replace(",", ".")
     return float(v) if v else None
-
-
-def match_all(d, mentions):
-    out = []
-    for m in flatten(mentions):
-        x = d.match(m.norm)
-        if x.method == "unknown" and m.children and all(d.match(c.norm).method == "e_code" for c in m.children):
-            x = Match(method="function_label")      # "renklendirici (E102)": the head is a function name
-        out.append((m, x))
-    return out
 
 
 def main(src, dst):

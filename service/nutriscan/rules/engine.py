@@ -1,14 +1,15 @@
 """Rule table → outcome per condition. The decision comes only from data/kurallar/*.csv (decision record K5)."""
 import csv
-import pathlib
 
-DATA = pathlib.Path(__file__).resolve().parents[2] / "data"
-SEVERITY = {"Engel bulunmadı": 0, "Doğrulanamadı": 1, "Dikkat": 2, "Uygun değil": 3}
+from .. import config
+from ..types import SEVERITY_BY_LABEL as SEVERITY
+
 SALT_TO_SODIUM = 2.5  # Reg. (EU) 1169/2011 Annex I: salt = sodium × 2.5
 
 
-def load_rules(path=DATA / "kurallar" / "kurallar_v0.csv"):
-    return list(csv.DictReader(open(path, encoding="utf-8")))
+def load_rules(path=None):
+    with open(path or config.rules_path(), encoding="utf-8") as f:
+        return list(csv.DictReader(f))
 
 
 def _hits(dictionary, matched, targets, exempt):

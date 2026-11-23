@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: nutriscan
+Version: 0.1.0
+Summary: Label ingredient matching and sourced health-condition rule evaluation
+Requires-Python: >=3.12
