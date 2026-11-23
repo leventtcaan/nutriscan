@@ -83,7 +83,7 @@ flowchart LR
 | Bileşen | Modül (hedef) | Girdi → çıktı | Prototipte |
 |---|---|---|---|
 | C3 Metin işleyici | `nutriscan/text.py` | ham metin → `Mention[]`, `Claim[]`, `MayContain[]` | Var; beyan ayrıştırması alt dize (hata, [06 §4](06-kural-motoru.md)) |
-| C4 Sözlük eşleyici | `nutriscan/matching/lexical.py` | `Mention` → `Match` | Var (`matcher.py`), eşik kodda sabit |
+| C4 Sözlük eşleyici | `nutriscan/matching/lexical.py` | `Mention` → `Match` | Var; #7'de taşındı, eşik `data/config/esikler.toml`'da |
 | C5 Anlamsal aday | `nutriscan/matching/semantic.py` | eşleşmeyen `Mention` → `Candidate[5]` + karar | Yok |
 | C6 Kural motoru | `nutriscan/rules/engine.py` | `Match[]` + besin + durumlar → `ConditionResult[]` | Var; taslak satırları da çalıştırıyor (hata) |
 | C7 Kanıt bilgisi | `nutriscan/evidence.py` | kavram + durum → `Evidence[]` | Yok |
@@ -133,7 +133,7 @@ raporları da aynı nesneyi yazar. "Bu sonuç hangi kurallarla çıktı?" sorusu
 
 ### 5.2 Yapılandırma
 Kodda sabit yok (NFR-9). İki katman:
-- `data/config/esikler.yaml`: araştırma parametreleri (bulanık eşik, anlamsal eşik τ, fark δ, top-k). Depoda,
+- `data/config/esikler.toml`: araştırma parametreleri (bulanık eşik, anlamsal eşik τ, fark δ, top-k). Depoda,
   sürümlü, geliştirme kümesinde sabitlenir; değişikliği PR ister.
 - Ortam değişkenleri (`NUTRISCAN_*`, pydantic-settings): çalışma ortamı (PostgreSQL adresi, Qdrant adresi, LLM
   anahtarı, zaman aşımları). `.env.example` depoda, `.env` asla.
@@ -175,7 +175,7 @@ service/                 Python paketi (pyproject.toml, uv)
     pipeline.py          C3→C8 akışı (API ve eval ortak)
     api/                 FastAPI uygulaması, şemalar
 app/                     Expo uygulaması
-data/                    bilgi tabanı (yazma modeli) + config/esikler.yaml
+data/                    bilgi tabanı (yazma modeli) + config/esikler.toml
 eval/                    etiketleme kılavuzu, kümeler, senaryolar, değerlendirme betikleri
 docs/                    karar belgesi, tasarım paketi, araştırma
 infra/                   docker-compose.yml, veritabanı şeması

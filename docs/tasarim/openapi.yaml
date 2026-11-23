@@ -181,7 +181,7 @@ components:
       type: object
       required: [code, text, negated]
       properties:
-        code: { type: string, description: 'dil_kaliplari.yaml içindeki beyan kodu (ör. gluten_free, lactose_free, no_added_sugar, additive_free, preservative_free); liste veri dosyasından gelir, şemada sabitlenmez' }
+        code: { type: string, description: 'dil_kaliplari.toml içindeki beyan kodu (ör. gluten_free, lactose_free, no_added_sugar, additive_free, preservative_free); liste veri dosyasından gelir, şemada sabitlenmez' }
         text: { type: string }
         negated: { type: boolean, description: '"glutensiz değil" gibi olumsuz ifade; true ise beyan kuralı tetiklenmez' }
     ConditionResult:

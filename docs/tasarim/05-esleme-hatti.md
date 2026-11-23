@@ -23,14 +23,14 @@ Girdi: düzeltilmiş içindekiler metni. Çıktı: `Mention[]`, `MayContain[]`, 
 | 1. Unicode | `NFC` normalizasyonu, sonra Türkçe küçük harf (`I→ı`, `İ→i`) | A9 |
 | 2. Başlık | "İçindekiler / Bileşenler / Ingredients" önekini at (büyük-küçük, ASCII yazım dahil) | A10 |
 | 3. Yüzdeler | `%45`, `45 %`, `(%5)` atılır; miktar **saklanmaz** (kırmızı çizgi 4) | — |
-| 4. Beyanlar | `dil_kaliplari.yaml`'daki kalıplarla `Claim(code, text, negated)`: "glutensiz", "laktozsuz", "şeker ilavesiz"… Olumsuzluk kalıbı ("değil", "değildir", "içermez" değil): `negated = true` | A6 |
+| 4. Beyanlar | `dil_kaliplari.toml`'daki kalıplarla `Claim(code, text, negated)`: "glutensiz", "laktozsuz", "şeker ilavesiz"… Olumsuzluk kalıbı ("değil", "değildir", "içermez" değil): `negated = true` | A6 |
 | 5. "İçerebilir" | Kalıp: `(eser miktarda)? X (ve|veya|,) Y içerebilir/bulunabilir`. **Yalnız kalıbın kapsadığı öğeler** "içerebilir" olur; kalıp cümle sınırı olmadan liste ortasında geçiyorsa, kalıptan önceki **son virgüle kadar** olan kısım kapsanır. Öncesi ana listede kalır | A5 |
 | 6. Bölme | Parantez/köşeli parantez dışındaki `,` ve `;` | — |
 | 7. Yapı | `baş (iç)` → baş + alt bileşenler (`parent_id`); `sınıf: madde` → sınıf + madde; "X içerir" → X | — |
 | 8. Gürültü | Yalnız rakam/noktalama/tek harf kalan parça `noise` olur; **eşleşme sayılmaz, tanınan içerik de sayılmaz** | A1 |
 | 9. Tür | Her ifadeye `expression_type`: önce kavram tipinden (C4 sonrası), yoksa kalıptan (`E\d+` → tekil kimyasal) | FR-3 |
 
-Bütün kalıp ve kelime listeleri `data/sozluk/dil_kaliplari.yaml` dosyasındadır; kodda Türkçe kelime listesi yoktur
+Bütün kalıp ve kelime listeleri `data/sozluk/dil_kaliplari.toml` dosyasındadır; kodda Türkçe kelime listesi yoktur
 (denetim C6).
 
 ## 3. C4 · Sözlük eşleyici
@@ -40,8 +40,8 @@ Sıra sabittir; ilk başarılı adım kazanır. Her adım `method` alanına yaz�
 1. **E-kodu:** `e 102`, `E-102`, `e450(i)` → `E102`, `E450`. Kavram yoksa `unknown` (bulanığa **gitmez**; A8).
 2. **Birebir:** normalize metin etkin takma ad dizininde.
 3. **Çoğul eki:** `-lar/-ler` (+ `-ı/-i`) atılmış gövde dizinde. Ünlü uyumu testleri: "aroma vericiler → aroma
-   verici" geçer; gövdesi zaten "-lar/-ler" ile biten kelimeler ("eller") için istisna listesi `dil_kaliplari.yaml`'da.
-4. **Bulanık:** Ratcliff–Obershelp oranı (difflib), eşik `esikler.yaml:fuzzy_cutoff`. Önce Türkçe takma adlar,
+   verici" geçer; gövdesi zaten "-lar/-ler" ile biten kelimeler ("eller") için istisna listesi `dil_kaliplari.toml`'da.
+4. **Bulanık:** Ratcliff–Obershelp oranı (difflib), eşik `esikler.toml:fuzzy_cutoff`. Önce Türkçe takma adlar,
    sonra hepsi. E-kodu biçimindeki metin bu adıma girmez.
 5. **Belirsizlik:** bir takma ad birden çok kavrama gidiyorsa `method = ambiguous`, `concept_id = null`, adaylar
    listelenir. Belirsiz eşleşme kural motoruna **tanınmayan** gibi girer (belirsizlik riski artırır).
@@ -53,7 +53,7 @@ Taslak ekip satırları yalnız `--include-drafts` ile, deney raporunda açıkç
 
 ```mermaid
 flowchart TD
-  U[C4: unknown] --> E[İfadeyi temsil et<br/>model: esikler.yaml]
+  U[C4: unknown] --> E[İfadeyi temsil et<br/>model: esikler.toml]
   E --> Q[Qdrant top-5<br/>yalnız etkin takma adlar]
   Q --> S1{s1 ≥ τ ?}
   S1 -- hayır --> AB[abstain]
@@ -67,10 +67,10 @@ flowchart TD
 - `s1`, `s2`: ilk iki adayın kosinüs benzerliği; **farklı kavramlara** ait ilk iki aday karşılaştırılır (aynı kavramın
   iki takma adı fark kuralını gereksiz yere düşürmesin).
 - `τ` ve `δ` **yalnız geliştirme kümesinde** bir ızgara aramasıyla seçilir. Amaç: yanlış kabul oranı önceden
-  belirlenen sınırın altındayken doğru eşleşmeyi en çoğa çıkarmak. Seçilen değerler `esikler.yaml`'a yazılır,
+  belirlenen sınırın altındayken doğru eşleşmeyi en çoğa çıkarmak. Seçilen değerler `esikler.toml`'a yazılır,
   `fixed_on` tarihi ve geliştirme kümesi karması eklenir, test çalıştırılmadan önce commit'lenir.
 - Model: başlangıç LaBSE (TÜBİTAK 2.3); İP3 başında en az bir alternatifle geliştirme kümesinde karşılaştırılır.
-  Model adı ve revizyonu `esikler.yaml:semantic.model`'dedir, koleksiyon adı ona bağlıdır ([04 §5](04-veri-modeli.md)).
+  Model adı ve revizyonu `esikler.toml:semantic.model`'dedir, koleksiyon adı ona bağlıdır ([04 §5](04-veri-modeli.md)).
 - **TÜBİTAK 2.3'e ek:** tip uyumu ve "ilk iki aday aynı kavram" istisnası TÜBİTAK metninde yoktur; yanlış kabulü azaltan
   ihtiyat adımlarıdır ve İP1 protokolüne açıkça eklenmelidir (Ö-02).
 - **LLM aday doğrulamaz.** Doğrulama deterministik kuraldır; insan doğrulaması gerekirse çevrimdışı olur:

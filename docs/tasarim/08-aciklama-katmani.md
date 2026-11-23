@@ -36,7 +36,7 @@ Denetimden geçmeyen metin kullanıcıya gösterilmez; şablon kullanılır. Kur
    sonuç etiketini metinden çıkarır, sonra kalan metinde başka bir sonuç ifadesi ("sorun yok", "uygundur" gibi eşanlamlılar)
    arar; böylece "Uygun değil" etiketi kendi kendini yakalamaz.
 2. **Yasaklı dil:** `güvenli`, `zararlı`, `tetikler`, `tedavi`, `önler`, `iyileştirir`, `teşhis` ve
-   `data/sozluk/yasakli_ifadeler.yaml`'daki liste. Sabit yasal bilgilendirme cümlesi izin listesindedir ve LLM metnine eklenmez.
+   `data/sozluk/yasakli_ifadeler.toml`'daki liste. Sabit yasal bilgilendirme cümlesi izin listesindedir ve LLM metnine eklenmez.
 3. **Kapsam:** metinde adı geçen içerik ve durumlar girdide olanlarla sınırlı (sözlükten ad çıkarımıyla kontrol).
 4. **Sayı uydurmama:** metindeki her sayı girdide var (besin değeri, eşik).
 5. **Uzunluk:** ≤ 600 karakter (öneri değer; M3'te ekran testine göre ayarlanır).

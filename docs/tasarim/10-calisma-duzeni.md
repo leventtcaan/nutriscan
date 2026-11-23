@@ -20,7 +20,7 @@ klasöründe değişiklik gerekiyorsa o kişiye söylenir.
 ## 2. Bitti ne demek
 
 - Issue'daki "bitti sayılır" maddesi sağlandı (test ya da ekran görüntüsü).
-- Testler yeşil (`python3 -m unittest discover -s tests`; CI aynısını çalıştırır).
+- Testler yeşil (`.venv/bin/python -m unittest discover -s tests`; CI aynısını çalıştırır).
 - Kodda yeni sabit değer yok: eşik, dosya yolu, durum adı, Türkçe kelime listesi dosyadan gelir.
 - Yeni veri eklendiyse kaynağı `data/kaynaklar` listesinde.
 - Davranış değiştiyse ilgili `docs/tasarim/` belgesi de güncellendi.
@@ -42,7 +42,7 @@ biri olamaz.
 |---|---|
 | Python | 3.12; `pyproject.toml` + `uv`; `ruff`; tip ipuçları; alan nesneleri `dataclass` |
 | Test | `unittest` (mevcut) ya da `pytest`; her hata düzeltmesine bir test |
-| Yapılandırma | eşikler `data/config/esikler.yaml`, ortam ayarları ortam değişkeninde (`.env` depoya girmez) |
+| Yapılandırma | eşikler `data/config/esikler.toml`, ortam ayarları ortam değişkeninde (`.env` depoya girmez) |
 | Log | etiket metni ve sağlık profili loglanmaz (NFR-4) |
 | Mobil | TypeScript; bütün metinler i18n dosyasında |
 | Belgeler | Türkçe; kod ve tanımlayıcılar İngilizce |
@@ -55,7 +55,7 @@ AGENTS.md geçerlidir; ek olarak:
 1. Agent'a issue numarasını ve ilgili tasarım bölümünü ver; agent önce onları okur.
 2. Agent yalnız kendi kişisinin klasörlerinde değişiklik yapar.
 3. Agent kural ya da çeviri satırını `etkin` yapamaz; iki isim alanını yalnız insanlar doldurur.
-4. Agent `data/config/esikler.yaml` ve `eval/splits/` dosyalarını kendiliğinden değiştirmez.
+4. Agent `data/config/esikler.toml` ve `eval/splits/` dosyalarını kendiliğinden değiştirmez.
 5. Kural motoru değişmez testleri (06 §2, D1–D10) silinmez, atlanmaz.
 6. Sürüm, API ya da kaynak uydurulmaz; doğrulanamayan yere `[..]` yazılır ve söylenir.
 

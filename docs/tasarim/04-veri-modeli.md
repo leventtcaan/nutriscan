@@ -40,7 +40,7 @@ flowchart LR
 | Kanıt (bilgi) | `data/kanit/*.csv` | `evidence` | `concept_id`, `condition_id`, `source`, `relation`, `url`, `source_version` |
 | Kaynak | `data/kaynaklar.md` → `data/kaynaklar.csv` **(yeni, makinece okunur)** | `source` | `id`, `title`, `url`, `version_date`, `license`, `fields_taken`, `type` |
 | Alerjen grubu | `data/sozluk/alerjen_gruplari.csv` **(yeni)** | `allergen_group` | `id`, `name_tr`, `concept_ids` (TGK Ek; K2 bilgi alanı) |
-| Eşikler | `data/config/esikler.yaml` **(yeni)** | (yüklenir, tablo değil) | `fuzzy_cutoff`, `semantic.tau`, `semantic.delta`, `semantic.top_k`, `fixed_on`, `dev_split_hash` |
+| Eşikler | `data/config/esikler.toml` **(yeni)** | (yüklenir, tablo değil) | `fuzzy_cutoff`, `semantic.tau`, `semantic.delta`, `semantic.top_k`, `fixed_on`, `dev_split_hash` |
 | KB sürümü | (üretilir) | `kb_version` | `id`, `git_commit`, `content_sha256`, `built_at`, `active_rule_count` |
 
 **Saklanmayanlar (K1):** etiket metni, besin değerleri, profil, analiz sonucu. Şemada bu alanlara karşılık gelen tablo
@@ -101,10 +101,13 @@ data/kurallar/durumlar.csv          durum_id, ad_tr, mesh_id, kapsam_notu_tr, ge
 data/kurallar/turetilen_alanlar.csv alan, kaynak_alan, bolen, kaynak_id          # sodyum_g_100, tuz_g_100, 2.5, eu-1169-2011
 data/kaynaklar.csv                  kaynak_id, baslik, url, surum_tarihi, lisans, lisans_durumu, alinan_alanlar, tur, kontrol_eden
 data/sozluk/alerjen_gruplari.csv    grup_id, ad_tr, kavram_id (| ile), kaynak_id
-data/sozluk/dil_kaliplari.yaml      basliklar, beyanlar{kod: [kalıplar]}, olumsuzluk, icerebilir, baglaclar, cogul_istisnalari
-data/sozluk/yasakli_ifadeler.yaml   yasakli: [...], izinli_sabit_metinler: [...]
-data/config/esikler.yaml            fuzzy_cutoff, semantic{enabled, model, revision, top_k, tau, delta}, fixed_on, dev_split_sha256
+data/sozluk/dil_kaliplari.toml      basliklar, beyanlar{kod: [kalıplar]}, olumsuzluk, icerebilir, baglaclar, cogul_istisnalari
+data/sozluk/yasakli_ifadeler.toml   yasakli: [...], izinli_sabit_metinler: [...]
+data/config/esikler.toml            fuzzy_cutoff, semantic{enabled, model, revision, top_k, tau, delta}, fixed_on, dev_split_sha256
 ```
+
+Yapılandırma dosyaları **TOML** biçimindedir: Python 3.11+ standart kütüphanesindeki `tomllib` okur, ekip ek paket kurmaz
+(23 Kasım, #7; önceki taslakta `.yaml` yazıyordu).
 
 `kaynaklar.md` insan okuması için kalır ve `kaynaklar.csv`'den üretilir; ikisi elle ayrı ayrı düzenlenmez.
 
@@ -143,7 +146,7 @@ Sorgu her zaman `top_k = 5` ile yapılır; kabul kararı Qdrant'ta değil, C5'te
 
 | Adım | Ne | Davranış değişir mi? |
 |---|---|---|
-| 1 | `durumlar.csv`, `kaynaklar.csv`, `turetilen_alanlar.csv`, `esikler.yaml` oluşturulur; kod sabitleri buradan okunur | Hayır (aynı değerler) |
+| 1 | `durumlar.csv`, `kaynaklar.csv`, `turetilen_alanlar.csv`, `esikler.toml` oluşturulur; kod sabitleri buradan okunur | Hayır (aynı değerler) |
 | 2 | `kurallar_v0.csv` → `kurallar.csv`: `parametre` sütunu `muaf`/`bantlar`/`bagimlilik`'e bölünür, yeni sütunlar eklenir, 17 satır `taslak` | Evet: ürün modunda bütün durumlar Doğrulanamadı olur, **doğru davranış budur** (hiçbir satır incelenmedi) |
 | 3 | Hilal + ikinci inceleyici satırları kaynağına göre inceler, `etkin` yapar | Satır satır sonuç geri gelir |
 | 4 | `kb build` PostgreSQL'e yükler; servis `NUTRISCAN_KB_BACKEND=postgres` ile okur | Hayır (aynı satırlar) |

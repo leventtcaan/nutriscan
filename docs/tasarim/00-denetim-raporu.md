@@ -10,6 +10,9 @@
 > Önem: **KRİTİK** = yanlış sağlık sonucu ya da kırmızı çizgi ihlali · **ORTA** = tutarsızlık, bakım riski ·
 > **DÜŞÜK** = temizlik.
 
+> **Not (23 Kasım):** bu rapordaki dosya ve satır numaraları 18 Kasım halidir. #7 ile `matcher.py` → `matching/lexical.py`,
+> `rules.py` → `rules/engine.py` taşındı ve bulanık eşik `data/config/esikler.toml`'a alındı (C1 kapandı).
+
 ## A. Yanlış sonuç ya da yanlış ara karar üreten hatalar (hepsi yeniden üretildi)
 
 A1–A5 ve A7 kullanıcıya görünen **sağlık sonucunu** yanlış yöne çeviriyor (KRİTİK). A6, A8 ve A11 bugün nihai sonucu
@@ -26,7 +29,7 @@ değiştirmiyor ama ara kararı yanlış veriyor; başka bir girdide sonucu boza
 | A7 | tuz = 0,301 g/100 g | HT: Dikkat (sodyum 0,1204 > 0,12) | Engel bulunmadı | `round(…, 3)` eşik yakınında aşağı yuvarlıyor (`rules.py:42`) | Yuvarlama yok, karşılaştırma ham değerle |
 | A8 | "e9999" | Eşleşmez | Bulanık eşleşmeyle E999'a bağlanıyor (eşleşme hatası) | Bulanık adım E-kodu biçimindeki metne de uygulanıyor | E-kodu kalıbındaki ifade bulanık adıma girmez; test `match` nesnesine bakar |
 | A9 | "I\u0307ÇİNDEKİLER: …" (ayrışık İ) | Başlık atılır | `ı̇çindekiler` oluyor, başlık tanınmıyor | NFC normalizasyonu yok (`text.py:14`) | Önce `unicodedata.normalize("NFC")` |
-| A10 | "ICINDEKILER: …" (ASCII) | Başlık atılır | Tanınmıyor (`text.py:81`) | Başlık kalıbı yalnız Türkçe yazım | Kalıp `dil_kaliplari.yaml`'da ASCII biçimleri de içerir |
+| A10 | "ICINDEKILER: …" (ASCII) | Başlık atılır | Tanınmıyor (`text.py:81`) | Başlık kalıbı yalnız Türkçe yazım | Kalıp `dil_kaliplari.toml`'da ASCII biçimleri de içerir |
 | A11 | "glikoz şurubu (buğday), şeker" | Çölyak: Engel bulunmadı yönünde muafiyet (1169/2011 Ek II) | **Uygun değil** (alt bileşen "buğday" ayrıca tetikliyor) | Muafiyet yalnız ifadenin kendi zincirine bakıyor (`rules.py:19-21`) | Muafiyet alt bileşenlere miras kalır (06 D9) |
 
 ## B. Kırmızı çizgi ve karar ihlalleri
@@ -44,12 +47,12 @@ değiştirmiyor ama ara kararı yanlış veriyor; başka bir girdide sonucu boza
 
 | # | Yer | Ne | Nereye taşınır |
 |---|---|---|---|
-| C1 | `service/nutriscan/matcher.py:12` | `FUZZY_CUTOFF = 0.88` | `data/config/esikler.yaml` (geliştirme kümesinde sabitlenir) |
+| C1 | `service/nutriscan/matcher.py:12` | `FUZZY_CUTOFF = 0.88` | `data/config/esikler.toml` (geliştirme kümesinde sabitlenir) |
 | C2 | `service/run_labels.py:18-19` | 7 durumun adı ve listesi | `data/kurallar/durumlar.csv` (`condition` tablosu) |
 | C3 | `service/nutriscan/rules.py:6,85-90` | Dört sonuç metni ve önem sırası | Tek `Outcome` enum; CSV değerleri yüklemede doğrulanır |
 | C4 | `rules.py:7,41-42` | Tuz → sodyum dönüşümü (2,5) | `data/kurallar/turetilen_alanlar.csv` (kaynak: 1169/2011 Ek I) |
 | C5 | `rules.py:48-54` | `parametre` içinde mini dil: `yalniz_…`, `muaf=…`, bantlar | Ayrı sütunlar: `bagimlilik`, `muaf`, `bantlar` (şema [04](04-veri-modeli.md)) |
-| C6 | `service/nutriscan/text.py:8,9,81,90` | Türkçe kalıp listeleri (beyanlar, "içerebilir", "içindekiler") | `data/sozluk/dil_kaliplari.yaml` |
+| C6 | `service/nutriscan/text.py:8,9,81,90` | Türkçe kalıp listeleri (beyanlar, "içerebilir", "içindekiler") | `data/sozluk/dil_kaliplari.toml` |
 | C7 | `matcher.py:60` | Türkçe çoğul eki regex'i | Aynı dosya; ünlü uyumu testleriyle |
 | C8 | `matcher.py:11`, `rules.py:5,10`, `run_labels.py:17` | Dosya yolları ve `kurallar_v0.csv` adı | Tek yapılandırma (`NUTRISCAN_DATA_DIR`) |
 | C9 | `docs/diyagram/uret.py:105,122-131` | Elle yazılmış sayılar ve "2 onay" iddiası (gerçekte 0 onay) | Sayılar CSV'den hesaplanır; "taslak" diye düzeltilir |

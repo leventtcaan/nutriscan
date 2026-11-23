@@ -88,7 +88,7 @@ Tüm oranlar Wilson %95 güven aralığıyla verilir. Raporda alt tabaka tablola
 - **H2** (yanlış kabul kabul edilebilir sınırı aşmaz): fark `FA_B − FA_A` ve eşleştirilmiş fark için güven aralığı;
   aralığın üst sınırı önceden belirlenmiş **Δ** sınırının altındaysa H2 desteklenir. **Δ'nın sayısal değeri
   açıktır** (Ö-09) ve test çalıştırılmadan önce bu dosyaya ve commit'e yazılmalıdır.
-- **Önceden kayıt:** H1, H2, Δ, metrikler, eşikler (`esikler.yaml`) ve ayrım karmaları test çalıştırılmadan önce
+- **Önceden kayıt:** H1, H2, Δ, metrikler, eşikler (`esikler.toml`) ve ayrım karmaları test çalıştırılmadan önce
   tek bir commit'te dondurulur (`eval/onkayit.md`). Bu, sonuca bakıp eşik değiştirme riskini kapatır.
 
 ## 5. Kural sınavı (senaryolar)

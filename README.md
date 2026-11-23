@@ -24,9 +24,18 @@ OFF taksonomisinde bulunmayan Türkçe eşanlamlılar, gıda ve kimyasal terimle
 ## Repodaki mevcut uygulama
 
 - `service/nutriscan/text.py`: etiket metnini ayırma ve normalize etme.
-- `service/nutriscan/matcher.py`: E-kodu, birebir, Türkçe çoğul ve bulanık eşleşme.
-- `service/nutriscan/rules.py`: CSV kural tablosuyla sonuç üretme.
+- `service/nutriscan/matching/lexical.py`: E-kodu, birebir, Türkçe çoğul ve bulanık eşleşme.
+- `service/nutriscan/rules/engine.py`: CSV kural tablosuyla sonuç üretme.
+- `service/nutriscan/pipeline.py`: bir etiketi sırayla böl → eşle → değerlendir.
 - `service/run_labels.py`: etiket CSV'sinden Markdown raporu üretme.
+
+**Kurulum (bir kez):**
+
+```bash
+uv venv .venv && uv pip install --python .venv/bin/python -e service
+```
+
+`uv` yoksa: `python3 -m venv .venv && .venv/bin/pip install -e service`. Testler: `.venv/bin/python -m unittest discover -s tests -v`.
 - FastAPI uç noktası, mobil uygulama, Qdrant adımı ve LLM anlatım katmanı henüz bu repoda uygulanmış değildir; bunlar mimari plandaki sonraki parçalardır.
 
 ## Klasörler

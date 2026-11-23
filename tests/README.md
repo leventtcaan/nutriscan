@@ -19,4 +19,7 @@ Mutfaktaki bir paketin arkasını **olduğu gibi** yaz; düzeltme yapma (yazım 
 | `tuz_g_100` | Besin tablosundaki "tuz"; yoksa boş |
 | `ornek_mi` | Gerçek paketse boş bırak |
 
-Çalıştır: `python3 service/run_labels.py` → `eslesme/rapor.md`. Testler: `python3 -m unittest discover -s tests -v`.
+Çalıştır: `.venv/bin/python service/run_labels.py` → `eslesme/rapor.md`. Testler: `.venv/bin/python -m unittest discover -s tests -v` (kurulum kök README'de).
+
+`test_characterization.py`, paketin ön prototiple **aynı** sonuçları verdiğini `golden/prototype_v0.json` altın kaydıyla denetler.
+Bir hata bilerek düzeltildiğinde (ör. #8, #9) bu kayıt aynı commit'te, nedeni yazılarak güncellenir..
