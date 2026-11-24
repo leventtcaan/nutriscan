@@ -26,7 +26,7 @@ ona söyle (issue aç ya da gruptan yaz).
 
 **Levent**
 1. [x] [#7](https://github.com/leventtcaan/nutriscan/issues/7) Depo iskeletini kur: kodu yeni klasör düzenine taşı, ayarları dosyaya al. *(Ozan'ın 2. işi bunu bekliyor; ilk iş bu.)*
-2. [ ] [#8](https://github.com/leventtcaan/nutriscan/issues/8) Bulunan hatalar için testler yaz (şu an kırmızı yanacaklar). *önce #7*
+2. [x] [#8](https://github.com/leventtcaan/nutriscan/issues/8) Bulunan hatalar için testler yaz (şu an kırmızı yanacaklar). *önce #7*
 3. [ ] [#9](https://github.com/leventtcaan/nutriscan/issues/9) Kural motorunu düzelt: belirsizlikte asla "Engel bulunmadı" demesin. *önce #8*
 
 **Ozan**
