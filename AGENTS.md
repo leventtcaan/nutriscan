@@ -14,6 +14,22 @@ Bu dosyayı ekibin üç agent'ı (Claude Code, Codex, Antigravity) okur. Kısa t
 ## Ekip
 Levent (Claude Code) · Hilal (Codex) · Ozan (Antigravity). Alan sahipliği karar belgesi §8'de.
 
+## Bir issue nasıl yapılır (her agent, her iş, aynı sırayla)
+1. **Sıradaki işi bul:** `PLAN.md`'de kişinin adı altındaki ilk kutusu boş işi al. `gh issue view <n>` ile aç; "Önce bitmesi
+   gereken" issue'lardan biri açıksa **başlama**, kullanıcıya hangisini beklediğini söyle.
+2. **Oku:** issue'daki "Uygulama notu" yorumunu ve bağlı tasarım bölümünü oku. Dokunacağın dosyalar kişinin klasörlerinde
+   değilse dur ve sor.
+3. **Dal aç:** güncel `main`'den `git switch -c <isim>/<n>-<kisa-konu>`.
+4. **Önce test:** kabul ölçütünü teste çevir, kırmızı yandığını gör; sonra kodu yaz, yeşile getir. Sonuç değiştiren bir
+   düzeltmede `tests/golden/` altın kaydı aynı commit'te, nedeni mesajda yazılarak güncellenir.
+5. **Kontrol et:** `.venv/bin/python -m unittest discover -s tests` yeşil olmalı.
+6. **PR aç:** `gh pr create --base main`. Başlık Conventional Commits + `(#<n>)`. Gövdede dört başlık: **Ne** · **Neden**
+   (`Closes #<n>`) · **Nasıl doğrulandı** (komut ve çıktı) · **Dikkat** (varsa). Aynı PR'da `PLAN.md`'deki işin kutusunu
+   `[x]` yap.
+7. **Birleştirme kişinin işidir:** CI yeşilse kişi PR'ı okur ve kendisi birleştirir; başka birinin onayı gerekmez. Agent,
+   kullanıcı "birleştir" demeden merge etmez.
+8. **Yarım kalırsa:** issue'ya kısa durum yorumu yaz (ne bitti, ne kaldı, ne bekleniyor).
+
 ## Kırmızı çizgiler
 1. **Sağlık durumuna ilişkin sonucu yalnız gözden geçirilmiş kural tablosu belirler.** Qdrant yalnız eşleşme
    adayı üretir; CTD/JECFA araştırma bilgisidir. LLM ve diğer araçlar kaynaklı kural araştırması/taslağına
@@ -29,7 +45,7 @@ Levent (Claude Code) · Hilal (Codex) · Ozan (Antigravity). Alan sahipliği kar
 7. Lisans: her veri kaynağının lisansı `data/kaynaklar.md`'de kayıtlı olmadan veri repoya girmez. FooDB kullanılmaz (CC BY-NC).
 
 ## Çalışma
-- Kısa dal (`<isim>/<kisa-konu>`), sahibi merge eder; haftalık ortak inceleme.
+- Kısa dal (`<isim>/<issue-no>-<kisa-konu>`), her iş bir PR; sahibi okur ve birleştirir; haftalık ortak inceleme.
 - Commit: Conventional Commits, İngilizce başlık. **Commit ve PR'da AI imzası ve araç adı yok.**
 - Dil: kod ve tanımlayıcılar İngilizce; dokümanlar ve arayüz metni Türkçe.
 - Öneri, gruba ham agent çıktısı olarak değil, karar belgesine en fazla 3 cümlelik değişiklik önerisi olarak gelir.
