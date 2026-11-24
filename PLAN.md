@@ -34,7 +34,7 @@ ona söyle (issue aç ya da gruptan yaz).
 2. [ ] [#10](https://github.com/leventtcaan/nutriscan/issues/10) Metin bölmedeki hataları düzelt ("içerebilir", "glutensiz değil", büyük İ). *önce #7*
 
 **Hilal**
-1. [ ] [#12](https://github.com/leventtcaan/nutriscan/issues/12) Kural tablosunu yeni biçime taşı (17 satır, hepsi "taslak").
+1. [x] [#12](https://github.com/leventtcaan/nutriscan/issues/12) Kural tablosunu yeni biçime taşı (17 satır, hepsi "taslak").
 2. [ ] [#13](https://github.com/leventtcaan/nutriscan/issues/13) Kaynak listesini tamamla (eksik kaynaklar ve lisanslar).
 3. [ ] [#14](https://github.com/leventtcaan/nutriscan/issues/14) Laktoz ve sülfit kurallarındaki eksikleri ekle. *önce #12*
 
