@@ -30,6 +30,17 @@ Levent (Claude Code) · Hilal (Codex) · Ozan (Antigravity). Alan sahipliği kar
    kullanıcı "birleştir" demeden merge etmez.
 8. **Yarım kalırsa:** issue'ya kısa durum yorumu yaz (ne bitti, ne kaldı, ne bekleniyor).
 
+### Ekip aynı hızda çalışmaz: erken ya da yanlış adım atmamak için
+- **Başlamadan:** `git switch main && git pull`. Sonra kontrol et: (a) bağımlı issue'lar **kapalı** mı (açık PR'ı olması yetmez,
+  birleşmiş olmalı) · (b) bu issue için açık bir PR ya da başkasının dalı var mı (`gh pr list --search "<n>"`) · (c) issue sana
+  ya da kullanıcına mı atanmış. Biri tutmuyorsa **başlama**, kullanıcıya durumu söyle.
+- **Bekleyen bir şey varsa** başkasının klasörüne geçici kod, sahte dosya ya da "şimdilik" düzeltme koyma. Kendi tarafını
+  sözleşmeye (`docs/tasarim/openapi.yaml`, `04-veri-modeli.md` biçimleri) göre yaz, eksik kısmı issue'ya yorum olarak bildir.
+- **PR açmadan önce** `git fetch && git merge origin/main` yap ve testleri yeniden çalıştır; başkasının birleşen işiyle
+  çakışma varsa yalnız kendi dosyalarında çöz, başkasının dosyasındaki çakışmayı ona sor.
+- **Bilmediğin bir durumla karşılaşırsan** (beklenmedik test, eksik veri, belgeyle çelişen kod) tahmin edip ilerleme; dur ve sor.
+- Bir iş bitmeden PLAN'daki sıradaki işe geçme; bir PR birleşmeden ona bağlı işe başlama.
+
 ## Kırmızı çizgiler
 1. **Sağlık durumuna ilişkin sonucu yalnız gözden geçirilmiş kural tablosu belirler.** Qdrant yalnız eşleşme
    adayı üretir; CTD/JECFA araştırma bilgisidir. LLM ve diğer araçlar kaynaklı kural araştırması/taslağına
