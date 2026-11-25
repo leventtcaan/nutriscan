@@ -1,0 +1,8 @@
+durum_id,ad_tr,mesh_id,kapsam_notu_tr,gereken_besin
+colyak,Çölyak,,"Gluten içeren tahıllar, muafiyetler ve etiket beyanları.",
+diyabet,Diyabet,,Besin tablosundaki şekerler ve şeker beyanı sınırları.,sekerler_g_100
+kronik_bobrek,Kronik böbrek hastalığı,,Etiketten elde edilen sodyum ve beyan edilen fosfat katkıları. Fosfat satırı kaynak incelemesi bekliyor.,sodyum_g_100
+fenilketonuri,Fenilketonüri,,Etiketteki fenilalanin kaynağı beyanı ve ilgili katkılar.,
+sulfit_hassasiyeti,Sülfit hassasiyeti,,Etikette beyan edilen sülfitler.,
+laktoz_intoleransi,Laktoz intoleransı,,Etikette beyan edilen süt ve laktoz içeren içerikler.,
+hipertansiyon,Hipertansiyon,,Besin tablosundaki sodyum veya tuzdan türetilen sodyum için beyan sınırları.,sodyum_g_100
